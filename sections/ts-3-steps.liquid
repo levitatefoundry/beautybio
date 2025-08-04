@@ -1,0 +1,131 @@
+<style>
+  .ts-3-step-container {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #F3C8CF -120%, white 100%);
+    text-align: center;
+    align-items: center;
+    padding: 40px 60px;
+    gap: 20px;
+  }
+
+  .ts-steps-title {
+    
+  }  
+
+  .ts-steps-subtitle {
+    max-width: 570px;
+  }
+
+  .ts-steps-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .ts-step-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 30%;
+    max-width: 284px;
+  }
+
+  .ts-step-number {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid #000000;
+  }
+
+  .ts-step-heading {
+    font-size: 16pt;
+  }
+
+  .ts-step-body {
+    font-style: italic;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .ts-steps-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 50px;
+    }
+
+    .ts-step-column {
+      width: 100%;
+    }
+  }
+</style>
+
+<section class="ts-3-step-container">
+  <h2 class="ts-steps-title">{{ section.settings.heading }}</h2>
+  <p class="ts-steps-subtitle">{{ section.settings.subheading }}</p>
+  <div class="ts-steps-container">
+    {% for block in section.blocks %}
+      <div class="ts-step-column">
+        <span class="ts-step-number">{{ block.settings.number }}</span>
+        <h2 class="ts-step-heading">{{ block.settings.step-heading }}</h2>
+        <p class="ts-step-body">{{ block.settings.step-text }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "TS 3 Steps",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "So Easy, It Feels Like Magic"
+      },
+      {
+        "type": "text",
+        "id": "subheading",
+        "label": "Subheading",
+        "default": "No signups or codes. A simple 3-step process to save big on skincare and tools you love—in packable sizes."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "step",
+        "name": "Step",
+        "settings": [
+          {
+            "type": "text",
+            "id": "number",
+            "label": "Step number",
+            "default": "1"
+          },
+          {
+            "type": "text",
+            "id": "step-heading",
+            "label": "Step heading",
+            "default": "Pick Your Minis"
+          },
+          {
+            "type": "text",
+            "id": "step-text",
+            "label": "Step text",
+            "default": "Choose any 3, 6, or 10 travel-size skincare or tool favorites."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "TS 3 Steps",
+        "blocks": []
+      }
+    ]
+  }
+{% endschema %}

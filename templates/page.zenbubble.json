@@ -1,0 +1,1041 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "full",
+        "custom_content_width": 1000
+      }
+    },
+    "image_hero_TngLhW": {
+      "type": "image-hero",
+      "blocks": {
+        "accent_bgTrUF": {
+          "type": "accent",
+          "disabled": true,
+          "settings": {
+            "accent": "Accent"
+          }
+        },
+        "heading_nYBxf6": {
+          "type": "heading",
+          "settings": {
+            "title": "THE ZENBUBBLE",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "heading_aE6WJx": {
+          "type": "heading",
+          "settings": {
+            "title": "GEL CREAM",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "text_fj4cGW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Clinically proven to improve skin's hydration after just one use</p>",
+            "text_font_class": "fs-body-200"
+          }
+        },
+        "button_ULjtfM": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/the-zenbubble-gel-cream",
+            "link_text": "Shop ZenBubble",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "accent_bgTrUF",
+        "heading_nYBxf6",
+        "heading_aE6WJx",
+        "text_fj4cGW",
+        "button_ULjtfM"
+      ],
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "image": "shopify://shop_images/Core4-ZenBubble_HP-DESKTOP_Slide2.jpg",
+        "image_mobile": "shopify://shop_images/Core4-ZenBubble_HP-MOBILE_Slide2.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "center_flex-start",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_47HDdq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XBjY3q": {
+          "type": "heading",
+          "settings": {
+            "title": "CALM & CORRECT SENSITIVE, BLEMISH-PRONE SKIN",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        },
+        "text_3a8Y9e": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>No pain, no downtime & no appointment needed</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XBjY3q",
+        "text_3a8Y9e"
+      ],
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "solid",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "featured_product_9Lqjdf": {
+      "type": "featured-product",
+      "blocks": {
+        "product_header_EnVFrP": {
+          "type": "product_header",
+          "settings": {
+            "title_tag": "h2",
+            "show_divider": false,
+            "show_vendor": false,
+            "show_sku": false,
+            "show_discount": true,
+            "discount_format": "percent_off",
+            "show_product_rating": true,
+            "show_sale_badge": true,
+            "show_custom_badges": true
+          }
+        },
+        "product_callouts_ci4M4H": {
+          "type": "product_callouts",
+          "disabled": true,
+          "settings": {
+            "add_box": false,
+            "add_dividers": true,
+            "icon_1": "package-closed",
+            "text_1": "<p>Free shipping over $50</p>",
+            "icon_2": "paper-airplane",
+            "text_2": "<p>Free Returns & Exchanges</p>",
+            "icon_3": "chat",
+            "text_3": "<p>Need help? <a href=\"/pages/contact\">Contact us</a></p>",
+            "icon_4": "none",
+            "text_4": "",
+            "icon_5": "none",
+            "text_5": "",
+            "icon_6": "chat",
+            "text_6": "",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false,
+            "collapsible_row_title": "Callouts"
+          }
+        },
+        "description_BptgQd": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "title_tag": "h3",
+            "text_font_class": "fs-body-100",
+            "column_placement": "right",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
+          }
+        },
+        "variant_picker_gr8pHc": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "variant_popup_option": "Size",
+            "variant_popup_icon": "none",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": "",
+            "swatch_size": "medium",
+            "chip_layout": "3col"
+          }
+        },
+        "custom_liquid_DecD9a": {
+          "type": "custom_liquid",
+          "settings": {
+            "column_placement": "right",
+            "custom_liquid": "<div>\n<img style=\"vertical-align:middle\" alt=\"Doubles as makeup primer\" src=\"https://cdn.shopify.com/s/files/1/1581/6229/files/ZB_Primes.png?v=1651504999\" height=\"60\" width=\"60\">\n<span style=\"vertical-align:middle\">  Doubles As Makeup Primer</span>\n</div>\n<br>\n<div>\n<img style=\"vertical-align:middle\" src=\"https://cdn.shopify.com/s/files/1/1581/6229/files/ZB_CalmsRedness.png?v=1651504999\" alt=\"Calms Visible Redness\" height=\"60\" width=\"60\">\n<span style=\"vertical-align:middle\">  Calms Visible Redness</span>\n</div>\n<br>\n<div>\n<img style=\"vertical-align:middle\" alt=\"Helps Brighten Glow\" src=\"https://cdn.shopify.com/s/files/1/1581/6229/files/ZB_LastingGlow.png?v=1651504999\" height=\"60\" width=\"60\">\n<span style=\"vertical-align:middle\">  Helps Brighten Glow</span>\n</div>\n<br>\n<div>\n<img style=\"vertical-align:middle\" alt=\"Reduces Fine Lines & Wrinkles\" src=\"https://cdn.shopify.com/s/files/1/1581/6229/files/ZB_FineLines_fc9a951f-640f-4b59-821a-89aa0c006f5d.png?v=1651504999\" height=\"60\" width=\"60\">\n<span style=\"vertical-align:middle\">  Reduces Fine Lines & Wrinkles</span>\n</div>"
+          }
+        },
+        "quantity_selector_c3XmyQ": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons_F7ienm": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        }
+      },
+      "block_order": [
+        "product_header_EnVFrP",
+        "product_callouts_ci4M4H",
+        "description_BptgQd",
+        "variant_picker_gr8pHc",
+        "custom_liquid_DecD9a",
+        "quantity_selector_c3XmyQ",
+        "buy_buttons_F7ienm"
+      ],
+      "settings": {
+        "featured_product": "the-zenbubble-gel-cream",
+        "show_featured_media_first": false,
+        "gallery_size": "medium",
+        "enable_video_looping": true,
+        "enable_product_lightbox": false,
+        "image_aspect_ratio": "natural",
+        "enable_gift_card_recipient": false,
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "multi_column_fYqYUQ": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_qtnyJi": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/GP_PEP_Packshot_Update2023.png",
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "icon_column_V9ADEH": {
+          "type": "icon_column",
+          "settings": {
+            "icon": "plant",
+            "icon_width": 50,
+            "icon_width_mobile": 50,
+            "custom_icon_image": "shopify://shop_images/1_Restores-Volume.png",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Exfoliates skin to help restore volume and glow</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 50,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "icon_column_iwyrWQ": {
+          "type": "icon_column",
+          "settings": {
+            "icon": "plant",
+            "icon_width": 50,
+            "icon_width_mobile": 50,
+            "custom_icon_image": "shopify://shop_images/2_Improves-Absorption.png",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Enhances topical skincare benefits when applied immediately after use</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 73,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "icon_column_4iRMK9": {
+          "type": "icon_column",
+          "source": "{{ metaobjects.benefits_icons[\"works-to-tighten-enlarged-pores\"] }}",
+          "settings": {
+            "icon": "plant",
+            "icon_width": 50,
+            "icon_width_mobile": 50,
+            "custom_icon_image": "{{ metaobjects.benefits_icons[\"works-to-tighten-enlarged-pores\"].benefit_icon_image.value }}",
+            "accent": "{{ metaobjects.benefits_icons[\"works-to-tighten-enlarged-pores\"].benefit_icon_text.value }}",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Enhances topical skincare benefits when applied immediately after use</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 73,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_qtnyJi",
+        "icon_column_V9ADEH",
+        "icon_column_iwyrWQ",
+        "icon_column_4iRMK9"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Visibly Firmer, Smoother Skin",
+        "heading_tag": "h2",
+        "subheading": "<p>No pain, no downtime & no appointment needed</p>",
+        "heading_font_class": "fs-heading-2-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "center",
+        "content_background_padding": "small",
+        "columns": "6",
+        "column_spacing": 4,
+        "row_spacing": 4,
+        "column_alignment": "left",
+        "enable_slider_mobile": false,
+        "columns_mobile": "1",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "left",
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_46g4XT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JBdx7C": {
+          "type": "heading",
+          "settings": {
+            "title": "Real Results. Clinically Proven.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        },
+        "text_LjFLrd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Natural soothing extracts flood skin to help reduce the visible effects of stress: redness, breakouts, accelerated wrinkling, excessive dryness and enlarged pores.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "spacer_w8KfRJ": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        }
+      },
+      "block_order": [
+        "heading_JBdx7C",
+        "text_LjFLrd",
+        "spacer_w8KfRJ"
+      ],
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "solid",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "custom",
+        "custom_content_width": 800
+      }
+    },
+    "gallery_carousel_4PRPGB": {
+      "type": "gallery-carousel",
+      "blocks": {
+        "image_MiFUpR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ZenBubble-Split_WO_b21705ba-d343-4f5a-9165-5370600e687c.jpg",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": ""
+          }
+        },
+        "image_78fxtN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Cream_TheZenBubble-3_29e40cff-62fa-402f-a9fa-ba11c1968110.jpg",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": ""
+          }
+        },
+        "image_rrqcC9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Cream_TheZenBubble-2_018df481-7d16-4b97-85c3-472d1047f668.jpg",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_MiFUpR",
+        "image_78fxtN",
+        "image_rrqcC9"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "columns": "3",
+        "mobile_columns": "1",
+        "loop_carousel": false,
+        "aspect_ratio": "square",
+        "image_caption_style": "overlay",
+        "image_caption_size": "fs-body-100",
+        "overlay_text_background_style": "gradient",
+        "overlay_text_color": "#ffffff",
+        "overlay_text_background": "#000000",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "image_hero_qx3N7q": {
+      "type": "image-hero",
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "image": "shopify://shop_images/ZB_Stats_Update_Desktop-2022.png",
+        "image_mobile": "shopify://shop_images/ZB_Stats_Update_Mobile-2022.png",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "text_color": "#FFFFFF",
+        "button_background_color": "#FFFFFF",
+        "button_text_color": "#000000",
+        "color_overlay": "#000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-bottom-only"
+      }
+    },
+    "rich_text_BVUmwi": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wGPU73": {
+          "type": "heading",
+          "settings": {
+            "title": "Targeted Treatments From Head-To-Toe",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        },
+        "text_kpNw9W": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GloPRO®’s interchangeable attachments help personalize and target specific skin concerns.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wGPU73",
+        "text_kpNw9W"
+      ],
+      "disabled": true,
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_qCapMD": {
+      "type": "rich-text",
+      "blocks": {
+        "spacer_JmEXgR": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        },
+        "heading_QPFm4c": {
+          "type": "heading",
+          "settings": {
+            "title": "DOUBLE BUBBLE STRESS SHIELD TECHNOLOGY",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        },
+        "text_y66HkD": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>OUTER BUBBLE<br/></strong>Immediately shields skin from stressful environmental aggressors and soaks up stress-induced excess sebum</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "text_kKCHA9": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>INNER BUBBLE</strong><br/>Safely delivers active, calming ingredients into skin to repair and rebalance the microbiome</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "spacer_JmEXgR",
+        "heading_QPFm4c",
+        "text_y66HkD",
+        "text_kKCHA9"
+      ],
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "video_LRpVFw": {
+      "type": "video",
+      "blocks": {
+        "play_button_8kqXRA": {
+          "type": "play-button",
+          "settings": {
+            "text": "Watch now",
+            "button_layout": "minimal",
+            "icon_style": "dark"
+          }
+        }
+      },
+      "block_order": [
+        "play_button_8kqXRA"
+      ],
+      "settings": {
+        "video_source": "external",
+        "video_url": "https://vimeo.com/828418830?share=copy",
+        "loop": false,
+        "media_aspect_ratio": "landscape_wide_alt",
+        "focal_point": "image_presentation",
+        "text_position": "center_center",
+        "text_position_mobile": "center",
+        "button_background_color": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_text": "#ffffff",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "multi_column_kmJUBa": {
+      "type": "multi-column",
+      "blocks": {
+        "icon_column_8PgE3C": {
+          "type": "icon_column",
+          "settings": {
+            "icon": "plant",
+            "icon_width": 60,
+            "icon_width_mobile": 50,
+            "custom_icon_image": "shopify://shop_images/ZB_PhytoMarineExtracts_Blk.png",
+            "accent": "",
+            "heading": "PHYTO-MARINE ACTIVES",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Contains amino acids & flavonoids to help protect skin from environmental aggressors</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "icon_column_LMjixT": {
+          "type": "icon_column",
+          "settings": {
+            "icon": "plant",
+            "icon_width": 60,
+            "icon_width_mobile": 50,
+            "custom_icon_image": "shopify://shop_images/ZB_Chlorella_Vulgaris_B12Blk.png",
+            "accent": "",
+            "heading": "CHLORELLA VULGARIS",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Creates a calming safe space for sensitive, irritated and inflamed skin to de-stress</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "icon_column_UjNTrk": {
+          "type": "icon_column",
+          "settings": {
+            "icon": "plant",
+            "icon_width": 60,
+            "icon_width_mobile": 50,
+            "custom_icon_image": "shopify://shop_images/ZB_GotuKolaBlk.png",
+            "accent": "",
+            "heading": "GOTU KOLA",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Speeds up cellular regeneration to diminish the appearance of scarring and fine lines</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "icon_column_wVHJyt": {
+          "type": "icon_column",
+          "settings": {
+            "icon": "plant",
+            "icon_width": 60,
+            "icon_width_mobile": 50,
+            "custom_icon_image": "shopify://shop_images/ZB_ChamomileBlk.png",
+            "accent": "",
+            "heading": "ANCIENT CHAMOMILE",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Calms the nervous system to reduce anxiety & slow signs of stress-related aging</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "icon_column_8PgE3C",
+        "icon_column_LMjixT",
+        "icon_column_UjNTrk",
+        "icon_column_wVHJyt"
+      ],
+      "settings": {
+        "title": "INGREDIENT SPOTLIGHT",
+        "heading_tag": "h2",
+        "subheading": "<p>Unique Lightweight Gel Cream packed with Superfood Zengredients</p>",
+        "heading_font_class": "fs-heading-2-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "center",
+        "content_background_padding": "small",
+        "columns": "4",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 8,
+        "row_spacing_mobile": 8,
+        "column_alignment_mobile": "center",
+        "background_behind_columns": false,
+        "background_color": "rgba(0,0,0,0)",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "quote_K9wArk": {
+      "type": "quote",
+      "blocks": {
+        "quote_yBhaUz": {
+          "type": "quote",
+          "settings": {
+            "quote": "<h5><strong>★ ★ ★ ★ ★<br/>SUMMER TIME QUENCH</strong><br/>\"This is one of my go to moisturizers for summer time. It’s such a lightweight consistency that absorbs quickly and leaves behind such a hydrated soft surface. I love the fact it leaves a nice glow behind without making my skin look oily. It’s such a pleasure to use and I’m definitely going to have to grab another one!\"</h5>",
+            "title": "GiGi E",
+            "quote_tag": "h4",
+            "font_size": "small"
+          }
+        },
+        "quote_hL7L7M": {
+          "type": "quote",
+          "settings": {
+            "quote": "<h5><strong>★ ★ ★ ★ ★<br/>ZENBUBBLE FOR THE WIN</strong><br/>\"I am enjoying the many benefits to ZenBubble. My favorite is using it as a primer for my makeup. My makeup glides on and has a healthy glo after using the ZenBubble.\"</h5>",
+            "title": "KK Jaax",
+            "quote_tag": "h4",
+            "font_size": "small"
+          }
+        },
+        "quote_4khDat": {
+          "type": "quote",
+          "settings": {
+            "quote": "<h5><strong>★ ★ ★ ★ ★<br/></strong>ESTHETICIAN DREAM FOR CLIENTS<br/>\"As an esthetician this worked great on my 49 year old sensitive skin as well as my 23 year old daughter’s skin! That is rare to find such an incredible product with such a great subset of ingredients that work together for a variety of skin types!\"</h5>",
+            "title": "Esthetician/MUA",
+            "quote_tag": "h4",
+            "font_size": "small"
+          }
+        },
+        "quote_mTtRyJ": {
+          "type": "quote",
+          "settings": {
+            "quote": "<h5><strong>★ ★ ★ ★ ★<br/>HIGHLY RECOMMEND!!</strong><br/>\"I can’t recommend this product enough! I have very sensitive skin so like anything else, I expected this to make my skin breakout like everything else. To my surprise, IT DIDN'T!! I use the product morning and night and each morning I wake up and my face isn’t oily like most products but it is refreshed. After 2 days of using it, I already notice a difference. I can’t wait to keep using it!\"</h5>",
+            "title": "Tiff176",
+            "quote_tag": "h4",
+            "font_size": "small"
+          }
+        }
+      },
+      "block_order": [
+        "quote_yBhaUz",
+        "quote_hL7L7M",
+        "quote_4khDat",
+        "quote_mTtRyJ"
+      ],
+      "settings": {
+        "autoplay_enabled": false,
+        "autoplay_delay": 15,
+        "pagination_style": "dots",
+        "font_choice": "body",
+        "enable_animation": true,
+        "divider_style": "solid",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "multi_column_FTjnRw": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_YTkCAn": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/ZB_1_BareSkin.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_3ngwVd": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/ZB_2_ZenBubbleOnly.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_CRnXXB": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/ZB_3_FoundationOnly.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_zNCGGL": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/ZB_4_ZenBubbleAndFoundation.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_YTkCAn",
+        "image_column_3ngwVd",
+        "image_column_CRnXXB",
+        "image_column_zNCGGL"
+      ],
+      "settings": {
+        "title": "PRIMER PERFECTION",
+        "heading_tag": "h2",
+        "subheading": "<p>PRO TIP: Layer under foundation for a creaseless filter finish and dewy sheen</p>",
+        "heading_font_class": "fs-heading-2-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "center",
+        "content_background_padding": "medium",
+        "columns": "4",
+        "column_spacing": 12,
+        "row_spacing": 12,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 8,
+        "row_spacing_mobile": 8,
+        "column_alignment_mobile": "left",
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#FFFFFF",
+        "enable_animation": true,
+        "divider_style": "solid",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "image_with_text_split_LNikNX": {
+      "type": "image-with-text-split",
+      "blocks": {
+        "heading_8eC9GY": {
+          "type": "heading",
+          "settings": {
+            "title": "The Best Makeup Primer Is In Your Skincare",
+            "heading_tag": "h4",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        },
+        "subheading_6JkwJm": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Prime, brighten and depuff in one step",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "button_kWDcfz": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://blogs/skincare-blog/what-is-eyelighting",
+            "link_text": "Read More",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8eC9GY",
+        "subheading_6JkwJm",
+        "button_kWDcfz"
+      ],
+      "custom_css": [
+        ".image-with-text-split__text-container-subheading {text-wrap: balance;}",
+        ".image-with-text-split__text-container-heading {text-wrap: balance;}"
+      ],
+      "settings": {
+        "image_position": "left",
+        "image_mobile_position": "above-content",
+        "image_padding": "all-sides",
+        "image": "shopify://shop_images/Eyelighter_PEP_Blog_new.jpg",
+        "aspect_ratio": "natural",
+        "focal_point": "image_presentation",
+        "content_alignment": "center",
+        "background_color": "#ffffff",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-top-only"
+      }
+    },
+    "collapsible_row_list_6k8Qyp": {
+      "type": "collapsible-row-list",
+      "blocks": {
+        "item_KqKgAr": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "Will The ZenBubble work on sensitive skin?",
+            "text": "<p>The ZenBubble Gel Cream is gentle and lightweight, ideal for sensitive and reactive skin types.</p>"
+          }
+        },
+        "item_GYLagX": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "Will this moisturizer help with acne?",
+            "text": "<p>The ZenBubble Gel Cream is formulated with a Phyto Marine Active that specifically helps regulate sebum production and traps excess oil to prevent pore clogging and breakouts.</p>"
+          }
+        },
+        "item_UWEeD9": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "Why does this moisturizer have an airless pump?",
+            "text": "<p>We use airless packaging to prevent product contamination, which helps actives remain at peak concentrations longer.</p>"
+          }
+        },
+        "item_wAMKQL": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "When do I apply my moisturizer? (Before or after serum/microneedling)?",
+            "text": "<p>The ZenBubble Gel Cream can be applied in the AM after your serums and before SPF. Apply in the PM after cleansing, GloPRO treatment and serum application.</p>"
+          }
+        },
+        "item_Pk6JPT": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "Is The ZenBubble safe to use while pregnant?",
+            "text": "<p>Yes! The ZenBubble Gel Cream is safe to use while pregnant or nursing.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_KqKgAr",
+        "item_GYLagX",
+        "item_UWEeD9",
+        "item_wAMKQL",
+        "item_Pk6JPT"
+      ],
+      "custom_css": [
+        ".collapsible-row-list {background-color: white;}"
+      ],
+      "settings": {
+        "title": "Have More Questions?",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "subheading": "",
+        "subheading_tag": "h3",
+        "subheading_font_class": "fs-heading-5-base",
+        "heading_alignment": "center",
+        "item_heading_font": "heading",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "full",
+        "custom_content_width": 1000
+      }
+    },
+    "custom_css_js_8xrdEb": {
+      "type": "custom-css-js",
+      "blocks": {
+        "custom_bg_css_4Gca8b": {
+          "type": "custom_bg_css",
+          "settings": {
+            "custom_bg_css": "background: rgb(245,197,198);\nbackground: -moz-linear-gradient(180deg, rgba(245,197,198,1) 0%, rgba(247,207,210,1) 25%, rgba(242,170,178,1) 47%, rgba(247,207,210,1) 66%, rgba(242,170,178,1) 86%, rgba(237,199,198,1) 100%);\nbackground: -webkit-linear-gradient(180deg, rgba(245,197,198,1) 0%, rgba(247,207,210,1) 25%, rgba(242,170,178,1) 47%, rgba(247,207,210,1) 66%, rgba(242,170,178,1) 86%, rgba(237,199,198,1) 100%);\nbackground: linear-gradient(180deg, rgba(245,197,198,1) 0%, rgba(247,207,210,1) 25%, rgba(242,170,178,1) 47%, rgba(247,207,210,1) 66%, rgba(242,170,178,1) 86%, rgba(237,199,198,1) 100%);\nfilter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\"#f5c5c6\",endColorstr=\"#edc7c6\",GradientType=1);"
+          }
+        }
+      },
+      "block_order": [
+        "custom_bg_css_4Gca8b"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "image_hero_TngLhW",
+    "rich_text_47HDdq",
+    "featured_product_9Lqjdf",
+    "multi_column_fYqYUQ",
+    "rich_text_46g4XT",
+    "gallery_carousel_4PRPGB",
+    "image_hero_qx3N7q",
+    "rich_text_BVUmwi",
+    "rich_text_qCapMD",
+    "video_LRpVFw",
+    "multi_column_kmJUBa",
+    "quote_K9wArk",
+    "multi_column_FTjnRw",
+    "image_with_text_split_LNikNX",
+    "collapsible_row_list_6k8Qyp",
+    "custom_css_js_8xrdEb"
+  ]
+}

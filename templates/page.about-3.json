@@ -1,0 +1,336 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "image_hero": {
+      "type": "image-hero",
+      "blocks": {
+        "accent": {
+          "type": "accent",
+          "settings": {
+            "accent": "Accent"
+          }
+        },
+        "spacer_1": {
+          "type": "spacer",
+          "settings": {
+            "space": 64
+          }
+        },
+        "spacer_2": {
+          "type": "spacer",
+          "settings": {
+            "space": 64
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Image hero",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "spacer_3": {
+          "type": "spacer",
+          "settings": {
+            "space": 64
+          }
+        },
+        "spacer_4": {
+          "type": "spacer",
+          "settings": {
+            "space": 64
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Display a featured image paired with text to introduce your store.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "accent",
+        "spacer_1",
+        "spacer_2",
+        "heading",
+        "spacer_3",
+        "spacer_4",
+        "text"
+      ],
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 70,
+        "mobile_height": 60,
+        "focal_point": "center",
+        "mobile_focal_point": "center",
+        "media_link": "",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 40,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-bottom-only"
+      }
+    },
+    "image_text_1": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Image with text",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Add text about your store or brand.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "image": {
+          "type": "image",
+          "settings": {
+            "image_size": 50,
+            "image_size_mobile": 50
+          }
+        }
+      },
+      "block_order": ["heading", "text", "image"],
+      "settings": {
+        "image_position": "right",
+        "text_alignment": "left",
+        "aspect_ratio": "square",
+        "focal_point": "center",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "center",
+        "background_color": "",
+        "text_color": "#706b5f",
+        "button_background_color": "#6b5876",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "image_text_2": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Image with text",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        },
+        "text_1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Add text about your store or brand.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "spacer_1": {
+          "type": "spacer",
+          "settings": {
+            "space": 4
+          }
+        },
+        "border": {
+          "type": "border",
+          "settings": {}
+        },
+        "spacer_2": {
+          "type": "spacer",
+          "settings": {
+            "space": 4
+          }
+        },
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Location",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-4-base"
+          }
+        },
+        "text_2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Address<br/>City<br/>Country</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_1": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "Button",
+            "button_style": "btn--callout"
+          }
+        },
+        "button_2": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "Button",
+            "button_style": "btn--callout"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text_1",
+        "spacer_1",
+        "border",
+        "spacer_2",
+        "subheading",
+        "text_2",
+        "button_1",
+        "button_2"
+      ],
+      "settings": {
+        "image_position": "left",
+        "text_alignment": "left",
+        "aspect_ratio": "square",
+        "focal_point": "center",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "center",
+        "background_color": "rgba(0,0,0,0)",
+        "text_color": "#706b5f",
+        "button_background_color": "#706b5f",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "image_text_3": {
+      "type": "image-with-text",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+            "image_size": 80,
+            "image_size_mobile": 70
+          }
+        },
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Add text about your store or brand.",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "spacer": {
+          "type": "spacer",
+          "settings": {
+            "space": 4
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "Button",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": ["image", "subheading", "spacer", "button"],
+      "settings": {
+        "image_position": "right",
+        "text_alignment": "center",
+        "aspect_ratio": "square",
+        "focal_point": "center",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "center",
+        "background_color": "",
+        "text_color": "#706b5f",
+        "button_background_color": "#6b5876",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_2": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Contact us",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Have a question? We're here to help.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "Get in touch",
+            "button_style": "btn--callout"
+          }
+        }
+      },
+      "block_order": ["heading", "text", "button"],
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "solid",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_hero",
+    "image_text_1",
+    "image_text_2",
+    "image_text_3",
+    "rich_text_2"
+  ]
+}

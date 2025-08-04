@@ -1,0 +1,1182 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "full",
+        "custom_content_width": 1000
+      }
+    },
+    "image_hero_TngLhW": {
+      "type": "image-hero",
+      "blocks": {
+        "accent_bgTrUF": {
+          "type": "accent",
+          "disabled": true,
+          "settings": {
+            "accent": "Accent"
+          }
+        },
+        "heading_nYBxf6": {
+          "type": "heading",
+          "settings": {
+            "title": "The Eyelighter Concentrate",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "text_fj4cGW": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>SKINCARE YOUR MAKEUP LOVES</strong></em></p>",
+            "text_font_class": "fs-body-200"
+          }
+        },
+        "button_ULjtfM": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/the-eyelighter-concentrate",
+            "link_text": "Shop Eyelighter",
+            "button_style": "btn--primary"
+          }
+        },
+        "play_button_XjzthL": {
+          "type": "play-button",
+          "disabled": true,
+          "settings": {
+            "video_source": "shopify",
+            "video_url": "",
+            "aspect_ratio": "square",
+            "text": "Watch now",
+            "icon_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "accent_bgTrUF",
+        "heading_nYBxf6",
+        "text_fj4cGW",
+        "button_ULjtfM",
+        "play_button_XjzthL"
+      ],
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "center_flex-start",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "grid_8CK4t3": {
+      "type": "grid",
+      "blocks": {
+        "item_iHfGbj": {
+          "type": "item",
+          "settings": {
+            "width": "33",
+            "height": 580,
+            "mobile_height": 500,
+            "image": "shopify://shop_images/IlluminizingPackshot_1a9cdbda-cfce-4789-a156-2e8121230a09.png",
+            "media_fit": "contain",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "text_position": "center_flex-end",
+            "accent": "",
+            "title": "Illuminizing Blendrops™",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-3-base",
+            "subheading": "<p>Sun-Kissed Finish Drops</p>",
+            "subheading_tag": "h4",
+            "subheading_font_class": "fs-heading-6-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link": "#",
+            "link_text": "Add To Bag | $38",
+            "button_style": "btn--primary",
+            "background_color": "",
+            "text_color": "#000000",
+            "button_background_color": "#000000",
+            "button_text_color": "#ffffff",
+            "color_overlay": "#000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
+          }
+        },
+        "item_b8f9zA": {
+          "type": "item",
+          "settings": {
+            "width": "33",
+            "height": 500,
+            "mobile_height": 500,
+            "image": "shopify://shop_images/IlluminizingPackshot_1a9cdbda-cfce-4789-a156-2e8121230a09.png",
+            "media_fit": "contain",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "text_position": "center_flex-end",
+            "accent": "",
+            "title": "Grid item",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-2-base",
+            "subheading": "<p>Perfect for lookbooks and editorial photography</p>",
+            "subheading_tag": "h4",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary",
+            "background_color": "",
+            "text_color": "#FFFFFF",
+            "button_background_color": "#FFFFFF",
+            "button_text_color": "#000000",
+            "color_overlay": "#000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
+          }
+        },
+        "item_E3tr77": {
+          "type": "item",
+          "settings": {
+            "width": "33",
+            "height": 500,
+            "mobile_height": 500,
+            "image": "shopify://shop_images/IlluminizingPackshot_213f26a9-1c18-4566-94dd-9d2ce9d0f9f7.png",
+            "media_fit": "contain",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "text_position": "center_flex-end",
+            "accent": "",
+            "title": "Grid item",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-2-base",
+            "subheading": "",
+            "subheading_tag": "h4",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link": "#",
+            "link_text": "BUY IT",
+            "button_style": "btn--secondary",
+            "background_color": "",
+            "text_color": "#FFFFFF",
+            "button_background_color": "#FFFFFF",
+            "button_text_color": "#000000",
+            "color_overlay": "#000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_iHfGbj",
+        "item_b8f9zA",
+        "item_E3tr77"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "content_alignment": "left",
+        "enable_animation": true,
+        "full_width": false,
+        "spacing": 24,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "image_row_section_rVyaYn": {
+      "type": "image-row-section",
+      "settings": {
+        "background_color": "rgba(0,0,0,0)",
+        "imagerow_1": "shopify://shop_images/BronzingBA.png",
+        "header_text_1": "<div style=\"line-height:110%;text-transform:uppercase;\">Sun-Kissed Glow</div>",
+        "subheader_text_1": "<div align=\"center\"><product-form class=\"product-form\">\n<div class=\"product-form__error-message-wrapper\" role=\"alert\" hidden=\"\">\n<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-error\" viewbox=\"0 0 13 13\"> <circle cx=\"6.5\" cy=\"6.50049\" r=\"5.5\" stroke=\"white\" stroke-width=\"2\"></circle> <circle cx=\"6.5\" cy=\"6.5\" r=\"5.5\" fill=\"#EB001B\" stroke=\"#EB001B\" stroke-width=\"0.7\"></circle> <path d=\"M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z\" fill=\"white\"></path> <path d=\"M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z\" fill=\"white\" stroke=\"#EB001B\" stroke-width=\"0.7\"> </path></svg> <span class=\"product-form__error-message\"></span>\n</div>\n<form method=\"post\" action=\"/cart/add\" accept-charset=\"UTF-8\" class=\"quick-product-form\" enctype=\"multipart/form-data\" novalidate=\"novalidate\" data-type=\"add-to-cart-form\">\n<input type=\"hidden\" name=\"form_type\" value=\"product\"><input type=\"hidden\" name=\"utf8\" value=\"✓\"><input type=\"hidden\" name=\"id\" value=\"10686908367041\"> <button type=\"submit\" name=\"add\" class=\"button button--primary\"> <span>Add To Bag | $38</span></button>\n<div class=\"loading-overlay__spinner hidden\"><svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"spinner\" viewbox=\"0 0 66 66\" xmlns=\"http://www.w3.org/2000/svg\"> <circle class=\"path\" fill=\"none\" stroke-width=\"6\" cx=\"33\" cy=\"33\" r=\"30\"></circle> </svg></div>\n</form></product-form></div>",
+        "imagerow_image_1_width": 90,
+        "imagerow_image_1_mobile_width": 100,
+        "imagerow_image_1_link": "",
+        "imagerow_image_1_ext_link": "",
+        "imagerow_2": "shopify://shop_images/IlluminizingBA.png",
+        "header_text_2": "<div style=\"line-height:110%;text-transform:uppercase;\">Champagne Shimmer</div>",
+        "subheader_text_2": "<div align=\"center\"><product-form class=\"product-form\">\n<div class=\"product-form__error-message-wrapper\" role=\"alert\" hidden=\"\">\n<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-error\" viewbox=\"0 0 13 13\"> <circle cx=\"6.5\" cy=\"6.50049\" r=\"5.5\" stroke=\"white\" stroke-width=\"2\"></circle> <circle cx=\"6.5\" cy=\"6.5\" r=\"5.5\" fill=\"#EB001B\" stroke=\"#EB001B\" stroke-width=\"0.7\"></circle> <path d=\"M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z\" fill=\"white\"></path> <path d=\"M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z\" fill=\"white\" stroke=\"#EB001B\" stroke-width=\"0.7\"> </path></svg> <span class=\"product-form__error-message\"></span>\n</div>\n<form method=\"post\" action=\"/cart/add\" accept-charset=\"UTF-8\" class=\"quick-product-form\" enctype=\"multipart/form-data\" novalidate=\"novalidate\" data-type=\"add-to-cart-form\">\n<input type=\"hidden\" name=\"form_type\" value=\"product\"><input type=\"hidden\" name=\"utf8\" value=\"✓\"><input type=\"hidden\" name=\"id\" value=\"47660810502337\"> <button type=\"submit\" name=\"add\" class=\"button button--primary\"> <span>Add To Bag | $38</span></button>\n<div class=\"loading-overlay__spinner hidden\"><svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"spinner\" viewbox=\"0 0 66 66\" xmlns=\"http://www.w3.org/2000/svg\"> <circle class=\"path\" fill=\"none\" stroke-width=\"6\" cx=\"33\" cy=\"33\" r=\"30\"></circle> </svg></div>\n</form></product-form></div>",
+        "imagerow_image_2_width": 90,
+        "imagerow_image_2_mobile_width": 100,
+        "imagerow_image_2_link": "",
+        "imagerow_image_2_ext_link": "",
+        "imagerow_3": "shopify://shop_images/PerfectingBA.png",
+        "header_text_3": "<div style=\"line-height:110%;text-transform:uppercase;\">Filtered Finish</div>",
+        "subheader_text_3": "<div align=\"center\"><product-form class=\"product-form\">\n<div class=\"product-form__error-message-wrapper\" role=\"alert\" hidden=\"\">\n<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-error\" viewbox=\"0 0 13 13\"> <circle cx=\"6.5\" cy=\"6.50049\" r=\"5.5\" stroke=\"white\" stroke-width=\"2\"></circle> <circle cx=\"6.5\" cy=\"6.5\" r=\"5.5\" fill=\"#EB001B\" stroke=\"#EB001B\" stroke-width=\"0.7\"></circle> <path d=\"M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z\" fill=\"white\"></path> <path d=\"M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z\" fill=\"white\" stroke=\"#EB001B\" stroke-width=\"0.7\"> </path></svg> <span class=\"product-form__error-message\"></span>\n</div>\n<form method=\"post\" action=\"/cart/add\" accept-charset=\"UTF-8\" class=\"quick-product-form\" enctype=\"multipart/form-data\" novalidate=\"novalidate\" data-type=\"add-to-cart-form\">\n<input type=\"hidden\" name=\"form_type\" value=\"product\"><input type=\"hidden\" name=\"utf8\" value=\"✓\"><input type=\"hidden\" name=\"id\" value=\"47660810436801\"> <button type=\"submit\" name=\"add\" class=\"button button--primary\"> <span>Add To Bag | $38</span></button>\n<div class=\"loading-overlay__spinner hidden\"><svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"spinner\" viewbox=\"0 0 66 66\" xmlns=\"http://www.w3.org/2000/svg\"> <circle class=\"path\" fill=\"none\" stroke-width=\"6\" cx=\"33\" cy=\"33\" r=\"30\"></circle> </svg></div>\n</form></product-form></div>",
+        "imagerow_image_3_width": 90,
+        "imagerow_image_3_mobile_width": 100,
+        "imagerow_image_3_link": "",
+        "imagerow_image_3_ext_link": "",
+        "header_text_4": "",
+        "subheader_text_4": "",
+        "imagerow_image_4_width": 100,
+        "imagerow_image_4_mobile_width": 100,
+        "imagerow_image_4_link": "",
+        "imagerow_image_4_ext_link": "",
+        "imagerow_t_margin": 1,
+        "imagerow_b_margin": 1,
+        "imagerow_side_padding": 1,
+        "imagerow_gap_padding": 1,
+        "imagerow_mobile_gap_padding": 1,
+        "imagerow_justification": "flex-start",
+        "imagerow_cell_alignment": "flex-start",
+        "imagerow_mobile_columns": "1",
+        "header_level": "h1",
+        "header_align": "left",
+        "header_color": "#000000",
+        "header_font_size": 1.6,
+        "header_mobile_font_size": 1.6,
+        "header_font_weight": "400",
+        "header_font_style": "default",
+        "header_text_decoration": "default",
+        "header_t_margin": 1,
+        "header_b_margin": 1,
+        "header_side_padding": 1,
+        "header_mobile_side_padding": 1,
+        "subheader_align": "left",
+        "subheader_color": "#000000",
+        "subheader_font_size": 1.6,
+        "subheader_mobile_font_size": 1.6,
+        "subheader_font_weight": "400",
+        "subheader_font_style": "default",
+        "subheader_text_decoration": "default",
+        "subheader_t_margin": 1,
+        "subheader_b_margin": 1,
+        "subheader_side_padding": 1,
+        "subheader_mobile_side_padding": 1,
+        "enable_header": false,
+        "section_header_background_color": "",
+        "section_header_use_max_width": false,
+        "section_header_max_width": 120,
+        "section_header_t_padding": 1,
+        "section_header_b_padding": 1,
+        "section_header_text": "",
+        "section_header_level": "h1",
+        "section_header_align": "left",
+        "section_header_color": "#000000",
+        "section_header_font_size": 1.6,
+        "section_header_mobile_font_size": 1.6,
+        "section_header_font_weight": "400",
+        "section_header_text_decoration": "default",
+        "section_header_t_margin": 1,
+        "section_header_b_margin": 1,
+        "section_header_side_padding": 1,
+        "section_header_mobile_side_padding": 1,
+        "section_header_subheader_text": "",
+        "section_subheader_align": "left",
+        "section_subheader_color": "#000000",
+        "section_subheader_font_size": 1.6,
+        "section_subheader_mobile_font_size": 1.6,
+        "section_subheader_font_weight": "400",
+        "section_subheader_text_decoration": "default",
+        "section_subheader_t_margin": 1,
+        "section_subheader_b_margin": 1,
+        "section_subheader_side_padding": 1,
+        "section_subheader_mobile_side_padding": 1,
+        "enable_border": false,
+        "border_background_color": "",
+        "border_use_max_width": false,
+        "border_max_width": 120,
+        "border_t_padding": 1,
+        "border_b_padding": 1,
+        "border_size": 0.1,
+        "border_color": "#000000",
+        "border_align": "left",
+        "border_width": "33%",
+        "border_t_margin": 1,
+        "border_b_margin": 1,
+        "border_side_padding": 1,
+        "border_mobile_side_padding": 1
+      }
+    },
+    "custom_liquid_WPDFQV": {
+      "type": "custom-liquid",
+      "custom_css": [],
+      "settings": {
+        "custom_liquid": "<div id='product-component-1743602739922'></div>\n<script type=\"text/javascript\">\n/*<![CDATA[*/\n(function () {\n  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';\n  if (window.ShopifyBuy) {\n    if (window.ShopifyBuy.UI) {\n      ShopifyBuyInit();\n    } else {\n      loadScript();\n    }\n  } else {\n    loadScript();\n  }\n  function loadScript() {\n    var script = document.createElement('script');\n    script.async = true;\n    script.src = scriptURL;\n    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);\n    script.onload = ShopifyBuyInit;\n  }\n  function ShopifyBuyInit() {\n    var client = ShopifyBuy.buildClient({\n      domain: 'glopro-beauty.myshopify.com',\n      storefrontAccessToken: '3174d06f1ac063ced8a151adb1a6fc1e',\n    });\n    ShopifyBuy.UI.onReady(client).then(function (ui) {\n      ui.createComponent('product', {\n        id: '10494111219905',\n        node: document.getElementById('product-component-1743602739922'),\n        moneyFormat: '%24%7B%7Bamount%7D%7D',\n        options: {\n  \"product\": {\n    \"styles\": {\n      \"product\": {\n        \"@media (min-width: 601px)\": {\n          \"max-width\": \"calc(25% - 20px)\",\n          \"margin-left\": \"20px\",\n          \"margin-bottom\": \"50px\"\n        }\n      },\n      \"button\": {\n        \"font-family\": \"Montserrat, sans-serif\",\n        \"font-weight\": \"bold\",\n        \"font-size\": \"16px\",\n        \"padding-top\": \"16px\",\n        \"padding-bottom\": \"16px\",\n        \":hover\": {\n          \"background-color\": \"#111111\"\n        },\n        \"background-color\": \"#0a0a0a\",\n        \":focus\": {\n          \"background-color\": \"#111111\"\n        },\n        \"border-radius\": \"1px\",\n        \"padding-left\": \"16px\",\n        \"padding-right\": \"16px\"\n      },\n      \"quantityInput\": {\n        \"font-size\": \"16px\",\n        \"padding-top\": \"16px\",\n        \"padding-bottom\": \"16px\"\n      }\n    },\n    \"contents\": {\n      \"img\": false,\n      \"title\": false,\n      \"price\": false\n    },\n    \"text\": {\n      \"button\": \"Add to cart\"\n    },\n    \"googleFonts\": [\n      \"Montserrat\"\n    ]\n  },\n  \"productSet\": {\n    \"styles\": {\n      \"products\": {\n        \"@media (min-width: 601px)\": {\n          \"margin-left\": \"-20px\"\n        }\n      }\n    }\n  },\n  \"modalProduct\": {\n    \"contents\": {\n      \"img\": false,\n      \"imgWithCarousel\": true,\n      \"button\": false,\n      \"buttonWithQuantity\": true\n    },\n    \"styles\": {\n      \"product\": {\n        \"@media (min-width: 601px)\": {\n          \"max-width\": \"100%\",\n          \"margin-left\": \"0px\",\n          \"margin-bottom\": \"0px\"\n        }\n      },\n      \"button\": {\n        \"font-family\": \"Montserrat, sans-serif\",\n        \"font-weight\": \"bold\",\n        \"font-size\": \"16px\",\n        \"padding-top\": \"16px\",\n        \"padding-bottom\": \"16px\",\n        \":hover\": {\n          \"background-color\": \"#111111\"\n        },\n        \"background-color\": \"#0a0a0a\",\n        \":focus\": {\n          \"background-color\": \"#111111\"\n        },\n        \"border-radius\": \"1px\",\n        \"padding-left\": \"16px\",\n        \"padding-right\": \"16px\"\n      },\n      \"quantityInput\": {\n        \"font-size\": \"16px\",\n        \"padding-top\": \"16px\",\n        \"padding-bottom\": \"16px\"\n      }\n    },\n    \"googleFonts\": [\n      \"Montserrat\"\n    ],\n    \"text\": {\n      \"button\": \"Add to cart\"\n    }\n  },\n  \"option\": {},\n  \"cart\": {\n    \"styles\": {\n      \"button\": {\n        \"font-family\": \"Montserrat, sans-serif\",\n        \"font-weight\": \"bold\",\n        \"font-size\": \"16px\",\n        \"padding-top\": \"16px\",\n        \"padding-bottom\": \"16px\",\n        \":hover\": {\n          \"background-color\": \"#111111\"\n        },\n        \"background-color\": \"#0a0a0a\",\n        \":focus\": {\n          \"background-color\": \"#111111\"\n        },\n        \"border-radius\": \"1px\"\n      }\n    },\n    \"text\": {\n      \"total\": \"Subtotal\",\n      \"button\": \"Checkout\"\n    },\n    \"googleFonts\": [\n      \"Montserrat\"\n    ]\n  },\n  \"toggle\": {\n    \"styles\": {\n      \"toggle\": {\n        \"font-family\": \"Montserrat, sans-serif\",\n        \"font-weight\": \"bold\",\n        \"background-color\": \"#0a0a0a\",\n        \":hover\": {\n          \"background-color\": \"#111111\"\n        },\n        \":focus\": {\n          \"background-color\": \"#111111\"\n        }\n      },\n      \"count\": {\n        \"font-size\": \"16px\"\n      }\n    },\n    \"googleFonts\": [\n      \"Montserrat\"\n    ]\n  }\n},\n      });\n    });\n  }\n})();\n/*]]>*/\n</script>",
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only"
+      }
+    },
+    "featured_product_9Lqjdf": {
+      "type": "featured-product",
+      "blocks": {
+        "product_header_EnVFrP": {
+          "type": "product_header",
+          "settings": {
+            "title_tag": "h2",
+            "show_divider": false,
+            "show_vendor": false,
+            "show_sku": false,
+            "show_discount": true,
+            "discount_format": "percent_off",
+            "show_product_rating": true,
+            "show_sale_badge": true,
+            "show_custom_badges": true
+          }
+        },
+        "product_callouts_ci4M4H": {
+          "type": "product_callouts",
+          "disabled": true,
+          "settings": {
+            "add_box": false,
+            "add_dividers": true,
+            "icon_1": "package-closed",
+            "text_1": "<p>Free shipping over $50</p>",
+            "icon_2": "paper-airplane",
+            "text_2": "<p>Free Returns & Exchanges</p>",
+            "icon_3": "chat",
+            "text_3": "<p>Need help? <a href=\"/pages/contact\">Contact us</a></p>",
+            "icon_4": "none",
+            "text_4": "",
+            "icon_5": "none",
+            "text_5": "",
+            "icon_6": "chat",
+            "text_6": "",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false,
+            "collapsible_row_title": "Callouts"
+          }
+        },
+        "description_BptgQd": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "title_tag": "h3",
+            "text_font_class": "fs-body-100",
+            "column_placement": "right",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
+          }
+        },
+        "variant_picker_gr8pHc": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "variant_popup_option": "Size",
+            "variant_popup_icon": "none",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": "",
+            "swatch_size": "medium",
+            "chip_layout": "3col"
+          }
+        },
+        "custom_liquid_DecD9a": {
+          "type": "custom_liquid",
+          "settings": {
+            "column_placement": "right",
+            "custom_liquid": "<table>\n<tr>\n<td><img src=\"https://cdn.shopify.com/s/files/1/1581/6229/files/Primes.png?v=1645216564\" alt=\"Primes for creaseless makeup application\" height=\"70\" width=\"70\"></td>\n<td style=\"padding-left:20px;\"> PRIMES FOR CREASELESS MAKEUP APPLICATION</td>\n</tr>\n<tr>\n<td><img src=\"https://cdn.shopify.com/s/files/1/1581/6229/files/Brightens-Dark-Circles.png?v=1645216563\" alt=\"Brightens dark circles\" height=\"70\" width=\"70\"></td>\n<td style=\"padding-left:20px;\"> BRIGHTENS DARK CIRCLES</td>\n</tr>\n<tr>\n<td><img src=\"https://cdn.shopify.com/s/files/1/1581/6229/files/Instantly_Depuffs.png?v=1645216564\" alt=\"Instantly depuffs\" height=\"70\" width=\"70\"></td>\n<td style=\"padding-left:20px;\"> INSTANTLY DEPUFFS</td>\n</tr>\n</table>"
+          }
+        },
+        "quantity_selector_c3XmyQ": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons_F7ienm": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        }
+      },
+      "block_order": [
+        "product_header_EnVFrP",
+        "product_callouts_ci4M4H",
+        "description_BptgQd",
+        "variant_picker_gr8pHc",
+        "custom_liquid_DecD9a",
+        "quantity_selector_c3XmyQ",
+        "buy_buttons_F7ienm"
+      ],
+      "settings": {
+        "featured_product": "the-eyelighter-concentrate",
+        "show_featured_media_first": false,
+        "gallery_size": "medium",
+        "enable_video_looping": true,
+        "enable_product_lightbox": false,
+        "image_aspect_ratio": "natural",
+        "enable_gift_card_recipient": false,
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "custom_liquid_CxKxkJ": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "div {display: flex; justify-content: center;}"
+      ],
+      "settings": {
+        "custom_liquid": "<img src=\"https://cdn.shopify.com/s/files/1/1581/6229/files/Eyelighter_PEP_ClinicallyProven-HL.png?v=1645217176\" alt=\"clinically proven\" max-width=\"85%\" height=\"100%\">",
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only"
+      }
+    },
+    "rich_text_46g4XT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JBdx7C": {
+          "type": "heading",
+          "settings": {
+            "title": "IMPROVES FINE LINES, BRIGHTNESS,",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        },
+        "heading_pXtxFF": {
+          "type": "heading",
+          "settings": {
+            "title": "SMOOTHNESS, PUFFINESS & DARK CIRCLES",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JBdx7C",
+        "heading_pXtxFF"
+      ],
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "gallery_carousel_4PRPGB": {
+      "type": "gallery-carousel",
+      "blocks": {
+        "image_MiFUpR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Eyelighter_9_B_A.jpg",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": ""
+          }
+        },
+        "image_yqRHmf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Eyelighter_8_B_A.jpg",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": ""
+          }
+        },
+        "image_fdN4YQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Eyelighter_7_B_A.jpg",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_MiFUpR",
+        "image_yqRHmf",
+        "image_fdN4YQ"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "shopify://products/the-eyelighter-concentrate",
+        "link_text": "",
+        "columns": "3",
+        "mobile_columns": "1",
+        "loop_carousel": false,
+        "aspect_ratio": "square",
+        "image_caption_style": "overlay",
+        "image_caption_size": "fs-body-100",
+        "overlay_text_background_style": "gradient",
+        "overlay_text_color": "#ffffff",
+        "overlay_text_background": "#000000",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only"
+      }
+    },
+    "rich_text_NFyxHV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wpMfeF": {
+          "type": "heading",
+          "settings": {
+            "title": "CREASE LESS. SMILE MORE.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        },
+        "button_Nq4bR6": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/the-eyelighter-concentrate",
+            "link_text": "Meet Concealer's BFF",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wpMfeF",
+        "button_Nq4bR6"
+      ],
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "video_LRpVFw": {
+      "type": "video",
+      "blocks": {
+        "play_button_8kqXRA": {
+          "type": "play-button",
+          "settings": {
+            "text": "Watch now",
+            "button_layout": "minimal",
+            "icon_style": "dark"
+          }
+        }
+      },
+      "block_order": [
+        "play_button_8kqXRA"
+      ],
+      "settings": {
+        "video_source": "external",
+        "video_url": "https://vimeo.com/679327016",
+        "image": "shopify://shop_images/EyelighterHowTO_VideoCover.jpg",
+        "loop": false,
+        "media_aspect_ratio": "landscape_wide_alt",
+        "focal_point": "image_presentation",
+        "text_position": "center_center",
+        "text_position_mobile": "center",
+        "button_background_color": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_text": "#ffffff",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_d6qAmK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_aBC66F": {
+          "type": "heading",
+          "settings": {
+            "title": "POWERHOUSE INGREDIENTS",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading_aBC66F"
+      ],
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "image_hero_W3eJfz": {
+      "type": "image-hero",
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "image": "shopify://shop_images/Eyelighter_PEP_IngredientsGoop_Desktop3.png",
+        "image_mobile": "shopify://shop_images/Eyelighter_PEP_IngredientsGoop_Mobile5.png",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_RH8x8P": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GirK8x": {
+          "type": "heading",
+          "settings": {
+            "title": "A CREASELESS, BRIGHTENING UNDER-EYE PRIMER?",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        },
+        "heading_4Utctd": {
+          "type": "heading",
+          "settings": {
+            "title": "WE'RE OBSESSED.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GirK8x",
+        "heading_4Utctd"
+      ],
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "custom",
+        "custom_content_width": 1000
+      }
+    },
+    "multi_column_GXEJMP": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_MF8mMy": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/Eyelighter_PEP_Step-1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_ejGikm": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/Eyelighter_PEP_Step-2.jpg",
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_CEnXdi": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/Eyelighter_PEP_Step-3.jpg",
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_MF8mMy",
+        "image_column_ejGikm",
+        "image_column_CEnXdi"
+      ],
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "center",
+        "content_background_padding": "medium",
+        "columns": "3",
+        "column_spacing": 20,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": true,
+        "columns_mobile": "1",
+        "column_spacing_mobile": 8,
+        "row_spacing_mobile": 8,
+        "column_alignment_mobile": "center",
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "quote_K9wArk": {
+      "type": "quote",
+      "blocks": {
+        "quote_yBhaUz": {
+          "type": "quote",
+          "settings": {
+            "quote": "<h5><strong>★ ★ ★ ★ ★<br/>MUST HAVE EYE CREAM</strong><br/>\"I LOVE this eye cream. It instantly plumps up the skin, lines are smoother and less noticeable and it brightens skin. The applicator makes it easy to spread a thin layer over and under the eyelid. You won't be disappointed with this purchase!\"</h5>",
+            "title": "Shandasage",
+            "quote_tag": "h4",
+            "font_size": "small"
+          }
+        },
+        "quote_hL7L7M": {
+          "type": "quote",
+          "settings": {
+            "quote": "<h5><strong>★ ★ ★ ★ ★<br/>MY NEW BEST FRIEND</strong><br/>\"This product is my new best friend. Instantly makes me look more awake and feels amazing! The applicator is my favorite part as it adds a cooling sensation and helps apply product evenly. I especially love for no make up days!\"</h5>",
+            "title": "Garci236",
+            "quote_tag": "h4",
+            "font_size": "small"
+          }
+        },
+        "quote_4khDat": {
+          "type": "quote",
+          "settings": {
+            "quote": "<h5><strong>★ ★ ★ ★ ★<br/>LOVE THE APPLICATOR</strong><br/>\"I keep it in my fridge so it feels extra refreshing when I apply around my eyes. Obsessed with the applicator - it’s so well thought out. Love it!\"</h5>",
+            "title": "Theakshoww",
+            "quote_tag": "h4",
+            "font_size": "small"
+          }
+        },
+        "quote_mTtRyJ": {
+          "type": "quote",
+          "settings": {
+            "quote": "<h5><strong>★ ★ ★ ★ ★<br/>LOVE IT!!!</strong><br/>\"I love this Eyelighter... first off it is doing its job! I love the cool applicator especially in the mornings. It feels so good to rub it under my eyes! I like that the application is easy and not messy. You don't have to use much each time. I see the darker skin under my eyes lightening and it's only been a couple of weeks. I will be purchasing this product again!!!\"</h5>",
+            "title": "Mochahontis",
+            "quote_tag": "h4",
+            "font_size": "small"
+          }
+        }
+      },
+      "block_order": [
+        "quote_yBhaUz",
+        "quote_hL7L7M",
+        "quote_4khDat",
+        "quote_mTtRyJ"
+      ],
+      "settings": {
+        "autoplay_enabled": false,
+        "autoplay_delay": 15,
+        "pagination_style": "dots",
+        "font_choice": "body",
+        "enable_animation": true,
+        "divider_style": "solid",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_axRyEk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PTGE9N": {
+          "type": "heading",
+          "settings": {
+            "title": "INSTANT & LONG-TERM RESULTS",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PTGE9N"
+      ],
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "solid",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "image_hero_tRktCa": {
+      "type": "image-hero",
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "image": "shopify://shop_images/Eyelighter_PEP_Instant-LongTerm-Desktop2.png",
+        "image_mobile": "shopify://shop_images/Eyelighter_PEP_Instant-LongTerm-Mobile3_shorter.png",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_BVUmwi": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wGPU73": {
+          "type": "heading",
+          "settings": {
+            "title": "MULTITASKING HEROES",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        },
+        "heading_Xcqt9Y": {
+          "type": "heading",
+          "settings": {
+            "title": "YOUR MAKEUP LOVES",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        },
+        "subheading_QAb8gP": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "YOUR MAKEUP LOVES",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-4-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wGPU73",
+        "heading_Xcqt9Y",
+        "subheading_QAb8gP"
+      ],
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "solid",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "video_3Q6TDe": {
+      "type": "video",
+      "blocks": {
+        "play_button_hBqwNQ": {
+          "type": "play-button",
+          "settings": {
+            "text": "Watch now",
+            "button_layout": "minimal",
+            "icon_style": "dark"
+          }
+        }
+      },
+      "block_order": [
+        "play_button_hBqwNQ"
+      ],
+      "settings": {
+        "video_source": "external",
+        "video_url": "https://vimeo.com/679329016",
+        "image": "shopify://shop_images/MTH_VideoCover.jpg",
+        "loop": false,
+        "media_aspect_ratio": "landscape_wide_alt",
+        "focal_point": "image_presentation",
+        "text_position": "center_center",
+        "text_position_mobile": "center",
+        "button_background_color": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_text": "#ffffff",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "image_with_text_split_LNikNX": {
+      "type": "image-with-text-split",
+      "blocks": {
+        "heading_8eC9GY": {
+          "type": "heading",
+          "settings": {
+            "title": "The Best Makeup Primer Is In Your Skincare",
+            "heading_tag": "h4",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        },
+        "subheading_6JkwJm": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Prime, brighten and depuff in one step",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "spacer_HPynHj": {
+          "type": "spacer",
+          "settings": {
+            "space": 4
+          }
+        },
+        "button_kWDcfz": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://blogs/skincare-blog/what-is-eyelighting",
+            "link_text": "Read More",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8eC9GY",
+        "subheading_6JkwJm",
+        "spacer_HPynHj",
+        "button_kWDcfz"
+      ],
+      "custom_css": [
+        ".image-with-text-split__text-container-subheading {text-wrap: balance;}",
+        ".image-with-text-split__text-container-heading {text-wrap: balance;}"
+      ],
+      "settings": {
+        "image_position": "left",
+        "image_mobile_position": "above-content",
+        "image_padding": "all-sides",
+        "image": "shopify://shop_images/Eyelighter_PEP_Blog_new.jpg",
+        "aspect_ratio": "natural",
+        "focal_point": "image_presentation",
+        "content_alignment": "center",
+        "background_color": "#ffffff",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_qCapMD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QPFm4c": {
+          "type": "heading",
+          "settings": {
+            "title": "PRO TIPS",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        },
+        "text_y66HkD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use alone AM/PM as an eye treatment or as a primer under your favorite concealer</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "text_CQbzaM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A little goes a long way, no need to pump twice</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "text_dxeBgX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair with The ZenBubble Gel Cream to team up with your makeup for an instant flawless finish</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QPFm4c",
+        "text_y66HkD",
+        "text_CQbzaM",
+        "text_dxeBgX"
+      ],
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only",
+        "content_width": "custom",
+        "custom_content_width": 900
+      }
+    },
+    "collapsible_row_list_6k8Qyp": {
+      "type": "collapsible-row-list",
+      "blocks": {
+        "item_KqKgAr": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "Can I use The Eyelighter Concentrate under my eyes before applying concealer?",
+            "text": "<p>Yes! Use alone as an eye treatment or as primer under concealer. The Eyelighter Concentrate primes skin for creaseless makeup application with smoothing Jojoba Elastomer.</p>"
+          }
+        },
+        "item_GYLagX": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "Can I use The Eyelighter while pregnant?",
+            "text": "<p>The Eyelighter contains a plant-powered retinol alternative we love and know you will too. While there are no retinoids in this formula, we recommend you consult your doctor or dermatologist first if pregnant or nursing.</p>"
+          }
+        },
+        "item_UWEeD9": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "Should I use this in the AM or PM?",
+            "text": "<p>Use The Eyelighter in the AM & PM after cleansing. Eyelighter may be used on its own or as a primer underneath makeup for a smooth finish.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_KqKgAr",
+        "item_GYLagX",
+        "item_UWEeD9"
+      ],
+      "custom_css": [
+        ".collapsible-row-list {background-color: white;}"
+      ],
+      "settings": {
+        "title": "Have More Questions?",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "subheading": "",
+        "subheading_tag": "h3",
+        "subheading_font_class": "fs-heading-5-base",
+        "heading_alignment": "center",
+        "item_heading_font": "heading",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "full",
+        "custom_content_width": 1000
+      }
+    },
+    "custom_css_js_XeFBck": {
+      "type": "custom-css-js",
+      "blocks": {
+        "custom_js_EKWgGy": {
+          "type": "custom_js",
+          "settings": {
+            "custom_js": ""
+          }
+        },
+        "custom_css_9zUUqt": {
+          "type": "custom_css",
+          "settings": {
+            "custom_css": "#shopify-section-template--23179348672705__rich_text_zLLDrj > div > div > h2:nth-child(2),\n#shopify-section-template--23179348672705__rich_text_RH8x8P > div > div > h2:nth-child(2){\n  font-style: italic;\n}\n.product-form__shop-pay.fs-body-75{\nbackground: transparent;\n}"
+          }
+        },
+        "custom_bg_css_VWxE7h": {
+          "type": "custom_bg_css",
+          "settings": {
+            "custom_bg_css": "background: rgb(252,239,205);\nbackground: -moz-linear-gradient(225deg, rgba(252,239,205,1) 5%, rgba(248,170,235,1) 28%, rgba(244,150,201,1) 44%, rgba(252,175,201,1) 60%, rgba(248,170,235,1) 82%, rgba(255,210,174,1) 98%);\nbackground: -webkit-linear-gradient(225deg, rgba(252,239,205,1) 5%, rgba(248,170,235,1) 28%, rgba(244,150,201,1) 44%, rgba(252,175,201,1) 60%, rgba(248,170,235,1) 82%, rgba(255,210,174,1) 98%);\nbackground: linear-gradient(225deg, rgba(252,239,205,1) 5%, rgba(248,170,235,1) 28%, rgba(244,150,201,1) 44%, rgba(252,175,201,1) 60%, rgba(248,170,235,1) 82%, rgba(255,210,174,1) 98%);\nfilter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\"#fcefcd\",endColorstr=\"#ffd2ae\",GradientType=1);"
+          }
+        }
+      },
+      "block_order": [
+        "custom_js_EKWgGy",
+        "custom_css_9zUUqt",
+        "custom_bg_css_VWxE7h"
+      ],
+      "custom_css": [],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "image_hero_TngLhW",
+    "grid_8CK4t3",
+    "image_row_section_rVyaYn",
+    "custom_liquid_WPDFQV",
+    "featured_product_9Lqjdf",
+    "custom_liquid_CxKxkJ",
+    "rich_text_46g4XT",
+    "gallery_carousel_4PRPGB",
+    "rich_text_NFyxHV",
+    "video_LRpVFw",
+    "rich_text_d6qAmK",
+    "image_hero_W3eJfz",
+    "rich_text_RH8x8P",
+    "multi_column_GXEJMP",
+    "quote_K9wArk",
+    "rich_text_axRyEk",
+    "image_hero_tRktCa",
+    "rich_text_BVUmwi",
+    "video_3Q6TDe",
+    "image_with_text_split_LNikNX",
+    "rich_text_qCapMD",
+    "collapsible_row_list_6k8Qyp",
+    "custom_css_js_XeFBck"
+  ]
+}

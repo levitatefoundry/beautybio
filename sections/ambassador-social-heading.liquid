@@ -1,0 +1,37 @@
+<section class="ambassador-social-heading">
+  <div class="ambassador-star-container">
+    {% render "star-rating", rating: 5 %}
+    <p>Loved by 1,000+ Creators in BeautyBio</p>
+  </div>
+  <h2>Real Creators. Real Results.</h2>
+</section>
+
+<style>
+  .ambassador-social-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff5f3;
+  }
+
+  .ambassador-star-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Ambassador Social Heading",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Ambassador Social Heading",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}

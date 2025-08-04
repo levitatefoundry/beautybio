@@ -1,0 +1,127 @@
+<style>
+  .icon-column-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 40px 60px;
+    gap: 20px;
+  }
+
+  .ts-steps-title {
+    
+  }  
+
+  .ts-steps-subtitle {
+    max-width: 570px;
+  }
+
+  .ts-steps-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .ts-step-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 30%;
+    max-width: 284px;
+  }
+
+  .ts-step-number {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid #000000;
+  }
+
+  .ts-step-heading {
+    font-size: 16pt;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .ts-steps-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 50px;
+    }
+
+    .ts-step-column {
+      width: 100%;
+    }
+  }
+</style>
+
+<section class="icon-column-container">
+  <h2 class="ts-steps-title">{{ section.settings.heading }}</h2>
+  <p class="ts-steps-subtitle">{{ section.settings.subheading }}</p>
+  <div class="ts-steps-container">
+    {% for block in section.blocks %}
+      <div class="ts-step-column">
+        <span class="ts-step-number">
+          <img src="{{ block.settings.icon | image_url: width: 24, height: 24 }}" alt="icon" width="auto" height="auto"/>
+        </span>
+        <h2 class="ts-step-heading">{{ block.settings.step-heading }}</h2>
+        <p class="ts-step-body">{{ block.settings.step-text }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "TS 3 Steps",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Section Heading"
+      },
+      {
+        "type": "text",
+        "id": "subheading",
+        "label": "Subheading",
+        "default": "Section body"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "step",
+        "name": "Step",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Icon"
+          },
+          {
+            "type": "text",
+            "id": "step-heading",
+            "label": "Column heading",
+            "default": "Column heading"
+          },
+          {
+            "type": "text",
+            "id": "step-text",
+            "label": "Column text",
+            "default": "Column body"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Icon Columns",
+        "blocks": []
+      }
+    ]
+  }
+{% endschema %}

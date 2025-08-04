@@ -1,0 +1,693 @@
+{% comment %}
+  This file will update automatically, without warning, as new features are built.
+  Any edits are done at your own risk.
+
+  When a new version is released, you will find your previous
+  customizations renamed with the extension .backup.liquid.
+  If you'd like to keep these customizations, you can apply
+  them to our updated versions.
+
+  https://text-compare.com/ is a great tool to see the differences.
+{% endcomment %}
+
+{%- assign locale = 'strings_en' -%}
+{%- if request.locale.iso_code == 'fr' -%}
+  {%- assign locale = 'strings_fr' -%}
+{%- elsif request.locale.iso_code == 'es' -%}
+  {%- assign locale = 'strings_es' -%}
+{%- elsif request.locale.iso_code == 'de' -%}
+  {%- assign locale = 'strings_de' -%}
+{%- elsif request.locale.iso_code == 'pt_BR' -%}
+  {%- assign locale = 'strings_pt_BR' -%}
+{%- elsif request.locale.iso_code == 'pt_PT' -%}
+  {%- assign locale = 'strings_pt_PT' -%}
+{%- elsif request.locale.iso_code == 'da' -%}
+  {%- assign locale = 'strings_da' -%}
+{%- elsif request.locale.iso_code == 'nl' -%}
+  {%- assign locale = 'strings_nl' -%}
+{%- elsif request.locale.iso_code == 'it' -%}
+  {%- assign locale = 'strings_it' -%}
+{%- endif -%}
+
+{% capture close %}
+  <svg aria-hidden="true" focusable="false" role="presentation" class="upsell-icon upsell-icon-close" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1.25 1.25L7.5 7.5M13.75 13.75L7.5 7.5M7.5 7.5L13.75 1.25M7.5 7.5L1.25 13.75" stroke="currentColor" stroke-width="1.16667" stroke-linecap="square"/>
+  </svg>
+{% endcapture %}
+
+{% capture checkmark %}
+  <svg aria-hidden="true" focusable="false" role="presentation" class="upsell-notification__checkmark" width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M14.8466 2.88461L5.61584 12.1154L2.1543 8.65385" stroke="currentColor" stroke-width="2" stroke-linecap="square"/>
+  </svg>
+{% endcapture %}
+
+{% capture continue_arrow %}
+  <svg aria-hidden="true" focusable="false" role="presentation" class="upsell-notification__continue-arrow" width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.81707 10.1V10.3L6.02853 10.5H7.71853L8.1406 10.3L13 5.7V5.3L8.1406 0.7L7.71853 0.5H6.02853L5.81707 0.7V0.9L9.62 4.5V4.7L0.315467 4.70167L0 5.08583V5.91667L0.315467 6.30167L9.62 6.3V6.5L5.81707 10.1Z" fill="currentColor"/>
+  </svg>
+{% endcapture %}
+
+<template
+  data-upsell-section="notification"
+  data-upsell-section-id="{{ section.id }}"
+>
+  {% case section.settings.notification_style %}
+    {% when 'small' %}
+      {% capture view_button %}
+        <upsell-view-cart-button>
+          <button class="btn button btn--secondary upsell-notification__view-btn upsell-notification__view-btn--secondary">{{ shop.metafields.obsidian_upsell[locale].view_cart }}</button>
+        </upsell-view-cart-button>
+      {% endcapture %}
+      <upsell-atc-notification
+        class="
+          upsell-notification
+          upsell-notification-popup
+          {% if section.settings.small_mobile_position == 'bottom_of_screen' %}
+            upsell-notification-popup--bottom
+          {% endif %}
+        "
+        open
+      >
+        <button type="button" class="upsell-notification__close" aria-label="Close" data-close>
+          {{ close }}
+        </button>
+        <div class="upsell-notification-small__details">
+          <div class="upsell-notification-popup__image-container">
+            {% for item in cart.items %}
+              <div
+                class="upsell-notification-popup__image"
+                data-upsell-item-key="{{ item.key }}"
+                style="display: none;"
+              >
+                {% if item.image != blank %}
+                  {{ item.image | image_url: width: 200 | image_tag: loading: 'lazy' }}
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+              </div>
+            {% else %}
+              <div
+                class="upsell-notification-popup__image"
+              >
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              </div>
+            {% endfor %}
+          </div>
+          <div>
+            <p>{{ shop.metafields.obsidian_upsell[locale].notification_item_added }}</p>
+            {% unless section.settings.small_show_subtotal %}
+              {{ view_button }}
+            {% endunless %}
+          </div>
+        </div>
+
+        {% assign gift_card_cents = 0 %}
+        {% for item in cart.items %}
+          {% if item.gift_card %}
+            {% assign gift_card_cents = gift_card_cents | plus: item.final_line_price %}
+          {% endif %}
+        {% endfor %}
+        {% if section.settings.small_show_subtotal %}
+          <div class="upsell-notification-small__subtotal-area">
+            <span class="upsell-notification-popup__subtotal-label">
+              {% if cart.item_count == 1 %}
+                {{ shop.metafields.obsidian_upsell[locale].notification_subtotal_one | replace: '[count]', cart.item_count }}
+              {% else %}
+                {{ shop.metafields.obsidian_upsell[locale].notification_subtotal_other | replace: '[count]', cart.item_count }}
+              {% endif %}
+            </span>
+            <span class="upsell-notification-popup__subtotal">
+              {{ cart.total_price | money }}
+            </span>
+          </div>
+          {{ view_button }}
+        {% endif %}
+      </upsell-atc-notification>
+    {% when 'medium' %}
+      <upsell-atc-notification
+        class="
+          upsell-notification
+          upsell-notification-popup
+          upsell-notification-popup--medium
+          {% if section.settings.medium_mobile_position == 'bottom_of_screen' %}
+            upsell-notification-popup--bottom
+          {% endif %}
+        "
+        open
+      >
+        <div data-upsell-scroll-target="top"></div>
+        <div class="upsell-notification-medium__header">
+          <button type="button" class="upsell-notification__close" aria-label="Close" data-close>
+            {{ close }}
+          </button>
+          <h2 class="upsell-notification-medium__title">{{ checkmark }}<span>{{ shop.metafields.obsidian_upsell[locale].notification_added_to_cart }}</span></h2>
+        </div>
+        {% assign gift_card_cents = 0 %}
+        {% for item in cart.items %}
+          {% if item.gift_card %}
+            {% assign gift_card_cents = gift_card_cents | plus: item.final_line_price %}
+          {% endif %}
+          <div
+            class="
+              upsell-notification-medium__details
+              {% unless section.settings.medium_show_incentives_bar %}
+                upsell-notification-medium--last-before-footer
+              {% endunless %}
+            "
+            data-upsell-item-key="{{ item.key }}"
+            style="display: none;"
+          >
+            <div class="upsell-notification-popup__image-container">
+                <div
+                  class="upsell-notification-popup__image"
+                >
+                  {% if item.image != blank %}
+                    {{ item.image | image_url: width: 200 | image_tag: loading: 'lazy' }}
+                  {% else %}
+                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                  {% endif %}
+                </div>
+            </div>
+            <div class="upsell-notification__item-details">
+              <a href="{{ item.url }}" class="upsell-notification__item-name">
+                {{ item.product.title }}
+              </a>
+              {%- unless item.product.has_only_default_variant -%}
+                <ul class="upsell-notification__item-detail upsell-notification__item-options">
+                  {% for option in item.options_with_values -%}
+                    <li>{{ option.name }}: {{ option.value }}</li>
+                  {%- endfor %}
+                </ul>
+              {%- endunless -%}
+              {%- if item.selling_plan_allocation != blank -%}
+                <div class="upsell-notification__item-detail">
+                  {{ item.selling_plan_allocation.selling_plan.name }}
+                </div>
+              {%- endif -%}
+              {%- assign property_size = item.properties | size -%}
+              {% if property_size > 0 %}
+                {% for p in item.properties %}
+                  {%- assign first_character_in_key = p.first | truncate: 1, '' -%}
+                  {% unless p.last == blank or first_character_in_key == '_' %}
+                    <div class="upsell-notification__item-detail">
+                      {{ p.first }}:
+                      {% if p.last contains '/uploads/' %}
+                        <a href="{{ p.last }}">{{ p.last | split: '/' | last }}</a>
+                      {% else %}
+                        {{ p.last }}
+                      {% endif %}
+                    </div>
+                  {% endunless %}
+                {% endfor %}
+              {% endif %}
+              {%- if item.line_level_discount_allocations != blank -%}
+                {%- for discount_allocation in item.line_level_discount_allocations -%}
+                  {% capture discount_value %}
+                    {% unless discount_allocation.amount == 0 %}
+                      (-{{ discount_allocation.amount | money }})
+                    {% endunless %}
+                  {% endcapture %}
+                  <div class="upsell-notification__line-item-discount upsell-notification__discount-name">{{ discount_allocation.discount_application.title }}{{ discount_value }}</div>
+                {%- endfor -%}
+              {%- endif -%}
+              {% assign original_price = nil %}
+              {% assign final_price = nil %}
+              {%- if item.original_line_price != item.final_line_price -%}
+                {% assign original_price = item.original_line_price %}
+                {% assign final_price = item.final_line_price %}
+              {%- elsif item.variant.compare_at_price and item.variant.compare_at_price != 0 and item.variant.compare_at_price != item.final_price -%}
+                {% assign original_price = item.variant.compare_at_price | times: item.quantity %}
+                {% assign final_price = item.final_line_price %}
+              {%- else -%}
+                {% assign final_price = item.original_line_price %}
+              {%- endif -%}
+              <div class="upsell-notification__item-price">
+                {% if original_price %}
+                  <span class="upsell-notification__price upsell-notification__price--strikethrough">{{ original_price | money }}</span>
+                  <span class="upsell-notification__price upsell-notification__discount">{{ final_price | money }}</span>
+                {% else %}
+                  <span class="upsell-notification__price">{{ final_price | money }}</span>
+                {% endif %}
+              </div>
+
+              {%- if item.unit_price_measurement -%}
+                {%- capture unit_price_base_unit -%}
+                  <span>
+                    {%- if item.unit_price_measurement -%}
+                      {%- if item.unit_price_measurement.reference_value != 1 -%}
+                        {{ item.unit_price_measurement.reference_value }}
+                      {%- endif -%}
+                      {{ item.unit_price_measurement.reference_unit }}
+                    {%- endif -%}
+                  </span>
+                {%- endcapture -%}
+
+                <div class="upsell-notification__unit-price">{{ item.unit_price_measurement.quantity_value }}{{item.unit_price_measurement.quantity_unit}} | {{ item.unit_price | money }} / {{ unit_price_base_unit }}</div>
+              {%- endif -%}
+              <div class="upsell-notification__item-qty" data-item-quantity>
+                {{ shop.metafields.obsidian_upsell[locale].notification_quantity_short }}
+              </div>
+            </div>
+          </div>
+        {% else %}
+          <div
+            class="
+              upsell-notification-medium__details
+              {% unless section.settings.medium_show_incentives_bar %}
+                upsell-notification-medium--last-before-footer
+              {% endunless %}
+            "
+          >
+            <div class="upsell-notification-popup__image-container">
+              <div
+                class="upsell-notification-popup__image"
+              >
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              </div>
+            </div>
+            <div class="upsell-notification__item-details">
+              <a class="upsell-notification__item-name">
+                Product Title
+              </a>
+              <div class="upsell-notification__item-detail">
+                Your cart is empty.<br>To preview this with a real product, make sure you have at least 1 product in your cart.
+              </div>
+              <div class="upsell-notification__item-price">
+                <span class="upsell-notification__price">$19.99</span>
+              </div>
+
+              <div class="upsell-notification__item-qty">
+                {{ shop.metafields.obsidian_upsell[locale].notification_quantity_short | replace: '[quantity]', 1 }}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+
+        {% if section.settings.medium_show_incentives_bar %}
+          <upsell-incentives-bar
+            class="upsell-notification-medium__incentives-bar"
+            data-cents="{{ cart.total_price }}"
+            data-gift-card-cents="{{ gift_card_cents }}"
+          >
+          </upsell-incentives-bar>
+        {% endif %}
+        <div data-upsell-scroll-target="bottom"></div>
+        <div class="upsell-notification-medium__footer" data-upsell-notification-footer>
+          {% if section.settings.medium_show_subtotal %}
+            <div class="upsell-notification-medium__subtotal-area">
+              <span class="upsell-notification-popup__subtotal-label">
+                {% if cart.item_count == 1 %}
+                  {{ shop.metafields.obsidian_upsell[locale].notification_subtotal_one | replace: '[count]', cart.item_count }}
+                {% else %}
+                  {{ shop.metafields.obsidian_upsell[locale].notification_subtotal_other | replace: '[count]', cart.item_count }}
+                {% endif %}
+              </span>
+              <span class="upsell-notification-popup__subtotal">
+                {{ cart.total_price | money }}
+              </span>
+            </div>
+          {% endif %}
+          <upsell-view-cart-button>
+            <button class="btn button upsell-notification__view-btn">{{ shop.metafields.obsidian_upsell[locale].view_cart }}</button>
+          </upsell-view-cart-button>
+        </div>
+      </upsell-atc-notification>
+    {% when 'modal' %}
+      <upsell-atc-notification
+        class="
+          upsell-notification
+          upsell-notification-modal
+        "
+        open
+      >
+        <div class="upsell-notification-modal-scroll-wrapper" data-upsell-notification-scroll-wrapper>
+          <div class="upsell-notification-modal-inner-wrapper">
+            <div
+              class="upsell-notification-modal-inner"
+              data-upsell-riser-container
+            >
+              <div data-upsell-scroll-target="top"></div>
+              <div class="upsell-notification-modal__header">
+                <button type="button" class="upsell-notification__close" aria-label="Close" data-close>
+                  {{ close }}
+                </button>
+                <h2 class="upsell-notification-modal__title">{{ checkmark }}<span>{{ shop.metafields.obsidian_upsell[locale].notification_added_to_cart }}</span></h2>
+              </div>
+              {% assign gift_card_cents = 0 %}
+              {% for item in cart.items %}
+                {% if item.gift_card %}
+                  {% assign gift_card_cents = gift_card_cents | plus: item.final_line_price %}
+                {% endif %}
+                <div
+                  class="upsell-notification-modal__details"
+                  data-upsell-item-key="{{ item.key }}"
+                  style="display: none;"
+                >
+                  <div class="upsell-notification-popup__image-container">
+                      <div
+                        class="upsell-notification-popup__image"
+                      >
+                        {% if item.image != blank %}
+                          {{ item.image | image_url: width: 200 | image_tag: loading: 'lazy' }}
+                        {% else %}
+                          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                        {% endif %}
+                      </div>
+                  </div>
+                  <div class="upsell-notification__item-details">
+                    <a href="{{ item.url }}" class="upsell-notification__item-name">
+                      {{ item.product.title }}
+                    </a>
+                    {%- if item.line_level_discount_allocations != blank -%}
+                      {%- for discount_allocation in item.line_level_discount_allocations -%}
+                        {% capture discount_value %}
+                          {% unless discount_allocation.amount == 0 %}
+                            (-{{ discount_allocation.amount | money }})
+                          {% endunless %}
+                        {% endcapture %}
+                        <div class="upsell-notification__line-item-discount upsell-notification__discount-name">{{ discount_allocation.discount_application.title }}{{ discount_value }}</div>
+                      {%- endfor -%}
+                    {%- endif -%}
+                    {% assign original_price = nil %}
+                    {% assign final_price = nil %}
+                    {%- if item.original_line_price != item.final_line_price -%}
+                      {% assign original_price = item.original_line_price %}
+                      {% assign final_price = item.final_line_price %}
+                    {%- elsif item.variant.compare_at_price and item.variant.compare_at_price != 0 and item.variant.compare_at_price != item.final_price -%}
+                      {% assign original_price = item.variant.compare_at_price | times: item.quantity %}
+                      {% assign final_price = item.final_line_price %}
+                    {%- else -%}
+                      {% assign final_price = item.original_line_price %}
+                    {%- endif -%}
+                    <div class="upsell-notification__item-price">
+                      {% if original_price %}
+                        <span class="upsell-notification__price upsell-notification__price--strikethrough">{{ original_price | money }}</span>
+                        <span class="upsell-notification__price upsell-notification__discount">{{ final_price | money }}</span>
+                      {% else %}
+                        <span class="upsell-notification__price">{{ final_price | money }}</span>
+                      {% endif %}
+                    </div>
+
+                    {%- if item.unit_price_measurement -%}
+                      {%- capture unit_price_base_unit -%}
+                        <span>
+                          {%- if item.unit_price_measurement -%}
+                            {%- if item.unit_price_measurement.reference_value != 1 -%}
+                              {{ item.unit_price_measurement.reference_value }}
+                            {%- endif -%}
+                            {{ item.unit_price_measurement.reference_unit }}
+                          {%- endif -%}
+                        </span>
+                      {%- endcapture -%}
+
+                      <div class="upsell-notification__unit-price">{{ item.unit_price_measurement.quantity_value }}{{item.unit_price_measurement.quantity_unit}} | {{ item.unit_price | money }} / {{ unit_price_base_unit }}</div>
+                    {%- endif -%}
+                    {%- unless item.product.has_only_default_variant -%}
+                      <ul class="upsell-notification__item-detail upsell-notification__item-options">
+                        {% for option in item.options_with_values -%}
+                          <li>{{ option.name }}: {{ option.value }}</li>
+                        {%- endfor %}
+                      </ul>
+                    {%- endunless -%}
+                    {%- if item.selling_plan_allocation != blank -%}
+                      <div class="upsell-notification__item-detail">
+                        {{ item.selling_plan_allocation.selling_plan.name }}
+                      </div>
+                    {%- endif -%}
+                    {%- assign property_size = item.properties | size -%}
+                    {% if property_size > 0 %}
+                      {% for p in item.properties %}
+                        {%- assign first_character_in_key = p.first | truncate: 1, '' -%}
+                        {% unless p.last == blank or first_character_in_key == '_' %}
+                          <div class="upsell-notification__item-detail">
+                            {{ p.first }}:
+                            {% if p.last contains '/uploads/' %}
+                              <a href="{{ p.last }}">{{ p.last | split: '/' | last }}</a>
+                            {% else %}
+                              {{ p.last }}
+                            {% endif %}
+                          </div>
+                        {% endunless %}
+                      {% endfor %}
+                    {% endif %}
+
+                    <div class="upsell-notification__item-detail" data-item-quantity>
+                      {{ shop.metafields.obsidian_upsell[locale].notification_quantity_full }}
+                    </div>
+                  </div>
+                </div>
+              {% else %}
+                <div class="upsell-notification-modal__details">
+                  <div class="upsell-notification-popup__image-container">
+                    <div
+                      class="upsell-notification-popup__image"
+                    >
+                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                    </div>
+                  </div>
+                  <div class="upsell-notification__item-details">
+                    <a class="upsell-notification__item-name">
+                      Product Title
+                    </a>
+                    <div class="upsell-notification__item-price">
+                      <span class="upsell-notification__price">$19.99</span>
+                    </div>
+                    <div class="upsell-notification__item-detail">
+                      Your cart is empty.<br>To preview this with a real product, make sure you have at least 1 product in your cart.
+                    </div>
+
+                    <div class="upsell-notification__item-detail">
+                      {{ shop.metafields.obsidian_upsell[locale].notification_quantity_full | replace: '[quantity]', 1 }}
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+
+              <div class="upsell-notification-modal__actions" data-upsell-notification-footer>
+                <upsell-incentives-bar
+                  class="upsell-notification-modal__incentives-bar"
+                  data-cents="{{ cart.total_price }}"
+                  data-gift-card-cents="{{ gift_card_cents }}"
+                >
+                </upsell-incentives-bar>
+                <div class="upsell-notification-modal__subtotal-actions">
+                  <div class="upsell-notification-modal__subtotal-area">
+                    <span class="upsell-notification-popup__subtotal-label">
+                      {% if cart.item_count == 1 %}
+                        {{ shop.metafields.obsidian_upsell[locale].notification_subtotal_one | replace: '[count]', cart.item_count | replace_last: ':', '' }}
+                      {% else %}
+                        {{ shop.metafields.obsidian_upsell[locale].notification_subtotal_other | replace: '[count]', cart.item_count | replace_last: ':', '' }}
+                      {% endif %}
+                    </span>
+                    <span class="upsell-notification-popup__subtotal">
+                      {{ cart.total_price | money }}
+                    </span>
+                  </div>
+                  <upsell-view-cart-button>
+                    <button class="btn button upsell-notification__view-btn">{{ shop.metafields.obsidian_upsell[locale].view_cart }}</button>
+                  </upsell-view-cart-button>
+                  {% form 'cart', cart, id: nil, class: 'upsell-notification__checkout-form' %}
+                    <button type="submit" name="checkout" class="btn button btn--secondary upsell-notification__checkout-btn--secondary">{{ shop.metafields.obsidian_upsell[locale].notification_checkout }}</button>
+                  {% endform %}
+                </div>
+              </div>
+              {% if section.settings.modal_show_recommendations %}
+                <upsell-upsells-wrapper
+                  class="upsell-notification-modal__upsells"
+                  data-action-type="{{ section.settings.upsell_action_type }}"
+                  data-save-type="{{ section.settings.savings_type }}"
+                >
+                  <div class="upsell-cart__slider-wrapper">
+                    <div class="upsell-cart__slider-header">
+                      <div class="upsell-cart__upsell-label">
+                        {{ shop.metafields.obsidian_upsell[locale].upsell_title_1 }}
+                      </div>
+                      <upsell-slider-navigation slider-id="upsell-notification-upsells">
+                        <button
+                          type="button"
+                          class="upsell-cart__slider-arrow-button"
+                          data-action="prev"
+                        >
+                          <span class="upsell-cart__slider-arrow">
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="upsell-icon upsell-icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"/></svg>
+                          </span>
+                        </button>
+                        <button
+                          type="button"
+                          class="upsell-cart__slider-arrow-button"
+                          data-action="next"
+                        >
+                          <span class="upsell-cart__slider-arrow">
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="upsell-icon upsell-icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
+                          </span>
+                        </button>
+                      </upsell-slider-navigation>
+                    </div>
+                    <div class="upsell-cart__slider">
+                      {% capture slider_data %}
+                        {
+                          "breakpoints": {
+                            "768": {
+                              "slidesPerView": "auto"
+                            }
+                          }
+                        }
+                      {% endcapture %}
+                      <upsell-upsells
+                        id="upsell-notification-upsells"
+                        data-search-route="{{ routes.search_url }}"
+                        data-use-slideshow
+                        data-swiper-config="{{ slider_data | escape }}"
+                        class="
+                          upsell-cart__slider-inner
+                          upsell-cart__slider-inner--vertical-cards
+                        "
+                      ></upsell-upsells>
+                    </div>
+                  </div>
+                </upsell-upsells-wrapper>
+              {% endif %}
+              <div data-upsell-scroll-target="bottom"></div>
+            </div>
+          </div>
+        </div>
+
+      </upsell-atc-notification>
+  {% endcase %}
+
+</template>
+
+{% schema %}
+  {
+    "name": "Added-to-cart popup",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "In order to see the blocks, make sure to have at least 1 product in your cart."
+      },
+      {
+        "type": "radio",
+        "id": "notification_style",
+        "label": "Notification style",
+        "options": [
+          {
+            "value": "small",
+            "label": "Small popup"
+          },
+          {
+            "value": "medium",
+            "label": "Medium popup"
+          },
+          {
+            "value": "modal",
+            "label": "Modal with recommendations"
+          }
+        ],
+        "default": "small"
+      },
+      {
+        "type": "header",
+        "content": "Small popup"
+      },
+      {
+        "type": "checkbox",
+        "id": "small_show_subtotal",
+        "label": "Show cart subtotal",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "small_mobile_position",
+        "label": "Mobile position",
+        "options": [
+          {
+            "value": "below_header",
+            "label": "Below header cart"
+          },
+          {
+            "value": "bottom_of_screen",
+            "label": "Bottom of screen"
+          }
+        ],
+        "default": "below_header"
+      },
+      {
+        "type": "header",
+        "content": "Medium popup"
+      },
+      {
+        "type": "checkbox",
+        "id": "medium_show_subtotal",
+        "label": "Show cart subtotal",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "medium_show_incentives_bar",
+        "label": "Show free shipping bar",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "medium_mobile_position",
+        "label": "Mobile position",
+        "options": [
+          {
+            "value": "below_header",
+            "label": "Below header cart"
+          },
+          {
+            "value": "bottom_of_screen",
+            "label": "Bottom of screen"
+          }
+        ],
+        "default": "below_header"
+      },
+      {
+        "type": "header",
+        "content": "Modal"
+      },
+      {
+        "type": "checkbox",
+        "id": "modal_show_recommendations",
+        "label": "Enable recommendations",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "upsell_action_type",
+        "label": "Upsell action",
+        "default": "add_to_cart",
+        "options": [
+          {
+            "value": "add_to_cart",
+            "label": "Add to cart"
+          },
+          {
+            "value": "product_page",
+            "label": "View product page"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "savings_type",
+        "label": "Savings display style",
+        "default": "dollar",
+        "options": [
+          {
+            "value": "dollar",
+            "label": "Dollar"
+          },
+          {
+            "value": "percent",
+            "label": "Percent"
+          }
+        ]
+      }
+    ],
+    "default": {
+      "settings": {}
+    }
+  }
+{% endschema %}

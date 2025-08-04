@@ -1,0 +1,58 @@
+/* Typography */
+.navigation__submenu-trigger,
+.header__links.header__links-primary>ul>li>[data-link],
+button,
+.btn.btn--primary.btn--overlay,
+.btn.btn--secondary,
+blockquote, h4 > span,
+.testimonials__item-quote,
+.section-blocks__heading,.ff-heading  {
+font-family: 'gothammedium';
+  letter-spacing: -0.03em;
+}
+
+
+h2, h4 > a,
+.footer__heading.fs-accent, span{
+ font-family: 'gothambold' !important;
+    letter-spacing: -0.03em;
+} 
+
+
+
+body, p, h3, .ff-body, p>span  {
+     font-family: 'gothambook' !important;
+    letter-spacing: -0.03em;
+}
+
+#BIS_trigger {
+    background: black;
+    text-transform: uppercase !important;
+    color: white;
+    padding: 20px;
+}
+
+/* End of typography */
+
+button{
+  text-transform: uppercase !important;
+}
+
+
+.btn.btn--secondary:hover, .spr-button-primary {
+    background: #F3C8CF;
+}
+
+#filter-bar-sort > ul > li:nth-child(3) > label > div,
+#filter-bar-sort > ul > li:nth-child(4) > label > div,
+#filter-bar-sort > ul > li:nth-child(7) > label > div,
+#filter-bar-sort > ul > li:nth-child(8) > label > div {
+  display: none;
+}
+
+.bv_button_buttonMinimalist.bv_war_button, 
+.product__color-swatch.dynamic-variant-button.disabled,
+#shopify-block-AUzFkOXo3VTM1NmYvV__bazaarvoice_reviews_photos_rating_summary_block_F4aEBB > div > div > div > div:nth-child(2) > div{
+  display: none !important;
+}
+

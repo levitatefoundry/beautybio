@@ -1,0 +1,92 @@
+<style>
+  .elfsight-widget-wrapper--{{ section.id }} {
+    {% if section.settings.background_color != blank %}
+        background-color: {{ section.settings.background_color }};
+    {% endif %}
+    {% if section.settings.width != blank %}
+        width: {{ section.settings.width }}%;
+    {% endif %}
+    margin: 0 auto;
+  }
+  
+  .elfsight-widget-wrapper--{{ section.id }} .elfsight-widget-title {
+    {% if section.settings.title_color != blank %}
+        color: {{ section.settings.title_color }};
+    {% endif %}
+    {% if section.settings.title_font != blank %}
+        font-family: {{ section.settings.title_font }};
+    {% endif %}
+    margin: 0;
+    padding: 20px;
+  }
+</style>
+<div class="elfsight-widget-wrapper elfsight-widget-wrapper--{{ section.id }}">
+  {% if section.settings.title != blank %}
+      <h2 class="elfsight-widget-title text-center">{{ section.settings.title | escape }}</h2>
+  {% endif %}
+  {% if section.settings.code != blank %}
+      {{ section.settings.code }}
+  {% endif %}
+</div>
+  
+{% schema %}
+{
+  "name": "Elfsight widget",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Title"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#3a3a3a"
+    },
+    {
+      "type": "text",
+      "id": "title_font",
+      "label": "Title font"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "width",
+      "min": 30,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Width of section",
+      "default": 100
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color"
+    },
+    {
+      "type": "header",
+      "content": "Widget"
+    },
+    {
+      "type": "textarea",
+      "id": "code",
+      "label": "Installation code"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Advanced layout",
+      "name": "Elfsight widget"
+    }
+  ]
+}
+{% endschema %}

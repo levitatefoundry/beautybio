@@ -1,0 +1,176 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:groups.footer_group.name",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-0": {
+          "type": "text",
+          "settings": {
+            "desktop_width": 22,
+            "desktop_padding": 4,
+            "collapse_on_mobile": false,
+            "title": "",
+            "show_title_on_desktop": false,
+            "text": "",
+            "image": "shopify://shop_images/BeautyBio-Logo.svg",
+            "image_max_width": 200,
+            "image_placement": "above_text",
+            "show_social_icons": false,
+            "enable_follow_on_shop": false
+          }
+        },
+        "links_RHpjT6": {
+          "type": "links",
+          "settings": {
+            "desktop_width": 15,
+            "desktop_padding": 4,
+            "collapse_on_mobile": true,
+            "title": "Products",
+            "show_title_on_desktop": true,
+            "link_list": "footer-products-menu-2020"
+          }
+        },
+        "footer-2": {
+          "type": "links",
+          "settings": {
+            "desktop_width": 17,
+            "desktop_padding": 4,
+            "collapse_on_mobile": true,
+            "title": "Support",
+            "show_title_on_desktop": true,
+            "link_list": "footer-support-menu-2020"
+          }
+        },
+        "footer-3": {
+          "type": "links",
+          "settings": {
+            "desktop_width": 17,
+            "desktop_padding": 4,
+            "collapse_on_mobile": true,
+            "title": "About",
+            "show_title_on_desktop": true,
+            "link_list": "footer-about-menu-2020"
+          }
+        },
+        "footer-4": {
+          "type": "newsletter",
+          "settings": {
+            "desktop_width": 29,
+            "desktop_padding": 0,
+            "collapse_on_mobile": false,
+            "title": "Join Our Glommunity",
+            "show_title_on_desktop": true,
+            "text": "<p>Sign up and save 15% on your first order</p>",
+            "show_social_icons": true,
+            "enable_follow_on_shop": false
+          }
+        }
+      },
+      "block_order": [
+        "footer-0",
+        "links_RHpjT6",
+        "footer-2",
+        "footer-3",
+        "footer-4"
+      ],
+      "settings": {
+        "enable_locale_selector": true,
+        "enable_country_selector": true,
+        "show_payment_icons": false,
+        "additional_copyright_text": ""
+      }
+    },
+    "footer_qFAPM7": {
+      "type": "footer",
+      "blocks": {
+        "text_bpALLb": {
+          "type": "text",
+          "settings": {
+            "desktop_width": 40,
+            "desktop_padding": 6,
+            "collapse_on_mobile": false,
+            "title": "",
+            "show_title_on_desktop": false,
+            "text": "<p>Clean, Clinical Performance Skincare. Backed By Science.</p>",
+            "image": "shopify://shop_images/BeautyBio-Logo.svg",
+            "image_max_width": 200,
+            "image_placement": "above_text",
+            "show_social_icons": true,
+            "enable_follow_on_shop": false
+          }
+        },
+        "spacer_Qmfq3y": {
+          "type": "spacer",
+          "disabled": true,
+          "settings": {
+            "desktop_width": 10
+          }
+        },
+        "links_mEnKDr": {
+          "type": "links",
+          "settings": {
+            "desktop_width": 15,
+            "desktop_padding": 4,
+            "collapse_on_mobile": true,
+            "title": "Company",
+            "show_title_on_desktop": true,
+            "link_list": "footer-about-menu-2020"
+          }
+        },
+        "links_brybAA": {
+          "type": "links",
+          "settings": {
+            "desktop_width": 15,
+            "desktop_padding": 4,
+            "collapse_on_mobile": true,
+            "title": "Links",
+            "show_title_on_desktop": true,
+            "link_list": "footer-support-menu-2020"
+          }
+        },
+        "newsletter_eF8KY8": {
+          "type": "newsletter",
+          "settings": {
+            "desktop_width": 30,
+            "desktop_padding": 0,
+            "collapse_on_mobile": false,
+            "title": "Newsletter",
+            "show_title_on_desktop": true,
+            "text": "",
+            "show_social_icons": false,
+            "enable_follow_on_shop": false
+          }
+        }
+      },
+      "block_order": [
+        "text_bpALLb",
+        "spacer_Qmfq3y",
+        "links_mEnKDr",
+        "links_brybAA",
+        "newsletter_eF8KY8"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_locale_selector": true,
+        "enable_country_selector": true,
+        "show_payment_icons": false,
+        "additional_copyright_text": ""
+      }
+    }
+  },
+  "order": [
+    "footer",
+    "footer_qFAPM7"
+  ]
+}

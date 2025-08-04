@@ -1,0 +1,88 @@
+.section-accordion {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* RTE Accordion */
+.rte-accordion .item {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  overflow: hidden;
+}
+.rte-accordion input.trigger {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.rte-accordion label.accordion-label {
+  position: relative;
+  display: block;
+  line-height: 1;
+  cursor: pointer;
+  padding: 5px 0 5px 5px;
+}
+.rte-accordion label.accordion-label span,
+.rte-accordion label.accordion-label a {
+  color: var(--color-base-text);
+}
+.rte-accordion .item-heading {
+  max-width: 90%;
+  padding: 5px 10px 5px 0;
+  display: block;
+  font-size: 16px;
+  letter-spacing: 0;
+  margin: 0;
+  font-weight: 500;
+  text-transform: none;
+}
+.rte-accordion .item-content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+}
+.rte-accordion .item-content p {
+  padding: 30px;
+  margin-bottom: 0;
+  @include respond-to(min-width: 750px) {
+    padding: 15px;
+  }
+}
+
+.rte-accordion input:checked ~ .item-content {
+  max-height: 100%;
+}
+
+.item-content .item-heading {
+  padding-left: 10px;
+}
+
+.rte-accordion label.accordion-label::after {
+  position: absolute;
+  right: 0;
+  top: -1px;
+  display: block;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+  height: 47px;
+  line-height: 47px;
+  padding: 0;
+  width: 30px;
+}
+.rte-accordion input[type=checkbox] + label::after {
+  content: "+";
+  font-size: 24px;
+}
+.rte-accordion input[type=radio] + label::after {
+  content: "\25BC";
+}
+.rte-accordion input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+}
+.rte-accordion input[type=radio]:checked + label::after {
+  transform: rotateX(180deg);
+}

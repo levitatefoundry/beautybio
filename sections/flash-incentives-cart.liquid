@@ -1,0 +1,3604 @@
+{% comment %}
+  This file will update automatically, without warning, as new features are built.
+  Any edits are done at your own risk.
+
+  When a new version is released, you will find your previous
+  customizations renamed with the extension .backup.liquid.
+  If you'd like to keep these customizations, you can apply
+  them to our updated versions.
+
+  https://text-compare.com/ is a great tool to see the differences.
+{% endcomment %}
+
+{%- assign locale = 'strings_en' -%}
+{%- if request.locale.iso_code == 'fr' -%}
+  {%- assign locale = 'strings_fr' -%}
+{%- elsif request.locale.iso_code == 'es' -%}
+  {%- assign locale = 'strings_es' -%}
+{%- elsif request.locale.iso_code == 'de' -%}
+  {%- assign locale = 'strings_de' -%}
+{%- elsif request.locale.iso_code == 'pt_BR' -%}
+  {%- assign locale = 'strings_pt_BR' -%}
+{%- elsif request.locale.iso_code == 'pt_PT' -%}
+  {%- assign locale = 'strings_pt_PT' -%}
+{%- elsif request.locale.iso_code == 'da' -%}
+  {%- assign locale = 'strings_da' -%}
+{%- elsif request.locale.iso_code == 'nl' -%}
+  {%- assign locale = 'strings_nl' -%}
+{%- elsif request.locale.iso_code == 'it' -%}
+  {%- assign locale = 'strings_it' -%}
+{%- endif -%}
+
+{% capture lock %}
+  <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13.625 7.71875H2.375C1.68464 7.71875 1.125 8.25041 1.125 8.90625V17.2188C1.125 17.8746 1.68464 18.4062 2.375 18.4062H13.625C14.3154 18.4062 14.875 17.8746 14.875 17.2188V8.90625C14.875 8.25041 14.3154 7.71875 13.625 7.71875Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8 14.8438V11.875" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8 11.5781C8.06181 11.5781 8.12222 11.5955 8.17362 11.6282C8.22501 11.6608 8.26506 11.7071 8.28871 11.7614C8.31236 11.8156 8.31855 11.8753 8.3065 11.9329C8.29444 11.9905 8.26468 12.0434 8.22097 12.0849C8.17727 12.1264 8.12159 12.1547 8.06097 12.1662C8.00035 12.1776 7.93751 12.1717 7.88041 12.1493C7.82331 12.1268 7.7745 12.0888 7.74017 12.0399C7.70583 11.9911 7.6875 11.9337 7.6875 11.875C7.6875 11.7963 7.72042 11.7208 7.77903 11.6651C7.83763 11.6094 7.91712 11.5781 8 11.5781Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M12.375 4.75C12.375 3.64769 11.9141 2.59054 11.0936 1.81109C10.2731 1.03164 9.16032 0.59375 8 0.59375C6.83968 0.59375 5.72688 1.03164 4.90641 1.81109C4.08594 2.59054 3.625 3.64769 3.625 4.75V7.71875H12.375V4.75Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+{% endcapture %}
+
+{% capture note %}
+  <svg class="cart-upsell__discount-icon" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M5.52168 13.4998H1.56521C1.41531 13.4998 1.27154 13.4403 1.16555 13.3343C1.05955 13.2283 1 13.0845 1 12.9346V1.06521C1 0.915307 1.05955 0.771543 1.16555 0.665546C1.27154 0.559549 1.41531 0.5 1.56521 0.5H9.07854C9.22843 0.500032 9.37217 0.559602 9.47814 0.665606L11.5734 2.76084C11.6794 2.86681 11.7389 3.01055 11.739 3.16044V5.02168" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M9.59068 12.8212L7.2168 13.4995L7.89505 11.1256L11.9527 7.06797C12.064 6.95664 12.1962 6.86832 12.3417 6.80806C12.4871 6.74781 12.643 6.7168 12.8005 6.7168C12.958 6.7168 13.1139 6.74781 13.2593 6.80806C13.4048 6.86832 13.537 6.95664 13.6483 7.06797C13.7597 7.17931 13.848 7.31149 13.9082 7.45695C13.9685 7.60242 13.9995 7.75833 13.9995 7.91579C13.9995 8.07324 13.9685 8.22915 13.9082 8.37462C13.848 8.52009 13.7597 8.65227 13.6483 8.7636L9.59068 12.8212Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M11.4453 7.57715L13.1409 9.27278" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M7.89453 11.126L9.59016 12.8216" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+{% endcapture %}
+
+{% capture shipping_icon %}
+  <svg class="upsell-shipping__icon" width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3.84226 13.2455H1.55859V1.46537H14.1393V13.2455H7.58734" stroke="currentColor" stroke-width="1.1375" stroke-miterlimit="10"/>
+    <path d="M5.7333 15.5128C6.77794 15.5128 7.6248 14.6659 7.6248 13.6213C7.6248 12.5767 6.77794 11.7298 5.7333 11.7298C4.68865 11.7298 3.8418 12.5767 3.8418 13.6213C3.8418 14.6659 4.68865 15.5128 5.7333 15.5128Z" stroke="currentColor" stroke-width="1.06925" stroke-miterlimit="10"/>
+    <path d="M19.9007 13.2454H21.9536V6.0315L19.3558 3.43367H14.1406V13.2454H16.1556" stroke="currentColor" stroke-width="1.1375" stroke-miterlimit="10"/>
+    <path d="M19.6437 8.96099H16.4414V5.67307H18.5106L19.6437 6.80624V8.96099Z" stroke="currentColor" stroke-width="1.06925" stroke-miterlimit="10"/>
+    <path d="M4.23242 7.35521H10.6458" stroke="currentColor" stroke-width="1.06925" stroke-miterlimit="10"/>
+    <path d="M8.83789 9.72014L11.4596 7.35523L8.83789 4.99031" stroke="currentColor" stroke-width="1.06925" stroke-miterlimit="10"/>
+    <path d="M18.0458 15.5128C19.0904 15.5128 19.9373 14.6659 19.9373 13.6213C19.9373 12.5767 19.0904 11.7298 18.0458 11.7298C17.0012 11.7298 16.1543 12.5767 16.1543 13.6213C16.1543 14.6659 17.0012 15.5128 18.0458 15.5128Z" stroke="currentColor" stroke-width="1.06925" stroke-miterlimit="10"/>
+  </svg>
+{% endcapture %}
+
+{% capture close %}
+  <svg aria-hidden="true" focusable="false" role="presentation" class="upsell-icon upsell-icon-close" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1.25 1.25L7.5 7.5M13.75 13.75L7.5 7.5M7.5 7.5L13.75 1.25M7.5 7.5L1.25 13.75" stroke="currentColor" stroke-width="1.16667" stroke-linecap="square"/>
+  </svg>
+{% endcapture %}
+
+{% capture arrow %}
+  <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.31707 9.6V9.8L6.52853 10H8.21853L8.6406 9.8L13.5 5.2V4.8L8.6406 0.2L8.21853 0H6.52853L6.31707 0.2V0.4L10.12 4V4.2L0.815467 4.20167L0.5 4.58583V5.41667L0.815467 5.80167L10.12 5.8V6L6.31707 9.6V9.6Z" fill="currentColor"/>
+  </svg>
+{% endcapture %}
+
+{% assign total_savings = 0 %}
+{% assign total_price_without_currency = cart.total_price | money_without_currency %}
+{% assign gift_card_cents = 0 %}
+{% assign cart_share_items = '' %}
+{% for item in cart.items %}
+  {% if item.gift_card %}
+    {% assign gift_card_cents = gift_card_cents | plus: item.final_line_price %}
+  {% endif %}
+  {% unless forloop.first %}
+    {% assign cart_share_items = cart_share_items | append: ',' %}
+  {% endunless %}
+  {% assign cart_share_items = cart_share_items | append: item.variant_id | append: ',' | append: item.quantity %}
+{% endfor %}
+
+{% if request.design_mode %}
+  {% comment %} How to guide {% endcomment %}
+  <style>
+	.upsell-onboarding {
+		--_upsell-onboarding-primary: #98C6CD;
+		--_upsell-onboarding-primary--light: #EBF9FC;
+		--_upsell-onboarding-primary--dark: #00A0AC;
+
+		margin: 0 auto;
+		padding:
+			var(--_upsell-onboarding-padding-block, 40px)
+			var(--_upsell-onboarding-padding-inline, 16px);
+		max-width: 1400px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 1.4;
+	}
+
+	@media (min-width: 769px) {
+		.upsell-onboarding {
+			--_upsell-onboarding-padding-block: 60px;
+		}
+	}
+
+	.upsell-onboarding__title {
+		font-weight: 600;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.upsell-onboarding__embed-notice {
+		display: flex;
+		align-items: center;
+		padding: 0.5rem 1.5rem;
+		background: var(--_upsell-onboarding-primary--light);
+		border: 0.0625rem solid var(--_upsell-onboarding-primary);
+		border-radius: 0.5rem;
+		font-weight: 300;
+		gap: 1rem;
+	}
+
+	.upsell-onboarding__embed-notice svg {
+		flex: 0 0 16px;
+    width: 16px;
+		color: var(--_upsell-onboarding-primary--dark);
+	}
+
+	.upsell-onboarding__steps {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		justify-content: space-between;
+	}
+
+	.upsell-onboarding__step {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		flex: 0 0 calc(100% / 3 - var(--_upsell-onboarding-step-gap, 1rem));
+	}
+
+	@media (min-width: 769px) {
+		.upsell-onboarding__steps {
+			flex-direction: row;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.upsell-onboarding__steps {
+			--_upsell-onboarding-step-gap: 3rem;
+		}
+	}
+
+	.upsell-onboarding__step h3 {
+		font-weight: 600;
+		color: #000;
+		font-size: 16px;
+		margin-block-end: 0;
+	}
+
+	.upsell-onboarding__step img {
+		width: 100%;
+		height: auto;
+	}
+
+	.upsell-onboarding__step p {
+		font-size: 14px;
+		margin-block: 0;
+	}
+
+	.upsell-onboarding__step p.with-icon {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.upsell-onboarding__step svg {
+		width: 50px;
+		height: auto;
+		align-self: start;
+	}
+
+	.upsell-onboarding__step p strong {
+		font-weight: 600;
+	}
+
+	.upsell-onboarding__button {
+		-webkit-appearance: none;
+		appearance: none;
+		border: none;
+		color: #fff;
+		background-color: #008060;
+		padding-block: 1rem;
+		width: 100%;
+		border-radius: 3px;
+		cursor: pointer;
+	}
+
+	.upsell-onboarding__button:hover {
+		background-color: #007054;
+	}
+
+	.upsell-onboarding__step ul {
+		margin: 0;
+		margin-inline-start: 3rem;
+		padding: 0;
+	}
+
+	.upsell-onboarding--embed-active .upsell-onboarding__embed-notice {
+		display: none;
+	}
+
+	.upsell-onboarding--embed-active .upsell-onboarding__step--embed {
+		opacity: 0.2;
+	}
+
+	.upsell-onboarding:not(.upsell-onboarding--embed-active) .upsell-onboarding__step--customize > * {
+		opacity: 0.2;
+	}
+</style>
+<div class="upsell-onboarding" data-upsell-onboarding>
+	<h2 class="upsell-onboarding__title">How To: Setting up your Flash Cart in the theme editor</h2>
+
+	<div class="upsell-onboarding__embed-notice">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M7.5 15.5a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Zm.303-11.1a.9.9 0 1 0-1.8 0 .9.9 0 0 0 1.8 0Zm-2.4 2.7a.6.6 0 0 1 .6-.6h1.2a1.2 1.2 0 0 1 1.2 1.2v3.603H9a.6.6 0 1 1 0 1.2H6.5a.6.6 0 1 1 0-1.2h.703V7.7h-1.2a.6.6 0 0 1-.6-.6Z" clip-rule="evenodd"/></svg>
+		<p>The Flash Cart drawer will only appear once you've enabled the app embed.</p>
+	</div>
+
+	<div class="upsell-onboarding__steps">
+		<div class="upsell-onboarding__step upsell-onboarding__step--embed">
+			<h3>Step 1 : Enabling Cart</h3>
+			<img src="https://upsell.obsidianapps.co/onboarding/step-1-enabling-cart.png" alt="Screenshot showing how to enable app embed">
+			<p><strong>Enable Flash Cart with toggle in left panel.</strong></p>
+			<p>Toggle on "Flash Cart" in the App embeds panel</p>
+			<p>If your theme already has a pop-out cart embedded, you may also need to disable it.</p>
+			<p><a href="https://help.flashapps.com/v/flash-cart/readme/get-started#enable-flash-cart-app-embed">Need help? Find out how</a></p>
+		</div>
+
+		<div class="upsell-onboarding__step upsell-onboarding__step--customize">
+			<h3>Step 2 : Add a test product</h3>
+			<img src="https://upsell.obsidianapps.co/onboarding/step-2-add-product.png" alt="Screenshot showing how to customize cart settings">
+			<p><strong>Add a product from your store below.</strong></p>
+			<p>In order to see and edit how your cart will look real-time, you need to have at least 1 product in your cart.</p>
+
+			{% assign collection = collections.first %}
+			{% assign product = collection.products.first %}
+			{% if product.variants.first %}
+				<form method="post" action="/cart/add"  onSubmit="document.dispatchEvent(new Event('obsidian:upsell:update')); document.dispatchEvent(new Event('obsidian:upsell:refresh'))">
+					<input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+					<input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
+					<button type="submit" class="upsell-onboarding__button">Add a product to my cart</button>
+				</form>
+			{% else %}
+				<a href="{{ "/admin/products" | prefix: request.origin }}">Your store currently has no products. Add one now</a>
+			{% endif %}
+		</div>
+
+		<div class="upsell-onboarding__step upsell-onboarding__step--customize">
+			<h3>Step 3 : Customize your cart</h3>
+			<img src="https://upsell.obsidianapps.co/onboarding/step-3-customize-your-cart.png" alt="Screenshot showing how to customize ATC notification">
+			<p class="with-icon">
+				<svg viewBox="0 0 20 20" width="20px" height="20px" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true"><path d="M3.5 5.25c0-.966.784-1.75 1.75-1.75h1a.75.75 0 0 1 0 1.5h-1a.25.25 0 0 0-.25.25v1a.75.75 0 0 1-1.5 0v-1Z"></path><path fill-rule="evenodd" d="M3.5 9.25c0-.966.784-1.75 1.75-1.75h9.5c.966 0 1.75.784 1.75 1.75v1.5a1.75 1.75 0 0 1-1.75 1.75h-9.5a1.75 1.75 0 0 1-1.75-1.75v-1.5Zm1.75-.25a.25.25 0 0 0-.25.25v1.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25v-1.5a.25.25 0 0 0-.25-.25h-9.5Z"></path><path d="M3.5 14.75c0 .966.784 1.75 1.75 1.75h1a.75.75 0 0 0 0-1.5h-1a.25.25 0 0 1-.25-.25v-1a.75.75 0 0 0-1.5 0v1Z"></path><path d="M14.75 3.5c.966 0 1.75.784 1.75 1.75v1a.75.75 0 0 1-1.5 0v-1a.25.25 0 0 0-.25-.25h-1a.75.75 0 0 1 0-1.5h1Z"></path><path d="M14.75 16.5a1.75 1.75 0 0 0 1.75-1.75v-1a.75.75 0 0 0-1.5 0v1a.25.25 0 0 1-.25.25h-1a.75.75 0 0 0 0 1.5h1Z"></path><path d="M11.75 4.25a.75.75 0 0 1-.75.75h-2a.75.75 0 0 1 0-1.5h2a.75.75 0 0 1 .75.75Z"></path><path d="M11 16.5a.75.75 0 0 0 0-1.5h-2a.75.75 0 0 0 0 1.5h2Z"></path></svg>
+				<strong>Head to sections in your sidebar to customize cart blocks and the added-to-cart popup.</strong>
+			</p>
+			<ul>
+				<li>Head to sections tab. Add new cart blocks, edit them and customize their locations within your cart.</li>
+				<li>Select the Added-to-cart popup and customize it for your store.</li>
+		</div>
+	</div>
+</div>
+{% endif %}
+
+<template
+  data-upsell-section="cart"
+  data-upsell-section-id="{{ section.id }}"
+>
+  {%
+    form 'cart', cart,
+    class: 'upsell-cart__form',
+    novalidate: true,
+    data-upsell-riser-container: '',
+    data-upsell-customize-container: ''
+  %}
+    {% if request.design_mode %}
+      <upsell-customize-link>
+        <div class="upsell-customize-link__content">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 600 600">
+            <g fill="none" fill-rule="evenodd">
+              <path class="flash-cart-icon-bg" fill="#4801D8" d="M0 0h600v600H0z"/>
+              <path class="flash-cart-icon-lines" fill="#FFF" fill-rule="nonzero" d="M168.9 98.9a106 106 0 0 1 29.4 38.4c2.4 5 4.7 14 6.8 27h216.4c56 0 101 49.1 101 109.5 0 60.3-45 109.5-101 109.5h-171c-15.7 0-30.1-6-42.9-17.6a130 130 0 0 1-8-8l2.2 10.8v.4a83.5 83.5 0 0 0 15.3 28.2l.4.4a64.3 64.3 0 0 0 40.5 18.2l179 .6a51 51 0 1 1-34.5 13.4h-110a50.9 50.9 0 0 1-34.5 88.6 51 51 0 0 1-26.3-94.7 75.4 75.4 0 0 1-24.4-16.5 95.2 95.2 0 0 1-18.6-33.5l-.5-1.3-8.9-44.2-.5-1 .3-.2L147.8 172a82.3 82.3 0 0 0-6.6-18.4 32 32 0 0 0-17.5-15c-3-.8-8.6-1.3-16.7-1.4-16.4 0-30-12.4-30-28a28 28 0 0 1 27-28 105.2 105.2 0 0 1 64.9 17.6ZM258 430.3a37 37 0 1 0 0 74 37 37 0 0 0 0-74Zm179 0a37 37 0 1 0 0 74 37 37 0 0 0 0-74Zm-179 20a17 17 0 1 1 0 34 17 17 0 0 1 0-34Zm179 0a17 17 0 1 1 0 34 17 17 0 0 1 0-34Zm-225-248h207.5c34.5 0 62 31.5 62 70 0 37.7-26.5 68.7-60 70H262.7c-10.6-.6-20-3.5-28.3-9a43.7 43.7 0 0 1-17.6-25.5l-27.3-150.9a82.6 82.6 0 0 0-30.7-47.6c-20.8-14.5-46.7-14-51-14-9.7 0-16.8 6.1-16.8 14 0 7.8 7.7 14 16.3 14 3.3 0 20-1.3 33 7.7 12.6 8.8 19.5 27.6 22 40.3a46688 46688 0 0 1 30.4 152.2 111 111 0 0 0 24.3 31.8 48.6 48.6 0 0 0 33.5 14h171c48 0 87-42.7 87-95.5 0-53-39-95.5-87-95.5H207.6l4.3 24Zm7.2 40.3h200.3c13.6 0 24 13.4 24 28.7 0 15.1-10.4 28-24 28H229.4l.8 4.4v.3a30 30 0 0 0 11.5 17.4l.4.3c5.9 3.9 12.7 6 20.6 6.5h157.6c26-.4 47.2-25.1 47.2-56 0-31-21.7-56-48-56h-205l4.7 26.4Zm7.7 42.7h192.6c5.2 0 10-6 10-14 0-8.2-5-14.7-10-14.7H221.7l5.2 28.7Z"/>
+            </g>
+          </svg>
+
+          <span>Customize and edit Flash Cart</span>
+        </div>
+
+        <a href="{{ routes.cart_url }}?view=flash-incentives" class="upsell-customize-button">
+          Edit your cart
+        </a>
+      </upsell-customize-link>
+    {% endif %}
+    <script data-cart-data type="application/json">
+      {
+        "count": {{ cart.item_count }},
+        "ids": {{ cart.items | map: 'product_id' | json }},
+        "cents": {{ cart.total_price }},
+        "currency": {{ cart.currency.iso_code | json }},
+        "variant_ids": {{ cart.items | map: 'variant_id' | json }}
+      }
+    </script>
+    <h2 class="upsell-cart__title">
+      {{ shop.metafields.obsidian_upsell[locale].cart_title }}
+
+      <button type="button" class="upsell-cart__close" aria-label="Close cart">
+        {{ close }}
+      </button>
+    </h2>
+    {% for block in section.blocks %}
+      {% capture block_markup %}
+        {% case block.type %}
+          {% when '@app' %}
+            <div
+              class="
+                upsell-cart__block
+                upsell-cart__block--default
+                {% unless section.settings.app_blocks_sticky and section.settings.app_blocks_sticky_position == 'bottom' %}upsell-cart__block--animate{% endunless %}
+              "
+            >
+              {% render block %}
+            </div>
+          {% when 'cart_items' %}
+            <div class="
+                upsell-cart__items
+                upsell-cart__block
+                upsell-cart__block--default
+                {% unless block.settings.sticky %}upsell-cart__block--animate{% endunless %}
+              "
+              data-thumbnail-size="{{ block.settings.thumbnail_size }}"
+              {% comment %} Need to avoid setting this attribtue wen natural, see comment in CSS {% endcomment %}
+              {% unless block.settings.thumbnail_aspect_ratio == "natural" %}
+                data-thumbnail-aspect-ratio="{{ block.settings.thumbnail_aspect_ratio }}"
+              {% endunless %}
+            >
+              {% for item in cart.items %}
+                {% if block.settings.show_single_qty_price %}
+                  {% capture price_each %}
+                    {%- if item.original_price != item.final_price -%}
+                      {%- if block.settings.show_combined_compare_discount_price -%}
+                        <span class="upsell-cart__price upsell-cart__price--strikethrough">{{ item.variant.compare_at_price | money }}</span>
+                        <span class="upsell-cart__price upsell-cart__discount">{{ item.final_price | money }}</span>
+                      {%- else -%}
+                        <span class="upsell-cart__price upsell-cart__price--strikethrough">{{ item.original_price | money }}</span>
+                        <span class="upsell-cart__price upsell-cart__discount">{{ item.final_price | money }}</span>
+                      {%- endif -%}
+                    {%- elsif item.variant.compare_at_price and item.variant.compare_at_price != 0 and item.variant.compare_at_price != item.final_price -%}
+                      <span class="upsell-cart__price upsell-cart__price--strikethrough">{{ item.variant.compare_at_price | money }}</span>
+                      <span class="upsell-cart__price upsell-cart__discount">{{ item.final_price | money }}</span>
+                    {%- else -%}
+                      <span class="upsell-cart__price">{{ item.original_price | money }}</span>
+                    {%- endif -%}
+                  {% endcapture %}
+                {% endif %}
+                <div
+                  class="upsell-cart__item"
+                  data-key="{{ item.key }}"
+                  data-id="{{ item.product.id }}"
+                >
+                  <div class="upsell-cart__image">
+                    <a href="{{ item.url }}" aria-label="{{ item.product.title | escape }}">
+                      {% if item.image != blank %}
+                        {{ item.image | image_url: width: 200 | image_tag: loading: 'lazy' }}
+                      {% else %}
+                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                      {% endif %}
+                    </a>
+                  </div>
+                  <div class="upsell-cart__item-details">
+                    <a href="{{ item.url }}" class="upsell-cart__item-name">
+                      {{ item.product.title }}
+                    </a>
+                    {% if block.settings.show_single_qty_price %}
+                      <div class="upsell-cart__item-price-each upsell-cart__item-price-each--mobile">
+                        {{ price_each }}
+                      </div>
+                    {% endif %}
+                    {% assign first_detail = true %}
+                    {%- unless item.product.has_only_default_variant -%}
+                      {% assign first_detail = false %}
+                      <ul class="upsell-cart__item-detail upsell-cart__item-detail--first upsell-cart__item-options">
+                        {% for option in item.options_with_values -%}
+                          <li class="upsell-cart__item-option">{{ option.name }}: {{ option.value }}</li>
+                        {%- endfor %}
+                      </ul>
+                    {%- endunless -%}
+                    {%- if item.selling_plan_allocation != blank -%}
+                      <div
+                        class="
+                          upsell-cart__item-detail
+                          {% if first_detail %}
+                            upsell-cart__item-detail--first
+                          {% endif %}
+                        "
+                      >
+                        {{ item.selling_plan_allocation.selling_plan.name }}
+                      </div>
+                    {%- endif -%}
+                    {%- assign property_size = item.properties | size -%}
+                    {% if property_size > 0 %}
+                      {% for p in item.properties %}
+                        {%- assign first_character_in_key = p.first | truncate: 1, '' -%}
+                        {% unless p.last == blank or first_character_in_key == '_' %}
+                          <div class="upsell-cart__item-detail">
+                            {{ p.first }}:
+                            {% if p.last contains '/uploads/' %}
+                              <a href="{{ p.last }}">{{ p.last | split: '/' | last }}</a>
+                            {% else %}
+                              {{ p.last }}
+                            {% endif %}
+                          </div>
+                        {% endunless %}
+                      {% endfor %}
+                    {% endif %}
+                    {%- if item.line_level_discount_allocations != blank -%}
+                      {%- for discount_allocation in item.line_level_discount_allocations -%}
+                        {% capture discount_value %}
+                          {% unless discount_allocation.amount == 0 %}
+                            {%- if block.settings.show_combined_compare_discount_price -%}
+                              {% assign total_compare_at_price = item.variant.compare_at_price | times: item.quantity  %}
+                              {% assign line_item_price = item.original_price | times: item.quantity  %}
+                              {% assign compare_at_diff_value = total_compare_at_price | minus: line_item_price  %}
+
+                              (-{{ discount_allocation.amount | plus: compare_at_diff_value | money }})
+                            {%- else -%}
+                              (-{{ discount_allocation.amount | money }})
+                            {%- endif -%}
+                          {% endunless %}
+                        {% endcapture %}
+                        {% unless discount_value == blank  %}
+                          <div class="upsell-cart__line-item-discount upsell-cart__discount-name">{{ discount_allocation.discount_application.title }}{{ discount_value }}</div>
+                        {% endunless %}
+                      {%- endfor -%}
+                    {%- endif -%}
+                    <div class="upsell-cart__warning-labels {% if block.settings.place_warning_labels_inline %}upsell-cart__warning-labels--inline{% endif %}">
+                    {% if block.settings.enable_low_inventory_warning %}
+                      {% if item.variant.inventory_management and item.variant.inventory_policy == 'deny' and item.variant.inventory_quantity <= block.settings.low_inventory_threshold %}
+                        <div class="upsell-cart__item-inventory-warning {% if block.settings.animate_low_inventory_warning %}upsell-cart__warning-icon--animated{% endif %}">
+                          {%
+                            render 'flash-incentives-icon',
+                            icon: block.settings.low_inventory_icon,
+                            class: 'upsell-cart__item-inventory-warning-icon',
+                          %}
+
+                          <span>{{ shop.metafields.obsidian_upsell[locale].low_inventory_warning | replace: '[quantity]', item.variant.inventory_quantity }}</span>
+                        </div>
+                      {% endif %}
+                    {% endif %}
+
+                    {% if block.settings.enable_live_traffic_label %}
+                      {% style %}
+                        {% if block.settings.live_traffic_custom_color_scheme %}
+                          :root {
+                          --upsellLiveTrafficIconColor: {{ block.settings.live_traffic_custom_color }};
+                          }
+                        {% endif %}
+                      {% endstyle %}
+
+                      <upsell-urgency-indicator
+                        class="upsell-urgency-label--hidden upsell-urgency-label {% unless block.settings.live_traffic_custom_color_scheme %}{{ block.settings.live_traffic_icon_color }}{% endunless %} {% if block.settings.animate_live_traffic_label %}upsell-cart__warning-icon--animated{% endif %}"
+                        data-variant-id="{{ item.variant_id }}"
+                      >
+                        {%
+                          render 'flash-incentives-icon',
+                          icon: block.settings.live_traffic_icon,
+                          class: 'upsell-live-traffic__icon',
+                        %}
+                        <span
+                          data-message-singular="{{ shop.metafields.obsidian_upsell[locale].live_urgency_label_singular }}"
+                          data-message="{{ shop.metafields.obsidian_upsell[locale].live_urgency_label }}"
+                        ></span>
+                      </upsell-urgency-indicator>
+                    {% endif %}
+                    </div>
+
+                    <button class="upsell-cart__item-remove" type="button" data-remove="{{ item.key }}">
+                      <span class="upsell-visually-hidden">{{ shop.metafields.obsidian_upsell[locale].line_item_remove }}</span>
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.25 4.5H3.75H15.75" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.25 4.5V15C14.25 15.3978 14.092 15.7794 13.8107 16.0607C13.5294 16.342 13.1478 16.5 12.75 16.5H5.25C4.85218 16.5 4.47064 16.342 4.18934 16.0607C3.90804 15.7794 3.75 15.3978 3.75 15V4.5M6 4.5V3C6 2.60218 6.15804 2.22064 6.43934 1.93934C6.72064 1.65804 7.10218 1.5 7.5 1.5H10.5C10.8978 1.5 11.2794 1.65804 11.5607 1.93934C11.842 2.22064 12 2.60218 12 3V4.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="upsell-cart__quantity">
+                    <label>
+                      <span class="upsell-visually-hidden">{{ shop.metafields.obsidian_upsell[locale].line_item_quantity }}</span>
+                      <input type="text"
+                        {% comment %} id="cart_updates_{{ item.key }}" {% endcomment %}
+                        name="updates[]"
+                        class="upsell-cart__quantity-input"
+                        value="{{ item.quantity }}"
+                        pattern="[0-9]*"
+                        data-id="{{ item.key }}">
+                    </label>
+                    <button type="button" class="upsell-cart__quantity-adjust" data-action="minus" aria-label="{{ shop.metafields.obsidian_upsell[locale].minus }}">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none"><path stroke="currentColor" stroke-width="1.25" d="M12 6.5H0"/></svg>
+                    </button>
+                    <button type="button" class="upsell-cart__quantity-adjust" data-action="plus" aria-label="{{ shop.metafields.obsidian_upsell[locale].add }}">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none"><path stroke="currentColor" stroke-width="1.25" d="M6 0v6m0 6V6m0 0h6M6 6H0"/></svg>
+                    </button>
+                  </div>
+                  <div class="upsell-cart__item-footer">
+                    {% if block.settings.show_single_qty_price %}
+                      <div class="upsell-cart__item-price-each upsell-cart__item-price-each--desktop">
+                        {{ shop.metafields.obsidian_upsell[locale].line_item_price_each | replace: '[price]', price_each }}
+                      </div>
+                    {% endif %}
+                    <div class="upsell-cart__item-price-area">
+                      {% assign original_price = nil %}
+                      {% assign final_price = nil %}
+                      {%- if item.original_line_price != item.final_line_price -%}
+                        {%- if block.settings.show_combined_compare_discount_price -%}
+                          {% assign original_price =  item.variant.compare_at_price | times: item.quantity %}
+                          {% assign final_price = item.final_line_price %}
+                        {%- else -%}
+                          {% assign original_price = item.original_line_price %}
+                          {% assign final_price = item.final_line_price %}
+                        {%- endif -%}
+                      {%- elsif item.variant.compare_at_price and item.variant.compare_at_price != 0 and item.variant.compare_at_price != item.final_price -%}
+                        {% assign original_price = item.variant.compare_at_price | times: item.quantity %}
+                        {% assign final_price = item.final_line_price %}
+                      {%- else -%}
+                        {% assign final_price = item.original_line_price %}
+                      {%- endif -%}
+                      <div class="upsell-cart__item-price">
+                        {% if original_price %}
+													<span class="upsell-cart__price upsell-cart__price--strikethrough">{{ original_price | money }}</span>
+													<span class="upsell-cart__price upsell-cart__discount">{{ final_price | money }}</span>
+                        {% else %}
+                          <span class="upsell-cart__price">{{ final_price | money }}</span>
+                        {% endif %}
+                      </div>
+
+                      {%- if item.unit_price_measurement -%}
+                        {%- capture unit_price_base_unit -%}
+                          <span>
+                            {%- if item.unit_price_measurement -%}
+                              {%- if item.unit_price_measurement.reference_value != 1 -%}
+                                {{ item.unit_price_measurement.reference_value }}
+                              {%- endif -%}
+                              {{ item.unit_price_measurement.reference_unit }}
+                            {%- endif -%}
+                          </span>
+                        {%- endcapture -%}
+
+                        <div class="upsell-cart__unit-price">{{ item.unit_price_measurement.quantity_value }}{{item.unit_price_measurement.quantity_unit}} | {{ item.unit_price | money }} / {{ unit_price_base_unit }}</div>
+                      {%- endif -%}
+                      {% if original_price and original_price > final_price %}
+                        {% assign savings = original_price | minus: final_price %}
+                        {% assign savings_formatted = savings | money %}
+                        {% assign total_savings = total_savings | plus: savings %}
+                        {% if block.settings.show_savings %}
+                          <div class="upsell-cart__item-price-savings">
+                            {{ shop.metafields.obsidian_upsell[locale].line_item_savings | replace: '[amount]', savings_formatted }}
+                          </div>
+                        {% endif %}
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          {% when 'custom_liquid' %}
+            <div class="
+                upsell-cart__block
+                upsell-cart__block--{{ block.settings.color_scheme }}
+                {% unless block.settings.sticky %}upsell-cart__block--animate{% endunless %}
+              "
+            >
+              <div class="upsell-cart__custom-liquid">
+                {{ block.settings.liquid }}
+              </div>
+            </div>
+          {% when 'payment_icons' %}
+            {% if shop.enabled_payment_types != empty %}
+              <div class="
+                  upsell-cart__payment-icons-wrapper
+                  upsell-cart__block
+                  upsell-cart__block--{{ block.settings.color_scheme }}
+                  {% unless block.settings.sticky %}upsell-cart__block--animate{% endunless %}
+                "
+              >
+                {% unless block.settings.heading == blank %}
+                  <h3 class="upsell-cart__payment-icons-heading">{{ lock }}{{ block.settings.heading }}</h3>
+                {% endunless %}
+                {% unless block.settings.promo_text == blank %}
+                  <div class="upsell-cart__payment-icons-promo">{{ block.settings.promo_text }}</div>
+                {% endunless %}
+                <div class="upsell-cart__payment-icons">
+                  {% for type in shop.enabled_payment_types %}
+                    <div class="upsell-cart__payment-icon-wrapper">
+                      {{ type | payment_type_svg_tag: class: "upsell-cart__payment-icon" }}
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endif %}
+          {% when 'shipping_bar' %}
+            <upsell-incentives-bar
+              class="
+                upsell-cart__incentives-bar
+                upsell-cart__block
+                upsell-cart__block--{{ block.settings.color_scheme }}
+                {% unless block.settings.sticky %}upsell-cart__block--animate{% endunless %}
+              "
+              data-cents="{{ cart.total_price }}"
+              data-gift-card-cents="{{ gift_card_cents }}"
+              {% if block.settings.show_start_end_prices %}
+                show-bar-prices
+              {% endif %}
+            >
+              {%
+                render 'flash-incentives-icon',
+                icon: block.settings.shipping_icon,
+                class: 'upsell-shipping__icon',
+                slot: 'shipping-icon-inactive'
+              %}
+              {%
+                render 'flash-incentives-icon',
+                icon: block.settings.shipping_icon,
+                class: 'upsell-shipping__icon',
+                slot: 'shipping-icon-full'
+              %}
+            </upsell-incentives-bar>
+          {% when 'text_bar' %}
+            <div
+              class="
+                upsell-cart__block
+                upsell-cart__block--{{ block.settings.color_scheme }}
+                {% unless block.settings.sticky %}upsell-cart__block--animate{% endunless %}
+              "
+            >
+              <div class="upsell-cart__text-bar-wrapper">
+                {% unless block.settings.link == blank %}
+                  <a
+                    href="{{ block.settings.link }}"
+                    class="upsell-cart__text-bar-link"
+                    aria-label="{{ shop.metafields.obsidian_upsell[locale].view }}"
+                  >
+                  </a>
+                {% endunless %}
+                <div class="upsell-cart__text-bar-text">{{ block.settings.text }}</div>
+                {% unless block.settings.link == blank %}
+                  <div class="upsell-cart__text-bar-arrow">
+                    {{ arrow }}
+                  </div>
+                {% endunless %}
+              </div>
+            </div>
+          {% when 'text_list_with_icons' %}
+            <div
+              class="
+                upsell-cart__text-list
+                upsell-cart__text-list--style-{{ block.settings.style }}
+                upsell-cart__block
+                upsell-cart__block--{{ block.settings.color_scheme }}
+                {% unless block.settings.sticky %}upsell-cart__block--animate{% endunless %}
+              "
+            >
+              {% capture content %}
+                {% for i in (1..3) %}
+                  {% assign text_key = 'text_' | append: i %}
+                  {% assign icon_key = 'icon_' | append: i %}
+                  {% unless block.settings[text_key] == blank %}
+                    <div
+                      class="
+                        upsell-cart__text-list-promotion
+                        upsell-cart__text-list-promotion--{{ block.settings.alignment }}
+                        {% if block.settings.style == 'slider' %}
+                          swiper-slide
+                        {% endif %}
+                      "
+                    >
+                      {% unless block.settings[icon_key] == 'none' %}
+                        {%
+                          render 'flash-incentives-icon',
+                          icon: block.settings[icon_key],
+                          class: 'upsell-cart__text-list-icon'
+                        %}
+                      {% endunless %}
+                      <div class="upsell-cart__text-list-promotion-text">
+                        {{ block.settings[text_key] }}
+                      </div>
+                    </div>
+                  {% endunless %}
+                {% endfor %}
+              {% endcapture %}
+
+              {% if block.settings.style == 'slider' %}
+                <upsell-slider>
+                  <div class="swiper">
+                    <div class="upsell-cart__text-list-promotion-wrapper swiper-wrapper">
+                      {{ content }}
+                    </div>
+                  </div>
+                  <div class="swiper-pagination" style="bottom: var(--paginationBottom);"></div>
+                </upsell-slider>
+              {% else %}
+                {{ content }}
+              {% endif %}
+            </div>
+          {% when 'upsells' %}
+            <upsell-upsells-wrapper
+              class="
+                upsell-cart__upsell
+                upsell-cart__block
+                upsell-cart__block--default
+                {% unless block.settings.sticky %}upsell-cart__block--animate{% endunless %}
+              "
+              data-thumbnail-size="{{ block.settings.thumbnail_size }}"
+              {% comment %} Need to avoid setting this attribtue wen natural, see comment in CSS {% endcomment %}
+              {% unless block.settings.thumbnail_aspect_ratio == "natural" %}
+                data-thumbnail-aspect-ratio="{{ block.settings.thumbnail_aspect_ratio }}"
+              {% endunless %}
+              data-action-type="{{ block.settings.upsell_action_type }}"
+              data-save-type="{{ block.settings.savings_type }}"
+              data-morph-ignore
+            >
+              <div class="upsell-cart__slider-wrapper">
+                <div class="upsell-cart__slider-header">
+                  <div class="upsell-cart__upsell-label">
+                    {{ shop.metafields.obsidian_upsell[locale].upsell_title_1 }}
+                  </div>
+                  {% if block.settings.use_slideshow %}
+                    <upsell-slider-navigation slider-id="upsell-cart-upsells">
+                      <button
+                        type="button"
+                        class="upsell-cart__slider-arrow-button"
+                        data-action="prev"
+                      >
+                        <span class="upsell-cart__slider-arrow">
+                          <svg aria-hidden="true" focusable="false" role="presentation" class="upsell-icon upsell-icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"/></svg>
+                        </span>
+                      </button>
+                      <button
+                        type="button"
+                        class="upsell-cart__slider-arrow-button"
+                        data-action="next"
+                      >
+                        <span class="upsell-cart__slider-arrow">
+                          <svg aria-hidden="true" focusable="false" role="presentation" class="upsell-icon upsell-icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
+                        </span>
+                      </button>
+                    </upsell-slider-navigation>
+                  {% endif %}
+                </div>
+                <div class="upsell-cart__slider">
+                  <upsell-upsells
+                    id="upsell-cart-upsells"
+                    class="
+                      upsell-cart__slider-inner
+                      {% unless block.settings.use_slideshow %}
+                        upsell-cart__slider-inner--column
+                      {% endunless %}
+                    "
+                    data-search-route="{{ routes.search_url }}"
+                    {% if block.settings.use_slideshow %}
+                      data-use-slideshow
+                    {% endif %}
+                    {% if block.settings.autoplay %}
+                      data-autoplay
+                    {% endif %}
+                    data-autoplay-delay="{{ block.settings.auto_rotate_speed }}"
+                  ></upsell-upsells>
+                </div>
+              </div>
+            </upsell-upsells-wrapper>
+        {% endcase %}
+      {% endcapture %}
+      {% if block.type == '@app' %}
+        {% if section.settings.app_blocks_column == 'sidebar' %}
+          {% if section.settings.app_blocks_sticky and section.settings.app_blocks_sticky_position == 'top' %}
+            {% assign sidebar_sticky_top = sidebar_sticky_top | append: block_markup %}
+          {% elsif section.settings.app_blocks_sticky and section.settings.app_blocks_sticky_position == 'bottom' %}
+            {% assign sidebar_sticky_bottom = sidebar_sticky_bottom | append: block_markup %}
+          {% else %}
+            {% assign sidebar = sidebar | append: block_markup %}
+          {% endif %}
+        {% else %}
+          {% if section.settings.app_blocks_sticky and section.settings.app_blocks_sticky_position == 'top' %}
+            {% assign main_sticky_top = main_sticky_top | append: block_markup %}
+          {% elsif section.settings.app_blocks_sticky and section.settings.app_blocks_sticky_position == 'bottom' %}
+          {% assign main_sticky_bottom = main_sticky_bottom | append: block_markup %}
+          {% else %}
+            {% assign main = main | append: block_markup %}
+          {% endif %}
+        {% endif %}
+      {% else %}
+        {% if block.settings.column == 'sidebar' %}
+          {% if block.settings.sticky and block.settings.sticky_position == 'top' %}
+            {% assign sidebar_sticky_top = sidebar_sticky_top | append: block_markup %}
+          {% elsif block.settings.sticky and block.settings.sticky_position == 'bottom' %}
+            {% assign sidebar_sticky_bottom = sidebar_sticky_bottom | append: block_markup %}
+          {% else %}
+            {% assign sidebar = sidebar | append: block_markup %}
+          {% endif %}
+        {% else %}
+          {% if block.settings.sticky and block.settings.sticky_position == 'top' %}
+            {% assign main_sticky_top = main_sticky_top | append: block_markup %}
+          {% elsif block.settings.sticky and block.settings.sticky_position == 'bottom' %}
+          {% assign main_sticky_bottom = main_sticky_bottom | append: block_markup %}
+          {% else %}
+            {% assign main = main | append: block_markup %}
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% assign sidebar_empty = true %}
+    {% capture sidebar_markup %}
+      <div
+        class="
+          upsell-cart__sidebar
+          upsell-cart__content-area
+        "
+      >
+        <div data-upsell-scroll-target="top"></div>
+        <div
+          class="
+            upsell-cart__blocks--sticky-top
+            {% if sidebar_sticky_top == blank %}
+              upsell-cart__blocks--sticky-top-empty
+            {% else %}
+              {% assign sidebar_empty = false %}
+            {% endif %}
+          "
+        >
+          {{ sidebar_sticky_top }}
+        </div>
+        {% unless sidebar == blank %}
+          {% assign sidebar_empty = false %}
+          {{ sidebar }}
+        {% endunless %}
+        <div data-upsell-scroll-target="bottom"></div>
+        {% unless sidebar_sticky_bottom == blank %}
+          {% assign sidebar_empty = false %}
+          <div class="upsell-cart__blocks--sticky-bottom">
+            {{ sidebar_sticky_bottom }}
+          </div>
+        {% endunless %}
+      </div>
+    {% endcapture %}
+    <style>
+      :root {
+        {% if sidebar_empty %}
+          --upsellSidebarWidth: 0;
+          --upsellSidebarWidthFr: 0fr;
+        {% else %}
+          --upsellSidebarWidth: var(--upsellSidebarWidth{{ section.settings.sidebar_width | capitalize }});
+          --upsellSidebarWidthFr: var(--upsellSidebarWidth{{ section.settings.sidebar_width | capitalize }}Fr);
+        {% endif %}
+      }
+    </style>
+    <div class="
+        upsell-cart__content
+        {% unless sidebar_empty %}
+          upsell-cart__content--sidebar
+          upsell-cart__content--sidebar-{{ section.settings.sidebar_position }}
+          upsell-cart__content--sidebar-{{ section.settings.sidebar_width }}
+        {% endunless %}
+      "
+    >
+      <div data-upsell-scroll-target="top"></div>
+      <div
+        class="
+          upsell-cart__main
+          upsell-cart__content-area
+        "
+      >
+        <div data-upsell-scroll-target="top"></div>
+        <div
+          class="
+            upsell-cart__blocks--sticky-top
+            {% if main_sticky_top == blank %}
+              upsell-cart__blocks--sticky-top-empty
+            {% endif %}
+          "
+        >
+          {{ main_sticky_top }}
+        </div>
+        {% unless main == blank %}
+          {{ main }}
+        {% endunless %}
+        <div data-upsell-scroll-target="bottom"></div>
+        {% unless main_sticky_bottom == blank %}
+          <div class="upsell-cart__blocks--sticky-bottom">
+            {{ main_sticky_bottom }}
+          </div>
+        {% endunless %}
+      </div>
+      {% unless sidebar_empty %}
+        {{ sidebar_markup }}
+      {% endunless %}
+      <div data-upsell-scroll-target="bottom"></div>
+
+      <div
+        class="
+          upsell-cart__footer
+          {% unless main_sticky_bottom == blank %}
+            upsell-cart__footer--has-sticky-bottom-above
+          {% endunless %}
+        "
+      >
+        {% if section.settings.show_order_notes %}
+          {% assign upsell_note_size = cart.note | size %}
+          <div data-notes-section class="upsell-cart__footer-notes" data-morph-ignore>
+            <button type="button" data-riser-trigger="notes" {% if upsell_note_size > 0 %}class="upsell-cart__note-added"{% endif %}>
+              <span class="upsell-cart__add-note">
+                {{ note }}{{ shop.metafields.obsidian_upsell[locale].add_note }}
+              </span>
+              <span class="upsell-cart__add-edit">
+                {{ note }}{{ shop.metafields.obsidian_upsell[locale].edit_note }}
+              </span>
+            </button>
+          </div>
+        {% endif %}
+
+        {% if section.settings.terms_enable %}
+          <div data-terms-section class="upsell-cart__footer-terms" data-morph-ignore>
+            {%- assign terms_label = shop.metafields.obsidian_upsell[locale].accept_terms_label -%}
+            {%- if terms_label contains '[' and terms_label contains ']' -%}
+              {% assign terms_label = terms_label | replace: '[', '<button type="button" data-riser-trigger="terms">' | replace: ']', '</button>' %}
+            {%- else -%}
+              {% capture terms_label %}
+                <button type="button" data-riser-trigger="terms">{{ terms_label }}</button>
+              {% endcapture %}
+            {%- endif -%}
+            <input type="checkbox" data-terms-checkbox id="UpsellTerms" class="upsell-cart__terms-checkbox">
+            <label for="UpsellTerms" class="upsell-cart__terms-label">
+              {{ terms_label }}
+            </label>
+          </div>
+        {% endif %}
+
+        <div data-share-section class="upsell-cart__footer-share">
+          <button class="upsell-cart__share-button" type="button" data-riser-trigger="share">
+            <svg class="upsell-cart__share-button-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.04 8.828H4v14.414h15.845V8.828h-4.04M12 16.855V2.368M16 5.924l-4.024-4.316L7.95 5.924" stroke="currentColor" stroke-width="1.496" stroke-miterlimit="10"></path></svg>
+            {{ shop.metafields.obsidian_upsell[locale].share }}
+          </button>
+        </div>
+
+        <div class="upsell-cart__footer-discounts" {% if cart.cart_level_discount_applications == blank %}style="display: none"{% endif %}>
+          {% for cart_discount in cart.cart_level_discount_applications %}
+            {% assign total_savings = total_savings | plus: cart_discount.total_allocated_amount %}
+            <div class="upsell-cart__footer-discount">
+              <span class="upsell-cart__footer-discount-title">{{ shop.metafields.obsidian_upsell[locale].cart_discount | replace: '[title]', cart_discount.title }}</span>
+              <span class="upsell-cart__footer-discount-amount">-{{ cart_discount.total_allocated_amount | money }}</span>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="upsell-cart__footer-subtotal">
+          <div class="upsell-cart__subtotal-label">
+            {{ shop.metafields.obsidian_upsell[locale].cart_subtotal }}
+          </div>
+          <div class="upsell-cart__subtotal">{{ cart.total_price | money }}</div>
+        </div>
+        <div class="upsell-cart__footer-subtotal-subtext">
+          <div class="upsell-cart__footer-taxes-note">
+            {{ shop.metafields.obsidian_upsell[locale].cart_tax_note }}
+          </div>
+          {% if section.settings.show_cart_savings and section.settings.cart_savings_style == 'small_text' %}
+            {% unless total_savings == 0 %}
+              <div class="upsell-cart__footer-cart-savings-text">
+                {% assign savings_formatted = total_savings | money_without_trailing_zeros %}
+                {{ shop.metafields.obsidian_upsell[locale].cart_savings_short | replace: '[amount]', savings_formatted }}
+              </div>
+            {% endunless %}
+          {% endif %}
+        </div>
+
+        {% capture payment_terms %}{{ form | payment_terms }}{% endcapture %}
+        {% unless payment_terms == blank %}
+          <div class="upsell-cart__payment-terms">
+            {{ payment_terms }}
+          </div>
+        {% endunless %}
+
+        <div class="upsell-cart__checkout-wrapper">
+          {% if section.settings.show_cart_savings and section.settings.cart_savings_style == 'banner' %}
+            {% unless total_savings == 0 %}
+              <div class="upsell-cart__footer-cart-savings-banner">
+                <div>
+                  {% capture savings_formatted %}
+                    <span class="upsell-cart__footer-cart-savings-banner-amount">
+                      {{ total_savings | money_without_trailing_zeros }}
+                    </span>
+                  {% endcapture %}
+                  {{ shop.metafields.obsidian_upsell[locale].cart_savings_long | replace: '[amount]', savings_formatted }}
+                </div>
+              </div>
+            {% endunless %}
+          {% endif %}
+          {% if section.settings.checkout_action == 'cart' %}
+            <a href="{{ routes.cart_url }}" class="btn button upsell-cart__cta upsell-cart__checkout" data-btn-action="cart">
+              {%
+                render 'flash-incentives-icon',
+                icon: section.settings.checkout_icon
+              %}
+              {{ shop.metafields.obsidian_upsell[locale].go_to_cart_title }}
+            </a>
+          {% else %}
+            <button type="submit" name="checkout" class="btn button upsell-cart__cta upsell-cart__checkout" data-btn-action="checkout">
+              {% unless section.settings.checkout_icon == 'none' %}
+              {%
+                render 'flash-incentives-icon',
+                icon: section.settings.checkout_icon
+              %}
+              {% endunless %}
+              {{ shop.metafields.obsidian_upsell[locale].checkout_title }}
+            </button>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% assign shipping_bar_block = section.blocks | where: 'type', 'shipping_bar' | first %}
+    {% if shipping_bar_block.settings.show_when_cart_empty %}
+      <div class="upsell-shipping--empty-cart" data-upsell-shipping-empty-cart></div>
+    {% endif %}
+    <div class="upsell-cart__empty-wrapper">
+      <div class="upsell-cart__empty">
+        <h2 class="upsell-cart__empty-heading">
+          {{ shop.metafields.obsidian_upsell[locale].cart_empty_heading }}
+        </h2>
+        <div class="upsell-cart__empty-content">
+          {% if section.settings.upsell_continue_collections != blank %}
+            <div class="upsell-cart__empty-text">
+              {{ shop.metafields.obsidian_upsell[locale].cart_empty_text }}
+            </div>
+            <div class="upsell-cart__empty-actions">
+              {% for collection in section.settings.upsell_continue_collections %}
+                <a href="{{ collection.url }}" class="btn button upsell-cart__empty-btn">
+                  {{ collection.title }}
+                </a>
+              {% endfor %}
+            </div>
+          {% else %}
+            <div class="upsell-cart__empty-actions">
+              <a href="{{ routes.all_products_collection_url }}" class="btn button upsell-cart__empty-btn">
+                {{ shop.metafields.obsidian_upsell[locale].continue_shopping }}
+              </a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    {% if section.settings.show_order_notes %}
+      <div class="upsell-cart__riser" data-riser="notes">
+        <div class="upsell-cart__riser-inner">
+          <button type="button" data-riser-close class="upsell-cart__close-riser" aria-label="Close">
+            {{ close }}
+          </button>
+          <div class="upsell-cart__riser-header upsell-cart__riser-header--no-border">
+            <div class="upsell-cart__riser-title">
+              {{ shop.metafields.obsidian_upsell[locale].add_note_title }}
+            </div>
+          </div>
+          <div class="upsell-cart__riser-main">
+            <textarea name="note" class="upsell-cart__note" placeholder="{{ shop.metafields.obsidian_upsell[locale].note_placeholder }}">{{ cart.note }}</textarea>
+          </div>
+          <div class="upsell-cart__riser-footer">
+            <button type="button" class="btn button upsell-cart__cta" data-riser-cta>
+              {{ shop.metafields.obsidian_upsell[locale].save_note }}
+            </button>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    {% if section.settings.terms_enable %}
+      <div class="upsell-cart__riser" data-riser="terms">
+        <div class="upsell-cart__riser-inner">
+          <button type="button" data-riser-close class="upsell-cart__close-riser" aria-label="Close">
+            {{ close }}
+          </button>
+
+          {% if section.settings.terms_page == blank %}
+            <div class="upsell-cart__riser-header upsell-cart__riser-header--no-border">
+              <div class="upsell-cart__riser-title">
+                {{ shop.metafields.obsidian_upsell[locale].accept_terms_default }}
+              </div>
+            </div>
+          {% else %}
+            <div class="upsell-cart__riser-header upsell-cart__riser-header--no-border">
+              <div class="upsell-cart__riser-title">
+                {{ pages[section.settings.terms_page].title }}
+              </div>
+            </div>
+            <div class="upsell-cart__riser-main upsell-cart__riser-main--rte">
+              {{ pages[section.settings.terms_page].content }}
+            </div>
+          {% endif %}
+          <div class="upsell-cart__riser-footer">
+            <button type="button" class="btn button upsell-cart__cta" data-riser-cta>
+              {{ shop.metafields.obsidian_upsell[locale].accept_terms }}
+            </button>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    <div class="upsell-cart__riser" data-riser="share">
+      <div class="upsell-cart__riser-inner">
+        <button type="button" data-riser-close class="upsell-cart__close-riser" aria-label="Close">
+          {{ close }}
+        </button>
+        <div class="upsell-cart__riser-header upsell-cart__riser-header--no-border">
+          <div class="upsell-cart__riser-title">
+            {{ shop.metafields.obsidian_upsell[locale].share }}
+          </div>
+        </div>
+        {% assign cart_share_url = cart_share_items | url_encode | prepend: '?upsell-cart-share=' | prepend: shop.secure_url %}
+        <div class="upsell-cart__riser-main">
+            <div class="upsell-cart__social-share-input-wrapper">
+              <input type="text" class="upsell-cart__social-share-input" value="{{ cart_share_url }}" readonly="">
+              <button type="button" class="upsell-cart__social-share-copy-url" aria-label="{{ shop.metafields.obsidian_upsell[locale].copy_share_link }}" data-url="{{ cart_share_url }}">
+                <svg class="upsell-cart__social-share-copy-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.562 5.574H3.404v17.31h14.158V5.575z" stroke="currentColor" stroke-width="1.513" stroke-miterlimit="10"></path>
+                  <path d="M17.731 19.424h3.748V.919H7.326v4.655" stroke="currentColor" stroke-width="1.513" stroke-miterlimit="10"></path>
+                </svg>
+              </button>
+              <div class="upsell-cart__social-share-success-message" role="alert">
+                {{ shop.metafields.obsidian_upsell[locale].copy_share_link_success }}
+              </div>
+            </div>
+
+            <div class="upsell-cart__social-share-icons">
+              <div class="upsell-cart__share-icons" data-share="Share">
+                <a target="_blank" rel="noopener" class="upsell-cart__share-icon" href="//twitter.com/share?text=Subscription%20product&amp;url={{ cart_share_url }}">
+                  <svg class="upsell-cart__share-icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.9617 5.80742C21.2242 6.13158 20.4367 6.35242 19.6075 6.45325C20.4525 5.94408 21.1025 5.14158 21.41 4.18408C20.6175 4.64658 19.7392 4.98325 18.8042 5.17075C18.0575 4.37158 16.9933 3.87158 15.8117 3.87158C13.5475 3.87158 11.7117 5.70742 11.7117 7.96908C11.7117 8.29408 11.7492 8.60658 11.8175 8.90575C8.40917 8.74492 5.38833 7.10825 3.36667 4.63408C3.01083 5.23575 2.81167 5.93492 2.81167 6.69658C2.81167 8.12158 3.53667 9.37408 4.635 10.1099C3.9625 10.0882 3.33 9.90325 2.77833 9.59658V9.64742C2.77833 11.6349 4.18917 13.2924 6.06667 13.6699C5.7225 13.7624 5.35917 13.8124 4.98667 13.8124C4.725 13.8124 4.47417 13.7874 4.22333 13.7407C4.74917 15.3682 6.26083 16.5549 8.06 16.5882C6.66 17.6874 4.88583 18.3424 2.975 18.3424C2.65 18.3424 2.32583 18.3232 2 18.2866C3.82417 19.4482 5.97333 20.1274 8.2975 20.1274C15.8425 20.1274 19.9633 13.8807 19.9633 8.47242C19.9633 8.29825 19.9633 8.12242 19.9508 7.94742C20.7517 7.37325 21.4508 6.64742 22.0008 5.82408L21.9617 5.80742Z" fill="currentColor"></path></svg>
+                  <span class="upsell-cart__share-icon-label">{{ shop.metafields.obsidian_upsell[locale].share_on_twitter }}</span>
+                </a>
+                <a target="_blank" rel="noopener" class="upsell-cart__share-icon" href="//www.facebook.com/sharer.php?u={{ cart_share_url }}">
+                  <svg class="upsell-cart__share-icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z" fill="currentColor"></path></svg>
+                  <span class="upsell-cart__share-icon-label">{{ shop.metafields.obsidian_upsell[locale].share_on_facebook }}</span>
+                </a>
+                <a target="_blank" rel="noopener" class="upsell-cart__share-icon" href="//pinterest.com/pin/create/button/?url={{ cart_share_url }}">
+                  <svg class="upsell-cart__share-icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12,2C6.477,2,2,6.477,2,12c0,4.237,2.636,7.855,6.356,9.312c-0.087-0.791-0.167-2.005,0.035-2.868 c0.182-0.78,1.172-4.971,1.172-4.971s-0.299-0.599-0.299-1.484c0-1.391,0.806-2.428,1.809-2.428c0.853,0,1.265,0.641,1.265,1.408 c0,0.858-0.546,2.141-0.828,3.329c-0.236,0.996,0.499,1.807,1.481,1.807c1.777,0,3.143-1.874,3.143-4.579 c0-2.394-1.72-4.068-4.177-4.068c-2.845,0-4.515,2.134-4.515,4.34c0,0.859,0.331,1.781,0.744,2.282 c0.082,0.099,0.093,0.186,0.069,0.287c-0.076,0.316-0.244,0.995-0.277,1.134c-0.043,0.183-0.145,0.222-0.334,0.133 c-1.249-0.582-2.03-2.408-2.03-3.874c0-3.154,2.292-6.052,6.608-6.052c3.469,0,6.165,2.472,6.165,5.776 c0,3.447-2.173,6.22-5.189,6.22c-1.013,0-1.966-0.527-2.292-1.148c0,0-0.502,1.909-0.623,2.378 c-0.226,0.868-0.835,1.958-1.243,2.622C9.975,21.843,10.969,22,12,22c5.522,0,10-4.478,10-10S17.523,2,12,2z" fill="currentColor"></path></svg>
+                  <span class="upsell-cart__share-icon-label">{{ shop.metafields.obsidian_upsell[locale].share_on_pinterest }}</span>
+                </a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  {% endform %}
+</template>
+
+{% schema %}
+  {
+    "name": "Flash Cart",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "In order to see the blocks, make sure to have at least 1 product in your cart."
+      },
+      {
+        "type": "header",
+        "content": "Empty cart promotion"
+      },
+      {
+        "type": "collection_list",
+        "id": "upsell_continue_collections",
+        "label": "Collection list",
+        "limit": 8
+      },
+      {
+        "type": "header",
+        "content": "Sidebar"
+      },
+      {
+        "type": "paragraph",
+        "content": "Cart blocks can be placed in a sidebar. On mobile, the sidebar is disabled and all blocks return to the main column."
+      },
+      {
+        "type": "select",
+        "id": "sidebar_width",
+        "label": "Sidebar width",
+        "options": [
+          {
+            "value": "narrow",
+            "label": "Narrow"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "wide",
+            "label": "Wide"
+          }
+        ],
+        "default": "medium"
+      },
+      {
+        "type": "select",
+        "id": "sidebar_position",
+        "label": "Sidebar position",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "right"
+      },
+      {
+        "type": "header",
+        "content": "App Blocks"
+      },
+      {
+        "type": "radio",
+        "id": "app_blocks_column",
+        "label": "Location",
+        "options": [
+          {
+            "value": "main",
+            "label": "Main"
+          },
+          {
+            "value": "sidebar",
+            "label": "Sidebar"
+          }
+        ],
+        "default": "main"
+      },
+      {
+        "type": "checkbox",
+        "id": "app_blocks_sticky",
+        "label": "Sticky",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "app_blocks_sticky_position",
+        "label": "Sticky position",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ],
+        "default": "bottom"
+      },
+      {
+        "type": "header",
+        "content": "Cart summary area"
+      },
+      {
+        "type": "select",
+        "id": "checkout_action",
+        "label": "Checkout action",
+        "default": "checkout",
+        "options": [
+          {
+            "value": "checkout",
+            "label": "Go to checkout"
+          },
+          {
+            "value": "cart",
+            "label": "Go to cart page"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "show_order_notes",
+        "label": "Show order notes",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "terms_enable",
+        "label": "Show terms and conditions checkbox",
+        "default": false
+      },
+      {
+        "type": "page",
+        "id": "terms_page",
+        "label": "Terms and conditions page"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_cart_savings",
+        "label": "Show total cart savings",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "cart_savings_style",
+        "label": "Total cart savings style",
+        "options": [
+          {
+            "value": "small_text",
+            "label": "Small text"
+          },
+          {
+            "value": "banner",
+            "label": "Banner"
+          }
+        ],
+        "default": "small_text"
+      },
+      {
+        "type": "select",
+        "id": "checkout_icon",
+        "label": "Checkout Icon",
+        "options": [
+          {
+            "value": "none",
+            "label": "None"
+          },
+          {
+            "value": "bank",
+            "label": "Bank"
+          },
+          {
+            "value": "bill",
+            "label": "Bill"
+          },
+          {
+            "value": "bottle",
+            "label": "Bottle"
+          },
+          {
+            "value": "chat",
+            "label": "Chat"
+          },
+          {
+            "value": "chat-empty",
+            "label": "Chat empty"
+          },
+          {
+            "value": "checked-box",
+            "label": "Checked box"
+          },
+          {
+            "value": "clothes-button",
+            "label": "Clothes button"
+          },
+          {
+            "value": "clothes-hanger",
+            "label": "Clothes hanger"
+          },
+          {
+            "value": "cotton",
+            "label": "Cotton"
+          },
+          {
+            "value": "envelope",
+            "label": "Envelope"
+          },
+          {
+            "value": "globe",
+            "label": "Globe"
+          },
+          {
+            "value": "hand-washing",
+            "label": "Hand washing"
+          },
+          {
+            "value": "heart",
+            "label": "Heart"
+          },
+          {
+            "value": "laundry-dryer",
+            "label": "Laundry dryer"
+          },
+          {
+            "value": "laundry-washer",
+            "label": "Laundry washer"
+          },
+          {
+            "value": "leaf",
+            "label": "Leaf"
+          },
+          {
+            "value": "lipstick",
+            "label": "Lipstick"
+          },
+          {
+            "value": "measuring-tape",
+            "label": "Measuring tape"
+          },
+          {
+            "value": "model-silhouette",
+            "label": "Silhouette"
+          },
+          {
+            "value": "money-bills",
+            "label": "Money bills"
+          },
+          {
+            "value": "moving-truck",
+            "label": "Moving truck"
+          },
+          {
+            "value": "package-open",
+            "label": "Package open"
+          },
+          {
+            "value": "package-closed",
+            "label": "Package closed"
+          },
+          {
+            "value": "padlock",
+            "label": "Padlock"
+          },
+          {
+            "value": "paper-airplane",
+            "label": "Paper airplane"
+          },
+          {
+            "value": "paw-print",
+            "label": "Paw print"
+          },
+          {
+            "value": "plant",
+            "label": "Plant"
+          },
+          {
+            "value": "price-tag",
+            "label": "Price tag"
+          },
+          {
+            "value": "question-mark",
+            "label": "Question mark"
+          },
+          {
+            "value": "recycle-symbol",
+            "label": "Recycle symbol"
+          },
+          {
+            "value": "ruler",
+            "label": "Ruler"
+          },
+          {
+            "value": "scissors",
+            "label": "Scissors"
+          },
+          {
+            "value": "security-badge",
+            "label": "Security badge"
+          },
+          {
+            "value": "stiletto",
+            "label": "Stiletto"
+          },
+          {
+            "value": "stopwatch",
+            "label": "Stopwatch"
+          },
+          {
+            "value": "sunflower",
+            "label": "Sunflower"
+          },
+          {
+            "value": "t-shirt",
+            "label": "Tshirt"
+          },
+          {
+            "value": "washing-symbol",
+            "label": "Washing symbol"
+          },
+          {
+            "value": "water-bottle",
+            "label": "Water bottle"
+          },
+          {
+            "value": "bell-playful",
+            "label": "Bell [Playful]"
+          },
+          {
+            "value": "celebrate-playful",
+            "label": "Celebrate [Playful]"
+          },
+          {
+            "value": "dollar-playful",
+            "label": "Dollar [Playful]"
+          },
+          {
+            "value": "fire-playful",
+            "label": "Fire [Playful]"
+          },
+          {
+            "value": "gift-playful",
+            "label": "Gift [Playful]"
+          },
+          {
+            "value": "hourglass-playful",
+            "label": "Hourglass [Playful]"
+          },
+          {
+            "value": "lock-playful",
+            "label": "Lock [Playful]"
+          },
+          {
+            "value": "percentage-playful",
+            "label": "Percentage [Playful]"
+          },
+          {
+            "value": "shipping-playful",
+            "label": "Shipping [Playful]"
+          },
+          {
+            "value": "tag-playful",
+            "label": "Tag [Playful]"
+          },
+          {
+            "value": "timer-playful",
+            "label": "Timer [Playful]"
+          },
+          {
+            "value": "unlock-playful",
+            "label": "Unlock [Playful]"
+          }
+        ],
+        "default": "padlock"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "@app"
+      },
+      {
+        "name": "Custom liquid",
+        "type": "custom_liquid",
+        "settings": [
+          {
+            "type": "liquid",
+            "id": "liquid",
+            "label": "Liquid"
+          },
+          {
+            "type": "header",
+            "content": "Appearance"
+          },
+          {
+            "type": "select",
+            "id": "color_scheme",
+            "label": "Color scheme",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "accent",
+                "label": "Accent"
+              },
+              {
+                "value": "accent-inverse",
+                "label": "Accent inverse"
+              }
+            ],
+            "default": "default"
+          },
+          {
+            "type": "header",
+            "content": "Layout"
+          },
+          {
+            "type": "radio",
+            "id": "column",
+            "label": "Location",
+            "options": [
+              {
+                "value": "main",
+                "label": "Main"
+              },
+              {
+                "value": "sidebar",
+                "label": "Sidebar"
+              }
+            ],
+            "default": "main"
+          },
+          {
+            "type": "checkbox",
+            "id": "sticky",
+            "label": "Sticky",
+            "default": false
+          },
+          {
+            "type": "select",
+            "id": "sticky_position",
+            "label": "Sticky position",
+            "options": [
+              {
+                "value": "top",
+                "label": "Top"
+              },
+              {
+                "value": "bottom",
+                "label": "Bottom"
+              }
+            ],
+            "default": "bottom"
+          }
+        ]
+      },
+      {
+        "name": "Text bar",
+        "type": "text_bar",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Include some extra info here</p>"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          },
+          {
+            "type": "header",
+            "content": "Appearance"
+          },
+          {
+            "type": "select",
+            "id": "color_scheme",
+            "label": "Color scheme",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "accent",
+                "label": "Accent"
+              },
+              {
+                "value": "accent-inverse",
+                "label": "Accent inverse"
+              }
+            ],
+            "default": "default"
+          },
+          {
+            "type": "header",
+            "content": "Layout"
+          },
+          {
+            "type": "radio",
+            "id": "column",
+            "label": "Location",
+            "options": [
+              {
+                "value": "main",
+                "label": "Main"
+              },
+              {
+                "value": "sidebar",
+                "label": "Sidebar"
+              }
+            ],
+            "default": "main"
+          },
+          {
+            "type": "checkbox",
+            "id": "sticky",
+            "label": "Sticky",
+            "default": false
+          },
+          {
+            "type": "select",
+            "id": "sticky_position",
+            "label": "Sticky position",
+            "options": [
+              {
+                "value": "top",
+                "label": "Top"
+              },
+              {
+                "value": "bottom",
+                "label": "Bottom"
+              }
+            ],
+            "default": "bottom"
+          }
+        ]
+      },
+      {
+        "name": "Text list with icons",
+        "type": "text_list_with_icons",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Presentation"
+          },
+          {
+            "type": "radio",
+            "id": "style",
+            "label": "Style",
+            "options": [
+              {
+                "value": "list",
+                "label": "List"
+              },
+              {
+                "value": "slider",
+                "label": "Slider"
+              }
+            ],
+            "default": "slider"
+          },
+          {
+            "type": "select",
+            "id": "alignment",
+            "label": "Alignment",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "center",
+                "label": "Center"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ],
+            "default": "center"
+          },
+          {
+            "type": "header",
+            "content": "Content"
+          },
+          {
+            "type": "richtext",
+            "id": "text_1",
+            "label": "Promotion 1",
+            "default": "<p>Add some promotion text</p>"
+          },
+          {
+            "type": "select",
+            "id": "icon_1",
+            "label": "Promotion 1 icon",
+            "options": [
+              {
+                "value": "none",
+                "label": "None"
+              },
+              {
+                "value": "bank",
+                "label": "Bank"
+              },
+              {
+                "value": "bill",
+                "label": "Bill"
+              },
+              {
+                "value": "bottle",
+                "label": "Bottle"
+              },
+              {
+                "value": "chat",
+                "label": "Chat"
+              },
+              {
+                "value": "chat-empty",
+                "label": "Chat empty"
+              },
+              {
+                "value": "checked-box",
+                "label": "Checked box"
+              },
+              {
+                "value": "clothes-button",
+                "label": "Clothes button"
+              },
+              {
+                "value": "clothes-hanger",
+                "label": "Clothes hanger"
+              },
+              {
+                "value": "cotton",
+                "label": "Cotton"
+              },
+              {
+                "value": "envelope",
+                "label": "Envelope"
+              },
+              {
+                "value": "globe",
+                "label": "Globe"
+              },
+              {
+                "value": "hand-washing",
+                "label": "Hand washing"
+              },
+              {
+                "value": "heart",
+                "label": "Heart"
+              },
+              {
+                "value": "laundry-dryer",
+                "label": "Laundry dryer"
+              },
+              {
+                "value": "laundry-washer",
+                "label": "Laundry washer"
+              },
+              {
+                "value": "leaf",
+                "label": "Leaf"
+              },
+              {
+                "value": "lipstick",
+                "label": "Lipstick"
+              },
+              {
+                "value": "measuring-tape",
+                "label": "Measuring tape"
+              },
+              {
+                "value": "model-silhouette",
+                "label": "Silhouette"
+              },
+              {
+                "value": "money-bills",
+                "label": "Money bills"
+              },
+              {
+                "value": "moving-truck",
+                "label": "Moving truck"
+              },
+              {
+                "value": "package-open",
+                "label": "Package open"
+              },
+              {
+                "value": "package-closed",
+                "label": "Package closed"
+              },
+              {
+                "value": "padlock",
+                "label": "Padlock"
+              },
+              {
+                "value": "paper-airplane",
+                "label": "Paper airplane"
+              },
+              {
+                "value": "paw-print",
+                "label": "Paw print"
+              },
+              {
+                "value": "plant",
+                "label": "Plant"
+              },
+              {
+                "value": "price-tag",
+                "label": "Price tag"
+              },
+              {
+                "value": "question-mark",
+                "label": "Question mark"
+              },
+              {
+                "value": "recycle-symbol",
+                "label": "Recycle symbol"
+              },
+              {
+                "value": "ruler",
+                "label": "Ruler"
+              },
+              {
+                "value": "scissors",
+                "label": "Scissors"
+              },
+              {
+                "value": "security-badge",
+                "label": "Security badge"
+              },
+              {
+                "value": "stiletto",
+                "label": "Stiletto"
+              },
+              {
+                "value": "stopwatch",
+                "label": "Stopwatch"
+              },
+              {
+                "value": "sunflower",
+                "label": "Sunflower"
+              },
+              {
+                "value": "t-shirt",
+                "label": "Tshirt"
+              },
+              {
+                "value": "washing-symbol",
+                "label": "Washing symbol"
+              },
+              {
+                "value": "water-bottle",
+                "label": "Water bottle"
+              },
+              {
+                "value": "bell-playful",
+                "label": "Bell [Playful]"
+              },
+              {
+                "value": "celebrate-playful",
+                "label": "Celebrate [Playful]"
+              },
+              {
+                "value": "dollar-playful",
+                "label": "Dollar [Playful]"
+              },
+              {
+                "value": "fire-playful",
+                "label": "Fire [Playful]"
+              },
+              {
+                "value": "gift-playful",
+                "label": "Gift [Playful]"
+              },
+              {
+                "value": "hourglass-playful",
+                "label": "Hourglass [Playful]"
+              },
+              {
+                "value": "lock-playful",
+                "label": "Lock [Playful]"
+              },
+              {
+                "value": "percentage-playful",
+                "label": "Percentage [Playful]"
+              },
+              {
+                "value": "shipping-playful",
+                "label": "Shipping [Playful]"
+              },
+              {
+                "value": "tag-playful",
+                "label": "Tag [Playful]"
+              },
+              {
+                "value": "timer-playful",
+                "label": "Timer [Playful]"
+              },
+              {
+                "value": "unlock-playful",
+                "label": "Unlock [Playful]"
+              }
+            ],
+            "default": "none"
+          },
+          {
+            "type": "richtext",
+            "id": "text_2",
+            "label": "Promotion 2",
+            "default": "<p>Add some promotion text</p>"
+          },
+          {
+            "type": "select",
+            "id": "icon_2",
+            "label": "Promotion 2 icon",
+            "options": [
+              {
+                "value": "none",
+                "label": "None"
+              },
+              {
+                "value": "bank",
+                "label": "Bank"
+              },
+              {
+                "value": "bill",
+                "label": "Bill"
+              },
+              {
+                "value": "bottle",
+                "label": "Bottle"
+              },
+              {
+                "value": "chat",
+                "label": "Chat"
+              },
+              {
+                "value": "chat-empty",
+                "label": "Chat empty"
+              },
+              {
+                "value": "checked-box",
+                "label": "Checked box"
+              },
+              {
+                "value": "clothes-button",
+                "label": "Clothes button"
+              },
+              {
+                "value": "clothes-hanger",
+                "label": "Clothes hanger"
+              },
+              {
+                "value": "cotton",
+                "label": "Cotton"
+              },
+              {
+                "value": "envelope",
+                "label": "Envelope"
+              },
+              {
+                "value": "globe",
+                "label": "Globe"
+              },
+              {
+                "value": "hand-washing",
+                "label": "Hand washing"
+              },
+              {
+                "value": "heart",
+                "label": "Heart"
+              },
+              {
+                "value": "laundry-dryer",
+                "label": "Laundry dryer"
+              },
+              {
+                "value": "laundry-washer",
+                "label": "Laundry washer"
+              },
+              {
+                "value": "leaf",
+                "label": "Leaf"
+              },
+              {
+                "value": "lipstick",
+                "label": "Lipstick"
+              },
+              {
+                "value": "measuring-tape",
+                "label": "Measuring tape"
+              },
+              {
+                "value": "model-silhouette",
+                "label": "Silhouette"
+              },
+              {
+                "value": "money-bills",
+                "label": "Money bills"
+              },
+              {
+                "value": "moving-truck",
+                "label": "Moving truck"
+              },
+              {
+                "value": "package-open",
+                "label": "Package open"
+              },
+              {
+                "value": "package-closed",
+                "label": "Package closed"
+              },
+              {
+                "value": "padlock",
+                "label": "Padlock"
+              },
+              {
+                "value": "paper-airplane",
+                "label": "Paper airplane"
+              },
+              {
+                "value": "paw-print",
+                "label": "Paw print"
+              },
+              {
+                "value": "plant",
+                "label": "Plant"
+              },
+              {
+                "value": "price-tag",
+                "label": "Price tag"
+              },
+              {
+                "value": "question-mark",
+                "label": "Question mark"
+              },
+              {
+                "value": "recycle-symbol",
+                "label": "Recycle symbol"
+              },
+              {
+                "value": "ruler",
+                "label": "Ruler"
+              },
+              {
+                "value": "scissors",
+                "label": "Scissors"
+              },
+              {
+                "value": "security-badge",
+                "label": "Security badge"
+              },
+              {
+                "value": "stiletto",
+                "label": "Stiletto"
+              },
+              {
+                "value": "stopwatch",
+                "label": "Stopwatch"
+              },
+              {
+                "value": "sunflower",
+                "label": "Sunflower"
+              },
+              {
+                "value": "t-shirt",
+                "label": "Tshirt"
+              },
+              {
+                "value": "washing-symbol",
+                "label": "Washing symbol"
+              },
+              {
+                "value": "water-bottle",
+                "label": "Water bottle"
+              }
+            ],
+            "default": "none"
+          },
+          {
+            "type": "richtext",
+            "id": "text_3",
+            "label": "Promotion 3",
+            "default": "<p>Add some promotion text</p>"
+          },
+          {
+            "type": "select",
+            "id": "icon_3",
+            "label": "Promotion 3 icon",
+            "options": [
+              {
+                "value": "none",
+                "label": "None"
+              },
+              {
+                "value": "bank",
+                "label": "Bank"
+              },
+              {
+                "value": "bill",
+                "label": "Bill"
+              },
+              {
+                "value": "bottle",
+                "label": "Bottle"
+              },
+              {
+                "value": "chat",
+                "label": "Chat"
+              },
+              {
+                "value": "chat-empty",
+                "label": "Chat empty"
+              },
+              {
+                "value": "checked-box",
+                "label": "Checked box"
+              },
+              {
+                "value": "clothes-button",
+                "label": "Clothes button"
+              },
+              {
+                "value": "clothes-hanger",
+                "label": "Clothes hanger"
+              },
+              {
+                "value": "cotton",
+                "label": "Cotton"
+              },
+              {
+                "value": "envelope",
+                "label": "Envelope"
+              },
+              {
+                "value": "globe",
+                "label": "Globe"
+              },
+              {
+                "value": "hand-washing",
+                "label": "Hand washing"
+              },
+              {
+                "value": "heart",
+                "label": "Heart"
+              },
+              {
+                "value": "laundry-dryer",
+                "label": "Laundry dryer"
+              },
+              {
+                "value": "laundry-washer",
+                "label": "Laundry washer"
+              },
+              {
+                "value": "leaf",
+                "label": "Leaf"
+              },
+              {
+                "value": "lipstick",
+                "label": "Lipstick"
+              },
+              {
+                "value": "measuring-tape",
+                "label": "Measuring tape"
+              },
+              {
+                "value": "model-silhouette",
+                "label": "Silhouette"
+              },
+              {
+                "value": "money-bills",
+                "label": "Money bills"
+              },
+              {
+                "value": "moving-truck",
+                "label": "Moving truck"
+              },
+              {
+                "value": "package-open",
+                "label": "Package open"
+              },
+              {
+                "value": "package-closed",
+                "label": "Package closed"
+              },
+              {
+                "value": "padlock",
+                "label": "Padlock"
+              },
+              {
+                "value": "paper-airplane",
+                "label": "Paper airplane"
+              },
+              {
+                "value": "paw-print",
+                "label": "Paw print"
+              },
+              {
+                "value": "plant",
+                "label": "Plant"
+              },
+              {
+                "value": "price-tag",
+                "label": "Price tag"
+              },
+              {
+                "value": "question-mark",
+                "label": "Question mark"
+              },
+              {
+                "value": "recycle-symbol",
+                "label": "Recycle symbol"
+              },
+              {
+                "value": "ruler",
+                "label": "Ruler"
+              },
+              {
+                "value": "scissors",
+                "label": "Scissors"
+              },
+              {
+                "value": "security-badge",
+                "label": "Security badge"
+              },
+              {
+                "value": "stiletto",
+                "label": "Stiletto"
+              },
+              {
+                "value": "stopwatch",
+                "label": "Stopwatch"
+              },
+              {
+                "value": "sunflower",
+                "label": "Sunflower"
+              },
+              {
+                "value": "t-shirt",
+                "label": "Tshirt"
+              },
+              {
+                "value": "washing-symbol",
+                "label": "Washing symbol"
+              },
+              {
+                "value": "water-bottle",
+                "label": "Water bottle"
+              },
+              {
+                "value": "bell-playful",
+                "label": "Bell [Playful]"
+              },
+              {
+                "value": "celebrate-playful",
+                "label": "Celebrate [Playful]"
+              },
+              {
+                "value": "dollar-playful",
+                "label": "Dollar [Playful]"
+              },
+              {
+                "value": "fire-playful",
+                "label": "Fire [Playful]"
+              },
+              {
+                "value": "gift-playful",
+                "label": "Gift [Playful]"
+              },
+              {
+                "value": "hourglass-playful",
+                "label": "Hourglass [Playful]"
+              },
+              {
+                "value": "lock-playful",
+                "label": "Lock [Playful]"
+              },
+              {
+                "value": "percentage-playful",
+                "label": "Percentage [Playful]"
+              },
+              {
+                "value": "shipping-playful",
+                "label": "Shipping [Playful]"
+              },
+              {
+                "value": "tag-playful",
+                "label": "Tag [Playful]"
+              },
+              {
+                "value": "timer-playful",
+                "label": "Timer [Playful]"
+              },
+              {
+                "value": "unlock-playful",
+                "label": "Unlock [Playful]"
+              }
+            ],
+            "default": "none"
+          },
+          {
+            "type": "header",
+            "content": "Appearance"
+          },
+          {
+            "type": "select",
+            "id": "color_scheme",
+            "label": "Color scheme",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "accent",
+                "label": "Accent"
+              },
+              {
+                "value": "accent-inverse",
+                "label": "Accent inverse"
+              }
+            ],
+            "default": "default"
+          },
+          {
+            "type": "header",
+            "content": "Layout"
+          },
+          {
+            "type": "radio",
+            "id": "column",
+            "label": "Location",
+            "options": [
+              {
+                "value": "main",
+                "label": "Main"
+              },
+              {
+                "value": "sidebar",
+                "label": "Sidebar"
+              }
+            ],
+            "default": "main"
+          },
+          {
+            "type": "checkbox",
+            "id": "sticky",
+            "label": "Sticky",
+            "default": false
+          },
+          {
+            "type": "select",
+            "id": "sticky_position",
+            "label": "Sticky position",
+            "options": [
+              {
+                "value": "top",
+                "label": "Top"
+              },
+              {
+                "value": "bottom",
+                "label": "Bottom"
+              }
+            ],
+            "default": "bottom"
+          }
+        ]
+      },
+      {
+        "name": "Free shipping bar",
+        "type": "shipping_bar",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "paragraph",
+            "content": "Configure free shipping bar in [app settings](/admin/apps/incentivize-cart-upsell/settings)"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_start_end_prices",
+            "label": "Show start and end prices",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "show_when_cart_empty",
+            "label": "Show when cart is empty",
+            "default": false
+          },
+          {
+            "type": "header",
+            "content": "Appearance"
+          },
+          {
+            "type": "select",
+            "id": "color_scheme",
+            "label": "Color scheme",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "accent",
+                "label": "Accent"
+              },
+              {
+                "value": "accent-inverse",
+                "label": "Accent inverse"
+              }
+            ],
+            "default": "default"
+          },
+          {
+            "type": "select",
+            "id": "shipping_icon",
+            "label": "Shipping Icon",
+            "options": [
+              {
+                "value": "none",
+                "label": "None"
+              },
+              {
+                "value": "bank",
+                "label": "Bank"
+              },
+              {
+                "value": "bill",
+                "label": "Bill"
+              },
+              {
+                "value": "bottle",
+                "label": "Bottle"
+              },
+              {
+                "value": "chat",
+                "label": "Chat"
+              },
+              {
+                "value": "chat-empty",
+                "label": "Chat empty"
+              },
+              {
+                "value": "checked-box",
+                "label": "Checked box"
+              },
+              {
+                "value": "clothes-button",
+                "label": "Clothes button"
+              },
+              {
+                "value": "clothes-hanger",
+                "label": "Clothes hanger"
+              },
+              {
+                "value": "cotton",
+                "label": "Cotton"
+              },
+              {
+                "value": "envelope",
+                "label": "Envelope"
+              },
+              {
+                "value": "globe",
+                "label": "Globe"
+              },
+              {
+                "value": "hand-washing",
+                "label": "Hand washing"
+              },
+              {
+                "value": "heart",
+                "label": "Heart"
+              },
+              {
+                "value": "laundry-dryer",
+                "label": "Laundry dryer"
+              },
+              {
+                "value": "laundry-washer",
+                "label": "Laundry washer"
+              },
+              {
+                "value": "leaf",
+                "label": "Leaf"
+              },
+              {
+                "value": "lipstick",
+                "label": "Lipstick"
+              },
+              {
+                "value": "measuring-tape",
+                "label": "Measuring tape"
+              },
+              {
+                "value": "model-silhouette",
+                "label": "Silhouette"
+              },
+              {
+                "value": "money-bills",
+                "label": "Money bills"
+              },
+              {
+                "value": "moving-truck",
+                "label": "Moving truck"
+              },
+              {
+                "value": "package-open",
+                "label": "Package open"
+              },
+              {
+                "value": "package-closed",
+                "label": "Package closed"
+              },
+              {
+                "value": "padlock",
+                "label": "Padlock"
+              },
+              {
+                "value": "paper-airplane",
+                "label": "Paper airplane"
+              },
+              {
+                "value": "paw-print",
+                "label": "Paw print"
+              },
+              {
+                "value": "plant",
+                "label": "Plant"
+              },
+              {
+                "value": "price-tag",
+                "label": "Price tag"
+              },
+              {
+                "value": "question-mark",
+                "label": "Question mark"
+              },
+              {
+                "value": "recycle-symbol",
+                "label": "Recycle symbol"
+              },
+              {
+                "value": "ruler",
+                "label": "Ruler"
+              },
+              {
+                "value": "scissors",
+                "label": "Scissors"
+              },
+              {
+                "value": "security-badge",
+                "label": "Security badge"
+              },
+              {
+                "value": "stiletto",
+                "label": "Stiletto"
+              },
+              {
+                "value": "stopwatch",
+                "label": "Stopwatch"
+              },
+              {
+                "value": "sunflower",
+                "label": "Sunflower"
+              },
+              {
+                "value": "t-shirt",
+                "label": "Tshirt"
+              },
+              {
+                "value": "washing-symbol",
+                "label": "Washing symbol"
+              },
+              {
+                "value": "water-bottle",
+                "label": "Water bottle"
+              },
+              {
+                "value": "bell-playful",
+                "label": "Bell [Playful]"
+              },
+              {
+                "value": "celebrate-playful",
+                "label": "Celebrate [Playful]"
+              },
+              {
+                "value": "dollar-playful",
+                "label": "Dollar [Playful]"
+              },
+              {
+                "value": "fire-playful",
+                "label": "Fire [Playful]"
+              },
+              {
+                "value": "gift-playful",
+                "label": "Gift [Playful]"
+              },
+              {
+                "value": "hourglass-playful",
+                "label": "Hourglass [Playful]"
+              },
+              {
+                "value": "lock-playful",
+                "label": "Lock [Playful]"
+              },
+              {
+                "value": "percentage-playful",
+                "label": "Percentage [Playful]"
+              },
+              {
+                "value": "shipping-playful",
+                "label": "Shipping [Playful]"
+              },
+              {
+                "value": "tag-playful",
+                "label": "Tag [Playful]"
+              },
+              {
+                "value": "timer-playful",
+                "label": "Timer [Playful]"
+              },
+              {
+                "value": "unlock-playful",
+                "label": "Unlock [Playful]"
+              }
+            ],
+            "default": "moving-truck"
+          },
+          {
+            "type": "header",
+            "content": "Layout"
+          },
+          {
+            "type": "radio",
+            "id": "column",
+            "label": "Location",
+            "options": [
+              {
+                "value": "main",
+                "label": "Main"
+              },
+              {
+                "value": "sidebar",
+                "label": "Sidebar"
+              }
+            ],
+            "default": "main"
+          },
+          {
+            "type": "checkbox",
+            "id": "sticky",
+            "label": "Sticky",
+            "default": false
+          },
+          {
+            "type": "select",
+            "id": "sticky_position",
+            "label": "Sticky position",
+            "options": [
+              {
+                "value": "top",
+                "label": "Top"
+              },
+              {
+                "value": "bottom",
+                "label": "Bottom"
+              }
+            ],
+            "default": "bottom"
+          }
+        ]
+      },
+      {
+        "name": "Cross-sells",
+        "type": "upsells",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "header",
+            "content": "Products"
+          },
+          {
+            "type": "paragraph",
+            "content": "To see your recommendations, add a product to your cart"
+          },
+          {
+            "type": "checkbox",
+            "id": "use_slideshow",
+            "label": "Display products in a slideshow",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "autoplay",
+            "label": "Auto-switch cross-sells",
+            "default": true
+          },
+          {
+            "type": "select",
+            "id": "auto_rotate_speed",
+            "label": "Cross-sell switching speed",
+            "default": "4000",
+            "options": [
+              {
+                "value": "3000",
+                "label": "3 seconds"
+              },
+              {
+                "value": "4000",
+                "label": "4 seconds"
+              },
+              {
+                "value": "5000",
+                "label": "5 seconds"
+              },
+              {
+                "value": "6000",
+                "label": "6 seconds"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "upsell_action_type",
+            "label": "Cross-sell action",
+            "default": "add_to_cart",
+            "options": [
+              {
+                "value": "add_to_cart",
+                "label": "Add to cart"
+              },
+              {
+                "value": "product_page",
+                "label": "View product page"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "thumbnail_aspect_ratio",
+            "label": "Thumbnail image aspect ratio",
+            "options": [
+              {
+                "value": "natural",
+                "label": "Natural"
+              },
+              {
+                "value": "square",
+                "label": "Square"
+              },
+              {
+                "value": "portrait",
+                "label": "Portrait"
+              },
+              {
+                "value": "landscape",
+                "label": "Landscape"
+              }
+            ],
+            "default": "natural"
+          },
+          {
+            "type": "select",
+            "id": "thumbnail_size",
+            "label": "Thumbnail size",
+            "options": [
+              {
+                "value": "small",
+                "label": "Small"
+              },
+              {
+                "value": "medium",
+                "label": "Medium"
+              },
+              {
+                "value": "large",
+                "label": "Large"
+              }
+            ],
+            "default": "medium"
+          },
+          {
+            "type": "select",
+            "id": "savings_type",
+            "label": "Savings display style",
+            "default": "dollar",
+            "options": [
+              {
+                "value": "dollar",
+                "label": "Dollar"
+              },
+              {
+                "value": "percent",
+                "label": "Percent"
+              }
+            ]
+          },
+          {
+            "type": "header",
+            "content": "Layout"
+          },
+          {
+            "type": "radio",
+            "id": "column",
+            "label": "Location",
+            "options": [
+              {
+                "value": "main",
+                "label": "Main"
+              },
+              {
+                "value": "sidebar",
+                "label": "Sidebar"
+              }
+            ],
+            "default": "main"
+          },
+          {
+            "type": "checkbox",
+            "id": "sticky",
+            "label": "Sticky",
+            "default": false
+          },
+          {
+            "type": "select",
+            "id": "sticky_position",
+            "label": "Sticky position",
+            "options": [
+              {
+                "value": "top",
+                "label": "Top"
+              },
+              {
+                "value": "bottom",
+                "label": "Bottom"
+              }
+            ],
+            "default": "bottom"
+          }
+        ]
+      },
+      {
+        "name": "Payment icons",
+        "type": "payment_icons",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "100% secure payments"
+          },
+          {
+            "type": "richtext",
+            "id": "promo_text",
+            "label": "Promo text",
+            "default": "<p>Your details are protected and safe with us.</p>"
+          },
+          {
+            "type": "header",
+            "content": "Appearance"
+          },
+          {
+            "type": "select",
+            "id": "color_scheme",
+            "label": "Color scheme",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "accent",
+                "label": "Accent"
+              },
+              {
+                "value": "accent-inverse",
+                "label": "Accent inverse"
+              }
+            ],
+            "default": "default"
+          },
+          {
+            "type": "header",
+            "content": "Layout"
+          },
+          {
+            "type": "radio",
+            "id": "column",
+            "label": "Location",
+            "options": [
+              {
+                "value": "main",
+                "label": "Main"
+              },
+              {
+                "value": "sidebar",
+                "label": "Sidebar"
+              }
+            ],
+            "default": "main"
+          },
+          {
+            "type": "checkbox",
+            "id": "sticky",
+            "label": "Sticky",
+            "default": false
+          },
+          {
+            "type": "select",
+            "id": "sticky_position",
+            "label": "Sticky position",
+            "options": [
+              {
+                "value": "top",
+                "label": "Top"
+              },
+              {
+                "value": "bottom",
+                "label": "Bottom"
+              }
+            ],
+            "default": "bottom"
+          }
+        ]
+      },
+      {
+        "name": "Cart items",
+        "type": "cart_items",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "paragraph",
+            "content": "The cart items and cart summary are always placed in the main column"
+          },
+          {
+            "type": "select",
+            "id": "thumbnail_aspect_ratio",
+            "label": "Thumbnail image aspect ratio",
+            "options": [
+              {
+                "value": "natural",
+                "label": "Natural"
+              },
+              {
+                "value": "square",
+                "label": "Square"
+              },
+              {
+                "value": "portrait",
+                "label": "Portrait"
+              },
+              {
+                "value": "landscape",
+                "label": "Landscape"
+              }
+            ],
+            "default": "natural"
+          },
+          {
+            "type": "select",
+            "id": "thumbnail_size",
+            "label": "Thumbnail size",
+            "options": [
+              {
+                "value": "small",
+                "label": "Small"
+              },
+              {
+                "value": "medium",
+                "label": "Medium"
+              },
+              {
+                "value": "large",
+                "label": "Large"
+              }
+            ],
+            "default": "medium"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_single_qty_price",
+            "label": "Show single quantity prices",
+            "info": "Displays the price of a single unit along with total price of all units combined.",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "show_combined_compare_discount_price",
+            "label": "Display compare at price when paired with discount",
+            "info": "When both compare at price and discount are applied, display the original (compare at) price instead of the current price, and show the combined savings.",
+            "default": false
+          },
+          {
+            "type": "checkbox",
+            "id": "show_savings",
+            "label": "Show item savings",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "enable_low_inventory_warning",
+            "label": "Enable low inventory warning",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "animate_low_inventory_warning",
+            "label": "Animate low inventory warning",
+            "default": true
+          },
+          {
+            "type": "select",
+            "id": "low_inventory_icon",
+            "label": "Low inventory icon",
+            "options": [
+              {
+                "value": "none",
+                "label": "None"
+              },
+              {
+                "value": "bank",
+                "label": "Bank"
+              },
+              {
+                "value": "bill",
+                "label": "Bill"
+              },
+              {
+                "value": "bottle",
+                "label": "Bottle"
+              },
+              {
+                "value": "chat",
+                "label": "Chat"
+              },
+              {
+                "value": "chat-empty",
+                "label": "Chat empty"
+              },
+              {
+                "value": "checked-box",
+                "label": "Checked box"
+              },
+              {
+                "value": "clothes-button",
+                "label": "Clothes button"
+              },
+              {
+                "value": "clothes-hanger",
+                "label": "Clothes hanger"
+              },
+              {
+                "value": "cotton",
+                "label": "Cotton"
+              },
+              {
+                "value": "dot",
+                "label": "Dot"
+              },
+              {
+                "value": "envelope",
+                "label": "Envelope"
+              },
+              {
+                "value": "globe",
+                "label": "Globe"
+              },
+              {
+                "value": "hand-washing",
+                "label": "Hand washing"
+              },
+              {
+                "value": "heart",
+                "label": "Heart"
+              },
+              {
+                "value": "laundry-dryer",
+                "label": "Laundry dryer"
+              },
+              {
+                "value": "laundry-washer",
+                "label": "Laundry washer"
+              },
+              {
+                "value": "leaf",
+                "label": "Leaf"
+              },
+              {
+                "value": "lipstick",
+                "label": "Lipstick"
+              },
+              {
+                "value": "measuring-tape",
+                "label": "Measuring tape"
+              },
+              {
+                "value": "model-silhouette",
+                "label": "Silhouette"
+              },
+              {
+                "value": "money-bills",
+                "label": "Money bills"
+              },
+              {
+                "value": "moving-truck",
+                "label": "Moving truck"
+              },
+              {
+                "value": "package-open",
+                "label": "Package open"
+              },
+              {
+                "value": "package-closed",
+                "label": "Package closed"
+              },
+              {
+                "value": "padlock",
+                "label": "Padlock"
+              },
+              {
+                "value": "paper-airplane",
+                "label": "Paper airplane"
+              },
+              {
+                "value": "paw-print",
+                "label": "Paw print"
+              },
+              {
+                "value": "plant",
+                "label": "Plant"
+              },
+              {
+                "value": "price-tag",
+                "label": "Price tag"
+              },
+              {
+                "value": "question-mark",
+                "label": "Question mark"
+              },
+              {
+                "value": "recycle-symbol",
+                "label": "Recycle symbol"
+              },
+              {
+                "value": "ruler",
+                "label": "Ruler"
+              },
+              {
+                "value": "scissors",
+                "label": "Scissors"
+              },
+              {
+                "value": "security-badge",
+                "label": "Security badge"
+              },
+              {
+                "value": "stiletto",
+                "label": "Stiletto"
+              },
+              {
+                "value": "stopwatch",
+                "label": "Stopwatch"
+              },
+              {
+                "value": "sunflower",
+                "label": "Sunflower"
+              },
+              {
+                "value": "t-shirt",
+                "label": "Tshirt"
+              },
+              {
+                "value": "washing-symbol",
+                "label": "Washing symbol"
+              },
+              {
+                "value": "water-bottle",
+                "label": "Water bottle"
+              },
+              {
+                "value": "bell-playful",
+                "label": "Bell [Playful]"
+              },
+              {
+                "value": "celebrate-playful",
+                "label": "Celebrate [Playful]"
+              },
+              {
+                "value": "dollar-playful",
+                "label": "Dollar [Playful]"
+              },
+              {
+                "value": "fire-playful",
+                "label": "Fire [Playful]"
+              },
+              {
+                "value": "gift-playful",
+                "label": "Gift [Playful]"
+              },
+              {
+                "value": "hourglass-playful",
+                "label": "Hourglass [Playful]"
+              },
+              {
+                "value": "lock-playful",
+                "label": "Lock [Playful]"
+              },
+              {
+                "value": "percentage-playful",
+                "label": "Percentage [Playful]"
+              },
+              {
+                "value": "shipping-playful",
+                "label": "Shipping [Playful]"
+              },
+              {
+                "value": "tag-playful",
+                "label": "Tag [Playful]"
+              },
+              {
+                "value": "timer-playful",
+                "label": "Timer [Playful]"
+              },
+              {
+                "value": "unlock-playful",
+                "label": "Unlock [Playful]"
+              }
+            ],
+            "default": "dot"
+          },
+          {
+            "type": "range",
+            "id": "low_inventory_threshold",
+            "min": 5,
+            "max": 50,
+            "step": 5,
+            "label": "Low inventory threshold",
+            "default": 5
+          },
+          {
+            "type": "checkbox",
+            "id": "enable_live_traffic_label",
+            "label": "Enable live traffic label",
+            "default": false
+          },
+          {
+            "type": "checkbox",
+            "id": "animate_live_traffic_label",
+            "label": "Animate live traffic label",
+            "default": true
+          },
+          {
+            "type": "select",
+            "id": "live_traffic_icon_color",
+            "label": "Live traffic icon color",
+            "options": [
+              {
+                "value": "default",
+                "label": "Default"
+              },
+              {
+                "value": "accent",
+                "label": "Accent"
+              },
+              {
+                "value": "accent-inverse",
+                "label": "Accent inverse"
+              }
+            ],
+            "default": "default"
+          },
+          {
+            "type": "checkbox",
+            "id": "live_traffic_custom_color_scheme",
+            "label": "Override with custom colors",
+            "default": false
+          },
+          {
+            "type": "color",
+            "id": "live_traffic_custom_color",
+            "label": "Icon color",
+            "default": "#ffffff"
+          },
+          {
+            "type": "select",
+            "id": "live_traffic_icon",
+            "label": "Live Traffic Icon",
+            "options": [
+              {
+                "value": "none",
+                "label": "None"
+              },
+              {
+                "value": "bank",
+                "label": "Bank"
+              },
+              {
+                "value": "bill",
+                "label": "Bill"
+              },
+              {
+                "value": "bottle",
+                "label": "Bottle"
+              },
+              {
+                "value": "chat",
+                "label": "Chat"
+              },
+              {
+                "value": "chat-empty",
+                "label": "Chat empty"
+              },
+              {
+                "value": "checked-box",
+                "label": "Checked box"
+              },
+              {
+                "value": "clothes-button",
+                "label": "Clothes button"
+              },
+              {
+                "value": "clothes-hanger",
+                "label": "Clothes hanger"
+              },
+              {
+                "value": "cotton",
+                "label": "Cotton"
+              },
+              {
+                "value": "dot",
+                "label": "Dot"
+              },
+              {
+                "value": "envelope",
+                "label": "Envelope"
+              },
+              {
+                "value": "globe",
+                "label": "Globe"
+              },
+              {
+                "value": "hand-washing",
+                "label": "Hand washing"
+              },
+              {
+                "value": "heart",
+                "label": "Heart"
+              },
+              {
+                "value": "laundry-dryer",
+                "label": "Laundry dryer"
+              },
+              {
+                "value": "laundry-washer",
+                "label": "Laundry washer"
+              },
+              {
+                "value": "leaf",
+                "label": "Leaf"
+              },
+              {
+                "value": "lipstick",
+                "label": "Lipstick"
+              },
+              {
+                "value": "measuring-tape",
+                "label": "Measuring tape"
+              },
+              {
+                "value": "model-silhouette",
+                "label": "Silhouette"
+              },
+              {
+                "value": "money-bills",
+                "label": "Money bills"
+              },
+              {
+                "value": "moving-truck",
+                "label": "Moving truck"
+              },
+              {
+                "value": "package-open",
+                "label": "Package open"
+              },
+              {
+                "value": "package-closed",
+                "label": "Package closed"
+              },
+              {
+                "value": "padlock",
+                "label": "Padlock"
+              },
+              {
+                "value": "paper-airplane",
+                "label": "Paper airplane"
+              },
+              {
+                "value": "paw-print",
+                "label": "Paw print"
+              },
+              {
+                "value": "plant",
+                "label": "Plant"
+              },
+              {
+                "value": "price-tag",
+                "label": "Price tag"
+              },
+              {
+                "value": "question-mark",
+                "label": "Question mark"
+              },
+              {
+                "value": "recycle-symbol",
+                "label": "Recycle symbol"
+              },
+              {
+                "value": "ruler",
+                "label": "Ruler"
+              },
+              {
+                "value": "scissors",
+                "label": "Scissors"
+              },
+              {
+                "value": "security-badge",
+                "label": "Security badge"
+              },
+              {
+                "value": "stiletto",
+                "label": "Stiletto"
+              },
+              {
+                "value": "stopwatch",
+                "label": "Stopwatch"
+              },
+              {
+                "value": "sunflower",
+                "label": "Sunflower"
+              },
+              {
+                "value": "t-shirt",
+                "label": "Tshirt"
+              },
+              {
+                "value": "washing-symbol",
+                "label": "Washing symbol"
+              },
+              {
+                "value": "water-bottle",
+                "label": "Water bottle"
+              },
+              {
+                "value": "bell-playful",
+                "label": "Bell [Playful]"
+              },
+              {
+                "value": "celebrate-playful",
+                "label": "Celebrate [Playful]"
+              },
+              {
+                "value": "dollar-playful",
+                "label": "Dollar [Playful]"
+              },
+              {
+                "value": "fire-playful",
+                "label": "Fire [Playful]"
+              },
+              {
+                "value": "gift-playful",
+                "label": "Gift [Playful]"
+              },
+              {
+                "value": "hourglass-playful",
+                "label": "Hourglass [Playful]"
+              },
+              {
+                "value": "lock-playful",
+                "label": "Lock [Playful]"
+              },
+              {
+                "value": "percentage-playful",
+                "label": "Percentage [Playful]"
+              },
+              {
+                "value": "shipping-playful",
+                "label": "Shipping [Playful]"
+              },
+              {
+                "value": "tag-playful",
+                "label": "Tag [Playful]"
+              },
+              {
+                "value": "timer-playful",
+                "label": "Timer [Playful]"
+              },
+              {
+                "value": "unlock-playful",
+                "label": "Unlock [Playful]"
+              }
+            ],
+            "default": "dot"
+          },
+          {
+            "type": "checkbox",
+            "id": "place_warning_labels_inline",
+            "label": "Place warning labels inline",
+            "default": false
+          }
+        ]
+      }
+    ],
+    "default": {
+      "settings": {},
+      "blocks": [
+        {
+          "type": "shipping_bar"
+        },
+        {
+          "type": "cart_items"
+        },
+        {
+          "type": "upsells"
+        }
+      ]
+    }
+  }
+{% endschema %}

@@ -1,0 +1,96 @@
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when 'custom_js' -%}
+      {%- if block.settings.custom_js != blank -%}
+        <script id="custom_js">
+          {{ block.settings.custom_js }}
+        </script>
+      {%- endif -%}
+    {%- when 'custom_css' -%}
+      {%- if block.settings.custom_css != blank -%}
+        <style id="custom_css">
+          {{ block.settings.custom_css }}
+        </style>
+      {%- endif -%}
+    {%- when 'custom_bg_css' -%}
+      {%- if block.settings.custom_bg_css != blank -%}
+        <style id="custom_bg_css">
+          #main {
+            {{ block.settings.custom_bg_css }}
+          }
+        </style>
+      {%- endif -%}
+  {%- endcase -%}
+{%- endfor -%}
+
+{% schema %}
+{
+  "name": "Custom CSS & Javacript",
+  "tag": "section",
+  "class": "section",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Custom CSS and Javascript"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "custom_js",
+      "name": "Custom JS",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "custom_js",
+          "label": "Custom Javascript",
+          "info": "NOTE: No script tag needed."
+        }
+      ]
+    },
+    {
+      "type": "custom_css",
+      "name": "Custom CSS",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "custom_css",
+          "label": "Custom CSS",
+          "info": "NOTE: No style tag needed."
+        }
+      ]
+    },
+    {
+      "type": "custom_bg_css",
+      "name": "Custom Background CSS",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "custom_bg_css",
+          "label": "Custom Background CSS",
+          "info": "NOTE: Copy background css code here with no need for style tags. You can use https://cssgradient.io to generate code."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom CSS & Javacript",
+      "blocks": [
+        {
+          "type": "custom_js"
+        },
+        {
+          "type": "custom_css"
+        },
+        {
+          "type": "custom_bg_css"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

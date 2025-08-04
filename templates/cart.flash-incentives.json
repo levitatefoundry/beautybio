@@ -1,0 +1,1 @@
+{"sections":{"cart":{"type":"flash-incentives-cart","blocks":{"shipping_bar":{"type":"shipping_bar","settings":{}},"cart_items":{"type":"cart_items","settings":{}},"upsells":{"type":"upsells","settings":{}}},"block_order":["shipping_bar","cart_items","upsells"],"settings":{}},"notification":{"type":"flash-incentives-notification","settings":{}}},"order":["cart","notification"]}

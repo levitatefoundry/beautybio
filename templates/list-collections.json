@@ -1,0 +1,64 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "display_type": "selected",
+        "collection_list": [
+          "am-routine",
+          "skincare-best-sellers",
+          "body-skincare",
+          "boosters",
+          "eye-creams-eyelid-serums",
+          "face-creams",
+          "facial-cleansers",
+          "fine-lines-wrinkle-creams",
+          "firming",
+          "firmness",
+          "all-thing-glofacial",
+          "all-things-glopro",
+          "glopro-microneedling-limited-edition-sets",
+          "glopro-microneedling-tip-attachment-heads",
+          "lip-plumping-creams-serums",
+          "glopro-microneedling-roller-collection",
+          "moisturizer",
+          "multitasking-heroes",
+          "new-arrivals",
+          "oily-skin",
+          "pm-routine",
+          "pores",
+          "powerfull-hair",
+          "redness",
+          "sensitive-skin",
+          "serum",
+          "sets-minis",
+          "creams-serums-skincare-products",
+          "beauty-tools",
+          "uneven-dull-skincare-products",
+          "shop-all"
+        ],
+        "columns": "4",
+        "mobile_columns": "1",
+        "rows": "8",
+        "collection_listing_aspect_ratio": "landscape",
+        "label_style": "overlay",
+        "overlay_title_background_style": "gradient",
+        "overlay_text_color": "#ffffff",
+        "overlay_title_background": "#000000",
+        "enable_animation": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

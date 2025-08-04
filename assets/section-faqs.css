@@ -1,0 +1,31 @@
+.product-faqs {
+    display: flex; 
+    align-items: center;
+    min-height: 500px;
+    margin: 0;
+}
+
+.product-faqs .item .collection-accordion__body{
+  background-color: #F3C8CF;
+}
+
+.product-faqs--header {
+    text-align: center;
+    font-weight: 600;
+    font-size: calc(var(--font-heading-scale) * 3rem);
+    margin: 2rem 0 4rem 0;
+    padding-top: 2rem;
+    text-transform: capitalize;
+}
+
+div.item-content div.item-content__text.faq-content, label.accordion-label span.item-heading.faq-heading {
+  color: #000000;
+}
+
+.product-faqs .item .collection-accordion__body .item-content__text{
+  padding: 1rem;
+}
+.product-faqs .item .collection-accordion__body .item-content__text p{
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,354 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "image_hero_MtK7yB": {
+      "type": "image-hero",
+      "blocks": {
+        "accent_rtdyV9": {
+          "type": "accent",
+          "settings": {
+            "accent": "BeautyBio Hits"
+          }
+        },
+        "heading_QjwkdG": {
+          "type": "heading",
+          "settings": {
+            "title": "Tutorials & Podcasts",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-1"
+          }
+        },
+        "text_hVagNe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get the most out of your skincare</p>",
+            "text_font_class": "fs-body-200"
+          }
+        }
+      },
+      "block_order": [
+        "accent_rtdyV9",
+        "heading_QjwkdG",
+        "text_hVagNe"
+      ],
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 50,
+        "mobile_height": 50,
+        "image": "shopify://shop_images/1-11-24_HP-Desktop.jpg",
+        "image_mobile": "shopify://shop_images/12-27-24_HP-Mobile_v2.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "text_color": "#000000",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1) 3%, rgba(0, 0, 0, 0.5) 71%)",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "image_hero_xehL8T": {
+      "type": "image-hero",
+      "blocks": {
+        "accent_8wUeyd": {
+          "type": "accent",
+          "settings": {
+            "accent": "BeautyBio Hits"
+          }
+        },
+        "heading_eAWCn7": {
+          "type": "heading",
+          "settings": {
+            "title": "Tutorials & Podcasts",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-1"
+          }
+        },
+        "text_W4iQQd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get the most out of your skincare</p>",
+            "text_font_class": "fs-body-200"
+          }
+        }
+      },
+      "block_order": [
+        "accent_8wUeyd",
+        "heading_eAWCn7",
+        "text_W4iQQd"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 50,
+        "mobile_height": 50,
+        "image": "shopify://shop_images/9.20-HP-UPDATE_DESKTOP_1.jpg",
+        "image_mobile": "shopify://shop_images/9.20-HP-UPDATE_MOBILE_1.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1) 3%, rgba(0, 0, 0, 0.5) 71%)",
+        "overlay_opacity": 50,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "image_hero_Yy9THn": {
+      "type": "image-hero",
+      "blocks": {
+        "accent_qRVDFc": {
+          "type": "accent",
+          "settings": {
+            "accent": "BeautyBio Hits"
+          }
+        },
+        "heading_3MbcrP": {
+          "type": "heading",
+          "settings": {
+            "title": "Tutorials & Podcasts",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-1"
+          }
+        },
+        "text_GKf3k9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get the most out of your skincare</p>",
+            "text_font_class": "fs-body-200"
+          }
+        }
+      },
+      "block_order": [
+        "accent_qRVDFc",
+        "heading_3MbcrP",
+        "text_GKf3k9"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 50,
+        "mobile_height": 50,
+        "image": "shopify://shop_images/7-18-22_HP-DESKTOP.jpg",
+        "image_mobile": "shopify://shop_images/7-18-22_HP-MOBILE.jpg",
+        "focal_point": "bottom",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "text_color": "#000000",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1) 3%, rgba(0, 0, 0, 0.5) 71%)",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_9yiA8B": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_gytgVy": {
+          "type": "heading",
+          "settings": {
+            "title": "Videos",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        },
+        "spacer_YNCQW8": {
+          "type": "spacer",
+          "disabled": true,
+          "settings": {
+            "space": 8
+          }
+        },
+        "text_mGwjiG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Watch detailed tutorials to learn everything you need to know about your skincare</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gytgVy",
+        "spacer_YNCQW8",
+        "text_mGwjiG"
+      ],
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "solid",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 800
+      }
+    },
+    "elfsight_widget_erDPpL": {
+      "type": "elfsight-widget",
+      "settings": {
+        "title": "",
+        "title_color": "#000000",
+        "title_font": "",
+        "width": 90,
+        "background_color": "",
+        "code": "<!-- Elfsight YouTube Gallery | BB YouTube -->\n<script src=\"https://static.elfsight.com/platform/platform.js\" async></script>\n<div class=\"elfsight-app-5a26e746-7109-45ff-96a8-1dd6807611d9\" data-elfsight-app-lazy></div>"
+      }
+    },
+    "rich-text-2": {
+      "type": "rich-text",
+      "blocks": {
+        "block-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Podcasts",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        },
+        "block-1": {
+          "type": "spacer",
+          "disabled": true,
+          "settings": {
+            "space": 8
+          }
+        },
+        "block-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get the inside scoop on BeautyBio and inspiration for the ultimate glow from the inside & out with our CEO & Founder, Jamie O'Banion.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "block-0",
+        "block-1",
+        "block-2"
+      ],
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "solid",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 600
+      }
+    },
+    "custom_liquid_WyEzbT": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div align=\"center\"><iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/strong-as-f-k-unveiling-the-secrets-of-superwoman/id1426026971?i=1000657011944\"></iframe>\n\n<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/doubling-down-on-faith-in-the-most-uncertain-times/id1514068478?i=1000688456866\"></iframe>\n\n<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/the-end-of-an-era-generosity/id1426026971?i=1000651164630\"></iframe>\n\n<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/568-your-clean-skincare-guide-creating-a-routine/id1320060107?i=1000588112043\"></iframe></div>",
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "custom_liquid_bHYj6E": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div align=\"center\"><iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;background:transparent;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/beauty-bio-founder-ceo-jamie-obanion-on-how-to-balance/id1093028505?i=1000519835775\"></iframe>\n\n<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/jamie-obanion/id1458829622?i=1000438172314\"></iframe>\n\n<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;background:transparent;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/jamie-obanion-founder-and-ceo-of-beautybio/id1436666232?i=1000492989089\"></iframe>\n\n<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/jamie-obanion-founder-ceo-of-beautybio/id1581000269?i=1000549269423\"></iframe></div>",
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "custom_liquid_QBmdzK": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div align=\"center\"><iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;background:transparent;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/au/podcast/balancing-motherhood-business-beauty-tips-micro-needling/id1575181956?i=1000532211367\"></iframe>\n\n<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/100-jamie-obanion-on-the-secret-to-her-success-in/id1453090243?i=1000503674201\"></iframe>\n\n<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;background:transparent;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/beautybios-jamie-obanion-on-a-ceos-responsibility/id1441018579?i=1000469555026\"></iframe></div>",
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only"
+      }
+    },
+    "custom_liquid_EXnbCU": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div align=\"center\"><iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/100-jamie-obanion-on-the-secret-to-her-success-in/id1453090243?i=1000503674201\"></iframe>\n\n<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;background:transparent;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/beautybios-jamie-obanion-on-a-ceos-responsibility/id1441018579?i=1000469555026\"></iframe></div>",
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only"
+      }
+    },
+    "custom_liquid_NFHE7C": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div align=\"center\"><iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/strong-as-f-k-unveiling-the-secrets-of-superwoman/id1426026971?i=1000657011944\"></iframe>\n\n<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/doubling-down-on-faith-in-the-most-uncertain-times/id1514068478?i=1000688456866\"></iframe>\n\n<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/the-end-of-an-era-generosity/id1426026971?i=1000651164630\"></iframe></div>",
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "custom_liquid_GxY3B6": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div align=\"center\"><iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/568-your-clean-skincare-guide-creating-a-routine/id1320060107?i=1000588112043\"></iframe>\n\n<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;background:transparent;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/beauty-bio-founder-ceo-jamie-obanion-on-how-to-balance/id1093028505?i=1000519835775\"></iframe>\n\n<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/jamie-obanion/id1458829622?i=1000438172314\"></iframe></div>",
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "custom_liquid_eYJG6A": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div align=\"center\"><iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;background:transparent;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/jamie-obanion-founder-and-ceo-of-beautybio/id1436666232?i=1000492989089\"></iframe>\n\n<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/jamie-obanion-founder-ceo-of-beautybio/id1581000269?i=1000549269423\"></iframe>\n\n<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;background:transparent;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/au/podcast/balancing-motherhood-business-beauty-tips-micro-needling/id1575181956?i=1000532211367\"></iframe></div>",
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "custom_liquid_afrNFF": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div align=\"center\"><iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/100-jamie-obanion-on-the-secret-to-her-success-in/id1453090243?i=1000503674201\"></iframe>\n\n<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;background:transparent;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/beautybios-jamie-obanion-on-a-ceos-responsibility/id1441018579?i=1000469555026\"></iframe></div>",
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_hero_MtK7yB",
+    "image_hero_xehL8T",
+    "image_hero_Yy9THn",
+    "rich_text_9yiA8B",
+    "elfsight_widget_erDPpL",
+    "rich-text-2",
+    "custom_liquid_WyEzbT",
+    "custom_liquid_bHYj6E",
+    "custom_liquid_QBmdzK",
+    "custom_liquid_EXnbCU",
+    "custom_liquid_NFHE7C",
+    "custom_liquid_GxY3B6",
+    "custom_liquid_eYJG6A",
+    "custom_liquid_afrNFF"
+  ]
+}
