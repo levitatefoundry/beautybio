@@ -1,1 +1,582 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"enable_animation":true,"content_width":"full","custom_content_width":1000}},"image_with_text_split_4YWWDC":{"type":"image-with-text-split","blocks":{"heading_Ktx4yC":{"type":"heading","settings":{"title":"Glow, Grow, & Earn<br> with BeautyBio","heading_tag":"h2","heading_font_class":"fs-heading-display-3"}},"text_QtEnyw":{"type":"text","settings":{"text":"<p>Become a BeautyBio Ambassador and earn up to 25% commission and have access to exclusive opportunities by sharing what you already love.<\/p>","text_font_class":"fs-body-100"}},"button_JyH3VG":{"type":"button","settings":{"link":"https:\/\/gloprobeauty.superfiliate.com\/portal\/signUp","link_text":"JOIN THE AMBASSADOR PROGRAM","button_style":"btn--primary"}}},"block_order":["heading_Ktx4yC","text_QtEnyw","button_JyH3VG"],"custom_css":[".image-with-text-split__image {box-shadow: 0px -2px 5px #0000001a, 0px 8px 15px #0000001a, -5px 0px 10px #0000001a; border-radius: 15px 15px 0 0; background-color: #fff; border: 5px #fff solid; border-bottom: 0;}","img {border-radius: 15px 15px 0 0; transform: scale(1.5);}",".image-with-text-split__image-container {padding: 50px 80px 0 0;}","p {font-size: 16px; max-width: 500px;}","@media screen and (max-width: 800px) {.image-with-text-split__image-container {display: flex; justify-content: center; padding: 0 20px; } * {text-align: center; }}"],"name":"t:sections.image_with_text_split.presets.name","settings":{"image_position":"right","image_mobile_position":"below-content","image_padding":"none","image":"shopify:\/\/shop_images\/a0e2d64231889dd86863cc3212026fd16fc80295.jpg","aspect_ratio":"square","focal_point":"image_presentation","content_alignment":"left","background_color":"#fff5f3","text_color":"#000000","button_background_color":"#000000","button_text_color":"#ffffff","enable_animation":true,"section_padding":"section--vertical-padding-none"}},"image_with_text_CQaLJg":{"type":"image-with-text","blocks":{"heading_FBi7r3":{"type":"heading","settings":{"title":"Why You'll Love Being a BeautyBio Ambassador","heading_tag":"h2","heading_font_class":"fs-heading-1-base"}},"text_tAE9F6":{"type":"text","settings":{"text":"<ul><li>Earn commission when someone purchases from your link<\/li><li>Become a part of BeautyBio's community<\/li><li>Customize your own landing page curated with your favorite products<\/li><\/ul>","text_font_class":"fs-body-100"}},"button_Db9qGq":{"type":"button","settings":{"link":"https:\/\/gloprobeauty.superfiliate.com\/portal\/signUp","link_text":"CUSTOMIZE MY STOREFRONT","button_style":"btn--primary"}}},"block_order":["heading_FBi7r3","text_tAE9F6","button_Db9qGq"],"custom_css":["h2 {font-size: 24pt; font-weight: 500; max-width: 400px;}","li {background: #fff5f3; padding: 15px 40px; margin: 8px 0; position: relative; max-width: 400px;}","ul {list-style-position: inside; list-style-type: none; padding-left: 0;}",".image-with-text__image {box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1), 0px 8px 15px rgba(0, 0, 0, 0.1), -5px 0px 10px rgba(0, 0, 0, 0.1), 5px 0px 10px rgba(0, 0, 0, 0.1); border-radius: 15px;}"],"name":"t:sections.image_with_text.presets.name","settings":{"image_position":"left","text_alignment":"left","image":"shopify:\/\/shop_images\/image_fd42767b-c703-44b2-8254-1ae9f3ccd074.png","aspect_ratio":"square","focal_point":"image_presentation","image_caption":"","show_small_image":false,"image_small_aspect_ratio":"square","image_small_focal_point":"image_presentation","background_color":"","text_color":"#000000","button_background_color":"#000000","button_text_color":"#ffffff","bullets":"check","enable_animation":true,"divider_style":"none","section_padding":"section--vertical-padding-top-bottom"}},"ambassador_social_heading_hCtEKA":{"type":"ambassador-social-heading","disabled":true,"custom_css":["section {padding: 30px;}","span {width: 17px; margin: 0 1px;}","p {margin: 0 10px; font-size: 12pt;}","h2 {font-size: 26pt;}"],"name":"Ambassador Social Heading","settings":{}},"promotion_bar_mY6PaA":{"type":"promotion-bar","disabled":true,"custom_css":[".sales-banner__bar {justify-content: space-between;}",".animation--bar-divider::before {display: none;}","h2 {max-width: 310px; text-align: left; font-weight: 500;}","a {padding: 0 50px;}",".sales-banner__content {min-height: 200px;}","@media only screen and (max-width: 800px) {.sales-banner__bar {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; padding-bottom: 100px; } .sales-banner__bar-item {padding: 0; } a {width: 100%; } h2 {font-size: 16pt; } img {transform: scale(1.4); }}"],"name":"t:sections.promotion_bar.presets.name","settings":{"min_height":60,"min_height_mobile":60,"heading":"Get 25% Commission This Month Only - Ends in 3 Days!","heading_tag":"h2","text":"","link":"shopify:\/\/collections","link_text":"JOIN NOW","button_style":"btn--primary","image":"shopify:\/\/shop_images\/12202ee46e2c4b8360935c31b044b9247590f1c4_124d6ef7-d7b2-4826-9892-7e99a386af58.jpg","mobile_image":"shopify:\/\/shop_images\/12202ee46e2c4b8360935c31b044b9247590f1c4_124d6ef7-d7b2-4826-9892-7e99a386af58.jpg","focal_point":"image_presentation","mobile_focal_point":"top","text_color":"#000000","button_background_color":"#000000","button_text_color":"#ffffff","background_color":"#ffffff","color_overlay":"#000000","color_overlay_gradient":"","overlay_opacity":0,"enable_animation":true,"full_width":false,"section_padding":"section--vertical-padding-top-bottom"}},"17527796612025ada1":{"type":"apps","blocks":{"archive_instagram_tiktok_ugc_feed_zyxUaL":{"type":"shopify:\/\/apps\/archive-instagram-tiktok-ugc\/blocks\/feed\/3bf10f27-2525-4f37-94f5-dedb92556f19","settings":{"feedId":"4d68e506-7d6b-45a7-aed6-5c0f7ce346ef"}}},"block_order":["archive_instagram_tiktok_ugc_feed_zyxUaL"],"custom_css":["h2 {text-align: center;}"," {background: #fff5f3;}"],"settings":{"heading":"","enable_animation":true,"divider_style":"none","section_padding":"section--vertical-padding-top-bottom"}},"image_with_text_split_LCnWkj":{"type":"image-with-text-split","blocks":{"heading_6im3WV":{"type":"heading","settings":{"title":"Earn Commission on all purchases made through your personalized storefront!","heading_tag":"h2","heading_font_class":"fs-heading-display-3"}},"image_with_text_JMeR7k":{"type":"image-with-text","settings":{"img":"shopify:\/\/shop_images\/Illustration.png","text":"<p><strong>Upload <\/strong>your best photo to your profile<\/p>"}},"image_with_text_ga8JRt":{"type":"image-with-text","settings":{"img":"shopify:\/\/shop_images\/Illustration_269af7fb-f1f1-497a-9a7f-07b2e1948b14.png","text":"<p><strong>Add content <\/strong>from our video library<\/p>"}},"image_with_text_CitcTA":{"type":"image-with-text","settings":{"img":"shopify:\/\/shop_images\/Illustration_e0a5d736-f737-4161-89e0-e452facdc86b.png","text":"<p><strong>Highlight <\/strong>your favorite products<\/p>"}},"image_with_text_FWfyWp":{"type":"image-with-text","settings":{"img":"shopify:\/\/shop_images\/Illustration_39ca6856-c456-4c86-84a4-6447a6fe3451.png","text":"<p><strong>Customize your message <\/strong>- review why you love these products<\/p>"}},"button_zhrLEB":{"type":"button","settings":{"link":"https:\/\/gloprobeauty.superfiliate.com\/portal\/signUp","link_text":"CUSTOMIZE MY STOREFRONT","button_style":"btn--primary"}}},"block_order":["heading_6im3WV","image_with_text_JMeR7k","image_with_text_ga8JRt","image_with_text_CitcTA","image_with_text_FWfyWp","button_zhrLEB"],"custom_css":["h2 {font-size: 24pt; font-weight: 500;}",".image-with-text-split__image {border-radius: 15px; box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1), 0px 8px 15px rgba(0, 0, 0, 0.1), -5px 0px 10px rgba(0, 0, 0, 0.1), 5px 0px 10px rgba(0, 0, 0, 0.1); height: 78%;}",".block-image-text-container {background: #fff5f3; margin: 8px 0;}",".image-with-text-split__image-container {display: flex; align-items: center;}",".image__img {margin: 0;}","p {font-size: 14pt; max-width: 225px}"],"name":"t:sections.image_with_text_split.presets.name","settings":{"image_position":"right","image_mobile_position":"above-content","image_padding":"all-sides","image":"shopify:\/\/shop_images\/43ac53999ee5034d68cc805172e608d7ca6e38ca.png","aspect_ratio":"square","focal_point":"right","content_alignment":"left","background_color":"#ffffff","text_color":"#000000","button_background_color":"#000000","button_text_color":"#ffffff","enable_animation":true,"section_padding":"section--vertical-padding-none"}},"ts_3_steps_t3iXWc":{"type":"ts-3-steps","blocks":{"step_NrPgdb":{"type":"step","settings":{"number":"1","step-heading":"Join for Free","step-text":"Sign up in minutes"}},"step_XD4RLc":{"type":"step","settings":{"number":"2","step-heading":"Pick your Favorites","step-text":"Add top BeautyBio picks to your store"}},"step_tYKXQy":{"type":"step","settings":{"number":"3","step-heading":"Share Your Link","step-text":"On Instagram, TikTok, email, anywhere."}},"step_YnKmaD":{"type":"step","settings":{"number":"4","step-heading":"Earn Commission","step-text":"Track earnings and watch them grow."}},"button_j3fyqk":{"type":"button","settings":{"button_label":"BECOME AN AMBASSADOR NOW","button_link":"https:\/\/gloprobeauty.superfiliate.com\/portal\/signUp"}}},"block_order":["step_NrPgdb","step_XD4RLc","step_tYKXQy","step_YnKmaD","button_j3fyqk"],"custom_css":[".ts-3-step-container {background: #fff5f3 !important;}",".ts-step-number {background-color: #fff5f3 !important; z-index: 1;}"],"name":"TS 3 Steps","settings":{"heading":"How It Works","subheading":"Joining is free! Sign up, personalize your storefront with your favorite products, and earn when someone shops through your link. No inventory, just beauty and rewards."}},"image_with_text_Enym7A":{"type":"image-with-text","blocks":{"heading_hYTd9Q":{"type":"heading","settings":{"title":"Share the glow. Get rewarded.","heading_tag":"h2","heading_font_class":"fs-heading-1-base"}},"text_TyHwam":{"type":"text","settings":{"text":"<p>Recommend BeautyBio to earn cash-no setup or hidden requirements. Just perks for sharing what you love.<\/p>","text_font_class":"fs-body-100"}},"text_FdTitP":{"type":"text","settings":{"text":"<ul><li>Up to 25% Commission<\/li><li>Discount Code for Your Followers<\/li><li>No Inventory. No Hassle. We handle fulfillment; you focus on sharing.<\/li><\/ul>","text_font_class":"fs-body-100"}},"button_dT6Y98":{"type":"button","settings":{"link":"https:\/\/gloprobeauty.superfiliate.com\/portal\/signUp","link_text":"BECOME A CREATOR NOW","button_style":"btn--primary"}}},"block_order":["heading_hYTd9Q","text_TyHwam","text_FdTitP","button_dT6Y98"],"disabled":true,"custom_css":["h2 {font-size: 24pt;}","li {background: #fff5f3; padding: 15px 40px; margin: 8px 0; position: relative;}","ul {list-style-position: inside; list-style-type: none; padding-left: 0;}"],"name":"t:sections.image_with_text.presets.name","settings":{"image_position":"right","text_alignment":"left","image":"shopify:\/\/shop_images\/Card_fa127ba1-2f08-4313-b55e-dc10a582174a.png","aspect_ratio":"landscape","focal_point":"image_presentation","image_caption":"","show_small_image":false,"image_small_aspect_ratio":"square","image_small_focal_point":"image_presentation","background_color":"#f3c8cf","text_color":"#000000","button_background_color":"#000000","button_text_color":"#ffffff","bullets":"check","enable_animation":true,"divider_style":"none","section_padding":"section--vertical-padding-top-bottom"}},"split_richtext_with_list_zJGVtC":{"type":"split-richtext-with-list","blocks":{"heading_dxQBaC":{"type":"heading","settings":{"title":"Share the glow. Get rewarded.","heading_tag":"h2","heading_font_class":"fs-heading-display-3"}},"subheading_EBEwDg":{"type":"subheading","settings":{"subheading":"Recommend BeautyBio to earn cash-no setup or hidden requirements. Just perks for sharing what you love.","subheading_tag":"h3","subheading_font_class":"fs-heading-6-base"}},"button_9ztJCP":{"type":"button","settings":{"link":"https:\/\/gloprobeauty.superfiliate.com\/portal\/signUp","link_text":"BECOME AN AMBASSADOR NOW","button_style":"btn--primary"}},"listpoint_dVDXdw":{"type":"listpoint","settings":{"text":"Up to 25% Commission."}},"listpoint_BcFiEC":{"type":"listpoint","settings":{"text":"Discount Code for Your Followers"}},"listpoint_JHEfJe":{"type":"listpoint","settings":{"text":"No Inventory. No Hassle. We manage fulfillment; you share"}}},"block_order":["heading_dxQBaC","subheading_EBEwDg","button_9ztJCP","listpoint_dVDXdw","listpoint_BcFiEC","listpoint_JHEfJe"],"custom_css":["h2 {font-size: 24pt; font-weight: 500;}","li {background: #fff5f3; padding: 15px 40px; margin: 8px 0; position: relative; max-width: 400px;}","ul {list-style-position: inside; list-style-type: none; padding-left: 0;}","h3 {font-weight: 300; font-size: 11pt; max-width: 450px;}",".image-with-text__image-container {display: flex; justify-content: flex-end;}"],"name":"Split Richtext With List","settings":{"image_position":"right","text_alignment":"left","background_color":"#f3c8cf","text_color":"#000000","button_background_color":"#000000","button_text_color":"#ffffff","bullets":"check","enable_animation":true,"divider_style":"none","section_padding":"section--vertical-padding-top-bottom"}},"ts_faq_WC7J74":{"type":"ts-faq","blocks":{"faq_YrfnPL":{"type":"faq","settings":{"faq-heading":"What is the BeautyBio Ambassador Program?","faq-body":"<p>The BeautyBio Ambassador Program is an exclusive community of beauty enthusiasts who love our products and want to share them with their followers. Ambassadors earn commissions, get insider access, and unlock special perks as they grow with us.<\/p>"}},"faq_44Xqwh":{"type":"faq","settings":{"faq-heading":"How do the Ambassador tiers work?","faq-body":"<p>The program has a three-tier system that rewards you as you grow your influence and impact:<\/p><ul><li><strong>Tier 1:  Commission:<\/strong> 15%, <strong>Gifts:<\/strong> At 5, 10, and 15 referred sales<\/li><li><strong>Tier 2: Commission:<\/strong> 20%, <strong>Gifts:<\/strong> At 20, 25, and 30 referred sales, <strong>Bonus:<\/strong> Access to exclusive training<\/li><li><strong>Tier 3: Commission:<\/strong> 25%, <strong>Gifts:<\/strong> At 35, 40, and 45 referred sales, <strong>Bonus:<\/strong> Tier 1 & 2 benefits + Event invitations & VIP perks<\/li><\/ul><p><em>Note: Ambassadors <\/em><em><strong>cannot earn gifts<\/strong><\/em><em> on purchases made by themselves.<\/em><\/p>"}},"faq_fCURgQ":{"type":"faq","settings":{"faq-heading":"How do I get started as an Ambassador?","faq-body":"<p>Apply <a href=\"https:\/\/gloprobeauty.superfiliate.com\/portal\/signUp\" target=\"_blank\" title=\"https:\/\/gloprobeauty.superfiliate.com\/portal\/signUp\">Here<\/a><\/p>"}},"faq_6aDk7H":{"type":"faq","settings":{"faq-heading":"What are the requirements to join?","faq-body":"<p>To be eligible, you must:<\/p><ul><li>Have <strong>500+ followers<\/strong> on a public social platform<\/li><li>Post <strong>at least 2 pieces of content per month<\/strong> \/ active on social media<\/li><\/ul>"}},"faq_JWt68V":{"type":"faq","settings":{"faq-heading":"Can I earn commission on my own purchases?","faq-body":"<p>No. Ambassadors are not eligible to earn commission or gifts on their own orders.<\/p>"}},"faq_ykBFeT":{"type":"faq","settings":{"faq-heading":"How do I move up to the next tier?","faq-body":"<p>Your tier is determined by the number of sales you generate. As your referrals grow, you’ll automatically be upgraded to the next tier and notified of your new perks.<\/p>"}},"faq_VK3JGy":{"type":"faq","settings":{"faq-heading":"How do I track my referrals and sales?","faq-body":"<p>Once you're accepted, you'll get access to a personal dashboard where you can track clicks, sales, and commission payouts.<\/p>"}},"faq_8fRwCH":{"type":"faq","settings":{"faq-heading":"When and how do payments happen?","faq-body":"<p>Payments will occur on the 15th of the month for the previous months sales. Payments will be paid through PayPal. <\/p>"}}},"block_order":["faq_YrfnPL","faq_44Xqwh","faq_fCURgQ","faq_6aDk7H","faq_JWt68V","faq_ykBFeT","faq_VK3JGy","faq_8fRwCH"],"custom_css":["a {text-decoration: underline;}"],"name":"TS Faqs","settings":{}}},"order":["main","image_with_text_split_4YWWDC","image_with_text_CQaLJg","ambassador_social_heading_hCtEKA","promotion_bar_mY6PaA","17527796612025ada1","image_with_text_split_LCnWkj","ts_3_steps_t3iXWc","image_with_text_Enym7A","split_richtext_with_list_zJGVtC","ts_faq_WC7J74"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "full",
+        "custom_content_width": 1000
+      }
+    },
+    "image_with_text_split_4YWWDC": {
+      "type": "image-with-text-split",
+      "blocks": {
+        "heading_Ktx4yC": {
+          "type": "heading",
+          "settings": {
+            "title": "Glow, Grow, & Earn<br> with BeautyBio",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "text_QtEnyw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Become a BeautyBio Ambassador and earn up to 25% commission and have access to exclusive opportunities by sharing what you already love.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_JyH3VG": {
+          "type": "button",
+          "settings": {
+            "link": "https://gloprobeauty.superfiliate.com/portal/signUp",
+            "link_text": "JOIN THE AMBASSADOR PROGRAM",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ktx4yC",
+        "text_QtEnyw",
+        "button_JyH3VG"
+      ],
+      "custom_css": [
+        ".image-with-text-split__image {box-shadow: 0px -2px 5px #0000001a, 0px 8px 15px #0000001a, -5px 0px 10px #0000001a; border-radius: 15px 15px 0 0; background-color: #fff; border: 5px #fff solid; border-bottom: 0;}",
+        "img {border-radius: 15px 15px 0 0; transform: scale(1.5);}",
+        ".image-with-text-split__image-container {padding: 50px 80px 0 0;}",
+        "p {font-size: 16px; max-width: 500px;}",
+        "@media screen and (max-width: 800px) {.image-with-text-split__image-container {display: flex; justify-content: center; padding: 0 20px; } * {text-align: center; }}"
+      ],
+      "name": "t:sections.image_with_text_split.presets.name",
+      "settings": {
+        "image_position": "right",
+        "image_mobile_position": "below-content",
+        "image_padding": "none",
+        "image": "shopify://shop_images/a0e2d64231889dd86863cc3212026fd16fc80295.jpg",
+        "aspect_ratio": "square",
+        "focal_point": "image_presentation",
+        "content_alignment": "left",
+        "background_color": "#fff5f3",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "image_with_text_CQaLJg": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_FBi7r3": {
+          "type": "heading",
+          "settings": {
+            "title": "Why You'll Love Being a BeautyBio Ambassador",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        },
+        "text_tAE9F6": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Earn commission when someone purchases from your link</li><li>Become a part of BeautyBio's community</li><li>Customize your own landing page curated with your favorite products</li></ul>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_Db9qGq": {
+          "type": "button",
+          "settings": {
+            "link": "https://gloprobeauty.superfiliate.com/portal/signUp",
+            "link_text": "CUSTOMIZE MY STOREFRONT",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FBi7r3",
+        "text_tAE9F6",
+        "button_Db9qGq"
+      ],
+      "custom_css": [
+        "h2 {font-size: 24pt; font-weight: 500; max-width: 400px;}",
+        "li {background: #fff5f3; padding: 15px 40px; margin: 8px 0; position: relative; max-width: 400px;}",
+        "ul {list-style-position: inside; list-style-type: none; padding-left: 0;}",
+        ".image-with-text__image {box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1), 0px 8px 15px rgba(0, 0, 0, 0.1), -5px 0px 10px rgba(0, 0, 0, 0.1), 5px 0px 10px rgba(0, 0, 0, 0.1); border-radius: 15px;}"
+      ],
+      "name": "t:sections.image_with_text.presets.name",
+      "settings": {
+        "image_position": "left",
+        "text_alignment": "left",
+        "image": "shopify://shop_images/image_fd42767b-c703-44b2-8254-1ae9f3ccd074.png",
+        "aspect_ratio": "square",
+        "focal_point": "image_presentation",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "image_presentation",
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "bullets": "check",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "ambassador_social_heading_hCtEKA": {
+      "type": "ambassador-social-heading",
+      "disabled": true,
+      "custom_css": [
+        "section {padding: 30px;}",
+        "span {width: 17px; margin: 0 1px;}",
+        "p {margin: 0 10px; font-size: 12pt;}",
+        "h2 {font-size: 26pt;}"
+      ],
+      "name": "Ambassador Social Heading",
+      "settings": {}
+    },
+    "promotion_bar_mY6PaA": {
+      "type": "promotion-bar",
+      "disabled": true,
+      "custom_css": [
+        ".sales-banner__bar {justify-content: space-between;}",
+        ".animation--bar-divider::before {display: none;}",
+        "h2 {max-width: 310px; text-align: left; font-weight: 500;}",
+        "a {padding: 0 50px;}",
+        ".sales-banner__content {min-height: 200px;}",
+        "@media only screen and (max-width: 800px) {.sales-banner__bar {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; padding-bottom: 100px; } .sales-banner__bar-item {padding: 0; } a {width: 100%; } h2 {font-size: 16pt; } img {transform: scale(1.4); }}"
+      ],
+      "name": "t:sections.promotion_bar.presets.name",
+      "settings": {
+        "min_height": 60,
+        "min_height_mobile": 60,
+        "heading": "Get 25% Commission This Month Only - Ends in 3 Days!",
+        "heading_tag": "h2",
+        "text": "",
+        "link": "shopify://collections",
+        "link_text": "JOIN NOW",
+        "button_style": "btn--primary",
+        "image": "shopify://shop_images/12202ee46e2c4b8360935c31b044b9247590f1c4_124d6ef7-d7b2-4826-9892-7e99a386af58.jpg",
+        "mobile_image": "shopify://shop_images/12202ee46e2c4b8360935c31b044b9247590f1c4_124d6ef7-d7b2-4826-9892-7e99a386af58.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "top",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "background_color": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "full_width": false,
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "17527796612025ada1": {
+      "type": "apps",
+      "blocks": {
+        "archive_instagram_tiktok_ugc_feed_zyxUaL": {
+          "type": "shopify://apps/archive-instagram-tiktok-ugc/blocks/feed/3bf10f27-2525-4f37-94f5-dedb92556f19",
+          "settings": {
+            "feedId": "4d68e506-7d6b-45a7-aed6-5c0f7ce346ef"
+          }
+        }
+      },
+      "block_order": [
+        "archive_instagram_tiktok_ugc_feed_zyxUaL"
+      ],
+      "custom_css": [
+        "h2 {text-align: center;}",
+        " {background: #fff5f3;}"
+      ],
+      "settings": {
+        "heading": "",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "image_with_text_split_LCnWkj": {
+      "type": "image-with-text-split",
+      "blocks": {
+        "heading_6im3WV": {
+          "type": "heading",
+          "settings": {
+            "title": "Earn Commission on all purchases made through your personalized storefront!",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "image_with_text_JMeR7k": {
+          "type": "image-with-text",
+          "settings": {
+            "img": "shopify://shop_images/Illustration.png",
+            "text": "<p><strong>Upload </strong>your best photo to your profile</p>"
+          }
+        },
+        "image_with_text_ga8JRt": {
+          "type": "image-with-text",
+          "settings": {
+            "img": "shopify://shop_images/Illustration_269af7fb-f1f1-497a-9a7f-07b2e1948b14.png",
+            "text": "<p><strong>Add content </strong>from our video library</p>"
+          }
+        },
+        "image_with_text_CitcTA": {
+          "type": "image-with-text",
+          "settings": {
+            "img": "shopify://shop_images/Illustration_e0a5d736-f737-4161-89e0-e452facdc86b.png",
+            "text": "<p><strong>Highlight </strong>your favorite products</p>"
+          }
+        },
+        "image_with_text_FWfyWp": {
+          "type": "image-with-text",
+          "settings": {
+            "img": "shopify://shop_images/Illustration_39ca6856-c456-4c86-84a4-6447a6fe3451.png",
+            "text": "<p><strong>Customize your message </strong>- review why you love these products</p>"
+          }
+        },
+        "button_zhrLEB": {
+          "type": "button",
+          "settings": {
+            "link": "https://gloprobeauty.superfiliate.com/portal/signUp",
+            "link_text": "CUSTOMIZE MY STOREFRONT",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6im3WV",
+        "image_with_text_JMeR7k",
+        "image_with_text_ga8JRt",
+        "image_with_text_CitcTA",
+        "image_with_text_FWfyWp",
+        "button_zhrLEB"
+      ],
+      "custom_css": [
+        "h2 {font-size: 24pt; font-weight: 500;}",
+        ".image-with-text-split__image {border-radius: 15px; box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1), 0px 8px 15px rgba(0, 0, 0, 0.1), -5px 0px 10px rgba(0, 0, 0, 0.1), 5px 0px 10px rgba(0, 0, 0, 0.1); height: 78%;}",
+        ".block-image-text-container {background: #fff5f3; margin: 8px 0;}",
+        ".image-with-text-split__image-container {display: flex; align-items: center;}",
+        ".image__img {margin: 0;}",
+        "p {font-size: 14pt; max-width: 225px}"
+      ],
+      "name": "t:sections.image_with_text_split.presets.name",
+      "settings": {
+        "image_position": "right",
+        "image_mobile_position": "above-content",
+        "image_padding": "all-sides",
+        "image": "shopify://shop_images/43ac53999ee5034d68cc805172e608d7ca6e38ca.png",
+        "aspect_ratio": "square",
+        "focal_point": "right",
+        "content_alignment": "left",
+        "background_color": "#ffffff",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "ts_3_steps_t3iXWc": {
+      "type": "ts-3-steps",
+      "blocks": {
+        "step_NrPgdb": {
+          "type": "step",
+          "settings": {
+            "number": "1",
+            "step-heading": "Join for Free",
+            "step-text": "Sign up in minutes"
+          }
+        },
+        "step_XD4RLc": {
+          "type": "step",
+          "settings": {
+            "number": "2",
+            "step-heading": "Pick your Favorites",
+            "step-text": "Add top BeautyBio picks to your store"
+          }
+        },
+        "step_tYKXQy": {
+          "type": "step",
+          "settings": {
+            "number": "3",
+            "step-heading": "Share Your Link",
+            "step-text": "On Instagram, TikTok, email, anywhere."
+          }
+        },
+        "step_YnKmaD": {
+          "type": "step",
+          "settings": {
+            "number": "4",
+            "step-heading": "Earn Commission",
+            "step-text": "Track earnings and watch them grow."
+          }
+        },
+        "button_j3fyqk": {
+          "type": "button",
+          "settings": {
+            "button_label": "BECOME AN AMBASSADOR NOW",
+            "button_link": "https://gloprobeauty.superfiliate.com/portal/signUp"
+          }
+        }
+      },
+      "block_order": [
+        "step_NrPgdb",
+        "step_XD4RLc",
+        "step_tYKXQy",
+        "step_YnKmaD",
+        "button_j3fyqk"
+      ],
+      "custom_css": [
+        ".ts-3-step-container {background: #fff5f3 !important;}",
+        ".ts-step-number {background-color: #fff5f3 !important; z-index: 1;}"
+      ],
+      "name": "TS 3 Steps",
+      "settings": {
+        "heading": "How It Works",
+        "subheading": "Joining is free! Sign up, personalize your storefront with your favorite products, and earn when someone shops through your link. No inventory, just beauty and rewards."
+      }
+    },
+    "image_with_text_Enym7A": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_hYTd9Q": {
+          "type": "heading",
+          "settings": {
+            "title": "Share the glow. Get rewarded.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        },
+        "text_TyHwam": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Recommend BeautyBio to earn cash-no setup or hidden requirements. Just perks for sharing what you love.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "text_FdTitP": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Up to 25% Commission</li><li>Discount Code for Your Followers</li><li>No Inventory. No Hassle. We handle fulfillment; you focus on sharing.</li></ul>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_dT6Y98": {
+          "type": "button",
+          "settings": {
+            "link": "https://gloprobeauty.superfiliate.com/portal/signUp",
+            "link_text": "BECOME A CREATOR NOW",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hYTd9Q",
+        "text_TyHwam",
+        "text_FdTitP",
+        "button_dT6Y98"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-size: 24pt;}",
+        "li {background: #fff5f3; padding: 15px 40px; margin: 8px 0; position: relative;}",
+        "ul {list-style-position: inside; list-style-type: none; padding-left: 0;}"
+      ],
+      "name": "t:sections.image_with_text.presets.name",
+      "settings": {
+        "image_position": "right",
+        "text_alignment": "left",
+        "image": "shopify://shop_images/Card_fa127ba1-2f08-4313-b55e-dc10a582174a.png",
+        "aspect_ratio": "landscape",
+        "focal_point": "image_presentation",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "image_presentation",
+        "background_color": "#f3c8cf",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "bullets": "check",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "split_richtext_with_list_zJGVtC": {
+      "type": "split-richtext-with-list",
+      "blocks": {
+        "heading_dxQBaC": {
+          "type": "heading",
+          "settings": {
+            "title": "Share the glow. Get rewarded.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "subheading_EBEwDg": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Recommend BeautyBio to earn cash-no setup or hidden requirements. Just perks for sharing what you love.",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "button_9ztJCP": {
+          "type": "button",
+          "settings": {
+            "link": "https://gloprobeauty.superfiliate.com/portal/signUp",
+            "link_text": "BECOME AN AMBASSADOR NOW",
+            "button_style": "btn--primary"
+          }
+        },
+        "listpoint_dVDXdw": {
+          "type": "listpoint",
+          "settings": {
+            "text": "Up to 25% Commission."
+          }
+        },
+        "listpoint_BcFiEC": {
+          "type": "listpoint",
+          "settings": {
+            "text": "Discount Code for Your Followers"
+          }
+        },
+        "listpoint_JHEfJe": {
+          "type": "listpoint",
+          "settings": {
+            "text": "No Inventory. No Hassle. We manage fulfillment; you share"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dxQBaC",
+        "subheading_EBEwDg",
+        "button_9ztJCP",
+        "listpoint_dVDXdw",
+        "listpoint_BcFiEC",
+        "listpoint_JHEfJe"
+      ],
+      "custom_css": [
+        "h2 {font-size: 24pt; font-weight: 500;}",
+        "li {background: #fff5f3; padding: 15px 40px; margin: 8px 0; position: relative; max-width: 400px;}",
+        "ul {list-style-position: inside; list-style-type: none; padding-left: 0;}",
+        "h3 {font-weight: 300; font-size: 11pt; max-width: 450px;}",
+        ".image-with-text__image-container {display: flex; justify-content: flex-end;}"
+      ],
+      "name": "Split Richtext With List",
+      "settings": {
+        "image_position": "right",
+        "text_alignment": "left",
+        "background_color": "#f3c8cf",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "bullets": "check",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "ts_faq_WC7J74": {
+      "type": "ts-faq",
+      "blocks": {
+        "faq_YrfnPL": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "What is the BeautyBio Ambassador Program?",
+            "faq-body": "<p>The BeautyBio Ambassador Program is an exclusive community of beauty enthusiasts who love our products and want to share them with their followers. Ambassadors earn commissions, get insider access, and unlock special perks as they grow with us.</p>"
+          }
+        },
+        "faq_44Xqwh": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "How do the Ambassador tiers work?",
+            "faq-body": "<p>The program has a three-tier system that rewards you as you grow your influence and impact:</p><ul><li><strong>Tier 1:  Commission:</strong> 15%, <strong>Gifts:</strong> At 5, 10, and 15 referred sales</li><li><strong>Tier 2: Commission:</strong> 20%, <strong>Gifts:</strong> At 20, 25, and 30 referred sales, <strong>Bonus:</strong> Access to exclusive training</li><li><strong>Tier 3: Commission:</strong> 25%, <strong>Gifts:</strong> At 35, 40, and 45 referred sales, <strong>Bonus:</strong> Tier 1 & 2 benefits + Event invitations & VIP perks</li></ul><p><em>Note: Ambassadors </em><em><strong>cannot earn gifts</strong></em><em> on purchases made by themselves.</em></p>"
+          }
+        },
+        "faq_fCURgQ": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "How do I get started as an Ambassador?",
+            "faq-body": "<p>Apply <a href=\"https://gloprobeauty.superfiliate.com/portal/signUp\" target=\"_blank\" title=\"https://gloprobeauty.superfiliate.com/portal/signUp\">Here</a></p>"
+          }
+        },
+        "faq_6aDk7H": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "What are the requirements to join?",
+            "faq-body": "<p>To be eligible, you must:</p><ul><li>Have <strong>500+ followers</strong> on a public social platform</li><li>Post <strong>at least 2 pieces of content per month</strong> / active on social media</li></ul>"
+          }
+        },
+        "faq_JWt68V": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "Can I earn commission on my own purchases?",
+            "faq-body": "<p>No. Ambassadors are not eligible to earn commission or gifts on their own orders.</p>"
+          }
+        },
+        "faq_ykBFeT": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "How do I move up to the next tier?",
+            "faq-body": "<p>Your tier is determined by the number of sales you generate. As your referrals grow, you’ll automatically be upgraded to the next tier and notified of your new perks.</p>"
+          }
+        },
+        "faq_VK3JGy": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "How do I track my referrals and sales?",
+            "faq-body": "<p>Once you're accepted, you'll get access to a personal dashboard where you can track clicks, sales, and commission payouts.</p>"
+          }
+        },
+        "faq_8fRwCH": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "When and how do payments happen?",
+            "faq-body": "<p>Payments will occur on the 15th of the month for the previous months sales. Payments will be paid through PayPal. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_YrfnPL",
+        "faq_44Xqwh",
+        "faq_fCURgQ",
+        "faq_6aDk7H",
+        "faq_JWt68V",
+        "faq_ykBFeT",
+        "faq_VK3JGy",
+        "faq_8fRwCH"
+      ],
+      "custom_css": [
+        "a {text-decoration: underline;}"
+      ],
+      "name": "TS Faqs",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_split_4YWWDC",
+    "image_with_text_CQaLJg",
+    "ambassador_social_heading_hCtEKA",
+    "promotion_bar_mY6PaA",
+    "17527796612025ada1",
+    "image_with_text_split_LCnWkj",
+    "ts_3_steps_t3iXWc",
+    "image_with_text_Enym7A",
+    "split_richtext_with_list_zJGVtC",
+    "ts_faq_WC7J74"
+  ]
+}

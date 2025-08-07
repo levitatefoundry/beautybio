@@ -1,1 +1,439 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"enable_animation":true,"content_width":"full","custom_content_width":1000}},"image_with_text_LWfRcH":{"type":"image-with-text","blocks":{"heading_t3j8FM":{"type":"heading","settings":{"title":"Skincare That Works Smarter","heading_tag":"h2","heading_font_class":"fs-heading-display-3"}},"text_B6zJDA":{"type":"text","settings":{"text":"<p>Skincare tools you'll love with clinically proven results. Deep-cleansing with GLOfacial or firming with GloPRO® for serious glow.<\/p>","text_font_class":"fs-body-100"}},"button_nexxzf":{"type":"button","settings":{"link":"shopify:\/\/products\/glopro-microneedling-regeneration-roller-tool","link_text":"SHOP GLOPRO","button_style":"btn--primary"}},"button_VtL8JY":{"type":"button","settings":{"link":"shopify:\/\/products\/glofacial","link_text":"SHOP GLOFACIAL","button_style":"btn--primary"}}},"block_order":["heading_t3j8FM","text_B6zJDA","button_nexxzf","button_VtL8JY"],"name":"t:sections.image_with_text.presets.name","settings":{"image_position":"right","text_alignment":"left","image":"shopify:\/\/shop_images\/Hero_section.png","aspect_ratio":"landscape","focal_point":"image_presentation","image_caption":"","show_small_image":false,"image_small_aspect_ratio":"square","image_small_focal_point":"image_presentation","background_color":"","text_color":"#000000","button_background_color":"#000000","button_text_color":"#ffffff","bullets":"none","enable_animation":true,"divider_style":"none","section_padding":"section--vertical-padding-top-bottom"}},"richtext_v2_Nf6Egw":{"type":"richtext-v2","blocks":{"heading_mrcrV4":{"type":"heading","settings":{"title":"Our 2 Best Selling Tools","heading_tag":"h2","heading_font_class":"fs-heading-2-base"}},"text_twxQyR":{"type":"text","settings":{"text":"<p>Together, they target signs of aging with real results - no filters, no fluff.<\/p>","text_font_class":"fs-body-100"}},"button_fYNfGE":{"type":"button","settings":{"link":"shopify:\/\/products\/glopro-microneedling-regeneration-roller-tool","link_text":"SHOP GLOPRO","button_style":"btn--primary"}},"button_fKF8wM":{"type":"button","settings":{"link":"shopify:\/\/products\/glofacial","link_text":"SHOP GLOFACIAL","button_style":"btn--primary"}}},"block_order":["heading_mrcrV4","text_twxQyR","button_fYNfGE","button_fKF8wM"],"custom_css":[".rich-text__inner {display: flex; justify-content: space-between;}","h2 {font-weight: 500; font-size: 24pt;}","p {font-size: 11pt;}","a {min-width: 200px; max-height: 50px;}","@media screen and (max-width: 800px) {.button-block__button {display: none; }}"],"name":"Richtext v2","settings":{"alignment":"left_left","bullets":"none","enable_animation":true,"divider_style":"none","section_padding":"section--vertical-padding-none","content_width":"full","custom_content_width":700}},"promo_banner_n4NWjp":{"type":"promo-banner","name":"t:sections.promo_banner.presets.name","settings":{"min_height":300,"min_height_mobile":500,"left_column_width":60,"giant_heading":"","giant_heading_font_size":100,"giant_heading_font_size_mobile":50,"left_column_alignment":"left","left_column_alignment_mobile":"left","heading":"","heading_tag":"h4","heading_font_class":"fs-heading-3-base","text":"","right_column_alignment":"left","right_column_alignment_mobile":"left","link":"shopify:\/\/collections","link_text":"","button_style":"btn--secondary","link_2":"shopify:\/\/collections","link_text_2":"","button_style_2":"btn--primary","image":"shopify:\/\/shop_images\/06d8dee1c97e5bf63f07d5c78ecd8be10f862379.jpg","mobile_image":"shopify:\/\/shop_images\/06d8dee1c97e5bf63f07d5c78ecd8be10f862379.jpg","focal_point":"image_presentation","mobile_focal_point":"image_presentation","text_color":"rgba(0,0,0,0)","button_background_color":"rgba(0,0,0,0)","button_text_color":"rgba(0,0,0,0)","background_color":"rgba(0,0,0,0)","color_overlay":"rgba(0,0,0,0)","color_overlay_gradient":"","overlay_opacity":0,"enable_animation":true,"show_frame":true,"full_width":false,"section_padding":"section--vertical-padding-none"}},"richtext_v2_kk3HAM":{"type":"richtext-v2","blocks":{"text_mXGcBb":{"type":"text","settings":{"text":"<ul><li><strong>Clinically Proven Results<\/strong><\/li><li><strong>Hight-Tech, Low Stress<\/strong><\/li><li><strong>Gentle, Skin-First Design<\/strong><\/li><li><strong>Powered by Patented Tech<\/strong><\/li><\/ul>","text_font_class":"fs-body-100"}},"button_6bJbLL":{"type":"button","settings":{"link":"","link_text":"Read more","button_style":"btn--primary"}},"button_zeYDLB":{"type":"button","settings":{"link":"","link_text":"Read more","button_style":"btn--primary"}}},"block_order":["text_mXGcBb","button_6bJbLL","button_zeYDLB"],"custom_css":["li {padding: 0 0 0 40px; position: relative;}","ul {list-style-position: inside; list-style-type: none; padding-left: 0; display: flex; align-items: center; justify-content: space-between;}",".button-block__button {display: none;}","@media screen and (max-width: 800px) {.button-block__button {display: flex; } ul {flex-direction: column; align-items: center; justify-content: flex-start; gap: 8px; }}"],"name":"Richtext v2","settings":{"alignment":"left_left","bullets":"star","enable_animation":true,"divider_style":"none","section_padding":"section--vertical-padding-none","content_width":"full","custom_content_width":700}},"icon_columns_4igpU9":{"type":"icon-columns","blocks":{"step_mywGCN":{"type":"step","settings":{"icon":"shopify:\/\/shop_images\/fi_7886147.svg","step-heading":"Backed by Real Science","step-text":"Microneedling. Pore extraction. Ingredient infusion. We do it all, and we do it right."}},"step_WGPWqX":{"type":"step","settings":{"icon":"shopify:\/\/shop_images\/fi_17371266.svg","step-heading":"Tools That Do the Heavy Lifting","step-text":"At-home treatments. No downtime. Visibly improved complexion starts now."}},"step_GbYTXV":{"type":"step","settings":{"icon":"shopify:\/\/shop_images\/fi_2717575.svg","step-heading":"Transparent Process. Always.","step-text":"Clean. Results-first. That’s the BeautyBio standard."}}},"block_order":["step_mywGCN","step_WGPWqX","step_GbYTXV"],"name":"Icon Columns","settings":{"heading":"More than a Pretty Tool. Clinically Proven + Patented.","subheading":""}},"glopro_glofacial_showcase_i63Kfe":{"type":"glopro-glofacial-showcase","name":"GloPRO GLOfacial Showcase","settings":{"heading":"Meet the Power Pair: GLOfacial & GloPRO®","subheading":"Two game-changing tools. GLOfacial helps remove gunk from pores. GloPRO® helps boost volume and bounce. Both bring serious results with smart tech and simple routines.","product1_img":"shopify:\/\/shop_images\/7cd83b9f7786058bab8ff90baf023ee2bb43d1dd.png","button1_text":"SHOP GLOFACIAL","button1_link":"shopify:\/\/products\/glofacial","product2_img":"shopify:\/\/shop_images\/0fdc12a1ed1c69f78123f73c7992b5720d734929.png","button2_text":"SHOP GLOPRO","button2_link":"shopify:\/\/products\/glopro-microneedling-regeneration-roller-tool"}},"175450953727ce84b1":{"type":"apps","blocks":{"archive_instagram_tiktok_ugc_feed_fR97Mx":{"type":"shopify:\/\/apps\/archive-instagram-tiktok-ugc\/blocks\/feed\/3bf10f27-2525-4f37-94f5-dedb92556f19","settings":{"feedId":"4d68e506-7d6b-45a7-aed6-5c0f7ce346ef"}}},"block_order":["archive_instagram_tiktok_ugc_feed_fR97Mx"],"custom_css":["h2 {text-align: center; font-weight: 500;}"],"settings":{"heading":"Real Creators. Real Results.","enable_animation":true,"divider_style":"none","section_padding":"section--vertical-padding-top-bottom"}},"multi_diagram_p3RApR":{"type":"multi-diagram","blocks":{"heading_3FrUa4":{"type":"heading","settings":{"title":"Subscribe and Save 10%"}},"text_fUykJj":{"type":"text","settings":{"text":"<p>Keep your glow uninterrupted. Stay stocked, stress-free, and save. Smart skincare, on repeat.<\/p>"}},"text_33ddiw":{"type":"text","settings":{"text":"<ul><li><strong>Free Shipping $75+<\/strong><\/li><li><strong>Replace every 2-3 months regularly.<\/strong><\/li><\/ul>"}},"diagram_X8dT3E":{"type":"diagram","settings":{"text":"Engineered for performance, designed to exfoliate, extract, and infuse. Two GLOfacial tips for face + precision zones.","heading":"REPLACEMENT TIPS","diagram_image":"shopify:\/\/shop_images\/Frame_1484581513.png","button_link":"shopify:\/\/products\/glofacial","button_text":"SHOP GLOFACIAL"}},"diagram_39N9mP":{"type":"diagram","settings":{"text":"GloPRO® MicroTips deliver targeted treatments from head to toe, because your skin isn’t one size fits all.","heading":"TARGETED ATTACHMENTS","diagram_image":"shopify:\/\/shop_images\/Frame_1484581513_1.png","button_link":"shopify:\/\/products\/glopro-microneedling-regeneration-roller-tool","button_text":"SHOP GLOPRO"}}},"block_order":["heading_3FrUa4","text_fUykJj","text_33ddiw","diagram_X8dT3E","diagram_39N9mP"],"custom_css":[],"name":"Multi-diagram","settings":{"bullets":"check"}},"split_faq_text_jctx9x":{"type":"split-faq-text","blocks":{"faq_4GADY7":{"type":"faq","settings":{"faq-heading":"What’s the difference between GloPRO® and GLOfacial","faq-body":"<p>GloPRO® is a microneedling tool that helps firm, smooth, and rejuvenate skin by triggering your body’s natural collagen production.<\/p><p>GLOfacial is a pore-cleansing, serum-infusing device that vacuums out impurities and hydrates at the same time.<\/p>"}},"faq_zq39Ty":{"type":"faq","settings":{"faq-heading":"Can I use both tools together?","faq-body":""}},"faq_riA8Ye":{"type":"faq","settings":{"faq-heading":"Is microneedling painful?","faq-body":""}},"faq_PkK3xV":{"type":"faq","settings":{"faq-heading":"How often should I use GloPRO® and GLOfacial?","faq-body":""}},"faq_VVjAp9":{"type":"faq","settings":{"faq-heading":"Do I need to use special skincare with the tools?","faq-body":""}}},"block_order":["faq_4GADY7","faq_zq39Ty","faq_riA8Ye","faq_PkK3xV","faq_VVjAp9"],"name":"Split Text + Faqs","settings":{"heading":"You’ve Got Questions.<br> We’ve Got Glowing Answers.","body":"<p>Whether you're new to at-home skincare tech or just curious how it all works, we’re here to help. These are our most-asked Qs from real BeautyBio customers.<\/p>","button_link":"","button_text":"VIEW ALL FAQS"}}},"order":["main","image_with_text_LWfRcH","richtext_v2_Nf6Egw","promo_banner_n4NWjp","richtext_v2_kk3HAM","icon_columns_4igpU9","glopro_glofacial_showcase_i63Kfe","175450953727ce84b1","multi_diagram_p3RApR","split_faq_text_jctx9x"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "full",
+        "custom_content_width": 1000
+      }
+    },
+    "image_with_text_LWfRcH": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_t3j8FM": {
+          "type": "heading",
+          "settings": {
+            "title": "Skincare That Works Smarter",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "text_B6zJDA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Skincare tools you'll love with clinically proven results. Deep-cleansing with GLOfacial or firming with GloPRO® for serious glow.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_nexxzf": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/glopro-microneedling-regeneration-roller-tool",
+            "link_text": "SHOP GLOPRO",
+            "button_style": "btn--primary"
+          }
+        },
+        "button_VtL8JY": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/glofacial",
+            "link_text": "SHOP GLOFACIAL",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_t3j8FM",
+        "text_B6zJDA",
+        "button_nexxzf",
+        "button_VtL8JY"
+      ],
+      "disabled": true,
+      "name": "t:sections.image_with_text.presets.name",
+      "settings": {
+        "image_position": "right",
+        "text_alignment": "left",
+        "image": "shopify://shop_images/Hero_section.png",
+        "aspect_ratio": "landscape",
+        "focal_point": "image_presentation",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "image_presentation",
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "bullets": "none",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "richtext_v2_Nf6Egw": {
+      "type": "richtext-v2",
+      "blocks": {
+        "heading_mrcrV4": {
+          "type": "heading",
+          "settings": {
+            "title": "Our 2 Best Selling Tools",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        },
+        "text_twxQyR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Together, they target signs of aging with real results - no filters, no fluff.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_fYNfGE": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/glopro-microneedling-regeneration-roller-tool",
+            "link_text": "SHOP GLOPRO",
+            "button_style": "btn--primary"
+          }
+        },
+        "button_fKF8wM": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/glofacial",
+            "link_text": "SHOP GLOFACIAL",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mrcrV4",
+        "text_twxQyR",
+        "button_fYNfGE",
+        "button_fKF8wM"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".rich-text__inner {display: flex; justify-content: space-between;}",
+        "h2 {font-weight: 500; font-size: 24pt;}",
+        "p {font-size: 11pt;}",
+        "a {min-width: 200px; max-height: 50px;}",
+        "@media screen and (max-width: 800px) {.button-block__button {display: none; }}"
+      ],
+      "name": "Richtext v2",
+      "settings": {
+        "alignment": "left_left",
+        "bullets": "none",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "promo_banner_n4NWjp": {
+      "type": "promo-banner",
+      "disabled": true,
+      "name": "t:sections.promo_banner.presets.name",
+      "settings": {
+        "min_height": 300,
+        "min_height_mobile": 500,
+        "left_column_width": 60,
+        "giant_heading": "",
+        "giant_heading_font_size": 100,
+        "giant_heading_font_size_mobile": 50,
+        "left_column_alignment": "left",
+        "left_column_alignment_mobile": "left",
+        "heading": "",
+        "heading_tag": "h4",
+        "heading_font_class": "fs-heading-3-base",
+        "text": "",
+        "right_column_alignment": "left",
+        "right_column_alignment_mobile": "left",
+        "link": "shopify://collections",
+        "link_text": "",
+        "button_style": "btn--secondary",
+        "link_2": "shopify://collections",
+        "link_text_2": "",
+        "button_style_2": "btn--primary",
+        "image": "shopify://shop_images/06d8dee1c97e5bf63f07d5c78ecd8be10f862379.jpg",
+        "mobile_image": "shopify://shop_images/06d8dee1c97e5bf63f07d5c78ecd8be10f862379.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background_color": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "color_overlay": "rgba(0,0,0,0)",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "show_frame": true,
+        "full_width": false,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "richtext_v2_kk3HAM": {
+      "type": "richtext-v2",
+      "blocks": {
+        "text_mXGcBb": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li><strong>Clinically Proven Results</strong></li><li><strong>Hight-Tech, Low Stress</strong></li><li><strong>Gentle, Skin-First Design</strong></li><li><strong>Powered by Patented Tech</strong></li></ul>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_6bJbLL": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "Read more",
+            "button_style": "btn--primary"
+          }
+        },
+        "button_zeYDLB": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "Read more",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "text_mXGcBb",
+        "button_6bJbLL",
+        "button_zeYDLB"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "li {padding: 0 0 0 40px; position: relative;}",
+        "ul {list-style-position: inside; list-style-type: none; padding-left: 0; display: flex; align-items: center; justify-content: space-between;}",
+        ".button-block__button {display: none;}",
+        "@media screen and (max-width: 800px) {.button-block__button {display: flex; } ul {flex-direction: column; align-items: center; justify-content: flex-start; gap: 8px; }}"
+      ],
+      "name": "Richtext v2",
+      "settings": {
+        "alignment": "left_left",
+        "bullets": "star",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "icon_columns_4igpU9": {
+      "type": "icon-columns",
+      "blocks": {
+        "step_mywGCN": {
+          "type": "step",
+          "settings": {
+            "icon": "shopify://shop_images/fi_7886147.svg",
+            "step-heading": "Backed by Real Science",
+            "step-text": "Microneedling. Pore extraction. Ingredient infusion. We do it all, and we do it right."
+          }
+        },
+        "step_WGPWqX": {
+          "type": "step",
+          "settings": {
+            "icon": "shopify://shop_images/fi_17371266.svg",
+            "step-heading": "Tools That Do the Heavy Lifting",
+            "step-text": "At-home treatments. No downtime. Visibly improved complexion starts now."
+          }
+        },
+        "step_GbYTXV": {
+          "type": "step",
+          "settings": {
+            "icon": "shopify://shop_images/fi_2717575.svg",
+            "step-heading": "Transparent Process. Always.",
+            "step-text": "Clean. Results-first. That’s the BeautyBio standard."
+          }
+        }
+      },
+      "block_order": [
+        "step_mywGCN",
+        "step_WGPWqX",
+        "step_GbYTXV"
+      ],
+      "disabled": true,
+      "name": "Icon Columns",
+      "settings": {
+        "heading": "More than a Pretty Tool. Clinically Proven + Patented.",
+        "subheading": ""
+      }
+    },
+    "glopro_glofacial_showcase_i63Kfe": {
+      "type": "glopro-glofacial-showcase",
+      "disabled": true,
+      "name": "GloPRO GLOfacial Showcase",
+      "settings": {
+        "heading": "Meet the Power Pair: GLOfacial & GloPRO®",
+        "subheading": "Two game-changing tools. GLOfacial helps remove gunk from pores. GloPRO® helps boost volume and bounce. Both bring serious results with smart tech and simple routines.",
+        "product1_img": "shopify://shop_images/7cd83b9f7786058bab8ff90baf023ee2bb43d1dd.png",
+        "button1_text": "SHOP GLOFACIAL",
+        "button1_link": "shopify://products/glofacial",
+        "product2_img": "shopify://shop_images/0fdc12a1ed1c69f78123f73c7992b5720d734929.png",
+        "button2_text": "SHOP GLOPRO",
+        "button2_link": "shopify://products/glopro-microneedling-regeneration-roller-tool"
+      }
+    },
+    "175450953727ce84b1": {
+      "type": "apps",
+      "blocks": {
+        "archive_instagram_tiktok_ugc_feed_fR97Mx": {
+          "type": "shopify://apps/archive-instagram-tiktok-ugc/blocks/feed/3bf10f27-2525-4f37-94f5-dedb92556f19",
+          "settings": {
+            "feedId": "4d68e506-7d6b-45a7-aed6-5c0f7ce346ef"
+          }
+        }
+      },
+      "block_order": [
+        "archive_instagram_tiktok_ugc_feed_fR97Mx"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {text-align: center; font-weight: 500;}"
+      ],
+      "settings": {
+        "heading": "Real Creators. Real Results.",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "multi_diagram_p3RApR": {
+      "type": "multi-diagram",
+      "blocks": {
+        "heading_3FrUa4": {
+          "type": "heading",
+          "settings": {
+            "title": "Subscribe and Save 10%"
+          }
+        },
+        "text_fUykJj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Keep your glow uninterrupted. Stay stocked, stress-free, and save. Smart skincare, on repeat.</p>"
+          }
+        },
+        "text_33ddiw": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li><strong>Free Shipping $75+</strong></li><li><strong>Replace every 2-3 months regularly.</strong></li></ul>"
+          }
+        },
+        "diagram_X8dT3E": {
+          "type": "diagram",
+          "settings": {
+            "text": "Engineered for performance, designed to exfoliate, extract, and infuse. Two GLOfacial tips for face + precision zones.",
+            "heading": "REPLACEMENT TIPS",
+            "diagram_image": "shopify://shop_images/Frame_1484581513.png",
+            "button_link": "shopify://products/glofacial",
+            "button_text": "SHOP GLOFACIAL"
+          }
+        },
+        "diagram_39N9mP": {
+          "type": "diagram",
+          "settings": {
+            "text": "GloPRO® MicroTips deliver targeted treatments from head to toe, because your skin isn’t one size fits all.",
+            "heading": "TARGETED ATTACHMENTS",
+            "diagram_image": "shopify://shop_images/Frame_1484581513_1.png",
+            "button_link": "shopify://products/glopro-microneedling-regeneration-roller-tool",
+            "button_text": "SHOP GLOPRO"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3FrUa4",
+        "text_fUykJj",
+        "text_33ddiw",
+        "diagram_X8dT3E",
+        "diagram_39N9mP"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "name": "Multi-diagram",
+      "settings": {
+        "bullets": "check"
+      }
+    },
+    "split_faq_text_jctx9x": {
+      "type": "split-faq-text",
+      "blocks": {
+        "faq_4GADY7": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "What’s the difference between GloPRO® and GLOfacial",
+            "faq-body": "<p>GloPRO® is a microneedling tool that helps firm, smooth, and rejuvenate skin by triggering your body’s natural collagen production.</p><p>GLOfacial is a pore-cleansing, serum-infusing device that vacuums out impurities and hydrates at the same time.</p>"
+          }
+        },
+        "faq_zq39Ty": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "Can I use both tools together?",
+            "faq-body": ""
+          }
+        },
+        "faq_riA8Ye": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "Is microneedling painful?",
+            "faq-body": ""
+          }
+        },
+        "faq_PkK3xV": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "How often should I use GloPRO® and GLOfacial?",
+            "faq-body": ""
+          }
+        },
+        "faq_VVjAp9": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "Do I need to use special skincare with the tools?",
+            "faq-body": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_4GADY7",
+        "faq_zq39Ty",
+        "faq_riA8Ye",
+        "faq_PkK3xV",
+        "faq_VVjAp9"
+      ],
+      "disabled": true,
+      "name": "Split Text + Faqs",
+      "settings": {
+        "heading": "You’ve Got Questions.<br> We’ve Got Glowing Answers.",
+        "body": "<p>Whether you're new to at-home skincare tech or just curious how it all works, we’re here to help. These are our most-asked Qs from real BeautyBio customers.</p>",
+        "button_link": "",
+        "button_text": "VIEW ALL FAQS"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_LWfRcH",
+    "richtext_v2_Nf6Egw",
+    "promo_banner_n4NWjp",
+    "richtext_v2_kk3HAM",
+    "icon_columns_4igpU9",
+    "glopro_glofacial_showcase_i63Kfe",
+    "175450953727ce84b1",
+    "multi_diagram_p3RApR",
+    "split_faq_text_jctx9x"
+  ]
+}
