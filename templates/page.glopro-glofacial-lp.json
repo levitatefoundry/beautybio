@@ -442,7 +442,8 @@
         "richtext_qipL6L"
       ],
       "custom_css": [
-        ".form-with-text__container {background: linear-gradient(to bottom, #f3c8cf -20%, white 160%);}"
+        ".form-with-text__container {background: linear-gradient(to bottom, #f3c8cf -20%, white 160%);}",
+        "ul {display: flex; flex-direction: row; justify-content: center; gap: 20px; list-style-position: inside; list-style-type: none; padding-left: 0;}"
       ],
       "name": "Form with text",
       "settings": {
