@@ -51,7 +51,10 @@
 
     #shopify-section-{{ section.id }} li {
         position: relative;
-        padding-left: 55px;
+        text-align: left;
+        padding: 0 0 0 50px;
+        display: flex;
+        align-items: center;
     }
   </style>
 {% elsif section.settings.bullets == 'star' %}
@@ -66,7 +69,10 @@
 
     #shopify-section-{{ section.id }} li {
         position: relative;
-        padding-left: 40px;
+        text-align: left;
+        padding: 0 0 0 50px;
+        display: flex;
+        align-items: center;
     }
   </style>
 {% endif %}
