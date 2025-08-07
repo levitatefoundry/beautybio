@@ -374,28 +374,28 @@
           "type": "faq",
           "settings": {
             "faq-heading": "Can I use both tools together?",
-            "faq-body": ""
+            "faq-body": "<p>Yes, you can. You may choose to use these on alternating nights for sensitive skin. You may also use the GLOfacial tool in the AM and GloPRO in the PM.</p>"
           }
         },
         "faq_riA8Ye": {
           "type": "faq",
           "settings": {
             "faq-heading": "Is microneedling painful?",
-            "faq-body": ""
+            "faq-body": "<p>Microneedling with GloPRO is not painful at all. You only need 1 minute with this tool to reap the benefits, and there’s no need to apply additional pressure when using it, so it’s an easy-to use, pain free tool!</p>"
           }
         },
         "faq_PkK3xV": {
           "type": "faq",
           "settings": {
             "faq-heading": "How often should I use GloPRO® and GLOfacial?",
-            "faq-body": ""
+            "faq-body": "<p>For optimal results, we recommend using the GloPRO 2-3 times a week at night for 30-60 seconds a session.</p><p>We recommend using GLOfacial 1-2 times a week. It is gentle enough to be used on low suction mode daily. Blue Light Treatment can be done daily for 4 minutes per target area.</p>"
           }
         },
         "faq_VVjAp9": {
           "type": "faq",
           "settings": {
             "faq-heading": "Do I need to use special skincare with the tools?",
-            "faq-body": ""
+            "faq-body": "<p>No. You can apply your favorite serums and creams! Just be sure to check the ingredients and test a small patch on your skin if you’re worried you might be too sensitive to anything!</p>"
           }
         }
       },
@@ -408,7 +408,7 @@
       ],
       "name": "Split Text + Faqs",
       "settings": {
-        "heading": "You’ve Got Questions.<br> We’ve Got Glowing Answers.",
+        "heading": "You’ve Got Questions. We’ve Got Glowing Answers.",
         "body": "<p>Whether you're new to at-home skincare tech or just curious how it all works, we’re here to help. These are our most-asked Qs from real BeautyBio customers.</p>",
         "button_link": "",
         "button_text": "VIEW ALL FAQS"
@@ -442,7 +442,7 @@
         "richtext_qipL6L"
       ],
       "custom_css": [
-        ".form-with-text__container {background: linear-gradient(to bottom, #F3C8CF -20%, white 160%);}"
+        ".form-with-text__container {background: linear-gradient(to bottom, #f3c8cf -20%, white 160%);}"
       ],
       "name": "Form with text",
       "settings": {
