@@ -441,6 +441,9 @@
         "richtext_wtTGec",
         "richtext_qipL6L"
       ],
+      "custom_css": [
+        ".form-with-text__container {background: linear-gradient(to bottom, #F3C8CF -20%, white 160%);}"
+      ],
       "name": "Form with text",
       "settings": {
         "form": "<div class=\"klaviyo-form-SCxaVk\"></div>",
