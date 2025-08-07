@@ -14,13 +14,14 @@
   }  
 
   .ts-steps-subtitle {
-    max-width: 570px;
+    max-width: 700px;
   }
 
   .ts-steps-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
   }
 
   .ts-step-column {
@@ -50,6 +51,17 @@
     font-style: italic;
   }
 
+  .ts-steps-container::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: calc(50px + 7%); /* Adjust percentage as needed */
+    right: calc(50px + 7%); /* Adjust percentage as needed */
+    height: 1px;
+    background: transparent;
+    border-top: 1.5px dashed #000000;
+  }
+
   @media only screen and (max-width: 800px) {
     .ts-steps-container {
       flex-direction: column;
@@ -61,6 +73,10 @@
     .ts-step-column {
       width: 100%;
     }
+
+    .ts-steps-container::before {
+      display: none;
+    }
   }
 </style>
 
@@ -69,13 +85,30 @@
   <p class="ts-steps-subtitle">{{ section.settings.subheading }}</p>
   <div class="ts-steps-container">
     {% for block in section.blocks %}
-      <div class="ts-step-column">
-        <span class="ts-step-number">{{ block.settings.number }}</span>
-        <h2 class="ts-step-heading">{{ block.settings.step-heading }}</h2>
-        <p class="ts-step-body">{{ block.settings.step-text }}</p>
-      </div>
+      {% if block.type == "step" %}
+        <div class="ts-step-column">
+          <span class="ts-step-number">{{ block.settings.number }}</span>
+          <h2 class="ts-step-heading">{{ block.settings.step-heading }}</h2>
+          <p class="ts-step-body">{{ block.settings.step-text }}</p>
+        </div>
+      {% endif %}
     {% endfor %}
   </div>
+  {% for block in section.blocks %}
+    {% if block.type == "button" %}
+      {%-
+        render 'button-block' with
+        wrapper_class: "image-with-text-split__text-container-button section-blocks__button",
+        link: block.settings.button_link,
+        label: block.settings.button_label,
+        button_style: "btn--primary",
+        is_overlay: true,
+        button_alignment: "center",
+        buttons_can_inline: true,
+        forloop: forloop
+      -%}
+    {% endif %}
+  {% endfor %}
 </section>
 
 {% schema %}
@@ -117,6 +150,24 @@
             "id": "step-text",
             "label": "Step text",
             "default": "Choose any 3, 6, or 10 travel-size skincare or tool favorites."
+          }
+        ]
+      },
+      {
+        "type": "button",
+        "name": "Button",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button label",
+            "default": "Click here"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
           }
         ]
       }
