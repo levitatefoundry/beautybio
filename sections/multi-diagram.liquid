@@ -1,0 +1,232 @@
+{% capture svg_content %}
+  {% render 'checkbox-svg' %}  <!-- Your SVG snippet -->
+{% endcapture %}
+{% assign encoded_svg = svg_content | base64_encode %}
+
+{% capture star_svg_content %}
+  {% render 'star-bullet' %}  <!-- Your SVG snippet -->
+{% endcapture %}
+{% assign star_encoded_svg = star_svg_content | base64_encode %}
+
+<div class="multi-diagram__container">
+    {% for block in section.blocks %}
+        {% if block.type == 'heading' %}
+            <h2 class="multi-diagram__heading">{{ block.settings.title }}</h2>
+        {% endif %}
+        {% if block.type == 'text' %}
+            {{ block.settings.text }}
+        {% endif %}
+    {% endfor %}
+    <div class="multi-diagram__diagram-row">
+        {% for block in section.blocks %}
+            {% if block.type == 'diagram' %}
+                <div class="multi-diagram__column">
+                    <div class="multi-diagram__diagram">
+                        {{ block.settings.diagram_image | image_url: width: 400 | image_tag }}
+                        <h3 class="multi-diagram__diagram-heading">{{ block.settings.heading }}</h3>
+                        <p class="multi-diagram__diagram-text">{{ block.settings.text }}</p>
+                    </div>
+                    {%-
+                        render 'button-block' with
+                        wrapper_class: "image-hero__text-container-image-button section-blocks__button",
+                        link: block.settings.button_link,
+                        label: block.settings.button_text,
+                        button_style: "btn--primary",
+                        is_overlay: true,
+                        button_alignment: "center",
+                        button_alignment_mobile: "center",
+                        buttons_can_inline: true,
+                        forloop: forloop
+                    -%}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+<style>
+    .multi-diagram__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+        background: linear-gradient(to bottom, white 0%, #F3C8CF 120%)
+    }
+
+    .multi-diagram__diagram-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .multi-diagram__column {
+        max-width: 500px;
+    }
+    
+    .multi-diagram__container p {
+        max-width: 450px;
+    }
+
+    .multi-diagram__diagram {
+        background-color: white;
+        border: 1px solid black;
+        padding: 30px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        list-style-position: inside;
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    li {
+        position: relative;
+        text-align: left;
+        padding: 0 0 0 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .multi-diagram__diagram-heading {
+        font-weight: 700;
+    }
+
+    .multi-diagram__diagram-text {
+        font-size: 11pt;
+    }
+
+    @media screen and (max-width: 1000) {
+        .multi-diagram__diagram-row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+</style>
+
+{% if section.settings.bullets == "check" %}
+<style>
+  #shopify-section-{{ section.id }} li::before {
+    content: url("data:image/svg+xml;base64,{{ encoded_svg }}");
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+</style>
+{% elsif section.settings.bullets == "star" %}
+<style>
+  #shopify-section-{{ section.id }} li::before {
+    content: url("data:image/svg+xml;base64,{{ star_encoded_svg }}");
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+</style>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Multi-diagram",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "bullets",
+      "label": "Custom bullet points",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "check",
+          "label": "Checkmark"
+        },
+        {
+          "value": "star",
+          "label": "Star"
+        },
+      ],
+      "default": "none"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.rich_text.blocks.heading.name",
+      "settings": [
+        {
+          "id": "title",
+          "type": "text",
+          "label": "t:sections.rich_text.blocks.heading.settings.title.label",
+          "default": "Rich text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "t:sections.rich_text.blocks.text.name",
+      "settings": [
+        {
+          "id": "text",
+          "type": "richtext",
+          "label": "t:sections.rich_text.blocks.text.settings.text.label",
+          "default": "<p>Use this text area to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+        }
+      ]
+    },
+    {
+      "type": "diagram",
+      "name": "Diagram",
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "label": "t:sections.rich_text.blocks.text.settings.text.label",
+          "default": "Put your text here."
+        },
+        {
+          "id": "heading",
+          "type": "text",
+          "label": "t:sections.rich_text.blocks.text.settings.text.label",
+          "default": "Put your diagram heading here."
+        },
+        {
+          "type": "image_picker",
+          "id": "diagram_image",
+          "label": "Diagram image"
+        },
+        {
+          "id": "button_link",
+          "type": "url",
+          "label": "Button link"
+        },
+        {
+          "id": "button_text",
+          "type": "text",
+          "label": "Button text",
+          "default": "Read more"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Multi-diagram",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
