@@ -1,1 +1,407 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"enable_animation":true,"content_width":"full","custom_content_width":1000}},"image_hero_F6LafQ":{"type":"image-hero","blocks":{"heading_ECxpF7":{"type":"heading","settings":{"title":"Our Best Sellers for Body Firming + Smoothing","heading_tag":"h2","heading_font_class":"fs-heading-display-1"}},"text_dXMjGV":{"type":"text","settings":{"text":"<p>Powerful, patented products. Trusted by beauty lovers for visibly fimer, smoother, more sculpted skin from head to toe.<\/p>","text_font_class":"fs-body-100"}},"button_BVwJqD":{"type":"button","settings":{"link":"","link_text":"SHOP GLOPRO","button_style":"btn--primary"}},"button_AXeyHT":{"type":"button","settings":{"link":"","link_text":"SHOP THE SCULPTOR","button_style":"btn--primary"}}},"block_order":["heading_ECxpF7","text_dXMjGV","button_BVwJqD","button_AXeyHT"],"disabled":true,"custom_css":["h2 {width: 90%;}","p {width: 95%;}"],"name":"t:sections.image_hero.presets.name","settings":{"image_aspect":"custom","desktop_height":100,"mobile_height":100,"focal_point":"image_presentation","mobile_focal_point":"image_presentation","media_link":"","text_position":"flex-start_center","text_position_mobile":"center_center","show-checkboxes":false,"text_color":"#000000","button_background_color":"#000000","button_text_color":"#ffffff","color_overlay":"#000000","color_overlay_gradient":"","overlay_opacity":0,"enable_animation":true,"section_padding":"section--vertical-padding-none"}},"image_with_text_thQd37":{"type":"image-with-text","blocks":{"heading_nANTnL":{"type":"heading","settings":{"title":"Our Best Sellers for Body Firming + Smoothing","heading_tag":"h2","heading_font_class":"fs-heading-display-2"}},"text_UrhaUQ":{"type":"text","settings":{"text":"<p>Powerful, patented products. Trusted by beauty lovers for visibly fimer, smoother, more sculpted skin from head to toe.<\/p>","text_font_class":"fs-body-100"}},"button_6yYxye":{"type":"button","settings":{"link":"shopify:\/\/products\/glopro-body-attachment-the-sculptor","link_text":"SHOP NOW","button_style":"btn--primary"}}},"block_order":["heading_nANTnL","text_UrhaUQ","button_6yYxye"],"custom_css":["p {font-size: 12pt;}"],"name":"t:sections.image_with_text.presets.name","settings":{"image_position":"right","text_alignment":"left","image":"shopify:\/\/shop_images\/Hero_Image_updated_1.png","aspect_ratio":"square","focal_point":"left","image_caption":"","show_small_image":false,"image_small_aspect_ratio":"square","image_small_focal_point":"image_presentation","background_color":"rgba(0,0,0,0)","text_color":"#000000","button_background_color":"#000000","button_text_color":"#ffffff","bullets":"none","enable_animation":true,"divider_style":"none","section_padding":"section--vertical-padding-top-bottom"}},"image_with_text_ygNXdi":{"type":"image-with-text","blocks":{"heading_wRm8Xi":{"type":"heading","settings":{"title":"Icon Status. Seriously Sculpted Routine.","heading_tag":"h2","heading_font_class":"fs-heading-1-base"}},"text_bjbFQy":{"type":"text","settings":{"text":"<p>Meet GloPRO® and The Sculptor. Your face-and-body must-haves for visibly firmer, smoother, more sculpted skin. Real tools. Real results. No filters. No fluff.<\/p>","text_font_class":"fs-body-100"}},"text_jEAazC":{"type":"text","settings":{"text":"<ul><li><strong>Clinically-Tested Results in 30 days<\/strong><\/li><li><strong>Designed to Deliver Targeted, Visible Results<\/strong><\/li><li><strong>High-Tech, Low-Stress<\/strong><\/li><li><strong>Gentle, Skin-First Formulation<\/strong><\/li><li><strong>Powered by Patented Tech<\/strong><\/li><\/ul>","text_font_class":"fs-body-100"}},"button_dFy8e6":{"type":"button","settings":{"link":"shopify:\/\/products\/glopro-body-attachment-the-sculptor","link_text":"SHOP NOW","button_style":"btn--primary"}}},"block_order":["heading_wRm8Xi","text_bjbFQy","text_jEAazC","button_dFy8e6"],"custom_css":["h2 {text-align: left; font-size: 22pt;}","p {text-align: left; font-size: 11pt;}",".image-with-text__image {width: 60%; margin-bottom: 80px;}",".image-with-text__small-image-wrapper {width: 60%;}","ul {display: flex; flex-wrap: wrap; list-style: none; padding: 0; width: 100%;}","li {width: 45%; position: relative; display: flex; align-items: center; text-align: left; font-size: 10pt; padding-left: 30px;}","li::before {left: 0;}"],"name":"t:sections.image_with_text.presets.name","settings":{"image_position":"left","text_alignment":"center","image":"shopify:\/\/shop_images\/c0e53f485a57b429f0ce255994495266ad3603d7.png","aspect_ratio":"square","focal_point":"image_presentation","image_caption":"","show_small_image":true,"image_small":"shopify:\/\/shop_images\/2a45b34938e488e76bc42bf6f119d875516e5ecd.png","image_small_aspect_ratio":"square","image_small_focal_point":"image_presentation","background_color":"","text_color":"#000000","button_background_color":"#000000","button_text_color":"#ffffff","bullets":"star","enable_animation":true,"divider_style":"none","section_padding":"section--vertical-padding-top-bottom"}},"icon_columns_DkF86t":{"type":"icon-columns","blocks":{"step_c9fMnL":{"type":"step","settings":{"icon":"shopify:\/\/shop_images\/fi_7886147.svg","step-heading":"Backed by Real Science","step-text":"Microneedling. Pore extraction, Ingredient infusion. We do it all, and we do it right."}},"step_tNKgPD":{"type":"step","settings":{"icon":"shopify:\/\/shop_images\/fi_17371266.svg","step-heading":"Tools That Do the Heavy Lifting","step-text":"At-home treatments. No downtime. Visibly improved complexion starts now."}},"step_abwYpT":{"type":"step","settings":{"icon":"shopify:\/\/shop_images\/fi_2717575.svg","step-heading":"Transparent Process. Always","step-text":"Clean, Results-first. That's the BeautyBio standard."}}},"block_order":["step_c9fMnL","step_tNKgPD","step_abwYpT"],"custom_css":[".ts-step-heading {width: 72%;}"],"name":"Icon Columns","settings":{"heading":"More than a Pretty Tool. Clinically Proven + Patented.","subheading":""}},"double_showcase_fKVUFH":{"type":"double-showcase","name":"Double Showcase","settings":{"heading":"Meet the Power Pair: GloPRO® & The Sculptor","subheading":"GloPRO® BODY helps improve the appearance of skin texture and firmness with every roll. The Sculptor delivers hydration and helps visibly tighten the look of skin for a smoother, more contoured appearance.","product1_img":"shopify:\/\/shop_images\/GloPRO_Facial_Microneedling_Tool-Photoroom_2.png","button1_text":"SHOP NOW","button1_link":"shopify:\/\/products\/glopro-body-attachment-the-sculptor","product2_img":"shopify:\/\/shop_images\/image_1393.png"}},"image_hero_bLPznX":{"type":"image-hero","blocks":{"heading_LcLzVe":{"type":"heading","settings":{"title":"Join BeautyBio Rewards & Unlock Exclusive Perks","heading_tag":"h2","heading_font_class":"fs-heading-display-2"}},"text_VEc3rF":{"type":"text","settings":{"text":"<p>From points and perks to free shipping and VIP access, here’s how we reward your glow-up journey.<\/p>","text_font_class":"fs-body-100"}},"text_KDtjGU":{"type":"text","settings":{"text":"<ul><li><strong>Free Shipping on $75+<\/strong><\/li><li><strong>Become an Ambassador<\/strong><\/li><li><strong>Join Our Rewards Program<\/strong><\/li><li><strong>Sign Up for Texts<\/strong><\/li><\/ul>","text_font_class":"fs-body-100"}},"button_xUE9zF":{"type":"button","settings":{"link":"shopify:\/\/pages\/rewards","link_text":"SIGN UP & START EARNING","button_style":"btn--primary"}}},"block_order":["heading_LcLzVe","text_VEc3rF","text_KDtjGU","button_xUE9zF"],"custom_css":["h2 {font-size: 18pt;}","ul {display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100vw; padding: 0 80px;}","li {list-style: none; position: relative; padding: 0 35px; text-wrap: nowrap;}","li::before {left: 0px;}","@media only screen and (max-width: 750px) {ul {flex-wrap: wrap; } li {margin: 8px 0; }}"],"name":"t:sections.image_hero.presets.name","settings":{"image_aspect":"custom","desktop_height":50,"mobile_height":100,"image":"shopify:\/\/shop_images\/summer-gradient-background-vector-with-leaf-shadow_53876-125450_1.jpg","focal_point":"image_presentation","mobile_focal_point":"image_presentation","media_link":"","text_position":"center_center","text_position_mobile":"center_center","show-checkboxes":true,"text_color":"#000000","button_background_color":"#000000","button_text_color":"#ffffff","color_overlay":"#000000","color_overlay_gradient":"","overlay_opacity":0,"enable_animation":true,"section_padding":"section--vertical-padding-none"}},"split_faq_text_F74mVW":{"type":"split-faq-text","blocks":{"faq_i8rPWi":{"type":"faq","settings":{"faq-heading":"What's the difference between GloPRO® and The Sculptor?","faq-body":"<p>The Sculptor is a body cream formulated to help visibly firm and tighten the appearance of skin for a smoother, more sculpted look. <br\/><br\/>GloPRO® is a microneedling tool designed to enhance the skincare benefits of your products, helping promote visibly firmer, smoother skin and a more radiant appearance.<\/p>"}},"faq_AxLyWY":{"type":"faq","settings":{"faq-heading":"Can I use both products together?","faq-body":"<p>Yes, we recommend using The Sculptor after using GloPRO® with the BODY Attachment. The microneedling process can help enhance the benefits of the body cream, supporting skin elasticity and promoting a healthy, smooth appearance.<\/p>"}},"faq_FmaXbE":{"type":"faq","settings":{"faq-heading":"Does The Sculptor really help tighten skin?","faq-body":"<p>The Sculptor is formulated to help improve the appearance of skin by visibly firming and tightening the look of skin. The inclusion of caffeine and green tea oil in the formula helps hydrate and promote the appearance of smoother, more sculpted skin. With consistent use, The Sculptor can help enhance skin’s texture and give it a more toned and refreshed appearance.<\/p>"}},"faq_PeG4rt":{"type":"faq","settings":{"faq-heading":"Is microneedling with GloPRO® safe at home?","faq-body":"<p>Yes! GloPRO® was doctor developed and features patented technology with a precise needle density, shape, and angle, designed for safe at-home use. This innovative design provides effective results without pain or downtime, helping improve the appearance of skin texture and promoting a firmer, smoother look.<\/p>"}},"faq_qCQiKU":{"type":"faq","settings":{"faq-heading":"Can I use GloPRO® on other parts of my body?","faq-body":"<p>Yes, absolutely! GloPRO® features interchangeable attachments that allow you to target different areas. Use the FACE Attachment on areas like the forehead, cheeks, and jawline. The SCALP Attachment supports hair health. The LIP and EYE Attachments are perfect for delicate areas, and the BODY Attachment is designed for larger areas like thighs, bum, arms, and abdomen.<\/p>"}}},"block_order":["faq_i8rPWi","faq_AxLyWY","faq_FmaXbE","faq_PeG4rt","faq_qCQiKU"],"custom_css":["h2 {font-size: 24pt; line-height: 1.2;}"],"name":"Split Text + Faqs","settings":{"heading":"You've Got Questions, We've Got Glowing Answers","body":"<p>Whether you're new to at-home skincare tech or just curious how it all works, we're here to help. These are our most-asked Qs from real BeautyBio customers.<\/p>","button_link":"https:\/\/beautybio.gorgias.help\/en-US","button_text":"VIEW ALL FAQS"}}},"order":["main","image_hero_F6LafQ","image_with_text_thQd37","image_with_text_ygNXdi","icon_columns_DkF86t","double_showcase_fKVUFH","image_hero_bLPznX","split_faq_text_F74mVW"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "full",
+        "custom_content_width": 1000
+      }
+    },
+    "image_hero_F6LafQ": {
+      "type": "image-hero",
+      "blocks": {
+        "heading_ECxpF7": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Best Sellers for Body Firming + Smoothing",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-1"
+          }
+        },
+        "text_dXMjGV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Powerful, patented products. Trusted by beauty lovers for visibly fimer, smoother, more sculpted skin from head to toe.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_BVwJqD": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "SHOP GLOPRO",
+            "button_style": "btn--primary"
+          }
+        },
+        "button_AXeyHT": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "SHOP THE SCULPTOR",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ECxpF7",
+        "text_dXMjGV",
+        "button_BVwJqD",
+        "button_AXeyHT"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {width: 90%;}",
+        "p {width: 95%;}"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "center_center",
+        "show-checkboxes": false,
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "image_with_text_thQd37": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_nANTnL": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Best Sellers for Body Firming + Smoothing",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "text_UrhaUQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Powerful, patented products. Trusted by beauty lovers for visibly fimer, smoother, more sculpted skin from head to toe.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_6yYxye": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/glopro-body-attachment-the-sculptor",
+            "link_text": "SHOP NOW",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_nANTnL",
+        "text_UrhaUQ",
+        "button_6yYxye"
+      ],
+      "custom_css": [
+        "p {font-size: 12pt;}",
+        "h2 {font-weight: 500; max-width: 480px;}"
+      ],
+      "name": "t:sections.image_with_text.presets.name",
+      "settings": {
+        "image_position": "right",
+        "text_alignment": "left",
+        "image": "shopify://shop_images/Hero_Image_updated_1.png",
+        "aspect_ratio": "square",
+        "focal_point": "left",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "image_presentation",
+        "background_color": "rgba(0,0,0,0)",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "bullets": "none",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "image_with_text_ygNXdi": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_wRm8Xi": {
+          "type": "heading",
+          "settings": {
+            "title": "Icon Status. Seriously Sculpted Routine.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        },
+        "text_bjbFQy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Meet GloPRO® and The Sculptor. Your face-and-body must-haves for visibly firmer, smoother, more sculpted skin. Real tools. Real results. No filters. No fluff.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "text_jEAazC": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li><strong>Clinically-Tested Results in 30 days</strong></li><li><strong>Designed to Deliver Targeted, Visible Results</strong></li><li><strong>High-Tech, Low-Stress</strong></li><li><strong>Gentle, Skin-First Formulation</strong></li><li><strong>Powered by Patented Tech</strong></li></ul>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_dFy8e6": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/glopro-body-attachment-the-sculptor",
+            "link_text": "SHOP NOW",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wRm8Xi",
+        "text_bjbFQy",
+        "text_jEAazC",
+        "button_dFy8e6"
+      ],
+      "custom_css": [
+        "h2 {text-align: left; font-size: 22pt;}",
+        "p {text-align: left; font-size: 11pt;}",
+        ".image-with-text__image {width: 60%; margin-bottom: 80px;}",
+        ".image-with-text__small-image-wrapper {width: 60%;}",
+        "ul {display: flex; flex-wrap: wrap; list-style: none; padding: 0; width: 100%;}",
+        "li {width: 45%; position: relative; display: flex; align-items: center; text-align: left; font-size: 10pt; padding-left: 30px;}",
+        "li::before {left: 0;}"
+      ],
+      "name": "t:sections.image_with_text.presets.name",
+      "settings": {
+        "image_position": "left",
+        "text_alignment": "center",
+        "image": "shopify://shop_images/c0e53f485a57b429f0ce255994495266ad3603d7.png",
+        "aspect_ratio": "square",
+        "focal_point": "image_presentation",
+        "image_caption": "",
+        "show_small_image": true,
+        "image_small": "shopify://shop_images/2a45b34938e488e76bc42bf6f119d875516e5ecd.png",
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "image_presentation",
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "bullets": "star",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "icon_columns_DkF86t": {
+      "type": "icon-columns",
+      "blocks": {
+        "step_c9fMnL": {
+          "type": "step",
+          "settings": {
+            "icon": "shopify://shop_images/fi_7886147.svg",
+            "step-heading": "Backed by Real Science",
+            "step-text": "Microneedling. Pore extraction, Ingredient infusion. We do it all, and we do it right."
+          }
+        },
+        "step_tNKgPD": {
+          "type": "step",
+          "settings": {
+            "icon": "shopify://shop_images/fi_17371266.svg",
+            "step-heading": "Tools That Do the Heavy Lifting",
+            "step-text": "At-home treatments. No downtime. Visibly improved complexion starts now."
+          }
+        },
+        "step_abwYpT": {
+          "type": "step",
+          "settings": {
+            "icon": "shopify://shop_images/fi_2717575.svg",
+            "step-heading": "Transparent Process. Always",
+            "step-text": "Clean, Results-first. That's the BeautyBio standard."
+          }
+        }
+      },
+      "block_order": [
+        "step_c9fMnL",
+        "step_tNKgPD",
+        "step_abwYpT"
+      ],
+      "custom_css": [
+        ".ts-step-heading {width: 72%;}"
+      ],
+      "name": "Icon Columns",
+      "settings": {
+        "heading": "More than a Pretty Tool. Clinically Proven + Patented.",
+        "subheading": ""
+      }
+    },
+    "double_showcase_fKVUFH": {
+      "type": "double-showcase",
+      "name": "Double Showcase",
+      "settings": {
+        "heading": "Meet the Power Pair: GloPRO® & The Sculptor",
+        "subheading": "GloPRO® BODY helps improve the appearance of skin texture and firmness with every roll. The Sculptor delivers hydration and helps visibly tighten the look of skin for a smoother, more contoured appearance.",
+        "product1_img": "shopify://shop_images/GloPRO_Facial_Microneedling_Tool-Photoroom_2.png",
+        "button1_text": "SHOP NOW",
+        "button1_link": "shopify://products/glopro-body-attachment-the-sculptor",
+        "product2_img": "shopify://shop_images/image_1393.png"
+      }
+    },
+    "image_hero_bLPznX": {
+      "type": "image-hero",
+      "blocks": {
+        "heading_LcLzVe": {
+          "type": "heading",
+          "settings": {
+            "title": "Join BeautyBio Rewards & Unlock Exclusive Perks",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "text_VEc3rF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From points and perks to free shipping and VIP access, here’s how we reward your glow-up journey.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "text_KDtjGU": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li><strong>Free Shipping on $75+</strong></li><li><strong>Become an Ambassador</strong></li><li><strong>Join Our Rewards Program</strong></li><li><strong>Sign Up for Texts</strong></li></ul>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_xUE9zF": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://pages/rewards",
+            "link_text": "SIGN UP & START EARNING",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LcLzVe",
+        "text_VEc3rF",
+        "text_KDtjGU",
+        "button_xUE9zF"
+      ],
+      "custom_css": [
+        "h2 {font-size: 18pt;}",
+        "ul {display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100vw; padding: 0 80px;}",
+        "li {list-style: none; position: relative; padding: 0 35px; text-wrap: nowrap;}",
+        "li::before {left: 0px;}",
+        "@media only screen and (max-width: 750px) {ul {flex-wrap: wrap; } li {margin: 8px 0; }}"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 50,
+        "mobile_height": 100,
+        "image": "shopify://shop_images/summer-gradient-background-vector-with-leaf-shadow_53876-125450_1.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "show-checkboxes": true,
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "split_faq_text_F74mVW": {
+      "type": "split-faq-text",
+      "blocks": {
+        "faq_i8rPWi": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "What's the difference between GloPRO® and The Sculptor?",
+            "faq-body": "<p>The Sculptor is a body cream formulated to help visibly firm and tighten the appearance of skin for a smoother, more sculpted look. <br/><br/>GloPRO® is a microneedling tool designed to enhance the skincare benefits of your products, helping promote visibly firmer, smoother skin and a more radiant appearance.</p>"
+          }
+        },
+        "faq_AxLyWY": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "Can I use both products together?",
+            "faq-body": "<p>Yes, we recommend using The Sculptor after using GloPRO® with the BODY Attachment. The microneedling process can help enhance the benefits of the body cream, supporting skin elasticity and promoting a healthy, smooth appearance.</p>"
+          }
+        },
+        "faq_FmaXbE": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "Does The Sculptor really help tighten skin?",
+            "faq-body": "<p>The Sculptor is formulated to help improve the appearance of skin by visibly firming and tightening the look of skin. The inclusion of caffeine and green tea oil in the formula helps hydrate and promote the appearance of smoother, more sculpted skin. With consistent use, The Sculptor can help enhance skin’s texture and give it a more toned and refreshed appearance.</p>"
+          }
+        },
+        "faq_PeG4rt": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "Is microneedling with GloPRO® safe at home?",
+            "faq-body": "<p>Yes! GloPRO® was doctor developed and features patented technology with a precise needle density, shape, and angle, designed for safe at-home use. This innovative design provides effective results without pain or downtime, helping improve the appearance of skin texture and promoting a firmer, smoother look.</p>"
+          }
+        },
+        "faq_qCQiKU": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "Can I use GloPRO® on other parts of my body?",
+            "faq-body": "<p>Yes, absolutely! GloPRO® features interchangeable attachments that allow you to target different areas. Use the FACE Attachment on areas like the forehead, cheeks, and jawline. The SCALP Attachment supports hair health. The LIP and EYE Attachments are perfect for delicate areas, and the BODY Attachment is designed for larger areas like thighs, bum, arms, and abdomen.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_i8rPWi",
+        "faq_AxLyWY",
+        "faq_FmaXbE",
+        "faq_PeG4rt",
+        "faq_qCQiKU"
+      ],
+      "custom_css": [
+        "h2 {font-size: 24pt; line-height: 1.2;}"
+      ],
+      "name": "Split Text + Faqs",
+      "settings": {
+        "heading": "You've Got Questions, We've Got Glowing Answers",
+        "body": "<p>Whether you're new to at-home skincare tech or just curious how it all works, we're here to help. These are our most-asked Qs from real BeautyBio customers.</p>",
+        "button_link": "https://beautybio.gorgias.help/en-US",
+        "button_text": "VIEW ALL FAQS"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_hero_F6LafQ",
+    "image_with_text_thQd37",
+    "image_with_text_ygNXdi",
+    "icon_columns_DkF86t",
+    "double_showcase_fKVUFH",
+    "image_hero_bLPznX",
+    "split_faq_text_F74mVW"
+  ]
+}
