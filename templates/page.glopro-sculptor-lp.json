@@ -193,6 +193,10 @@
     },
     "double_showcase_fKVUFH": {
       "type": "double-showcase",
+      "custom_css": [
+        ".double-showcase__heading {max-width: 400px;}",
+        ".double-showcase__subheading {max-width: 880px;}"
+      ],
       "name": "Double Showcase",
       "settings": {
         "heading": "Meet the Power Pair: GloPRO® & The Sculptor",
