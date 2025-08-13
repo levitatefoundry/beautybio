@@ -156,7 +156,7 @@
           "settings": {
             "icon": "shopify://shop_images/fi_7886147.svg",
             "step-heading": "Backed by<br> Real Science",
-            "step-text": "Microneedling. Pore extraction, Ingredient infusion. We do it all, and we do it right."
+            "step-text": "Microneedling. Pore extraction, Ingredient<br> infusion. We do it all, and we do it right."
           }
         },
         "step_tNKgPD": {
@@ -171,8 +171,8 @@
           "type": "step",
           "settings": {
             "icon": "shopify://shop_images/fi_2717575.svg",
-            "step-heading": "Transparent<br> Process. Always",
-            "step-text": "Clean, Results-first. That's the<br> BeautyBio standard."
+            "step-heading": "Transparent Process. Always",
+            "step-text": "Clean, Results-first. That's the BeautyBio standard."
           }
         }
       },
