@@ -46,6 +46,12 @@
       flex-grow: 1;
       max-width: 400px;
     }
+
+    @media screen and (max-width: 800px) {
+      .form-with-text__container {
+        flex-direction: column;
+      }
+    }
 </style>
 
 {% if section.settings.bullets == 'check' %}
