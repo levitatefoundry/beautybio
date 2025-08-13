@@ -163,16 +163,16 @@
           "type": "step",
           "settings": {
             "icon": "shopify://shop_images/fi_17371266.svg",
-            "step-heading": "Tools That Do the<br> Heavy Lifting",
-            "step-text": "At-home treatments. No downtime. Visibly improved complexion starts now."
+            "step-heading": "Tools That Do the Heavy Lifting",
+            "step-text": "At-home treatments. No downtime.<br> Visibly improved complexion starts now."
           }
         },
         "step_abwYpT": {
           "type": "step",
           "settings": {
             "icon": "shopify://shop_images/fi_2717575.svg",
-            "step-heading": "Transparent<br> Process. Always",
-            "step-text": "Clean, Results-first. That's the BeautyBio standard."
+            "step-heading": "Transparent Process. Always",
+            "step-text": "Clean, Results-first. That's the<br> BeautyBio standard."
           }
         }
       },
