@@ -248,6 +248,7 @@
         "ul {display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100vw; padding: 0 80px;}",
         "li {list-style: none; position: relative; padding: 0 35px; text-wrap: nowrap;}",
         "li::before {left: 0px;}",
+        ".image-hero {height: fit-content;}",
         "@media only screen and (max-width: 750px) {ul {flex-wrap: wrap; } li {margin: 8px 0; }}"
       ],
       "name": "t:sections.image_hero.presets.name",
