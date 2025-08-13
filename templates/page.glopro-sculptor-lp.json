@@ -182,7 +182,8 @@
         "step_abwYpT"
       ],
       "custom_css": [
-        ".ts-step-heading {width: 72%;}"
+        ".ts-step-heading {width: 72%;}",
+        ".ts-steps-title {font-size: 22pt;}"
       ],
       "name": "Icon Columns",
       "settings": {

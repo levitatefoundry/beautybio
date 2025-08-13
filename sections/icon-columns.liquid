@@ -20,15 +20,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
   }
 
-  .ts-step-column {
+  .icon-column {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
     width: 30%;
-    max-width: 284px;
   }
 
   .ts-step-number {
@@ -64,7 +64,7 @@
   <p class="ts-steps-subtitle">{{ section.settings.subheading }}</p>
   <div class="ts-steps-container">
     {% for block in section.blocks %}
-      <div class="ts-step-column">
+      <div class="icon-column">
         <span class="ts-step-number">
           <img src="{{ block.settings.icon | image_url: width: 24, height: 24 }}" alt="icon" width="auto" height="auto"/>
         </span>
