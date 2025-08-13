@@ -46,6 +46,10 @@
     font-weight: 500;
   }
 
+  .icon-column-body {
+    font-size: 11pt;
+  }
+
   @media only screen and (max-width: 800px) {
     .ts-steps-container {
       flex-direction: column;
@@ -70,7 +74,7 @@
           <img src="{{ block.settings.icon | image_url: width: 24, height: 24 }}" alt="icon" width="auto" height="auto"/>
         </span>
         <h2 class="ts-step-heading">{{ block.settings.step-heading }}</h2>
-        <p class="ts-step-body">{{ block.settings.step-text }}</p>
+        <p class="icon-column-body">{{ block.settings.step-text }}</p>
       </div>
     {% endfor %}
   </div>
