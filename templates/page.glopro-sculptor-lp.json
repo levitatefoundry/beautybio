@@ -24,7 +24,7 @@
         "heading_ECxpF7": {
           "type": "heading",
           "settings": {
-            "title": "Our Best Sellers for Body Firming + Smoothing",
+            "title": "Our Best Sellers<br> for Body Firming<br> + Smoothing",
             "heading_tag": "h2",
             "heading_font_class": "fs-heading-display-1"
           }
@@ -32,7 +32,7 @@
         "text_dXMjGV": {
           "type": "text",
           "settings": {
-            "text": "<p>Powerful, patented products. Trusted by beauty lovers for visibly fimer, smoother, more sculpted skin from head to toe.</p>",
+            "text": "<p>Powerful, patented products. Trusted by beauty lovers for visibly firmer, smoother, more sculpted skin from head to toe.</p>",
             "text_font_class": "fs-body-100"
           }
         },
@@ -51,8 +51,8 @@
         "button_BVwJqD"
       ],
       "custom_css": [
-        "h2 {width: 90%; font-weight: 500; max-width: 480px;}",
-        "p {width: 95%; font-size: 12pt;}"
+        "h2 {width: 100%; font-weight: 500; max-width: 480px; font-size: 32pt;}",
+        "p {width: 90%; font-size: 12pt; max-width: 580px;}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
