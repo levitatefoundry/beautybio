@@ -443,7 +443,8 @@
       ],
       "custom_css": [
         ".form-with-text__container {background: linear-gradient(to bottom, #f3c8cf -20%, white 160%); max-height: 400px;}",
-        "ul {display: flex; flex-direction: row; justify-content: center; gap: 20px; list-style-position: inside; list-style-type: none; padding-left: 0;}"
+        "ul {display: flex; flex-direction: row; justify-content: flex-start; gap: 20px; list-style-position: inside; list-style-type: none; padding-left: 0;}",
+        "@media screen and (max-width: 800px) {ul {flex-wrap: wrap; } .form-with-text__container {max-height: none; }}"
       ],
       "name": "Form with text",
       "settings": {
