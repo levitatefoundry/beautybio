@@ -39,16 +39,8 @@
         "button_BVwJqD": {
           "type": "button",
           "settings": {
-            "link": "",
-            "link_text": "SHOP GLOPRO",
-            "button_style": "btn--primary"
-          }
-        },
-        "button_AXeyHT": {
-          "type": "button",
-          "settings": {
-            "link": "",
-            "link_text": "SHOP THE SCULPTOR",
+            "link": "shopify://products/glopro-body-attachment-the-sculptor",
+            "link_text": "SHOP NOW",
             "button_style": "btn--primary"
           }
         }
@@ -56,19 +48,19 @@
       "block_order": [
         "heading_ECxpF7",
         "text_dXMjGV",
-        "button_BVwJqD",
-        "button_AXeyHT"
+        "button_BVwJqD"
       ],
-      "disabled": true,
       "custom_css": [
-        "h2 {width: 90%;}",
-        "p {width: 95%;}"
+        "h2 {width: 90%; font-weight: 500; max-width: 480px;}",
+        "p {width: 95%; font-size: 12pt;}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
-        "image_aspect": "custom",
+        "image_aspect": "original",
         "desktop_height": 100,
         "mobile_height": 100,
+        "image": "shopify://shop_images/31229401b1dfd220a729e5dc7e66b96c0e93bef0_5b833dd3-4c5c-4aca-b7bb-6cbdd99e550b.jpg",
+        "image_mobile": "shopify://shop_images/78ddc8506f301a1884a20c8c1f3beebf0f321701.jpg",
         "focal_point": "image_presentation",
         "mobile_focal_point": "image_presentation",
         "media_link": "",
@@ -83,63 +75,6 @@
         "overlay_opacity": 0,
         "enable_animation": true,
         "section_padding": "section--vertical-padding-none"
-      }
-    },
-    "image_with_text_thQd37": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_nANTnL": {
-          "type": "heading",
-          "settings": {
-            "title": "Our Best Sellers for Body Firming + Smoothing",
-            "heading_tag": "h2",
-            "heading_font_class": "fs-heading-display-2"
-          }
-        },
-        "text_UrhaUQ": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Powerful, patented products. Trusted by beauty lovers for visibly fimer, smoother, more sculpted skin from head to toe.</p>",
-            "text_font_class": "fs-body-100"
-          }
-        },
-        "button_6yYxye": {
-          "type": "button",
-          "settings": {
-            "link": "shopify://products/glopro-body-attachment-the-sculptor",
-            "link_text": "SHOP NOW",
-            "button_style": "btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "heading_nANTnL",
-        "text_UrhaUQ",
-        "button_6yYxye"
-      ],
-      "custom_css": [
-        "p {font-size: 12pt;}",
-        "h2 {font-weight: 500; max-width: 480px;}"
-      ],
-      "name": "t:sections.image_with_text.presets.name",
-      "settings": {
-        "image_position": "right",
-        "text_alignment": "left",
-        "image": "shopify://shop_images/Hero_Image_updated_1.png",
-        "aspect_ratio": "square",
-        "focal_point": "left",
-        "image_caption": "",
-        "show_small_image": false,
-        "image_small_aspect_ratio": "square",
-        "image_small_focal_point": "image_presentation",
-        "background_color": "rgba(0,0,0,0)",
-        "text_color": "#000000",
-        "button_background_color": "#000000",
-        "button_text_color": "#ffffff",
-        "bullets": "none",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
       }
     },
     "image_with_text_ygNXdi": {
@@ -183,8 +118,8 @@
         "button_dFy8e6"
       ],
       "custom_css": [
-        "h2 {text-align: left; font-size: 22pt;}",
-        "p {text-align: left; font-size: 11pt;}",
+        "h2 {text-align: left; font-size: 24pt; font-weight: 500;}",
+        "p {text-align: left; font-size: 12pt;}",
         ".image-with-text__image {width: 60%; margin-bottom: 80px;}",
         ".image-with-text__small-image-wrapper {width: 60%;}",
         "ul {display: flex; flex-wrap: wrap; list-style: none; padding: 0; width: 100%;}",
@@ -397,7 +332,6 @@
   "order": [
     "main",
     "image_hero_F6LafQ",
-    "image_with_text_thQd37",
     "image_with_text_ygNXdi",
     "icon_columns_DkF86t",
     "double_showcase_fKVUFH",
