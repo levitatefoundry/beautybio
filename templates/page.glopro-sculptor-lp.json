@@ -249,6 +249,7 @@
         "li {list-style: none; position: relative; padding: 0 35px; text-wrap: nowrap;}",
         "li::before {left: 0px;}",
         ".image-hero {height: fit-content;}",
+        ".image-hero__text-container-wrapper {padding: 0;}",
         "@media only screen and (max-width: 750px) {ul {flex-wrap: wrap; } li {margin: 8px 0; }}"
       ],
       "name": "t:sections.image_hero.presets.name",
