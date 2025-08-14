@@ -1,1 +1,44 @@
-{"sections":{"cart":{"type":"flash-incentives-cart","blocks":{"shipping_bar":{"type":"shipping_bar","settings":{}},"cart_items":{"type":"cart_items","settings":{}},"upsells":{"type":"upsells","settings":{}}},"block_order":["shipping_bar","cart_items","upsells"],"settings":{}},"notification":{"type":"flash-incentives-notification","settings":{}}},"order":["cart","notification"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "cart": {
+      "type": "flash-incentives-cart",
+      "blocks": {
+        "shipping_bar": {
+          "type": "shipping_bar",
+          "settings": {}
+        },
+        "cart_items": {
+          "type": "cart_items",
+          "settings": {}
+        },
+        "upsells": {
+          "type": "upsells",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "shipping_bar",
+        "cart_items",
+        "upsells"
+      ],
+      "settings": {}
+    },
+    "notification": {
+      "type": "flash-incentives-notification",
+      "settings": {}
+    }
+  },
+  "order": [
+    "cart",
+    "notification"
+  ]
+}

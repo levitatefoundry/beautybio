@@ -1,1 +1,178 @@
-{"type":"header","name":"t:groups.header_group.name","sections":{"announcement-bar":{"type":"announcement-bar","blocks":{"announcement_cq7exJ":{"type":"announcement","settings":{"title":"<p><strong>JOIN BEAUTYBIO REWARDS - PERKS AWAIT<\/strong><\/p>","title_mobile":"<p><strong>Join BeautyBio Rewards – Perks Await<\/strong><\/p>","link":"shopify:\/\/pages\/rewards"}},"announcement-bar-1":{"type":"announcement","settings":{"title":"<p><strong>Find us at your local <\/strong><\/p>","title_mobile":"<p><strong>Find us at<\/strong><\/p>","link":"shopify:\/\/pages\/storelocator","block_image_one":"shopify:\/\/shop_images\/Sephora_logo_1_1.svg","block_image_two":"shopify:\/\/shop_images\/Ulta_Beauty_logo_1.svg","block_image_three":"shopify:\/\/shop_images\/Nordstrom_Logo_2019_1.svg"}}},"block_order":["announcement_cq7exJ","announcement-bar-1"],"settings":{"enable_sticky_announcement_bar":"desktop-and-mobile","autoplay_enabled":true,"autoplay_delay":6,"color_background":"#000000","color_text":"#ffffff"}},"header":{"type":"header","blocks":{"meganav-0":{"type":"full_width_meganav","settings":{"dropdown_parent_link":"Shop","column_count":3,"show_column_borders":true,"show_promo":true,"promo_width":700,"promo_height":400,"secondary_position":"right","image":"shopify:\/\/shop_images\/BoostersMenu_2.jpg","focal_point":"image_presentation","promo_text":"NEW! Boosters Collection","link":"shopify:\/\/collections\/boosters","link_text":"Shop Now","text_position":"flex-start_flex-end","text_color":"#ffffff","color_overlay":"#000000","color_overlay_gradient":"linear-gradient(220deg, rgba(0, 0, 0, 0) 22%, rgba(0, 0, 0, 1) 96%)","overlay_opacity":20}},"meganav-1":{"type":"compact_meganav","settings":{"dropdown_parent_link":"About","columns_width":270,"column_count":1,"show_column_borders":true,"show_promo":true,"promo_width":550,"promo_height":350,"secondary_position":"right","image":"shopify:\/\/shop_images\/Blendrops.jpg","focal_point":"image_presentation","promo_text":"Best Sellers","link":"shopify:\/\/collections\/skincare-best-sellers","link_text":"DISCOVER","text_position":"flex-start_flex-end","text_color":"#ffffff","color_overlay":"#000000","color_overlay_gradient":"linear-gradient(205deg, rgba(0, 0, 0, 0.15) 22%, rgba(0, 0, 0, 1) 96%)","overlay_opacity":10}},"mobile_menu_images_GeawwY":{"type":"mobile_menu_images","disabled":true,"settings":{"menu_name":"Shop","aspect_ratio":"square","thumbnail_width":60}},"mobile_menu_images_wGNArK":{"type":"mobile_menu_images","disabled":true,"settings":{"menu_name":"Features","aspect_ratio":"square","thumbnail_width":60}},"compact_meganav_jizACM":{"type":"compact_meganav","disabled":true,"settings":{"dropdown_parent_link":"Blog","columns_width":270,"column_count":1,"show_column_borders":true,"show_promo":true,"promo_width":550,"promo_height":350,"secondary_position":"right","image":"shopify:\/\/shop_images\/PlumpingBooster_BlogHeader_v3.jpg","focal_point":"image_presentation","promo_text":"Like a Filler in the Palm of Your Hand","link":"shopify:\/\/blogs\/skincare-blog\/plumping-booster-like-a-filler-in-the-palm-of-your-hand","link_text":"Read More","text_position":"flex-start_flex-end","text_color":"#ffffff","color_overlay":"#000000","color_overlay_gradient":"linear-gradient(180deg, rgba(0, 0, 0, 0.1) 22%, rgba(0, 0, 0, 1) 96%)","overlay_opacity":10}}},"block_order":["meganav-0","meganav-1","mobile_menu_images_GeawwY","mobile_menu_images_wGNArK","compact_meganav_jizACM"],"custom_css":[".meganav__nav a:hover {text-decoration: none;}"],"settings":{"layout":"logo-center_nav-left","enable_sticky_header":true,"cart_icon":"bag","divider_width":"0px","enable_locale_selector":true,"enable_country_selector":true,"show_social_media":false,"show_social_media_mobile":true,"logo":"shopify:\/\/shop_images\/BeautyBioLogo.png","logo_width":230,"mobile_logo_width":150,"menu":"eliza-test","secondary_menu":"","featured_link_label":"","featured_link_color":"#db4827","enable_transparent_on_home":false,"enable_transparent_template_list":"","logo_transparent":"shopify:\/\/shop_images\/BeautyBioLogo_White.png","color_text_transparent":"#ffffff","color_count_transparent":"#000000"}}},"order":["announcement-bar","header"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "t:groups.header_group.name",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_cq7exJ": {
+          "type": "announcement",
+          "settings": {
+            "title": "<p><strong>JOIN BEAUTYBIO REWARDS - PERKS AWAIT</strong></p>",
+            "title_mobile": "<p><strong>Join BeautyBio Rewards – Perks Await</strong></p>",
+            "link": "shopify://pages/rewards"
+          }
+        },
+        "announcement-bar-1": {
+          "type": "announcement",
+          "settings": {
+            "title": "<p><strong>Find us at your local </strong></p>",
+            "title_mobile": "<p><strong>Find us at</strong></p>",
+            "link": "shopify://pages/storelocator",
+            "block_image_one": "shopify://shop_images/Sephora_logo_1_1.svg",
+            "block_image_two": "shopify://shop_images/Ulta_Beauty_logo_1.svg",
+            "block_image_three": "shopify://shop_images/Nordstrom_Logo_2019_1.svg"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_cq7exJ",
+        "announcement-bar-1"
+      ],
+      "settings": {
+        "enable_sticky_announcement_bar": "desktop-and-mobile",
+        "autoplay_enabled": true,
+        "autoplay_delay": 6,
+        "color_background": "#000000",
+        "color_text": "#ffffff"
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "meganav-0": {
+          "type": "full_width_meganav",
+          "settings": {
+            "dropdown_parent_link": "Shop",
+            "column_count": 3,
+            "show_column_borders": true,
+            "show_promo": true,
+            "promo_width": 700,
+            "promo_height": 400,
+            "secondary_position": "right",
+            "image": "shopify://shop_images/BoostersMenu_2.jpg",
+            "focal_point": "image_presentation",
+            "promo_text": "NEW! Boosters Collection",
+            "link": "shopify://collections/boosters",
+            "link_text": "Shop Now",
+            "text_position": "flex-start_flex-end",
+            "text_color": "#ffffff",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "linear-gradient(220deg, rgba(0, 0, 0, 0) 22%, rgba(0, 0, 0, 1) 96%)",
+            "overlay_opacity": 20
+          }
+        },
+        "meganav-1": {
+          "type": "compact_meganav",
+          "settings": {
+            "dropdown_parent_link": "About",
+            "columns_width": 270,
+            "column_count": 1,
+            "show_column_borders": true,
+            "show_promo": true,
+            "promo_width": 550,
+            "promo_height": 350,
+            "secondary_position": "right",
+            "image": "shopify://shop_images/Blendrops.jpg",
+            "focal_point": "image_presentation",
+            "promo_text": "Best Sellers",
+            "link": "shopify://collections/skincare-best-sellers",
+            "link_text": "DISCOVER",
+            "text_position": "flex-start_flex-end",
+            "text_color": "#ffffff",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "linear-gradient(205deg, rgba(0, 0, 0, 0.15) 22%, rgba(0, 0, 0, 1) 96%)",
+            "overlay_opacity": 10
+          }
+        },
+        "mobile_menu_images_GeawwY": {
+          "type": "mobile_menu_images",
+          "disabled": true,
+          "settings": {
+            "menu_name": "Shop",
+            "aspect_ratio": "square",
+            "thumbnail_width": 60
+          }
+        },
+        "mobile_menu_images_wGNArK": {
+          "type": "mobile_menu_images",
+          "disabled": true,
+          "settings": {
+            "menu_name": "Features",
+            "aspect_ratio": "square",
+            "thumbnail_width": 60
+          }
+        },
+        "compact_meganav_jizACM": {
+          "type": "compact_meganav",
+          "disabled": true,
+          "settings": {
+            "dropdown_parent_link": "Blog",
+            "columns_width": 270,
+            "column_count": 1,
+            "show_column_borders": true,
+            "show_promo": true,
+            "promo_width": 550,
+            "promo_height": 350,
+            "secondary_position": "right",
+            "image": "shopify://shop_images/PlumpingBooster_BlogHeader_v3.jpg",
+            "focal_point": "image_presentation",
+            "promo_text": "Like a Filler in the Palm of Your Hand",
+            "link": "shopify://blogs/skincare-blog/plumping-booster-like-a-filler-in-the-palm-of-your-hand",
+            "link_text": "Read More",
+            "text_position": "flex-start_flex-end",
+            "text_color": "#ffffff",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1) 22%, rgba(0, 0, 0, 1) 96%)",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "meganav-0",
+        "meganav-1",
+        "mobile_menu_images_GeawwY",
+        "mobile_menu_images_wGNArK",
+        "compact_meganav_jizACM"
+      ],
+      "custom_css": [
+        ".meganav__nav a:hover {text-decoration: none;}"
+      ],
+      "settings": {
+        "layout": "logo-center_nav-left",
+        "enable_sticky_header": true,
+        "cart_icon": "bag",
+        "divider_width": "0px",
+        "enable_locale_selector": true,
+        "enable_country_selector": true,
+        "show_social_media": false,
+        "show_social_media_mobile": true,
+        "logo": "shopify://shop_images/BeautyBioLogo.png",
+        "logo_width": 230,
+        "mobile_logo_width": 150,
+        "menu": "eliza-test",
+        "secondary_menu": "",
+        "featured_link_label": "",
+        "featured_link_color": "#db4827",
+        "enable_transparent_on_home": false,
+        "enable_transparent_template_list": "",
+        "logo_transparent": "shopify://shop_images/BeautyBioLogo_White.png",
+        "color_text_transparent": "#ffffff",
+        "color_count_transparent": "#000000"
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}
