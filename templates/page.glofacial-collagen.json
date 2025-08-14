@@ -163,7 +163,7 @@
         "heading_QPFm4c": {
           "type": "heading",
           "settings": {
-            "title": "Register Your GLOfacial",
+            "title": "Learn More About Your GLOfacial",
             "heading_tag": "h2",
             "heading_font_class": "fs-heading-2-base"
           }
@@ -171,7 +171,7 @@
         "text_FMA3qh": {
           "type": "text",
           "settings": {
-            "text": "<p>Register with the unique code inside your User Guide to receive a FREE GLOfacial Treatment Tips Kit on your next order $50+</p>",
+            "text": "<p>Register to receive a FREE GLOfacial Treatment Tips Kit on your next order $50+</p>",
             "text_font_class": "fs-body-100"
           }
         }
@@ -932,11 +932,10 @@
         "item_GcJE34",
         "item_84pieT"
       ],
-      "disabled": true,
       "settings": {
-        "heading": "4 Minutes. 4 Simple Steps.",
+        "heading": "How To Use",
         "heading_tag": "h2",
-        "subheading": "",
+        "subheading": "<p>4 Minutes. 4 Simple Steps.</p>",
         "content_alignment": "center",
         "enable_animation": true,
         "full_width": false,
@@ -1061,7 +1060,7 @@
             "expand_by_default": false,
             "icon": "none",
             "title": "Why is it important to use the GLOfacial Concentrate? Do I need it to use the tool?",
-            "text": "<p>The GLOfacial Concentrates were designed for use with the GLOfacial Tool and offers key ingredients to cleanse, clarify, and plump your skin.</p>"
+            "text": "<p>The GLOfacial Concentrates are specially formulated to work with the tool for optimal results, much like how laundry detergent enhances the cleaning power of water. While you can technically use the tool with just water, the Concentrates are designed to maximize hydration, exfoliation, and overall skin benefits for the best experience.</p>"
           }
         },
         "item_GYLagX": {
@@ -1070,7 +1069,7 @@
             "expand_by_default": false,
             "icon": "none",
             "title": "Can I just put water in the device instead of the Concentrate?",
-            "text": "<p>Yes, but we recommend using the GLOfacial Concentrate for optimal results.</p>"
+            "text": "<p>For optimal results, we recommend using the GLOfacial with the designated concentrate to enhance the treatment. While water can be used to dilute the concentrate, the full benefits of the device are achieved with the recommended solution.</p>"
           }
         },
         "item_UWEeD9": {
@@ -1079,7 +1078,7 @@
             "expand_by_default": false,
             "icon": "none",
             "title": "Can I use another Essence or Concentrate in the device?",
-            "text": "<p>We only recommend using water or the GLOfacial Concentrate.</p>"
+            "text": "<p>For the best results, we recommend using the GLOfacial tool with the specifically designed concentrate. Using other essences or concentrates may not provide the same optimal performance and results.</p>"
           }
         },
         "item_wAMKQL": {
@@ -1088,7 +1087,7 @@
             "expand_by_default": false,
             "icon": "none",
             "title": "Is GLOfacial safe for all skin types?",
-            "text": "<p>GLOfacial works on all skin tones and types. See warnings in user manual for concerns regarding medical conditions.</p>"
+            "text": "<p>GLOfacial works on all skin types. See warnings in user manual for concerns regarding medical conditions.</p>"
           }
         },
         "item_Pk6JPT": {
@@ -1097,7 +1096,7 @@
             "expand_by_default": false,
             "icon": "none",
             "title": "Should I wash my face before using the GLOfacial Tool?",
-            "text": "<p>We recommend beginning with cleansed skin to help prevent makeup, oil, or residue from clogging the Tool or Treatment Tips.</p>"
+            "text": "<p>We recommend beginning with cleansed skin to help prevent makeup, oil, or residue from clogging the tool or Treatment Tips.</p>"
           }
         },
         "item_8bJGey": {
@@ -1106,7 +1105,7 @@
             "expand_by_default": false,
             "icon": "none",
             "title": "Can I use GLOfacial if I have acne? Will the treatment help reduce acne?",
-            "text": "<p>The GLOfacial tool will help clarify your skin by using the LED Blue Light mode with the Clarifying Cap. Do not use the tool over open wounds or suction modes on active breakouts.</p>"
+            "text": "<p>The GLOfacial tool, when used with the Clarifying Cap and its LED Blue Light mode, may help support the appearance of clearer skin. Avoid using the tool over open wounds or in suction modes on areas with active breakouts.</p>"
           }
         },
         "item_Pe3ryC": {
@@ -1133,7 +1132,7 @@
             "expand_by_default": false,
             "icon": "none",
             "title": "How often should I switch the tips?",
-            "text": "<p>We recommend replacing your tips every 2-3 months.</p>"
+            "text": "<p>We recommend replacing your tips every 2-3 months with regular use.</p>"
           }
         },
         "item_NVEHWn": {
@@ -1142,7 +1141,7 @@
             "expand_by_default": false,
             "icon": "none",
             "title": "How often can I use GLOfacial? Do I have to use it at night?",
-            "text": "<p>For best results, we recommend using the tool 1-2 times a week. Some areas of congestion may take several treatments over time to clear. Skin may become temporarily flush after treatment as GLOfacial enhances microcirculation so we recommend treating your skin at night.</p>"
+            "text": "<p>For optimal results, use the GLOfacial tool 1-2 times per week. Congested areas may require multiple treatments over time for improvement. After treatment, your skin may experience temporary redness, so we recommend using the tool in the evening.</p>"
           }
         },
         "item_eniXPx": {
@@ -1151,7 +1150,7 @@
             "expand_by_default": false,
             "icon": "none",
             "title": "Can I do a blue light only treatment?",
-            "text": "<p>Yes! You can skip the hydration facial and use the blue light with cap for a clarifying treatment anytime. We recommend spot treating for two minutes.</p>"
+            "text": "<p>Yes! You can skip the hydration facial and use the blue light with cap for a clarifying treatment anytime. We recommend spot treating for four minutes.</p>"
           }
         },
         "item_YNzkFi": {
@@ -1160,7 +1159,7 @@
             "expand_by_default": false,
             "icon": "none",
             "title": "What is the difference between the original GLOfacial Concentrate and Collagen Concentrate?",
-            "text": "<p>Both Concentrates help infuse skin with amazing ingredients like hyaluronic acid, helping get the most out of your GLOfacial treatment. The Original Concentrate focuses more on clarifying - great for blemish prone or oily skin! Collagen Concentrate helps build firmer, juicier skin for a plump, dewy feel.</p>"
+            "text": "<p>The original GLOfacial Concentrate contains clarifying Salicylic Acid, hydrating Hyaluronic Acid, and brightening Niacinamide, helping to promote a clearer, more even complexion. The Collagen Concentrate is formulated to help improve the appearance of firmer, plumper skin, enhancing skin’s smoothness and overall appearance. Both concentrates are designed to complement the GLOfacial tool for different skin needs.</p>"
           }
         },
         "item_ANPFTk": {
@@ -1169,7 +1168,7 @@
             "expand_by_default": false,
             "icon": "none",
             "title": "What warranty comes with my GLOfacial?",
-            "text": "<p>We will replace your GLOfacial within one year, as long as you have proof of purchase.</p>"
+            "text": "<p>BeautyBio offers a one-year replacement warranty for the GLOfacial tool, provided you have proof of purchase. To initiate a replacement, please contact our customer support team at info@beautybio.com with your order details and a brief description of the issue.</p>"
           }
         }
       },
@@ -1194,10 +1193,10 @@
         "heading_tag": "h2",
         "heading_font_class": "fs-heading-3-base",
         "subheading": "",
-        "subheading_tag": "h3",
+        "subheading_tag": "h2",
         "subheading_font_class": "fs-heading-5-base",
         "heading_alignment": "center",
-        "item_heading_font": "heading",
+        "item_heading_font": "body",
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom",
@@ -1211,7 +1210,7 @@
         "custom_bg_css_ezVALb": {
           "type": "custom_bg_css",
           "settings": {
-            "custom_bg_css": "background: rgb(174,114,248);\nbackground: -moz-radial-gradient(circle, rgba(174,114,248,1) 0%, rgba(164,229,216,1) 20%, rgba(152,97,192,1) 36%, rgba(148,127,231,1) 56%, rgba(164,229,216,1) 70%, rgba(139,217,243,1) 86%, rgba(217,165,231,1) 100%);\nbackground: -webkit-radial-gradient(circle, rgba(174,114,248,1) 0%, rgba(164,229,216,1) 20%, rgba(152,97,192,1) 36%, rgba(148,127,231,1) 56%, rgba(164,229,216,1) 70%, rgba(139,217,243,1) 86%, rgba(217,165,231,1) 100%);\nbackground: radial-gradient(circle, rgba(174,114,248,1) 0%, rgba(164,229,216,1) 20%, rgba(152,97,192,1) 36%, rgba(148,127,231,1) 56%, rgba(164,229,216,1) 70%, rgba(139,217,243,1) 86%, rgba(217,165,231,1) 100%);\nfilter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\"#ae72f8\",endColorstr=\"#d9a5e7\",GradientType=1);"
+            "custom_bg_css": "background: #b5ffeb;\nbackground: linear-gradient(0deg, rgba(181, 255, 235, 1) 0%, rgba(179, 237, 255, 1) 50%, rgba(244, 194, 255, 1) 100%);"
           }
         }
       },
