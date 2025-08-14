@@ -1,0 +1,156 @@
+{% capture svg_content %}
+  {% render 'checkbox-svg' %}  <!-- Your SVG snippet -->
+{% endcapture %}
+{% assign encoded_svg = svg_content | base64_encode %}
+
+{% capture star_svg_content %}
+  {% render 'star-bullet' %}  <!-- Your SVG snippet -->
+{% endcapture %}
+{% assign star_encoded_svg = star_svg_content | base64_encode %}
+
+<div class="form-with-text__container">
+    <div class="form-with-text__content">
+        {% for block in section.blocks %}
+            {% if block.type == 'heading' %}
+                <h2 class="form-with-text__heading">{{ block.settings.heading }}</h2>
+            {% endif %}
+            {% if block.type == 'richtext' %}
+                <div class="form-with-text__richtext-container">
+                    {{ block.settings.text }}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="form-with-text__form-container">
+        {{ section.settings.form }}
+    </div>
+</div>
+
+<style>
+    .form-with-text__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    .form-with-text__content {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        gap: 30px;
+        max-width: 800px;
+    }
+
+    .form-with-text__form-container {
+      flex-grow: 1;
+      max-width: 400px;
+    }
+
+    @media screen and (max-width: 800px) {
+      .form-with-text__container {
+        flex-direction: column;
+      }
+    }
+</style>
+
+{% if section.settings.bullets == 'check' %}
+  <style>
+    #shopify-section-{{ section.id }} li::before {
+      content: url("data:image/svg+xml;base64,{{ encoded_svg }}");
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    #shopify-section-{{ section.id }} li {
+        position: relative;
+        text-align: left;
+        padding: 0 0 0 50px;
+        display: flex;
+        align-items: center;
+    }
+  </style>
+{% elsif section.settings.bullets == 'star' %}
+  <style>
+    #shopify-section-{{ section.id }} li::before {
+      content: url("data:image/svg+xml;base64,{{ star_encoded_svg }}");
+      position: absolute;
+      left: 13px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    #shopify-section-{{ section.id }} li {
+        position: relative;
+        text-align: left;
+        padding: 0 0 0 50px;
+        display: flex;
+        align-items: center;
+    }
+  </style>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Form with text",
+  "settings": [
+    {
+      "type": "html",
+      "id": "form",
+      "label": "Form html"
+    },
+    {
+      "type": "select",
+      "id": "bullets",
+      "label": "Custom bullet points",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "check",
+          "label": "Checkmark"
+        },
+        {
+          "value": "star",
+          "label": "Star"
+        }
+      ],
+      "default": "none"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Heading text",
+          "id": "heading"
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "name": "Richtext",
+      "settings": [
+        {
+          "type": "richtext",
+          "label": "Text",
+          "id": "text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Form with text",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}

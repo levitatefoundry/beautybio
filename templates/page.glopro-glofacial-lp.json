@@ -59,7 +59,6 @@
         "button_nexxzf",
         "button_VtL8JY"
       ],
-      "disabled": true,
       "name": "t:sections.image_with_text.presets.name",
       "settings": {
         "image_position": "right",
@@ -122,7 +121,6 @@
         "button_fYNfGE",
         "button_fKF8wM"
       ],
-      "disabled": true,
       "custom_css": [
         ".rich-text__inner {display: flex; justify-content: space-between;}",
         "h2 {font-weight: 500; font-size: 24pt;}",
@@ -143,7 +141,6 @@
     },
     "promo_banner_n4NWjp": {
       "type": "promo-banner",
-      "disabled": true,
       "name": "t:sections.promo_banner.presets.name",
       "settings": {
         "min_height": 300,
@@ -215,7 +212,6 @@
         "button_6bJbLL",
         "button_zeYDLB"
       ],
-      "disabled": true,
       "custom_css": [
         "li {padding: 0 0 0 40px; position: relative;}",
         "ul {list-style-position: inside; list-style-type: none; padding-left: 0; display: flex; align-items: center; justify-content: space-between;}",
@@ -240,24 +236,24 @@
           "type": "step",
           "settings": {
             "icon": "shopify://shop_images/fi_7886147.svg",
-            "step-heading": "Backed by Real Science",
-            "step-text": "Microneedling. Pore extraction. Ingredient infusion. We do it all, and we do it right."
+            "step-heading": "Backed by<br> Real Science",
+            "step-text": "Microneedling. Pore extraction. Ingredient<br> infusion. We do it all, and we do it right."
           }
         },
         "step_WGPWqX": {
           "type": "step",
           "settings": {
             "icon": "shopify://shop_images/fi_17371266.svg",
-            "step-heading": "Tools That Do the Heavy Lifting",
-            "step-text": "At-home treatments. No downtime. Visibly improved complexion starts now."
+            "step-heading": "Tools That Do the<br> Heavy Lifting",
+            "step-text": "At-home treatments. No downtime.<br> Visibly improved complexion starts now."
           }
         },
         "step_GbYTXV": {
           "type": "step",
           "settings": {
             "icon": "shopify://shop_images/fi_2717575.svg",
-            "step-heading": "Transparent Process. Always.",
-            "step-text": "Clean. Results-first. That’s the BeautyBio standard."
+            "step-heading": "Transparent<br> Process. Always.",
+            "step-text": "Clean. Results-first. That’s the<br> BeautyBio standard."
           }
         }
       },
@@ -266,7 +262,6 @@
         "step_WGPWqX",
         "step_GbYTXV"
       ],
-      "disabled": true,
       "name": "Icon Columns",
       "settings": {
         "heading": "More than a Pretty Tool. Clinically Proven + Patented.",
@@ -275,7 +270,6 @@
     },
     "glopro_glofacial_showcase_i63Kfe": {
       "type": "glopro-glofacial-showcase",
-      "disabled": true,
       "name": "GloPRO GLOfacial Showcase",
       "settings": {
         "heading": "Meet the Power Pair: GLOfacial & GloPRO®",
@@ -301,7 +295,6 @@
       "block_order": [
         "archive_instagram_tiktok_ugc_feed_fR97Mx"
       ],
-      "disabled": true,
       "custom_css": [
         "h2 {text-align: center; font-weight: 500;}"
       ],
@@ -361,7 +354,6 @@
         "diagram_X8dT3E",
         "diagram_39N9mP"
       ],
-      "disabled": true,
       "custom_css": [],
       "name": "Multi-diagram",
       "settings": {
@@ -382,28 +374,28 @@
           "type": "faq",
           "settings": {
             "faq-heading": "Can I use both tools together?",
-            "faq-body": ""
+            "faq-body": "<p>Yes, you can. You may choose to use these on alternating nights for sensitive skin. You may also use the GLOfacial tool in the AM and GloPRO in the PM.</p>"
           }
         },
         "faq_riA8Ye": {
           "type": "faq",
           "settings": {
             "faq-heading": "Is microneedling painful?",
-            "faq-body": ""
+            "faq-body": "<p>Microneedling with GloPRO is not painful at all. You only need 1 minute with this tool to reap the benefits, and there’s no need to apply additional pressure when using it, so it’s an easy-to use, pain free tool!</p>"
           }
         },
         "faq_PkK3xV": {
           "type": "faq",
           "settings": {
             "faq-heading": "How often should I use GloPRO® and GLOfacial?",
-            "faq-body": ""
+            "faq-body": "<p>For optimal results, we recommend using the GloPRO 2-3 times a week at night for 30-60 seconds a session.</p><p>We recommend using GLOfacial 1-2 times a week. It is gentle enough to be used on low suction mode daily. Blue Light Treatment can be done daily for 4 minutes per target area.</p>"
           }
         },
         "faq_VVjAp9": {
           "type": "faq",
           "settings": {
             "faq-heading": "Do I need to use special skincare with the tools?",
-            "faq-body": ""
+            "faq-body": "<p>No. You can apply your favorite serums and creams! Just be sure to check the ingredients and test a small patch on your skin if you’re worried you might be too sensitive to anything!</p>"
           }
         }
       },
@@ -414,13 +406,50 @@
         "faq_PkK3xV",
         "faq_VVjAp9"
       ],
-      "disabled": true,
       "name": "Split Text + Faqs",
       "settings": {
-        "heading": "You’ve Got Questions.<br> We’ve Got Glowing Answers.",
+        "heading": "You’ve Got Questions. We’ve Got Glowing Answers.",
         "body": "<p>Whether you're new to at-home skincare tech or just curious how it all works, we’re here to help. These are our most-asked Qs from real BeautyBio customers.</p>",
         "button_link": "",
         "button_text": "VIEW ALL FAQS"
+      }
+    },
+    "form_with_text_bJwKBb": {
+      "type": "form-with-text",
+      "blocks": {
+        "heading_mN47Fm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join BeautyBio, Your Skin's Smart Move."
+          }
+        },
+        "richtext_wtTGec": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Register your product or create an account for exclusive perks, faster reorders, and early access to launches. Glowing skin deserves glowing benefits.</p>"
+          }
+        },
+        "richtext_qipL6L": {
+          "type": "richtext",
+          "settings": {
+            "text": "<ul><li><strong>Track Your Orders & Refills</strong></li><li><strong>Exclusive Perks</strong></li><li><strong>Glow Insider Access</strong></li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mN47Fm",
+        "richtext_wtTGec",
+        "richtext_qipL6L"
+      ],
+      "custom_css": [
+        ".form-with-text__container {background: linear-gradient(to bottom, #f3c8cf -20%, white 160%); max-height: 400px;}",
+        "ul {display: flex; flex-direction: row; justify-content: flex-start; gap: 20px; list-style-position: inside; list-style-type: none; padding-left: 0;}",
+        "@media screen and (max-width: 800px) {ul {flex-wrap: wrap; justify-content: center; } .form-with-text__container {max-height: none; padding: 20px; } .form-with-text__content {text-align: center; }}"
+      ],
+      "name": "Form with text",
+      "settings": {
+        "form": "<div class=\"klaviyo-form-SCxaVk\"></div>",
+        "bullets": "check"
       }
     }
   },
@@ -434,6 +463,7 @@
     "glopro_glofacial_showcase_i63Kfe",
     "175450953727ce84b1",
     "multi_diagram_p3RApR",
-    "split_faq_text_jctx9x"
+    "split_faq_text_jctx9x",
+    "form_with_text_bJwKBb"
   ]
 }

@@ -75,7 +75,7 @@
         padding: 30px;
     }
 
-    ul {
+    #shopify-section-{{ section.id }} ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -85,7 +85,7 @@
         padding-left: 0;
     }
 
-    li {
+    #shopify-section-{{ section.id }} li {
         position: relative;
         text-align: left;
         padding: 0 0 0 50px;
@@ -101,12 +101,21 @@
         font-size: 11pt;
     }
 
-    @media screen and (max-width: 1000) {
+    @media screen and (max-width: 800px) {
         .multi-diagram__diagram-row {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 20px;
+        }
+
+        #shopify-section-{{ section.id }} img {
+          width: 275px;
+          height: 252px;
+        }
+
+        .multi-diagram__container {
+          padding: 20px;
         }
     }
 </style>

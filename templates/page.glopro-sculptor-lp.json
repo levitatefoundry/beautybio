@@ -24,7 +24,7 @@
         "heading_ECxpF7": {
           "type": "heading",
           "settings": {
-            "title": "Our Best Sellers for Body Firming + Smoothing",
+            "title": "Our Best Sellers<br> for Body Firming<br> + Smoothing",
             "heading_tag": "h2",
             "heading_font_class": "fs-heading-display-1"
           }
@@ -32,23 +32,15 @@
         "text_dXMjGV": {
           "type": "text",
           "settings": {
-            "text": "<p>Powerful, patented products. Trusted by beauty lovers for visibly fimer, smoother, more sculpted skin from head to toe.</p>",
+            "text": "<p>Powerful, patented products. Trusted by beauty lovers for visibly firmer, smoother, more sculpted skin from head to toe.</p>",
             "text_font_class": "fs-body-100"
           }
         },
         "button_BVwJqD": {
           "type": "button",
           "settings": {
-            "link": "",
-            "link_text": "SHOP GLOPRO",
-            "button_style": "btn--primary"
-          }
-        },
-        "button_AXeyHT": {
-          "type": "button",
-          "settings": {
-            "link": "",
-            "link_text": "SHOP THE SCULPTOR",
+            "link": "shopify://products/glopro-body-attachment-the-sculptor",
+            "link_text": "SHOP NOW",
             "button_style": "btn--primary"
           }
         }
@@ -56,19 +48,19 @@
       "block_order": [
         "heading_ECxpF7",
         "text_dXMjGV",
-        "button_BVwJqD",
-        "button_AXeyHT"
+        "button_BVwJqD"
       ],
-      "disabled": true,
       "custom_css": [
-        "h2 {width: 90%;}",
-        "p {width: 95%;}"
+        "h2 {width: 100%; font-weight: 500; max-width: 480px; font-size: 32pt;}",
+        "p {width: 90%; font-size: 12pt; max-width: 580px;}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
-        "image_aspect": "custom",
+        "image_aspect": "original",
         "desktop_height": 100,
         "mobile_height": 100,
+        "image": "shopify://shop_images/31229401b1dfd220a729e5dc7e66b96c0e93bef0_5b833dd3-4c5c-4aca-b7bb-6cbdd99e550b.jpg",
+        "image_mobile": "shopify://shop_images/78ddc8506f301a1884a20c8c1f3beebf0f321701.jpg",
         "focal_point": "image_presentation",
         "mobile_focal_point": "image_presentation",
         "media_link": "",
@@ -83,62 +75,6 @@
         "overlay_opacity": 0,
         "enable_animation": true,
         "section_padding": "section--vertical-padding-none"
-      }
-    },
-    "image_with_text_thQd37": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_nANTnL": {
-          "type": "heading",
-          "settings": {
-            "title": "Our Best Sellers for Body Firming + Smoothing",
-            "heading_tag": "h2",
-            "heading_font_class": "fs-heading-display-2"
-          }
-        },
-        "text_UrhaUQ": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Powerful, patented products. Trusted by beauty lovers for visibly fimer, smoother, more sculpted skin from head to toe.</p>",
-            "text_font_class": "fs-body-100"
-          }
-        },
-        "button_6yYxye": {
-          "type": "button",
-          "settings": {
-            "link": "shopify://products/glopro-body-attachment-the-sculptor",
-            "link_text": "SHOP NOW",
-            "button_style": "btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "heading_nANTnL",
-        "text_UrhaUQ",
-        "button_6yYxye"
-      ],
-      "custom_css": [
-        "p {font-size: 12pt;}"
-      ],
-      "name": "t:sections.image_with_text.presets.name",
-      "settings": {
-        "image_position": "right",
-        "text_alignment": "left",
-        "image": "shopify://shop_images/Hero_Image_updated_1.png",
-        "aspect_ratio": "square",
-        "focal_point": "left",
-        "image_caption": "",
-        "show_small_image": false,
-        "image_small_aspect_ratio": "square",
-        "image_small_focal_point": "image_presentation",
-        "background_color": "rgba(0,0,0,0)",
-        "text_color": "#000000",
-        "button_background_color": "#000000",
-        "button_text_color": "#ffffff",
-        "bullets": "none",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
       }
     },
     "image_with_text_ygNXdi": {
@@ -182,8 +118,8 @@
         "button_dFy8e6"
       ],
       "custom_css": [
-        "h2 {text-align: left; font-size: 22pt;}",
-        "p {text-align: left; font-size: 11pt;}",
+        "h2 {text-align: left; font-size: 24pt; font-weight: 500;}",
+        "p {text-align: left; font-size: 12pt;}",
         ".image-with-text__image {width: 60%; margin-bottom: 80px;}",
         ".image-with-text__small-image-wrapper {width: 60%;}",
         "ul {display: flex; flex-wrap: wrap; list-style: none; padding: 0; width: 100%;}",
@@ -219,24 +155,24 @@
           "type": "step",
           "settings": {
             "icon": "shopify://shop_images/fi_7886147.svg",
-            "step-heading": "Backed by Real Science",
-            "step-text": "Microneedling. Pore extraction, Ingredient infusion. We do it all, and we do it right."
+            "step-heading": "Backed by<br> Real Science",
+            "step-text": "Microneedling. Pore extraction, Ingredient<br> infusion. We do it all, and we do it right."
           }
         },
         "step_tNKgPD": {
           "type": "step",
           "settings": {
             "icon": "shopify://shop_images/fi_17371266.svg",
-            "step-heading": "Tools That Do the Heavy Lifting",
-            "step-text": "At-home treatments. No downtime. Visibly improved complexion starts now."
+            "step-heading": "Tools That Do the<br> Heavy Lifting",
+            "step-text": "At-home treatments. No downtime.<br> Visibly improved complexion starts now."
           }
         },
         "step_abwYpT": {
           "type": "step",
           "settings": {
             "icon": "shopify://shop_images/fi_2717575.svg",
-            "step-heading": "Transparent Process. Always",
-            "step-text": "Clean, Results-first. That's the BeautyBio standard."
+            "step-heading": "Transparent<br> Process. Always",
+            "step-text": "Clean, Results-first. That's the<br> BeautyBio standard."
           }
         }
       },
@@ -246,7 +182,8 @@
         "step_abwYpT"
       ],
       "custom_css": [
-        ".ts-step-heading {width: 72%;}"
+        ".ts-step-heading {width: 72%;}",
+        ".ts-steps-title {font-size: 22pt;}"
       ],
       "name": "Icon Columns",
       "settings": {
@@ -256,11 +193,15 @@
     },
     "double_showcase_fKVUFH": {
       "type": "double-showcase",
+      "custom_css": [
+        ".double-showcase__heading {max-width: 400px;}",
+        ".double-showcase__subheading {max-width: 880px;}"
+      ],
       "name": "Double Showcase",
       "settings": {
         "heading": "Meet the Power Pair: GloPRO® & The Sculptor",
         "subheading": "GloPRO® BODY helps improve the appearance of skin texture and firmness with every roll. The Sculptor delivers hydration and helps visibly tighten the look of skin for a smoother, more contoured appearance.",
-        "product1_img": "shopify://shop_images/GloPRO_Facial_Microneedling_Tool-Photoroom_2.png",
+        "product1_img": "shopify://shop_images/e7c336d8439549be777dd958d17dddd69f8f226a_b5933272-5c1e-4908-99f4-0e1c53ef451b.png",
         "button1_text": "SHOP NOW",
         "button1_link": "shopify://products/glopro-body-attachment-the-sculptor",
         "product2_img": "shopify://shop_images/image_1393.png"
@@ -311,6 +252,8 @@
         "ul {display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100vw; padding: 0 80px;}",
         "li {list-style: none; position: relative; padding: 0 35px; text-wrap: nowrap;}",
         "li::before {left: 0px;}",
+        ".image-hero {height: fit-content;}",
+        ".image-hero__text-container-wrapper {padding: 0;}",
         "@media only screen and (max-width: 750px) {ul {flex-wrap: wrap; } li {margin: 8px 0; }}"
       ],
       "name": "t:sections.image_hero.presets.name",
@@ -391,16 +334,54 @@
         "button_link": "https://beautybio.gorgias.help/en-US",
         "button_text": "VIEW ALL FAQS"
       }
+    },
+    "form_with_text_9fnMRT": {
+      "type": "form-with-text",
+      "blocks": {
+        "heading_WyUcb8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join BeautyBio, Your Skin's Smart Move."
+          }
+        },
+        "richtext_agBhx6": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Register your product or create an account for exclusive perks, faster reorders, and early access to launches. Glowing skin deserves glowing benefits.</p>"
+          }
+        },
+        "richtext_9hLpyq": {
+          "type": "richtext",
+          "settings": {
+            "text": "<ul><li><strong>Track Your Orders & Refills</strong></li><li><strong>Exclusive Perks</strong></li><li><strong>Glow Insider Access</strong></li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WyUcb8",
+        "richtext_agBhx6",
+        "richtext_9hLpyq"
+      ],
+      "custom_css": [
+        ".form-with-text__container {background: linear-gradient(to bottom, #f3c8cf -20%, white 160%); max-height: 400px;}",
+        "ul {display: flex; flex-direction: row; justify-content: flex-start; gap: 20px; list-style-position: inside; list-style-type: none; padding-left: 0;}",
+        "@media screen and (max-width: 800px) {ul {flex-wrap: wrap; justify-content: center; } .form-with-text__container {max-height: none; padding: 20px; } .form-with-text__content {text-align: center; }}"
+      ],
+      "name": "Form with text",
+      "settings": {
+        "form": "<div class=\"klaviyo-form-SCxaVk\"></div>",
+        "bullets": "check"
+      }
     }
   },
   "order": [
     "main",
     "image_hero_F6LafQ",
-    "image_with_text_thQd37",
     "image_with_text_ygNXdi",
     "icon_columns_DkF86t",
     "double_showcase_fKVUFH",
     "image_hero_bLPznX",
-    "split_faq_text_F74mVW"
+    "split_faq_text_F74mVW",
+    "form_with_text_9fnMRT"
   ]
 }
