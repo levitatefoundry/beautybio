@@ -175,7 +175,7 @@
     {% assign cart_icon_name = 'header-shopping-[[ci]]' | replace: '[[ci]]', section.settings.cart_icon %}
     {% render 'icon-button', icon: cart_icon_name %}
 
-    <span data-js-cart-count class="cart-count-rebuy">{{ cart.item_count }}</span>
+    <span data-js-cart-count>{{ cart.item_count }}</span>
   </a>
 {%- endcapture -%}
 
