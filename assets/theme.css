@@ -1484,13 +1484,15 @@ html.sticky-header-active body.scroll-lock .shopify-section.header__outer-wrappe
       padding-bottom:var(--spacing-3)
   }
     }
-.header .header__skip-to-content.btn{
-    visibility:hidden;
-    position:absolute;
-    top:calc(4px * 10);
-    top:var(--spacing-10);
-    left:0;
-  }
+.header .header__skip-to-content.btn {
+    position: absolute;
+    top: var(--spacing-10);
+    left: -9999px;
+}
+
+.header .header__skip-to-content.btn:focus {
+    left: 0;
+}
 .user-is-tabbing .header .header__skip-to-content.btn{
       visibility:visible;
     }
