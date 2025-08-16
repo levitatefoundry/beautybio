@@ -478,8 +478,7 @@
   "platform_customizations": {
     "custom_css": [
       ".free-shipping-bar__bar-progress {background-color: #ee4e9c;}",
-      ".dynamic-variant-button.product__chip.disabled {display: none;}",
-      ".header .header__skip-to-content.btn {position: absolute; top: var(--spacing-10); left: -9999px;}"
+      ".dynamic-variant-button.product__chip.disabled {display: none;}"
     ]
   }
 }
