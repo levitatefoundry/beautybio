@@ -1128,7 +1128,7 @@
         {% assign cart_share_url = cart_share_items | url_encode | prepend: '?upsell-cart-share=' | prepend: shop.secure_url %}
         <div class="upsell-cart__riser-main">
             <div class="upsell-cart__social-share-input-wrapper">
-              <input type="text" class="upsell-cart__social-share-input" value="{{ cart_share_url }}" readonly="">
+              <input type="text" aria-label="upsell cart social share input" class="upsell-cart__social-share-input" value="{{ cart_share_url }}" readonly="">
               <button type="button" class="upsell-cart__social-share-copy-url" aria-label="{{ shop.metafields.obsidian_upsell[locale].copy_share_link }}" data-url="{{ cart_share_url }}">
                 <svg class="upsell-cart__social-share-copy-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.562 5.574H3.404v17.31h14.158V5.575z" stroke="currentColor" stroke-width="1.513" stroke-miterlimit="10"></path>
