@@ -15046,7 +15046,7 @@ body.header-transparent
   font-size:var(--font-size-product-badge);
 }
 .product-badge--sale{
-  color:var(--color-text-sale-badge);
+  color:#D11570;
 }
 .product-badge--sold-out{
   background-color:var(--color-background-sold-badge);
