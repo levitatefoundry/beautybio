@@ -141,43 +141,45 @@
             data-dropdown="filter-bar-sort"
             aria-hidden="true"
           >
-            <ul class="filter-group__list filter-group__list--sort">
-              {%- for option in results.sort_options -%}
-                {%- liquid
-                  assign is_active = false
-                  if results.sort_by != blank
-                    if option.value == results.sort_by
+            <fieldset class="filter-group" aria-label="{{ 'filters.sort_title' | t }}">
+              <legend class="filter-group__legend">{{ 'filters.sort_title' | t }}</legend>
+              <ul class="filter-group__list filter-group__list--sort">
+                {%- for option in results.sort_options -%}
+                  {%- liquid
+                    assign is_active = false
+                    if results.sort_by != blank
+                      if option.value == results.sort_by
+                        assign is_active = true
+                      endif
+                    elsif option.value == collection.default_sort_by
                       assign is_active = true
                     endif
-                  elsif option.value == collection.default_sort_by
-                    assign is_active = true
-                  endif
-                -%}
-                <li class="filter-item">
-                  <label data-sort for="filter-{{ option.name | handleize }}" class="filter-item__content">
-                    <input
-                      type="radio"
-                      name="sort_by"
-                      data-sort-item-input
-                      {% if is_active %}
-                        checked
-                      {% endif %}
-                      value="{{ option.value }}"
-                      data-value-escaped="{{ option.value | url_escape }}"
-                      id="filter-{{ option.name | escape | handleize }}"
-                      class="filter-item__radio visually-hidden"
-                    >
-
-                    <div class="filter-item__content-inner">
-                      <div class="filter-input__input">
-                        <div class="indicator"></div>
+                  -%}
+                  <li class="filter-item">
+                    <label data-sort for="filter-{{ option.name | handleize }}" class="filter-item__content">
+                      <input
+                        type="radio"
+                        name="sort_by"
+                        data-sort-item-input
+                        {% if is_active %}
+                          checked
+                        {% endif %}
+                        value="{{ option.value }}"
+                        data-value-escaped="{{ option.value | url_escape }}"
+                        id="filter-{{ option.name | escape | handleize }}"
+                        class="filter-item__radio visually-hidden"
+                      >
+                      <div class="filter-item__content-inner">
+                        <div class="filter-input__input">
+                          <div class="indicator"></div>
+                        </div>
+                        <span class="filter-item__label">{{ option.name }}</span>
                       </div>
-                      <span class="filter-item__label">{{ option.name }}</span>
-                    </div>
-                  </label>
-                </li>
-              {%- endfor -%}
-            </ul>
+                    </label>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </fieldset>
           </div>
         </div>
       {%- endif -%}
