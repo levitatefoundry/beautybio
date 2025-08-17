@@ -511,7 +511,7 @@
                         pattern="[0-9]*"
                         data-id="{{ item.key }}">
                     </label>
-                    <button type="button" class="upsell-cart__quantity-adjust" data-action="minus" aria-label="Remove the Quantity">
+                    <button type="button" class="upsell-cart__quantity-adjust" data-action="minus" aria-label="{{ shop.metafields.obsidian_upsell[locale].minus }}">
                       <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none"><path stroke="currentColor" stroke-width="1.25" d="M12 6.5H0"/></svg>
                     </button>
                     <button type="button" class="upsell-cart__quantity-adjust" data-action="plus" aria-label="{{ shop.metafields.obsidian_upsell[locale].add }}">
