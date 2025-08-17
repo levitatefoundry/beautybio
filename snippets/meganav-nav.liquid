@@ -5,9 +5,9 @@
   <ul class="meganav__list-parent" depth="0">
     {% for link in link.links %}
       <li class="{% if link.links.size > 0 %} has-children{% endif %}" depth="0">
-        <h4>
+        
           <a href="{{ link.url }}">{{ link.title }}</a>
-        </h4>
+        
         {% if link.links %}
           <ul depth="1">
             {% for link in link.links %}
