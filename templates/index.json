@@ -983,6 +983,9 @@
         "heading_M9nxqU",
         "text_hHr7Bj"
       ],
+      "custom_css": [
+        ".image-hero__text-container-text.rte.ff-body.fs-body-100.section-blocks__text {background-color: rgba(0, 0, 0, 0.01);}"
+      ],
       "settings": {
         "image_aspect": "original",
         "desktop_height": 100,
