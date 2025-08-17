@@ -66,7 +66,7 @@
     {%- if include_placeholder -%}div{%- else -%}a{%- endif -%}
   {%- endcapture -%}
   {%- capture wrapping_attributes -%}
-    {%- unless include_placeholder -%}href="{{ collection.url }}" aria-label="{{ collection.title }}"{%- endunless -%}
+    {%- unless include_placeholder -%}href="{{ collection.url }}" aria-label="{{ collection.title }} collection"{%- endunless -%}
   {%- endcapture -%}
   <{{ wrapping_tag }}
     {{ wrapping_attributes }}
