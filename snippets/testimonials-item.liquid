@@ -92,3 +92,53 @@
     {{ product_image }}
   {%- endif -%}
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  // Ensure Swiper is initialized
+  const swiperContainer = document.querySelector('.testimonials__carousel');
+  if (!swiperContainer || !swiperContainer.swiper) {
+    console.warn('Swiper not initialized for .testimonials__carousel');
+    return;
+  }
+  const swiper = swiperContainer.swiper;
+
+  // Ensure navigation buttons are keyboard-accessible
+  const nextButton = document.querySelector('.testimonials__navigation-button--next');
+  const prevButton = document.querySelector('.testimonials__navigation-button--prev');
+  if (nextButton) {
+    nextButton.setAttribute('tabindex', '0');
+    nextButton.setAttribute('role', 'button'); // Ensure button role for accessibility
+  }
+  if (prevButton) {
+    prevButton.setAttribute('tabindex', '0');
+    prevButton.setAttribute('role', 'button');
+  }
+
+  // Handle focus on slide change
+  swiper.on('slideChangeTransitionEnd', function () {
+    // Get the active slide (handle looped/duplicate slides)
+    const activeIndex = swiper.realIndex; // Use realIndex for looped slides
+    const activeSlide = swiper.slides.find(slide => slide.getAttribute('data-swiper-slide-index') == activeIndex);
+
+    if (!activeSlide) {
+      console.warn('Active slide not found');
+      return;
+    }
+
+    // Find the first interactive or meaningful element: product link or quote
+    const focusableElements = activeSlide.querySelectorAll('a[href], .testimonials__item-quote');
+    const firstFocusable = focusableElements.length > 0 ? focusableElements[0] : activeSlide;
+
+    // Move focus to the first focusable element
+    setTimeout(() => {
+      firstFocusable.focus();
+    }, 100); // Small delay to ensure transition is complete
+
+    // Manage inert attributes
+    swiper.slides.forEach(slide => {
+      const isActive = slide.getAttribute('data-swiper-slide-index') == activeIndex;
+      slide.setAttribute('inert', isActive ? null : '');
+    });
+  });
+});
+</script>
