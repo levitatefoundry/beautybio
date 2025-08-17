@@ -19,6 +19,20 @@ span {
   letter-spacing: -0.03em;
 }
 
+.footer__header {
+  display: block; /* Ensure h2 is visible by default */
+  margin: 0; /* Reset default margins for consistency */
+}
+
+.footer__header.footer__header--collapsed {
+  display: none; /* Hide on mobile if collapsed, as per original behavior */
+}
+
+@media (min-width: 768px) { /* Adjust breakpoint as per your theme */
+  .footer__header.footer__header--collapsed {
+    display: block; /* Ensure visibility on desktop even if collapsed class is present */
+  }
+}
 
 
 body, p, h3, .ff-body, p>span  {
