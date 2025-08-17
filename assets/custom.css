@@ -13,7 +13,7 @@ font-family: 'gothammedium';
 
 
 h2, h4 > a,
-.footer__heading.fs-accent, span{
+h2.footer__heading.fs-accent, span{
  font-family: 'gothambold' !important;
     letter-spacing: -0.03em;
 } 
