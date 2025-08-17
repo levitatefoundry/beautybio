@@ -19,11 +19,6 @@ span {
   letter-spacing: -0.03em;
 }
 
-.footer__header {
-  display: block; /* Ensure h2 is visible by default */
-  margin: 0; /* Reset default margins for consistency */
-}
-
 
 body, p, h3, .ff-body, p>span  {
      font-family: 'gothambook' !important;
