@@ -176,5 +176,18 @@
     onload="this.onload=null;this.rel='stylesheet'"
   >
   <noscript><link rel="stylesheet" href="{{ 'theme-deferred.css' | asset_url }}"></noscript>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  // Target the quantity decrease button
+  const decreaseButton = document.querySelector('button[data-action="minus"].upsell-atc-bar__quantity-adjust');
+  if (decreaseButton) {
+    decreaseButton.setAttribute('aria-label', 'Decrease quantity');
+    // Remove invalid area-label attribute
+    if (decreaseButton.hasAttribute('area-label')) {
+      decreaseButton.removeAttribute('area-label');
+    }
+  }
+});
+</script>
 </html>
 <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/EcCMkBxam_pJP4wdHireiw" async></script>
