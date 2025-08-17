@@ -10653,6 +10653,10 @@ input.btn.btn--primary:hover:not([disabled]), input.btn.btn--primary:focus:not([
   color:var(--color-text);
   transition:color 0.1s ease;
 }
+.ff-body.product-item__product-title.fs-product-card-title {
+  font-size: 1.17em;
+  font-weight: bold !important;
+}
 .btn.btn--callout span{
     position:relative;
   }
