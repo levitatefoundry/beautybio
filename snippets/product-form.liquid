@@ -33,7 +33,7 @@
   {% endcomment %}
   <div class="product-form__quantity">
     <div class="product__label-wrapper">
-      <label class="product__label {{ label_classes }}" for="Quantity-Input-{{ prod.id }}">
+      <label class="product__label {{ label_classes }}" for="Quantity-{{ prod.id }}">
         {{ 'products.product.quantity' | t }}
       </label>
     </div>
@@ -111,7 +111,6 @@
     <select
       name="id"
       class="input"
-      aria-label="select product variant"
       id="variant-selector"
       data-variant-select
     >
