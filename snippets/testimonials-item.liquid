@@ -25,7 +25,7 @@
     {%- endcapture -%}
     {%- capture wrapper_attributes -%}
       {%- if block.settings.product != blank -%}
-        href="{{ block.settings.product.url }}" aria-label="{{ block.settings.product.title }} product"
+        href="{{ block.settings.product.url }}" aria-label="{{ block.settings.product.title }}"
       {%- endif -%}
     {%- endcapture -%}
 
@@ -78,8 +78,6 @@
     testimonials__item--image-placement-{{ block.settings.image_position }}
     animation--item
   "
-  id="testimonial-slide-{{ forloop.index0 }}"
-  tabindex="0"
   {% unless forloop.first %}
     inert
   {% endunless %}
@@ -94,25 +92,3 @@
     {{ product_image }}
   {%- endif -%}
 </div>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-  const swiper = document.querySelector('.testimonials__carousel').swiper;
-
-  swiper.on('slideChange', function () {
-    // Get the newly active slide
-    const activeSlide = swiper.slides[swiper.activeIndex];
-    
-    // Find the first focusable element in the active slide (product link or slide itself)
-    const focusableElements = activeSlide.querySelectorAll('a[href], [tabindex="0"]');
-    const firstFocusable = focusableElements.length > 0 ? focusableElements[0] : activeSlide;
-
-    // Move focus to the first focusable element
-    firstFocusable.focus();
-
-    // Ensure the active slide is not inert
-    swiper.slides.forEach((slide, index) => {
-      slide.setAttribute('inert', index !== swiper.activeIndex ? '' : null);
-    });
-  });
-});
-</script>
