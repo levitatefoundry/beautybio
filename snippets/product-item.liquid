@@ -236,13 +236,13 @@
 
     <div class="product-item__meta">
       <div class="product-item__text ta-c ">
-        <h4 class="ff-body product-item__product-title fs-product-card-title">
+        <h3 class="ff-body product-item__product-title fs-product-card-title">
           {%- if placeholder -%}
             {{ 'homepage.onboarding.product_title' | t }}
           {%- else -%}
             <a href="{{ prod.url | within: collection }}">{{ prod.title }}</a>
           {%- endif -%}
-        </h4>
+        </h3>
 
         {% if settings.product_listing_show_vendor and prod.vendor %}
           <h5 class="ff-body fs-body-60 product-item__product-vendor">
