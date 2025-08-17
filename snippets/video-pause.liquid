@@ -1,6 +1,6 @@
 {% if alignment == blank %} {% assign alignment = "right" %} {% endif %}
 
-<button type="button" class="btn btn--primary btn--small video-pause video-pause--{{ alignment }}">
+<button type="button" class="btn btn--primary btn--small video-pause video-pause--{{ alignment }}" aria-label="Pause background video">
   {{ 'general.accessibility.pause' | t }}
 </button>
 <script>
