@@ -48,7 +48,13 @@
   <div class="gift-card-recipient-fields">
     <div class="product__controls-group product__controls-group--text product__block product__block--medium">
       <div class="product__label-wrapper">
-       
+        <label for="{{ gcr_string }}-email--{{ section.id }}" class="product__label fs-body-100">
+          {% if source == 'product-display' -%}
+            {{ 'products.gift_card_recipient.email' | t }}:
+          {%- else -%}
+            {{ 'products.gift_card_recipient.email_optional' | t }}:
+          {%- endif %}
+        </label>
       </div>
 
       <div class="product__custom-option product__custom-option-type--text">
