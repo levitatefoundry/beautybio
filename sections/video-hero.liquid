@@ -163,7 +163,7 @@
               {%- endunless -%}
             {%- when 'heading' -%}
               {%- unless block.settings.title == blank -%}
-                <{{ block.settings.heading_tag }} class="video-hero__text-container-heading ff-heading {{ block.settings.heading_font_class }} section-blocks__heading">
+                <{{ block.settings.heading_tag }} id="video-hero-heading" class="video-hero__text-container-heading ff-heading {{ block.settings.heading_font_class }} section-blocks__heading">
                   {{ block.settings.title }}
                 </{{ block.settings.heading_tag }}>
               {%- endunless -%}
