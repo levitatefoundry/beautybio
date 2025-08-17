@@ -7672,19 +7672,18 @@ function Navigation(node, headerSection) {
     }
   }
   function closeAll() {
-  let target = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : node;
-  let options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  const subMenus = t$2("[data-submenu]", target);
-  // Only target triggers with submenus (e.g., [data-parent] or [data-meganav-trigger], [data-dropdown-trigger])
-  const parentTriggers = t$2("[data-parent], [data-meganav-trigger], [data-dropdown-trigger]", target);
-  i$1(subMenus, "active");
-  subMenus.forEach(sub => sub.setAttribute("aria-hidden", true));
-  parentTriggers.forEach(trig => trig.setAttribute("aria-expanded", false));
-  i$1(header, "dropdown-active");
-  if (!options.avoidShadeHide) {
-    r$1("headerOverlay:hide");
+    let target = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : node;
+    let options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    const subMenus = t$2("[data-submenu]", target);
+    const parentTriggers = t$2("[data-parent], [data-link]", target);
+    i$1(subMenus, "active");
+    subMenus.forEach(sub => sub.setAttribute("aria-hidden", true));
+    parentTriggers.forEach(trig => trig.setAttribute("aria-expanded", false));
+    i$1(header, "dropdown-active");
+    if (!options.avoidShadeHide) {
+      r$1("headerOverlay:hide");
+    }
   }
-}
   function destroy() {
     delegate.off();
     events.forEach(evt => evt());
