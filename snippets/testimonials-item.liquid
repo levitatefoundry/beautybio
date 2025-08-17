@@ -12,6 +12,10 @@
   elsif image_size == "large"
     assign image_sizes_fraction = 0.50
   endif
+
+  # Generate a concise aria-label for the slide
+  assign slide_label = block.settings.product.title | default: block.settings.quote | truncate: 50
+  assign slide_label = slide_label | append: ' testimonial'
 -%}
 
 {% capture image_sizes_attribute -%}
@@ -25,7 +29,7 @@
     {%- endcapture -%}
     {%- capture wrapper_attributes -%}
       {%- if block.settings.product != blank -%}
-        href="{{ block.settings.product.url }}" aria-label="{{ block.settings.product.title }}"
+        href="{{ block.settings.product.url }}" aria-label="{{ block.settings.product.title }} product"
       {%- endif -%}
     {%- endcapture -%}
 
@@ -58,7 +62,7 @@
     {%- endif -%}
 
     {%- if block.settings.quote != blank -%}
-      <blockquote class="testimonials__item-quote {% if quote_font == 'heading' %}ff-subheading fs-heading-4-base fs-heading-3-base-above-720{% else %}ff-body fs-body-300 fs-body-350-above-720{% endif %}">
+      <blockquote class="testimonials__item-quote {% if quote_font == 'heading' %}ff-subheading fs-heading-4-base fs-heading-3-base-above-720{% else %}ff-body fs-body-300 fs-body-350-above-720{% endif %}" tabindex="0">
         {{ block.settings.quote }}
       </blockquote>
     {%- endif -%}
@@ -78,6 +82,9 @@
     testimonials__item--image-placement-{{ block.settings.image_position }}
     animation--item
   "
+  id="testimonial-slide-{{ forloop.index0 }}"
+  tabindex="0"
+  aria-label="{{ slide_label }}"
   {% unless forloop.first %}
     inert
   {% endunless %}
@@ -107,14 +114,14 @@
   const prevButton = document.querySelector('.testimonials__navigation-button--prev');
   if (nextButton) {
     nextButton.setAttribute('tabindex', '0');
-    nextButton.setAttribute('role', 'button'); // Ensure button role for accessibility
+    nextButton.setAttribute('role', 'button');
   }
   if (prevButton) {
     prevButton.setAttribute('tabindex', '0');
     prevButton.setAttribute('role', 'button');
   }
 
-  // Handle focus on slide change
+  // Handle focus on slide change (next or previous)
   swiper.on('slideChangeTransitionEnd', function () {
     // Get the active slide (handle looped/duplicate slides)
     const activeIndex = swiper.realIndex; // Use realIndex for looped slides
@@ -125,14 +132,14 @@
       return;
     }
 
-    // Find the first interactive or meaningful element: product link or quote
-    const focusableElements = activeSlide.querySelectorAll('a[href], .testimonials__item-quote');
-    const firstFocusable = focusableElements.length > 0 ? focusableElements[0] : activeSlide;
+    // Focus on the quote to ensure screen reader reads it first
+    const quoteElement = activeSlide.querySelector('.testimonials__item-quote');
+    const focusTarget = quoteElement || activeSlide; // Fallback to slide if no quote
 
-    // Move focus to the first focusable element
+    // Move focus to the quote
     setTimeout(() => {
-      firstFocusable.focus();
-    }, 100); // Small delay to ensure transition is complete
+      focusTarget.focus();
+    }, 100); // Small delay for transition completion
 
     // Manage inert attributes
     swiper.slides.forEach(slide => {
