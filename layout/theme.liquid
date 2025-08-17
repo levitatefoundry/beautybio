@@ -189,7 +189,14 @@
   }
 });
 </script>
-
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const checkbox = document.querySelector('#variant-display');
+  if (checkbox) {
+    checkbox.setAttribute('aria-label', 'Toggle variant display');
+  }
+});
+</script>
 
 </html>
 <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/EcCMkBxam_pJP4wdHireiw" async></script>
