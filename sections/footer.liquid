@@ -60,8 +60,8 @@
         >
           {%- if block.settings.title != blank -%}
             <h2 class="footer__header ff-body{% if block.settings.collapse_on_mobile %} footer__header--collapsed{% endif %}">
-              <span class="footer__heading fs-accent">{{ block.settings.title }}</span>
-            </h2>
+  <span class="footer__heading fs-accent">{{ block.settings.title | default: 'Footer Heading' }}</span>
+</h2>
             {%- if block.settings.collapse_on_mobile -%}
               <button type="button" class="footer__header ff-body" data-header>
                 <span class="footer__heading fs-accent">{{ block.settings.title }}</span>
