@@ -1,19 +1,19 @@
 {% assign label_classes = 'fs-body-100' %}
 
 {%- unless block.settings.show_labels -%}
-  {% assign label_classes = label_classes | append: ' visually-hidden' %}
+  {% assign label_classes =  label_classes | append: ' visually-hidden' %}
 {%- endunless -%}
 
 <div
-  class="product__controls-group product__controls-group-quantity product__block product__block--medium"
+  class="product__controls-group product__controls-group-quantity  product__block product__block--medium"
   {{ block.shopify_attributes }}
 >
   <div class="product__label-wrapper{% unless block.settings.show_labels %} product__label-wrapper--collapse{% endunless %}">
-    <label class="product__label {{ label_classes }}" for="Quantity-Input-{{ product.id }}-{{ block.id }}">
+    <label class="product__label {{ label_classes }}" for="Quantity-Input-{{ product.id }}">
       {{ 'products.product.quantity' | t }}
     </label>
   </div>
   <div class="product__item">
-    {% render 'quantity-input' with id: product.id | append: '-' | append: block.id, initial_value: '1' %}
+    {% render 'quantity-input' with id: product.id, initial_value: '1' %}
   </div>
 </div>
