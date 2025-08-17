@@ -116,9 +116,9 @@
           {%- endunless -%}
 
           {%- unless block.settings.subheading == blank -%}
-            <{{ block.settings.subheading_tag }} class="grid-item__subheading ff-subheading {{ block.settings.subheading_font_class }} section-blocks__subheading">
+            <h3 class="grid-item__subheading ff-subheading {{ block.settings.subheading_font_class }} section-blocks__subheading">
               {{ block.settings.subheading }}
-            </{{ block.settings.subheading_tag }}>
+            </h3>
           {%- endunless -%}
 
           {%- unless block.settings.text == blank -%}
