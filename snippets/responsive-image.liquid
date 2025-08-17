@@ -119,38 +119,3 @@
   sizes="{{ sizes }}"
   onload="javascript: this.closest('.image').classList.add('loaded')"
 />
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-  // Find all slider containers
-  const sliders = document.querySelectorAll('.carousel.swiper');
-
-  sliders.forEach(slider => {
-    // Find all product slides within the slider
-    const productSlides = slider.querySelectorAll('.swiper-slide');
-
-    productSlides.forEach(productSlide => {
-      // Find the image containers within the product slide
-      const imageOneContainer = productSlide.querySelector('.product-item__image--one');
-      const imageTwoContainer = productSlide.querySelector('.product-item__image--two');
-
-      // Modify the alt text for the first image
-      if (imageOneContainer) {
-        const imgOne = imageOneContainer.querySelector('img');
-        if (imgOne) {
-          const currentAlt = imgOne.getAttribute('alt') || '';
-          imgOne.setAttribute('alt', currentAlt + ' Image 1');
-        }
-      }
-
-      // Modify the alt text for the second image, if it exists
-      if (imageTwoContainer) {
-        const imgTwo = imageTwoContainer.querySelector('img');
-        if (imgTwo) {
-          const currentAlt = imgTwo.getAttribute('alt') || '';
-          imgTwo.setAttribute('alt', currentAlt + ' Image 2');
-        }
-      }
-    });
-  });
-});
-</script>
