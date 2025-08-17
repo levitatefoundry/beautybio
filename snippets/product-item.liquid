@@ -403,3 +403,24 @@
     <div class="product-item__hover-container"></div>
   </div>
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  // Select all product items to handle multiple products on the page
+  const productItems = document.querySelectorAll('.product-item__media--multiple-images');
+  
+  productItems.forEach(item => {
+    const firstImage = item.querySelector('.product-item__image--one img');
+    const secondImage = item.querySelector('.product-item__image--two img');
+    
+    if (firstImage) {
+      const currentAlt = firstImage.getAttribute('alt') || '';
+      firstImage.setAttribute('alt', `${currentAlt} Image 1`);
+    }
+    
+    if (secondImage) {
+      const currentAlt = secondImage.getAttribute('alt') || '';
+      secondImage.setAttribute('alt', `${currentAlt} Image 2`);
+    }
+  });
+});
+</script>
