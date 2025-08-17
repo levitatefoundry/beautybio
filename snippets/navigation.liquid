@@ -10,6 +10,7 @@
 <ul class="header__links-list {% if no_children %}fs-body-50{% else %}fs-navigation-base{% endif %}">
   {% for link in menu %}
     {%- liquid
+      # Explicitly check if the link has children
       if link.links.size > 0 and can_show_children
         assign has_children = true
       else
