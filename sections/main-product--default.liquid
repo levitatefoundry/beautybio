@@ -614,7 +614,15 @@
 </div>
 
 {%- assign models = product.media | where: 'media_type', 'model' | json -%}
-
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const images = document.querySelectorAll('.product-thumbnails__items img');
+  images.forEach((img, index) => {
+    const currentAlt = img.getAttribute('alt');
+    img.setAttribute('alt', `${currentAlt} Image ${index + 1}`);
+  });
+});
+</script>
 <script>
   window.ShopifyXR=window.ShopifyXR||function(){(ShopifyXR.q=ShopifyXR.q||[]).push(arguments)}
   ShopifyXR('addModels', {{ models }});
