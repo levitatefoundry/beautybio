@@ -157,6 +157,21 @@
       {% render 'modal' %}
       {% render 'back-to-top' %}
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+  // Target the BeautyBio Logo image
+  const logoImage = document.querySelector('img[src="https://d3k81ch9hvuctc.cloudfront.net/company/TWiYQp/images/85d76992-28b3-4bd7-a0cc-951a731ad651.png"]');
+  if (logoImage) {
+    logoImage.setAttribute('alt', 'BeautyBio Logo');
+  }
+
+  // Target the promotional image
+  const promoImage = document.querySelector('img[src="https://d3k81ch9hvuctc.cloudfront.net/company/TWiYQp/images/f7d30c48-6536-4649-94d0-17298c2ed3dc.jpeg"]');
+  if (promoImage) {
+    promoImage.setAttribute('alt', 'UNLOCK 15% OFF YOUR FIRST ORDER');
+  }
+});
+</script>
     {{ '//www.youtube.com/iframe_api' | script_tag }}
     {{ '//cdn.shopify.com/shopifycloud/shopify-plyr/v1.0/shopify-plyr.css' | stylesheet_tag }}
 <script defer src="https://static.shopmy.us/Affiliates/sms_aff_clicktrack.js"></script>  </body>
