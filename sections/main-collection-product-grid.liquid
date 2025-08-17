@@ -46,6 +46,10 @@
   {%- if section.settings.divider_style == 'solid' -%}
     <div class="collection__divider"></div>
   {%- endif -%}
+ <h2 class="collection heading" style="display: none;">
+  {{ collection.title }}
+</h2>
+
   <div class="collection__inner">
     {%- if collection.all_products_count > 0 -%}
       <script type="application/json" data-tags>
