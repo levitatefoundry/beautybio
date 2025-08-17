@@ -156,36 +156,38 @@
           </div>
 
           <div class="filter-drawer__group animation--filter-drawer-item">
-            <ul class="filter-drawer__list">
-              {%- for option in results.sort_options -%}
-                {%- assign is_active = false -%}
-                {%- if option.value == results.sort_by -%}
-                  {%- assign is_active = true -%}
-                {%- endif -%}
-                <li class="filter-item">
-                  <label data-sort for="filter-{{ option.name | handleize }}--mobile" class="filter-item__content">
-                    <input
-                      type="radio"
-                      name="sort_by"
-                      {% if is_active %}
-                        checked="checked"
-                      {% endif %}
-                      value="{{ option.value }}"
-                      data-value-escaped="{{ option.value | url_escape }}"
-                      id="filter-{{ option.name | escape | handleize }}--mobile"
-                      class="filter-item__radio visually-hidden"
-                    >
-
-                    <div class="filter-item__content-inner">
-                      <div class="filter-input__input">
-                        <div class="indicator"></div>
+            <fieldset class="filter-group" aria-label="{{ 'filters.sort_title' | t }}">
+              <legend class="filter-group__legend">{{ 'filters.sort_title' | t }}</legend>
+              <ul class="filter-group__list">
+                {%- for option in results.sort_options -%}
+                  {%- assign is_active = false -%}
+                  {%- if option.value == results.sort_by -%}
+                    {%- assign is_active = true -%}
+                  {%- endif -%}
+                  <li class="filter-item">
+                    <label data-sort for="filter-{{ option.name | handleize }}--mobile" class="filter-item__content">
+                      <input
+                        type="radio"
+                        name="sort_by"
+                        {% if is_active %}
+                          checked="checked"
+                        {% endif %}
+                        value="{{ option.value }}"
+                        data-value-escaped="{{ option.value | url_escape }}"
+                        id="filter-{{ option.name | escape | handleize }}--mobile"
+                        class="filter-item__radio visually-hidden"
+                      >
+                      <div class="filter-item__content-inner">
+                        <div class="filter-input__input">
+                          <div class="indicator"></div>
+                        </div>
+                        <span class="filter-item__label">{{ option.name }}</span>
                       </div>
-                      <span class="filter-item__label">{{ option.name }}</span>
-                    </div>
-                  </label>
-                </li>
-              {%- endfor -%}
-            </ul>
+                    </label>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </fieldset>
           </div>
         </div>
         <div class="filter-drawer__footer animation--filter-drawer-item">
