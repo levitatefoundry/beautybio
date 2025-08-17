@@ -4,7 +4,9 @@
 >
   {%- if field_type == 'text' or field_type == 'textarea' or field_type == 'list' -%}
     <div class="product__label-wrapper">
-      
+      <label for="{{ block.settings.label }}--{{ block.id }}" class="product__label fs-body-100">
+        {{ block.settings.label }}:
+      </label>
     </div>
   {%- endif -%}
 
