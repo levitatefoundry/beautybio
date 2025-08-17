@@ -492,7 +492,7 @@
                     {% endif %}
                     </div>
 
-                    <button class="upsell-cart__item-remove" type="button" data-remove="{{ item.key }}" aria-label="minus">
+                    <button class="upsell-cart__item-remove" type="button" data-remove="{{ item.key }}">
                       <span class="upsell-visually-hidden">{{ shop.metafields.obsidian_upsell[locale].line_item_remove }}</span>
                       <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.25 4.5H3.75H15.75" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
@@ -511,7 +511,7 @@
                         pattern="[0-9]*"
                         data-id="{{ item.key }}">
                     </label>
-                    <button type="button" class="upsell-cart__quantity-adjust" data-action="minus" aria-label="{{ shop.metafields.obsidian_upsell[locale].minus }}">
+                    <button type="button" class="upsell-cart__quantity-adjust" data-action="minus" aria-label="Remove the Quantity">
                       <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none"><path stroke="currentColor" stroke-width="1.25" d="M12 6.5H0"/></svg>
                     </button>
                     <button type="button" class="upsell-cart__quantity-adjust" data-action="plus" aria-label="{{ shop.metafields.obsidian_upsell[locale].add }}">
