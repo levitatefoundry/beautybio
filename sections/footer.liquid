@@ -116,7 +116,7 @@
               {%- assign success_msg = 'general.newsletter_form.confirmation' | t -%}
 
               <div class="footer__newsletter">
-                <div class="ff-heading fs-body-150 footer__text">{{ block.settings.text }}</div>
+                <div id="ff-heading fs-body-150 footer__text" class="ff-heading fs-body-150 footer__text">{{ block.settings.text }}</div>
 
                 {% form 'customer', class: 'footer__newsletter-form', id: 'footer-subscribe' %}
                   {% render 'form-status', form: form, form_id: 'footer-subscribe', success_message: success_msg %}
@@ -130,6 +130,7 @@
                       <input
                         type="email"
                         class="input"
+                        aria-describedby="ff-heading fs-body-150 footer__text"
                         name="contact[email]"
                         id="footer-subscribe-email"
                         value="{% if customer.email != blank %}{{ customer.email }}{% endif %}"
