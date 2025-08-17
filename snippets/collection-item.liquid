@@ -24,7 +24,7 @@
 -%}
 {% capture collection_label %}
   <div class="collection-item__label">
-    <h4 class="collection-item__title fs-body-100 {% if label_is_overlay %}ff-heading{% else %}ff-body{% endif %}">
+    <h3 class="collection-item__title fs-body-100 {% if label_is_overlay %}ff-heading{% else %}ff-body{% endif %}">
       {%- if label_is_overlay -%}
         <span>
           {%- if placeholder -%}
@@ -43,7 +43,7 @@
           <a href="{{ collection.url }}">{{ collection.title }}</a>
         {%- endif -%}
       {%- endif -%}
-    </h4>
+    </h3>
   </div>
 {% endcapture %}
 
