@@ -17,6 +17,7 @@ h2.footer__header,
 span {
   font-family: 'gothambold' !important;
   letter-spacing: -0.03em;
+  display: block;
 }
 
 
