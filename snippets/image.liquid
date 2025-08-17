@@ -99,19 +99,3 @@
     natural_fallback_ratio: natural_fallback
   -%}
 {%- endif -%}
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-  const firstImage = document.querySelector('.product-item__image--one img');
-  const secondImage = document.querySelector('.product-item__image--two img');
-  
-  if (firstImage) {
-    const currentAlt = firstImage.getAttribute('alt');
-    firstImage.setAttribute('alt', `${currentAlt} Image 1`);
-  }
-  
-  if (secondImage) {
-    const currentAlt = secondImage.getAttribute('alt');
-    secondImage.setAttribute('alt', `${currentAlt} Image 2`);
-  }
-});
-</script>
