@@ -96,6 +96,9 @@
                 {% if linklists[block.settings.link_list].links.size > 0 %}
                   <ul>
                     {% for link in linklists[block.settings.link_list].links %}
+                      <li>
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                      </li>
                     {% endfor %}
                     {% if block.settings.title == 'Support' %}
                       <li>
