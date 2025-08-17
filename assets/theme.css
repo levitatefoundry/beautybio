@@ -1488,8 +1488,8 @@ html.sticky-header-active body.scroll-lock .shopify-section.header__outer-wrappe
     position: absolute;
     top: var(--spacing-10);
     left: -9999px;
-    background: #333;
-    Color: #fff;
+    background: #333 !important;
+    Color: #fff !important;
 }
 
 .header .header__skip-to-content.btn:focus {
