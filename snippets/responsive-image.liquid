@@ -108,7 +108,7 @@
 {% capture alt %}{% if image.alt.size > 0 %}{{ image.alt }}{% else %}{{ fallback_alt }}{% endif %}{% endcapture %}
 
 <{{ tag_name }}
-  alt="{{ alt | escape }}"{{ ' ' }}
+  alt="{{ alt | escape }}"
   class="image__img{%- if class_name -%} {{ class_name }}{%- endif -%}"{{ ' ' }}
   {% if prioritize_loading %}fetchpriority="high"{% else %}loading="lazy"{{ ' ' }}{% endif %}
   width="{{ image.width }}"{{ ' ' }}
