@@ -145,11 +145,6 @@
     <div class="video-hero__overlay"></div>
     <div class="video-hero__text-container-wrapper">
       {%- unless section.settings.media_link == blank -%}
-        <a
-          href="{{ section.settings.media_link }}"
-          class="video-hero__media-link"
-          aria-label="{{ block.settings.link_text }}"
-        ></a>
       {%- endunless -%}
 
       <div class="video-hero__text-container section-blocks animation--section-blocks">
