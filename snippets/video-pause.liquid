@@ -3,3 +3,19 @@
 <button type="button" class="btn btn--primary btn--small video-pause video-pause--{{ alignment }}">
   {{ 'general.accessibility.pause' | t }}
 </button>
+<script>
+  const video = document.querySelector('video'); // Replace with your video selector
+const button = document.querySelector('.video-pause'); // Replace with your button selector
+
+button.addEventListener('click', () => {
+  if (video.paused) {
+    video.play();
+    button.setAttribute('aria-label', 'Pause background video');
+    button.textContent = 'Pause'; // Update text if not using a translation
+  } else {
+    video.pause();
+    button.setAttribute('aria-label', 'Play background video');
+    button.textContent = 'Play'; // Update text if not using a translation
+  }
+});
+</script>
