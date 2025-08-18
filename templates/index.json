@@ -49,8 +49,8 @@
         "slide_8gkjwU": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/GLOfacial_HP-Desktop_1.jpg",
-            "image_mobile": "shopify://shop_images/GLOfacial_HP-Mobile_1.jpg",
+            "image": "shopify://shop_images/8-18-25_HP_Desktop.png",
+            "image_mobile": "shopify://shop_images/8-18-25_HP_Mobile.jpg",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
             "media_link": "shopify://products/glofacial",
@@ -81,6 +81,7 @@
         },
         "slide_hznEHa": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/6-2-25_HP-DESKTOP.jpg",
             "image_mobile": "shopify://shop_images/6-2-25_HP-MOBILE.jpg",

@@ -18,6 +18,7 @@
         "show_breadcrumbs": false,
         "show_collection_description": false,
         "show_collection_image": true,
+        "image": "shopify://shop_images/uV2kpx2J.jpg",
         "image_aspect": "original",
         "desktop_height": 50,
         "mobile_height": 50,
