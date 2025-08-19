@@ -59,6 +59,7 @@
         "media_link": "",
         "text_position": "center_center",
         "text_position_mobile": "center_center",
+        "show-checkboxes": false,
         "text_color": "#000000",
         "button_background_color": "#ffffff",
         "button_text_color": "#000000",
@@ -111,6 +112,7 @@
         "media_link": "",
         "text_position": "center_center",
         "text_position_mobile": "center_center",
+        "show-checkboxes": false,
         "text_color": "#ffffff",
         "button_background_color": "#ffffff",
         "button_text_color": "#000000",
@@ -163,6 +165,7 @@
         "media_link": "",
         "text_position": "center_center",
         "text_position_mobile": "center_center",
+        "show-checkboxes": false,
         "text_color": "#000000",
         "button_background_color": "#ffffff",
         "button_text_color": "#000000",
@@ -215,6 +218,9 @@
     },
     "elfsight_widget_erDPpL": {
       "type": "elfsight-widget",
+      "custom_css": [
+        "#yottie_1 .yottie-widget-nav-list-item a {color: #000 !important;}"
+      ],
       "settings": {
         "title": "",
         "title_color": "#000000",
