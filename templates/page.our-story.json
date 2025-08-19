@@ -180,7 +180,7 @@
           "type": "subheading",
           "settings": {
             "subheading": "BeautyBio believes in equality, diversity, respect for humanity, honesty, kindness, giving our best effort, and working together.",
-            "subheading_tag": "h3",
+            "subheading_tag": "h2",
             "subheading_font_class": "fs-heading-5-base"
           }
         },
