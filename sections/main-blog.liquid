@@ -81,7 +81,7 @@
 
             {%- if tag_select_options.size > 0 -%}
               <div class="blog__nav-mobile--wrapper select-wrapper">
-                <select name="blog-mobile-nav" id="blog-mobile-nav" class="blog__nav-mobile input">
+                <select name="blog-mobile-nav" id="blog-mobile-nav" class="blog__nav-mobile input" aria-label="Select Blog Categories">
                   <option
                     value="{{ blog.url }}"
                     {% if current_tags == blank %}
