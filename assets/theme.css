@@ -10002,7 +10002,6 @@ html.no-js .product-tabs__tab-item{
 }
 .product-form__cart-submit{
   position:relative;
-  background-color: #000;
 }
 .product-form__cart-submit[disabled]{
     color:var(--color-text-meta);
