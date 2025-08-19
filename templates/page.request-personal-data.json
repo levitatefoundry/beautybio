@@ -18,6 +18,15 @@
         "custom_content_width": 700
       }
     },
+    "custom_liquid_rUNLiA": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<h2 class=\"visually-hidden\">Request Personal Data\n</h2>\n.visually-hidden {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  margin: -1px;\n  padding: 0;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  border: 0;\n  white-space: nowrap;\n}",
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
     "rich-text-1": {
       "type": "rich-text",
       "blocks": {
@@ -286,6 +295,7 @@
   },
   "order": [
     "main",
+    "custom_liquid_rUNLiA",
     "rich-text-1",
     "contact-form",
     "rich-text-2",
