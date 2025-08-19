@@ -47,9 +47,9 @@
             assign heading_tag = block.settings.title_tag
           endif
         -%}
-        <h2 class="{{ label_font }} {{ label_font_size }}">
+        <{{ heading_tag }} class="{{ label_font }} {{ label_font_size }}">
           {{ heading }}
-        </h2>
+        </{{ heading_tag }}>
         <div class="accordion__label-icons">
           {% render 'icon', icon: 'plus' %}
           {% render 'icon', icon: 'minus' %}
