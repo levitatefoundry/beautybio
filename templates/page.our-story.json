@@ -148,7 +148,7 @@
       "settings": {
         "custom_liquid": "<h1 class=\"visually-hidden\">Our Story</h1>\n<style>\n  .visually-hidden {\n    position: absolute;\n    width: 1px;\n    height: 1px;\n    margin: -1px;\n    padding: 0;\n    overflow: hidden;\n    clip: rect(0, 0, 0, 0);\n    border: 0;\n    white-space: nowrap;\n  }\n</style>",
         "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
+        "section_padding": "section--vertical-padding-none"
       }
     },
     "rich_text_1": {
