@@ -22,9 +22,19 @@
         "aspect_ratio": "natural",
         "enable_animation": true
       }
+    },
+    "custom_liquid_qkp6QP": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<h2 class=\"visually-hidden\">Blog</h2>\n<style>\n  .visually-hidden {\n    position: absolute;\n    width: 1px;\n    height: 1px;\n    margin: -1px;\n    padding: 0;\n    overflow: hidden;\n    clip: rect(0, 0, 0, 0);\n    border: 0;\n    white-space: nowrap;\n  }\n</style>",
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_liquid_qkp6QP"
   ]
 }
