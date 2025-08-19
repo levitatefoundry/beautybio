@@ -85,15 +85,6 @@
         "section_padding": "section--vertical-padding-none"
       }
     },
-    "custom_liquid_QeaHna": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom_liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<h1 class=\"visually-hidden\">Our Story</h1>\n<style>\n  .visually-hidden {\n    position: absolute;\n    width: 1px;\n    height: 1px;\n    margin: -1px;\n    padding: 0;\n    overflow: hidden;\n    clip: rect(0, 0, 0, 0);\n    border: 0;\n    white-space: nowrap;\n  }\n</style>",
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
-    },
     "image_hero_6HBXTx": {
       "type": "image-hero",
       "blocks": {
@@ -149,6 +140,15 @@
         "overlay_opacity": 0,
         "enable_animation": true,
         "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "custom_liquid_QeaHna": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<h1 class=\"visually-hidden\">Our Story</h1>\n<style>\n  .visually-hidden {\n    position: absolute;\n    width: 1px;\n    height: 1px;\n    margin: -1px;\n    padding: 0;\n    overflow: hidden;\n    clip: rect(0, 0, 0, 0);\n    border: 0;\n    white-space: nowrap;\n  }\n</style>",
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
       }
     },
     "rich_text_1": {
@@ -746,8 +746,8 @@
   "order": [
     "main",
     "image_hero",
-    "custom_liquid_QeaHna",
     "image_hero_6HBXTx",
+    "custom_liquid_QeaHna",
     "rich_text_1",
     "image_with_text_split",
     "image_with_text_split_QKKmdJ",
