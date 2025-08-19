@@ -484,7 +484,7 @@
       ".image-with-text__image-caption {color: #333;}",
       ".rich-text__heading {background-color: rgba(0, 0, 0, 0.01);}",
       ".yotpo-redemption-option-cost {color: #4157e1 !important;}",
-      "._redotech-redo-customer-portal-app-lib-login-social-login-options-section-divider-text {color: #333;}"
+      "._redotech-redo-customer-portal-app-lib-login-social-login-options-section-divider-text {color: #333 !important;}"
     ]
   }
 }
