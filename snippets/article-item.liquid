@@ -74,7 +74,7 @@
             </ul>
           </div>
         {%- endif -%}
-
+        <h2 class="visually-hidden">Blog</h2>
         <h3 class="article-item__title ff-heading fs-heading-4-base">
           <a href="{{ blog_article.url }}">{{ blog_article.title }}</a>
         </h3>
@@ -133,3 +133,16 @@
     </div>
   {%- endif -%}
 </div>
+<style>
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    white-space: nowrap;
+  }
+</style>
