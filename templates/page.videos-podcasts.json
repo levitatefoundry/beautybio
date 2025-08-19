@@ -219,7 +219,7 @@
     "elfsight_widget_erDPpL": {
       "type": "elfsight-widget",
       "custom_css": [
-        "#yottie_1 .yottie-widget-nav-list-item a {color: #000 !important;}"
+        "#yottie_1 .yottie-widget-nav-list-item a {color: #555 !important;}"
       ],
       "settings": {
         "title": "",
