@@ -479,7 +479,7 @@
     "custom_css": [
       ".free-shipping-bar__bar-progress {background-color: #ee4e9c;}",
       ".dynamic-variant-button.product__chip.disabled {display: none;}",
-      ".ff-heading.fs-heading-5-base {font-weight: 600;}"
+      ".ff-heading.fs-heading-5-base {font-family: \"GothamBook\", sans-serif; font-style: normal; font-weight: 600; color: rgb(0, 0, 0); font-size: 22px; line-height: 24px;}"
     ]
   }
 }
