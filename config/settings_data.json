@@ -483,7 +483,8 @@
       ".collapsible-row-list__heading,.testimonials__item-quote,.testimonials__item-product-title,.bv-rating {background-color: rgba(255, 255, 255, 0.01);}",
       ".image-with-text__image-caption {color: #333;}",
       ".rich-text__heading {background-color: rgba(0, 0, 0, 0.01);}",
-      ".yotpo-redemption-option-cost {color: #4157E1 !important;}"
+      ".yotpo-redemption-option-cost {color: #4157e1 !important;}",
+      "._redotech-redo-customer-portal-app-lib-login-social-login-options-section-divider-text {color: #333;}"
     ]
   }
 }
