@@ -3197,7 +3197,7 @@ body[data-fluorescent-overlay-open="true"] .search{
   }
 .product .product__view-in-space.btn.btn--primary::before,
     .product .product__view-in-space.btn.btn--primary::after{
-      background-color:#000;
+      background-color:transparent;
     }
 .product .product__view-in-space.btn.btn--primary.visible{
       display:flex;
