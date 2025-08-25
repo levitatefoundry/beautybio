@@ -497,7 +497,8 @@
       ],
       "custom_css": [
         "{background-color: #fff8f5;}",
-        ".ts-faq[open] {background-color: #ffffff;}"
+        ".ts-faq[open] {background-color: #ffffff;}",
+        "h2 {font-weight: 900; font-size: 25pt; line-height: 1.0}"
       ],
       "name": "Split Text + Faqs",
       "settings": {
