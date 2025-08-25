@@ -248,12 +248,38 @@
         "enable_animation": true,
         "section_padding": "section--vertical-padding-none"
       }
+    },
+    "rich_text_3kbbCB": {
+      "type": "rich-text",
+      "blocks": {
+        "button_9wDTyr": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "GET HYDRATED",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "button_9wDTyr"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
     }
   },
   "order": [
     "main",
     "image_hero_xWbAti",
     "rich_text_GrR4kF",
-    "image_hero_gL6gW6"
+    "image_hero_gL6gW6",
+    "rich_text_3kbbCB"
   ]
 }
