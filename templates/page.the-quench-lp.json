@@ -288,10 +288,10 @@
         "text_position": "center_center",
         "text_position_mobile": "center_center",
         "show-checkboxes": false,
-        "text_color": "#FFFFFF",
-        "button_background_color": "#FFFFFF",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
         "button_text_color": "#000000",
-        "color_overlay": "#000",
+        "color_overlay": "#000000",
         "color_overlay_gradient": "",
         "overlay_opacity": 0,
         "enable_animation": true,
@@ -306,7 +306,8 @@
           "settings": {
             "number": "1",
             "step-heading": "Cleanse & Prep",
-            "step-text": ""
+            "step-text": "",
+            "step-richtext": "<p>Start with clean, dry skin. (Pro tip: Use The Balance cleanser for the perfect prep.)</p>"
           }
         },
         "step_B6CHiY": {
@@ -314,7 +315,8 @@
           "settings": {
             "number": "2",
             "step-heading": "Apply The Quench",
-            "step-text": ""
+            "step-text": "A little goes a long way - begin with a pearl sized amount and gently massage in to face + neck adding more as needed.",
+            "step-richtext": ""
           }
         },
         "step_nxPHbY": {
@@ -322,7 +324,8 @@
           "settings": {
             "number": "3",
             "step-heading": "Lock In & Glow",
-            "step-text": ""
+            "step-text": "Use at night as your final step, or under makeup for all-day hydration.",
+            "step-richtext": ""
           }
         },
         "button_gwABFz": {
