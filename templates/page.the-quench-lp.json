@@ -352,7 +352,8 @@
       "custom_css": [
         ".ts-3-step-container {background: #fff8f5 !important;}",
         ".ts-step-number {background-color: #fff8f5 !important; z-index: 1;}",
-        ".ts-steps-container {width: 85%;}"
+        ".ts-steps-container {width: 85%;}",
+        "p > a {text-decoration: underline;}"
       ],
       "name": "TS 3 Steps",
       "settings": {
