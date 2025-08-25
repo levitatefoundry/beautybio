@@ -529,7 +529,7 @@
         "image_position": "right",
         "text_alignment": "left",
         "image": "shopify://shop_images/Group_29.png",
-        "aspect_ratio": "square",
+        "aspect_ratio": "landscape",
         "focal_point": "left",
         "image_caption": "",
         "show_small_image": false,
