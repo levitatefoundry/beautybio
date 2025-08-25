@@ -300,10 +300,45 @@
     },
     "ts_3_steps_Pcjtdz": {
       "type": "ts-3-steps",
+      "blocks": {
+        "step_iT6QfE": {
+          "type": "step",
+          "settings": {
+            "number": "1",
+            "step-heading": "Cleanse & Prep",
+            "step-text": ""
+          }
+        },
+        "step_B6CHiY": {
+          "type": "step",
+          "settings": {
+            "number": "2",
+            "step-heading": "Apply The Quench",
+            "step-text": ""
+          }
+        },
+        "step_nxPHbY": {
+          "type": "step",
+          "settings": {
+            "number": "3",
+            "step-heading": "Lock In & Glow",
+            "step-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "step_iT6QfE",
+        "step_B6CHiY",
+        "step_nxPHbY"
+      ],
+      "custom_css": [
+        ".ts-3-step-container {background: #ffffff !important;}",
+        ".ts-step-number {background-color: #ffffff !important; z-index: 1;}"
+      ],
       "name": "TS 3 Steps",
       "settings": {
-        "heading": "So Easy, It Feels Like Magic",
-        "subheading": "No signups or codes. A simple 3-step process to save big on skincare and tools you love—in packable sizes."
+        "heading": "How to Use The Quench",
+        "subheading": "Your daily recovery ritual for skin that feels nourished, balanced, and glowing."
       }
     }
   },
