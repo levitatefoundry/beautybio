@@ -353,7 +353,8 @@
         ".ts-3-step-container {background: #fff8f5 !important;}",
         ".ts-step-number {background-color: #fff8f5 !important; z-index: 1;}",
         ".ts-steps-container {width: 85%;}",
-        "p > a {text-decoration: underline;}"
+        "p > a {text-decoration: underline;}",
+        ".ts-steps-container::before {left: calc(50px + 8%); right: calc(50px + 8%);}"
       ],
       "name": "TS 3 Steps",
       "settings": {
