@@ -282,7 +282,7 @@
         "desktop_height": 90,
         "mobile_height": 100,
         "image": "shopify://shop_images/Frame_1484581396_87ee8e13-2be1-40c1-9c13-5c4c25de70d8.png",
-        "focal_point": "image_presentation",
+        "focal_point": "top",
         "mobile_focal_point": "image_presentation",
         "media_link": "",
         "text_position": "center_center",
@@ -343,8 +343,8 @@
         "button_gwABFz"
       ],
       "custom_css": [
-        ".ts-3-step-container {background: #ffffff !important;}",
-        ".ts-step-number {background-color: #ffffff !important; z-index: 1;}"
+        ".ts-3-step-container {background: #fff8f5 !important;}",
+        ".ts-step-number {background-color: #fff8f5 !important; z-index: 1;}"
       ],
       "name": "TS 3 Steps",
       "settings": {
