@@ -547,7 +547,8 @@
       "custom_css": [
         "h2 {font-size: 22pt;}",
         "p {font-size: 12pt;}",
-        "ul {padding: 10px 0;}"
+        "ul {padding: 10px 0;}",
+        "@media screen and (max-width: 800px) {.image-with-text__content {flex-direction: column-reverse; }}"
       ],
       "name": "t:sections.image_with_text.presets.name",
       "settings": {
