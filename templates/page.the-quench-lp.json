@@ -76,10 +76,44 @@
         "enable_animation": true,
         "section_padding": "section--vertical-padding-none"
       }
+    },
+    "rich_text_GrR4kF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Vg84Xz": {
+          "type": "heading",
+          "settings": {
+            "title": "The Science Behind The Quench",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-3-base"
+          }
+        },
+        "text_LEnLdy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A ceramide-rich, Quadralipid-powered cream designed to flood dkin with hydration and help keep it ther.</p>",
+            "text_font_class": "fs-body-75"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Vg84Xz",
+        "text_LEnLdy"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 900
+      }
     }
   },
   "order": [
     "main",
-    "image_hero_xWbAti"
+    "image_hero_xWbAti",
+    "rich_text_GrR4kF"
   ]
 }
