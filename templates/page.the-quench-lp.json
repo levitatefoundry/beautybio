@@ -361,6 +361,50 @@
     },
     "split_faq_text_C8fdNW": {
       "type": "split-faq-text",
+      "blocks": {
+        "faq_X3qD66": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "What makes The Quench different from other moisturizers?",
+            "faq-body": "<p>The Quench isn’t just a moisturizer – it’s a recovery cream. Powered by Quadralipid Technology, it helps restore the four essential lipids your skin naturally loses over time. This cult-fave formula delivers deep hydration, bounce, and radiance, making it a consistent best seller for a reason.</p>"
+          }
+        },
+        "faq_jmVwVX": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "Can I use The Quench morning and night?",
+            "faq-body": "<p>Yes. The Quench is designed to fit into your AM and PM routine. Use it in the morning for all-day hydration and at night as an indulgent recovery step.</p>"
+          }
+        },
+        "faq_RLp8gy": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "Is The Quench safe for sensitive skin?",
+            "faq-body": "<p>The Quench was formulated to be gentle and effective for all skin types, including sensitive skin. If your skin is highly reactive, we recommend patch-testing before first use.</p>"
+          }
+        },
+        "faq_yUpxrj": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "When will I start seeing results?",
+            "faq-body": "<p>Many users notice skin that feels more hydrated, soft, and pampered after the first use. With consistent use, you’ll see a visibly plumper, smoother, more radiant-looking complexion over time.</p>"
+          }
+        },
+        "faq_aM8n6X": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "Can I use The Quench with retinol or after microneedling?",
+            "faq-body": "<p>Yes. The Quench is an ideal partner for active treatments. It helps replenish hydration and restore comfort, making it a go-to recovery cream after retinol, clinical treatments, or microneedling.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_X3qD66",
+        "faq_jmVwVX",
+        "faq_RLp8gy",
+        "faq_yUpxrj",
+        "faq_aM8n6X"
+      ],
       "custom_css": [
         "{background-color: #fff8f5;}"
       ],
