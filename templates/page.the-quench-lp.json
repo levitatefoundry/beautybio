@@ -222,8 +222,9 @@
       ],
       "custom_css": [
         "h2 {font-size: 22pt;}",
-        "h3 {font-size: 13pt; font-weight: 900; margin-top: 2px; margin-bottom: 5px;}",
-        ".image-hero {padding: 10px 60px;}"
+        "h3 {font-size: 13pt; font-weight: 900; margin-top: 2px; margin-bottom: 2px;}",
+        ".image-hero {padding: 10px 60px;}",
+        ".image-hero__text-container-text {margin: 0 0 40px 0; max-width: 400px;}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
