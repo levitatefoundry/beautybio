@@ -284,16 +284,16 @@
         "heading_adt48R": {
           "type": "heading",
           "settings": {
-            "title": "Rich text",
+            "title": "Clinically Tested. Customer Approved.",
             "heading_tag": "h2",
-            "heading_font_class": "fs-heading-2-base"
+            "heading_font_class": "fs-heading-3-base"
           }
         },
         "text_rHKiMY": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text area to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "text_font_class": "fs-body-100"
+            "text": "<p>In a consumer perception study. The Quench delivered visible hydration and softness from the first application.</p>",
+            "text_font_class": "fs-body-75"
           }
         }
       },
@@ -308,7 +308,7 @@
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-only",
         "content_width": "custom",
-        "custom_content_width": 700
+        "custom_content_width": 900
       }
     },
     "image_hero_gaBkj6": {
