@@ -324,12 +324,20 @@
             "step-heading": "Lock In & Glow",
             "step-text": ""
           }
+        },
+        "button_gwABFz": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP THE QUENCH",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "step_iT6QfE",
         "step_B6CHiY",
-        "step_nxPHbY"
+        "step_nxPHbY",
+        "button_gwABFz"
       ],
       "custom_css": [
         ".ts-3-step-container {background: #ffffff !important;}",
