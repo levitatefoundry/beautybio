@@ -349,7 +349,7 @@
         "mobile_focal_point": "image_presentation",
         "media_link": "",
         "text_position": "flex-start_flex-start",
-        "text_position_mobile": "center_center",
+        "text_position_mobile": "center_flex-start",
         "show-checkboxes": false,
         "text_color": "#ffffff",
         "button_background_color": "#000000",
