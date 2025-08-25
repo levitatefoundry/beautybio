@@ -222,7 +222,7 @@
       ],
       "custom_css": [
         "h2 {font-size: 24pt;}",
-        "h3 {font-size: 16pt;}",
+        "h3 {font-size: 15pt; font-weight: 700;}",
         ".image-hero {padding: 0 60px;}"
       ],
       "name": "t:sections.image_hero.presets.name",
