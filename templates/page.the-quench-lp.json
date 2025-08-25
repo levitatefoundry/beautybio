@@ -406,7 +406,8 @@
         "faq_aM8n6X"
       ],
       "custom_css": [
-        "{background-color: #fff8f5;}"
+        "{background-color: #fff8f5;}",
+        ".ts-faq[open] {background-color: #ffffff;}"
       ],
       "name": "Split Text + Faqs",
       "settings": {
