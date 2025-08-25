@@ -460,7 +460,8 @@
       ],
       "custom_css": [
         "h2 {font-size: 22pt;}",
-        "p {font-size: 12pt;}"
+        "p {font-size: 12pt;}",
+        "ul {padding: 10px 0;}"
       ],
       "name": "t:sections.image_with_text.presets.name",
       "settings": {
