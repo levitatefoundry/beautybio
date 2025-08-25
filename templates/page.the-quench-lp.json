@@ -105,7 +105,7 @@
         "alignment": "center_center",
         "enable_animation": true,
         "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom",
+        "section_padding": "section--vertical-padding-top-only",
         "content_width": "custom",
         "custom_content_width": 900
       }
@@ -223,7 +223,7 @@
       "custom_css": [
         "h2 {font-size: 24pt;}",
         "h3 {font-size: 15pt; font-weight: 700;}",
-        ".image-hero {padding: 0 60px;}"
+        ".image-hero {padding: 10px 60px;}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
