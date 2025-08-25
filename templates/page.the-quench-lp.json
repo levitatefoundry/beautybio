@@ -358,6 +358,19 @@
         "heading": "How to Use The Quench",
         "subheading": "Your daily recovery ritual for skin that feels nourished, balanced, and glowing."
       }
+    },
+    "split_faq_text_C8fdNW": {
+      "type": "split-faq-text",
+      "custom_css": [
+        "{background-color: #fff8f5;}"
+      ],
+      "name": "Split Text + Faqs",
+      "settings": {
+        "heading": "You've Got Questions.<br> We've Got Glowing Answers.",
+        "body": "<p>Whether you're new to at-home skincare tech or just curious how it all works, we're here to help. These are our most-asked Qs from real BeautyBio customers.</p>",
+        "button_link": "",
+        "button_text": ""
+      }
     }
   },
   "order": [
@@ -367,6 +380,7 @@
     "image_hero_gL6gW6",
     "rich_text_3kbbCB",
     "image_hero_gaBkj6",
-    "ts_3_steps_Pcjtdz"
+    "ts_3_steps_Pcjtdz",
+    "split_faq_text_C8fdNW"
   ]
 }
