@@ -344,6 +344,7 @@
         "desktop_height": 75,
         "mobile_height": 100,
         "image": "shopify://shop_images/Clinical_section_5.jpg",
+        "image_mobile": "shopify://shop_images/Clinical_section_mobile_1.jpg",
         "focal_point": "bottom",
         "mobile_focal_point": "image_presentation",
         "media_link": "",
