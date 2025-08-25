@@ -365,7 +365,8 @@
     "image_hero_YjL9Pg": {
       "type": "image-hero",
       "custom_css": [
-        ".image-hero {padding: 10px 60px;}"
+        ".image-hero {padding: 10px 60px;}",
+        "{background: #fff8f5;}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
