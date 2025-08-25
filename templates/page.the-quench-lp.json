@@ -297,6 +297,14 @@
         "enable_animation": true,
         "section_padding": "section--vertical-padding-none"
       }
+    },
+    "ts_3_steps_Pcjtdz": {
+      "type": "ts-3-steps",
+      "name": "TS 3 Steps",
+      "settings": {
+        "heading": "So Easy, It Feels Like Magic",
+        "subheading": "No signups or codes. A simple 3-step process to save big on skincare and tools you love—in packable sizes."
+      }
     }
   },
   "order": [
@@ -305,6 +313,7 @@
     "rich_text_GrR4kF",
     "image_hero_gL6gW6",
     "rich_text_3kbbCB",
-    "image_hero_gaBkj6"
+    "image_hero_gaBkj6",
+    "ts_3_steps_Pcjtdz"
   ]
 }
