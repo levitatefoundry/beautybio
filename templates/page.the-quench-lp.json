@@ -228,7 +228,7 @@
         "h3 {font-size: 13pt; font-weight: 900; margin-top: 2px; margin-bottom: 2px;}",
         ".image-hero {padding: 10px 60px;}",
         ".image-hero__text-container-text {margin: 0 0 40px 0; max-width: 400px;}",
-        "@media screen and (max-width: 800px) {.image-hero {padding: 10px 10px; }}"
+        "@media screen and (max-width: 800px) {.image-hero {padding: 10px 10px; } .image-hero__text-container {width: 60%; }}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
