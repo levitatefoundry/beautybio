@@ -109,11 +109,149 @@
         "content_width": "custom",
         "custom_content_width": 900
       }
+    },
+    "image_hero_gL6gW6": {
+      "type": "image-hero",
+      "blocks": {
+        "heading_jzc76y": {
+          "type": "heading",
+          "settings": {
+            "title": "Hydrate It.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "subheading_WdGgC4": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "QUADRALIPID TECHNOLOGY",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_GjDt87": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Delivers four key lipids your skin naturally loses to boost hydration and keep it lasting longer.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "heading_4jJnzD": {
+          "type": "heading",
+          "settings": {
+            "title": "Fortify It.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "subheading_K6T6ah": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "SUNFLOWER SEED OIL",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_rnkQNm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nutrient-rich oils that support a healthy skin moisture barrier and lock in hydration.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "heading_biKYDc": {
+          "type": "heading",
+          "settings": {
+            "title": "Smooth It.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "subheading_RpXHXa": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "FIRMING PEPTIDE COMPLEX",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_ULKWGA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Peptides that help smooth skin's appearance, enhance suppleness, and refresh its look.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "heading_e8HRGq": {
+          "type": "heading",
+          "settings": {
+            "title": "Nourish It.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "subheading_Qg3arh": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "LACTIC ACID",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_VHDEMi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Gently exfoliates to refresh skin's surface, refine texture, and reveal a healthy-looking glow.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jzc76y",
+        "subheading_WdGgC4",
+        "text_GjDt87",
+        "heading_4jJnzD",
+        "subheading_K6T6ah",
+        "text_rnkQNm",
+        "heading_biKYDc",
+        "subheading_RpXHXa",
+        "text_ULKWGA",
+        "heading_e8HRGq",
+        "subheading_Qg3arh",
+        "text_VHDEMi"
+      ],
+      "custom_css": [
+        "h2 {font-size: 24pt;}",
+        "h3 {font-size: 16pt;}"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "image": "shopify://shop_images/d31679a697000bd1faf82aac64d25ee40d09530b.jpg",
+        "image_mobile": "shopify://shop_images/046d79405ac5087c84f6db29d5c00996d33b922d.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "flex-start_center",
+        "show-checkboxes": false,
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "color_overlay": "#000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
     }
   },
   "order": [
     "main",
     "image_hero_xWbAti",
-    "rich_text_GrR4kF"
+    "rich_text_GrR4kF",
+    "image_hero_gL6gW6"
   ]
 }
