@@ -9,10 +9,10 @@
  */
 {
   "sections": {
-    "slideshow_khX7qb": {
+    "slideshow_XAEEkT": {
       "type": "slideshow",
       "blocks": {
-        "slide_jkte6P": {
+        "slide_6TTdpC": {
           "type": "slide",
           "disabled": true,
           "settings": {
@@ -46,14 +46,14 @@
             "overlay_opacity": 0
           }
         },
-        "slide_8gkjwU": {
+        "slide_E3rhzj": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/8-18-25_HP_Desktop.png",
-            "image_mobile": "shopify://shop_images/8-18-25_HP_Mobile.jpg",
+            "image": "shopify://shop_images/GLOfacial_HP-Desktop_1.jpg",
+            "image_mobile": "shopify://shop_images/GLOfacial_HP-Mobile_1.jpg",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
-            "media_link": "shopify://collections/glofacial-birthday-celebration",
+            "media_link": "shopify://products/glofacial",
             "text_position": "center_center",
             "text_position_mobile": "center_center",
             "accent": "",
@@ -65,8 +65,8 @@
             "subheading_font_class": "fs-heading-5-base",
             "text": "",
             "text_font_class": "fs-body-100",
-            "link_1": "shopify://pages/beautybioboss-series-amber-venz-box",
-            "link_text_1": "",
+            "link_1": "",
+            "link_text_1": "Read more",
             "button_style_1": "btn--primary",
             "link_2": "",
             "link_text_2": "Read more",
@@ -79,9 +79,8 @@
             "overlay_opacity": 0
           }
         },
-        "slide_hznEHa": {
+        "slide_iYy4Qq": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/6-2-25_HP-DESKTOP.jpg",
             "image_mobile": "shopify://shop_images/6-2-25_HP-MOBILE.jpg",
@@ -115,9 +114,9 @@
         }
       },
       "block_order": [
-        "slide_jkte6P",
-        "slide_8gkjwU",
-        "slide_hznEHa"
+        "slide_6TTdpC",
+        "slide_E3rhzj",
+        "slide_iYy4Qq"
       ],
       "settings": {
         "image_aspect": "original",
@@ -1471,7 +1470,7 @@
     }
   },
   "order": [
-    "slideshow_khX7qb",
+    "slideshow_XAEEkT",
     "featured_collection_slider_1",
     "rich_text",
     "collection_list_slider",
