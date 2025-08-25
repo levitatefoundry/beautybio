@@ -457,7 +457,10 @@
         "text_knnRwV",
         "button_4EBNRT"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "h2 {font-size: 22pt;}",
+        "p {font-size: 12pt;}"
+      ],
       "name": "t:sections.image_with_text.presets.name",
       "settings": {
         "image_position": "right",
@@ -472,8 +475,8 @@
         "background_color": "#ffede5",
         "text_color": "#000000",
         "button_background_color": "#000000",
-        "button_text_color": "#FFFFFF",
-        "bullets": "none",
+        "button_text_color": "#ffffff",
+        "bullets": "checkbox",
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-none"
