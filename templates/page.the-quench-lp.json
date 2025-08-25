@@ -227,8 +227,7 @@
         "h2 {font-size: 22pt;}",
         "h3 {font-size: 13pt; font-weight: 900; margin-top: 2px; margin-bottom: 2px;}",
         ".image-hero {padding: 10px 60px;}",
-        ".image-hero__text-container-text {margin: 0 0 40px 0; max-width: 400px;}",
-        " {background-color: #fff8f5;}"
+        ".image-hero__text-container-text {margin: 0 0 40px 0; max-width: 400px;}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
@@ -268,9 +267,7 @@
       "block_order": [
         "button_9wDTyr"
       ],
-      "custom_css": [
-        "{background-color: #fff8f5;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.rich_text.presets.name",
       "settings": {
         "alignment": "center_center",
@@ -281,15 +278,48 @@
         "custom_content_width": 700
       }
     },
+    "rich_text_8XA7YY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_adt48R": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        },
+        "text_rHKiMY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text area to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_adt48R",
+        "text_rHKiMY"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
     "image_hero_gaBkj6": {
       "type": "image-hero",
       "name": "t:sections.image_hero.presets.name",
       "settings": {
         "image_aspect": "custom",
-        "desktop_height": 90,
+        "desktop_height": 75,
         "mobile_height": 100,
-        "image": "shopify://shop_images/Frame_1484581396_87ee8e13-2be1-40c1-9c13-5c4c25de70d8.png",
-        "focal_point": "top",
+        "image": "shopify://shop_images/Clinical_section_5.jpg",
+        "focal_point": "bottom",
         "mobile_focal_point": "image_presentation",
         "media_link": "",
         "text_position": "center_center",
@@ -366,7 +396,7 @@
       "type": "image-hero",
       "custom_css": [
         ".image-hero {padding: 10px 60px;}",
-        "{background: #fff8f5;}"
+        " {background: #fff8f5;}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
@@ -522,6 +552,7 @@
     "rich_text_GrR4kF",
     "image_hero_gL6gW6",
     "rich_text_3kbbCB",
+    "rich_text_8XA7YY",
     "image_hero_gaBkj6",
     "ts_3_steps_Pcjtdz",
     "image_hero_YjL9Pg",
