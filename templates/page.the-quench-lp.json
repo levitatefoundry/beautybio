@@ -336,7 +336,7 @@
         "button_eA4mVx"
       ],
       "custom_css": [
-        ".button-block__button {position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);}"
+        "@media screen and (min-width: 800px) {.button-block__button {position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); }}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
