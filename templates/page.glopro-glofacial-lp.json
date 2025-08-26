@@ -147,7 +147,7 @@
       "name": "t:sections.promo_banner.presets.name",
       "settings": {
         "min_height": 450,
-        "min_height_mobile": 400,
+        "min_height_mobile": 300,
         "left_column_width": 60,
         "giant_heading": "",
         "giant_heading_font_size": 100,
