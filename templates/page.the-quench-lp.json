@@ -92,9 +92,7 @@
       "block_order": [
         "heading_Vg84Xz"
       ],
-      "custom_css": [
-        "{background-color: #fff8f5;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.rich_text.presets.name",
       "settings": {
         "alignment": "center_center",
