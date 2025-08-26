@@ -87,18 +87,10 @@
             "heading_tag": "h2",
             "heading_font_class": "fs-heading-3-base"
           }
-        },
-        "text_LEnLdy": {
-          "type": "text",
-          "settings": {
-            "text": "<p>A ceramide-rich, Quadralipid-powered cream designed to flood dkin with hydration and help keep it ther.</p>",
-            "text_font_class": "fs-body-75"
-          }
         }
       },
       "block_order": [
-        "heading_Vg84Xz",
-        "text_LEnLdy"
+        "heading_Vg84Xz"
       ],
       "custom_css": [
         "{background-color: #fff8f5;}"
@@ -293,7 +285,7 @@
         "text_rHKiMY": {
           "type": "text",
           "settings": {
-            "text": "<p>In a consumer perception study. The Quench delivered visible hydration and softness from the first application.</p>",
+            "text": "<p>In a consumer perception study, The Quench delivered visible hydration and softness from the first application.</p>",
             "text_font_class": "fs-body-75"
           }
         }
@@ -439,10 +431,10 @@
         "text_position": "center_center",
         "text_position_mobile": "center_center",
         "show-checkboxes": false,
-        "text_color": "#FFFFFF",
-        "button_background_color": "#FFFFFF",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
         "button_text_color": "#000000",
-        "color_overlay": "#000",
+        "color_overlay": "#000000",
         "color_overlay_gradient": "",
         "overlay_opacity": 0,
         "enable_animation": true,
@@ -498,7 +490,7 @@
       "custom_css": [
         "{background-color: #fff8f5;}",
         ".ts-faq[open] {background-color: #ffffff;}",
-        "h2 {font-weight: 900; font-size: 25pt; line-height: 1.0}"
+        "h2 {font-weight: 900; font-size: 25pt; line-height: 1;}"
       ],
       "name": "Split Text + Faqs",
       "settings": {
