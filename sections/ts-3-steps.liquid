@@ -89,7 +89,12 @@
         <div class="ts-step-column">
           <span class="ts-step-number">{{ block.settings.number }}</span>
           <h2 class="ts-step-heading">{{ block.settings.step-heading }}</h2>
-          <p class="ts-step-body">{{ block.settings.step-text }}</p>
+          {% if block.settings.step-text != blank %}
+            <p class="ts-step-body">{{ block.settings.step-text }}</p>
+          {% endif %}
+          {% if block.settings.step-richtext != blank %}
+            <div class="ts-step-richtext">{{ block.settings.step-richtext }}</div>
+          {% endif %}
         </div>
       {% endif %}
     {% endfor %}
@@ -150,6 +155,11 @@
             "id": "step-text",
             "label": "Step text",
             "default": "Choose any 3, 6, or 10 travel-size skincare or tool favorites."
+          },
+          {
+            "type": "richtext",
+            "id": "step-richtext",
+            "label": "Step richtext"
           }
         ]
       },

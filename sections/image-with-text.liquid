@@ -8,6 +8,11 @@
 {% endcapture %}
 {% assign star_encoded_svg = star_svg_content | base64_encode %}
 
+{% capture checkbox_svg_content %}
+  {% render 'checkbox-svg' %}  <!-- Your SVG snippet -->
+{% endcapture %}
+{% assign checkbox_encoded_svg = checkbox_svg_content | base64_encode %}
+
 {%- liquid
   assign has_background_color = false
 
@@ -213,6 +218,32 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
+  #shopify-section-{{ section.id }} li {
+        position: relative;
+        text-align: left;
+        padding: 0 0 0 50px;
+        display: flex;
+        align-items: center;
+    }
+</style>
+{% elsif section.settings.bullets == "checkbox" %}
+<style>
+  #shopify-section-{{ section.id }} li::before {
+    content: url("data:image/svg+xml;base64,{{ checkbox_encoded_svg }}");
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #shopify-section-{{ section.id }} li {
+        position: relative;
+        text-align: left;
+        padding: 0 0 0 50px;
+        display: flex;
+        align-items: center;
+    }
 </style>
 {% elsif section.settings.bullets == "star" %}
 <style>
@@ -223,6 +254,14 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
+  #shopify-section-{{ section.id }} li {
+        position: relative;
+        text-align: left;
+        padding: 0 0 0 50px;
+        display: flex;
+        align-items: center;
+    }
 </style>
 {% endif %}
 
@@ -396,6 +435,10 @@
         {
           "value": "check",
           "label": "Checkmark"
+        },
+        {
+          "value": "checkbox",
+          "label": "Checkbox"
         },
         {
           "value": "star",
