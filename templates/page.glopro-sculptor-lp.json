@@ -125,7 +125,8 @@
         ".image-with-text__small-image-wrapper {width: 60%;}",
         "ul {display: flex; flex-wrap: wrap; list-style: none; padding: 0; width: 100%;}",
         "li {width: 45%; position: relative; display: flex; align-items: center; text-align: left; font-size: 10pt; padding-left: 30px;}",
-        "li::before {left: 0;}"
+        "li::before {left: 0;}",
+        "@media screen and (max-width: 750px) {* {text-align: center; }}"
       ],
       "name": "t:sections.image_with_text.presets.name",
       "settings": {
