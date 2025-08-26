@@ -59,6 +59,9 @@
         "button_nexxzf",
         "button_VtL8JY"
       ],
+      "custom_css": [
+        "@media screen and (max-width: 750px) {.image-with-text__text-container-inner {display: flex; flex-direction: column; align-items: center; text-align: center; }}"
+      ],
       "name": "t:sections.image_with_text.presets.name",
       "settings": {
         "image_position": "right",
@@ -126,7 +129,7 @@
         "h2 {font-weight: 500; font-size: 24pt;}",
         "p {font-size: 11pt;}",
         "a {min-width: 200px; max-height: 50px;}",
-        "@media screen and (max-width: 800px) {.button-block__button {display: none; }}"
+        "@media screen and (max-width: 800px) {.button-block__button {display: none; } * {text-align: center; }}"
       ],
       "name": "Richtext v2",
       "settings": {
