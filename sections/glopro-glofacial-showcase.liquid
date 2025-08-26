@@ -344,7 +344,7 @@
   .double-showcase__slide.active {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .slide-arrow {
@@ -378,7 +378,7 @@
   .double-showcase__slide2.active {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .prev-arrow2 {
@@ -485,6 +485,10 @@
     }
 
   @media only screen and (max-width: 750px) {
+    #shopify-section-{{ section.id }} .double-showcase-container {
+      padding: 30px 15px;
+    }
+    
     .double-showcase__desktop-container {
       display: none;
     }
@@ -497,6 +501,10 @@
 
     .double-showcase__image-wrapper {
       width: 50%;
+    }
+
+    #shopify-section-{{ section.id }} .double-showcase__image-wrapper img {
+      max-width: 125px
     }
 
     .double-showcase__desktop-diagram {
