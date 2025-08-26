@@ -79,6 +79,39 @@
             "overlay_opacity": 0
           }
         },
+        "slide_TdWywn": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/8-26-25_HPDesktop_Quench-Evergreen-ThirstySkin.jpg",
+            "image_mobile": "shopify://shop_images/8-26-25_HPMobile_Quench-Evergreen-ThirstySkin.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "shopify://products/the-quench-skin-recovery-cream",
+            "text_position": "flex-start_center",
+            "text_position_mobile": "center_center",
+            "accent": "",
+            "title": "",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2",
+            "subheading": "",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link_1": "",
+            "link_text_1": "",
+            "button_style_1": "btn--primary",
+            "link_2": "",
+            "link_text_2": "Read more",
+            "button_style_2": "btn--primary",
+            "text_color": "#000000",
+            "button_background_color": "#000000",
+            "button_text_color": "#ffffff",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
+          }
+        },
         "slide_hznEHa": {
           "type": "slide",
           "settings": {
@@ -116,6 +149,7 @@
       "block_order": [
         "slide_jkte6P",
         "slide_8gkjwU",
+        "slide_TdWywn",
         "slide_hznEHa"
       ],
       "settings": {
