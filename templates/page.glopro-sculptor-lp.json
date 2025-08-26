@@ -65,7 +65,7 @@
         "mobile_focal_point": "image_presentation",
         "media_link": "",
         "text_position": "flex-start_center",
-        "text_position_mobile": "center_center",
+        "text_position_mobile": "center_flex-end",
         "show-checkboxes": false,
         "text_color": "#000000",
         "button_background_color": "#000000",
