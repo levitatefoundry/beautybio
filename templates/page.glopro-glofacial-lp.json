@@ -129,7 +129,7 @@
         "h2 {font-weight: 500; font-size: 24pt;}",
         "p {font-size: 11pt;}",
         "a {min-width: 200px; max-height: 50px;}",
-        "@media screen and (max-width: 800px) {.button-block__button {display: none; } * {text-align: center; }}"
+        "@media screen and (max-width: 800px) {.button-block__button {display: none; } * {text-align: center; } p {font-size: 14pt; max-width: 480px; } h2 {font-size: 30pt; }}"
       ],
       "name": "Richtext v2",
       "settings": {
