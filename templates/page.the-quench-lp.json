@@ -309,7 +309,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Frame_1484581583.png",
-            "image_size": 480,
+            "image_size": 450,
             "image_size_mobile": 350
           }
         },
