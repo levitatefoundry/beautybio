@@ -52,7 +52,8 @@
       ],
       "custom_css": [
         "h2 {width: 100%; font-weight: 500; max-width: 480px; font-size: 32pt;}",
-        "p {width: 90%; font-size: 12pt; max-width: 580px;}"
+        "p {width: 90%; font-size: 12pt; max-width: 580px;}",
+        "@media screen and (max-width: 750px) {.image-hero__text-container-wrapper {padding-bottom: 0; }}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
