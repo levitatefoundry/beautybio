@@ -87,7 +87,7 @@
             "image_mobile": "shopify://shop_images/8-26-25_HPMobile_Quench-Evergreen-ThirstySkin.jpg",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
-            "media_link": "shopify://products/the-quench-skin-recovery-cream",
+            "media_link": "shopify://pages/the-quench",
             "text_position": "flex-start_center",
             "text_position_mobile": "center_center",
             "accent": "",
