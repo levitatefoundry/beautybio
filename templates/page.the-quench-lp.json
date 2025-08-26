@@ -452,7 +452,10 @@
       "custom_css": [
         ".image-hero {padding: 10px 60px;}",
         " {background: #fff8f5;}",
-        "@media screen and (max-width: 800px) {.image-hero {padding: 10px 10px; }}"
+        "@media screen and (max-width: 800px) {.image-hero {padding: 10px 10px; }}",
+        "ul {padding-left: 0;}",
+        "li::before {left: 0px;}",
+        "li {position: relative; text-align: left; padding: 0 0 0 50px; display: flex; align-items: center; }"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
