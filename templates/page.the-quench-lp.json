@@ -32,7 +32,7 @@
         "subheading_wKCCCK": {
           "type": "subheading",
           "settings": {
-            "subheading": "Ceramides, peptides, and lipids flood skin with<br> hydration and help keep it there for a plump, healthy-<br>looking glow.",
+            "subheading": "Ceramides, peptides, and lipids flood skin with hydration and help keep it there for a plump, healthy-looking glow.",
             "subheading_tag": "h6",
             "subheading_font_class": "fs-heading-6-base"
           }
@@ -52,7 +52,7 @@
         "button_6dNUaw"
       ],
       "custom_css": [
-        "h6 {font-weight: 400; font-size: 12pt;}"
+        "h6 {font-weight: 400; font-size: 12pt; max-width: 400px;}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
