@@ -196,16 +196,16 @@
         "button_6bJbLL": {
           "type": "button",
           "settings": {
-            "link": "",
-            "link_text": "Read more",
+            "link": "shopify://products/glopro-microneedling-regeneration-roller-tool",
+            "link_text": "SHOP GLOPRO",
             "button_style": "btn--primary"
           }
         },
         "button_zeYDLB": {
           "type": "button",
           "settings": {
-            "link": "",
-            "link_text": "Read more",
+            "link": "shopify://products/glofacial",
+            "link_text": "SHOP GLOFACIAL",
             "button_style": "btn--primary"
           }
         }
@@ -219,7 +219,7 @@
         "li {padding: 0 0 0 40px; position: relative;}",
         "ul {list-style-position: inside; list-style-type: none; padding-left: 0; display: flex; align-items: center; justify-content: space-between;}",
         ".button-block__button {display: none;}",
-        "@media screen and (max-width: 800px) {.button-block__button {display: flex; } ul {flex-direction: column; align-items: center; justify-content: flex-start; gap: 8px; }}"
+        "@media screen and (max-width: 800px) {.button-block__button {display: flex; justify-content: center; } ul {flex-direction: column; align-items: center; justify-content: flex-start; gap: 8px; }}"
       ],
       "name": "Richtext v2",
       "settings": {
