@@ -144,6 +144,9 @@
     },
     "promo_banner_n4NWjp": {
       "type": "promo-banner",
+      "custom_css": [
+        "@media screen and (max-width: 750px) {.promo-banner__content {min-height: 250px !important; }}"
+      ],
       "name": "t:sections.promo_banner.presets.name",
       "settings": {
         "min_height": 450,
