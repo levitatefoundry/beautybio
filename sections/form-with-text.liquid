@@ -51,6 +51,10 @@
       .form-with-text__container {
         flex-direction: column;
       }
+
+      #shopify-section-{{ section.id }} li {
+        font-size: 10pt;
+      }
     }
 </style>
 
@@ -59,15 +63,16 @@
     #shopify-section-{{ section.id }} li::before {
       content: url("data:image/svg+xml;base64,{{ encoded_svg }}");
       position: absolute;
-      left: 10px;
+      left: 0;
       top: 50%;
       transform: translateY(-50%);
+      height: 30px;
     }
 
     #shopify-section-{{ section.id }} li {
         position: relative;
         text-align: left;
-        padding: 0 0 0 50px;
+        padding: 0 0 0 45px;
         display: flex;
         align-items: center;
     }
