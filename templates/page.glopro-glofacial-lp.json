@@ -60,7 +60,7 @@
         "button_VtL8JY"
       ],
       "custom_css": [
-        "@media screen and (max-width: 750px) {.image-with-text__text-container-inner {display: flex; flex-direction: column; align-items: center; text-align: center; } h2 {max-width: 350px; } p {max-width: 380px; }}"
+        "@media screen and (max-width: 750px) {.image-with-text__text-container-inner {display: flex; flex-direction: column; align-items: center; text-align: center; } h2 {max-width: 350px; } p {max-width: 380px; } .button-block__inline-wrapper {justify-content: center; }}"
       ],
       "name": "t:sections.image_with_text.presets.name",
       "settings": {
