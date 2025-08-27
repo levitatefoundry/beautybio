@@ -276,6 +276,10 @@
     },
     "glopro_glofacial_showcase_i63Kfe": {
       "type": "glopro-glofacial-showcase",
+      "custom_css": [
+        ".double-showcase__heading {font-size: 28px; max-width: 400px;}",
+        ".double-showcase__subheading {max-width: 775px;}"
+      ],
       "name": "GloPRO GLOfacial Showcase",
       "settings": {
         "heading": "Meet the Power Pair: GLOfacial & GloPRO®",
