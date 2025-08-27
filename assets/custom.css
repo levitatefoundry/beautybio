@@ -56,7 +56,7 @@ button{
   display: none !important;
 }
 
-/* .rc-widget .rc-tooltip__footer .recharge-badge {
+.rc-widget .rc-tooltip__footer .recharge-badge {
   display: flex;
   align-items: center;
   border: 1px solid #000;
@@ -101,4 +101,4 @@ button{
 .rc-template__radio-group .rc-selling-plans select {
   border-radius: 5px;
   cursor: pointer;
-} */
+}

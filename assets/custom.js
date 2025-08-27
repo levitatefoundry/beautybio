@@ -26,4 +26,4 @@ const updateSubscription = (subscriptionWidget) => {
     }
 }
 
-// findSubscription()
+findSubscription()
