@@ -308,7 +308,8 @@
   .double-showcase__slide.active {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 7px;
   }
 
   .slide-arrow {
@@ -342,7 +343,8 @@
   .double-showcase__slide2.active {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 7px;
   }
 
   .prev-arrow2 {
@@ -457,6 +459,10 @@
     }
 
   @media only screen and (max-width: 800px) {
+    .double-showcase-container {
+      padding: 30px 15px;
+    }
+
     .double-showcase__desktop-container {
       display: none;
     }
@@ -478,6 +484,10 @@
 
     .double-showcase__desktop-diagram-column {
       min-width: none;
+    }
+
+    #shopify-section-{{ section.id }} .double-showcase__image-wrapper img {
+      max-width: 175px
     }
   }
 </style>

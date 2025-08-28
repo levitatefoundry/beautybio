@@ -52,7 +52,8 @@
       ],
       "custom_css": [
         "h2 {width: 100%; font-weight: 500; max-width: 480px; font-size: 32pt;}",
-        "p {width: 90%; font-size: 12pt; max-width: 580px;}"
+        "p {width: 90%; font-size: 12pt; max-width: 580px;}",
+        "@media screen and (max-width: 750px) {.image-hero__text-container-wrapper {padding-bottom: 0; }}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
@@ -60,7 +61,7 @@
         "desktop_height": 100,
         "mobile_height": 100,
         "image": "shopify://shop_images/31229401b1dfd220a729e5dc7e66b96c0e93bef0_5b833dd3-4c5c-4aca-b7bb-6cbdd99e550b.jpg",
-        "image_mobile": "shopify://shop_images/78ddc8506f301a1884a20c8c1f3beebf0f321701.jpg",
+        "image_mobile": "shopify://shop_images/Hero_section_-_Mobile_1.png",
         "focal_point": "image_presentation",
         "mobile_focal_point": "image_presentation",
         "media_link": "",
@@ -118,18 +119,19 @@
         "button_dFy8e6"
       ],
       "custom_css": [
-        "h2 {text-align: left; font-size: 24pt; font-weight: 500;}",
-        "p {text-align: left; font-size: 12pt;}",
+        "h2 {font-size: 24pt; font-weight: 500; max-width: 400px;}",
+        "p {font-size: 12pt;}",
         ".image-with-text__image {width: 60%; margin-bottom: 80px;}",
         ".image-with-text__small-image-wrapper {width: 60%;}",
         "ul {display: flex; flex-wrap: wrap; list-style: none; padding: 0; width: 100%;}",
-        "li {width: 45%; position: relative; display: flex; align-items: center; text-align: left; font-size: 10pt; padding-left: 30px;}",
-        "li::before {left: 0;}"
+        "li {width: 45%; font-size: 10pt; padding-left: 30px;}",
+        "li::before {left: 0;}",
+        "@media screen and (max-width: 750px) {* {text-align: center !important; } ul {flex-direction: column; align-items: center; } li {width: fit-content; } a {width: 100%; }}"
       ],
       "name": "t:sections.image_with_text.presets.name",
       "settings": {
         "image_position": "left",
-        "text_alignment": "center",
+        "text_alignment": "left",
         "image": "shopify://shop_images/c0e53f485a57b429f0ce255994495266ad3603d7.png",
         "aspect_ratio": "square",
         "focal_point": "image_presentation",
@@ -156,7 +158,7 @@
           "settings": {
             "icon": "shopify://shop_images/fi_7886147.svg",
             "step-heading": "Backed by<br> Real Science",
-            "step-text": "Microneedling. Pore extraction, Ingredient<br> infusion. We do it all, and we do it right."
+            "step-text": "Microneedling. Pore extraction, Ingredient infusion. We do it all, and we do it right."
           }
         },
         "step_tNKgPD": {
@@ -164,7 +166,7 @@
           "settings": {
             "icon": "shopify://shop_images/fi_17371266.svg",
             "step-heading": "Tools That Do the<br> Heavy Lifting",
-            "step-text": "At-home treatments. No downtime.<br> Visibly improved complexion starts now."
+            "step-text": "At-home treatments. No downtime. Visibly improved complexion starts now."
           }
         },
         "step_abwYpT": {
@@ -172,7 +174,7 @@
           "settings": {
             "icon": "shopify://shop_images/fi_2717575.svg",
             "step-heading": "Transparent<br> Process. Always",
-            "step-text": "Clean, Results-first. That's the<br> BeautyBio standard."
+            "step-text": "Clean, Results-first. That's the BeautyBio standard."
           }
         }
       },
@@ -365,7 +367,7 @@
       "custom_css": [
         ".form-with-text__container {background: linear-gradient(to bottom, #f3c8cf -20%, white 160%); max-height: 400px;}",
         "ul {display: flex; flex-direction: row; justify-content: flex-start; gap: 20px; list-style-position: inside; list-style-type: none; padding-left: 0;}",
-        "@media screen and (max-width: 800px) {ul {flex-wrap: wrap; justify-content: center; } .form-with-text__container {max-height: none; padding: 20px; } .form-with-text__content {text-align: center; }}"
+        "@media screen and (max-width: 800px) {ul {flex-direction: column; align-items: flex-start; } .form-with-text__container {max-height: none; padding: 20px; } .form-with-text__content {text-align: center; align-items: center; }}"
       ],
       "name": "Form with text",
       "settings": {

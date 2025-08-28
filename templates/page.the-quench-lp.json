@@ -32,7 +32,7 @@
         "subheading_wKCCCK": {
           "type": "subheading",
           "settings": {
-            "subheading": "Ceramides, peptides, and lipids flood skin with<br> hydration and help keep it there for a plump, healthy-<br>looking glow.",
+            "subheading": "Ceramides, peptides, and lipids flood skin with hydration and help keep it there for a plump, healthy-looking glow.",
             "subheading_tag": "h6",
             "subheading_font_class": "fs-heading-6-base"
           }
@@ -52,7 +52,7 @@
         "button_6dNUaw"
       ],
       "custom_css": [
-        "h6 {font-weight: 400; font-size: 12pt;}"
+        "h6 {font-weight: 400; font-size: 12pt; max-width: 400px;}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
@@ -411,27 +411,70 @@
     },
     "image_hero_YjL9Pg": {
       "type": "image-hero",
+      "blocks": {
+        "heading_QB7ewr": {
+          "type": "heading",
+          "settings": {
+            "title": "Ready to Quench Your Skin's Thirst?",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "text_rQiEb4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Transform your daily routine with our most nourishing, lipid-rich recovery cream clinically proven to restore hydration, bounce, and radiance.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "text_BPGKLC": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li><strong>Deep, lasting moisture for even the driest skin.</strong></li><li><strong>Safe, effective, and results-driven.</strong></li><li><strong>Ideal for dry climates, long flights, or post-treatment recovery.</strong></li></ul>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_YCTtYH": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/the-quench-skin-recovery-cream",
+            "link_text": "SHOP THE QUENCH",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QB7ewr",
+        "text_rQiEb4",
+        "text_BPGKLC",
+        "button_YCTtYH"
+      ],
       "custom_css": [
         ".image-hero {padding: 10px 60px;}",
         " {background: #fff8f5;}",
-        "@media screen and (max-width: 800px) {.image-hero {padding: 10px 10px; }}"
+        "@media screen and (max-width: 800px) {.image-hero {padding: 10px 10px; } * {text-align: left; } a {width: 100%; }}",
+        "ul {padding-left: 0; display: flex; flex-direction: column; gap: 7px; margin-top: 30px;}",
+        "li::before {left: 0px;}",
+        "li {position: relative; text-align: left; padding: 0 0 0 45px; display: flex; align-items: center; line-height: 1; min-height: 30px;}",
+        "h2 {font-size: 30pt; max-width: 400px;}",
+        "p {max-width: 500px;}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
         "image_aspect": "original",
         "desktop_height": 100,
         "mobile_height": 100,
-        "image": "shopify://shop_images/Final_CTA.png",
-        "image_mobile": "shopify://shop_images/Frame_1484581401.png",
+        "image": "shopify://shop_images/Final_CTA_3.jpg",
+        "image_mobile": "shopify://shop_images/Final_CTA_-_Mobile_3.jpg",
         "focal_point": "image_presentation",
         "mobile_focal_point": "image_presentation",
         "media_link": "shopify://products/the-quench-skin-recovery-cream",
-        "text_position": "center_center",
-        "text_position_mobile": "center_center",
-        "show-checkboxes": false,
-        "text_color": "#ffffff",
-        "button_background_color": "#ffffff",
-        "button_text_color": "#000000",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "center_flex-start",
+        "show-checkboxes": true,
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
         "color_overlay": "#000000",
         "color_overlay_gradient": "",
         "overlay_opacity": 0,

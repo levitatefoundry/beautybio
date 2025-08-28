@@ -60,7 +60,7 @@
         "button_VtL8JY"
       ],
       "custom_css": [
-        "@media screen and (max-width: 750px) {.image-with-text__text-container-inner {display: flex; flex-direction: column; align-items: center; text-align: center; } h2 {max-width: 350px; } p {max-width: 380px; }}"
+        "@media screen and (max-width: 750px) {.image-with-text__text-container-inner {display: flex; flex-direction: column; align-items: center; text-align: center; } h2 {max-width: 350px; } p {max-width: 380px; } .button-block__inline-wrapper {justify-content: center; }}"
       ],
       "name": "t:sections.image_with_text.presets.name",
       "settings": {
@@ -144,10 +144,13 @@
     },
     "promo_banner_n4NWjp": {
       "type": "promo-banner",
+      "custom_css": [
+        "@media screen and (max-width: 750px) {.promo-banner__content {min-height: 250px !important; }}"
+      ],
       "name": "t:sections.promo_banner.presets.name",
       "settings": {
         "min_height": 450,
-        "min_height_mobile": 500,
+        "min_height_mobile": 300,
         "left_column_width": 60,
         "giant_heading": "",
         "giant_heading_font_size": 100,
@@ -240,7 +243,7 @@
           "settings": {
             "icon": "shopify://shop_images/fi_7886147.svg",
             "step-heading": "Backed by<br> Real Science",
-            "step-text": "Microneedling. Pore extraction. Ingredient<br> infusion. We do it all, and we do it right."
+            "step-text": "Microneedling. Pore extraction. Ingredient infusion. We do it all, and we do it right."
           }
         },
         "step_WGPWqX": {
@@ -248,7 +251,7 @@
           "settings": {
             "icon": "shopify://shop_images/fi_17371266.svg",
             "step-heading": "Tools That Do the<br> Heavy Lifting",
-            "step-text": "At-home treatments. No downtime.<br> Visibly improved complexion starts now."
+            "step-text": "At-home treatments. No downtime. Visibly improved complexion starts now."
           }
         },
         "step_GbYTXV": {
@@ -273,6 +276,10 @@
     },
     "glopro_glofacial_showcase_i63Kfe": {
       "type": "glopro-glofacial-showcase",
+      "custom_css": [
+        ".double-showcase__heading {font-size: 28px; max-width: 400px;}",
+        ".double-showcase__subheading {max-width: 775px;}"
+      ],
       "name": "GloPRO GLOfacial Showcase",
       "settings": {
         "heading": "Meet the Power Pair: GLOfacial & GloPRO®",
@@ -447,7 +454,7 @@
       "custom_css": [
         ".form-with-text__container {background: linear-gradient(to bottom, #f3c8cf -20%, white 160%); max-height: 400px;}",
         "ul {display: flex; flex-direction: row; justify-content: flex-start; gap: 20px; list-style-position: inside; list-style-type: none; padding-left: 0;}",
-        "@media screen and (max-width: 800px) {ul {flex-wrap: wrap; justify-content: center; } .form-with-text__container {max-height: none; padding: 20px; } .form-with-text__content {text-align: center; }}"
+        "@media screen and (max-width: 800px) {ul {flex-direction: column; align-items: flex-start; } .form-with-text__container {max-height: none; padding: 20px; } .form-with-text__content {text-align: center; align-items: center; }}"
       ],
       "name": "Form with text",
       "settings": {
