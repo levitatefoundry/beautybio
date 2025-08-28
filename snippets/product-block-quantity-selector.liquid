@@ -9,9 +9,7 @@
   {{ block.shopify_attributes }}
 >
   <div class="product__label-wrapper{% unless block.settings.show_labels %} product__label-wrapper--collapse{% endunless %}">
-    <label class="product__label {{ label_classes }}" for="Quantity-Input-{{ product.id }}">
-      {{ 'products.product.quantity' | t }}
-    </label>
+    
   </div>
   <div class="product__item">
     {% render 'quantity-input' with id: product.id, initial_value: '1' %}

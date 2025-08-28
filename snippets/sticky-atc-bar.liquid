@@ -109,7 +109,7 @@
         data-lang-unavailable="{{ 'product.unavailable' | t }}"
         data-lang-sold-out="{{ 'product.sold_out' | t }}"
       >
-        <span data-add-to-cart-text>
+        <span class="add-to-cart-product" data-add-to-cart-text>
           {%- unless current_variant.available -%}
             {{ product_unavailable_label }}
           {%- else -%}

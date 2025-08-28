@@ -74,6 +74,7 @@
         "media_link": "",
         "text_position": "center_center",
         "text_position_mobile": "center_flex-start",
+        "show-checkboxes": false,
         "text_color": "#ffffff",
         "button_background_color": "#ffffff",
         "button_text_color": "#000000",
@@ -130,6 +131,7 @@
         "media_link": "",
         "text_position": "flex-start_center",
         "text_position_mobile": "center_flex-start",
+        "show-checkboxes": false,
         "text_color": "#000000",
         "button_background_color": "#ffffff",
         "button_text_color": "#000000",
@@ -137,6 +139,15 @@
         "color_overlay_gradient": "",
         "overlay_opacity": 0,
         "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "custom_liquid_QeaHna": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<h1 class=\"visually-hidden\">Our Story</h1>\n<style>\n  .visually-hidden {\n    position: absolute;\n    width: 1px;\n    height: 1px;\n    margin: -1px;\n    padding: 0;\n    overflow: hidden;\n    clip: rect(0, 0, 0, 0);\n    border: 0;\n    white-space: nowrap;\n  }\n.image-with-text-split__text-container-heading,\n.apps__heading,\n.image-with-text-split__text-container-accent {\n  background-color: rgba(0, 0, 0, 0.01);\n}\n\n\n</style>",
+        "divider_style": "none",
         "section_padding": "section--vertical-padding-none"
       }
     },
@@ -169,6 +180,7 @@
           "type": "subheading",
           "settings": {
             "subheading": "BeautyBio believes in equality, diversity, respect for humanity, honesty, kindness, giving our best effort, and working together.",
+            "subheading_tag": "h2",
             "subheading_tag": "h3",
             "subheading_font_class": "fs-heading-5-base"
           }
@@ -533,6 +545,7 @@
         "text"
       ],
       "custom_css": [
+        ".btn.btn--primary {text-transform: uppercase;}"
         ".btn.btn--primary{text-transform: uppercase;}"
       ],
       "settings": {
@@ -736,6 +749,7 @@
     "main",
     "image_hero",
     "image_hero_6HBXTx",
+    "custom_liquid_QeaHna",
     "rich_text_1",
     "image_with_text_split",
     "image_with_text_split_QKKmdJ",

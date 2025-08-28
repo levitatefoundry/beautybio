@@ -12,12 +12,13 @@ font-family: 'gothammedium';
 }
 
 
-h2, h4 > a,
-.footer__heading.fs-accent, span{
- font-family: 'gothambold' !important;
-    letter-spacing: -0.03em;
-} 
-
+h2.footer__header,
+.footer__heading.fs-accent,
+span {
+  font-family: 'gothambold' !important;
+  letter-spacing: -0.03em;
+  display: block;
+}
 
 
 body, p, h3, .ff-body, p>span  {

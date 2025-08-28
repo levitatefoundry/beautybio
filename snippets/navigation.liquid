@@ -122,3 +122,35 @@
     </li>
   {% endfor %}
 </ul>
+<script>
+  // Script to remove 'aria-expanded' attribute from the "Blog" menu item to fix screen reader issue
+
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Find the "Blog" link by its text content or href (use the most specific selector)
+  const blogLink = document.querySelector('a[href="/blogs/skincare-blog"][data-link]');
+
+  if (blogLink) {
+    // Remove the aria-expanded attribute if it exists
+    if (blogLink.hasAttribute('aria-expanded')) {
+      blogLink.removeAttribute('aria-expanded');
+      console.log('Removed aria-expanded from Blog link for accessibility fix.');
+    }
+
+    // Optionally, observe for mutations if the attribute is added dynamically later
+    const observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'aria-expanded') {
+          blogLink.removeAttribute('aria-expanded');
+          console.log('Prevented aria-expanded from being added to Blog link.');
+        }
+      });
+    });
+
+    // Observe changes to attributes on the Blog link
+    observer.observe(blogLink, { attributes: true });
+  } else {
+    console.warn('Blog link not found. Ensure the selector matches the HTML.');
+  }
+});
+</script>

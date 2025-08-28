@@ -157,9 +157,7 @@
       {% render 'modal' %}
       {% render 'back-to-top' %}
     </div>
-
     {{ 'custom.js' | asset_url | script_tag }}
-      
     {{ '//www.youtube.com/iframe_api' | script_tag }}
     {{ '//cdn.shopify.com/shopifycloud/shopify-plyr/v1.0/shopify-plyr.css' | stylesheet_tag }}
 <script defer src="https://static.shopmy.us/Affiliates/sms_aff_clicktrack.js"></script>  </body>
@@ -178,5 +176,27 @@
     onload="this.onload=null;this.rel='stylesheet'"
   >
   <noscript><link rel="stylesheet" href="{{ 'theme-deferred.css' | asset_url }}"></noscript>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  // Target the quantity decrease button
+  const decreaseButton = document.querySelector('button[data-action="minus"].upsell-atc-bar__quantity-adjust');
+  if (decreaseButton) {
+    decreaseButton.setAttribute('aria-label', 'Decrease quantity');
+    // Remove invalid area-label attribute
+    if (decreaseButton.hasAttribute('area-label')) {
+      decreaseButton.removeAttribute('area-label');
+    }
+  }
+});
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const checkbox = document.querySelector('#variant-display');
+  if (checkbox) {
+    checkbox.setAttribute('aria-label', 'Toggle variant display');
+  }
+});
+</script>
+
 </html>
 <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/EcCMkBxam_pJP4wdHireiw" async></script>

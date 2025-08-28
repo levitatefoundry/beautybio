@@ -12,6 +12,10 @@
   elsif image_size == "large"
     assign image_sizes_fraction = 0.50
   endif
+
+  # Generate a concise aria-label for the slide
+  assign slide_label = block.settings.product.title | default: block.settings.quote | truncate: 50
+  assign slide_label = slide_label | append: ' testimonial'
 -%}
 
 {% capture image_sizes_attribute -%}
@@ -25,7 +29,7 @@
     {%- endcapture -%}
     {%- capture wrapper_attributes -%}
       {%- if block.settings.product != blank -%}
-        href="{{ block.settings.product.url }}" aria-label="{{ block.settings.product.title }}"
+        href="{{ block.settings.product.url }}" aria-label="{{ block.settings.product.title }} product"
       {%- endif -%}
     {%- endcapture -%}
 
@@ -58,7 +62,7 @@
     {%- endif -%}
 
     {%- if block.settings.quote != blank -%}
-      <blockquote class="testimonials__item-quote {% if quote_font == 'heading' %}ff-subheading fs-heading-4-base fs-heading-3-base-above-720{% else %}ff-body fs-body-300 fs-body-350-above-720{% endif %}">
+      <blockquote class="testimonials__item-quote {% if quote_font == 'heading' %}ff-subheading fs-heading-4-base fs-heading-3-base-above-720{% else %}ff-body fs-body-300 fs-body-350-above-720{% endif %}" tabindex="0">
         {{ block.settings.quote }}
       </blockquote>
     {%- endif -%}
@@ -78,6 +82,9 @@
     testimonials__item--image-placement-{{ block.settings.image_position }}
     animation--item
   "
+  id="testimonial-slide-{{ forloop.index0 }}"
+  tabindex="0"
+  aria-label="{{ slide_label }}"
   {% unless forloop.first %}
     inert
   {% endunless %}
@@ -92,3 +99,64 @@
     {{ product_image }}
   {%- endif -%}
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  // Ensure Swiper is initialized
+  const swiperContainer = document.querySelector('.testimonials__carousel');
+  if (!swiperContainer || !swiperContainer.swiper) {
+    console.error('Swiper not initialized for .testimonials__carousel');
+    return;
+  }
+  const swiper = swiperContainer.swiper;
+
+  // Ensure navigation buttons are keyboard-accessible
+  const nextButton = document.querySelector('.testimonials__navigation-button--next');
+  const prevButton = document.querySelector('.testimonials__navigation-button--prev');
+  if (nextButton) {
+    nextButton.setAttribute('tabindex', '0');
+    nextButton.setAttribute('role', 'button');
+    nextButton.setAttribute('aria-label', 'Move to next carousel slide'); // Reinforce for clarity
+  }
+  if (prevButton) {
+    prevButton.setAttribute('tabindex', '0');
+    prevButton.setAttribute('role', 'button');
+    prevButton.setAttribute('aria-label', 'Move to previous carousel slide');
+  }
+
+  // Handle focus on slide change
+  swiper.on('slideChangeTransitionEnd', function () {
+    // Get the active slide using realIndex for looped slides
+    const activeIndex = swiper.realIndex;
+    const activeSlide = swiper.slides.find(slide => slide.getAttribute('data-swiper-slide-index') == activeIndex);
+
+    if (!activeSlide) {
+      console.error('Active slide not found for realIndex:', activeIndex);
+      return;
+    }
+
+    // Find the quote element
+    const quoteElement = activeSlide.querySelector('.testimonials__item-quote');
+    if (!quoteElement) {
+      console.error('Quote element not found in active slide:', activeSlide);
+      // Fallback to slide itself
+      setTimeout(() => {
+        activeSlide.focus();
+        console.log('Focused on slide:', activeSlide.getAttribute('id'));
+      }, 200);
+      return;
+    }
+
+    // Move focus to the quote
+    setTimeout(() => {
+      quoteElement.focus();
+      console.log('Focused on quote in slide:', activeSlide.getAttribute('id'), 'Quote text:', quoteElement.textContent.trim());
+    }, 200); // Increased delay to ensure transition completion
+
+    // Manage inert attributes
+    swiper.slides.forEach(slide => {
+      const isActive = slide.getAttribute('data-swiper-slide-index') == activeIndex;
+      slide.setAttribute('inert', isActive ? null : '');
+    });
+  });
+});
+</script>

@@ -46,6 +46,10 @@
   {%- if section.settings.divider_style == 'solid' -%}
     <div class="collection__divider"></div>
   {%- endif -%}
+ <h2 class="collection heading" style="display: none;">
+  {{ collection.title }}
+</h2>
+
   <div class="collection__inner">
     {%- if collection.all_products_count > 0 -%}
       <script type="application/json" data-tags>
@@ -201,6 +205,36 @@
       </div>
     {%- endif -%}
   </div>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+  // Find all product items
+  const productItems = document.querySelectorAll('.product-item');
+
+  productItems.forEach(productItem => {
+    // Find the image containers within the product item
+    const imageOneContainer = productItem.querySelector('.product-item__image--one');
+    const imageTwoContainer = productItem.querySelector('.product-item__image--two');
+
+    // Modify the alt text for the first image
+    if (imageOneContainer) {
+      const imgOne = imageOneContainer.querySelector('img');
+      if (imgOne) {
+        const currentAlt = imgOne.getAttribute('alt') || '';
+        imgOne.setAttribute('alt', currentAlt + ' Image 1');
+      }
+    }
+
+    // Modify the alt text for the second image, if it exists
+    if (imageTwoContainer) {
+      const imgTwo = imageTwoContainer.querySelector('img');
+      if (imgTwo) {
+        const currentAlt = imgTwo.getAttribute('alt') || '';
+        imgTwo.setAttribute('alt', currentAlt + ' Image 2');
+      }
+    }
+  });
+});
+</script>
 </section>
 
 {% schema %}
