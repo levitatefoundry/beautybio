@@ -114,9 +114,16 @@
     <div class="collection-banner__text-container-wrapper">
       <div class="collection-banner__text-container">
         <div class="collection-banner__text-container-inner section-blocks animation--section-blocks">
+          
           <h1 class="collection-banner__text-container-heading ff-heading fs-heading-2-base fs-heading-1-base-ns section-blocks__heading">
             {{ collection.title }}
           </h1>
+
+          {% if section.settings.subheading != blank %}
+            <div class="collection-banner__subheading rte ff-body">
+              {{  section.settings.subheading }}
+            </div>
+          {% endif %}
 
           {%- if collection_description != blank -%}
             <div class="collection-banner__text-container-text rte ff-body section-blocks__text">
@@ -160,6 +167,11 @@
       "type": "checkbox",
       "label": "t:sections.main_collection_banner.settings.show_collection_image.label",
       "default": false
+    },
+    {
+      "type" : "richtext",
+      "id": "subheading",
+      "label": "Subheading"
     },
     {
       "type": "image_picker",

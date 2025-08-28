@@ -13,6 +13,10 @@
       "type": "slideshow",
       "blocks": {
         "slide_H7W867": {
+    "slideshow_XAEEkT": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_6TTdpC": {
           "type": "slide",
           "disabled": true,
           "settings": {
@@ -54,6 +58,16 @@
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
             "media_link": "shopify://pages/glopro-the-sculptor",
+        "slide_E3rhzj": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/GLOfacial_HP-Desktop_1.jpg",
+            "image_mobile": "shopify://shop_images/GLOfacial_HP-Mobile_1.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "shopify://products/glofacial",
+
             "text_position": "center_center",
             "text_position_mobile": "center_center",
             "accent": "",
@@ -150,6 +164,15 @@
             "mobile_focal_point": "image_presentation",
             "media_link": "shopify://products/lip-pout-volumizing-lip-serum",
             "text_position": "center_center",
+        "slide_WYJdMR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/8-26-25_HPDesktop_Quench-Evergreen-ThirstySkin.jpg",
+            "image_mobile": "shopify://shop_images/8-26-25_HPMobile_Quench-Evergreen-ThirstySkin.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "shopify://pages/the-quench",
+            "text_position": "flex-start_center",
             "text_position_mobile": "center_center",
             "accent": "",
             "title": "",
@@ -217,6 +240,15 @@
             "mobile_focal_point": "image_presentation",
             "media_link": "shopify://collections/spf",
             "text_position": "flex-start_center",
+        "slide_iYy4Qq": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/6-2-25_HP-DESKTOP.jpg",
+            "image_mobile": "shopify://shop_images/6-2-25_HP-MOBILE.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "shopify://pages/rewards",
+            "text_position": "center_center",
             "text_position_mobile": "center_center",
             "accent": "INTRODUCING",
             "title": "BEAUTYBIO REWARDS",
@@ -248,6 +280,11 @@
         "slide_bVHN9b"
       ],
       "disabled": true,
+        "slide_6TTdpC",
+        "slide_E3rhzj",
+        "slide_WYJdMR",
+        "slide_iYy4Qq"
+      ],
       "settings": {
         "image_aspect": "original",
         "desktop_height": 55,
@@ -1608,6 +1645,7 @@
   "order": [
     "slideshow_i9Eerz",
     "slideshow_AFJidD",
+    "slideshow_XAEEkT",
     "featured_collection_slider_1",
     "rich_text",
     "collection_list_slider",

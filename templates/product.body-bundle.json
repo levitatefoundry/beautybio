@@ -513,22 +513,13 @@
             "text": "<p>{{ product.metafields.custom.a_11.value }}</p>"
           }
         },
-        "item_PcQtTC": {
+        "item_T3xiYe": {
           "type": "item",
           "settings": {
             "expand_by_default": false,
             "icon": "none",
-            "title": "What warranty comes with my GloPRO?",
-            "text": "<p>We will replace your GloPRO within one year, as long as you have proof of purchase.</p>"
-          }
-        },
-        "item_33M6r6": {
-          "type": "item",
-          "settings": {
-            "expand_by_default": false,
-            "icon": "none",
-            "title": "What warranty comes with my GLOfacial?",
-            "text": "<p>We will replace your GLOfacial within one year, as long as you have proof of purchase.</p>"
+            "title": "{{ product.metafields.custom.q_12.value }}",
+            "text": "<p>{{ product.metafields.custom.a_12.value }}</p>"
           }
         }
       },
@@ -544,8 +535,7 @@
         "item_gxgMxH",
         "item_RiT7RE",
         "item_BdXiFk",
-        "item_PcQtTC",
-        "item_33M6r6"
+        "item_T3xiYe"
       ],
       "settings": {
         "title": "{{ product.metafields.custom.faq_heading.value }}",

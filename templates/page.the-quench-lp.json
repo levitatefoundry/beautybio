@@ -1,0 +1,625 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "full",
+        "custom_content_width": 1000
+      }
+    },
+    "image_hero_xWbAti": {
+      "type": "image-hero",
+      "blocks": {
+        "heading_AhGtYK": {
+          "type": "heading",
+          "settings": {
+            "title": "Thirsty Skin?<br> Quench it.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "subheading_wKCCCK": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Ceramides, peptides, and lipids flood skin with hydration and help keep it there for a plump, healthy-looking glow.",
+            "subheading_tag": "h6",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "button_6dNUaw": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/the-quench-skin-recovery-cream",
+            "link_text": "SHOP THE QUENCH",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AhGtYK",
+        "subheading_wKCCCK",
+        "button_6dNUaw"
+      ],
+      "custom_css": [
+        "h6 {font-weight: 400; font-size: 12pt; max-width: 400px;}"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 80,
+        "mobile_height": 100,
+        "image": "shopify://shop_images/b23e2034115ea68dd4411e3c34543f04f0664fdc.jpg",
+        "image_mobile": "shopify://shop_images/108104a1a1981aa0ba29e0f1ec4192d9e9ab8ad7.jpg",
+        "focal_point": "center",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "center_flex-end",
+        "show-checkboxes": false,
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_GrR4kF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Vg84Xz": {
+          "type": "heading",
+          "settings": {
+            "title": "The Science Behind The Quench",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-3-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Vg84Xz"
+      ],
+      "custom_css": [],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "custom",
+        "custom_content_width": 900
+      }
+    },
+    "image_hero_gL6gW6": {
+      "type": "image-hero",
+      "blocks": {
+        "heading_jzc76y": {
+          "type": "heading",
+          "settings": {
+            "title": "Hydrate It.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "subheading_WdGgC4": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "QUADRALIPID TECHNOLOGY",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_GjDt87": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Delivers four key lipids your skin naturally loses to boost hydration and keep it lasting longer.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "heading_4jJnzD": {
+          "type": "heading",
+          "settings": {
+            "title": "Fortify It.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "subheading_K6T6ah": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "SUNFLOWER SEED OIL",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_rnkQNm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nutrient-rich oils that support a healthy skin moisture barrier and lock in hydration.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "heading_biKYDc": {
+          "type": "heading",
+          "settings": {
+            "title": "Smooth It.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "subheading_RpXHXa": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "FIRMING PEPTIDE COMPLEX",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_ULKWGA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Peptides that help smooth skin's appearance, enhance suppleness, and refresh its look.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "heading_e8HRGq": {
+          "type": "heading",
+          "settings": {
+            "title": "Nourish It.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "subheading_Qg3arh": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "LACTIC ACID",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_VHDEMi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Gently exfoliates to refresh skin's surface, refine texture, and reveal a healthy-looking glow.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jzc76y",
+        "subheading_WdGgC4",
+        "text_GjDt87",
+        "heading_4jJnzD",
+        "subheading_K6T6ah",
+        "text_rnkQNm",
+        "heading_biKYDc",
+        "subheading_RpXHXa",
+        "text_ULKWGA",
+        "heading_e8HRGq",
+        "subheading_Qg3arh",
+        "text_VHDEMi"
+      ],
+      "custom_css": [
+        "h2 {font-size: 22pt;}",
+        "h3 {font-size: 13pt; font-weight: 900; margin-top: 2px; margin-bottom: 2px;}",
+        ".image-hero {padding: 10px 60px;}",
+        ".image-hero__text-container-text {margin: 0 0 40px 0; max-width: 400px;}",
+        "@media screen and (max-width: 800px) {.image-hero {padding: 10px 10px; } .image-hero__text-container {width: 60%; }}"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "image": "shopify://shop_images/d31679a697000bd1faf82aac64d25ee40d09530b.jpg",
+        "image_mobile": "shopify://shop_images/046d79405ac5087c84f6db29d5c00996d33b922d.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "flex-start_center",
+        "show-checkboxes": false,
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_3kbbCB": {
+      "type": "rich-text",
+      "blocks": {
+        "button_9wDTyr": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/the-quench-skin-recovery-cream",
+            "link_text": "GET HYDRATED",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "button_9wDTyr"
+      ],
+      "custom_css": [],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_8XA7YY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_adt48R": {
+          "type": "heading",
+          "settings": {
+            "title": "Clinically Tested. Customer Approved.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-3-base"
+          }
+        },
+        "text_rHKiMY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In a consumer perception study, The Quench delivered visible hydration and softness from the first application.</p>",
+            "text_font_class": "fs-body-75"
+          }
+        }
+      },
+      "block_order": [
+        "heading_adt48R",
+        "text_rHKiMY"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "custom",
+        "custom_content_width": 900
+      }
+    },
+    "image_hero_gaBkj6": {
+      "type": "image-hero",
+      "blocks": {
+        "image_ETbeWm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_1484581583.png",
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "button_eA4mVx": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/the-quench-skin-recovery-cream",
+            "link_text": "SEE THE RESULTS",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_ETbeWm",
+        "button_eA4mVx"
+      ],
+      "custom_css": [
+        ".button-block__button {position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);}"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 75,
+        "mobile_height": 100,
+        "image": "shopify://shop_images/BBS_LandingPage_QuenchFocus_02.jpg",
+        "image_mobile": "shopify://shop_images/Clinical_section_mobile_1.jpg",
+        "focal_point": "bottom",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_flex-start",
+        "text_position_mobile": "center_flex-start",
+        "show-checkboxes": false,
+        "text_color": "#ffffff",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "ts_3_steps_Pcjtdz": {
+      "type": "ts-3-steps",
+      "blocks": {
+        "step_iT6QfE": {
+          "type": "step",
+          "settings": {
+            "number": "1",
+            "step-heading": "Cleanse & Prep",
+            "step-text": "",
+            "step-richtext": "<p>Start with clean, dry skin. (Pro tip: Use <a href=\"/products/balance-ph-balanced-facial-cleanser\" title=\"The Balance\">The Balance</a> cleanser for the perfect prep.)</p>"
+          }
+        },
+        "step_B6CHiY": {
+          "type": "step",
+          "settings": {
+            "number": "2",
+            "step-heading": "Apply The Quench",
+            "step-text": "A little goes a long way - begin with a pearl sized amount and gently massage into face + neck adding more as needed.",
+            "step-richtext": ""
+          }
+        },
+        "step_nxPHbY": {
+          "type": "step",
+          "settings": {
+            "number": "3",
+            "step-heading": "Lock In & Glow",
+            "step-text": "Use at night as your final step, or under makeup for all-day hydration.",
+            "step-richtext": ""
+          }
+        },
+        "button_gwABFz": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP THE QUENCH",
+            "button_link": "shopify://products/the-quench-skin-recovery-cream"
+          }
+        }
+      },
+      "block_order": [
+        "step_iT6QfE",
+        "step_B6CHiY",
+        "step_nxPHbY",
+        "button_gwABFz"
+      ],
+      "custom_css": [
+        ".ts-3-step-container {background: #fff8f5 !important;}",
+        ".ts-step-number {background-color: #fff8f5 !important; z-index: 1;}",
+        ".ts-steps-container {width: 85%;}",
+        "p > a {text-decoration: underline;}",
+        ".ts-steps-container::before {left: calc(50px + 8%); right: calc(50px + 8%);}"
+      ],
+      "name": "TS 3 Steps",
+      "settings": {
+        "heading": "How to Use The Quench",
+        "subheading": "Your daily recovery ritual for skin that feels nourished, balanced, and glowing."
+      }
+    },
+    "image_hero_YjL9Pg": {
+      "type": "image-hero",
+      "blocks": {
+        "heading_QB7ewr": {
+          "type": "heading",
+          "settings": {
+            "title": "Ready to Quench Your Skin's Thirst?",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "text_rQiEb4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Transform your daily routine with our most nourishing, lipid-rich recovery cream clinically proven to restore hydration, bounce, and radiance.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "text_BPGKLC": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li><strong>Deep, lasting moisture for even the driest skin.</strong></li><li><strong>Safe, effective, and results-driven.</strong></li><li><strong>Ideal for dry climates, long flights, or post-treatment recovery.</strong></li></ul>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_YCTtYH": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/the-quench-skin-recovery-cream",
+            "link_text": "SHOP THE QUENCH",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QB7ewr",
+        "text_rQiEb4",
+        "text_BPGKLC",
+        "button_YCTtYH"
+      ],
+      "custom_css": [
+        ".image-hero {padding: 10px 60px;}",
+        " {background: #fff8f5;}",
+        "@media screen and (max-width: 800px) {.image-hero {padding: 10px 10px; } * {text-align: left; } a {width: 100%; }}",
+        "ul {padding-left: 0; display: flex; flex-direction: column; gap: 7px; margin-top: 30px;}",
+        "li::before {left: 0px;}",
+        "li {position: relative; text-align: left; padding: 0 0 0 45px; display: flex; align-items: center; line-height: 1; min-height: 30px;}",
+        "h2 {font-size: 30pt; max-width: 400px;}",
+        "p {max-width: 500px;}"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "image": "shopify://shop_images/Final_CTA_3.jpg",
+        "image_mobile": "shopify://shop_images/Final_CTA_-_Mobile_3.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "shopify://products/the-quench-skin-recovery-cream",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "center_flex-start",
+        "show-checkboxes": true,
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "split_faq_text_C8fdNW": {
+      "type": "split-faq-text",
+      "blocks": {
+        "faq_X3qD66": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "What makes The Quench different from other moisturizers?",
+            "faq-body": "<p>The Quench isn’t just a moisturizer – it’s a recovery cream. Powered by Quadralipid Technology, it helps restore the four essential lipids your skin naturally loses over time. This cult-fave formula delivers deep hydration, bounce, and radiance, making it a consistent best seller for a reason.</p>"
+          }
+        },
+        "faq_jmVwVX": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "Can I use The Quench morning and night?",
+            "faq-body": "<p>Yes. The Quench is designed to fit into your AM and PM routine. Use it in the morning for all-day hydration and at night as an indulgent recovery step.</p>"
+          }
+        },
+        "faq_RLp8gy": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "Is The Quench safe for sensitive skin?",
+            "faq-body": "<p>The Quench was formulated to be gentle and effective for all skin types, including sensitive skin. If your skin is highly reactive, we recommend patch-testing before first use.</p>"
+          }
+        },
+        "faq_yUpxrj": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "When will I start seeing results?",
+            "faq-body": "<p>Many users notice skin that feels more hydrated, soft, and pampered after the first use. With consistent use, you’ll see a visibly plumper, smoother, more radiant-looking complexion over time.</p>"
+          }
+        },
+        "faq_aM8n6X": {
+          "type": "faq",
+          "settings": {
+            "faq-heading": "Can I use The Quench with retinol or after microneedling?",
+            "faq-body": "<p>Yes. The Quench is an ideal partner for active treatments. It helps replenish hydration and restore comfort, making it a go-to recovery cream after retinol, clinical treatments, or microneedling.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_X3qD66",
+        "faq_jmVwVX",
+        "faq_RLp8gy",
+        "faq_yUpxrj",
+        "faq_aM8n6X"
+      ],
+      "custom_css": [
+        "{background-color: #fff8f5;}",
+        ".ts-faq[open] {background-color: #ffffff;}",
+        "h2 {font-weight: 900; font-size: 25pt; line-height: 1;}"
+      ],
+      "name": "Split Text + Faqs",
+      "settings": {
+        "heading": "You've Got Questions.<br> We've Got Glowing Answers.",
+        "body": "<p>Whether you're new to at-home skincare tech or just curious how it all works, we're here to help. These are our most-asked Qs from real BeautyBio customers.</p>",
+        "button_link": "",
+        "button_text": ""
+      }
+    },
+    "image_with_text_cN36a9": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_UpVxKR": {
+          "type": "heading",
+          "settings": {
+            "title": "Glow On, Stay Rewarded.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        },
+        "text_4t3JmL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Make every drop count with our Subscribe & Save + Glow Getter Rewards.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "text_knnRwV": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li><strong>Save 15% and enjoy free shipping on auto-deliveries</strong></li><li><strong>Earn points on every purchase to redeem for perks & gifts</strong></li><li><strong>Cancel anytime-your glow, your way</strong></li></ul>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_4EBNRT": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/the-quench-skin-recovery-cream",
+            "link_text": "SHOP THE QUENCH",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UpVxKR",
+        "text_4t3JmL",
+        "text_knnRwV",
+        "button_4EBNRT"
+      ],
+      "custom_css": [
+        "h2 {font-size: 22pt;}",
+        "p {font-size: 12pt;}",
+        "ul {padding: 10px 0;}",
+        "@media screen and (max-width: 800px) {.image-with-text__content {flex-direction: column-reverse; }}"
+      ],
+      "name": "t:sections.image_with_text.presets.name",
+      "settings": {
+        "image_position": "right",
+        "text_alignment": "left",
+        "image": "shopify://shop_images/Group_29_f5e6b5f2-3519-4e0e-8095-b8b4a26b96c3.png",
+        "aspect_ratio": "natural",
+        "focal_point": "left",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "image_presentation",
+        "background_color": "#ffede5",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "bullets": "checkbox",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_hero_xWbAti",
+    "rich_text_GrR4kF",
+    "image_hero_gL6gW6",
+    "rich_text_3kbbCB",
+    "rich_text_8XA7YY",
+    "image_hero_gaBkj6",
+    "ts_3_steps_Pcjtdz",
+    "image_hero_YjL9Pg",
+    "split_faq_text_C8fdNW",
+    "image_with_text_cN36a9"
+  ]
+}

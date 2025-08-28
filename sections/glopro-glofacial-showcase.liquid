@@ -4,8 +4,67 @@
   <div class="double-showcase__desktop-container">
     <div class="double-showcase__desktop-column">
       <div class="double-showcase__desktop-diagram">
+        <h2>GLOfacial</h2>
+        <p>POR CLEANSING TOOL</p>
+        <div class="double-showcase__desktop-row">
+          <div class="double-showcase__desktop-diagram-column">
+            <div class="double-showcase__diagram-pod">
+              {% render 'vacuum-svg' %}
+              <h3>Vortex Vacuum Tech</h3>
+              <p>Gently pulls out excess oil, impurities, and debris.</p>
+            </div>
+            <div class="double-showcase__diagram-pod">
+              {% render 'front-face-with-sparkles' %}
+              <h3>Infuses While It Cleans</h3>
+              <p>Hydrates and infuses clarifying or plumping skincare benefits.</p>
+            </div>
+            <div class="double-showcase__diagram-pod">
+              {% render 'pore-svg' %}
+              <h3>Tighter Looking Pores</h3>
+              <p>Helps pores appear smaller while resurfacing texture.</p>
+            </div>
+          </div>
+          <div class="double-showcase__image-wrapper">
+            {{ section.settings.product1_img | image_url: width: 200 | image_tag }}
+          </div>
+          <div class="double-showcase__desktop-diagram-column">
+            <div class="double-showcase__diagram-pod">
+              {% render 'sparkles-svg' %}
+              <h3>Instant Glow, Real Clean</h3>
+              <p>Leaves skin feeling soft, fresh, and actually clean—not stripped.</p>
+            </div>
+            <div class="double-showcase__diagram-pod">
+              {% render 'gear-up-svg' %}
+              <h3>Customizable and Replaceable Tips</h3>
+              <p>3 targeted treatment tips for every zone that needs love.</p>
+            </div>
+            <div class="double-showcase__diagram-pod">
+              {% render 'side-face-svg' %}
+              <h3>Safe for Sensitive Skin</h3>
+              <p>Proven safe for all skin types, including sensitive.</p>
+            </div>
+          </div>
+        </div>
+        <p class="diagram-caption"><strong>Best For: </strong>Oily T-zones, dullness, congested skin, and uneven tone.</p>
+        <p class="diagram-caption"><strong>Use 1-2x per week</strong></p>
+      </div>
+      {%-
+        render 'button-block' with
+        wrapper_class: "image-hero__text-container-image-button section-blocks__button",
+        link: section.settings.button1_link,
+        label: section.settings.button1_text,
+        button_style: "btn--primary",
+        is_overlay: true,
+        button_alignment: "center",
+        button_alignment_mobile: "center",
+        buttons_can_inline: true,
+        forloop: forloop
+      -%}
+    </div>
+    <div class="double-showcase__desktop-column">
+      <div class="double-showcase__desktop-diagram">
         <h2>GloPRO®</h2>
-        <p>MICRONEEDLING TOOL + BODY ATTACHMENT</p>
+        <p>MICRONEEDLING TOOL</p>
         <div class="double-showcase__desktop-row">
           <div class="double-showcase__desktop-diagram-column">
             <div class="double-showcase__diagram-pod">
@@ -25,7 +84,7 @@
             </div>
           </div>
           <div class="double-showcase__image-wrapper">
-            {{ section.settings.product1_img | image_url: width: 200 | image_tag }}
+            {{ section.settings.product2_img | image_url: width: 200 | image_tag }}
           </div>
           <div class="double-showcase__desktop-diagram-column">
             <div class="double-showcase__diagram-pod">
@@ -48,56 +107,89 @@
         <p class="diagram-caption"><strong>Best For: </strong>Aging skin, texture, fine lines, loss of firmness.</p>
         <p class="diagram-caption"><strong>Use 2-3x per week</strong></p>
       </div>
+      {%-
+        render 'button-block' with
+        wrapper_class: "image-hero__text-container-image-button section-blocks__button",
+        link: section.settings.button2_link,
+        label: section.settings.button2_text,
+        button_style: "btn--primary",
+        is_overlay: true,
+        button_alignment: "center",
+        button_alignment_mobile: "center",
+        buttons_can_inline: true,
+        forloop: forloop
+      -%}
     </div>
+  </div>
+  <div class="double-showcase__mobile-container">
     <div class="double-showcase__desktop-column">
       <div class="double-showcase__desktop-diagram">
-        <h2>The Sculptor</h2>
-        <p>FIRMING BODY CREAM</p>
-        <div class="double-showcase__desktop-row">
-          <div class="double-showcase__desktop-diagram-column">
-            <div class="double-showcase__diagram-pod">
-              {% render 'smooth-firm-svg' %}
-              <h3>Helps Visibly Firm + Smooth Texture</h3>
-              <p>LipoCare™ Tech works to visibly restore volume for smoother-looking skin.</p>
+        <h2>GLOfacial</h2>
+        <p>POR CLEANSING TOOL</p>
+        <div class="double-showcase__slideshow2">
+          <div class="double-showcase__slide2">
+            <div class="double-showcase__image-wrapper img-wrapper2">
+              {{ section.settings.product1_img | image_url: width: 200 | image_tag }}
             </div>
-            <div class="double-showcase__diagram-pod">
-              {% render 'molecule-svg' %}
-              <h3>Buildable Formula</h3>
-              <p>Apply in layers to help visibly blur fine lines and crepiness.</p>
-            </div>
-            <div class="double-showcase__diagram-pod">
-              {% render 'legs-svg' %}
-              <h3>Caffeine-Powered Bodycare</h3>
-              <p>Protects skin from stressors and supports a toned look.</p>
-            </div>
-          </div>
-          <div class="double-showcase__image-wrapper img-wrapper2">
-            {{ section.settings.product2_img | image_url: width: 200 | image_tag }}
-          </div>
-          <div class="double-showcase__desktop-diagram-column">
-            <div class="double-showcase__diagram-pod">
-              {% render 'sparkles-svg' %}
-              <h3>Green Tea Seed Oil Hydration</h3>
-              <p>Helps nourish, soften, and support skin's moisture barrier.</p>
-            </div>
-            <div class="double-showcase__diagram-pod">
-              {% render 'front-face-with-sparkles' %}
-              <h3>Results You Can Feel</h3>
-              <p>Absorbs quickly — great for daily use without stickiness.</p>
-            </div>
-            <div class="double-showcase__diagram-pod">
-              {% render 'side-face-svg' %}
-              <h3>Clean, Conscious Formula</h3>
-              <p>No parabens or fillers—just the good stuff for your skin.</p>
+            <div class="double-showcase__desktop-diagram-column">
+                <div class="double-showcase__diagram-pod">
+                {% render 'vacuum-svg' %}
+                <h3>Vortex Vacuum Tech</h3>
+                <p>Gently pulls out excess oil, impurities, and debris.</p>
+                </div>
+                <div class="double-showcase__diagram-pod">
+                {% render 'front-face-with-sparkles' %}
+                <h3>Infuses While It Cleans</h3>
+                <p>Hydrates and infuses clarifying or plumping skincare benefits.</p>
+                </div>
+                <div class="double-showcase__diagram-pod">
+                {% render 'pore-svg' %}
+                <h3>Tighter Looking Pores</h3>
+                <p>Helps pores appear smaller while resurfacing texture.</p>
+                </div>
             </div>
           </div>
+          <div class="double-showcase__slide2">
+            <div class="double-showcase__image-wrapper img-wrapper2">
+              {{ section.settings.product1_img | image_url: width: 200 | image_tag }}
+            </div>
+            <div class="double-showcase__desktop-diagram-column">
+                <div class="double-showcase__diagram-pod">
+                {% render 'sparkles-svg' %}
+                <h3>Instant Glow, Real Clean</h3>
+                <p>Leaves skin feeling soft, fresh, and actually clean—not stripped.</p>
+                </div>
+                <div class="double-showcase__diagram-pod">
+                {% render 'gear-up-svg' %}
+                <h3>Customizable and Replaceable Tips</h3>
+                <p>3 targeted treatment tips for every zone that needs love.</p>
+                </div>
+                <div class="double-showcase__diagram-pod">
+                {% render 'side-face-svg' %}
+                <h3>Safe for Sensitive Skin</h3>
+                <p>Proven safe for all skin types, including sensitive.</p>
+                </div>
+            </div>
+          </div>
+          <button class="slide-arrow prev-arrow2">&#10094;</button>
+          <button class="slide-arrow next-arrow2">&#10095;</button>
         </div>
         <p class="diagram-caption"><strong>Best For: </strong>Crepey skin, rough texture, and loss of firmness on arms, tummy, and thighs.</p>
         <p class="diagram-caption"><strong>Use 1-2x a day</strong></p>
       </div>
+      {%-
+        render 'button-block' with
+        wrapper_class: "image-hero__text-container-image-button section-blocks__button",
+        link: section.settings.button2_link,
+        label: section.settings.button2_text,
+        button_style: "btn--primary",
+        is_overlay: true,
+        button_alignment: "center",
+        button_alignment_mobile: "center",
+        buttons_can_inline: true,
+        forloop: forloop
+      -%}
     </div>
-  </div>
-  <div class="double-showcase__mobile-container">
     <div class="double-showcase__desktop-column">
       <div class="double-showcase__desktop-diagram">
         <h2>GloPRO®</h2>
@@ -105,7 +197,7 @@
         <div class="double-showcase__slideshow">
           <div class="double-showcase__slide">
             <div class="double-showcase__image-wrapper">
-              {{ section.settings.product1_img | image_url: width: 200 | image_tag }}
+              {{ section.settings.product2_img | image_url: width: 200 | image_tag }}
             </div>
             <div class="double-showcase__desktop-diagram-column">
               <div class="double-showcase__diagram-pod">
@@ -127,7 +219,7 @@
           </div>
           <div class="double-showcase__slide">
             <div class="double-showcase__image-wrapper">
-              {{ section.settings.product1_img | image_url: width: 200 | image_tag }}
+              {{ section.settings.product2_img | image_url: width: 200 | image_tag }}
             </div>
             <div class="double-showcase__desktop-diagram-column">
               <div class="double-showcase__diagram-pod">
@@ -153,76 +245,20 @@
         <p class="diagram-caption"><strong>Best For: </strong>Aging skin, texture, fine lines, loss of firmness.</p>
         <p class="diagram-caption"><strong>Use 2-3x per week</strong></p>
       </div>
-    </div>
-    <div class="double-showcase__desktop-column">
-      <div class="double-showcase__desktop-diagram">
-        <h2>The Sculptor</h2>
-        <p>FIRMING BODY CREAM</p>
-        <div class="double-showcase__slideshow2">
-          <div class="double-showcase__slide2">
-            <div class="double-showcase__image-wrapper img-wrapper2">
-              {{ section.settings.product2_img | image_url: width: 200 | image_tag }}
-            </div>
-            <div class="double-showcase__desktop-diagram-column">
-              <div class="double-showcase__diagram-pod">
-                {% render 'smooth-firm-svg' %}
-                <h3>Helps Visibly Firm + Smooth Texture</h3>
-                <p>LipoCare™ Tech works to visibly restore volume for smoother-looking skin.</p>
-              </div>
-              <div class="double-showcase__diagram-pod">
-                {% render 'molecule-svg' %}
-                <h3>Buildable Formula</h3>
-                <p>Apply in layers to help visibly blur fine lines and crepiness.</p>
-              </div>
-              <div class="double-showcase__diagram-pod">
-                {% render 'legs-svg' %}
-                <h3>Caffeine-Powered Bodycare</h3>
-                <p>Protects skin from stressors and supports a toned look.</p>
-              </div>
-            </div>
-          </div>
-          <div class="double-showcase__slide2">
-            <div class="double-showcase__image-wrapper img-wrapper2">
-              {{ section.settings.product2_img | image_url: width: 200 | image_tag }}
-            </div>
-            <div class="double-showcase__desktop-diagram-column">
-              <div class="double-showcase__diagram-pod">
-                {% render 'sparkles-svg' %}
-                <h3>Green Tea Seed Oil Hydration</h3>
-                <p>Helps nourish, soften, and support skin's moisture barrier.</p>
-              </div>
-              <div class="double-showcase__diagram-pod">
-                {% render 'front-face-with-sparkles' %}
-                <h3>Results You Can Feel</h3>
-                <p>Absorbs quickly — great for daily use without stickiness.</p>
-              </div>
-              <div class="double-showcase__diagram-pod">
-                {% render 'side-face-svg' %}
-                <h3>Clean, Conscious Formula</h3>
-                <p>No parabens or fillers—just the good stuff for your skin.</p>
-              </div>
-            </div>
-          </div>
-          <button class="slide-arrow prev-arrow2">&#10094;</button>
-          <button class="slide-arrow next-arrow2">&#10095;</button>
-        </div>
-        <p class="diagram-caption"><strong>Best For: </strong>Crepey skin, rough texture, and loss of firmness on arms, tummy, and thighs.</p>
-        <p class="diagram-caption"><strong>Use 1-2x a day</strong></p>
-      </div>
+      {%-
+        render 'button-block' with
+        wrapper_class: "image-hero__text-container-image-button section-blocks__button",
+        link: section.settings.button1_link,
+        label: section.settings.button1_text,
+        button_style: "btn--primary",
+        is_overlay: true,
+        button_alignment: "center",
+        button_alignment_mobile: "center",
+        buttons_can_inline: true,
+        forloop: forloop
+      -%}
     </div>
   </div>
-  {%-
-    render 'button-block' with
-    wrapper_class: "image-hero__text-container-image-button section-blocks__button",
-    link: section.settings.button1_link,
-    label: section.settings.button1_text,
-    button_style: "btn--primary",
-    is_overlay: true,
-    button_alignment: "center",
-    button_alignment_mobile: "center",
-    buttons_can_inline: true,
-    forloop: forloop
-  -%}
 </section>
 
 <script>
@@ -309,7 +345,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 7px;
   }
 
   .slide-arrow {
@@ -344,7 +379,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 7px;
   }
 
   .prev-arrow2 {
@@ -356,17 +390,12 @@
 </style>
 
 <style>
-  .double-showcase-container {
+  #shopify-section-{{ section.id }} .double-showcase-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px 50px;
-    background: linear-gradient(to bottom, #fcdee3 0%, white 50%);
-  }
-
-  .double-showcase__heading {
-    font-size: 22pt;
-    font-weight: 500;
+    background: linear-gradient(to bottom, #F3C8CF 33%, white 33%);
   }
 
   .double-showcase-container * {
@@ -376,8 +405,6 @@
   .double-showcase__desktop-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
   }
 
@@ -390,8 +417,7 @@
     flex-direction: column;
     gap: 20px;
     flex-grow: 1;
-    width: fit-content;
-    max-width: 700px;
+    max-width: 600px;
   }
 
   .double-showcase__desktop-row {
@@ -405,7 +431,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    min-width: 157px;
     width: 37%;
   }
 
@@ -432,8 +457,9 @@
   }
 
   .double-showcase__image-wrapper {
-    width: 250px;
+    width: 25%;
     object-fit: contain;
+    /* aspect-ratio: 4 / 11; */
     height: fit-content;
     display: flex;
     justify-content: center;
@@ -458,11 +484,11 @@
       display: none;
     }
 
-  @media only screen and (max-width: 800px) {
-    .double-showcase-container {
+  @media only screen and (max-width: 750px) {
+    #shopify-section-{{ section.id }} .double-showcase-container {
       padding: 30px 15px;
     }
-
+    
     .double-showcase__desktop-container {
       display: none;
     }
@@ -475,26 +501,21 @@
 
     .double-showcase__image-wrapper {
       width: 50%;
-      min-width: 150px;
+    }
+
+    #shopify-section-{{ section.id }} .double-showcase__image-wrapper img {
+      max-width: 125px
     }
 
     .double-showcase__desktop-diagram {
       padding: 30px 0;
-    }
-
-    .double-showcase__desktop-diagram-column {
-      min-width: none;
-    }
-
-    #shopify-section-{{ section.id }} .double-showcase__image-wrapper img {
-      max-width: 175px
     }
   }
 </style>
 
 {% schema %}
   {
-    "name": "Double Showcase",
+    "name": "GloPRO GLOfacial Showcase",
     "settings": [
       {
         "type": "text",
@@ -525,12 +546,22 @@
         "type": "image_picker",
         "id": "product2_img",
         "label": "Product 2 image"
+      },
+      {
+        "type": "text",
+        "id": "button2_text",
+        "label": "Button 2 text"
+      },
+      {
+        "type": "url",
+        "id": "button2_link",
+        "label": "Button 2 link"
       }
     ],
     "blocks": [],
     "presets": [
       {
-        "name": "Double Showcase",
+        "name": "GloPRO GLOfacial Showcase",
         "settings": {}
       }
     ]

@@ -1,254 +1,207 @@
+{% capture svg_content %}
+  {% render 'checkmark-bullet-svg' %}  <!-- Your SVG snippet -->
+{% endcapture %}
+{% assign encoded_svg = svg_content | base64_encode %}
+
+{% capture star_svg_content %}
+  {% render 'star-bullet' %}  <!-- Your SVG snippet -->
+{% endcapture %}
+{% assign star_encoded_svg = star_svg_content | base64_encode %}
+
 {%- liquid
+  assign has_background_color = false
+
+  if section.settings.background_color != blank and section.settings.background_color != 'rgba(0,0,0,0)'
+    assign has_background_color = true
+  endif
+
+  assign show_animations = false
+  if settings.enable_section_animations and section.settings.enable_animation
+    assign show_animations = true
+  endif
   assign prioritize_loading = false
   if section.index == 1
     assign prioritize_loading = true
   endif
 -%}
 
+{%- capture section_classes -%}
+  section section--divider-{{ section.settings.divider_style }}
+  {{ section.settings.section_padding }}
+{%- endcapture -%}
+
 <div
   class="
-    image-with-text-split
-    image-with-text-split--image-position-{{ section.settings.image_position }}
-    image-with-text-split--image-mobile-position-{{ section.settings.image_mobile_position }}
-    image-with-text-split--image-padding-{{ section.settings.image_padding }}
-    image-with-text-split--content-align-{{ section.settings.content_alignment }}
-    section
-    section--full-width
-    {{ section.settings.section_padding }}
-    {% if settings.enable_section_animations and section.settings.enable_animation %}
+    image-with-text
+    image-with-text--justify-{{ section.settings.text_alignment }}
+    image-with-text--image-{{ section.settings.image_position }}
+    {% unless has_background_color %}
+      {{ section_classes }}
+    {% endunless %}
+    {% if show_animations %}
       animation
-      animation--image-with-text-split
+      animation--image-with-text
     {% endif %}
   "
   data-section-id="{{ section.id }}"
-  data-section-type="image-with-text-split"
+  data-section-type="image-with-text"
   style="
-    --text-align: {{ section.settings.content_alignment }};
-    --color-background: {{ section.settings.background_color }};
+    --section-background-color: {{ section.settings.background_color }};
     --color-text: {{ section.settings.text_color }};
+    --color-text-alpha-60: {{ section.settings.text_color | color_modify: 'alpha', 0.6 }};
     --color-text-link: {{ section.settings.text_color }};
+    --text-alignment: {{ section.settings.text_alignment }};
+    --small-image-placeholder-color: {{ settings.color_text | color_modify: 'alpha', 0.7 }};
     {% render 'overlay-button-vars' with color_button_text: section.settings.button_text_color, color_button_background: section.settings.button_background_color %}
   "
 >
-  <div class="image-with-text-split__inner">
-    <div class="image-with-text-split__image-container">
-      {%-
-        render 'image' with
-        wrapper_class: "image-with-text-split__image",
-        image: section.settings.image,
-        sizes: "(min-width: 960px) 50vw, 100vw",
-        aspect_ratio: section.settings.aspect_ratio,
-        focal_point: section.settings.focal_point,
-        include_placeholder: true,
-        animate: true,
-        prioritize_loading: prioritize_loading
-      -%}
-    </div>
-    <div class="image-with-text-split__text-container">
-      <div class="image-with-text-split__text-container-inner section-blocks animation--section-blocks">
-        {%- for block in section.blocks -%}
-          {%- case block.type -%}
-            {%- when 'accent' -%}
-              {%- unless block.settings.accent == blank -%}
-                <p class="image-with-text-split__text-container-accent fs-accent section-blocks__accent">
-                  {{ block.settings.accent }}
-                </p>
-              {%- endunless -%}
-            {%- when 'heading' -%}
-              {%- unless block.settings.title == blank -%}
-                <{{ block.settings.heading_tag }} class="image-with-text-split__text-container-heading ff-heading {{ block.settings.heading_font_class }} section-blocks__heading">
-                  {{ block.settings.title }}
-                </{{ block.settings.heading_tag }}>
-              {%- endunless -%}
-            {%- when 'subheading' -%}
-              {%- unless block.settings.subheading == blank -%}
-                <{{ block.settings.subheading_tag }} class="image-with-text-split__text-container-subheading ff-subheading {{ block.settings.subheading_font_class }} section-blocks__subheading">
-                  {{ block.settings.subheading }}
-                </{{ block.settings.subheading_tag }}>
-              {%- endunless -%}
-            {%- when 'text' -%}
-              {%- unless block.settings.text == blank -%}
-                <div class="image-with-text-split__text-container-text rte ff-body {{ block.settings.text_font_class }} section-blocks__text">
-                  {{ block.settings.text }}
-                </div>
-              {%- endunless -%}
-            {%- when 'image' -%}
-              {%-
-                render 'image-block' with
-                shopify_attributes: block.shopify_attributes,
-                wrapper_class: 'image-with-text-split__text-container-image  section-blocks__image',
-                image: block.settings.image,
-                width: block.settings.image_size,
-                mobile_width: block.settings.image_size_mobile,
-                break_to_mobile_at: '720',
-                align: section.settings.content_alignment
-              -%}
-            {%- when 'button' -%}
-              {%-
-                render 'button-block' with
-                wrapper_class: "image-with-text-split__text-container-button section-blocks__button",
-                link: block.settings.link,
-                label: block.settings.link_text,
-                button_style: block.settings.button_style,
-                is_overlay: true,
-                button_alignment: section.settings.content_alignment,
-                buttons_can_inline: true,
-                forloop: forloop
-              -%}
-            {%- when 'play-button' -%}
-              {%-
-                render 'play-button-block' with
-                wrapper_class: 'image-with-text-split__text-container-play-button section-blocks__video-button',
-                block: block,
-                button_alignment: section.settings.content_alignment
-              -%}
-            {%- when 'border' -%}
-              {%- render 'border-block' -%}
-            {%- when 'spacer' -%}
-              {%- render 'spacer-block' with space: block.settings.space -%}
-            {% when 'image-with-text' %}
-              <div class="block-image-text-container">
-                <div class="block-image-text__text">
-                  {{ block.settings.text }}
-                </div>
-                <img class="block-image-text-img" src="{{ block.settings.img | image_url }}" width="auto" height="auto" alt="image">
-              </div>
-          {%- endcase -%}
-        {%- endfor -%}
+  <div
+    class="
+      image-with-text__inner
+      {% if has_background_color %}
+        {{ section_classes }}
+      {% endif %}
+    "
+  >
+    <div class="image-with-text__content">
+      <div class="image-with-text__image-container">
+        <ul class="split-richtext-with-list__list">
+            {% for block in section.blocks %}
+                {% if block.type == "listpoint" %}
+                    <li>{{ block.settings.text }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+      </div>
+
+      <div class="image-with-text__text-container">
+        <div
+          class="
+            image-with-text__text-container-inner
+            section-blocks
+            {% if show_animations %}animation--section-blocks{% endif %}
+          "
+        >
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'accent' -%}
+                {%- unless block.settings.accent == blank -%}
+                  <p class="image-with-text__text-container-accent fs-accent section-blocks__accent">
+                    {{ block.settings.accent }}
+                  </p>
+                {%- endunless -%}
+              {%- when 'heading' -%}
+                {%- unless block.settings.title == blank -%}
+                  <{{ block.settings.heading_tag }} class="image-with-text__text-container-heading ff-heading {{ block.settings.heading_font_class }} section-blocks__heading">
+                    {{ block.settings.title }}
+                  </{{ block.settings.heading_tag }}>
+                {%- endunless -%}
+              {%- when 'subheading' -%}
+                {%- unless block.settings.subheading == blank -%}
+                  <{{ block.settings.subheading_tag }} class="image-with-text__text-container-subheading ff-subheading {{ block.settings.subheading_font_class }} section-blocks__subheading">
+                    {{ block.settings.subheading }}
+                  </{{ block.settings.subheading_tag }}>
+                {%- endunless -%}
+              {%- when 'text' -%}
+                {%- unless block.settings.text == blank -%}
+                  <div class="image-with-text__text-container-text rte ff-body {{ block.settings.text_font_class }} section-blocks__text">
+                    {{ block.settings.text }}
+                  </div>
+                {%- endunless -%}
+              {%- when 'image' -%}
+                {%-
+                  render 'image-block' with
+                  shopify_attributes: block.shopify_attributes,
+                  wrapper_class: 'image-with-text__text-container-image section-blocks__image  section-blocks__image',
+                  image: block.settings.image,
+                  width: block.settings.image_size,
+                  mobile_width: block.settings.image_size_mobile,
+                  break_to_mobile_at: '720',
+                  align: section.settings.text_alignment
+                -%}
+              {%- when 'button' -%}
+                {%-
+                  render 'button-block' with
+                  wrapper_class: "image-with-text__text-container-button section-blocks__button",
+                  link: block.settings.link,
+                  label: block.settings.link_text,
+                  button_style: block.settings.button_style,
+                  is_overlay: true,
+                  button_alignment: section.settings.text_alignment,
+                  buttons_can_inline: true,
+                  forloop: forloop
+                -%}
+              {%- when 'play-button' -%}
+                {%-
+                  render 'play-button-block' with
+                  wrapper_class: 'image-with-text__text-container-play-button section-blocks__video-button',
+                  block: block,
+                  button_alignment: section.settings.text_alignment
+                -%}
+              {%- when 'border' -%}
+                {%- render 'border-block' -%}
+              {%- when 'spacer' -%}
+                {%- render 'spacer-block' with space: block.settings.space -%}
+            {%- endcase -%}
+          {%- endfor -%}
+        </div>
       </div>
     </div>
   </div>
 </div>
 
+
+{% if section.settings.bullets == "check" %}
 <style>
-  .block-image-text-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .block-image-text-img {
-    max-width: 50%;
-  }
-
-  @media screen and (max-width: 800px) {
-    .image-with-text-split__text-container-inner {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  #shopify-section-{{ section.id }} li::before {
+    content: url("data:image/svg+xml;base64,{{ encoded_svg }}");
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 </style>
-                  
+{% elsif section.settings.bullets == "star" %}
+<style>
+  #shopify-section-{{ section.id }} li::before {
+    content: url("data:image/svg+xml;base64,{{ star_encoded_svg }}");
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+</style>
+{% endif %}
+
 {% schema %}
 {
-  "name": "t:sections.image_with_text_split.name",
+  "name": "Split Richtext With List",
   "tag": "section",
-  "class": "shopify-section--full-width",
   "disabled_on": {
     "groups": ["header", "custom.overlay"]
   },
   "settings": [
     {
-      "type": "header",
-      "content": "t:sections.image_with_text_split.settings.header__image.content"
-    },
-    {
       "type": "select",
       "id": "image_position",
-      "label": "t:sections.image_with_text_split.settings.image_position.label",
+      "label": "List position",
       "default": "right",
       "options": [
         {
           "value": "left",
-          "label": "t:sections.image_with_text_split.settings.image_position.option_left"
+          "label": "t:sections.image_with_text.settings.image_position.option_left"
         },
         {
           "value": "right",
-          "label": "t:sections.image_with_text_split.settings.image_position.option_right"
+          "label": "t:sections.image_with_text.settings.image_position.option_right"
         }
       ]
     },
     {
       "type": "select",
-      "id": "image_mobile_position",
-      "label": "t:sections.image_with_text_split.settings.image_mobile_position.label",
-      "default": "above-content",
-      "options": [
-        {
-          "value": "above-content",
-          "label": "t:sections.image_with_text_split.settings.image_mobile_position.option_above"
-        },
-        {
-          "value": "below-content",
-          "label": "t:sections.image_with_text_split.settings.image_mobile_position.option_below"
-        }
-      ]
-    },
-    {
-      "type": "select",
-      "id": "image_padding",
-      "label": "t:sections.image_with_text_split.settings.image_padding.label",
-      "default": "none",
-      "options": [
-        {
-          "label": "t:sections.image_with_text_split.settings.image_padding.option_none", "value": "none"
-        },
-        {
-          "label": "t:sections.image_with_text_split.settings.image_padding.option_top_bottom", "value": "top-and-bottom"
-        },
-        {
-          "label": "t:sections.image_with_text_split.settings.image_padding.option_all_sides", "value": "all-sides"
-        }
-      ]
-    },
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "t:sections.image_with_text_split.settings.image.label"
-    },
-    {
-      "type": "select",
-      "id": "aspect_ratio",
-      "label": "t:shared.settings.aspect_ratio.label",
-      "default": "square",
-      "options": [
-        {
-          "value": "natural",
-          "label": "t:shared.settings.aspect_ratio.option_natural"
-        },
-        {
-          "value": "square",
-          "label": "t:shared.settings.aspect_ratio.option_square"
-        },
-        {
-          "value": "portrait",
-          "label": "t:shared.settings.aspect_ratio.option_portrait"
-        },
-        {
-          "value": "landscape",
-          "label": "t:shared.settings.aspect_ratio.option_landscape"
-        }
-      ]
-    },
-    {
-      "id": "focal_point",
-      "type": "select",
-      "label": "t:shared.settings.focal_point.label",
-      "options": [{"label":"t:shared.settings.focal_point.option_image","value":"image_presentation"},{"label":"t:shared.settings.focal_point.option_center","value":"center"},{"label":"t:shared.settings.focal_point.option_top","value":"top"},{"label":"t:shared.settings.focal_point.option_bottom","value":"bottom"},{"label":"t:shared.settings.focal_point.option_left","value":"left"},{"label":"t:shared.settings.focal_point.option_right","value":"right"}],
-      "default": "image_presentation"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.image_with_text_split.settings.header__content.content"
-    },
-    {
-      "type": "select",
-      "id": "content_alignment",
-      "label": "t:sections.image_with_text_split.settings.content_alignment.label",
-      "default": "left",
+      "id": "text_alignment",
+      "label": "t:sections.image_with_text.settings.text_alignment.label",
+      "default": "center",
       "options": [
         {
           "value": "left",
@@ -271,13 +224,12 @@
     {
       "type": "color",
       "id": "background_color",
-      "label": "t:shared.settings.background_color.label",
-      "default": "#D9A49C"
+      "label": "t:shared.settings.background_color.label"
     },
     {
       "type": "color",
       "id": "text_color",
-      "label": "t:sections.image_with_text_split.settings.text_color.label",
+      "label": "t:shared.settings.text_color.label",
       "default": "#000000"
     },
     {
@@ -297,6 +249,26 @@
       "content": "t:shared.settings.section_style.header_style.content"
     },
     {
+      "type": "select",
+      "id": "bullets",
+      "label": "Custom bullet points",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "check",
+          "label": "Checkmark"
+        },
+        {
+          "value": "star",
+          "label": "Star"
+        },
+      ],
+      "default": "none"
+    },
+    {
       "id": "enable_animation",
       "type": "checkbox",
       "label": "t:shared.settings.section_style.enable_animation.label",
@@ -305,9 +277,23 @@
     },
     {
       "type": "select",
+      "id": "divider_style",
+      "label": "t:shared.settings.section_style.divider_style.label",
+      "default": "none",
+      "options": [
+        {
+          "label": "t:shared.settings.section_style.divider_style.option_none", "value": "none"
+        },
+        {
+          "label": "t:shared.settings.section_style.divider_style.option_solid", "value": "solid"
+        }
+      ]
+    },
+    {
+      "type": "select",
       "id": "section_padding",
       "label": "t:shared.settings.section_style.section_padding.label",
-      "default": "section--vertical-padding-none",
+      "default": "section--vertical-padding-top-bottom",
       "options": [
         {
           "label": "t:shared.settings.section_style.section_padding.option_none", "value": "section--vertical-padding-none"
@@ -327,25 +313,37 @@
   "blocks": [
     {
       "type": "accent",
-      "name": "t:sections.image_with_text_split.blocks.accent.name",
+      "name": "t:sections.image_with_text.blocks.accent.name",
       "settings": [
         {
           "id": "accent",
           "type": "text",
-          "label": "t:sections.image_with_text_split.blocks.accent.settings.text.label",
+          "label": "t:sections.image_with_text.blocks.accent.settings.text.label",
           "default": "Accent"
         }
       ]
     },
     {
+      "type": "listpoint",
+      "name": "Listpoint",
+      "settings": [
+        {
+          "id": "text",
+          "type": "text",
+          "label": "Listpoint text",
+          "default": "This is the list point."
+        }
+      ]
+    },
+    {
       "type": "heading",
-      "name": "t:sections.image_with_text_split.blocks.title.name",
+      "name": "t:sections.image_with_text.blocks.title.name",
       "settings": [
         {
           "id": "title",
           "type": "text",
-          "label": "t:sections.image_with_text_split.blocks.title.settings.title.label",
-          "default": "Image with text split"
+          "label": "t:sections.image_with_text.blocks.title.settings.title.label",
+          "default": "Image with text"
         },
         {
           "id": "heading_tag",
@@ -403,13 +401,13 @@
     },
     {
       "type": "subheading",
-      "name": "t:sections.image_with_text_split.blocks.subheading.name",
+      "name": "t:sections.image_with_text.blocks.subheading.name",
       "settings": [
         {
           "id": "subheading",
           "type": "text",
-          "label": "t:sections.image_with_text_split.blocks.subheading.settings.text.label",
-          "default": "Use these sections to promote a particular feature with editorial photography."
+          "label": "t:sections.image_with_text.blocks.subheading.settings.text.label",
+          "default": "Use these sections to promote a particular feature with editorial photography"
         },
         {
           "id": "subheading_tag",
@@ -467,13 +465,13 @@
     },
     {
       "type": "text",
-      "name": "t:sections.image_with_text_split.blocks.text.name",
+      "name": "t:sections.image_with_text.blocks.text.name",
       "settings": [
         {
           "id": "text",
           "type": "richtext",
-          "label": "t:sections.image_with_text_split.blocks.text.settings.text.label",
-          "default": "<p>Use these sections to promote a particular feature with editorial photography.</p>"
+          "label": "t:sections.image_with_text.blocks.text.settings.text.label",
+          "default": "<p>Use these sections to promote a particular feature with editorial photography</p>"
         },
         {
           "type": "select",
@@ -530,18 +528,18 @@
     },
     {
       "type": "button",
-      "name": "t:sections.image_with_text_split.blocks.button.name",
+      "name": "t:sections.image_with_text.blocks.button.name",
       "limit": 2,
       "settings": [
         {
           "id": "link",
           "type": "url",
-          "label": "t:sections.image_with_text_split.blocks.button.settings.link.label"
+          "label": "t:shared.settings.button_link.label"
         },
         {
           "id": "link_text",
           "type": "text",
-          "label": "t:sections.image_with_text_split.blocks.button.settings.link_text.label",
+          "label": "t:shared.settings.button_link_text.label",
           "default": "Read more"
         },
         {
@@ -681,36 +679,20 @@
           "unit": "px"
         }
       ]
-    },
-    {
-      "type": "image-with-text",
-      "name": "image-with-text",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "img",
-          "label": "Image"
-        },
-        {
-          "type": "richtext",
-          "id": "text",
-          "label": "Text"
-        }
-      ]
     }
   ],
   "presets": [
     {
-      "name": "t:sections.image_with_text_split.presets.name",
+      "name": "Split Richtext With List",
       "blocks": [
-        {
-          "type": "accent"
-        },
         {
           "type": "heading"
         },
         {
           "type": "subheading"
+        },
+        {
+          "type": "button"
         }
       ]
     }

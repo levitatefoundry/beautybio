@@ -1,1 +1,84 @@
-{"type":"custom.overlay","name":"t:groups.overlay_group.name","sections":{"quick-cart":{"type":"quick-cart","custom_css":[],"settings":{"enable_quick_cart":false,"show_product_currency":false,"promotion_text":"<p>Not sure where to start?<br\/>↓<\/p>","collection_list":["skincare-best-sellers","creams-serums-skincare-products","beauty-tools","all-things-glopro","all-thing-glofacial","sets-minis"],"collection_list_button_style":"btn--secondary"}},"popup":{"type":"popup","blocks":{"flyout_signup_BH8WCG":{"type":"flyout_signup","disabled":true,"settings":{"delay":"timer_30000","frequency":"frequency_100000","show_on_exit_intent":false,"disable_for_account_holders":true,"show_on_specific_page":false,"target_page":"","accent":"","heading":"Join us","heading_font_class":"fs-heading-2-base","text":"<p>Signup and get 15% off your first purchase<\/p>","link_text":"Get offer","dismiss_text":"No thanks","footer_text":"<p>By completing this form, you are signing up to receive our emails and can unsubscribe at any time<\/p>","tags":"newsletter","flyout_position":"right","content_alignment":"center","focal_point":"image_presentation","background_color":"#ffffff","text_color":"#000000","input_color":"#000000","input_background":"#ffffff","button_background_color":"#000000","button_text_color":"#ffffff","color_overlay":"#000000","overlay_opacity":0,"enable_tab":true,"tab_text":"Get 15% Off","text_font_class":"fs-body-200","tab_position":"bottom_left_floating","tab_text_color":"#ffffff","tab_background_color":"#000000"}}},"block_order":["flyout_signup_BH8WCG"],"disabled":true,"settings":{}}},"order":["quick-cart","popup"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "custom.overlay",
+  "name": "t:groups.overlay_group.name",
+  "sections": {
+    "quick-cart": {
+      "type": "quick-cart",
+      "custom_css": [],
+      "settings": {
+        "enable_quick_cart": false,
+        "show_product_currency": false,
+        "promotion_text": "<p>Not sure where to start?<br/>↓</p>",
+        "collection_list": [
+          "skincare-best-sellers",
+          "creams-serums-skincare-products",
+          "beauty-tools",
+          "all-things-glopro",
+          "all-thing-glofacial",
+          "sets-minis"
+        ],
+        "collection_list_button_style": "btn--secondary"
+      }
+    },
+    "popup": {
+      "type": "popup",
+      "blocks": {
+        "flyout_signup_BH8WCG": {
+          "type": "flyout_signup",
+          "disabled": true,
+          "settings": {
+            "delay": "timer_30000",
+            "frequency": "frequency_100000",
+            "show_on_exit_intent": false,
+            "disable_for_account_holders": true,
+            "show_on_specific_page": false,
+            "target_page": "",
+            "accent": "",
+            "heading": "Join us",
+            "heading_font_class": "fs-heading-2-base",
+            "text": "<p>Signup and get 15% off your first purchase</p>",
+            "link_text": "Get offer",
+            "dismiss_text": "No thanks",
+            "footer_text": "<p>By completing this form, you are signing up to receive our emails and can unsubscribe at any time</p>",
+            "tags": "newsletter",
+            "flyout_position": "right",
+            "content_alignment": "center",
+            "focal_point": "image_presentation",
+            "background_color": "#ffffff",
+            "text_color": "#000000",
+            "input_color": "#000000",
+            "input_background": "#ffffff",
+            "button_background_color": "#000000",
+            "button_text_color": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 0,
+            "enable_tab": true,
+            "tab_text": "Get 15% Off",
+            "text_font_class": "fs-body-200",
+            "tab_position": "bottom_left_floating",
+            "tab_text_color": "#ffffff",
+            "tab_background_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "flyout_signup_BH8WCG"
+      ],
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "quick-cart",
+    "popup"
+  ]
+}

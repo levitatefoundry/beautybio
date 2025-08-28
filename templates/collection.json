@@ -14,10 +14,12 @@
       "custom_css": [
         ".collection-banner__text-container-heading,.collection-banner__text-container-text {background-color: rgba(0, 0, 0, 0.01);}"
       ],
+
       "settings": {
         "show_breadcrumbs": false,
         "show_collection_description": true,
         "show_collection_image": true,
+        "subheading": "{{ collection.metafields.custom.collection_subheading | metafield_tag }}",
         "image_aspect": "custom",
         "desktop_height": 50,
         "mobile_height": 50,
