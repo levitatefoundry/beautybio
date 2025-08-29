@@ -120,7 +120,7 @@
             "image": "shopify://shop_images/BBS_HomePage_LaborDaySale_Desktop.jpg",
             "image_mobile": "shopify://shop_images/BBS_HomePage_LaborDaySale_Mobile_1.jpg",
             "focal_point": "image_presentation",
-            "mobile_focal_point": "image_presentation",
+            "mobile_focal_point": "top",
             "media_link": "",
             "text_position": "flex-start_center",
             "text_position_mobile": "center_flex-start",
