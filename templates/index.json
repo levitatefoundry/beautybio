@@ -190,6 +190,7 @@
       ],
       "custom_css": [
         ".slideshow-slide__text-container-inner {display: flex; flex-direction: column; align-items: center; text-align: center;}",
+        ".fs-body-200 strong {font-family: 'gothambold';}",
         "@media screen and (max-width: 750px) {.fs-heading-display-1 {font-size: 26pt; } .fs-body-200 {font-size: 10pt; }}"
       ],
       "settings": {
