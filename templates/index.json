@@ -190,7 +190,7 @@
       ],
       "custom_css": [
         ".slideshow-slide__text-container-inner {display: flex; flex-direction: column; align-items: center; text-align: center;}",
-        "@media screen and (max-width: 750px) {.fs-heading-display-1 {font-size: 24pt; }}"
+        "@media screen and (max-width: 750px) {.fs-heading-display-1 {font-size: 26pt; }}"
       ],
       "settings": {
         "image_aspect": "original",
