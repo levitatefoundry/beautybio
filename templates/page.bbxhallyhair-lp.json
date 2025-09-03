@@ -85,6 +85,7 @@
         "media_link": "",
         "text_position": "center_center",
         "text_position_mobile": "center_center",
+        "show-checkboxes": false,
         "text_color": "#ffffff",
         "button_background_color": "#ffffff",
         "button_text_color": "#000000",
@@ -159,7 +160,7 @@
         "text_NTbMAk": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Follow Us on Instagram</strong>: Make sure you’re following both <a href=\"https://www.instagram.com/maelys_cosmetics/\" target=\"_blank\" title=\"https://www.instagram.com/maelys_cosmetics/\"><strong>@maelys_cosmetics</strong></a> and <a href=\"https://www.instagram.com/beautybio/\" target=\"_blank\" title=\"https://www.instagram.com/beautybio/\"><strong>@beautybio</strong></a> on Instagram.</p><p><strong>Engage With the Giveaway Post on Instagram</strong>: Like the giveaway post and tag <strong>3 friends</strong> in the comments.</p><p><strong>Complete the below Entry Form</strong>.</p>",
+            "text": "<p><strong>Follow Us on Instagram</strong>: Make sure you’re following both <a href=\"https://www.instagram.com/maelys_cosmetics/\" target=\"_blank\" title=\"https://www.instagram.com/maelys_cosmetics/\"><strong>@maelys_cosmetics</strong></a> and <a href=\"https://www.instagram.com/beautybio/\" target=\"_blank\" title=\"https://www.instagram.com/beautybio/\"><strong>@beautybio</strong></a> on Instagram.</p><p><strong>Engage With the Giveaway Post on Instagram</strong>: Like the giveaway post and tag your pre-party bestie in the comments.</p><p><strong>Complete the below Entry Form</strong>.</p>",
             "text_font_class": "fs-body-100"
           }
         }
