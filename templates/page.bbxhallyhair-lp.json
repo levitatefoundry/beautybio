@@ -1,0 +1,245 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_q9Tw3X": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_WcPRKe": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/MaelysGiveaway_DESKTOP.jpg",
+            "image_mobile": "shopify://shop_images/MaelysGiveaway_MOBILE.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "top",
+            "media_link": "",
+            "text_position": "flex-start_center",
+            "text_position_mobile": "center_flex-start",
+            "accent": "BEAUTYBIO X Maëlys",
+            "title": "GIVEAWAY TIME!",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2",
+            "subheading": "We've teamed up with our friends at Maëlys to bring you a carefully curated sculpt & glow routine designed to boost your confidence, no matter where the day (or vacay) takes you.",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "<p>5 LUCKY WINNERS</p>",
+            "text_font_class": "fs-body-100",
+            "link_1": "",
+            "link_text_1": "Read more",
+            "button_style_1": "btn--primary",
+            "link_2": "",
+            "link_text_2": "Read more",
+            "button_style_2": "btn--primary",
+            "text_color": "#000000",
+            "button_background_color": "#ffffff",
+            "button_text_color": "#000000",
+            "color_overlay": "rgba(0,0,0,0)",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "slide_WcPRKe"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "p.slideshow-slide__text-container-accent.fs-accent {text-align: center;}",
+        ".slideshow-slide__text-container-text.rte.ff-body.fs-body-100.section-blocks__text p {text-align: center; font-size: 30px; font-weight: 900; font-family: gothambold !important;}",
+        "h2.slideshow-slide__text-container-heading.ff-heading.fs-heading-display-2.section-blocks__heading {text-align: center;}",
+        "h3.slideshow-slide__text-container-subheading.ff-subheading.fs-heading-5-base.section-blocks__subheading {text-align: center !important;}"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 50,
+        "mobile_height": 75,
+        "enable_autoplay": false,
+        "duration_autoplay": 6,
+        "navigation_alignment": "center",
+        "navigation_color_foreground": "#ffffff",
+        "navigation_color_background": "",
+        "navigation_background_opacity": 100,
+        "enable_animation": true,
+        "section_padding": "none"
+      }
+    },
+    "image_hero_iKtjiY": {
+      "type": "image-hero",
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 50,
+        "mobile_height": 100,
+        "image": "shopify://shop_images/MaelysGiveaway_DESKTOP-2.jpg",
+        "image_mobile": "shopify://shop_images/MaelysGiveaway_MOBILE_5a6e010a-e239-4d16-9b99-5b63cd3ddb1e.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "rgba(0,0,0,0)",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_EKtGq6": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_a6XUGJ": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "BEAUTYBIO X Maëlys",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "heading_pxhJH3": {
+          "type": "heading",
+          "settings": {
+            "title": "GIVEAWAY TIME",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        },
+        "subheading_DKmxA7": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "We've teamed up with our friends at Maëlys to bring you a carefully curated sculpt & glow routine designed to boost your confidence, no matter where the day (or vacay) takes you.",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_a6XUGJ",
+        "heading_pxhJH3",
+        "subheading_DKmxA7"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "* {text-align: center;}",
+        "h2 {font-size: 20pt;}",
+        "h3 {font-size: 14pt; width: 100%;}",
+        ".rich-text__inner {margin: 0; width: 100%; max-width: none;}"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "left_left",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_4TnQbi": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GiH7bd": {
+          "type": "heading",
+          "settings": {
+            "title": "How to Enter",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        },
+        "text_NTbMAk": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Follow Us on Instagram</strong>: Make sure you’re following both <a href=\"https://www.instagram.com/maelys_cosmetics/\" target=\"_blank\" title=\"https://www.instagram.com/maelys_cosmetics/\"><strong>@maelys_cosmetics</strong></a> and <a href=\"https://www.instagram.com/beautybio/\" target=\"_blank\" title=\"https://www.instagram.com/beautybio/\"><strong>@beautybio</strong></a> on Instagram.</p><p><strong>Engage With the Giveaway Post on Instagram</strong>: Like the giveaway post and tag <strong>3 friends</strong> in the comments.</p><p><strong>Complete the below Entry Form</strong>.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GiH7bd",
+        "text_NTbMAk"
+      ],
+      "custom_css": [
+        "* {text-align: center;}",
+        "h2 {font-size: 20pt;}",
+        "p {font-size: 12pt; width: 100%;}",
+        ".rich-text__inner {margin: 0; width: 100%; max-width: none;}"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "left_left",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_xYUeM6": {
+      "type": "rich-text",
+      "blocks": {
+        "text_GGLMWJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>No purchase necessary. Must be U.S. resident age 18 or older. Sweepstakes ends at 11:59:59 p.m. CST on 7/4/2025. See </strong></em><a href=\"/pages/bb-x-maelys-terms-conditions\" target=\"_blank\" title=\"/pages/bb-x-maelys-terms-conditions\"><em><strong>Terms and Conditions</strong></em></a><em><strong> for details. This giveaway is not affiliated or endorsed by Instagram.</strong></em></p>",
+            "text_font_class": "fs-body-75"
+          }
+        }
+      },
+      "block_order": [
+        "text_GGLMWJ"
+      ],
+      "custom_css": [
+        "* {text-align: center;}"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "left_left",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "custom_liquid_FydkF8": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "input::before {display: none !important;}"
+      ],
+      "name": "t:sections.custom_liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"cf-cta-snippet cta185685\" data-website-id=\"77178\" data-cta-id=\"185685\"></div>\n<script>\nif (!window.convertflow) {\n  var script = document.createElement(\"script\"); \n  script.async = true;\n  script.src = \"https://js.convertflow.co/production/websites/77178.js\"; \n  document.body.appendChild(script); \n};\n\n// Wait for ConvertFlow to load the form\nfunction checkConvertFlowBoxes() {\n  // Try every 500ms until checkboxes exist\n  const checkInterval = setInterval(() => {\n    // Target checkboxes by their VALUES (adjust these to match yours)\n    const beautyBioCheckbox = document.querySelector(\n      'input[type=\"checkbox\"][value=\"subscribe_to_beautybio\"]'\n    );\n    const maelysCheckbox = document.querySelector(\n      'input[type=\"checkbox\"][value=\"subscribe_to_maelys\"]'\n    );\n\n    // If found, check them and stop checking\n    if (beautyBioCheckbox && maelysCheckbox) {\n      beautyBioCheckbox.checked = true;\n      maelysCheckbox.checked = true;\n      \n      // Optional: Trigger change events if needed\n      beautyBioCheckbox.dispatchEvent(new Event('change'));\n      maelysCheckbox.dispatchEvent(new Event('change'));\n      \n      clearInterval(checkInterval);\n    }\n  }, 500);\n}\n\n// Start checking when page loads\nwindow.addEventListener('load', checkConvertFlowBoxes);\n\n// Also check when ConvertFlow injects content\ndocument.addEventListener('cf:formLoaded', checkConvertFlowBoxes);\n</script>",
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "full",
+        "custom_content_width": 1000
+      }
+    }
+  },
+  "order": [
+    "slideshow_q9Tw3X",
+    "image_hero_iKtjiY",
+    "rich_text_EKtGq6",
+    "rich_text_4TnQbi",
+    "rich_text_xYUeM6",
+    "custom_liquid_FydkF8",
+    "main"
+  ]
+}
