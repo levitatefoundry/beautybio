@@ -194,7 +194,7 @@
         ".fs-body-200 {max-width: 460px;}",
         ".fs-accent {font-size: 16pt; font-weight: 600;}",
         ".fs-heading-display-1 {color: #f3c8cf; text-shadow: -1px -1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, 1px 1px 0 #000, -6px 4px 0 rgba(0, 0, 0, 1);}",
-        "@media screen and (max-width: 750px) {.fs-heading-display-1 {font-size: 26pt; } .fs-body-200 {}}"
+        "@media screen and (max-width: 750px) {.fs-heading-display-1 {font-size: 26pt; max-width: 400px; } .fs-body-200 {}}"
       ],
       "settings": {
         "image_aspect": "original",
