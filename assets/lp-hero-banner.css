@@ -1,0 +1,193 @@
+/* LP Hero Banner Section */
+.lp-hero-banner {
+  width: 100%;
+  min-height: 500px;
+  background-color: #FDF2F0;
+  position: relative;
+  overflow: hidden;
+}
+
+.lp-hero-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.lp-hero-content {
+  display: flex;
+  align-items: center;
+  min-height: 500px;
+}
+
+/* Text Content */
+.lp-hero-text {
+  flex: 1;
+  max-width: 550px;
+}
+
+.lp-hero-heading {
+  color: #000;
+  margin: 0 0 16px 0;
+  font-family: gothambold;
+  font-size: 50px;
+  letter-spacing: -0.75px;
+  line-height: 95%;
+  font-weight: 700;
+  max-width: 470px;
+}
+
+.lp-hero-description {
+  font-family: gothammedium;
+  font-size: 16px;
+  letter-spacing: -0.24px;
+  line-height: 140%;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 16px;
+  max-width: 435px;
+}
+
+/* Buttons */
+.lp-hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.lp-hero-btn {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  min-width: 250px;
+  text-align: center;
+  padding: 12px;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: gothambold;
+}
+
+.lp-hero-btn-primary {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.lp-hero-btn-primary:hover {
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+}
+
+.lp-hero-btn-secondary {
+  background-color: transparent;
+  color: #000;
+  border-color: #000;
+}
+
+.lp-hero-btn-secondary:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Image Container */
+.lp-hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.lp-hero-image-container {
+  position: relative;
+  width: 100%;
+}
+
+.lp-hero-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .lp-hero-banner {
+    min-height: auto;
+  }
+  
+  .lp-hero-container {
+    padding: 0 16px;
+  }
+  
+  .lp-hero-content {
+    flex-direction: column-reverse;
+    gap: 40px;
+    text-align: center;
+    min-height: auto;
+  }
+  
+  .lp-hero-text {
+    max-width: 100%;
+  }
+  
+  .lp-hero-heading {
+    font-size: 40px;
+  }
+  
+  .lp-hero-description {
+    font-size: 1rem;
+    margin-bottom: 32px;
+    max-width: 100%;
+  }
+  
+  .lp-hero-buttons {
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .lp-hero-btn {
+    width: 100%;
+  }
+  
+  .lp-hero-image {
+    width: 100%;
+  }
+}
+
+/* Prevent conflicts with other sections */
+.section-lp-hero-banner {
+  isolation: isolate;
+}
+
+.lp-hero-banner * {
+  box-sizing: border-box;
+}
+
+.lp-hero-content>* {
+  max-width: 100%;
+}
+
+/* Additional responsive image handling */
+@media screen and (min-width: 769px) {
+  .lp-hero-content {
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .lp-hero-text {
+    padding-top: 20px;
+  }
+
+  .lp-hero-content>* {
+    max-width: 50%;
+  }
+}
