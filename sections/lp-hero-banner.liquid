@@ -1,0 +1,126 @@
+{{ 'lp-hero-banner.css' | asset_url | stylesheet_tag }}
+
+<section class="lp-hero-banner" style="background: {{ section.settings.background_color }};">
+  <div class="section">
+    <div class="lp-hero-content">
+      <div class="lp-hero-text">
+        {% if section.settings.heading != blank %}
+          <h1 class="lp-hero-heading">{{ section.settings.heading }}</h1>
+        {% endif %}
+        
+        {% if section.settings.text != blank %}
+          <div class="lp-hero-description {%  if section.settings.text_mob != blank %} mobile--hidden {% endif %}">{{ section.settings.text }}</div>
+        {% endif %}
+
+        {% if section.settings.text_mob != blank %}
+          <div class="lp-hero-description {%  if section.settings.text != blank %} desktop--hidden {% endif %} %}">{{ section.settings.text_mob }}</div>
+        {% endif %}
+        
+        <div class="lp-hero-buttons">
+          {% if section.settings.primary_button_text != blank %}
+            <a href="{{ section.settings.primary_button_url }}" class="lp-hero-btn lp-hero-btn-primary">
+              {{ section.settings.primary_button_text }}
+            </a>
+          {% endif %}
+          
+          {% if section.settings.secondary_button_text != blank %}
+            <a href="{{ section.settings.secondary_button_url }}" class="lp-hero-btn lp-hero-btn-secondary">
+              {{ section.settings.secondary_button_text }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+      
+      <div class="lp-hero-image">
+        {% if section.settings.main_image != blank %}
+          <div class="lp-hero-image-container">
+            <img src="{{ section.settings.main_image | image_url: width: 1200 }}" 
+                alt="{{ section.settings.main_image.alt | escape }}"
+                width="{{ section.settings.main_image.width }}"
+                height="{{ section.settings.main_image.height }}"
+                class="{%  if section.settings.main_image_mob != blank %} mobile--hidden {% endif %}"
+                loading="lazy">
+            {% if section.settings.main_image_mob != blank %}  
+                <img src="{{ section.settings.main_image_mob | image_url: width: 600 }}" 
+                    alt="{{ section.settings.main_image_mob.alt | escape }}"
+                    class="desktop--hidden"
+                    width="{{ section.settings.main_image_mob.width }}"
+                    height="{{ section.settings.main_image_mob.height }}"
+                    loading="lazy">
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "LP Hero Banner",
+  "tag": "section",
+  "class": "section-lp-hero-banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Main Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_image_mob",
+      "label": "Main Image (Mobile)"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Your Daily Glow + SPF in One Drop"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Description",
+      "default": "Multi-use SPF46 priming drops that hydrate, color-correct, and protect in three custom finishes."
+    },
+    {
+      "type": "textarea",
+      "id": "text_mob",
+      "label": "Description (Mobile)",
+    },
+    {
+      "type": "text",
+      "id": "primary_button_text",
+      "label": "Primary Button Text",
+      "default": "SHOP BLENDROPS"
+    },
+    {
+      "type": "url",
+      "id": "primary_button_url",
+      "label": "Primary Button URL"
+    },
+    {
+      "type": "text",
+      "id": "secondary_button_text",
+      "label": "Secondary Button Text",
+      "default": "SEE HOW IT WORKS"
+    },
+    {
+      "type": "url",
+      "id": "secondary_button_url",
+      "label": "Secondary Button URL"
+    },
+    {
+      "type": "color_background",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FDF2F0"
+    }
+  ],
+  "presets": [
+    {
+      "name": "LP Hero Banner"
+    }
+  ]
+}
+{% endschema %}

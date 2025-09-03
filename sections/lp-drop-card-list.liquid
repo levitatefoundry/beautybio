@@ -1,0 +1,439 @@
+{{ 'lp-drop-card-list.css' | asset_url | stylesheet_tag }}
+
+<section class="lp-drop-card-list" style="padding-top: {{ section.settings.padding_top_desktop }}px; padding-bottom: {{ section.settings.padding_bottom_desktop }}px;">
+  <div class="section section--vertical-padding-none">
+    <div class="lp-drop-card-list__container">
+      {% if section.settings.heading != blank %}
+        <h2 class="lp-drop-card-list__heading">{{ section.settings.heading }}</h2>
+      {% endif %}
+      
+      {% if section.settings.text != blank %}
+        <div class="lp-drop-card-list__text">{{ section.settings.text }}</div>
+      {% endif %}
+      
+      {% if section.blocks.size > 0 %}
+        <div class="lp-drop-card-list__slider-container">
+          <div class="swiper lp-drop-card-list__swiper">
+            <div class="swiper-wrapper lp-drop-card-list__cards">
+              {% for block in section.blocks %}
+                {% case block.type %}
+                  {% when 'drop_card' %}
+                    <div class="swiper-slide">
+                      <div class="lp-drop-card-list__card" {{ block.shopify_attributes }}>
+                        <div class="lp-drop-card-list__card-inner">
+                    <div class="lp-drop-card-list__card-header">
+                      {% if block.settings.card_heading != blank %}
+                        <h3 class="lp-drop-card-list__card-heading">{{ block.settings.card_heading }}</h3>
+                      {% endif %}
+                      
+                      {% if block.settings.card_text != blank %}
+                        <div class="lp-drop-card-list__card-description">{{ block.settings.card_text }}</div>
+                      {% endif %}
+                    </div>
+
+                    <div class="lp-drop-card-list__card-body">
+                      {% if block.settings.card_image %}
+                        <div class="lp-drop-card-list__card-image">
+                          <img src="{{ block.settings.card_image | img_url: '400x400' }}" 
+                                alt="{{ block.settings.card_image.alt | default: block.settings.card_heading }}"
+                                loading="lazy">
+                        </div>
+                      {% endif %}
+                      
+                      <div class="lp-drop-card-list__card-content">
+                        <!-- Icon Features -->
+                        <div class="lp-drop-card-list__features">
+                          {% if block.settings.feature_1_icon or block.settings.feature_1_text != blank %}
+                            <div class="lp-drop-card-list__feature">
+                              {% if block.settings.feature_1_icon %}
+                                <div class="lp-drop-card-list__feature-icon">
+                                  <img src="{{ block.settings.feature_1_icon | img_url: '40x40' }}" 
+                                        alt="{{ block.settings.feature_1_text | strip_html }}"
+                                        loading="lazy">
+                                </div>
+                              {% endif %}
+                              <div class="lp-drop-card-list__feature-content">
+                                {% if block.settings.feature_1_title != blank %}
+                                  <h4 class="lp-drop-card-list__feature-title">{{ block.settings.feature_1_title }}</h4>
+                                {% endif %}
+                                {% if block.settings.feature_1_text != blank %}
+                                  <div class="lp-drop-card-list__feature-text">{{ block.settings.feature_1_text }}</div>
+                                {% endif %}
+                              </div>
+                            </div>
+                          {% endif %}
+                          
+                          {% if block.settings.feature_2_icon or block.settings.feature_2_text != blank %}
+                            <div class="lp-drop-card-list__feature">
+                              {% if block.settings.feature_2_icon %}
+                                <div class="lp-drop-card-list__feature-icon">
+                                  <img src="{{ block.settings.feature_2_icon | img_url: '40x40' }}" 
+                                        alt="{{ block.settings.feature_2_text | strip_html }}"
+                                        loading="lazy">
+                                </div>
+                              {% endif %}
+                              <div class="lp-drop-card-list__feature-content">
+                                {% if block.settings.feature_2_title != blank %}
+                                  <h4 class="lp-drop-card-list__feature-title">{{ block.settings.feature_2_title }}</h4>
+                                {% endif %}
+                                {% if block.settings.feature_2_text != blank %}
+                                  <div class="lp-drop-card-list__feature-text">{{ block.settings.feature_2_text }}</div>
+                                {% endif %}
+                              </div>
+                            </div>
+                          {% endif %}
+                          
+                          {% if block.settings.feature_3_icon or block.settings.feature_3_text != blank %}
+                            <div class="lp-drop-card-list__feature">
+                              {% if block.settings.feature_3_icon %}
+                                <div class="lp-drop-card-list__feature-icon">
+                                  <img src="{{ block.settings.feature_3_icon | img_url: '40x40' }}" 
+                                        alt="{{ block.settings.feature_3_text | strip_html }}"
+                                        loading="lazy">
+                                </div>
+                              {% endif %}
+                              <div class="lp-drop-card-list__feature-content">
+                                {% if block.settings.feature_3_title != blank %}
+                                  <h4 class="lp-drop-card-list__feature-title">{{ block.settings.feature_3_title }}</h4>
+                                {% endif %}
+                                {% if block.settings.feature_3_text != blank %}
+                                  <div class="lp-drop-card-list__feature-text">{{ block.settings.feature_3_text }}</div>
+                                {% endif %}
+                              </div>
+                            </div>
+                          {% endif %}
+                        </div>
+                      </div>
+                    </div>
+                                            
+                    <!-- Benefits -->
+                    {% if block.settings.benefits != blank %}
+                      <div class="lp-drop-card-list__benefits">
+                        <div class="lp-drop-card-list__benefits-label">Best For:</div>
+                        <div class="lp-drop-card-list__benefits-text">{{ block.settings.benefits }}</div>
+                      </div>
+                    {% endif %}
+                    
+                    <!-- Use Daily -->
+                    {% if block.settings.use_daily != blank %}
+                      <div class="lp-drop-card-list__use-daily">
+                        <div class="lp-drop-card-list__use-daily-text">{{ block.settings.use_daily }}</div>
+                      </div>
+                    {% endif %}
+                        </div>
+                        <!-- Button -->
+                        {% if block.settings.button_text != blank %}
+                          <div class="lp-drop-card-list__card-button">
+                            <a href="{{ block.settings.button_url | default: '#' }}" 
+                               class="btn lp-drop-card-list__btn">
+                              {{ block.settings.button_text }}
+                            </a>
+                          </div>
+                        {% endif %}
+                      </div>
+                    </div>
+                {% endcase %}
+              {% endfor %}
+            </div>
+
+            <!-- Navigation -->
+            {% comment %} <div class="swiper-pagination lp-drop-card-list__pagination"></div> {% endcomment %}
+            <div class="swiper-button-prev lp-drop-card-list__button-prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="26" viewBox="0 0 14 26" fill="none">
+                <path d="M13 25.071L0.999999 13.071L13 1.07104" stroke="black"/>
+              </svg>
+            </div>
+            <div class="swiper-button-next lp-drop-card-list__button-next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="26" viewBox="0 0 14 26" fill="none">
+                <path d="M0.999954 25L13 13L0.999953 1" stroke="black"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    .lp-drop-card-list {
+      padding-top: {{ section.settings.padding_top_mobile }}px !important;
+      padding-bottom: {{ section.settings.padding_bottom_mobile }}px !important;
+    }
+  }
+</style>
+
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+
+    const section = document.querySelector('#shopify-section-{{ section.id }}')
+
+    /* eslint-disable no-new */
+    const swiper = new Swiper(section.querySelector('.lp-drop-card-list__swiper'), {
+      slidesPerView: 1,
+      spaceBetween: 40,
+      loop: false,
+      pagination: {
+        el: section.querySelector('.lp-drop-card-list__pagination'),
+        clickable: true
+      },
+      navigation: {
+        nextEl: section.querySelector('.lp-drop-card-list__button-next'),
+        prevEl: section.querySelector('.lp-drop-card-list__button-prev')
+      },
+      breakpoints: {
+        720: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        }
+      }
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "LP Drop Card List",
+  "tag": "section",
+  "class": "lp-drop-card-list-section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "<p>Meet Your Daily Glow Protector: Blendrops™ SPF 46 Priming Drops</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Section Text",
+      "default": "<p>All-in-one hybrid SPF drops that help hydrate, brighten, and defend against UV rays. Powered by brightening tranexamic and hydrating polyglutamic acids with protective antioxidants to support glowing, healthy-looking skin every day.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Top (Desktop)",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Bottom (Desktop)",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Mobile Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "drop_card",
+      "name": "Drop Card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "card_heading",
+          "label": "Card Heading",
+          "default": "Bronzing"
+        },
+        {
+          "type": "richtext",
+          "id": "card_text",
+          "label": "Card Description",
+          "default": "<p>Sun-kissed radiance with SPF protection and skin-loving formulation.</p>"
+        },
+        {
+          "type": "image_picker",
+          "id": "card_image",
+          "label": "Card Image"
+        },
+        {
+          "type": "header",
+          "content": "Feature 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "feature_1_icon",
+          "label": "Feature 1 Icon"
+        },
+        {
+          "type": "text",
+          "id": "feature_1_title",
+          "label": "Feature 1 Title",
+          "default": "Natural Warm Glow"
+        },
+        {
+          "type": "richtext",
+          "id": "feature_1_text",
+          "label": "Feature 1 Text",
+          "default": "<p>Delivers a healthy-looking, sun-kissed radiance without the sun damage.</p>"
+        },
+        {
+          "type": "header",
+          "content": "Feature 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "feature_2_icon",
+          "label": "Feature 2 Icon"
+        },
+        {
+          "type": "text",
+          "id": "feature_2_title",
+          "label": "Feature 2 Title",
+          "default": "Hydrating Formula"
+        },
+        {
+          "type": "richtext",
+          "id": "feature_2_text",
+          "label": "Feature 2 Text",
+          "default": "<p>Locks in moisture for all-day comfort.</p>"
+        },
+        {
+          "type": "header",
+          "content": "Feature 3"
+        },
+        {
+          "type": "image_picker",
+          "id": "feature_3_icon",
+          "label": "Feature 3 Icon"
+        },
+        {
+          "type": "text",
+          "id": "feature_3_title",
+          "label": "Feature 3 Title",
+          "default": "SPF 46 Defense"
+        },
+        {
+          "type": "richtext",
+          "id": "feature_3_text",
+          "label": "Feature 3 Text",
+          "default": "<p>Shields skin from harmful UVA/UVB rays.</p>"
+        },
+        {
+          "type": "header",
+          "content": "Benefits & Usage"
+        },
+        {
+          "type": "richtext",
+          "id": "benefits",
+          "label": "Best For",
+          "default": "<p>Warmth, evening tone, and UV protection.</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "use_daily",
+          "label": "Use Daily",
+          "default": "<p>Use daily. Apply 15 minutes before sun exposure.</p>"
+        },
+        {
+          "type": "header",
+          "content": "Button"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "SHOP BRONZING"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "LP Drop Card List",
+      "blocks": [
+        {
+          "type": "drop_card",
+          "settings": {
+            "card_heading": "Bronzing",
+            "card_text": "<p>Sun-kissed radiance with SPF protection and skin-loving formulation.</p>",
+            "feature_1_title": "Natural Warm Glow",
+            "feature_1_text": "<p>Delivers a healthy-looking, sun-kissed radiance without the sun damage.</p>",
+            "feature_2_title": "Hydrating Formula",
+            "feature_2_text": "<p>Locks in moisture for all-day comfort.</p>",
+            "feature_3_title": "SPF 46 Defense",
+            "feature_3_text": "<p>Shields skin from harmful UVA/UVB rays.</p>",
+            "benefits": "<p>Warmth, evening tone, and UV protection.</p>",
+            "use_daily": "<p>Use daily. Apply 15 minutes before sun exposure.</p>",
+            "button_text": "SHOP BRONZING"
+          }
+        },
+        {
+          "type": "drop_card",
+          "settings": {
+            "card_heading": "Illuminizing",
+            "card_text": "<p>Luminous, lit-from-within glow that brightens and protects.</p>",
+            "feature_1_title": "Instant Radiance Boost",
+            "feature_1_text": "<p>Brightens skin for a youthful, fresh finish.</p>",
+            "feature_2_title": "Light-Diffusing Finish",
+            "feature_2_text": "<p>Minimizes the appearance of fine lines.</p>",
+            "feature_3_title": "Broad Spectrum SPF 46",
+            "feature_3_text": "<p>Helps prevent sun-induced dark spots and aging.</p>",
+            "benefits": "<p>Helping skin appear hydrated with a champagne shimmer glow.</p>",
+            "use_daily": "<p>Use daily. Reapply every 2 hours outdoors.</p>",
+            "button_text": "SHOP ILLUMINIZING"
+          }
+        },
+        {
+          "type": "drop_card",
+          "settings": {
+            "card_heading": "Perfecting",
+            "card_text": "<p>Smooth, filtered-looking finish with SPF defense—your skin, only better.</p>",
+            "feature_1_title": "Blur & Smooth",
+            "feature_1_text": "<p>Creates a soft-focus effect for a flawless complexion.</p>",
+            "feature_2_title": "Lightweight Texture",
+            "feature_2_text": "<p>Comfortable wear without heaviness or greasiness.</p>",
+            "feature_3_title": "High-Performance SPF 46",
+            "feature_3_text": "<p>Protects while helping hydrate and color-correct tone.</p>",
+            "benefits": "<p>Helping to blur the appearance of imperfections and UV defense.</p>",
+            "use_daily": "<p>Use daily. Ideal alone or under makeup.</p>",
+            "button_text": "SHOP PERFECTING"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

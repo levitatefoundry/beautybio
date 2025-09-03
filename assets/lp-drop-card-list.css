@@ -1,0 +1,378 @@
+.lp-drop-card-list {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+
+.lp-drop-card-list::before {
+  position: absolute;
+  content: '';
+  background-color: #F7DBE0;
+  left: 0;
+  top: 0;
+  height: 400px;
+  width: 100%;
+}
+
+.lp-drop-card-list__heading {
+  text-align: center;
+  margin: 0 0 16px 0;
+  color: var(--color-foreground, #111);
+  font-family: gothambold !important;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.48px;
+  line-height: 95%;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lp-drop-card-list__heading * {
+  letter-spacing: -0.48px;
+  font-family: gothambold !important;
+  font-size: 32px;
+}
+
+.lp-drop-card-list__text {
+  text-align: center;
+  margin: 0 0 40px 0;
+  color: var(--color-foreground, #111);
+  font-family: gothambook;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lp-drop-card-list__text p {
+  margin: 0;
+}
+
+.lp-drop-card-list__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.lp-drop-card-list__card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Slider container and Swiper overrides */
+.lp-drop-card-list__slider-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.lp-drop-card-list__swiper {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* When used as a Swiper wrapper, switch to flex so Swiper can control slides */
+.lp-drop-card-list__swiper .lp-drop-card-list__cards {
+  display: flex;
+  gap: 0;
+}
+
+.lp-drop-card-list__swiper .swiper-slide {
+  height: auto;
+}
+
+.lp-drop-card-list__card-inner {
+  background: white;
+  border: 1px solid #000;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 24px;
+}
+
+.lp-drop-card-list__card-inner:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.lp-drop-card-list__card-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.lp-drop-card-list__card-body {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.lp-drop-card-list__card-heading {
+  margin: 0 0 8px 0;
+  color: var(--color-foreground, #000);
+  font-family: gothambold !important;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.48px;
+  line-height: 95%;
+}
+
+.lp-drop-card-list__card-description {
+  color: var(--color-foreground, #000);
+  font-family: gothammedium;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.21px;
+  margin: 0;
+  max-width: 287px;
+  margin: 0 auto;
+}
+
+.lp-drop-card-list__card-description p {
+  margin: 0;
+}
+
+.lp-drop-card-list__card-image {
+  text-align: center;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 40%;
+}
+
+.lp-drop-card-list__card-image img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.lp-drop-card-list__card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.lp-drop-card-list__features {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.lp-drop-card-list__feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.lp-drop-card-list__feature-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.lp-drop-card-list__feature-icon img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.lp-drop-card-list__feature-content {
+  flex: 1;
+}
+
+.lp-drop-card-list__feature-title {
+  margin: 0 0 8px 0;
+  color: var(--color-foreground, #000);
+  font-family: gothambold;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.18px;
+  line-height: 105%;
+}
+
+.lp-drop-card-list__feature-text {
+  color: var(--color-foreground-75, #000);
+  font-family: gothammedium;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.18px;
+  line-height: 105%;
+  margin: 0;
+}
+
+.lp-drop-card-list__feature-text p {
+  margin: 0;
+}
+
+.lp-drop-card-list__benefits {
+  margin-bottom: 16px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.lp-drop-card-list__benefits-label {
+  color: var(--color-foreground, #000);
+  font-family: gothambold;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.21px;
+  line-height: 105%;
+  white-space: nowrap;
+}
+
+.lp-drop-card-list__benefits-text {
+  color: var(--color-foreground-75,  #000);
+  font-family: gothammedium;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.18px;
+  margin: 0;
+}
+
+.lp-drop-card-list__benefits-text p {
+  margin: 0;
+}
+
+.lp-drop-card-list__use-daily {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.lp-drop-card-list__use-daily-text {
+  color: var(--color-foreground, #000);
+  font-family: gothambold;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 105%;
+  letter-spacing: -0.21px;
+  margin: 0;
+}
+
+.lp-drop-card-list__use-daily-text p {
+  margin: 0;
+}
+
+.lp-drop-card-list__card-button {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lp-drop-card-list__btn {
+  display: block;
+  min-width: 200px;
+  width: fit-content;
+  text-align: center;
+  border: 1px solid #111;
+  background: var(--color-foreground, #111);
+  color: var(--color-background, #fff);
+  font-family: gothambold;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 700;
+  letter-spacing: -0.21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.lp-drop-card-list__btn:hover {
+  background: var(--color-background, #fff);
+  color: var(--color-foreground, #111);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .lp-drop-card-list__heading {
+    max-width: 350px;
+  }
+  
+  .lp-drop-card-list__cards {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .lp-drop-card-list__card-inner {
+    padding: 24px 20px;
+  }
+  
+  .lp-drop-card-list__features {
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .lp-drop-card-list__card-image {
+    margin-bottom: 20px;
+  }
+}
+
+/* Swiper Navigation Styles */
+.lp-drop-card-list__pagination {
+  position: static !important;
+  margin-top: 28px;
+  text-align: center;
+}
+
+.lp-drop-card-list__pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: rgba(17, 17, 17, 0.3);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.lp-drop-card-list__pagination .swiper-pagination-bullet-active {
+  background: var(--color-foreground, #111);
+  transform: scale(1.15);
+}
+
+.lp-drop-card-list__button-prev,
+.lp-drop-card-list__button-next {
+  width: 44px;
+  height: 44px;
+  margin-top: -22px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.lp-drop-card-list__button-prev:after,
+.lp-drop-card-list__button-next:after {
+  display: none;
+}
+
+.lp-drop-card-list__button-prev { left: -10px; }
+.lp-drop-card-list__button-next { right: -10px; }
+
+/* Hide navigation on mobile */
+@media (max-width: 768px) {
+  .lp-drop-card-list__button-prev,
+  .lp-drop-card-list__button-next {
+    display: none;
+  }
+}

@@ -1,0 +1,192 @@
+{{ 'lp-join-beauty.css' | asset_url | stylesheet_tag }}
+
+<section class="lp-join-beauty" style="padding-top: {{ section.settings.padding_top_desktop }}px; padding-bottom: {{ section.settings.padding_bottom_desktop }}px; background: {{ section.settings.background_color }};">
+  <div class="section section--vertical-padding-none">
+    <div class="lp-join-beauty__container">
+      <div class="lp-join-beauty__content">
+        {% if section.settings.heading != blank %}
+          <h2 class="lp-join-beauty__heading">{{ section.settings.heading }}</h2>
+        {% endif %}
+        
+        {% if section.settings.text != blank %}
+          <div class="lp-join-beauty__text">{{ section.settings.text }}</div>
+        {% endif %}
+        
+        {% if section.settings.checkmark_list != blank %}
+          <div class="lp-join-beauty__checkmarks">
+            {{ section.settings.checkmark_list }}
+          </div>
+        {% endif %}
+      </div>
+      
+      <div class="lp-join-beauty__form-wrapper">
+        {% form 'contact', class: 'lp-join-beauty__form' %}
+          {% if form.posted_successfully? %}
+            <div class="lp-join-beauty__success">
+              <p>{{ section.settings.success_message | default: "Thank you for joining! We'll be in touch soon." }}</p>
+            </div>
+          {% endif %}
+          
+          {% if form.errors %}
+            <div class="lp-join-beauty__errors">
+              {% for field in form.errors %}
+                <p>{{ field | capitalize }} {{ form.errors.messages[field] }}</p>
+              {% endfor %}
+            </div>
+          {% endif %}
+          
+          <div class="lp-join-beauty__form-fields">
+
+            <div class="lp-join-beauty__field">
+              <label for="contact-first-name" class="lp-join-beauty__label">First Name</label>
+              <input 
+                type="text" 
+                id="contact-first-name" 
+                name="contact[first_name]" 
+                class="lp-join-beauty__input"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            
+            <div class="lp-join-beauty__field">
+              <label for="contact-last-name" class="lp-join-beauty__label">Last Name</label>
+              <input 
+                type="text" 
+                id="contact-last-name" 
+                name="contact[last_name]" 
+                class="lp-join-beauty__input"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            
+            <div class="lp-join-beauty__field">
+              <label for="contact-email" class="lp-join-beauty__label">Email Address</label>
+              <input 
+                type="email" 
+                id="contact-email" 
+                name="contact[email]" 
+                class="lp-join-beauty__input"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+          </div>
+          
+          <button type="submit" class="lp-join-beauty__submit">
+            {{ section.settings.button_text | default: 'Join the Beauty Community' }}
+          </button>
+        {% endform %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    .lp-join-beauty {
+      padding-top: {{ section.settings.padding_top_mobile }}px !important;
+      padding-bottom: {{ section.settings.padding_bottom_mobile }}px !important;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "LP Join Beauty",
+  "tag": "section",
+  "class": "lp-join-beauty-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "Join the Beauty Community"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Section Text",
+      "default": "<p>Get exclusive access to beauty tips, product launches, and special offers from our community of glow-getters.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "checkmark_list",
+      "label": "Checkmark List",
+      "default": "<ul><li>Early access to new products</li><li>Exclusive beauty tips and tutorials</li><li>Member-only discounts and offers</li><li>Personalized skincare recommendations</li></ul>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Join the Beauty Community"
+    },
+    {
+      "type": "text",
+      "id": "success_message",
+      "label": "Success Message",
+      "default": "Thank you for joining! We'll be in touch soon."
+    },
+    {
+      "type": "color_background",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "linear-gradient(100deg, #FBEDE5 4.91%, #FBF5D6 43%, #EFF4E4 68.55%, #ECF4FF 91.21%, #ECF4FF 98.9%)"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Top (Desktop)",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Bottom (Desktop)",
+      "default": 80
+    },
+    {
+      "type": "header",
+      "content": "Mobile Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 60
+    }
+  ],
+  "presets": [
+    {
+      "name": "LP Join Beauty"
+    }
+  ]
+}
+{% endschema %}

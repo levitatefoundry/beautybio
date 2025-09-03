@@ -102,3 +102,15 @@ button{
   border-radius: 5px;
   cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  .desktop--hidden {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile--hidden {
+    display: none !important;
+  }
+}
