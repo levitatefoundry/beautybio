@@ -191,7 +191,7 @@
       "custom_css": [
         ".slideshow-slide__text-container-inner {display: flex; flex-direction: column; align-items: center; text-align: center;}",
         ".fs-body-200 strong {font-family: \"gothambold\";}",
-        ".fs-body-200 {max-width: 460px;}",
+        ".fs-body-200 {max-width: 500px;}",
         ".fs-accent {font-size: 16pt; font-weight: 600;}",
         ".fs-heading-display-1 {color: #f3c8cf; text-shadow: -1px -1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, 1px 1px 0 #000, -6px 4px 0 #000;}",
         "@media screen and (max-width: 750px) {.fs-heading-display-1 {font-size: 28pt; } .fs-body-200 {font-size: 12pt; } .fs-accent {font-size: 12pt; font-weight: 600; }}"
