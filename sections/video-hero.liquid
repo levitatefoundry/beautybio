@@ -145,11 +145,6 @@
     <div class="video-hero__overlay"></div>
     <div class="video-hero__text-container-wrapper">
       {%- unless section.settings.media_link == blank -%}
-        <a
-          href="{{ section.settings.media_link }}"
-          class="video-hero__media-link"
-          aria-label="{{ section.settings.media_link }}"
-        ></a>
       {%- endunless -%}
 
       <div class="video-hero__text-container section-blocks animation--section-blocks">
@@ -163,7 +158,7 @@
               {%- endunless -%}
             {%- when 'heading' -%}
               {%- unless block.settings.title == blank -%}
-                <{{ block.settings.heading_tag }} class="video-hero__text-container-heading ff-heading {{ block.settings.heading_font_class }} section-blocks__heading">
+                <{{ block.settings.heading_tag }} id="video-hero-heading" class="video-hero__text-container-heading ff-heading {{ block.settings.heading_font_class }} section-blocks__heading">
                   {{ block.settings.title }}
                 </{{ block.settings.heading_tag }}>
               {%- endunless -%}

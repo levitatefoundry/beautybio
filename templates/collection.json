@@ -11,6 +11,10 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "custom_css": [
+        ".collection-banner__text-container-heading,.collection-banner__text-container-text {background-color: rgba(0, 0, 0, 0.01);}"
+      ],
+
       "settings": {
         "show_breadcrumbs": false,
         "show_collection_description": true,

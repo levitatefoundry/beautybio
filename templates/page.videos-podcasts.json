@@ -18,6 +18,15 @@
         "custom_content_width": 700
       }
     },
+    "custom_liquid_emdbmj": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<h1 class=\"visually-hidden\">Tutorials & Podcasts\n</h1>\n<style>\n  .visually-hidden {\n    position: absolute;\n    width: 1px;\n    height: 1px;\n    margin: -1px;\n    padding: 0;\n    overflow: hidden;\n    clip: rect(0, 0, 0, 0);\n    border: 0;\n    white-space: nowrap;\n  }\n</style>",
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
     "image_hero_MtK7yB": {
       "type": "image-hero",
       "blocks": {
@@ -59,6 +68,7 @@
         "media_link": "",
         "text_position": "center_center",
         "text_position_mobile": "center_center",
+        "show-checkboxes": false,
         "text_color": "#000000",
         "button_background_color": "#ffffff",
         "button_text_color": "#000000",
@@ -111,6 +121,7 @@
         "media_link": "",
         "text_position": "center_center",
         "text_position_mobile": "center_center",
+        "show-checkboxes": false,
         "text_color": "#ffffff",
         "button_background_color": "#ffffff",
         "button_text_color": "#000000",
@@ -163,6 +174,7 @@
         "media_link": "",
         "text_position": "center_center",
         "text_position_mobile": "center_center",
+        "show-checkboxes": false,
         "text_color": "#000000",
         "button_background_color": "#ffffff",
         "button_text_color": "#000000",
@@ -215,6 +227,9 @@
     },
     "elfsight_widget_erDPpL": {
       "type": "elfsight-widget",
+      "custom_css": [
+        "#yottie_1 .yottie-widget-nav-list-item a {color: #555 !important;}"
+      ],
       "settings": {
         "title": "",
         "title_color": "#000000",
@@ -336,6 +351,7 @@
   },
   "order": [
     "main",
+    "custom_liquid_emdbmj",
     "image_hero_MtK7yB",
     "image_hero_xehL8T",
     "image_hero_Yy9THn",

@@ -59,9 +59,9 @@
           "
         >
           {%- if block.settings.title != blank -%}
-            <h4 class="footer__header ff-body{% if block.settings.collapse_on_mobile %} footer__header--collapsed{% endif %}">
+            <h2 class="footer__header ff-body{% if block.settings.collapse_on_mobile %} footer__header--collapsed{% endif %}">
               <span class="footer__heading fs-accent">{{ block.settings.title }}</span>
-            </h4>
+            </h2>
             {%- if block.settings.collapse_on_mobile -%}
               <button type="button" class="footer__header ff-body" data-header>
                 <span class="footer__heading fs-accent">{{ block.settings.title }}</span>
@@ -116,7 +116,7 @@
               {%- assign success_msg = 'general.newsletter_form.confirmation' | t -%}
 
               <div class="footer__newsletter">
-                <div class="ff-heading fs-body-150 footer__text">{{ block.settings.text }}</div>
+                <div id="newsletter-description" class="ff-heading fs-body-150 footer__text">{{ block.settings.text }}</div>
 
                 {% form 'customer', class: 'footer__newsletter-form', id: 'footer-subscribe' %}
                   {% render 'form-status', form: form, form_id: 'footer-subscribe', success_message: success_msg %}
@@ -130,6 +130,7 @@
                       <input
                         type="email"
                         class="input"
+                        aria-describedby="newsletter-description"
                         name="contact[email]"
                         id="footer-subscribe-email"
                         value="{% if customer.email != blank %}{{ customer.email }}{% endif %}"
@@ -184,7 +185,6 @@
             {{ 'sections.footer.see_terms' | t }}
           </p>
           {{ section.settings.additional_copyright_text }}
-          <p>{{ powered_by_link | replace: 'rel="nofollow"', 'rel="nofollow noopener"' }}</p>
         </div>
       </div>
 
