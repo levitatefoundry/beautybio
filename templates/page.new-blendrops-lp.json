@@ -1,0 +1,475 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "full",
+        "custom_content_width": 1000
+      }
+    },
+    "lp_hero_banner_nUreHH": {
+      "type": "lp-hero-banner",
+      "name": "LP Hero Banner",
+      "settings": {
+        "main_image": "shopify://shop_images/Group_30_1.png",
+        "main_image_mob": "shopify://shop_images/Group_24.png",
+        "heading": "Your Daily Glow + SPF in One Drop",
+        "text": "Multi-use SPF46 priming drops that hydrate, color-correct, and protect in three custom finishes.",
+        "text_mob": "A multi-use SPF serum that hydrates, brightens, and protects in one step.",
+        "primary_button_text": "SHOP BLENDROPS",
+        "primary_button_url": "https://beautybio.com/collections/spf",
+        "secondary_button_text": "",
+        "secondary_button_url": "",
+        "background_color": "linear-gradient(100deg, rgba(251, 237, 229, 1) 4.91%, rgba(251, 245, 214, 1) 43%, rgba(239, 244, 228, 1) 68.55%, rgba(236, 244, 255, 1) 91.21%, rgba(236, 244, 255, 1) 98.9%)"
+      }
+    },
+    "lp_image_start_list_wty8tN": {
+      "type": "lp-image-start-list",
+      "blocks": {
+        "start_list_item_ECmYKA": {
+          "type": "start_list_item",
+          "settings": {
+            "start_image": "shopify://shop_images/Frame_1000005644.svg",
+            "text": "<p>SPF Protection You'll Actually Wear</p>"
+          }
+        },
+        "start_list_item_9Hrtzw": {
+          "type": "start_list_item",
+          "settings": {
+            "start_image": "shopify://shop_images/Frame_1000005644.svg",
+            "text": "<p>Helps Hydrate, Protect, Prime & Enhance in One Step</p>"
+          }
+        },
+        "start_list_item_KpdXPk": {
+          "type": "start_list_item",
+          "settings": {
+            "start_image": "shopify://shop_images/Frame_1000005644.svg",
+            "text": "<p>Lightweight, Hybrid SPF 46 With No White Cast</p>"
+          }
+        },
+        "start_list_item_fDkQVq": {
+          "type": "start_list_item",
+          "settings": {
+            "start_image": "shopify://shop_images/Frame_1000005644.svg",
+            "text": "<p>Color-Correcting Tranexamic & Skin-Plumping Polyglutamic Acids</p>"
+          }
+        },
+        "button_QPBcUr": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Blendrops",
+            "button_url": "https://beautybio.com/collections/spf",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "start_list_item_ECmYKA",
+        "start_list_item_9Hrtzw",
+        "start_list_item_KpdXPk",
+        "start_list_item_fDkQVq",
+        "button_QPBcUr"
+      ],
+      "name": "LP Image Start List",
+      "settings": {
+        "main_image": "shopify://shop_images/Introduction_IMG.png",
+        "heading": "Your Bronzing Drops Upgraded",
+        "text": "<p>Blendrops delivers daily sun protection with skin-loving ingredients for a glow that goes beyond UV defense.</p>",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 50,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "lp_spf_card_list_jgmfVf": {
+      "type": "lp-spf-card-list",
+      "blocks": {
+        "spf_card_hKRcab": {
+          "type": "spf_card",
+          "settings": {
+            "card_image": "shopify://shop_images/Frame_1484581492.png",
+            "card_title": "Backed by Real Science",
+            "card_text": "<p>Broad-spectrum sunscreen actives like Homosalate, Octisalate, and non-nano Zinc Oxide</p>"
+          }
+        },
+        "spf_card_kywaTC": {
+          "type": "spf_card",
+          "settings": {
+            "card_image": "shopify://shop_images/Frame_1484581492_2.png",
+            "card_title": "One Step, All Benefits",
+            "card_text": "<p>A hybrid SPF that delivers superior hydration, protection, and radiance</p>"
+          }
+        },
+        "spf_card_kLtbwy": {
+          "type": "spf_card",
+          "settings": {
+            "card_image": "shopify://shop_images/Frame_1484581492_1.png",
+            "card_title": "Daily Defense, Effortless Finish",
+            "card_text": "<p>Breathable, non-greasy coverage with zero white cast and a seamless, natural look.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "spf_card_hKRcab",
+        "spf_card_kywaTC",
+        "spf_card_kLtbwy"
+      ],
+      "name": "LP SPF Card List",
+      "settings": {
+        "heading": "More than SPF. Skincare You'll Actually Love.",
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "lp_drop_card_list_zKgNmL": {
+      "type": "lp-drop-card-list",
+      "blocks": {
+        "drop_card_7K4GzR": {
+          "type": "drop_card",
+          "settings": {
+            "card_heading": "Bronzing",
+            "card_text": "<p>Sun-kissed finish with SPF 46 protection with skincare benefits.</p>",
+            "card_image": "shopify://shop_images/image_1409_3_da23033c-d61d-4aee-afdf-8eb372c18285.png",
+            "feature_1_icon": "shopify://shop_images/Frame_1484581492_2.png",
+            "feature_1_title": "Warm, Natural-Looking Glow",
+            "feature_1_text": "<p>Delivers a sun-kissed, back-from-vacay bronze without the sun damage.</p>",
+            "feature_2_icon": "shopify://shop_images/Frame_1484581493.png",
+            "feature_2_title": "Lightweight, Hydrating Formula",
+            "feature_2_text": "<p>Silky texture drenches skin in hydration while keeping it fresh and comfortable.</p>",
+            "feature_3_icon": "shopify://shop_images/Frame_1484581493_1.png",
+            "feature_3_title": "Broad-Spectrum UV Defense",
+            "feature_3_text": "<p>Shields skin from UVA/UVB rays to help prevent sunburn and early signs of aging.</p>",
+            "benefits": "<p>Warmth, evening tone, and UV protection.</p>",
+            "use_daily": "<p>Use daily. Apply 15 minutes before sun exposure.</p>",
+            "button_text": "SHOP BRONZING",
+            "button_url": "https://beautybio.com/collections/spf/products/bronzing-blendrops"
+          }
+        },
+        "drop_card_NXGXym": {
+          "type": "drop_card",
+          "settings": {
+            "card_heading": "Illuminizing",
+            "card_text": "<p>Champagne shimmer finish with SPF 46 protection with skincare benefits.</p>",
+            "card_image": "shopify://shop_images/image_1409_1_ffc099bb-6af0-43c8-9e65-789df1505140.png",
+            "feature_1_icon": "shopify://shop_images/Frame_1484581492_5.png",
+            "feature_1_title": "Instant, Effortless Radiance",
+            "feature_1_text": "<p>Formulated with mica and reflective minerals that catch light for a luminous glow.</p>",
+            "feature_2_icon": "shopify://shop_images/Frame_1484581493.png",
+            "feature_2_title": "Lightweight, Hydrating Formula",
+            "feature_2_text": "<p>Silky texture drenches skin in hydration while keeping it fresh and comfortable.</p>",
+            "feature_3_icon": "shopify://shop_images/Frame_1484581493_1.png",
+            "feature_3_title": "Broad-Spectrum UV Defense",
+            "feature_3_text": "<p>Shields skin from UVA/UVB rays to help prevent sunburn and early signs of aging.</p>",
+            "benefits": "<p>Helping skin appear hydrated with a champagne shimmer glow.</p>",
+            "use_daily": "<p>Use daily. Reapply every 2 hours outdoors.</p>",
+            "button_text": "SHOP ILLUMINIZING",
+            "button_url": "https://beautybio.com/collections/spf/products/illuminizing-blendrops"
+          }
+        },
+        "drop_card_3DCw38": {
+          "type": "drop_card",
+          "settings": {
+            "card_heading": "Perfecting",
+            "card_text": "<p>Invisible, filtered-looking finish with SPF 46 protection with skincare benefits.</p>",
+            "card_image": "shopify://shop_images/image_1409_2_13ad9e7a-3c7f-457c-9cfc-1f70654eecc1.png",
+            "feature_1_icon": "shopify://shop_images/Frame_1484581492_6.png",
+            "feature_1_title": "Tone-Perfecting Sheer",
+            "feature_1_text": "<p>Light-diffusing formula softens the look of uneven tone without masking skin</p>",
+            "feature_2_icon": "shopify://shop_images/Frame_1484581493.png",
+            "feature_2_title": "Lightweight, Hydrating Formula",
+            "feature_2_text": "<p>Silky texture drenches skin in hydration while keeping it fresh and comfortable.</p>",
+            "feature_3_icon": "shopify://shop_images/Frame_1484581493_1.png",
+            "feature_3_title": "Broad-Spectrum UV Defense",
+            "feature_3_text": "<p>Shields skin from UVA/UVB rays to help prevent sunburn and early signs of aging.</p>",
+            "benefits": "<p>Helping to blur the appearance of imperfections and UV defense.</p>",
+            "use_daily": "<p>Use daily. Ideal alone or under makeup.</p>",
+            "button_text": "SHOP PERFECTING",
+            "button_url": "https://beautybio.com/collections/spf/products/perfecting-blendrops"
+          }
+        }
+      },
+      "block_order": [
+        "drop_card_7K4GzR",
+        "drop_card_NXGXym",
+        "drop_card_3DCw38"
+      ],
+      "name": "LP Drop Card List",
+      "settings": {
+        "heading": "<p>Meet Your Daily Glow Protector:</p><p>Blendrops™ SPF 46 Priming Drops</p>",
+        "text": "<p>All-in-one hybrid SPF drops that help hydrate, enhance, and defend against UV rays. Powered by color-correcting Tranexamic and plumping Polyglutamic acids with protective antioxidants to support glowing, healthy-looking skin every day.</p>",
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "lp_glow_step_q4EWKw": {
+      "type": "lp-glow-step",
+      "blocks": {
+        "step_3nN9Yg": {
+          "type": "step",
+          "settings": {
+            "step_title": "Shake It Up",
+            "step_text": "<p><em>Shake well to evenly disperse mineral filters and pigments for consistent protection and a seamless finish.</em></p>"
+          }
+        },
+        "step_PfTbik": {
+          "type": "step",
+          "settings": {
+            "step_title": "Blend + Apply",
+            "step_text": "<p><em>Apply with fingertips, sponge, or mix into makeup or moisturizer. Use Perfecting as all-over, priming coverage, Bronzing to contour, and Illuminizing to highlight for a full-face glow. Layer as desired.</em></p>"
+          }
+        },
+        "step_BLyRXR": {
+          "type": "step",
+          "settings": {
+            "step_title": "Glow All Day",
+            "step_text": "<p><em>Stay protected all day. Keep the conveniently packaged drops with you to touch-up SPF protection every 2 hours.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_3nN9Yg",
+        "step_PfTbik",
+        "step_BLyRXR"
+      ],
+      "name": "LP Glow Step",
+      "settings": {
+        "heading": "Your Glow in 3 Simple Steps",
+        "text": "<p>Glow and protect in seconds — no complicated routine, no heavy makeup. Just shake, blend, and go.</p>",
+        "background_color": "linear-gradient(100deg, rgba(251, 237, 229, 1) 4.91%, rgba(251, 245, 214, 1) 43%, rgba(239, 244, 228, 1) 68.55%, rgba(236, 244, 255, 1) 91.21%, rgba(236, 244, 255, 1) 98.9%)",
+        "button_text": "SHOP BLENDROPS",
+        "button_url": "https://beautybio.com/collections/spf",
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "lp_video_list_JpcPkf": {
+      "type": "lp-video-list",
+      "blocks": {
+        "video_qjVX4y": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/2025-04-13-karladejesus1522-1.mp4"
+          }
+        },
+        "video_PRjqTG": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/2025-04-17-evahalliday-5.mp4"
+          }
+        },
+        "video_jBdPF4": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/2025-04-14-sydneyandrewss__-9.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "video_qjVX4y",
+        "video_PRjqTG",
+        "video_jBdPF4"
+      ],
+      "name": "LP Video List",
+      "settings": {
+        "heading": "Loved by Real Glow-Getters",
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "lp_glow_reward_dffPhw": {
+      "type": "lp-glow-reward",
+      "blocks": {
+        "carousel_image_9JMU6E": {
+          "type": "carousel_image",
+          "settings": {
+            "image": "shopify://shop_images/Introduction_IMG_1.png"
+          }
+        },
+        "carousel_image_X9kXta": {
+          "type": "carousel_image",
+          "settings": {
+            "image": "shopify://shop_images/69dcc53b019108d9a14c126f4e0c378c39d55256.jpg"
+          }
+        },
+        "carousel_image_tAbQeD": {
+          "type": "carousel_image",
+          "settings": {
+            "image": "shopify://shop_images/Image_4.png"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_image_9JMU6E",
+        "carousel_image_X9kXta",
+        "carousel_image_tAbQeD"
+      ],
+      "name": "LP Glow Reward",
+      "settings": {
+        "section_overlay_img": "shopify://shop_images/image_1409_3_da23033c-d61d-4aee-afdf-8eb372c18285.png",
+        "heading": "Glow On, Stay Rewarded.",
+        "text": "<p>Make every drop count with our Subscribe & Save + Glow Getter Rewards.</p>",
+        "checkmark_list": "<ul><li>Save 15% and enjoy free shipping on auto-deliveries</li><li>Earn points on every purchase to redeem for perks & gifts</li><li>Cancel anytime—your glow, your way</li></ul>",
+        "button_text": "SHOP BLENDROPS",
+        "button_url": "https://beautybio.com/collections/spf",
+        "carousel_heading": "BeautyBio",
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "lp_faq_7dWLrN": {
+      "type": "lp-faq",
+      "blocks": {
+        "faq_item_HMc3D7": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How do I choose between Bronzing, Illuminizing, and Perfecting Blendrops?",
+            "answer": "<p>All three formulas deliver invisible SPF 46 protection plus skincare benefits – the difference is in the finish:</p><ul><li><strong>Bronzing → </strong>Adds warmth. Sheer pigments give skin a sun-kissed, just-back-from-vacay glow.</li><li><strong>Illuminizing → </strong>Adds radiance. Mica and radiance-boosting minerals catch the light for a luminous sheen – never glittery.</li><li><strong>Perfecting → </strong>Evens tone. Auto Adjust Tech helps smooth and balance skin for a seamless, your-skin-but-better finish.</li></ul>"
+          }
+        },
+        "faq_item_PVBxN6": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is this formula coral reef safe?",
+            "answer": "<p>Yes! Blendrops are free from oxybenzone and octinoxate, two sunscreen filters known to harm coral reefs.</p>"
+          }
+        },
+        "faq_item_F4hzBQ": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is this a mineral or chemical SPF?",
+            "answer": "<p>Blendrops are a hybrid SPF. The formula combines chemical filters (Homosalate + Octisalate) with non-nano Zinc Oxide, a mineral filter, for long-wear, broad-spectrum protection.</p>"
+          }
+        },
+        "faq_item_ccrLHk": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Do I need to reapply throughout the day?",
+            "answer": "<p>Yes. Like all sunscreens, Blendrops should be reapplied every 2 hours during sun exposure. Reapply after swimming, sweating, or towel drying for best protection. Blendrops are not waterproof.</p>"
+          }
+        },
+        "faq_item_YxFXdV": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I layer this with other makeup or skincare?",
+            "answer": "<p>Absolutely. Blendrops are designed to seamlessly layer over skincare and under makeup – or even be mixed into foundation or moisturizer for an effortless, customized glow.</p>"
+          }
+        },
+        "faq_item_caM6yj": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What skin type is Blendrops formulated for?",
+            "answer": "<p>All skin types. Thanks to AutoAdjust Technology, each finish adapts to your skin tone with zero white cast, while the lightweight, blendable texture makes it suitable for oily, dry, and combination skin.</p>"
+          }
+        },
+        "faq_item_mh6BBM": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Will this leave a greasy finish?",
+            "answer": "<p>No. The formula is oil-free and was designed to give a natural, skin-like finish – whether you choose the Bronzing, Illuminizing, or Perfecting – without heavy slip or shine.</p>"
+          }
+        },
+        "faq_item_yLywL4": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What skincare benefits are inside beyond SPF?",
+            "answer": "<p>Blendrops are more than sunscreen. Aside from UV protection, the formula features:</p><ul><li><strong>Tranexamic Acid</strong> – helps visibly even skin tone.</li><li><strong>Polyglutamic Acid + PCA</strong> – hydrators that help support plump, supple skin.</li><li><strong>Antioxidant extracts (Rosemary, Rice Bran, Sunflower)</strong> – help defend against environmental stressors.</li><li><strong>Vitamin E (Tocopherol)</strong> – nourishes and helps support the skin’s protective barrier.</li></ul>"
+          }
+        },
+        "faq_item_bxHdw7": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is this safe for sensitive skin?",
+            "answer": "<p>Blendrops are formulated without oxybenzone, octinoxate, or fragrance and include calming extracts like safflower oleosomes and rosemary to support skin comfort. Always patch test first if you’re highly reactive.</p>"
+          }
+        },
+        "faq_item_QiBmx9": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can Blendrops replace my daily moisturizer?",
+            "answer": "<p>Not entirely – though it hydrates and softens, Blendrops are best layered with or blended into your favorite moisturizer for complete skincare benefits.</p>"
+          }
+        },
+        "faq_item_9EhhCw": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is Blendrops pregnancy safe?",
+            "answer": "<p>We recommend consulting your doctor with any questions about using SPF products while pregnant or nursing.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_HMc3D7",
+        "faq_item_PVBxN6",
+        "faq_item_F4hzBQ",
+        "faq_item_ccrLHk",
+        "faq_item_YxFXdV",
+        "faq_item_caM6yj",
+        "faq_item_mh6BBM",
+        "faq_item_yLywL4",
+        "faq_item_bxHdw7",
+        "faq_item_QiBmx9",
+        "faq_item_9EhhCw"
+      ],
+      "name": "LP FAQ",
+      "settings": {
+        "heading": "You’ve Got Questions. We’ve Got Glowing Answers.",
+        "text": "<p>Whether you're new to at-home skincare tech or just curious how it all works, we’re here to help. These are our most-asked Qs from real BeautyBio customers.</p>",
+        "button_text": "View All FAQs",
+        "button_url": "https://beautybio.gorgias.help/en-US",
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "lp_join_beauty_dqr6cy": {
+      "type": "lp-join-beauty",
+      "name": "LP Join Beauty",
+      "settings": {
+        "heading": "Join BeautyBio, Your Skin's Smart Move.",
+        "text": "<p>Register your product or create an account for exclusive perks, faster reorders, and early access to launches. Glowing skin deserves glowing benefits.</p>",
+        "checkmark_list": "<ul><li>Track Your Orders & Refills</li><li>Exclusive Perks</li><li>Glow Insider Access</li></ul>",
+        "button_text": "SUBMIT",
+        "success_message": "Thank you for joining! We'll be in touch soon.",
+        "background_color": "linear-gradient(100deg, rgba(251, 237, 229, 1) 4.91%, rgba(251, 245, 214, 1) 43%, rgba(239, 244, 228, 1) 68.55%, rgba(236, 244, 255, 1) 91.21%, rgba(236, 244, 255, 1) 98.9%)",
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    }
+  },
+  "order": [
+    "main",
+    "lp_hero_banner_nUreHH",
+    "lp_image_start_list_wty8tN",
+    "lp_spf_card_list_jgmfVf",
+    "lp_drop_card_list_zKgNmL",
+    "lp_glow_step_q4EWKw",
+    "lp_video_list_JpcPkf",
+    "lp_glow_reward_dffPhw",
+    "lp_faq_7dWLrN",
+    "lp_join_beauty_dqr6cy"
+  ]
+}

@@ -1,3 +1,4 @@
+
 /* Typography */
 .navigation__submenu-trigger,
 .header__links.header__links-primary>ul>li>[data-link],
@@ -102,4 +103,24 @@ button{
 .rc-template__radio-group .rc-selling-plans select {
   border-radius: 5px;
   cursor: pointer;
+
+/* Typography */
+
+
+h2, h4 > a,
+.footer__heading.fs-accent, span{
+ font-family: 'gothambold' !important;
+    letter-spacing: -0.03em;
+} 
+
+@media (min-width: 768px) {
+  .desktop--hidden {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile--hidden {
+    display: none !important;
+  }
 }

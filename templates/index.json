@@ -166,6 +166,7 @@
             "text_position": "center_center",
         "slide_WYJdMR": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/8-26-25_HPDesktop_Quench-Evergreen-ThirstySkin.jpg",
             "image_mobile": "shopify://shop_images/8-26-25_HPMobile_Quench-Evergreen-ThirstySkin.jpg",
@@ -240,6 +241,39 @@
             "mobile_focal_point": "image_presentation",
             "media_link": "shopify://collections/spf",
             "text_position": "flex-start_center",
+        "slide_yT84rQ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Destop_Quench-Evergreen-TallDrink.jpg",
+            "image_mobile": "shopify://shop_images/Mobile_Quench-Evergreen-TallDrink.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "top",
+            "media_link": "shopify://products/the-quench-skin-recovery-cream",
+            "text_position": "flex-start_center",
+            "text_position_mobile": "center_flex-start",
+            "accent": "",
+            "title": "",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-1",
+            "subheading": "",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-200",
+            "link_1": "",
+            "link_text_1": "",
+            "button_style_1": "btn--primary",
+            "link_2": "",
+            "link_text_2": "Read more",
+            "button_style_2": "btn--primary",
+            "text_color": "#000000",
+            "button_background_color": "#000000",
+            "button_text_color": "#ffffff",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
+          }
+        },
         "slide_iYy4Qq": {
           "type": "slide",
           "settings": {
@@ -283,7 +317,13 @@
         "slide_6TTdpC",
         "slide_E3rhzj",
         "slide_WYJdMR",
+        "slide_yT84rQ",
         "slide_iYy4Qq"
+      ],
+      "custom_css": [
+        ".slideshow-slide__text-container-inner {display: flex; flex-direction: column; align-items: center; text-align: center;}",
+        ".fs-body-200 strong {font-family: \"gothambold\";}",
+        "@media screen and (max-width: 750px) {.fs-heading-display-1 {font-size: 28pt; }}"
       ],
       "settings": {
         "image_aspect": "original",
