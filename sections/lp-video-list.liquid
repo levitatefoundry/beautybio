@@ -59,14 +59,14 @@
   </div>
 </section>
 
-<style>
+{% style %}
   @media (max-width: 768px) {
-    .lp-video-list {
+    #shopify-section-{{ section.id }}.lp-video-list {
       padding-top: {{ section.settings.padding_top_mobile }}px !important;
       padding-bottom: {{ section.settings.padding_bottom_mobile }}px !important;
     }
   }
-</style>
+{% endstyle %}
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {

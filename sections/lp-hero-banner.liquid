@@ -1,6 +1,18 @@
 {{ 'lp-hero-banner.css' | asset_url | stylesheet_tag }}
 
-<section class="lp-hero-banner" style="background: {{ section.settings.background_color }};">
+<section class="lp-hero-banner {% if section.settings.background_image != blank %}desktop-bg{% endif %} {% if section.settings.background_image_mob != blank %}mobile-bg{% endif %}" style="
+  background: {{ section.settings.background_color }};
+  {% if section.settings.background_image != blank %}
+    background-image: url('{{ section.settings.background_image | image_url: width: 1920 }}');
+    background-repeat: no-repeat;
+    background-position: center;
+    {% if section.settings.background_size == 'custom' and section.settings.custom_background_size != blank %}
+      background-size: {{ section.settings.custom_background_size }};
+    {% else %}
+      background-size: {{ section.settings.background_size }};
+    {% endif %}
+  {% endif %}
+">
   <div class="section">
     <div class="lp-hero-content">
       <div class="lp-hero-text">
@@ -111,10 +123,55 @@
       "label": "Secondary Button URL"
     },
     {
+      "type": "header",
+      "content": "Background"
+    },
+    {
       "type": "color_background",
       "id": "background_color",
       "label": "Background Color",
       "default": "#FDF2F0"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image (Desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image_mob",
+      "label": "Background Image (Mobile)"
+    },
+    {
+      "type": "select",
+      "id": "background_size",
+      "label": "Background Size",
+      "options": [
+        {
+          "value": "repeat",
+          "label": "Repeat"
+        },
+        {
+          "value": "contain",
+          "label": "Contain"
+        },
+        {
+          "value": "cover",
+          "label": "Cover"
+        },
+        {
+          "value": "custom",
+          "label": "Custom"
+        }
+      ],
+      "default": "cover"
+    },
+    {
+      "type": "text",
+      "id": "custom_background_size",
+      "label": "Custom Background Size",
+      "info": "Enter custom background size (e.g., 100% 100%, 50px 30px)",
+      "visible_if": "{{ section.settings.background_size == 'custom' }}"
     }
   ],
   "presets": [
@@ -124,3 +181,17 @@
   ]
 }
 {% endschema %}
+
+<style>
+  {% if section.settings.background_image_mob != blank %}
+    .lp-hero-banner.mobile-bg {
+      background-image: url('{{ section.settings.background_image_mob | image_url: width: 768 }}') !important;
+    }
+    
+    @media (min-width: 769px) {
+      .lp-hero-banner.mobile-bg {
+        background-image: url('{{ section.settings.background_image | image_url: width: 1920 }}') !important;
+      }
+    }
+  {% endif %}
+</style>

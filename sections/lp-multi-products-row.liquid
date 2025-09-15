@@ -1,0 +1,204 @@
+{{ 'lp-multi-products-row.css' | asset_url | stylesheet_tag }}
+{{ 'lp-multi-product-item.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} .section-multi-product {
+    padding-top: {{ section.settings.padding_top | append: 'px' }};
+    padding-bottom: {{ section.settings.padding_bottom | append: 'px' }};
+  }
+
+  @media (max-width: 768px) {
+    #shopify-section-{{ section.id }} .section-multi-product {
+      padding-top: {{ section.settings.padding_top_mob | append: 'px' }};
+      padding-bottom: {{ section.settings.padding_bottom_mob | append: 'px' }};
+    }
+  }
+{%- endstyle -%}
+
+<div id="multi-products-row" class="section-multi-product">
+    <div class="section section--vertical-padding-none">
+        <div class="multi-products__container">
+            <div class="multi-products__heading">
+              <h2>{{ section.settings.heading }}</h2>
+              <div class="multi-products__description">
+                {{ section.settings.description }}
+              </div>
+            </div>
+            <div class="multi-products__groups">
+
+              {%- liquid
+                assign blocks_length = section.blocks.size | default: 1
+                assign split_length = blocks_length | divided_by: 3
+              -%}
+
+              {% for i in (0..split_length) %}
+
+                {%- liquid
+                  assign start_length = i | times: 3
+                  assign end_length = i | plus: 1 | times: 3 | minus: 1
+                -%}
+
+                  <div class="multi-products__group">
+                    <swiper-component>
+                      <div class="swiper" data-swiper data-swiper-options='{
+                        "slidesPerView" : 1,
+                        "spaceBetween" : 40,
+                        "navigation": {
+                          "nextEl": ".swiper-button-next-{{ section.id }}-{{ i }}",
+                          "prevEl": ".swiper-button-prev-{{ section.id }}-{{ i }}"
+                        },
+                        "breakpoints": {  
+                          "768": {
+                            "slidesPerView": 2,
+                            "spaceBetween": 40
+                          },
+                          "1100": {
+                            "slidesPerView": 3,
+                            "spaceBetween": 40
+                          }
+                        }
+                      }'>
+                        <div class="swiper-wrapper">
+                          {% for block_index in (start_length..end_length) %}
+                            {%- liquid
+                              assign block = section.blocks[block_index]
+                            -%}
+
+                            {% if block != blank %}
+                              <div class="swiper-slide" {{ block.shopify_attributes }}>
+                                {%- render 'lp-product-card', block_settings: block.settings -%}
+                              </div>
+                            {% endif %}
+                          {% endfor %}
+                        </div>
+                      </div>
+
+                      <div class="swiper-button swiper-button-next swiper-button-next-{{ section.id }}-{{ i }}"></div>
+                      <div class="swiper-button swiper-button-prev swiper-button-prev-{{ section.id }}-{{ i }}"></div>
+                    </swiper-component>
+                  </div>
+              {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+ 
+{% schema %}
+    {
+        "name": "LP Multi Products Row",
+        "class": "section-multi-products",
+        "settings": [
+            {
+              "type": "text",
+              "id": "heading",
+              "label": "Heading"
+            },
+            {
+              "type": "richtext",
+              "id": "description",
+              "label": "Description"
+            },
+            {
+              "type": "header",
+              "content": "Padding"
+            },
+            {
+              "type": "paragraph",
+              "content": "Desktop"
+            },
+            {
+              "type": "range",
+              "id": "padding_top",
+              "min": 0,
+              "max": 100,
+              "step": 1,
+              "unit": "px",
+              "label": "Padding top",
+              "default": 60
+            },
+            {
+              "type": "range",
+              "id": "padding_bottom",
+              "min": 0,
+              "max": 100,
+              "step": 1,
+              "unit": "px",
+              "label": "Padding bottom",
+              "default": 60
+            },
+            {
+              "type": "paragraph",
+              "content": "Mobile"
+            },
+            {
+              "type": "range",
+              "id": "padding_top_mob",
+              "min": 0,
+              "max": 100,
+              "step": 1,
+              "unit": "px",
+              "label": "Padding top",
+              "default": 60
+            },
+            {
+              "type": "range",
+              "id": "padding_bottom_mob",
+              "min": 0,
+              "max": 100,
+              "step": 1,
+              "unit": "px",
+              "label": "Padding bottom",
+              "default": 60
+            },
+        ],
+        "blocks": [
+          {
+            "name": "Product card",
+            "type": "product-card",
+            "settings": [
+                {
+                 "type": "product",
+                 "id": "product",
+                 "label": "Product"
+                },
+                {
+                  "type": "text",
+                  "id": "custom_title",
+                  "label": "Custom title"
+                },
+                {
+                  "type": "richtext",
+                  "id": "custom_description",
+                  "label": "Custom description"
+                },
+                {
+                  "type": "text",
+                  "id": "custom_product_price",
+                  "label": "Custom product price"
+                },
+                {
+                  "type": "image_picker",
+                  "id": "custom_product_image",
+                  "label": "Custom product image"
+                },
+                {
+                  "type": "richtext",
+                  "id": "includes",
+                  "label": "Includes"
+                },
+                {
+                  "type": "richtext",
+                  "id": "best_for",
+                  "label": "Best for"
+                },
+            ]
+          }
+        ],
+        "presets": [
+          {
+            "name": "LP Multi Products Row",
+          }
+        ],
+    }
+{% endschema %}
+ 
