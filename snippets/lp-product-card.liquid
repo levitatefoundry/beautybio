@@ -5,8 +5,6 @@
 {%- liquid
   assign _product = block_settings.product
   assign _product_media = block_settings.custom_product_image | default: _product.featured_image
-  assign _product_money = _product.price | money
-  assign _product_price = block_settings.custom_product_price | default: _product_money
   assign _product_title = block_settings.custom_title | default: _product.title
   assign _product_description = block_settings.custom_description | default: _product.description
   assign _product_includes = block_settings.includes
@@ -22,7 +20,22 @@
             {{ _product_description }}
         </div>
         <div class="lp-product-card__price">
-            {{ _product_price }}
+            {% if _product != blank %}
+                {%- if _product.compare_at_price > _product.price -%}
+                    <div class="lp-product-card__regular--price">
+                        {{ _product.compare_at_price | money }}
+                    </div>
+                    <div class="lp-product-card__sale--price">
+                        {{ _product.price | money }}
+                    </div>
+                {%  else %}
+                    <div class="lp-product-card__sale--price">
+                        {{ _product.price | money }}
+                    </div>
+                {%- endif -%}
+            {% elsif block_settings.custom_product_price != blank %}
+                {{ block_settings.custom_product_price }}
+            {% endif %}
         </div>
         <div class="lp-product-card__media">
             {% if _product_media != blank %}

@@ -62,6 +62,19 @@
     font-weight: 700;
     line-height: 95%; /* 22.8px */
     letter-spacing: -0.36px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.lp-product-card__regular--price {
+    text-decoration: line-through;
+    font-size: 22px;
+}
+
+.lp-product-card__sale--price {
+    color: #ee4e9c;
 }
 
 .lp-product-card__includes,
