@@ -1,0 +1,144 @@
+/* LP Study Buddy Styles */
+.lp-study-buddy-container {
+  position: relative;
+  width: 100%;
+}
+
+.lp-study-buddy-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.lp-study-buddy-image-container {
+  position: relative;
+  width: 100%;
+  height: 565px;
+  overflow: hidden;
+}
+
+.lp-study-buddy-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lp-study-buddy-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+  z-index: 2;
+  max-width: calc(var(--max-width) + calc(var(--space-outer) * 2));
+  margin: 0 auto;
+}
+
+.lp-study-buddy-content {
+  text-align: left;
+  max-width: 400px;
+}
+
+.lp-study-buddy-heading {
+  margin-bottom: 16px;
+  color: #000;
+  font-family: gothambold;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 95%;
+  letter-spacing: -0.48px;
+  text-transform: capitalize;
+}
+
+.lp-study-buddy-description {
+  margin-bottom: 16px;
+  color: #000;
+  font-family: gothambook;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+}
+
+.lp-study-buddy-btn {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  min-width: 250px;
+  text-align: center;
+  padding: 12px;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: gothambold;
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.lp-study-buddy-btn:hover {
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+}
+
+.lp-study-buddy {
+  position: relative;
+}
+
+.lp-study-buddy .overlay--icon {
+  position: absolute;
+  top: 0px;
+  max-width: 245px;
+  width: 100%;
+  height: auto;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .lp-study-buddy-container {
+    min-height: auto;
+  }
+  
+  .lp-study-buddy-image-container {
+    height: auto;
+  }
+  
+  .lp-study-buddy-overlay {
+    position: static;
+    padding: 0;
+    background: transparent;
+  }
+  
+  .lp-study-buddy-content {
+    background: transparent;
+    padding: 0;
+    max-width: 100%;
+    text-align: center;
+    padding: 24px;
+  }
+  
+  .lp-study-buddy-heading {
+    margin-bottom: 12px;
+  }
+  
+  .lp-study-buddy-description {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .lp-study-buddy-btn {
+    width: 100%;
+  }
+}
