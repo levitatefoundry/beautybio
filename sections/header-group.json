@@ -32,11 +32,20 @@
             "block_image_two": "shopify://shop_images/Ulta_Beauty_logo_1.svg",
             "block_image_three": "shopify://shop_images/Nordstrom_Logo_2019_1.svg"
           }
+        },
+        "announcement_97Y4Gi": {
+          "type": "announcement",
+          "settings": {
+            "title": "<p><strong>Free Standard Shipping On Orders $99+</strong></p>",
+            "title_mobile": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "announcement_cq7exJ",
-        "announcement-bar-1"
+        "announcement-bar-1",
+        "announcement_97Y4Gi"
       ],
       "settings": {
         "enable_sticky_announcement_bar": "desktop-and-mobile",
