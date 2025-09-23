@@ -10425,9 +10425,16 @@ html.no-js .product-tabs__tab-item{
       background:var(--color-background);
     }
 .product-item__price .sale,
-  .product-item__price .displayed-discount{
-    color:var(--color-products-sale-price);
-  }
+.product-item__price .displayed-discount{
+  color:var(--color-products-sale-price);
+}
+
+.product-item__price {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
 button{
   border:0;
   border-radius:0;
@@ -16719,6 +16726,8 @@ html.theme-editor .popup__tab{
 .product-rating__count{
     margin-left:2px;
     margin-top:2px;
+    display: flex;
+    gap: 3px;
   }
 .sticky-atc-bar{
   position:fixed;
