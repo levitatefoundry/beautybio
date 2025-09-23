@@ -1,0 +1,182 @@
+{{ 'lp-study-buddy.css' | asset_url | stylesheet_tag }}
+
+<section class="lp-study-buddy" style="padding-top: {{ section.settings.padding_top_desktop }}px; padding-bottom: {{ section.settings.padding_bottom_desktop }}px;">
+  <div class="section section--full-width section--vertical-padding-none" style="background: {{ section.settings.background_color }};">
+    <div class="lp-study-buddy-container">
+      <!-- Background Image Content -->
+      <div class="lp-study-buddy-background">
+        {% if section.settings.background_image != blank %}
+          <div class="lp-study-buddy-image-container">
+            <img src="{{ section.settings.background_image | image_url: width: 1800 }}" 
+                alt="{{ section.settings.background_image.alt | escape }}"
+                width="{{ section.settings.background_image.width }}"
+                height="{{ section.settings.background_image.height }}"
+                class="{% if section.settings.background_image_mob != blank %}mobile--hidden{% endif %}"
+                loading="lazy">
+            
+            {% if section.settings.background_image_mob != blank %}
+              <img src="{{ section.settings.background_image_mob | image_url: width: 900 }}" 
+                  alt="{{ section.settings.background_image_mob.alt | escape }}"
+                  width="{{ section.settings.background_image_mob.width }}"
+                  height="{{ section.settings.background_image_mob.height }}"
+                  class="desktop--hidden"
+                  loading="lazy">
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+      
+      <!-- Overlay Content -->
+      <div class="lp-study-buddy-overlay">
+        <div class="lp-study-buddy-content">
+          {% if section.settings.heading != blank %}
+            <h2 class="lp-study-buddy-heading">{{ section.settings.heading | newline_to_br }}</h2>
+          {% endif %}
+          
+          {% if section.settings.text != blank %}
+            <div class="lp-study-buddy-description">{{ section.settings.text }}</div>
+          {% endif %}
+          
+          {% if section.settings.button_text != blank %}
+            <a href="{{ section.settings.button_url }}" class="lp-study-buddy-btn">
+              {{ section.settings.button_text }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% if section.settings.overlay_icon != blank %}
+    <img class="overlay--icon mobile--hidden" src="{{ section.settings.overlay_icon |  image_url: width: 500 }}" width="" height="" alt="">
+  {% endif %}
+</section>
+
+{% style %} 
+  @media (max-width: 768px) {
+    #shopify-section-{{ section.id }} .lp-study-buddy {
+      padding-top: {{ section.settings.padding_top_mobile }}px !important;
+      padding-bottom: {{ section.settings.padding_bottom_mobile }}px !important;
+    }
+  }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "LP Study Buddy",
+  "tag": "section",
+  "class": "section-lp-study-buddy",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Overlay Content"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Your Skin's New Study Buddy"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Description",
+      "default": "Doesn't take up closet space, never eats your snacks, and always shows up for your skin. Glofacial is your 4-minute facial tool that deep cleans pores while infusing clarifying, hydrating skincare – no spa appointment needed."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "SHOP MY ESSENTIALS"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "header",
+      "content": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image (Desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image_mob",
+      "label": "Background Image (Mobile)"
+    },
+    {
+      "type": "header",
+      "content": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FDF2F0"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "overlay_icon",
+      "label": "Overlay icon"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Top (Desktop)",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Bottom (Desktop)",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Mobile Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "LP Study Buddy"
+    }
+  ]
+}
+{% endschema %}

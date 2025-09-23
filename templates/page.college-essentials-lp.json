@@ -1,0 +1,306 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "announcement_bar_QXfnAt": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_4rCeaF": {
+          "type": "announcement",
+          "settings": {
+            "title": "<p><strong>25% off College Essentials from 9/15 thru 9/22</strong></p>",
+            "title_mobile": "<p><strong>25% off College Essentials from 9/15 thru 9/22</strong></p>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_4rCeaF"
+      ],
+      "custom_css": [],
+      "name": "Announcement bar",
+      "settings": {
+        "enable_sticky_announcement_bar": "never",
+        "autoplay_enabled": true,
+        "autoplay_delay": 4,
+        "color_background": "#ffffff",
+        "color_text": "#000000"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "full",
+        "custom_content_width": 1000
+      }
+    },
+    "lp_hero_banner_ecBHEP": {
+      "type": "lp-hero-banner",
+      "name": "LP Hero Banner",
+      "settings": {
+        "heading": "Meet Your New Skincare Roommate",
+        "text": "Your 4-minute facial for late nights, early mornings, and every moment in between.",
+        "text_mob": "Your 4-minute facial for late nights, early mornings, and every moment in between.",
+        "primary_button_text": "find my glow",
+        "primary_button_url": "shopify://products/glofacial-mint-tool-set",
+        "secondary_button_text": "",
+        "secondary_button_url": "",
+        "background_color": "#FDF2F0",
+        "background_image": "shopify://shop_images/CollegeEssentials_9-12_HPCollegeEssentials_HP-Desktop_1.jpg",
+        "background_image_mob": "shopify://shop_images/Hero_section_4.png",
+        "background_size": "cover",
+        "custom_background_size": ""
+      }
+    },
+    "lp_image_banner_XWt8KL": {
+      "type": "lp-image-banner",
+      "name": "LP Image Banner",
+      "settings": {
+        "heading": "POV: You have main character skin",
+        "text": "Consider this your skincare major. And you’re graduating with honors.",
+        "button_text": "add to backpack",
+        "button_url": "shopify://products/bright-eyes-illuminating-colloidal-silver-collagen-eye-patches",
+        "main_image": "shopify://shop_images/BLOCK_2_1.png",
+        "main_image_mob": "shopify://shop_images/BLOCK_2_1.png",
+        "background_color": "#FFFFFF",
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "lp_study_buddy_GVJyzG": {
+      "type": "lp-study-buddy",
+      "name": "LP Study Buddy",
+      "settings": {
+        "heading": "Your Skin's \nNew Study Buddy",
+        "text": "Doesn't take up closet space, never eats your snacks, and always shows up for your skin. GLOfacial is your 4-minute facial tool that deep cleans pores while infusing clarifying, hydrating skincare – no spa appointment needed.",
+        "button_text": "SHOP MY ESSENTIALS",
+        "button_url": "#multi-products-row",
+        "background_image": "shopify://shop_images/Section_3.png",
+        "background_image_mob": "shopify://shop_images/Frame_1484581626.png",
+        "background_color": "#FDF1F5",
+        "overlay_icon": "shopify://shop_images/Layer_12_1.png",
+        "padding_top_desktop": 50,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "lp_multi_products_row_NALgiL": {
+      "type": "lp-multi-products-row",
+      "blocks": {
+        "product_card_HPzMpD": {
+          "type": "product-card",
+          "settings": {
+            "product": "glofacial",
+            "custom_title": "GLOfacial | Classic White",
+            "custom_description": "<p>Pore-Cleansing Hydration Facial Tool</p>",
+            "custom_product_price": "$199",
+            "custom_product_image": "shopify://shop_images/GLOfacial___Classic_White.png",
+            "includes": "<p>GLOfacial Tool + Travel Size Clarifying GLOfacial Concentrate</p>",
+            "best_for": "<p>Oily, dull, or tire-looking skin in need of a glow boost. Use 1-2x a week</p>"
+          }
+        },
+        "product_card_8wRNfA": {
+          "type": "product-card",
+          "settings": {
+            "product": "glofacial-mint-tool-set",
+            "custom_title": "GLOfacial | Mint Edition",
+            "custom_description": "<p>Pore-Cleansing Hydration Facial Tool</p>",
+            "custom_product_price": "$199",
+            "custom_product_image": "shopify://shop_images/GLOfacial___Mint_Edition.png",
+            "includes": "<p>GLOfacial Tool + Travel Size Clarifying GLOfacial Concentrate</p>",
+            "best_for": "<p>Oily, dull, or tire-looking skin in need of a glow boost. Use 1-2x a week</p>"
+          }
+        },
+        "product_card_qKXMzH": {
+          "type": "product-card",
+          "settings": {
+            "product": "pro-hydration-facial-set",
+            "custom_title": "GLOfacial | Golden Glow",
+            "custom_description": "<p>Pore-Cleansing Hydration Facial Tool</p>",
+            "custom_product_price": "$199",
+            "custom_product_image": "shopify://shop_images/GLOfacial___Golden_Glow.png",
+            "includes": "<p>GLOfacial Tool + Travel & Full Size Clarifying + Full Size Collagen GLOfacial </p>",
+            "best_for": "<p>Oily, dull, or tire-looking skin in need of a glow boost. Use 1-2x a week</p>"
+          }
+        },
+        "product_card_7bwnYx": {
+          "type": "product-card",
+          "settings": {
+            "product": "bronzing-blendrops",
+            "custom_title": "Bronzing Blendrops",
+            "custom_description": "<p>SPF 46 Oil-Free Sun-Kissed Finish Priming Drops, 1 fl. oz.</p>",
+            "custom_product_price": "$38",
+            "custom_product_image": "shopify://shop_images/Bronzing_Blendrops.png",
+            "includes": "<p>Sun-kissed, warm glow without skipping spf.</p>",
+            "best_for": "<p>Mixed with moisturizer or worn alone for instant bronze vibes.</p>"
+          }
+        },
+        "product_card_eB9NYF": {
+          "type": "product-card",
+          "settings": {
+            "product": "illuminizing-blendrops",
+            "custom_title": "Illuminizing Blendrops",
+            "custom_description": "<p>SPF 46 Oil-Free Radiant Finish Priming Drops, 1 fl. oz. </p>",
+            "custom_product_price": "$38",
+            "custom_product_image": "shopify://shop_images/Illuminizing_Blendrops.png",
+            "includes": "<p>Boosting radiance and catching the light for glow-up energy.</p>",
+            "best_for": "<p>Layered as a highlighter or blended with skincare/makeup for all-over luminosity.</p>"
+          }
+        },
+        "product_card_Rcm78U": {
+          "type": "product-card",
+          "settings": {
+            "product": "perfecting-blendrops",
+            "custom_title": "Perfecting Blendrops",
+            "custom_description": "<p>SPF 46 Oil-Free Invisible Finish Priming Drops, 1 fl. oz.</p>",
+            "custom_product_price": "$38",
+            "custom_product_image": "shopify://shop_images/Perfecting_Blendrops.png",
+            "includes": "<p>Evening tone and smoothing the look of skin for a flawless finish</p>",
+            "best_for": "<p>Worn under or mixed with makeup for a filter-like base. </p>"
+          }
+        },
+        "product_card_BgKdmX": {
+          "type": "product-card",
+          "settings": {
+            "product": "bright-eyes-illuminating-colloidal-silver-collagen-eye-patches",
+            "custom_title": "Bright Eyes",
+            "custom_description": "<p>Collagen-Infused Depuffing & Brightening Gels, 15 Pairs</p>",
+            "custom_product_price": "$40",
+            "custom_product_image": "shopify://shop_images/TransparentBrightEyesGC_3.png",
+            "includes": "<p>Bringing tired eyes back to life after late nights and early mornings.</p>",
+            "best_for": "<p>In the morning, before makeup, or anytime eyes need a refresh.</p>"
+          }
+        },
+        "product_card_URM8gd": {
+          "type": "product-card",
+          "settings": {
+            "product": "balance-ph-balanced-facial-cleanser",
+            "custom_title": "The Balance",
+            "custom_description": "<p>pH Balancing All-in-One Gel Cleanser, 6 fl. oz.</p>",
+            "custom_product_price": "$39",
+            "custom_product_image": "shopify://shop_images/Frame_1484581493_7.png",
+            "includes": "<p> An all-in-one cleanse that clears away the day without stripping skin.</p>",
+            "best_for": "<p>Morning and night to wash off makeup, dirt, and campus stress. </p>"
+          }
+        },
+        "product_card_VmrcTL": {
+          "type": "product-card",
+          "settings": {
+            "product": "lip-pout-volumizing-lip-serum",
+            "custom_title": "The Pout | Sparkling Rosé",
+            "custom_description": "<p>Hyaluronic Acid-Infused Volumizing Lip Serum, 0.5 fl. oz.</p>",
+            "custom_product_price": "$39",
+            "custom_product_image": "shopify://shop_images/Frame_1484581493_4.png",
+            "includes": "<p>Hydrated, instantly fuller-looking lips that last past the coffee run.</p>",
+            "best_for": "<p>Throughout the day, before class, or as a gloss-level finishing touch. </p>"
+          }
+        },
+        "product_card_H7rPHV": {
+          "type": "product-card",
+          "settings": {
+            "product": "the-zenbubble-gel-cream",
+            "custom_title": "The ZenBubble",
+            "custom_description": "<p>Priming, Oil-Free Calming Gel Cream, 1.7 fl. oz.</p>",
+            "custom_product_price": "$69",
+            "custom_product_image": "shopify://shop_images/Frame_1484581503.png",
+            "includes": "<p>Calming stressed-out skin and keeping it hydrated and balanced all day.</p>",
+            "best_for": "<p>Morning and night as your daily lightweight primer and moisturizer. </p>"
+          }
+        },
+        "product_card_imRGik": {
+          "type": "product-card",
+          "settings": {
+            "product": "the-eyelighter-concentrate",
+            "custom_title": "The Eye lighter Concentrate",
+            "custom_description": "<p>Smoothing & Depuffing Serum + Tool in One, 0.5 fl. oz.</p>",
+            "custom_product_price": "$58",
+            "custom_product_image": "shopify://shop_images/Frame_1484581493_5.png",
+            "includes": "<p>Brightening, smoothing, and depuffing the look of tired eyes and primer under concealer.</p>",
+            "best_for": "<p>Apply with the cooling tip am + pm, or anytime eyes need a wake-up.</p>"
+          }
+        },
+        "product_card_7j73g3": {
+          "type": "product-card",
+          "settings": {
+            "product": "jellydew",
+            "custom_title": "JellyDew",
+            "custom_description": "<p>Hydrating Smoothing Seaweed Serum, 1.7 fl. oz.</p>",
+            "custom_product_price": "$52",
+            "custom_product_image": "shopify://shop_images/Frame_1484581493_6.png",
+            "includes": "<p>Locking in hydration and giving skin that fresh, dewy finish.</p>",
+            "best_for": "<p>Daily as a serum, after sun for a cooling treat, or layered on thick overnight as a mask.</p>"
+          }
+        },
+        "product_card_b8k79w": {
+          "type": "product-card",
+          "settings": {
+            "product": "glofacial-concentrate",
+            "custom_title": "GLOfacial Concentrate",
+            "custom_description": "<p>Clarifying SA & Plumping HA Solution, 1.7 fl. oz.</p>",
+            "custom_product_price": "$45",
+            "custom_product_image": "shopify://shop_images/Frame_1484581503_1.png",
+            "includes": "<p>Helping remove impurities while hydrating skin for a clearer looking complexion.</p>",
+            "best_for": "<p>With the glofacial tool during treatments, especially when skin feels oily or blemish-prone.</p>"
+          }
+        },
+        "product_card_AjJai6": {
+          "type": "product-card",
+          "settings": {
+            "product": "glofacial-collagen-concentrate",
+            "custom_title": "GLOfacial Concentrate",
+            "custom_description": "<p>Firming Collagen & Smoothing Peptide Solution, 1.7 fl. oz.</p>",
+            "custom_product_price": "$45",
+            "custom_product_image": "shopify://shop_images/Frame_1484581493_2.png",
+            "includes": "<p>Plumping, smoothing, hydrating and supporting skin’s bounce.</p>",
+            "best_for": "<p>With the glofacial tool during treatments, especially when skin needs a firm, supple refresh.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "product_card_HPzMpD",
+        "product_card_8wRNfA",
+        "product_card_qKXMzH",
+        "product_card_7bwnYx",
+        "product_card_eB9NYF",
+        "product_card_Rcm78U",
+        "product_card_BgKdmX",
+        "product_card_URM8gd",
+        "product_card_VmrcTL",
+        "product_card_H7rPHV",
+        "product_card_imRGik",
+        "product_card_7j73g3",
+        "product_card_b8k79w",
+        "product_card_AjJai6"
+      ],
+      "name": "LP Multi Products Row",
+      "settings": {
+        "heading": "All the Essentials, None of the Stress",
+        "description": "<p>Hydrate, smooth, brighten, gloss — these multitasking must-haves do it all, so you can focus on everything else.</p>",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "padding_top_mob": 60,
+        "padding_bottom_mob": 60
+      }
+    }
+  },
+  "order": [
+    "announcement_bar_QXfnAt",
+    "main",
+    "lp_hero_banner_ecBHEP",
+    "lp_image_banner_XWt8KL",
+    "lp_study_buddy_GVJyzG",
+    "lp_multi_products_row_NALgiL"
+  ]
+}

@@ -19,7 +19,7 @@
         "show_breadcrumbs": false,
         "show_collection_description": true,
         "show_collection_image": true,
-        "subheading": "{{ collection.metafields.custom.collection_subheading | metafield_tag }}",
+        "subheading": "",
         "image_aspect": "custom",
         "desktop_height": 50,
         "mobile_height": 50,

@@ -1,0 +1,78 @@
+{%- doc -%}
+    @param {object} block_settings 
+{%- enddoc -%}
+
+{%- liquid
+  assign _product = block_settings.product
+  assign _product_media = block_settings.custom_product_image | default: _product.featured_image
+  assign _product_title = block_settings.custom_title | default: _product.title
+  assign _product_description = block_settings.custom_description | default: _product.description
+  assign _product_includes = block_settings.includes
+  assign _product_best_for = block_settings.best_for
+-%}     
+
+<div class="lp-product__card">
+    <div class="lp-product-card__inner">
+        <div class="lp-product-card__title">
+            {{ _product_title }}
+        </div>
+        <div class="lp-product-card__description">
+            {{ _product_description }}
+        </div>
+        <div class="lp-product-card__price">
+            {% if _product != blank %}
+                {%- if _product.compare_at_price > _product.price -%}
+                    <div class="lp-product-card__regular--price">
+                        {{ _product.compare_at_price | money }}
+                    </div>
+                    <div class="lp-product-card__sale--price">
+                        {{ _product.price | money }}
+                    </div>
+                {%  else %}
+                    <div class="lp-product-card__sale--price">
+                        {{ _product.price | money }}
+                    </div>
+                {%- endif -%}
+            {% elsif block_settings.custom_product_price != blank %}
+                {{ block_settings.custom_product_price }}
+            {% endif %}
+        </div>
+        <div class="lp-product-card__media">
+            {% if _product_media != blank %}
+                <img src="{{ _product_media |  image_url: width: 1200 }}" width="" height="" alt="">
+            {% endif %}
+        </div>
+        {% if _product_includes != blank %}
+            <div class="lp-product-card__includes">
+                <span>Includes:</span>
+                <span>{{ _product_includes }}</span>
+            </div>
+        {% endif %}
+        {%  if _product_best_for != blank %}  
+            <div class="lp-product-card__best--for">
+                <span>Best for:</span>
+                <span>{{ _product_best_for }}</span>
+            </div>
+        {% endif %}
+        {% if _product != blank %}
+            <div class="lp-product-card__full--details">
+                <a href="{{ _product.url }}">see full details</a>
+            </div>
+        {% endif %}
+    </div>
+    <div class="lp-product-card__buy--button">
+        {% if _product != blank and _product.available %}
+            <form action="/cart/add" method="post" enctype="multipart/form-data" class="lp-product-card__form">
+                <input type="hidden" name="id" value="{{ _product.selected_or_first_available_variant.id }}">
+                <input type="hidden" name="quantity" value="1">
+                <button type="submit" class="lp-product-card__add-to-cart">
+                    add to bag
+                </button>
+            </form>
+        {% else %}
+            <button disabled>
+                Sold out
+            </button>
+        {% endif %}
+    </div>
+</div>

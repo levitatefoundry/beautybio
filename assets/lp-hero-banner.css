@@ -1,7 +1,7 @@
 /* LP Hero Banner Section */
 .lp-hero-banner {
   width: 100%;
-  min-height: 500px;
+  min-height: 558px;
   background-color: #FDF2F0;
   position: relative;
   overflow: hidden;
@@ -33,11 +33,11 @@
   letter-spacing: -0.75px;
   line-height: 95%;
   font-weight: 700;
-  max-width: 470px;
+  max-width: 500px;
 }
 
 .lp-hero-description {
-  font-family: gothammedium;
+  font-family: gothambook;
   font-size: 16px;
   letter-spacing: -0.24px;
   line-height: 140%;
@@ -130,15 +130,18 @@
     flex-direction: column-reverse;
     gap: 40px;
     text-align: center;
-    min-height: auto;
+    min-height: 560px;
   }
   
   .lp-hero-text {
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
   
   .lp-hero-heading {
-    font-size: 40px;
+    font-size: 38px;
   }
   
   .lp-hero-description {

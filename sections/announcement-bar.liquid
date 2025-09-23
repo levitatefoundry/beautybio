@@ -210,13 +210,16 @@
       ]
     }
   ],
-  "default": {
-    "blocks": [
+  "presets": [
+    {
+      "name": "Announcement bar",
+      "blocks": [
       {
         "type": "announcement"
       }
     ]
-  }
+    }
+  ],
 }
 {% endschema %}
 <style>
@@ -287,9 +290,6 @@
 
   }
   @media(max-width:480px) {
-    .announcement-bar{
-      height: 29.4px;
-    }
     .announcement-bar__item{    gap: 8px;}
     .announcement-bar .announcement-bar__message{line-height: normal;}
     .announcement-bar__item .image-blocks img {
