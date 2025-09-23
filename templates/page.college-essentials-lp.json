@@ -55,8 +55,8 @@
         "secondary_button_text": "",
         "secondary_button_url": "",
         "background_color": "#FDF2F0",
-        "background_image": "shopify://shop_images/BBS_LandingPage_CollegeEssentials_PromoHeaderDesktop-NoText_1_f9a15b79-c1f3-4bbd-8144-7b457eb1523e.jpg",
-        "background_image_mob": "shopify://shop_images/BBS_LandingPage_CollegeEssentials_PromoHeaderMobile-NoText_092b2ccf-99b3-4c9d-8a5a-d7cac89a000a.jpg",
+        "background_image": "shopify://shop_images/CollegeEssentials_9-12_HPCollegeEssentials_HP-Desktop_1.jpg",
+        "background_image_mob": "shopify://shop_images/Hero_section_4.png",
         "background_size": "cover",
         "custom_background_size": ""
       }
