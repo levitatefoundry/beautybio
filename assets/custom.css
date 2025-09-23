@@ -102,15 +102,7 @@ button{
 .rc-template__radio-group .rc-selling-plans select {
   border-radius: 5px;
   cursor: pointer;
-
-/* Typography */
-
-
-h2, h4 > a,
-.footer__heading.fs-accent, span{
- font-family: 'gothambold' !important;
-    letter-spacing: -0.03em;
-} 
+}
 
 @media (min-width: 768px) {
   .desktop--hidden {
@@ -122,6 +114,7 @@ h2, h4 > a,
   .mobile--hidden {
     display: none !important;
   }
+}
   
 #main .announcement-bar__item {
   padding: 10px 0;
