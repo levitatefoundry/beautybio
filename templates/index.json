@@ -9,6 +9,10 @@
  */
 {
   "sections": {
+    "slideshow_i9Eerz": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_H7W867": {
     "slideshow_XAEEkT": {
       "type": "slideshow",
       "blocks": {
@@ -46,6 +50,14 @@
             "overlay_opacity": 0
           }
         },
+        "slide_c8C9dR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BodyBundle_HP-Desktop.jpg",
+            "image_mobile": "shopify://shop_images/BodyBundle_HP-Mobile_395f1909-912d-48dc-a733-61a4ef6b2fdc.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "shopify://pages/glopro-the-sculptor",
         "slide_E3rhzj": {
           "type": "slide",
           "disabled": true,
@@ -55,6 +67,7 @@
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
             "media_link": "shopify://products/glofacial",
+
             "text_position": "center_center",
             "text_position_mobile": "center_center",
             "accent": "",
@@ -80,6 +93,77 @@
             "overlay_opacity": 0
           }
         },
+        "slide_wJPPd9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/6-2-25_HP-DESKTOP.jpg",
+            "image_mobile": "shopify://shop_images/6-2-25_HP-MOBILE.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "shopify://pages/rewards",
+            "text_position": "center_center",
+            "text_position_mobile": "center_center",
+            "accent": "INTRODUCING",
+            "title": "BEAUTYBIO REWARDS",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3",
+            "subheading": "Perks, points, and presents? Yes, please. With BeautyBio Rewards, you’ll earn 1 point per $1, enjoy birthday bonuses, access double-point events, and unlock member-only perks. Already shopped with us? You’re halfway there—just sign up to start earning.",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link_1": "shopify://pages/rewards",
+            "link_text_1": "GO TO REWARDS",
+            "button_style_1": "btn--primary",
+            "link_2": "",
+            "link_text_2": "Read more",
+            "button_style_2": "btn--primary",
+            "text_color": "#000000",
+            "button_background_color": "#000000",
+            "button_text_color": "#ffffff",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "slide_H7W867",
+        "slide_c8C9dR",
+        "slide_wJPPd9"
+      ],
+      "custom_css": [
+        ".slideshow-slide__text-container-inner {display: flex; flex-direction: column; align-items: center; text-align: center; width: 90%;}",
+        ".slideshow-slide__text-container-inner p {font-size: 18pt;}",
+        ".slideshow-slide__text-container-accent {font-size: 10pt !important;}",
+        "@media screen and (max-width: 800px) {.slideshow-slide__text-container-inner {width: 100%; } .slideshow-slide__text-container-inner p {font-size: 12pt; } h2 {font-size: 26pt; }}"
+      ],
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 55,
+        "mobile_height": 100,
+        "enable_autoplay": true,
+        "duration_autoplay": 8,
+        "navigation_alignment": "center",
+        "navigation_color_foreground": "#000000",
+        "navigation_color_background": "rgba(0,0,0,0)",
+        "navigation_background_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "none"
+      }
+    },
+    "slideshow_AFJidD": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_ykD94F": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/NatlLipstickDay_ThePout_HP-Desktop.jpg",
+            "image_mobile": "shopify://shop_images/NatlLipstickDay_ThePout_HP-Mobile.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "shopify://products/lip-pout-volumizing-lip-serum",
+            "text_position": "center_center",
         "slide_WYJdMR": {
           "type": "slide",
           "disabled": true,
@@ -101,6 +185,40 @@
             "text": "",
             "text_font_class": "fs-body-100",
             "link_1": "",
+            "link_text_1": "Read more",
+            "button_style_1": "btn--primary",
+            "link_2": "",
+            "link_text_2": "Read more",
+            "button_style_2": "btn--primary",
+            "text_color": "#ffffff",
+            "button_background_color": "#ffffff",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
+          }
+        },
+        "slide_MmCJGk": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/7-25-25_HP-Desktop_2_1.jpg",
+            "image_mobile": "shopify://shop_images/7-25-25_HP-Mobile.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "shopify://collections/spf",
+            "text_position": "center_center",
+            "text_position_mobile": "center_center",
+            "accent": "",
+            "title": "",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3",
+            "subheading": "",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link_1": "shopify://collections/spf",
             "link_text_1": "",
             "button_style_1": "btn--primary",
             "link_2": "",
@@ -114,6 +232,15 @@
             "overlay_opacity": 0
           }
         },
+        "slide_bVHN9b": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/7-25-25_HP-Desktop_2_1.jpg",
+            "image_mobile": "shopify://shop_images/7-25-25_HP-Mobile.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "shopify://collections/spf",
+            "text_position": "flex-start_center",
         "slide_yT84rQ": {
           "type": "slide",
           "settings": {
@@ -182,6 +309,11 @@
         }
       },
       "block_order": [
+        "slide_ykD94F",
+        "slide_MmCJGk",
+        "slide_bVHN9b"
+      ],
+      "disabled": true,
         "slide_6TTdpC",
         "slide_E3rhzj",
         "slide_WYJdMR",
@@ -513,6 +645,9 @@
         "spacer_EFFAVA",
         "text_c6rgbP",
         "button_3gNVXa"
+      ],
+      "custom_css": [
+        ".btn--overlay.btn--secondary:hover {background-color: #dc6a7d;}"
       ],
       "settings": {
         "image_aspect": "original",
@@ -924,6 +1059,9 @@
         "accent_bi7Md8",
         "heading_M9nxqU",
         "text_hHr7Bj"
+      ],
+      "custom_css": [
+        ".image-hero__text-container-text.rte.ff-body.fs-body-100.section-blocks__text {background-color: rgba(0, 0, 0, 0.01);}"
       ],
       "settings": {
         "image_aspect": "original",
@@ -1545,6 +1683,8 @@
     }
   },
   "order": [
+    "slideshow_i9Eerz",
+    "slideshow_AFJidD",
     "slideshow_XAEEkT",
     "featured_collection_slider_1",
     "rich_text",

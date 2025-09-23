@@ -12,12 +12,13 @@ font-family: 'gothammedium';
 }
 
 
-h2, h4 > a,
-.footer__heading.fs-accent, span{
- font-family: 'gothambold' !important;
-    letter-spacing: -0.03em;
-} 
-
+h2.footer__header,
+.footer__heading.fs-accent,
+span {
+  font-family: 'gothambold' !important;
+  letter-spacing: -0.03em;
+  display: block;
+}
 
 
 body, p, h3, .ff-body, p>span  {
@@ -101,7 +102,15 @@ button{
 .rc-template__radio-group .rc-selling-plans select {
   border-radius: 5px;
   cursor: pointer;
-}
+
+/* Typography */
+
+
+h2, h4 > a,
+.footer__heading.fs-accent, span{
+ font-family: 'gothambold' !important;
+    letter-spacing: -0.03em;
+} 
 
 @media (min-width: 768px) {
   .desktop--hidden {
@@ -113,8 +122,7 @@ button{
   .mobile--hidden {
     display: none !important;
   }
-}
-
+  
 #main .announcement-bar__item {
   padding: 10px 0;
   font-size: 18px;

@@ -19,7 +19,7 @@
     "color_background_footer": "#fff5f3",
     "color_background_button": "#000000",
     "color_text_button": "#ffffff",
-    "color_products_sale_price": "#ee4e9c",
+    "color_products_sale_price": "#d11570",
     "color_products_stock_good": "#3c9342",
     "color_products_stock_medium": "#e69b1d",
     "color_products_stock_bad": "#aaaaaa",
@@ -226,6 +226,7 @@
         "type": "shopify://apps/gsc-countdown-timer/blocks/countdown-bar/58dc5b1b-43d2-4209-b1f3-52aff31643ed",
         "disabled": true,
         "settings": {}
+
       },
       "10641372206048101839": {
         "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-global-embed/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
@@ -483,7 +484,14 @@
   "platform_customizations": {
     "custom_css": [
       ".free-shipping-bar__bar-progress {background-color: #ee4e9c;}",
-      ".dynamic-variant-button.product__chip.disabled {display: none;}"
+      ".dynamic-variant-button.product__chip.disabled {display: none;}",
+      ".ff-heading.fs-heading-5-base {font-family: \"GothamBook\", sans-serif; font-style: normal; font-weight: 600; color: rgb(0, 0, 0); font-size: 22px; line-height: 24px;}",
+      ".collapsible-row-list__heading,.testimonials__item-quote,.testimonials__item-product-title,.bv-rating {background-color: rgba(255, 255, 255, 0.01);}",
+      ".image-with-text__image-caption {color: #333;}",
+      ".rich-text__heading {background-color: rgba(0, 0, 0, 0.01);}",
+      ".yotpo-redemption-option-cost {color: #4157e1 !important;}",
+      ".slideshow-slide__text-container-accent,.slideshow-slide__text-container-heading,.slideshow-slide__text-container-subheading,.featured-collection-slider__heading,.collection-list-slider__heading,.rich-text__subheading,#video-hero-heading,.video-hero__text-container-text,.grid-item__heading,.grid-item__subheading,.image-with-text__image-caption,.image-with-text__text-container-heading,.image-with-text__text-container-subheading,.image-hero__text-container-heading,.visually-hidden {background-color: rgba(0, 0, 0, 0.01);}"
+
     ]
   }
 }

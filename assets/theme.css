@@ -1484,13 +1484,17 @@ html.sticky-header-active body.scroll-lock .shopify-section.header__outer-wrappe
       padding-bottom:var(--spacing-3)
   }
     }
-.header .header__skip-to-content.btn{
-    visibility:hidden;
-    position:absolute;
-    top:calc(4px * 10);
-    top:var(--spacing-10);
-    left:0;
-  }
+.header .header__skip-to-content.btn {
+    position: absolute;
+    top: var(--spacing-10);
+    left: -9999px;
+    background: #333 !important;
+    Color: #fff !important;
+}
+
+.header .header__skip-to-content.btn:focus {
+    left: 0;
+}
 .user-is-tabbing .header .header__skip-to-content.btn{
       visibility:visible;
     }
@@ -9999,6 +10003,9 @@ html.no-js .product-tabs__tab-item{
 .product-form__cart-submit{
   position:relative;
 }
+.add-to-cart-product {
+  background-color: rgba(0, 0, 0, 0.01);
+}
 .product-form__cart-submit[disabled]{
     color:var(--color-text-meta);
     background:var(--color-background-meta);
@@ -10650,6 +10657,10 @@ input.btn.btn--primary:hover:not([disabled]), input.btn.btn--primary:focus:not([
   line-height:1.2;
   color:var(--color-text);
   transition:color 0.1s ease;
+}
+.ff-body.product-item__product-title.fs-product-card-title {
+  font-size: 1.17em;
+  font-weight: bold !important;
 }
 .btn.btn--callout span{
     position:relative;
@@ -15040,7 +15051,7 @@ body.header-transparent
   font-size:var(--font-size-product-badge);
 }
 .product-badge--sale{
-  color:var(--color-text-sale-badge);
+  color:#D11570;
 }
 .product-badge--sold-out{
   background-color:var(--color-background-sold-badge);

@@ -746,6 +746,7 @@
                         type="button"
                         class="upsell-cart__slider-arrow-button"
                         data-action="prev"
+                        aria-label="previous"
                       >
                         <span class="upsell-cart__slider-arrow">
                           <svg aria-hidden="true" focusable="false" role="presentation" class="upsell-icon upsell-icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"/></svg>
@@ -755,6 +756,7 @@
                         type="button"
                         class="upsell-cart__slider-arrow-button"
                         data-action="next"
+                        aria-label="next"
                       >
                         <span class="upsell-cart__slider-arrow">
                           <svg aria-hidden="true" focusable="false" role="presentation" class="upsell-icon upsell-icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"/></svg>
@@ -1128,7 +1130,7 @@
         {% assign cart_share_url = cart_share_items | url_encode | prepend: '?upsell-cart-share=' | prepend: shop.secure_url %}
         <div class="upsell-cart__riser-main">
             <div class="upsell-cart__social-share-input-wrapper">
-              <input type="text" class="upsell-cart__social-share-input" value="{{ cart_share_url }}" readonly="">
+              <input type="text" aria-label="upsell cart social share input" class="upsell-cart__social-share-input" value="{{ cart_share_url }}" readonly="">
               <button type="button" class="upsell-cart__social-share-copy-url" aria-label="{{ shop.metafields.obsidian_upsell[locale].copy_share_link }}" data-url="{{ cart_share_url }}">
                 <svg class="upsell-cart__social-share-copy-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.562 5.574H3.404v17.31h14.158V5.575z" stroke="currentColor" stroke-width="1.513" stroke-miterlimit="10"></path>

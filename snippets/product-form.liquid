@@ -33,7 +33,7 @@
   {% endcomment %}
   <div class="product-form__quantity">
     <div class="product__label-wrapper">
-      <label class="product__label {{ label_classes }}" for="Quantity-Input-{{ prod.id }}">
+      <label class="product__label {{ label_classes }}" for="Quantity-{{ prod.id }}">
         {{ 'products.product.quantity' | t }}
       </label>
     </div>
@@ -112,7 +112,8 @@
       name="id"
       class="input"
       id="variant-selector"
-      data-variant-select
+      data-variant-
+      aria-label="select product variant"
     >
       {%- for variant in prod.variants -%}
         <option
@@ -163,7 +164,7 @@
         data-lang-unavailable="{{ 'product.unavailable' | t }}"
         data-lang-sold-out="{{ 'product.sold_out' | t }}"
       >
-        <span data-add-to-cart-text>
+        <span class="add-to-cart-product" data-add-to-cart-text>
           {%- unless current_variant.available -%}
             {{ product_unavailable_label }}
           {%- else -%}
