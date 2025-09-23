@@ -169,7 +169,7 @@
 }
 @media (max-width: 959px){
 .shoppable-feature__secondary-content{
-    display:none
+    display:none;
 }
   }
 .shoppable-feature__image-container{
