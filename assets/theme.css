@@ -10435,6 +10435,10 @@ html.no-js .product-tabs__tab-item{
   gap: 5px;
 }
 
+.product-item__price:has(.product-item__price) {
+  justify-content: start;
+}
+
 button{
   border:0;
   border-radius:0;
