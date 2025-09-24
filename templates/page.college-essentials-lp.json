@@ -14,6 +14,7 @@
       "blocks": {
         "announcement_4rCeaF": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "title": "<p><strong>25% off College Essentials from 9/15 thru 9/22</strong></p>",
             "title_mobile": "<p><strong>25% off College Essentials from 9/15 thru 9/22</strong></p>",
