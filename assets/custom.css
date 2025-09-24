@@ -126,3 +126,9 @@ button{
     font-size: 14px;
   }
 }
+
+.product .tolstoy-stories-title {
+  font-family: gothambook !important;
+  font-weight: 300 !important;
+  font-size: 18px !important;
+}
