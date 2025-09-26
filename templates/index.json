@@ -117,8 +117,8 @@
         "slide_yT84rQ": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Destop_Quench-Evergreen-TallDrink.jpg",
-            "image_mobile": "shopify://shop_images/Mobile_Quench-Evergreen-TallDrink.jpg",
+            "image": "shopify://shop_images/BBS_QuenchFocus_Desktop_Quench-FreeShip.jpg",
+            "image_mobile": "shopify://shop_images/BBS_QuenchFocus_Mobile_Quench-FreeShip.jpg",
             "focal_point": "image_presentation",
             "mobile_focal_point": "top",
             "media_link": "shopify://products/the-quench-skin-recovery-cream",
@@ -227,7 +227,10 @@
           }
         }
       },
-      "block_order": ["collection", "product_list"],
+      "block_order": [
+        "collection",
+        "product_list"
+      ],
       "settings": {
         "heading": "Best Sellers",
         "heading_tag": "h2",
@@ -316,7 +319,9 @@
         "text",
         "button"
       ],
-      "custom_css": ["h3 {font-size: 20px;}"],
+      "custom_css": [
+        "h3 {font-size: 20px;}"
+      ],
       "settings": {
         "alignment": "center_center",
         "enable_animation": true,
@@ -328,7 +333,9 @@
     },
     "collection_list_slider": {
       "type": "collection-list-slider",
-      "custom_css": [".collection-item__title {font-size: large;}"],
+      "custom_css": [
+        ".collection-item__title {font-size: large;}"
+      ],
       "settings": {
         "heading": "Collections",
         "heading_tag": "h2",
@@ -375,7 +382,10 @@
           }
         }
       },
-      "block_order": ["heading_HPfVwT", "subheading_9J9J8e"],
+      "block_order": [
+        "heading_HPfVwT",
+        "subheading_9J9J8e"
+      ],
       "settings": {
         "alignment": "left_left",
         "enable_animation": true,
@@ -436,7 +446,9 @@
         "testimonial_FWbLVA",
         "testimonial_ajaLLk"
       ],
-      "custom_css": [".testimonials__item-product-title {font-weight: bold;}"],
+      "custom_css": [
+        ".testimonials__item-product-title {font-weight: bold;}"
+      ],
       "settings": {
         "image_size": "small",
         "quote_font": "heading",
@@ -704,7 +716,10 @@
           }
         }
       },
-      "block_order": ["item_1", "item_2"],
+      "block_order": [
+        "item_1",
+        "item_2"
+      ],
       "settings": {
         "heading": "",
         "heading_tag": "h2",
@@ -905,7 +920,11 @@
           }
         }
       },
-      "block_order": ["accent_bi7Md8", "heading_M9nxqU", "text_hHr7Bj"],
+      "block_order": [
+        "accent_bi7Md8",
+        "heading_M9nxqU",
+        "text_hHr7Bj"
+      ],
       "settings": {
         "image_aspect": "original",
         "desktop_height": 100,
@@ -940,7 +959,9 @@
           }
         }
       },
-      "block_order": ["heading_ymWCnd"],
+      "block_order": [
+        "heading_ymWCnd"
+      ],
       "settings": {
         "alignment": "center_center",
         "enable_animation": true,
@@ -966,7 +987,10 @@
           }
         }
       },
-      "block_order": ["article_1", "article_2"],
+      "block_order": [
+        "article_1",
+        "article_2"
+      ],
       "settings": {
         "heading": "",
         "subheading": "",
@@ -1014,7 +1038,11 @@
           }
         }
       },
-      "block_order": ["heading_ikGVGU", "subheading_D4Va8Y", "text_jp69dw"],
+      "block_order": [
+        "heading_ikGVGU",
+        "subheading_D4Va8Y",
+        "text_jp69dw"
+      ],
       "settings": {
         "alignment": "center_center",
         "enable_animation": true,
@@ -1034,7 +1062,9 @@
           }
         }
       },
-      "block_order": ["archive_instagram_tiktok_ugc_feed_gqrR3f"],
+      "block_order": [
+        "archive_instagram_tiktok_ugc_feed_gqrR3f"
+      ],
       "settings": {
         "heading": "",
         "enable_animation": true,
@@ -1296,7 +1326,10 @@
           }
         }
       },
-      "block_order": ["slide_d3AbUG", "slide_E94zJq"],
+      "block_order": [
+        "slide_d3AbUG",
+        "slide_E94zJq"
+      ],
       "disabled": true,
       "custom_css": [
         "@media screen and (max-width: 749px) {.slideshow-slide__text-container-heading {font-size: 27px !important; }}"
