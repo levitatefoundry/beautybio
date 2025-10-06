@@ -212,12 +212,12 @@
         flex-direction: column;
         border: 1px solid black;
         padding: 20px;
-        flex: 1;
     }
 
     #shopify-section-{{ section.id }} .product-item {
         background-color: white;
-        flex: 1;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        align-items: stretch;
     }
 
     #shopify-section-{{ section.id }} .product-item__product-title {
