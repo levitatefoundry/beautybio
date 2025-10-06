@@ -34,8 +34,7 @@
         "button_QqJpwD"
       ],
       "custom_css": [
-        ".button-block__button {position: absolute; left: 65px; top: 72%;}",
-        ".image-hero__text-container-wrapper {margin: 0 !important;}"
+        ".button-block__button {position: absolute; left: 65px; top: 72%;}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
