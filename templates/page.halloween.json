@@ -145,7 +145,7 @@
         "link_text": "",
         "maximum_collections": 7,
         "columns": "3",
-        "mobile_columns": "2",
+        "mobile_columns": "1",
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
