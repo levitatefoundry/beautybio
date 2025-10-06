@@ -198,10 +198,12 @@
       </div>
 
     </div>
-    {% if prod.metafields.custom.bestfor_and_use_description != blank %}
-        {{ prod.metafields.custom.bestfor_and_use_description | metafield_tag  }}
-    {% endif %}
-    <a class="promo-product-item__link" href="{{ prod.url }}" target="_blank">See full details</a>
+    <div class="promo-product__bottom-content">
+        {% if prod.metafields.custom.bestfor_and_use_description != blank %}
+            {{ prod.metafields.custom.bestfor_and_use_description | metafield_tag  }}
+        {% endif %}
+        <a class="promo-product-item__link" href="{{ prod.url }}" target="_blank">See full details</a>
+    </div>
   </div>
   {% render 'product-form', prod: prod, current_variant: current_variant %}
 </div>
@@ -259,5 +261,11 @@
 
     #shopify-section-{{ section.id }} .metafield-rich_text_field strong {
         font-family: 'gothammedium' !important;
+    }
+
+    #shopify-section-{{ section.id }} .promo-product__bottom-content {
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-end;
     }
 </style>
