@@ -53,7 +53,7 @@
         "text_color": "rgba(0,0,0,0)",
         "button_background_color": "#000000",
         "button_text_color": "#ffffff",
-        "color_overlay": "#000",
+        "color_overlay": "#000000",
         "color_overlay_gradient": "",
         "overlay_opacity": 0,
         "enable_animation": true,
@@ -112,7 +112,7 @@
         "text_color": "#000000",
         "button_background_color": "#000000",
         "button_text_color": "#ffffff",
-        "color_overlay": "#000",
+        "color_overlay": "#000000",
         "color_overlay_gradient": "",
         "overlay_opacity": 0,
         "enable_animation": true,
@@ -125,7 +125,7 @@
         "collection_V6nPcx": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "halloween"
           }
         }
       },
@@ -139,9 +139,9 @@
         "subheading": "",
         "link": "",
         "link_text": "",
-        "maximum_collections": 4,
-        "columns": "4",
-        "mobile_columns": "2",
+        "maximum_collections": 7,
+        "columns": "3",
+        "mobile_columns": "1",
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
