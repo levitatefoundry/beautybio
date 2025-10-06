@@ -135,7 +135,7 @@
       "custom_css": [
         ".section-introduction {text-align: center; color: white;}",
         "h2 {font-size: 33pt;}",
-        "@media screen and (max-width: 750px) {h2 {font-size: 28pt; }}"
+        "@media screen and (max-width: 750px) {h2 {font-size: 24pt; }}"
       ],
       "name": "Promo Collection Grid",
       "settings": {
