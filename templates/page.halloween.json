@@ -134,9 +134,9 @@
       ],
       "name": "t:sections.featured_collection_grid.presets.name",
       "settings": {
-        "heading": "Featured collection",
+        "heading": "From Fright Night to Bright Morning",
         "heading_tag": "h2",
-        "subheading": "",
+        "subheading": "<p>Erase every trace of Halloween with the prograde tools + treatments.</p>",
         "link": "",
         "link_text": "",
         "maximum_collections": 7,
