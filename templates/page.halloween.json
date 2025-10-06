@@ -119,39 +119,6 @@
         "section_padding": "section--vertical-padding-none"
       }
     },
-    "featured_collection_grid_yyDVEk": {
-      "type": "featured-collection-grid",
-      "blocks": {
-        "collection_V6nPcx": {
-          "type": "collection",
-          "settings": {
-            "collection": "halloween"
-          }
-        }
-      },
-      "block_order": [
-        "collection_V6nPcx"
-      ],
-      "custom_css": [
-        ".section-introduction {text-align: center;}",
-        "h2 {font-size: 33pt;}",
-        " {background: linear-gradient( to bottom, black 0%, black 300px, white 300px, white 100% );}"
-      ],
-      "name": "t:sections.featured_collection_grid.presets.name",
-      "settings": {
-        "heading": "From Fright Night to Bright Morning",
-        "heading_tag": "h2",
-        "subheading": "<p>Erase every trace of Halloween with the prograde tools + treatments.</p>",
-        "link": "",
-        "link_text": "",
-        "maximum_collections": 7,
-        "columns": "3",
-        "mobile_columns": "1",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
-    },
     "promo_collection_JKYi7C": {
       "type": "promo-collection",
       "blocks": {
@@ -189,7 +156,6 @@
     "main",
     "image_hero_9gWEk8",
     "image_hero_W3BQeC",
-    "featured_collection_grid_yyDVEk",
     "promo_collection_JKYi7C"
   ]
 }
