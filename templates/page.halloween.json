@@ -33,7 +33,10 @@
       "block_order": [
         "button_9B3qqR"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".button-block__button {display: none;}",
+        "@media screen and (max-width: 750px) {.button-block__button {position: absolute; display: flex; bottom: 20px; left: 50%; transform: translate(-50%, -50%); }}"
+      ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
         "image_aspect": "original",
