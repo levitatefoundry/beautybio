@@ -44,6 +44,9 @@
         <a href="{{ prod.url | within: collection }}">{{ prod.title }}</a>
         {%- endif -%}
     </h3>
+    {% if prod.metafields.custom.sub_title != blank %}
+        <p class="promo-product-item__subtitle">{{ prod.metafields.custom.sub_title }}</p>
+    {% endif %}
     {% liquid
         assign price_content_type = 'price'
 
