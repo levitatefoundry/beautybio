@@ -6,9 +6,6 @@
   endcomment
 
   assign show_multiple_images = false
-  if settings.product_listing_show_second_image_on_hover and prod.media.size > 1
-    assign show_multiple_images = true
-  endif
 
   assign current_variant = prod.selected_or_first_available_variant
 
