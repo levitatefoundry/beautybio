@@ -62,6 +62,14 @@
             "text_font_class": "fs-body-100"
           }
         },
+        "subheading_FqUJCj": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Use these sections to promote a particular feature with editorial photography.",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
         "button_t6FPhX": {
           "type": "button",
           "settings": {
@@ -74,6 +82,7 @@
       "block_order": [
         "heading_BfrNj4",
         "text_VfVgPB",
+        "subheading_FqUJCj",
         "button_t6FPhX"
       ],
       "custom_css": [
