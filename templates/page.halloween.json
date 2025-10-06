@@ -135,11 +135,11 @@
       "custom_css": [
         ".section-introduction {text-align: center; color: white;}",
         "h2 {font-size: 33pt;}",
-        "@media screen and (max-width: 750px) {h2 {font-size: 26pt; }}"
+        "@media screen and (max-width: 750px) {h2 {font-size: 28pt; }}"
       ],
       "name": "Promo Collection Grid",
       "settings": {
-        "heading": "From Fright Night to Bright Morning",
+        "heading": "From Fright Night To Bright Morning",
         "heading_tag": "h2",
         "subheading": "<p>Erase every trace of Halloween with the prograde tools + treatments.</p>",
         "link": "",
