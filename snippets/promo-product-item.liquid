@@ -201,7 +201,7 @@
     {% if prod.metafields.custom.bestfor_and_use_description != blank %}
         {{ prod.metafields.custom.bestfor_and_use_description | metafield_tag  }}
     {% endif %}
-    <a class="promo-product-item__link" href="{{ prod.url }}" target="__blank">See full details</a>
+    <a class="promo-product-item__link" href="{{ prod.url }}" target="_blank">See full details</a>
   </div>
   {% render 'product-form', prod: prod, current_variant: current_variant %}
 </div>
