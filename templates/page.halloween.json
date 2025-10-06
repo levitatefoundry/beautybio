@@ -24,7 +24,7 @@
         "button_9B3qqR": {
           "type": "button",
           "settings": {
-            "link": "",
+            "link": "#promo-collection-grid",
             "link_text": "shop the sale",
             "button_style": "btn--primary"
           }
