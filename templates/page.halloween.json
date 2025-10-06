@@ -17,9 +17,44 @@
         "content_width": "full",
         "custom_content_width": 1000
       }
+    },
+    "rich_text_ALcwiT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YEpc6G": {
+          "type": "heading",
+          "settings": {
+            "title": "404 Page Not Found",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        },
+        "button_hQDQPq": {
+          "type": "button",
+          "settings": {
+            "link": "/",
+            "link_text": "Go to Home Page",
+            "button_style": "btn--secondary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_YEpc6G",
+        "button_hQDQPq"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_ALcwiT"
   ]
 }
