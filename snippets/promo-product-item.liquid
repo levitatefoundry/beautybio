@@ -184,14 +184,6 @@
           %}
         {%- endif -%}
       </a>
-      {% unless placeholder %}
-        {%- render 'product-badges',
-          prod: prod,
-          show_sale_badge: settings.product_listing_show_sale_badge,
-          show_custom_badges: settings.product_listing_show_custom_badges,
-          show_sold_out_badge: settings.product_listing_show_sold_out_badge
-        -%}
-      {% endunless %}
 
     </div>
 
