@@ -207,7 +207,7 @@
 
     </div>
     {% if prod.metafields.custom.bestfor_and_use_description != blank %}
-        {{ prod.metafields.custom.bestfor_and_use_description | metafield_tag | wrapper_class: "promo-product-item__bestfor-description" }}
+        {{ prod.metafields.custom.bestfor_and_use_description | metafield_tag  }}
     {% endif %}
     <a class="promo-product-item__link" href="{{ prod.url }}">See full details</a>
   </div>
