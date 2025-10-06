@@ -21,21 +21,6 @@
     "image_hero_9gWEk8": {
       "type": "image-hero",
       "blocks": {
-        "heading_XaiVNw": {
-          "type": "heading",
-          "settings": {
-            "title": "unmask the glow........",
-            "heading_tag": "h2",
-            "heading_font_class": "fs-heading-display-1"
-          }
-        },
-        "text_yyWrTT": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Use these sections to promote a particular feature with editorial photography. Use these sections to promote a particular feature with editorial photography. Use these sections to promote a particular feature with editorial photography.</p>",
-            "text_font_class": "fs-body-100"
-          }
-        },
         "button_QqJpwD": {
           "type": "button",
           "settings": {
@@ -46,12 +31,10 @@
         }
       },
       "block_order": [
-        "heading_XaiVNw",
-        "text_yyWrTT",
         "button_QqJpwD"
       ],
       "custom_css": [
-        "a {left: 200px;}"
+        ".button-block__button {position: absolute; left: 65px; top: 72%;}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
