@@ -18,17 +18,17 @@
         "custom_content_width": 1000
       }
     },
-    "image_hero_fWn37L": {
+    "image_hero_gGNEbt": {
       "type": "image-hero",
       "blocks": {
-        "accent_GTehEG": {
+        "accent_fWL3Ef": {
           "type": "accent",
           "disabled": true,
           "settings": {
             "accent": "Accent"
           }
         },
-        "heading_BjTGHp": {
+        "heading_p73VFW": {
           "type": "heading",
           "disabled": true,
           "settings": {
@@ -37,7 +37,7 @@
             "heading_font_class": "fs-heading-display-2"
           }
         },
-        "text_EybmLh": {
+        "text_nBNDKE": {
           "type": "text",
           "disabled": true,
           "settings": {
@@ -47,25 +47,27 @@
         }
       },
       "block_order": [
-        "accent_GTehEG",
-        "heading_BjTGHp",
-        "text_EybmLh"
+        "accent_fWL3Ef",
+        "heading_p73VFW",
+        "text_nBNDKE"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
         "image_aspect": "original",
-        "desktop_height": 50,
-        "mobile_height": 50,
-        "image": "shopify://shop_images/Treatments_CH_2500x707_4b472d53-61e0-46bb-bdd1-e3a3baa0c69f.jpg",
+        "desktop_height": 70,
+        "mobile_height": 100,
+        "image": "shopify://shop_images/BBS_LandingPage_SMS-Sign-Up_Banner_Desktop.jpg",
+        "image_mobile": "shopify://shop_images/BBS_LandingPage_SMS-Sign-Up_Banner_Mobile.jpg",
         "focal_point": "image_presentation",
         "mobile_focal_point": "image_presentation",
         "media_link": "",
         "text_position": "center_center",
         "text_position_mobile": "center_center",
-        "text_color": "#FFFFFF",
-        "button_background_color": "#FFFFFF",
+        "show-checkboxes": false,
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
         "button_text_color": "#000000",
-        "color_overlay": "#000",
+        "color_overlay": "#000000",
         "color_overlay_gradient": "",
         "overlay_opacity": 0,
         "enable_animation": true,
@@ -158,7 +160,7 @@
   },
   "order": [
     "main",
-    "image_hero_fWn37L",
+    "image_hero_gGNEbt",
     "custom_liquid_CYFzdf",
     "1747760746465c99c1",
     "rich_text_kPz9gK",
