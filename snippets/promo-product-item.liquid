@@ -93,9 +93,6 @@
 <div
   class="
     product-item
-    {% if has_hover_swatches -%} product-item--with-hover-swatches {%- endif %}
-    {% if has_hover_chips -%} product-item--with-hover-chips {%- endif %}
-    {% if settings.enable_border_on_hover -%} product-item--border-on-hover {%- endif %}
     animation
     animation--item
     {% if has_grid_reveal -%} animation--item-initial {%- endif %}
@@ -280,5 +277,10 @@
     #shopify-section-{{ section.id }} .product-item__inner {
         display: flex;
         flex-direction: column;
+        border: 1px solid black;
+    }
+
+    #shopify-section-{{ section.id }} .product-item {
+        background-color: white;
     }
 </style>
