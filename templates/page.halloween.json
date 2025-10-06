@@ -20,9 +20,7 @@
     },
     "image_hero_9gWEk8": {
       "type": "image-hero",
-      "custom_css": [
-        ".button-block__button {position: absolute; left: 65px; top: 72%;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
         "image_aspect": "original",
