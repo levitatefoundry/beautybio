@@ -91,7 +91,10 @@
         "text_VfVgPB",
         "button_t6FPhX"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".image-hero__text-container {max-width: 800px;}",
+        ".button-block__button {position: absolute; bottom: 20px; left: 50%; transform: translate(-50%, -50%);}"
+      ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
         "image_aspect": "original",
