@@ -132,6 +132,10 @@
       "block_order": [
         "collection_V6nPcx"
       ],
+      "custom_css": [
+        ".section-introduction {text-align: center;}",
+        "h2 {font-size: 33pt;}"
+      ],
       "name": "t:sections.featured_collection_grid.presets.name",
       "settings": {
         "heading": "From Fright Night to Bright Morning",
