@@ -46,7 +46,7 @@
         "image_mobile": "shopify://shop_images/d3c8a876c60c3d6452736e2c07d139763cc5cee3.jpg",
         "focal_point": "image_presentation",
         "mobile_focal_point": "image_presentation",
-        "media_link": "",
+        "media_link": "#promo-collection-grid",
         "text_position": "flex-start_center",
         "text_position_mobile": "center_flex-end",
         "show-checkboxes": false,
