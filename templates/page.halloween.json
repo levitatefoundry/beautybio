@@ -134,7 +134,8 @@
       ],
       "custom_css": [
         ".section-introduction {text-align: center;}",
-        "h2 {font-size: 33pt;}"
+        "h2 {font-size: 33pt;}",
+        "{background: linear-gradient(to bottom, black 0%, black 300px, white 300px, white 100%);}"
       ],
       "name": "t:sections.featured_collection_grid.presets.name",
       "settings": {
