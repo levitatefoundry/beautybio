@@ -46,10 +46,66 @@
         "focal_point": "image_presentation",
         "mobile_focal_point": "image_presentation",
         "media_link": "",
-        "text_position": "flex-start_flex-end",
+        "text_position": "flex-start_center",
         "text_position_mobile": "center_flex-end",
         "show-checkboxes": false,
         "text_color": "#FFFFFF",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "color_overlay": "#000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "image_hero_W3BQeC": {
+      "type": "image-hero",
+      "blocks": {
+        "heading_BfrNj4": {
+          "type": "heading",
+          "settings": {
+            "title": "Scary Good Skin",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "text_VfVgPB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Last night: smoky eyes + fake blood. Today: 4-minute facials + baby-soft skin.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_t6FPhX": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "Read more",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BfrNj4",
+        "text_VfVgPB",
+        "button_t6FPhX"
+      ],
+      "custom_css": [],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "image": "shopify://shop_images/bcdf64610e598d6f4074638b496860cb8d389c9c.jpg",
+        "image_mobile": "shopify://shop_images/417354fd41d4e6102ba507e1d96139eafad307b0.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "center_flex-start",
+        "text_position_mobile": "center_flex-end",
+        "show-checkboxes": false,
+        "text_color": "#000000",
         "button_background_color": "#000000",
         "button_text_color": "#ffffff",
         "color_overlay": "#000",
@@ -62,6 +118,7 @@
   },
   "order": [
     "main",
-    "image_hero_9gWEk8"
+    "image_hero_9gWEk8",
+    "image_hero_W3BQeC"
   ]
 }
