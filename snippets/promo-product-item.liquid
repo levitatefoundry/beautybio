@@ -256,12 +256,6 @@
         -%}
       {% endunless %}
 
-      {% if quick_shop_type != 'none' and quick_view_is_beneath != true %}
-        <div class="product-item__hover-action-wrap">
-          {{ quick_shop_button }}
-        </div>
-      {% endif %}
-
       {% if quick_shop_type != 'none' %}
         {{ quick_shop_button_hoverless }}
       {% endif %}
@@ -275,54 +269,8 @@
             {{ prod.vendor }}
           </h5>
         {% endif %}
-
-        
-
-        {% if has_hover_swatches or has_hover_chips %}
-          {% liquid
-            assign option_string = blank
-
-            if has_hover_swatches
-              assign swatch_string = 'products.product.swatch_count' | t: count: displayed_swatch_count, swatch_name: first_swatchified_option
-              assign option_string = option_string | append: swatch_string
-            endif
-
-            if has_hover_swatches and has_hover_chips
-              assign delimiter_string = 'products.product.swatch_and_chip_delimiter' | t
-              assign option_string = option_string | append: delimiter_string
-            endif
-
-            if has_hover_chips
-              assign chip_string = 'products.product.chip_count' | t: count: displayed_chip_count, chip_name: first_chipped_option
-              assign option_string = option_string | append: chip_string
-            endif
-          %}
-          <h4 class="ff-body fs-body-50 product-item__swatch-count">
-            {{ option_string }}
-          </h4>
-        {% endif %}
       </div>
 
-      {%- if has_hover_swatches or has_hover_chips -%}
-        <div class="product-item__variant-info">
-          {%- if has_hover_swatches -%}
-            {%- render 'product-item-swatches',
-              prod: prod,
-              option_name: first_swatchified_option,
-              show_sibling_swatches: show_sibling_swatches,
-              sibling_products: sibling_products
-            -%}
-          {%- endif -%}
-
-          {%- if has_hover_chips -%}
-            {%- render 'product-item-chips', prod: prod, option_name: first_chipped_option -%}
-          {%- endif -%}
-        </div>
-      {%- endif -%}
-
-      {%- if quick_shop_type != 'none' and quick_view_is_beneath -%}
-        {{ quick_shop_button }}
-      {%- endif -%}
     </div>
     <div class="product-item__hover-container"></div>
   </div>
