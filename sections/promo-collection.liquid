@@ -83,7 +83,7 @@
         {%- else -%}
           {%- for i in (1..max_collections) -%}
             <div class="featured-collection-grid__product carousel_slide swiper-slide">
-              {% render 'product-item',
+              {% render 'promo-product-item',
                 aspect_ratio: settings.product_listing_aspect_ratio,
                 product_columns: section.settings.columns,
                 placeholder: true
