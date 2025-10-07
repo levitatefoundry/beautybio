@@ -11,11 +11,6 @@ font-family: 'gothammedium';
   letter-spacing: -0.03em;
 }
 
-.oct-quiz-result-item__pricing s {
-  display: none;
-}
-
-
 h2.footer__header,
 .footer__heading.fs-accent,
 span {
