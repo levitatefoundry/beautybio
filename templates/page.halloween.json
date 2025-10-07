@@ -20,10 +20,7 @@
     },
     "image_hero_9gWEk8": {
       "type": "image-hero",
-      "custom_css": [
-        ".button-block__button {display: none;}",
-        "@media screen and (max-width: 719px) {.button-block__button {position: absolute; display: flex; bottom: 0; left: 50%; transform: translate(-50%, -50%); }}"
-      ],
+      "custom_css": [],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
         "image_aspect": "original",
@@ -68,7 +65,7 @@
         "button_t6FPhX": {
           "type": "button",
           "settings": {
-            "link": "",
+            "link": "#promo-collection-grid",
             "link_text": "Get glowing",
             "button_style": "btn--primary"
           }
