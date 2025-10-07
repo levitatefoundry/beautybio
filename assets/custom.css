@@ -15,6 +15,10 @@ font-family: 'gothammedium';
   display: none;
 }
 
+.oct-quiz-result-actions-content button {
+  background-color: black;
+  color: white;
+}
 
 
 h2.footer__header,
