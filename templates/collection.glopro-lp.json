@@ -1,0 +1,118 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "custom_css": [
+        ".collection-banner__text-container-heading,.collection-banner__text-container-text {background-color: rgba(0, 0, 0, 0.01);}"
+      ],
+
+      "settings": {
+        "show_breadcrumbs": false,
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "subheading": "",
+        "image_aspect": "custom",
+        "desktop_height": 50,
+        "mobile_height": 50,
+        "focal_point": "image_presentation",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "text_color": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 63%)",
+        "overlay_opacity": 30,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_fUB8AQ": {
+      "type": "rich-text",
+      "blocks": {
+        "text_yeAfHy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ collection.metafields.custom.collection_description | metafield_tag }}</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "text_yeAfHy"
+      ],
+      "disabled": true,
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "full",
+        "custom_content_width": 800
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "columns_desktop": "4",
+        "columns_mobile": "2",
+        "rows": "10",
+        "show_item_count": true,
+        "show_sort": true,
+        "show_filters": false,
+        "enable_sticky_filter_bar": true,
+        "desktop_filter_location": "filter_bar",
+        "collapse_filter_bar": true,
+        "enable_sticky_filter_sidebar": true,
+        "collapse_filter_groups_desktop": false,
+        "collapse_filter_groups_mobile": true,
+        "show_swatch_filters": true,
+        "show_chip_filters": true,
+        "chip_layout": "3col",
+        "pagination": "infinite",
+        "enable_animation": true,
+        "divider_style": "none"
+      }
+    },
+    "collection_list_slider_CNVxgJ": {
+      "type": "collection-list-slider",
+      "settings": {
+        "heading": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "shopify://collections",
+        "link_text": "",
+        "columns": "5",
+        "mobile_columns": "2",
+        "collection_list": [
+          "shop-all",
+          "beauty-tools",
+          "creams-serums-skincare-products",
+          "powerfull-hair",
+          "sets-minis"
+        ],
+        "collection_listing_aspect_ratio": "landscape",
+        "label_style": "beneath",
+        "overlay_title_background_style": "solid",
+        "overlay_text_color": "#ffffff",
+        "overlay_title_background": "#000000",
+        "enable_animation": true,
+        "divider_style": "solid",
+        "section_padding": "section--vertical-padding-bottom-only"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "rich_text_fUB8AQ",
+    "product-grid",
+    "collection_list_slider_CNVxgJ"
+  ]
+}
