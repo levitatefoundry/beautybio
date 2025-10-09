@@ -18,43 +18,118 @@
         "custom_content_width": 1000
       }
     },
-    "rich_text_ALcwiT": {
-      "type": "rich-text",
+    "image_hero_9gWEk8": {
+      "type": "image-hero",
+      "custom_css": [],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "image": "shopify://shop_images/41562de52da65877a5eb2e66308f846254a5edb5.jpg",
+        "image_mobile": "shopify://shop_images/59d0335b8fc153857168d23cc1a51ba172f843eb.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "#promo-collection-grid",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "center_flex-end",
+        "show-checkboxes": false,
+        "text_color": "rgba(0,0,0,0)",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "image_hero_W3BQeC": {
+      "type": "image-hero",
       "blocks": {
-        "heading_YEpc6G": {
+        "heading_BfrNj4": {
           "type": "heading",
           "settings": {
-            "title": "404 Page Not Found",
+            "title": "Scary Good Skin",
             "heading_tag": "h2",
-            "heading_font_class": "fs-heading-2-base"
+            "heading_font_class": "fs-heading-display-2"
           }
         },
-        "button_hQDQPq": {
+        "text_VfVgPB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Last night: smoky eyes + fake blood. Today: 4-minute facials + baby-soft skin.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_t6FPhX": {
           "type": "button",
           "settings": {
-            "link": "/",
-            "link_text": "Go to Home Page",
-            "button_style": "btn--secondary"
+            "link": "#promo-collection-grid",
+            "link_text": "GET GLOWING",
+            "button_style": "btn--primary"
           }
         }
       },
       "block_order": [
-        "heading_YEpc6G",
-        "button_hQDQPq"
+        "heading_BfrNj4",
+        "text_VfVgPB",
+        "button_t6FPhX"
       ],
-      "name": "t:sections.rich_text.presets.name",
+      "custom_css": [
+        ".image-hero__text-container {max-width: 800px;}",
+        ".button-block__button {position: absolute; bottom: 20px; left: 50%; transform: translate(-50%, -50%);}"
+      ],
+      "name": "t:sections.image_hero.presets.name",
       "settings": {
-        "alignment": "center_center",
+        "image_aspect": "original",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "image": "shopify://shop_images/bcdf64610e598d6f4074638b496860cb8d389c9c.jpg",
+        "image_mobile": "shopify://shop_images/9d3105a2965c8ea5570612fed68c70559fb430a4.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "center_flex-start",
+        "text_position_mobile": "center_flex-start",
+        "show-checkboxes": false,
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "promo_collection_JKYi7C": {
+      "type": "promo-collection",
+      "custom_css": [
+        ".section-introduction {text-align: center; color: white;}",
+        "h2 {font-size: 33pt;}",
+        "@media screen and (max-width: 750px) {h2 {font-size: 24pt; }}"
+      ],
+      "name": "Promo Collection Grid",
+      "settings": {
+        "heading": "From Fright Night To Bright Morning",
+        "heading_tag": "h2",
+        "subheading": "<p>Erase every trace of Halloween with the pro-grade tools + treatments.</p>",
+        "link": "",
+        "link_text": "",
+        "maximum_collections": 7,
+        "columns": "3",
+        "mobile_columns": "1",
         "enable_animation": true,
         "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom",
-        "content_width": "custom",
-        "custom_content_width": 700
+        "section_padding": "section--vertical-padding-top-bottom"
       }
     }
   },
   "order": [
     "main",
-    "rich_text_ALcwiT"
+    "image_hero_9gWEk8",
+    "image_hero_W3BQeC",
+    "promo_collection_JKYi7C"
   ]
 }
