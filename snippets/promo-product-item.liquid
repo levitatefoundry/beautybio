@@ -75,6 +75,14 @@
         {% if placeholder %}
             {{ 9999 | money }}
 
+        {% elsif prod.selected_or_first_available_variant.compare_at_price > prod.selected_or_first_available_variant.price %}
+            <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+
+            <s class="t-subdued">{{ prod.selected_or_first_available_variant.compare_at_price | money }}</s>
+
+
+            <span class="sale">{{ prod.selected_or_first_available_variant.price | money }}</span>    
+
         {% elsif prod.compare_at_price > prod.price %}
             <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
 
@@ -92,14 +100,6 @@
             {% unless prod.compare_at_price_varies or has_null_compare_at_price %}
             <s class="t-subdued">{{ prod.compare_at_price | money }}</s>
             {% endunless %}
-
-            <span class="sale">{{ prod.selected_or_first_available_variant.price | money }}</span>
-            
-        {% elsif prod.selected_or_first_available_variant.compare_at_price > prod.selected_or_first_available_variant.price %}
-            <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
-
-            <s class="t-subdued">{{ prod.selected_or_first_available_variant.compare_at_price | money }}</s>
-
 
             <span class="sale">{{ prod.selected_or_first_available_variant.price | money }}</span>
  
