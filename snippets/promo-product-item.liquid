@@ -75,7 +75,7 @@
         {% if placeholder %}
             {{ 9999 | money }}
 
-        {% elsif prod.compare_at_price > prod.price %}
+        {% elsif prod.compare_at_price > prod.selected_or_first_available_variant.price %}
             <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
 
             {% liquid
