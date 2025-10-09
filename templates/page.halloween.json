@@ -66,7 +66,7 @@
           "type": "button",
           "settings": {
             "link": "#promo-collection-grid",
-            "link_text": "Get glowing",
+            "link_text": "GET GLOWING",
             "button_style": "btn--primary"
           }
         }
