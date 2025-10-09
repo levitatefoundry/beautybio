@@ -98,20 +98,8 @@
         {% elsif prod.selected_or_first_available_variant.compare_at_price > prod.selected_or_first_available_variant.price %}
             <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
 
-            {% liquid
-            # Extend Shopify's detection for varied compare_at_price
-            assign has_null_compare_at_price = false
-            for variant in prod.variants
-                if variant.compare_at_price == null
-                assign has_null_compare_at_price = true
-                break
-                endif
-            endfor
-            %}
-
-            {% unless prod.compare_at_price_varies or has_null_compare_at_price %}
             <s class="t-subdued">{{ prod.selected_or_first_available_variant.compare_at_price | money }}</s>
-            {% endunless %}
+
 
             <span class="sale">{{ prod.selected_or_first_available_variant.price | money }}</span>
  
