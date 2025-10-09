@@ -1,0 +1,256 @@
+{%- liquid
+  comment
+    pass in :
+
+    * prod (product but avoiding collision with globally scoped product)
+  endcomment
+
+  assign show_multiple_images = false
+
+  assign current_variant = prod.selected_or_first_available_variant
+
+  assign mobile_column_count = 2
+  if product_columns_mobile == 1
+    assign mobile_column_count = 1
+  endif
+
+  case product_columns_desktop
+    when '5'
+      assign sizes = '(max-width: 720px) calc((90vw - 12px) /[[mcc]]), (max-width: 1400px) calc((93.4vw - (12px * 3)) / 5), 270px' | replace: '[[mcc]]', mobile_column_count
+    when '3'
+      assign sizes = '(max-width: 720px) calc((90vw - 12px) /[[mcc]]), (max-width: 1400px) calc((93.4vw - (12px * 3)) / 3), 450px' | replace: '[[mcc]]', mobile_column_count
+    when '2'
+      assign sizes = '(max-width: 720px) calc((90vw - 12px) /[[mcc]]), (max-width: 1400px) calc((93.4vw - (12px * 3)) / 2), 690px' | replace: '[[mcc]]', mobile_column_count
+    else
+      # Using a 4 item grid as default for sizes
+      assign sizes = '(max-width: 720px) calc((90vw - 12px) /[[mcc]]), (max-width: 1400px) calc((93.4vw - (12px * 3)) / 4), 304px' | replace: '[[mcc]]', mobile_column_count
+  endcase
+-%}
+
+<div
+  class="
+    product-item
+    animation
+    animation--item
+    {% if has_grid_reveal -%} animation--item-initial {%- endif %}
+  "
+  style="--z-index-item: {{ forloop.index }};"
+>
+  <div class="product-item__inner">
+    <h3 class="ff-body product-item__product-title fs-product-card-title">
+        {%- if placeholder -%}
+        {{ 'homepage.onboarding.product_title' | t }}
+        {%- else -%}
+        <a href="{{ prod.url | within: collection }}">{{ prod.title }}</a>
+        {%- endif -%}
+    </h3>
+    {% if prod.metafields.custom.sub_title != blank %}
+        <p class="promo-product-item__subtitle">{{ prod.metafields.custom.sub_title }}</p>
+    {% endif %}
+    {% liquid
+        assign price_content_type = 'price'
+
+        if prod.available
+        if prod.price == 0 and prod.price_varies == false
+            if settings.zero_dollar_listing_price_display == 'replace'
+            assign price_content_type = 'custom'
+            assign custom_price_content = 'products.inventory.zero_price_custom_label' | t
+            elsif settings.zero_dollar_listing_price_display == 'hide'
+            assign price_content_type = 'hide'
+            assign custom_price_content = blank
+            endif
+        endif
+        else
+        if settings.sold_out_listing_price_display == 'hide'
+            assign price_content_type = 'hide'
+            assign custom_price_content = blank
+        elsif settings.sold_out_listing_price_display == 'replace'
+            assign price_content_type = 'custom'
+            assign custom_price_content = 'products.inventory.sold_out_price_custom_label' | t
+        endif
+        endif
+    %}
+    {% if price_content_type == 'price' %}
+        <p class="product-item__price">
+        {% if placeholder %}
+            {{ 9999 | money }}
+
+        {% elsif prod.compare_at_price > prod.price %}
+            <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+
+            {% liquid
+            # Extend Shopify's detection for varied compare_at_price
+            assign has_null_compare_at_price = false
+            for variant in prod.variants
+                if variant.compare_at_price == null
+                assign has_null_compare_at_price = true
+                break
+                endif
+            endfor
+            %}
+
+            {% unless prod.compare_at_price_varies or has_null_compare_at_price %}
+            <s class="t-subdued">{{ prod.compare_at_price | money }}</s>
+            {% endunless %}
+
+            <span class="sale">{{ prod.selected_or_first_available_variant.price | money }}</span>
+ 
+        {% else %}
+            <span class="product-item__price">{{ prod.selected_or_first_available_variant.price | money }}</span>
+        {% endif %}
+
+        {% if settings.product_listing_show_discount %}
+            <span class="displayed-discount fs-body-50">
+            {%- render 'get-display-discount', prod: prod, format: settings.product_listing_discount_format -%}
+            </span>
+        {% endif %}
+
+        {% render 'unit-price', item: current_variant %}
+        </p>
+    {% elsif price_content_type == 'custom' %}
+        {% if prod.price_varies and prod.price == 0 %}
+        {%- assign price = prod.price | money -%}
+        {%- assign custom_price_content = 'products.inventory.zero_price_custom_label' | t -%}
+
+        <p class="product-item__price">
+            {% liquid
+            capture from_lowest_price_html
+                echo 'products.product.from_lowest_price_html' | t: lowest_price: custom_price_content
+            endcapture
+
+            if prod.compare_at_price > prod.price
+                echo '<span class="sale">[[flph]]</span>' | replace: '[[flph]]', from_lowest_price_html
+            else
+                echo from_lowest_price_html
+            endif
+            %}
+        </p>
+        {% else %}
+        {% if custom_price_content != blank %}
+            <p class="product-item__price">{{ custom_price_content }}</p>
+        {% endif %}
+        {% endif %}
+    {% endif %}
+    <div class="product-item__media">
+      <a class="product-item__image-link" href="{{ prod.url | within: collection }}" aria-label="{{ prod.title }}">
+        {%- liquid
+          assign image_wrapper_class = 'product-item__image'
+
+          if show_multiple_images
+            assign image_wrapper_class = image_wrapper_class | append: ' product-item__image--one'
+            assign second_image = prod.media[1].preview_image
+
+            if prod.featured_media != prod.media[0]
+              assign second_image = prod.media[0].preview_image
+            endif
+          endif
+        -%}
+
+        {% render 'image',
+          image: prod.featured_media,
+          wrapper_class: image_wrapper_class,
+          aspect_ratio: settings.product_listing_aspect_ratio,
+          object_fit: settings.product_listing_media_fit,
+          include_placeholder: true,
+          sizes: sizes,
+          src_set_type: 'grid'
+        %}
+
+        {%- if show_multiple_images -%}
+          {% render 'image',
+            image: second_image,
+            wrapper_class: 'product-item__image product-item__image--two',
+            aspect_ratio: settings.product_listing_aspect_ratio,
+            object_fit: settings.product_listing_media_fit,
+            include_placeholder: true,
+            sizes: sizes,
+            no_lazy_load: true,
+            src_set_type: 'grid'
+          %}
+        {%- endif -%}
+      </a>
+
+    </div>
+
+    <div class="product-item__meta">
+      <div class="product-item__text ta-c ">
+
+        {% if settings.product_listing_show_vendor and prod.vendor %}
+          <h5 class="ff-body fs-body-60 product-item__product-vendor">
+            {{ prod.vendor }}
+          </h5>
+        {% endif %}
+      </div>
+
+    </div>
+    <div class="promo-product__bottom-content">
+        {% if prod.metafields.custom.bestfor_and_use_description != blank %}
+            {{ prod.metafields.custom.bestfor_and_use_description | metafield_tag  }}
+        {% endif %}
+        <a class="promo-product-item__link" href="{{ prod.url }}" target="_blank">See full details</a>
+    </div>
+  </div>
+  {% render 'product-form', prod: prod, current_variant: current_variant %}
+</div>
+
+<style>
+    #shopify-section-{{ section.id }} .product-item__inner {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        padding: 20px;
+        height: calc(100% - 104px);
+        justify-content: space-between;
+    }
+
+    #shopify-section-{{ section.id }} .product-item {
+        background-color: white;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        align-items: stretch;
+        height: 100%;
+    }
+
+    #shopify-section-{{ section.id }} .product-item__product-title {
+        text-align: center;
+        font-family: 'gothammedium' !important;
+        font-size: 20pt;
+    }
+
+    #shopify-section-{{ section.id }} .product-form__shop-pay {
+        display: none;
+    }
+
+    #shopify-section-{{ section.id }} .promo-product-item__subtitle {
+        font-size: 11pt;
+        text-align: center;
+    }
+
+    #shopify-section-{{ section.id }} .product-form__item {
+        display: flex;
+        justify-content: center;
+    }
+
+    #shopify-section-{{ section.id }} .product-form__cart-submit {
+        width: 70%;
+    }
+
+    #shopify-section-{{ section.id }} .promo-product-item__link {
+        font-size: 10pt;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    #shopify-section-{{ section.id }} .metafield-rich_text_field p {
+        font-size: 11pt !important;
+        text-align: center !important;
+    }
+
+    #shopify-section-{{ section.id }} .metafield-rich_text_field strong {
+        font-family: 'gothammedium' !important;
+    }
+
+    #shopify-section-{{ section.id }} .promo-product__bottom-content {
+        display: flex;
+        flex-direction: column;
+    }
+</style>
