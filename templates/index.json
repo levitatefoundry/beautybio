@@ -47,7 +47,6 @@
         },
         "slide_yT84rQ": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/GloPRO-ToolOnly_HP-Desktop.jpg",
             "image_mobile": "shopify://shop_images/GloPRO-ToolOnly_HP-Mobile.jpg",
@@ -81,7 +80,6 @@
         },
         "slide_8cqtHH": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/GloPRO-Attachments_HP-Desktop.jpg",
             "image_mobile": "shopify://shop_images/GloPRO-Attachments_HP-Mobile.jpg",
@@ -115,6 +113,7 @@
         },
         "slide_iYy4Qq": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/6-2-25_HP-DESKTOP.jpg",
             "image_mobile": "shopify://shop_images/6-2-25_HP-MOBILE.jpg",
