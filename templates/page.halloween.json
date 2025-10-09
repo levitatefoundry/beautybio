@@ -105,6 +105,17 @@
     },
     "promo_collection_JKYi7C": {
       "type": "promo-collection",
+      "blocks": {
+        "collection_6PMDFA": {
+          "type": "collection",
+          "settings": {
+            "collection": "halloween"
+          }
+        }
+      },
+      "block_order": [
+        "collection_6PMDFA"
+      ],
       "custom_css": [
         ".section-introduction {text-align: center; color: white;}",
         "h2 {font-size: 33pt;}",
