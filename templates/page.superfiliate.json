@@ -22,7 +22,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom_liquid.presets.name",
       "settings": {
-        "custom_liquid": "",
+        "custom_liquid": "<div class=\"klaviyo-form-XNr3Hb\"></div>",
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
       }
