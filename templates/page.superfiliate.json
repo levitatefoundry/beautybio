@@ -11,14 +11,25 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "enable_animation": true,
         "content_width": "full",
         "custom_content_width": 1000
       }
+    },
+    "custom_liquid_RccmPz": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_liquid_RccmPz"
   ]
 }
