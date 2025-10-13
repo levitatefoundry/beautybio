@@ -105,6 +105,81 @@
     "favicon": "shopify://shop_images/BB_Favicon_OnBlush.png",
     "enable_back_to_top": true,
     "quick_search_max_result_size": 6,
+    "sections": {
+      "main-product--default": {
+        "type": "main-product--default",
+        "blocks": {
+          "product_header_XabW8b": {
+            "type": "product_header",
+            "settings": {
+              "show_divider": false,
+              "show_vendor": false,
+              "show_sku": false,
+              "show_discount": true,
+              "discount_format": "percent_off",
+              "show_product_rating": false,
+              "show_sale_badge": true,
+              "show_custom_badges": true
+            }
+          },
+          "text_L9jMEM": {
+            "type": "text",
+            "settings": {
+              "text_font_class": "fs-body-100",
+              "text": "",
+              "column_placement": "right"
+            }
+          },
+          "description_BAyXVj": {
+            "type": "description",
+            "settings": {
+              "title": "",
+              "title_tag": "h3",
+              "text_font_class": "fs-body-100",
+              "column_placement": "right",
+              "display_as_collapsible_row": false,
+              "expand_by_default": false
+            }
+          },
+          "variant_picker_wcqCf8": {
+            "type": "variant_picker",
+            "settings": {
+              "variant_popup_option": "Size",
+              "variant_popup_icon": "measuring-tape",
+              "variant_popup_text": "Size guide",
+              "variant_popup_page": "",
+              "swatch_size": "medium",
+              "chip_layout": "natural"
+            }
+          }
+        },
+        "block_order": [
+          "product_header_XabW8b",
+          "text_L9jMEM",
+          "description_BAyXVj",
+          "variant_picker_wcqCf8"
+        ],
+        "settings": {
+          "enable_sticky_product_details": true,
+          "show_breadcrumbs": false,
+          "show_navigation_buttons": false,
+          "show_featured_media_first": false,
+          "gallery_style": "thumbnails",
+          "gallery_style_mobile": "thumbnails",
+          "gallery_size": "medium",
+          "gallery_overflow": "2",
+          "enable_video_looping": true,
+          "enable_product_lightbox": true,
+          "image_aspect_ratio": "natural",
+          "enable_multiple_variant_media": false,
+          "enable_mobile_carousel_looping": true,
+          "show_mobile_carousel_images_full_width": false,
+          "hide_mobile_carousel_dots": false,
+          "enable_gift_card_recipient": true,
+          "enable_animation": true
+        }
+      }
+    },
     "content_for_index": [],
     "blocks": {
       "13019466082614940324": {
