@@ -1,0 +1,209 @@
+{{ 'product-bundle-blocks.css' | asset_url | stylesheet_tag }}
+{{ 'product-card-popup.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'product-bundle-blocks.js' | asset_url }}" defer></script>
+<script src="{{ 'product-card.js' | asset_url }}" defer></script>
+
+{%- style -%}
+  #shopify-section-{{ section.id }} .product-bundle-blocks {
+    padding-top: {{ section.settings.padding_top | append: 'px' }};
+    padding-bottom: {{ section.settings.padding_bottom | append: 'px' }};
+  }
+
+  @media (max-width: 768px) {
+    #shopify-section-{{ section.id }} .product-bundle-blocks {
+      padding-top: {{ section.settings.padding_top_mob | append: 'px' }};
+      padding-bottom: {{ section.settings.padding_bottom_mob | append: 'px' }};
+    }
+  }
+{%- endstyle -%}
+
+<div class="product-bundle-blocks" data-bundle-section>
+    <div class="section section--vertical-padding-none">
+        <div class="product-bundle-blocks__container">
+            
+            {%- if section.settings.main_heading != blank -%}
+            <div class="product-bundle-blocks__main-heading">
+                <h2>{{ section.settings.main_heading }}</h2>
+            </div>
+            {%- endif -%}
+
+            {%- if section.settings.enable_filter -%}
+            <!-- Mobile Filter Trigger Button -->
+            <div class="product-bundle-blocks__filter-trigger">
+              <button class="bundle-filter-trigger" data-filter-trigger>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path d="M7 11.1555H17V13.1555H7V11.1555ZM4 7.15546H20V9.15546H4V7.15546ZM10 15.1555H14V17.1555H10V15.1555Z" fill="black"/>
+                </svg>
+                <span class="bundle-filter-trigger__text">Filters</span>
+              </button>
+            </div>
+
+            <!-- Desktop Filter Bar -->
+            <div class="product-bundle-blocks__filter">
+              <div class="bundle-filter" data-bundle-filter>
+                <button 
+                  class="bundle-filter__item bundle-filter__item--active" 
+                  data-filter="all"
+                  aria-pressed="true"
+                >
+                  {{ section.settings.filter_all_text | default: "View All" }}
+                </button>
+
+                {%- if section.settings.show_remove_filter -%}
+                  <button class="bundle-filter__remove" data-filter-remove style="display: none;">
+                    {{ section.settings.remove_filter_text | default: "Remove Filter" }}
+                  </button>
+                {%- endif -%}
+                </div>
+              <div class="bundle-filter__result-count" data-filter-result-count>
+                <!-- Product count will be inserted here by JavaScript -->
+              </div>
+            </div>
+
+            <!-- Mobile Filter Popup -->
+            <div class="bundle-filter-popup" data-filter-popup>
+              <div class="bundle-filter-popup__overlay" data-filter-popup-overlay></div>
+              <div class="bundle-filter-popup__content">
+                <div class="bundle-filter-popup__header">
+                  <h3 class="bundle-filter-popup__title">Filters</h3>
+                  <button class="bundle-filter-popup__close" data-filter-popup-close aria-label="Close filters">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                      <path d="M17.7501 17.1466L17.1465 17.7501C16.8133 18.0833 16.273 18.0833 15.9396 17.7501L9.00001 10.8103L2.06027 17.75C1.72705 18.0833 1.18669 18.0833 0.853415 17.75L0.249958 17.1465C-0.0833193 16.8133 -0.0833193 16.273 0.249958 15.9396L7.18968 9.00001L0.249958 2.06027C-0.0833193 1.72705 -0.0833193 1.18669 0.249958 0.853415L0.853402 0.24997C1.18668 -0.0833071 1.72705 -0.0833071 2.06027 0.24997L9.00001 7.18968L15.9396 0.249958C16.273 -0.0833193 16.8133 -0.0833193 17.1465 0.249958L17.7501 0.853402C18.0833 1.18668 18.0833 1.72705 17.7501 2.06027L10.8103 9.00001L17.7501 15.9396C18.0833 16.273 18.0833 16.8133 17.7501 17.1466Z" fill="black"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="bundle-filter-popup__body">
+                  <div class="bundle-filter-popup__section">
+                    <h4 class="bundle-filter-popup__section-title">Tiered Discounts</h4>
+                    <div class="bundle-filter-popup__options" data-filter-popup-options>
+                      <label class="bundle-filter-popup__option">
+                        <input type="checkbox" name="filter" value="all" data-filter-checkbox checked>
+                        <span class="bundle-filter-popup__option-text">{{ section.settings.filter_all_text | default: "View All" }}</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="bundle-filter-popup__footer">
+                  <button class="bundle-filter-popup__clear" data-filter-popup-clear>Clear all</button>
+                  <button class="bundle-filter-popup__apply" data-filter-popup-apply>Apply</button>
+                </div>
+                </div>
+            </div>
+            {%- endif -%}
+
+            <div class="product-bundle-blocks__content">
+            {%- for block in section.blocks -%}
+              <div class="product-bundle-block-wrapper" data-bundle-id="bundle-{{ forloop.index }}" data-block-id="{{ block.id }}">
+                {% render block %}
+              </div>
+            {%- endfor -%}
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product Bundle Blocks",
+  "class": "section-product-bundle-blocks",
+  "settings": [
+    {
+      "type": "text",
+      "id": "main_heading",
+      "label": "Main Heading",
+      "default": "Save Up To 30% Off"
+    },
+    {
+      "type": "header",
+      "content": "Bundle Filter"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_filter",
+      "label": "Enable Bundle Filter",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "filter_all_text",
+      "label": "Filter 'View All' Text",
+      "default": "View All"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_remove_filter",
+      "label": "Show Remove Filter Button",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "remove_filter_text",
+      "label": "Remove Filter Text",
+      "default": "Remove Filter"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "paragraph",
+      "content": "Desktop"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 60
+    },
+    {
+      "type": "paragraph",
+      "content": "Mobile"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mob",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mob",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@theme"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Bundle Blocks"
+    }
+  ]
+}
+{% endschema %}

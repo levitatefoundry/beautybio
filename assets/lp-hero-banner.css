@@ -33,7 +33,7 @@
   letter-spacing: -0.75px;
   line-height: 95%;
   font-weight: 700;
-  max-width: 500px;
+  max-width: var(--content-width);
 }
 
 .lp-hero-description {
@@ -44,7 +44,7 @@
   font-weight: 400;
   color: #000;
   margin-bottom: 16px;
-  max-width: 435px;
+  max-width: calc(var(--content-width) - 50px);
 }
 
 /* Buttons */
@@ -188,9 +188,5 @@
   
   .lp-hero-text {
     padding-top: 20px;
-  }
-
-  .lp-hero-content>* {
-    max-width: 50%;
   }
 }

@@ -14,7 +14,7 @@
   {% endif %}
 ">
   <div class="section">
-    <div class="lp-hero-content">
+    <div class="lp-hero-content" style="--content-width: {{ section.settings.content_width | append: 'px' }}">
       <div class="lp-hero-text">
         {% if section.settings.heading != blank %}
           <h1 class="lp-hero-heading">{{ section.settings.heading }}</h1>
@@ -42,9 +42,8 @@
           {% endif %}
         </div>
       </div>
-      
-      <div class="lp-hero-image">
-        {% if section.settings.main_image != blank %}
+      {% if section.settings.main_image != blank %}
+        <div class="lp-hero-image">
           <div class="lp-hero-image-container">
             <img src="{{ section.settings.main_image | image_url: width: 1200 }}" 
                 alt="{{ section.settings.main_image.alt | escape }}"
@@ -61,8 +60,8 @@
                     loading="lazy">
             {% endif %}
           </div>
-        {% endif %}
-      </div>
+        </div>
+      {% endif %}
     </div>
   </div>
 </section>
@@ -99,6 +98,16 @@
       "type": "textarea",
       "id": "text_mob",
       "label": "Description (Mobile)",
+    },
+    {
+      "type": "range",
+      "id": "content_width",
+      "min": 200,
+      "max": 800,
+      "step": 10,
+      "unit": "px",
+      "label": "Content Width",
+      "default": 500
     },
     {
       "type": "text",

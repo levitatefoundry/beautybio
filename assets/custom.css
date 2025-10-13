@@ -11,15 +11,6 @@ font-family: 'gothammedium';
   letter-spacing: -0.03em;
 }
 
-.oct-quiz-result-item__pricing s {
-  display: none;
-}
-
-.oct-quiz-result-actions-content button {
-  background-color: black;
-  color: white;
-}
-
 
 h2.footer__header,
 .footer__heading.fs-accent,
@@ -140,4 +131,13 @@ button{
   font-family: gothambook !important;
   font-weight: 300 !important;
   font-size: 18px !important;
+}
+
+.product-details-popup__body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.product-details-popup__body .template-product>.page>*:not(#main){
+  display: none !important;
 }

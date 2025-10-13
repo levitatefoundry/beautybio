@@ -1,0 +1,74 @@
+{% assign filter = block.settings.filter_title | default: block.settings.bundle_title %}
+
+<div class="product-bundle-block" {{ block.shopify_attributes }} data-filter-title="{{ filter }}" data-filter-id="{{ filter | handleize }}">
+  {%- if block.settings.bundle_title != blank -%}
+    <div class="product-bundle-block__title">
+      <h3>{{ block.settings.bundle_title }}</h3>
+    </div>
+  {%- endif -%}
+
+  {%- if block.settings.bundle_description != blank -%}
+    <div class="product-bundle-block__description">
+      {{ block.settings.bundle_description }}
+    </div>
+  {%- endif -%}
+
+  <div class="product-bundle-block__products" style="--products-row-per-view: {{ block.settings.products_row_per_view |  default: 2 }};">
+    {%- for child_block in block.blocks -%}
+      {% render child_block %}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Products Bundle",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "bundle_title",
+      "label": "Bundle Title",
+      "default": "Save Up To 30% Off"
+    },
+    {
+      "type": "text",
+      "id": "filter_title",
+      "label": "Filter title",
+    },
+    {
+      "type": "richtext",
+      "id": "bundle_description",
+      "label": "Bundle Description"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "products_row_per_view",
+      "label": "Products Row Per View",
+      "info": "This is the number of products per row on desktop",
+      "options": [
+        { "value": "2", "label": "2" },
+        { "value": "3", "label": "3" }
+      ],
+      "default": "2"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product-card"
+    },
+    {
+      "type": "product-card-alt"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Products bundle",
+    }
+  ],
+}
+{% endschema %}

@@ -1,0 +1,164 @@
+{%- liquid
+  assign product = block.settings.product
+  assign custom_title = block.settings.custom_title
+  assign custom_price = block.settings.custom_price
+  assign custom_compare_price = block.settings.custom_compare_price
+  assign custom_image = block.settings.custom_image
+  assign custom_description = block.settings.custom_description
+  
+  # Use custom title if provided, otherwise use product title
+  if custom_title != blank
+    assign display_title = custom_title
+  elsif product != blank
+    assign display_title = product.title
+  else
+    assign display_title = ''
+  endif
+  
+  # Use custom image if provided, otherwise use product featured image
+  if custom_image != blank
+    assign display_image = custom_image
+  elsif product != blank and product.featured_image != blank
+    assign display_image = product.featured_image
+  else
+    assign display_image = blank
+  endif
+  
+  # Use custom description if provided, otherwise use product description
+  if custom_description != blank
+    assign display_description = custom_description
+  elsif product != blank and product.description != blank
+    assign display_description = product.description
+  else
+    assign display_description = ''
+  endif
+  
+  # Determine if we should display the card
+  assign show_card = false
+  if product != blank or custom_title != blank
+    assign show_card = true
+  endif
+-%}
+
+{%- if show_card -%}
+  <div class="product-card-alt" {{ block.shopify_attributes }}>
+    <div class="product-card-alt__inner">
+      
+      {%- comment -%} Product Image {%- endcomment -%}
+      <div class="product-card-alt__media">
+        {%- if display_image != blank -%}
+          <img src="{{ display_image | image_url: width: 800 }}" alt="{{ display_title }}" loading="lazy">
+        {%- endif -%}
+      </div>
+
+      {%- comment -%} Product Info {%- endcomment -%}
+      <div class="product-card-alt__content">
+        
+        {%- if display_title != blank -%}
+          <h3 class="product-card-alt__title">{{ display_title }}</h3>
+        {%- endif -%}
+
+        {%- comment -%} Price {%- endcomment -%}
+        <div class="product-card-alt__price">
+          {%- if custom_price != blank -%}
+            {%- comment -%} Custom pricing is provided {%- endcomment -%}
+            <span class="product-card-alt__price--sale">{{ custom_price }}</span>
+            {%- if custom_compare_price != blank -%}
+              <span class="product-card-alt__price--regular">{{ custom_compare_price }}</span>
+            {%- endif -%}
+          {%- elsif product != blank -%}
+            {%- comment -%} Use product pricing {%- endcomment -%}
+            <span class="product-card-alt__price--sale">{{ product.price | money }}</span>
+            {%- if product.compare_at_price > product.price -%}
+              <span class="product-card-alt__price--regular">{{ product.compare_at_price | money }}</span>
+            {%- endif -%}
+          {%- endif -%}
+        </div>
+
+        {%- comment -%} Description {%- endcomment -%}
+        {%- if display_description != blank -%}
+          <div class="product-card-alt__description">
+            {{ display_description | strip_html | truncate: 150 }}
+          </div>
+        {%- endif -%}
+
+      </div>
+
+      {%- comment -%} Add to Bag Button {%- endcomment -%}
+      <div class="product-card-alt__actions">
+        {%- if product != blank -%}
+          {%- if product.available -%}
+            <form action="/cart/add" method="post" enctype="multipart/form-data" class="product-card-alt__form">
+              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+              <input type="hidden" name="quantity" value="1">
+              <button type="submit" class="product-card-alt__button">
+                ADD TO BAG
+              </button>
+            </form>
+          {%- else -%}
+            <button disabled class="product-card-alt__button product-card-alt__button--disabled">
+              SOLD OUT
+            </button>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Product Card (Alt)",
+  "tag": null,
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
+      "type": "header",
+      "content": "Custom Product Information"
+    },
+    {
+      "type": "image_picker",
+      "id": "custom_image",
+      "label": "Custom Product Image",
+      "info": "Override the product image. Leave blank to use product featured image."
+    },
+    {
+      "type": "text",
+      "id": "custom_title",
+      "label": "Custom Product Title",
+      "info": "Override the product title. Leave blank to use product title."
+    },
+    {
+      "type": "richtext",
+      "id": "custom_description",
+      "label": "Custom Description",
+      "info": "Override the product description. Leave blank to use product description."
+    },
+    {
+      "type": "text",
+      "id": "custom_price",
+      "label": "Custom Price",
+      "info": "Override the product price (e.g., '$99.00' or 'From $49.99'). Leave blank to use product price.",
+      "placeholder": "$99.00"
+    },
+    {
+      "type": "text",
+      "id": "custom_compare_price",
+      "label": "Custom Compare At Price",
+      "info": "Show a compare price (strikethrough). Only works with custom price.",
+      "placeholder": "$149.00"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product card (Alt)"
+    }
+  ]
+}
+{% endschema %}
+
