@@ -6846,8 +6846,12 @@ class Product {
     }, "", url);
 
     // We need to set the id input manually so the Dynamic Checkout Button works
-    const selectedVariantOpt = n$2("".concat(selectors$G.variantSelect, " ").concat(selectors$G.optionById(variant.id)), this.container);
-    selectedVariantOpt.selected = true;
+    const variantOptions = document.querySelectorAll('.product-form__variants option')
+    variantOptions.forEach(e => {
+      e.removeAttribute('selected')
+    })
+    const selectedVariantOpt = document.querySelector(`option[value="${variant.id}"]`)
+    selectedVariantOpt.setAttribute('selected', 'selected')
 
     // We need to dispatch an event so Shopify pay knows the form has changed
     this.formElement.dispatchEvent(new Event("change"));
