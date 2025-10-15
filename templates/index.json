@@ -14,6 +14,7 @@
       "blocks": {
         "slide_mbqiRK": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Halloween_LastChance_HP-Desktop.jpg",
             "image_mobile": "shopify://shop_images/Halloween_LastChance_HP-Mobile.jpg",
