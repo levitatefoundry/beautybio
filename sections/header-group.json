@@ -25,12 +25,9 @@
         "announcement-bar-1": {
           "type": "announcement",
           "settings": {
-            "title": "<p><strong>Find us at your local </strong></p>",
-            "title_mobile": "<p><strong>Find us at</strong></p>",
-            "link": "shopify://pages/storelocator",
-            "block_image_one": "shopify://shop_images/Sephora_logo_1_1.svg",
-            "block_image_two": "shopify://shop_images/Ulta_Beauty_logo_1.svg",
-            "block_image_three": "shopify://shop_images/Nordstrom_Logo_2019_1.svg"
+            "title": "<p><strong>Get An Exclusive First Look At The Biggest Savings Of The Year!</strong></p>",
+            "title_mobile": "<p><strong>Get A First Look At BFCM Savings!</strong></p>",
+            "link": "shopify://pages/black-friday-lp"
           }
         },
         "announcement_97Y4Gi": {
