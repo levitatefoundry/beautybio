@@ -1,0 +1,54 @@
+{%- doc -%}
+    @param {object} block_settings 
+    Static non-shoppable product card for landing pages
+{%- enddoc -%}
+
+{%- liquid
+  assign _product = block_settings.product
+  assign _product_media = block_settings.custom_product_image | default: _product.featured_image
+  assign _product_title = block_settings.custom_title | default: _product.title
+  assign _product_description = block_settings.custom_description
+  assign _badge_title = block_settings.badge_title
+-%}
+
+<div class="lp-product-card-static">
+  <div class="lp-product-card-static__inner">
+    {% if _badge_title != blank %}
+      <div class="lp-product-card-static__badge">
+        {{ _badge_title }}
+      </div>
+    {% endif %}
+
+    <div class="lp-product-card-static__image-wrapper">
+      {% if _product_media != blank %}
+        <img 
+          src="{{ _product_media | image_url: width: 800 }}" 
+          alt="{{ _product_title | escape }}"
+          class="lp-product-card-static__image"
+          loading="lazy"
+        >
+      {% else %}
+        <div class="lp-product-card-static__placeholder">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 525 525">
+            <rect width="525" height="525" fill="#F3F3F3"/>
+            <path fill="#DADADA" d="M375 262.5c0 41.421-33.579 75-75 75s-75-33.579-75-75 33.579-75 75-75 75 33.579 75 75Z"/>
+            <path fill="#DADADA" d="M150 412.5h225L262.5 300 200 375l-37.5-37.5-12.5 75Z"/>
+          </svg>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="lp-product-card-static__content">
+      <h3 class="lp-product-card-static__title">
+        {{ _product_title }}
+      </h3>
+
+      {% if _product_description != blank %}
+        <div class="lp-product-card-static__description">
+          {{ _product_description }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+

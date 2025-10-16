@@ -43,7 +43,6 @@
   line-height: 140%;
   font-weight: 400;
   color: #000;
-  margin-bottom: 16px;
   max-width: calc(var(--content-width) - 50px);
 }
 
@@ -52,6 +51,7 @@
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  margin-top: 16px;
 }
 
 .lp-hero-btn {
@@ -146,11 +146,11 @@
   
   .lp-hero-description {
     font-size: 1rem;
-    margin-bottom: 32px;
     max-width: 100%;
   }
   
   .lp-hero-buttons {
+    margin-top: 32px;
     justify-content: center;
     flex-direction: column;
     gap: 12px;
@@ -178,6 +178,14 @@
   max-width: 100%;
 }
 
+.lp-hero-bg-image {
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
 /* Additional responsive image handling */
 @media screen and (min-width: 769px) {
   .lp-hero-content {
@@ -188,5 +196,17 @@
   
   .lp-hero-text {
     padding-top: 20px;
+  }
+
+  .lp-hero-content>* {
+    max-width: 50%;
+  }
+
+  .lp-hero-bg-image {
+    width: 184px;
+    height: 184px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

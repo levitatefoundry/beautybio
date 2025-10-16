@@ -13,6 +13,9 @@
     {% endif %}
   {% endif %}
 ">
+  {% if section.settings.bg_badge_img != blank %}
+    <img class="lp-hero-bg-image" src="{{ section.settings.bg_badge_img |  image_url: width: 700 }}" width="" height="" alt="">
+  {% endif %}
   <div class="section">
     <div class="lp-hero-content" style="--content-width: {{ section.settings.content_width | append: 'px' }}">
       <div class="lp-hero-text">
@@ -28,22 +31,26 @@
           <div class="lp-hero-description {%  if section.settings.text != blank %} desktop--hidden {% endif %} %}">{{ section.settings.text_mob }}</div>
         {% endif %}
         
-        <div class="lp-hero-buttons">
-          {% if section.settings.primary_button_text != blank %}
-            <a href="{{ section.settings.primary_button_url }}" class="lp-hero-btn lp-hero-btn-primary">
-              {{ section.settings.primary_button_text }}
-            </a>
-          {% endif %}
-          
-          {% if section.settings.secondary_button_text != blank %}
-            <a href="{{ section.settings.secondary_button_url }}" class="lp-hero-btn lp-hero-btn-secondary">
-              {{ section.settings.secondary_button_text }}
-            </a>
-          {% endif %}
-        </div>
+        
+        {% if section.settings.primary_button_text != blank or section.settings.secondary_button_text != blank %}
+          <div class="lp-hero-buttons">
+            {% if section.settings.primary_button_text != blank %}
+              <a href="{{ section.settings.primary_button_url }}" class="lp-hero-btn lp-hero-btn-primary">
+                {{ section.settings.primary_button_text }}
+              </a>
+            {% endif %}
+            
+            {% if section.settings.secondary_button_text != blank %}
+              <a href="{{ section.settings.secondary_button_url }}" class="lp-hero-btn lp-hero-btn-secondary">
+                {{ section.settings.secondary_button_text }}
+              </a>
+            {% endif %}
+          </div>
+        {% endif %}
       </div>
-      {% if section.settings.main_image != blank %}
-        <div class="lp-hero-image">
+      
+      <div class="lp-hero-image">
+        {% if section.settings.main_image != blank %}
           <div class="lp-hero-image-container">
             <img src="{{ section.settings.main_image | image_url: width: 1200 }}" 
                 alt="{{ section.settings.main_image.alt | escape }}"
@@ -60,8 +67,8 @@
                     loading="lazy">
             {% endif %}
           </div>
-        </div>
-      {% endif %}
+        {% endif %}
+      </div>
     </div>
   </div>
 </section>
@@ -181,7 +188,12 @@
       "label": "Custom Background Size",
       "info": "Enter custom background size (e.g., 100% 100%, 50px 30px)",
       "visible_if": "{{ section.settings.background_size == 'custom' }}"
-    }
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_badge_img",
+      "label": "Background badge image"
+    },
   ],
   "presets": [
     {

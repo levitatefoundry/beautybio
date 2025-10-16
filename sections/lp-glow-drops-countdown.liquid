@@ -1,0 +1,178 @@
+{{ 'lp-glow-drops-countdown.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} .lp-glow-drops-countdown {
+    {% if section.settings.background_image != blank %}
+      background-image: url('{{ section.settings.background_image | image_url: width: 1920 }}');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    {% endif %}
+    {% if section.settings.background_color != blank %}
+      background-color: {{ section.settings.background_color }};
+    {% endif %}
+  }
+
+  @media (max-width: 768px) {
+    #shopify-section-{{ section.id }} .lp-glow-drops-countdown {
+      {% if section.settings.background_image_mobile != blank %}
+        background-image: url('{{ section.settings.background_image_mobile | image_url: width: 768 }}');
+      {% endif %}
+    }
+  }
+{%- endstyle -%}
+
+<div class="section section--vertical-padding-none">
+    <section class="lp-glow-drops-countdown">
+        <div class="lp-glow-drops-countdown__container">
+            <div class="lp-glow-drops-countdown__content">
+                {% if section.settings.title != blank %}
+                <h1 class="lp-glow-drops-countdown__title">{{ section.settings.title }}</h1>
+                {% endif %}
+
+                {% if section.settings.product_image != blank %}
+                <div class="lp-glow-drops-countdown__product-image">
+                    <img 
+                    src="{{ section.settings.product_image | image_url: width: 800 }}" 
+                    alt="{{ section.settings.product_image.alt | escape }}"
+                    width="{{ section.settings.product_image.width }}"
+                    height="{{ section.settings.product_image.height }}"
+                    loading="lazy">
+                </div>
+                {% endif %}
+            </div>
+
+            {% if section.settings.countdown_end_date != blank %}
+                <div class="lp-glow-drops-countdown__timer-box">
+                {% if section.settings.countdown_title != blank %}
+                    <h2 class="lp-glow-drops-countdown__countdown-title">{{ section.settings.countdown_title }}</h2>
+                {% endif %}
+                
+                <div class="lp-glow-drops-countdown__timer" data-countdown-date="{{ section.settings.countdown_end_date }}">
+                    <div class="lp-glow-drops-countdown__timer-item">
+                    <span class="lp-glow-drops-countdown__timer-value" data-days>00</span>
+                    <span class="lp-glow-drops-countdown__timer-label">DAYS</span>
+                    </div>
+                    <span class="lp-glow-drops-countdown__timer-separator">:</span>
+                    <div class="lp-glow-drops-countdown__timer-item">
+                    <span class="lp-glow-drops-countdown__timer-value" data-hours>00</span>
+                    <span class="lp-glow-drops-countdown__timer-label">HOURS</span>
+                    </div>
+                    <span class="lp-glow-drops-countdown__timer-separator">:</span>
+                    <div class="lp-glow-drops-countdown__timer-item">
+                    <span class="lp-glow-drops-countdown__timer-value" data-minutes>00</span>
+                    <span class="lp-glow-drops-countdown__timer-label">MINUTES</span>
+                    </div>
+                </div>
+                </div>
+            {% endif %}
+        </div>
+    </section>
+</div>
+
+<script>
+  (function() {
+    const countdownElement = document.querySelector('.lp-glow-drops-countdown__timer');
+    if (!countdownElement) return;
+
+    const countdownDate = countdownElement.getAttribute('data-countdown-date');
+    if (!countdownDate) return;
+
+    const endDate = new Date(countdownDate).getTime();
+
+    const daysElement = countdownElement.querySelector('[data-days]');
+    const hoursElement = countdownElement.querySelector('[data-hours]');
+    const minutesElement = countdownElement.querySelector('[data-minutes]');
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = endDate - now;
+
+      if (distance < 0) {
+        daysElement.textContent = '00';
+        hoursElement.textContent = '00';
+        minutesElement.textContent = '00';
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+      daysElement.textContent = String(days).padStart(2, '0');
+      hoursElement.textContent = String(hours).padStart(2, '0');
+      minutesElement.textContent = String(minutes).padStart(2, '0');
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 60000); // Update every minute
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "LP Glow Drops Countdown",
+  "tag": "section",
+  "class": "section-lp-glow-drops-countdown",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "The Glow Drops Soon."
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Product Image"
+    },
+    {
+      "type": "header",
+      "content": "Countdown Timer"
+    },
+    {
+      "type": "text",
+      "id": "countdown_title",
+      "label": "Countdown Title",
+      "default": "Black Friday Starts In:"
+    },
+    {
+      "type": "text",
+      "id": "countdown_end_date",
+      "label": "Black Friday Start Date",
+      "info": "Format: YYYY-MM-DD HH:MM (e.g., 2024-11-29 00:00)",
+      "default": "2024-11-29 00:00"
+    },
+    {
+      "type": "header",
+      "content": "Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image (Desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image_mobile",
+      "label": "Background Image (Mobile)"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FDF2F0"
+    }
+  ],
+  "presets": [
+    {
+      "name": "LP Glow Drops Countdown"
+    }
+  ]
+}
+{% endschema %}
+
