@@ -116,7 +116,7 @@
         <div class="collection-banner__text-container-inner section-blocks animation--section-blocks">
           
           <h1 class="collection-banner__text-container-heading ff-heading fs-heading-2-base fs-heading-1-base-ns section-blocks__heading">
-            {{ section.settings.heading | default: collection.title }}
+            {{ collection.metafields.custom.collection_heading | default: collection.title }}
           </h1>
 
           {% if section.settings.subheading != blank %}
