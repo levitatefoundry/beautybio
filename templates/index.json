@@ -53,7 +53,7 @@
             "image_mobile": "shopify://shop_images/GloPRO-ToolOnly_HP-Mobile.jpg",
             "focal_point": "image_presentation",
             "mobile_focal_point": "top",
-            "media_link": "shopify://products/glopro-microneedling-regeneration-roller-tool",
+            "media_link": "shopify://collections/glopro",
             "text_position": "flex-start_center",
             "text_position_mobile": "center_flex-start",
             "accent": "",
