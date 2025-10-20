@@ -251,7 +251,7 @@
         {% endif %}
 
         {% if settings.product_listing_show_rating %}
-          {% render 'product-rating', prod: prod %}
+          <div class="inline_rating" data-bv-show="inline_rating" data-bv-product-id="{{ prod.id }}"></div>
         {% endif %}
 
         {% liquid
