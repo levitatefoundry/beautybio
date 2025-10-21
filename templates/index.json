@@ -172,6 +172,44 @@
         "section_padding": "none"
       }
     },
+    "rich_text_wxEeCq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HF6EYa": {
+          "type": "heading",
+          "settings": {
+            "title": "GET A SNEAK PEEK AT OUR BIGGEST BLACK FRIDAY + CYBER MONDAY DEALS OF THE YEAR",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-3-base"
+          }
+        },
+        "text_8Nn7FN": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/pages/black-friday-lp\" title=\"Black Friday LP\">Show me Savings</a></p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HF6EYa",
+        "text_8Nn7FN"
+      ],
+      "custom_css": [
+        "{background-color: black; color: white;}",
+        "a {color: white; font-size: 11pt;}",
+        "h2 {font-size: 16pt;}"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 1000
+      }
+    },
     "featured_collection_slider_1": {
       "type": "featured-collection-slider",
       "blocks": {
@@ -1511,6 +1549,7 @@
   },
   "order": [
     "slideshow_XAEEkT",
+    "rich_text_wxEeCq",
     "featured_collection_slider_1",
     "rich_text",
     "collection_list_slider",
