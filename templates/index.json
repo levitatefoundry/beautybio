@@ -1510,15 +1510,6 @@
         "full_width": false,
         "section_padding": "section--vertical-padding-top-bottom"
       }
-    },
-    "custom_liquid_EUBgWj": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom_liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<script>\ndocument.getElementById(\"sca-fg-today-offer-widget\").setAttribute(\"aria-label\", \"Today's Offer\");\n</script>",
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
     }
   },
   "order": [
@@ -1542,7 +1533,6 @@
     "image_hero_VccQUH",
     "slideshow_tkmCBn",
     "slideshow_8dXBPg",
-    "countdown_bar_U7HtzF",
-    "custom_liquid_EUBgWj"
+    "countdown_bar_U7HtzF"
   ]
 }
