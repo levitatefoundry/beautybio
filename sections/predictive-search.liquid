@@ -16,7 +16,7 @@
       <ul class="quick-search__suggested-queries-list list-reset">
         {%- for query in predictive_search.resources.queries -%}
           <li class="quick-search__suggested-queries-list-item">
-            <a href="{{ query.url }}" class="quick-search__result ff-body fs-body-75">
+            <a href="{{ query.url }}" onclick="window.location.href=this.href;" class="quick-search__result ff-body fs-body-75">
               <p
                 class="quick-search__result-details quick-search__result-details--query"
                 aria-label="{{ query.text }}"
@@ -39,6 +39,7 @@
         <a
           class="quick-search__result quick-search__result--product quick-search__result--{{ settings.quick_search_product_style }}"
           href="{{ product.url }}"
+          onclick="window.location.href=this.href;"
         >
           {%- if settings.quick_search_product_style != 'list' -%}
             <div class="quick-search__result-image-wrapper">
@@ -134,7 +135,7 @@
       </h4>
 
       {%- for collection in predictive_search.resources.collections -%}
-        <a class="quick-search__result" href="{{ collection.url }}">
+        <a class="quick-search__result" href="{{ collection.url }}" onclick="window.location.href=this.href;">
           <div class="quick-search__result-heading ff-body fs-body-75">{{ collection.title }}</div>
         </a>
       {%- endfor -%}
@@ -146,7 +147,7 @@
       </h4>
 
       {%- for page in predictive_search.resources.pages -%}
-        <a class="quick-search__result" href="{{ page.url }}">
+        <a class="quick-search__result" href="{{ page.url }}" onclick="window.location.href=this.href;">
           <div class="quick-search__result-heading ff-body fs-body-75">{{ page.title }}</div>
         </a>
       {%- endfor -%}
@@ -158,7 +159,7 @@
       </h4>
 
       {%- for article in predictive_search.resources.articles -%}
-        <a class="quick-search__result" href="{{ article.url }}">
+        <a class="quick-search__result" href="{{ article.url }}" onclick="window.location.href=this.href;">
           <div class="quick-search__result-heading ff-body fs-body-75">{{ article.title }}</div>
         </a>
       {%- endfor -%}
@@ -170,14 +171,3 @@
     <p class="quick-search__no-results t-subdued">{{ 'search.check_spelling' | t }}</p>
   {%- endif -%}
 {%- endif -%}
-
-
-<script>
-  document.querySelectorAll('.quick-search__result').forEach(link => {
-    link.addEventListener('click', function(e) {
-      console.log('Link clicked:', this.href);
-      // Uncomment below to force navigation
-      // window.location.href = this.href;
-    });
-  });
-</script>
