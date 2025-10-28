@@ -170,3 +170,14 @@
     <p class="quick-search__no-results t-subdued">{{ 'search.check_spelling' | t }}</p>
   {%- endif -%}
 {%- endif -%}
+
+
+<script>
+  document.querySelectorAll('.quick-search__result').forEach(link => {
+    link.addEventListener('click', function(e) {
+      console.log('Link clicked:', this.href);
+      // Uncomment below to force navigation
+      // window.location.href = this.href;
+    });
+  });
+</script>
