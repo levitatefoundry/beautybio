@@ -1,5 +1,5 @@
-/* LP Hero Banner Section */
-.lp-hero-banner {
+/* Recharge LP Hero Banner Section */
+.recharge-lp-hero-banner {
   width: 100%;
   min-height: 558px;
   background-color: #FDF2F0;
@@ -7,25 +7,25 @@
   overflow: hidden;
 }
 
-.lp-hero-container {
+.recharge-lp-hero-container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.lp-hero-content {
+.recharge-lp-hero-content {
   display: flex;
   align-items: center;
   min-height: 500px;
 }
 
 /* Text Content */
-.lp-hero-text {
+.recharge-lp-hero-text {
   flex: 1;
   max-width: 550px;
 }
 
-.lp-hero-heading {
+.recharge-lp-hero-heading {
   color: #000;
   margin: 0 0 16px 0;
   font-family: gothambold;
@@ -36,7 +36,7 @@
   max-width: var(--content-width);
 }
 
-.lp-hero-description {
+.recharge-lp-hero-description {
   font-family: gothambook;
   font-size: 16px;
   letter-spacing: -0.24px;
@@ -47,14 +47,19 @@
   max-width: calc(var(--content-width) - 50px);
 }
 
+.recharge-lp-hero-text__image img {
+  width: 100%;
+  height: auto;
+}
+
 /* Buttons */
-.lp-hero-buttons {
+.recharge-lp-hero-buttons {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
 }
 
-.lp-hero-btn {
+.recharge-lp-hero-btn {
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
@@ -72,31 +77,31 @@
   font-family: gothambold;
 }
 
-.lp-hero-btn-primary {
+.recharge-lp-hero-btn-primary {
   background-color: #000;
   color: #fff;
   border-color: #000;
 }
 
-.lp-hero-btn-primary:hover {
+.recharge-lp-hero-btn-primary:hover {
   background-color: #333;
   border-color: #333;
   color: #fff;
 }
 
-.lp-hero-btn-secondary {
+.recharge-lp-hero-btn-secondary {
   background-color: transparent;
   color: #000;
   border-color: #000;
 }
 
-.lp-hero-btn-secondary:hover {
+.recharge-lp-hero-btn-secondary:hover {
   background-color: #000;
   color: #fff;
 }
 
 /* Image Container */
-.lp-hero-image {
+.recharge-lp-hero-image {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -104,12 +109,12 @@
   position: relative;
 }
 
-.lp-hero-image-container {
+.recharge-lp-hero-image-container {
   position: relative;
   width: 100%;
 }
 
-.lp-hero-image-container img {
+.recharge-lp-hero-image-container img {
   width: 100%;
   height: auto;
   display: block;
@@ -118,95 +123,76 @@
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
-  .lp-hero-banner {
+  .recharge-lp-hero-banner {
     min-height: auto;
   }
   
-  .lp-hero-container {
+  .recharge-lp-hero-container {
     padding: 0 16px;
   }
   
-  .lp-hero-content {
+  .recharge-lp-hero-content {
     flex-direction: column-reverse;
     gap: 40px;
     text-align: center;
     min-height: 560px;
   }
   
-  .lp-hero-text {
+  .recharge-lp-hero-text {
     max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
   
-  .lp-hero-heading {
+  .recharge-lp-hero-heading {
     font-size: 38px;
   }
   
-  .lp-hero-description {
+  .recharge-lp-hero-description {
     font-size: 1rem;
     margin-bottom: 32px;
     max-width: 100%;
   }
   
-  .lp-hero-buttons {
+  .recharge-lp-hero-buttons {
     justify-content: center;
     flex-direction: column;
     gap: 12px;
   }
   
-  .lp-hero-btn {
+  .recharge-lp-hero-btn {
     width: 100%;
   }
   
-  .lp-hero-image {
+  .recharge-lp-hero-image {
     width: 100%;
   }
 }
 
 /* Prevent conflicts with other sections */
-.section-lp-hero-banner {
+.section-recharge-lp-hero-banner {
   isolation: isolate;
 }
 
-.lp-hero-banner * {
+.recharge-lp-hero-banner * {
   box-sizing: border-box;
 }
 
-.lp-hero-content>* {
+.recharge-lp-hero-content>* {
   max-width: 100%;
-}
-
-.lp-hero-bg-image {
-  width: 128px;
-  height: 128px;
-  position: absolute;
-  right: 10px;
-  top: 10px;
 }
 
 /* Additional responsive image handling */
 @media screen and (min-width: 769px) {
-  .lp-hero-content {
+  .recharge-lp-hero-content {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
   }
   
-  .lp-hero-text {
+  .recharge-lp-hero-text {
     padding-top: 20px;
   }
-
-  .lp-hero-content>* {
-    max-width: 50%;
-  }
-
-  .lp-hero-bg-image {
-    width: 184px;
-    height: 184px;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
+

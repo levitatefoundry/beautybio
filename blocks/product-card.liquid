@@ -31,7 +31,7 @@
 -%}
 
 {%- if show_card -%}
-  <div class="product-bundle-card" {{ block.shopify_attributes }}>
+  <div class="product-bundle-card {% if block.settings.hide_in_view_all %} product-bundle-card__hidden {% endif %}" {{ block.shopify_attributes }}>
     <div class="product-bundle-card__inner">
       <a href="{{ product.url }}" class="product-bundle-card__media">
         {%- if display_image != blank -%}
@@ -125,6 +125,12 @@
       "label": "Custom Compare At Price",
       "info": "Show a compare price (strikethrough). Only works with custom price.",
       "placeholder": "$149.00"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_in_view_all",
+      "label": "Hide in view all",
+      "default": false
     }
   ],
   "presets": [

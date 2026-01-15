@@ -139,6 +139,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <script id="lk-store-locator-script" type="module" crossorigin src="https://cdn.luckylabs.io/prd/store-locator/org/index.js"></script>
 
   <!-- INJECTED CODE BY LUCKY -->
+  <!--START Digioh Low Impact Javascript-->
+  <script async type='text/javascript' src='https://forms.beautybio.com/w37htfhcq2/vendor/fb430c59-96c7-44fe-8d9c-957e10ccfb0f/lightbox_speed.js'></script>
+  <!--END Digioh Low Impact Javascript-->
 </head>
 
   <body class="template-{{ request.page_type | handle }}">
@@ -185,7 +188,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       
     {{ '//www.youtube.com/iframe_api' | script_tag }}
     {{ '//cdn.shopify.com/shopifycloud/shopify-plyr/v1.0/shopify-plyr.css' | stylesheet_tag }}
-<script defer src="https://static.shopmy.us/Affiliates/sms_aff_clicktrack.js"></script>  </body>
+<script defer src="https://static.shopmy.us/Affiliates/sms_aff_clicktrack.js"></script>  
+<script>
+  /* check for Rebuy results page and if active, disable it */
+  document.addEventListener('rebuy:smartsearch.resultsPage.ready', (event) => {
+    console.log(event.detail.smartSearchResultsPage, "Results Page ready");
+    
+    Rebuy.SmartSearch.resultsPage.isVisible = false;
+    console.log(`Rebuy Search results page enabled = ${Rebuy.SmartSearch.resultPage.isVisible}`)
+  })
+</script>
+</body>
   <link
     rel="preload"
     fetchpriority="low"

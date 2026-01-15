@@ -1,0 +1,196 @@
+{{ 'recharge-lp-faqs.css' | asset_url | stylesheet_tag }}
+
+<section class="recharge-lp-faqs" style="
+  padding-top: {{ section.settings.padding_top_desktop }}px;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+">
+  <div class="section section--vertical-padding-none">
+    <div class="recharge-lp-faqs-container">
+      {% if section.settings.image != blank %}
+        <div class="recharge-lp-faqs-image">
+          <img src="{{ section.settings.image | image_url: width: 100 }}" 
+               alt="{{ section.settings.image.alt | escape }}"
+               width="50"
+               height="50"
+               loading="lazy">
+        </div>
+      {% endif %}
+      
+      {% if section.settings.title != blank %}
+        <h2 class="recharge-lp-faqs-title">{{ section.settings.title }}</h2>
+      {% endif %}
+      
+      {% if section.blocks.size > 0 %}
+        <div class="recharge-lp-faqs-accordion">
+          {% for block in section.blocks %}
+            <div class="recharge-lp-faqs-item" {{ block.shopify_attributes }} data-faq-item>
+              <button class="recharge-lp-faqs-question" type="button" data-faq-button>
+                <span>{{ block.settings.question }}</span>
+                <span class="recharge-lp-faqs-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="currentColor"/>
+                  </svg>
+                </span>
+              </button>
+              <div class="recharge-lp-faqs-answer" data-faq-answer>
+                <div class="recharge-lp-faqs-answer-content">
+                  {{ block.settings.answer }}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const faqButtons = document.querySelectorAll('[data-faq-button]');
+    
+    faqButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const faqItem = this.closest('[data-faq-item]');
+        const isActive = faqItem.classList.contains('active');
+        
+        // Close all other FAQ items
+        document.querySelectorAll('[data-faq-item]').forEach(item => {
+          if (item !== faqItem) {
+            item.classList.remove('active');
+          }
+        });
+        
+        // Toggle current item
+        faqItem.classList.toggle('active');
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Recharge LP FAQs",
+  "tag": "section",
+  "class": "section-recharge-lp-faqs",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Icon/Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Questions? We have Answers."
+    },
+    {
+      "type": "header",
+      "content": "Spacing - Desktop"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Top (Desktop)",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Bottom (Desktop)",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Spacing - Mobile"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq_item",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "What is the difference between the Quench and the Zenbubble Gel?"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer",
+          "default": "<p>Enter your answer here. You can use rich text formatting to make your answer more readable.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Recharge LP FAQs",
+      "blocks": [
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is the difference between the Quench and the Zenbubble Gel?",
+            "answer": "<p>The Quench is a hydrating serum while the Zenbubble Gel is a lightweight moisturizer.</p>"
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "What warranty comes with my GloPro?",
+            "answer": "<p>Your GloPro comes with a 1-year warranty covering manufacturing defects.</p>"
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "What warranty comes with my GloFacial?",
+            "answer": "<p>Your GloFacial comes with a 1-year warranty covering manufacturing defects.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  @media screen and (max-width: 768px) {
+    .recharge-lp-faqs {
+      padding-top: {{ section.settings.padding_top_mobile }}px !important;
+      padding-bottom: {{ section.settings.padding_bottom_mobile }}px !important;
+    }
+  }
+</style>
+

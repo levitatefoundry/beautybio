@@ -1,0 +1,90 @@
+{% style %}
+  #shopify-section-{{ section.id }} .section-divide-line-wrapper {
+    padding-top: {{ section.settings.padding_top | append: 'px' }};
+    padding-bottom: {{ section.settings.padding_bottom | append: 'px' }};
+  }
+
+  #shopify-section-{{ section.id }} .section-divide-line--line {
+    background-color: {{ section.settings.color }};
+    height: 1px;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    #shopify-section-{{ section.id }} .section-divide-line-wrapper {
+      padding-top: {{ section.settings.padding_top_mobile | append: 'px' }};
+      padding-bottom: {{ section.settings.padding_bottom_mobile | append: 'px' }};
+    } 
+  }
+{% endstyle %}
+
+<div class="section-divide-line-wrapper">
+  <div class="section section--vertical-padding-none">
+    <div class="section-divide-line--line"></div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Divide line",
+    "class": "section-divide-line",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color",
+        "label": "Line Color",
+        "default": "#000",
+        "alpha": true
+      },
+      {
+        "type": "header",
+        "content": "Spacing"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "max": 50,
+        "min": 0,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding top (Desktop)",
+        "default": 20
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "max": 50,
+        "min": 0,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding bottom (Desktop)",
+        "default": 20
+      },
+      {
+        "type": "range",
+        "id": "padding_top_mobile",
+        "max": 50,
+        "min": 0,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding top mobile (Mobile)",
+        "default": 20
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom_mobile",
+        "max": 50,
+        "min": 0,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding bottom mobile (Mobile)",
+        "default": 20
+      }
+    ],
+    "presets": [
+      {
+        "name": "Divide line",
+      }
+    ],
+  }
+{% endschema %}

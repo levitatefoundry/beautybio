@@ -1,6 +1,6 @@
-{{ 'lp-hero-banner.css' | asset_url | stylesheet_tag }}
+{{ 'recharge-lp-hero-banner.css' | asset_url | stylesheet_tag }}
 
-<section class="lp-hero-banner {% if section.settings.background_image != blank %}desktop-bg{% endif %} {% if section.settings.background_image_mob != blank %}mobile-bg{% endif %}" style="
+<section class="recharge-lp-hero-banner {% if section.settings.background_image != blank %}desktop-bg{% endif %} {% if section.settings.background_image_mob != blank %}mobile-bg{% endif %}" style="
   background: {{ section.settings.background_color }};
   {% if section.settings.background_image != blank %}
     background-image: url('{{ section.settings.background_image | image_url: width: 1920 }}');
@@ -14,37 +14,56 @@
   {% endif %}
 ">
   <div class="section">
-    <div class="lp-hero-content" style="--content-width: {{ section.settings.content_width | append: 'px' }}">
-      <div class="lp-hero-text">
+    <div class="recharge-lp-hero-content" style="--content-width: {{ section.settings.content_width | append: 'px' }}">
+      <div class="recharge-lp-hero-text">
         {% if section.settings.heading != blank %}
-          <h1 class="lp-hero-heading">{{ section.settings.heading }}</h1>
+          <h1 class="recharge-lp-hero-heading">{{ section.settings.heading }}</h1>
         {% endif %}
         
         {% if section.settings.text != blank %}
-          <div class="lp-hero-description {%  if section.settings.text_mob != blank %} mobile--hidden {% endif %}">{{ section.settings.text }}</div>
+          <div class="recharge-lp-hero-description {%  if section.settings.text_mob != blank %} mobile--hidden {% endif %}">{{ section.settings.text }}</div>
+        {% endif %}
+
+        {% if section.settings.main_image != blank %}
+          <div class="recharge-lp-hero-text__image desktop--hidden">
+            <img src="{{ section.settings.main_image | image_url: width: 1900 }}" 
+              alt="{{ section.settings.main_image.alt | escape }}"
+              width="{{ section.settings.main_image.width }}"
+              height="{{ section.settings.main_image.height }}"
+              class="{%  if section.settings.main_image_mob != blank %} mobile--hidden {% endif %}"
+              loading="lazy">
+            {% if section.settings.main_image_mob != blank %}  
+              <img src="{{ section.settings.main_image_mob | image_url: width: 900 }}" 
+                alt="{{ section.settings.main_image_mob.alt | escape }}"
+                class="desktop--hidden"
+                width="{{ section.settings.main_image_mob.width }}"
+                height="{{ section.settings.main_image_mob.height }}"
+                loading="lazy">
+            {% endif %}
+          </div>
         {% endif %}
 
         {% if section.settings.text_mob != blank %}
-          <div class="lp-hero-description {%  if section.settings.text != blank %} desktop--hidden {% endif %} %}">{{ section.settings.text_mob }}</div>
+          <div class="recharge-lp-hero-description {%  if section.settings.text != blank %} desktop--hidden {% endif %} %}">{{ section.settings.text_mob }}</div>
         {% endif %}
         
-        <div class="lp-hero-buttons">
+        <div class="recharge-lp-hero-buttons">
           {% if section.settings.primary_button_text != blank %}
-            <a href="{{ section.settings.primary_button_url }}" class="lp-hero-btn lp-hero-btn-primary">
+            <a href="{{ section.settings.primary_button_url }}" class="recharge-lp-hero-btn recharge-lp-hero-btn-primary">
               {{ section.settings.primary_button_text }}
             </a>
           {% endif %}
           
           {% if section.settings.secondary_button_text != blank %}
-            <a href="{{ section.settings.secondary_button_url }}" class="lp-hero-btn lp-hero-btn-secondary">
+            <a href="{{ section.settings.secondary_button_url }}" class="recharge-lp-hero-btn recharge-lp-hero-btn-primary">
               {{ section.settings.secondary_button_text }}
             </a>
           {% endif %}
         </div>
       </div>
       {% if section.settings.main_image != blank %}
-        <div class="lp-hero-image">
-          <div class="lp-hero-image-container">
+        <div class="recharge-lp-hero-image mobile--hidden">
+          <div class="recharge-lp-hero-image-container">
             <img src="{{ section.settings.main_image | image_url: width: 1200 }}" 
                 alt="{{ section.settings.main_image.alt | escape }}"
                 width="{{ section.settings.main_image.width }}"
@@ -68,9 +87,9 @@
 
 {% schema %}
 {
-  "name": "LP Hero Banner",
+  "name": "Recharge LP Hero Banner",
   "tag": "section",
-  "class": "section-lp-hero-banner",
+  "class": "section-recharge-lp-hero-banner",
   "settings": [
     {
       "type": "image_picker",
@@ -185,7 +204,7 @@
   ],
   "presets": [
     {
-      "name": "LP Hero Banner"
+      "name": "Recharge LP Hero Banner"
     }
   ]
 }
@@ -193,14 +212,15 @@
 
 <style>
   {% if section.settings.background_image_mob != blank %}
-    .lp-hero-banner.mobile-bg {
+    .recharge-lp-hero-banner.mobile-bg {
       background-image: url('{{ section.settings.background_image_mob | image_url: width: 768 }}') !important;
     }
     
     @media (min-width: 769px) {
-      .lp-hero-banner.mobile-bg {
+      .recharge-lp-hero-banner.mobile-bg {
         background-image: url('{{ section.settings.background_image | image_url: width: 1920 }}') !important;
       }
     }
   {% endif %}
 </style>
+

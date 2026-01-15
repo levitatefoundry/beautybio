@@ -1,0 +1,75 @@
+{% assign collection = block.settings.collection.products | sort: "price" %}
+{% for prod in collection %}
+    <div class="product-bundle-card {% if block.settings.hide_in_view_all or forloop.index > 10 %} product-bundle-card__hidden {% endif %}" {{ block.shopify_attributes }} >
+    <div class="product-bundle-card__inner">
+      <a href="{{ prod.url }}" class="product-bundle-card__media">
+        {%- if prod.featured_image != blank -%}
+          <img src="{{ prod.featured_image | image_url: width: 600 }}" alt="{{ prod.title }}" loading="lazy">
+        {%- endif -%}
+      </a>
+      <div class="product-bundle-card__info">
+        <a href="{{ prod.url }}" class="product-bundle-card__title">{{ prod.title }}</a>
+        <div class="product-bundle-card__price">
+          {%- if prod != blank -%}
+            {%- comment -%} Use product pricing {%- endcomment -%}
+            {%- if prod.compare_at_price > prod.price -%}
+              <span class="product-bundle-card__price--sale">{{ prod.price | money }}</span>
+              <span class="product-bundle-card__price--regular">{{ prod.compare_at_price | money }}</span>
+            {%- else -%}
+              <span class="product-bundle-card__price--sale">{{ prod.price | money }}</span>
+            {%- endif -%}
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="product-bundle-card__buttons">
+        {%- if prod != blank -%}
+          <button 
+            type="button" 
+            class="product-bundle-card__button product-bundle-card__button--details"
+            data-product-url="{{ prod.url | append: '?view=popup' }}"
+            data-product-handle="{{ prod.handle }}">
+            PRODUCT DETAILS
+          </button>
+          {%- if prod.available -%}
+            <form action="/cart/add" method="post" enctype="multipart/form-data" class="product-bundle-card__form">
+              <input type="hidden" name="id" value="{{ prod.selected_or_first_available_variant.id }}">
+              <input type="hidden" name="quantity" value="1">
+              <button type="submit" class="product-bundle-card__button product-bundle-card__button--add">
+                ADD TO BAG
+              </button>
+            </form>
+          {%- else -%}
+            <button disabled class="product-bundle-card__button product-bundle-card__button--add product-bundle-card__button--disabled">
+              SOLD OUT
+            </button>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+{% schema %}
+{
+  "name": "Collection Product Cards",
+  "tag": null,
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_in_view_all",
+      "label": "Hide in view all",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Product Cards",
+    }
+  ],
+}
+{% endschema %}

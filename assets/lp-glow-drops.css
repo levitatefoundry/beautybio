@@ -1,0 +1,174 @@
+/* LP Glow Drops Section */
+.lp-glow-drops {
+  width: 100%;
+  min-height: 500px;
+  background-color: #FDF2F0;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.lp-glow-drops-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.lp-glow-drops-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* Text Content */
+.lp-glow-drops-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.lp-glow-drops-heading {
+  color: #000;
+  margin: 0;
+  font-family: gothambold, sans-serif;
+  font-size: 50px;
+  letter-spacing: -0.75px;
+  line-height: 95%;
+  font-weight: 700;
+}
+
+/* Countdown Section */
+.lp-glow-drops-countdown {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.lp-glow-drops-countdown-title {
+  color: #000;
+  font-family: gothambold, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.lp-glow-drops-timer-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Timer Styles Override */
+.lp-glow-drops .countdown-timer {
+  width: 100%;
+}
+
+.lp-glow-drops .countdown-timer__inner {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.lp-glow-drops .countdown-timer__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 70px;
+}
+
+.lp-glow-drops .countdown-timmer__amount {
+  font-family: gothambold, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+.lp-glow-drops .countdown-timer__type {
+  font-family: gothambook, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 768px) {
+  .lp-glow-drops {
+    min-height: auto;
+    padding: 60px 0;
+  }
+  
+  .lp-glow-drops-container {
+    padding: 0 16px;
+  }
+  
+  .lp-glow-drops-content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    min-height: auto;
+  }
+  
+  .lp-glow-drops-text {
+    max-width: 100%;
+  }
+  
+  .lp-glow-drops-heading {
+    font-size: 38px;
+  }
+  
+  .lp-glow-drops-countdown {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    padding: 30px 20px;
+  }
+  
+  .lp-glow-drops-countdown-title {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .lp-glow-drops .countdown-timer__inner {
+    gap: 10px;
+  }
+  
+  .lp-glow-drops .countdown-timer__item {
+    min-width: 55px;
+  }
+  
+  .lp-glow-drops .countdown-timmer__amount {
+    font-size: 28px;
+  }
+  
+  .lp-glow-drops .countdown-timer__type {
+    font-size: 10px;
+  }
+}
+
+/* Prevent conflicts with other sections */
+.section-lp-glow-drops {
+  isolation: isolate;
+}
+
+.lp-glow-drops * {
+  box-sizing: border-box;
+}
+
+/* Additional Desktop Styles */
+@media screen and (min-width: 769px) {
+  .lp-glow-drops-content {
+    align-items: center;
+  }
+}
+

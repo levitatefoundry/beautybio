@@ -144,3 +144,36 @@
     {%- endif -%}
   </li>
 {%- endfor -%}
+
+{% if children_allowed %}
+<li
+    class="
+      drawer-menu__item
+      {% if emphasized -%}
+        drawer-menu__item--emphasized
+      {%- endif %}
+      {% if emphasized and forloop.last -%}
+        drawer-menu__item--emphasized-last
+      {%- endif %}
+    "
+    data-list-item
+  >
+    <a
+      data-item="{% if has_children %}parent{% else %}link{% endif %}"
+      class="drawer-menu__link"
+      href="/pages/beautybio-accessibility-statement"
+      onclick="window.location.href='/pages/beautybio-accessibility-statement'"
+      {% if has_children %}
+        data-link="primary"
+        aria-haspopup="true"
+        aria-expanded="false"
+      {% endif %}
+    >
+      <div class="drawer-menu__link-title">
+        <span class="">
+          Accessibility Statement
+        </span>
+      </div>
+    </a>
+  </li>
+{% endif %}

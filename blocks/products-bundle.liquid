@@ -18,6 +18,11 @@
       {% render child_block %}
     {%- endfor -%}
   </div>
+  {% if block.settings.display_view_more %}
+    <div class="product-bundle-block__view-more-container">
+      <button class="product-bundle-block__view-more" data-filter="{{ filter | handleize }}">View More</button>
+    </div>
+  {% endif %}
 </div>
 
 {% schema %}
@@ -42,6 +47,12 @@
       "label": "Bundle Description"
     },
     {
+      "type": "checkbox",
+      "id": "display_view_more",
+      "label": "Display view more button",
+      "default": false
+    },
+    {
       "type": "header",
       "content": "Layout"
     },
@@ -63,6 +74,9 @@
     },
     {
       "type": "product-card-alt"
+    },
+    {
+      "type": "collection-product-cards"
     }
   ],
   "presets": [

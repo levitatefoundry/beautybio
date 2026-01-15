@@ -11,14 +11,308 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "enable_animation": true,
         "content_width": "full",
         "custom_content_width": 1000
       }
+    },
+    "recharge_lp_hero_banner_LnT4FE": {
+      "type": "recharge-lp-hero-banner",
+      "name": "Recharge LP Hero Banner",
+      "settings": {
+        "main_image": "shopify://shop_images/Frame_1484581663.png",
+        "main_image_mob": "shopify://shop_images/Frame_1484581663.png",
+        "heading": "Glow on Your Terms: Subscribe & Save",
+        "text": "Pick your faves, set your schedule, and enjoy up to 15% off auto-delivery orders.",
+        "text_mob": "Pick your faves, set your schedule, and enjoy up to 15% off auto-delivery orders.",
+        "content_width": 510,
+        "primary_button_text": "HOW IT WORKS",
+        "primary_button_url": "#how-beautybio",
+        "secondary_button_text": "MANAGE SUBSCRIPTION",
+        "secondary_button_url": "/account",
+        "background_color": "#fff",
+        "background_size": "cover",
+        "custom_background_size": ""
+      }
+    },
+    "section_divide_line_cffzAq": {
+      "type": "section-divide-line",
+      "name": "Divide line",
+      "settings": {
+        "color": "#00000080",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "recharge_lp_steps_xJEGQF": {
+      "type": "recharge-lp-steps",
+      "blocks": {
+        "step_card_Dd33mh": {
+          "type": "step_card",
+          "settings": {
+            "image": "shopify://shop_images/2_ceb150bf-5dff-4cd9-8587-7951aa91a80e.png",
+            "title": "10% Off 1st Order",
+            "description": "start saving instantly"
+          }
+        },
+        "step_card_RfrKt3": {
+          "type": "step_card",
+          "settings": {
+            "image": "shopify://shop_images/3_8d97cfb0-6a71-433f-b824-00cfeaa6539c.png",
+            "title": "15% Off All Orders",
+            "description": "every order after"
+          }
+        },
+        "step_card_9hJPNB": {
+          "type": "step_card",
+          "settings": {
+            "image": "shopify://shop_images/1_577e343e-e53b-4370-9e7c-6da04bea3e33.png",
+            "title": "Full Control",
+            "description": "skip, swap, or cancel anytime"
+          }
+        },
+        "step_card_aRQ3iD": {
+          "type": "step_card",
+          "settings": {
+            "image": "shopify://shop_images/4_8fac2625-0d0c-4541-aa1d-aed47621fc4b.png",
+            "title": "Always Stocked",
+            "description": "so your skin stays happy"
+          }
+        }
+      },
+      "block_order": [
+        "step_card_Dd33mh",
+        "step_card_RfrKt3",
+        "step_card_9hJPNB",
+        "step_card_aRQ3iD"
+      ],
+      "name": "Recharge LP Steps",
+      "settings": {
+        "custom_section_id": "",
+        "title": "Why Subscribe?",
+        "description": "Because running out of your faves is never the vibe. With Subscribe & Save, you'll get:",
+        "cards_per_row_desktop": 4,
+        "cards_per_row_mobile": 2,
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40,
+        "button_text": "",
+        "button_link": ""
+      }
+    },
+    "section_divide_line_NEpYCm": {
+      "type": "section-divide-line",
+      "name": "Divide line",
+      "settings": {
+        "color": "#00000080",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "recharge_lp_steps_9L3qBH": {
+      "type": "recharge-lp-steps",
+      "blocks": {
+        "step_card_bcfUnT": {
+          "type": "step_card",
+          "settings": {
+            "image": "shopify://shop_images/Vector_Smart_Object_1.png",
+            "title": "Choose Your Skincare",
+            "description": "Start with our skin quiz for a curated \nroutine – or select your own skincare."
+          }
+        },
+        "step_card_igBy6a": {
+          "type": "step_card",
+          "settings": {
+            "image": "shopify://shop_images/Vector_Smart_Object.png",
+            "title": "Set Your Schedule",
+            "description": "Choose 30, 60, or 90 days – \nyou're the boss."
+          }
+        },
+        "step_card_gwwCRE": {
+          "type": "step_card",
+          "settings": {
+            "image": "shopify://shop_images/Vector_Smart_Object_3.png",
+            "title": "Enjoy Your Savings",
+            "description": "No last-minute runs here – your \nroutine's already on its way!"
+          }
+        }
+      },
+      "block_order": [
+        "step_card_bcfUnT",
+        "step_card_igBy6a",
+        "step_card_gwwCRE"
+      ],
+      "name": "Recharge LP Steps",
+      "settings": {
+        "custom_section_id": "how-beautybio",
+        "title": "How BeautyBio Subscriptions Work",
+        "description": "3 Steps. Big Savings. No Stress.",
+        "cards_per_row_desktop": 3,
+        "cards_per_row_mobile": 1,
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40,
+        "button_text": "SHOP YOUR SUBSCRIPTION",
+        "button_link": "shopify://collections/skincare-best-sellers"
+      }
+    },
+    "section_divide_line_8qWyYy": {
+      "type": "section-divide-line",
+      "name": "Divide line",
+      "settings": {
+        "color": "#00000080",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "recharge_lp_content_image_GbAwTW": {
+      "type": "recharge-lp-content-image",
+      "name": "Recharge Content Image",
+      "settings": {
+        "title": "How to Lock In Your Glow (and Your Savings)",
+        "description": "<p>Pick your product, set your schedule, and let us handle the rest. Your skincare shelves stay stocked, your skin stays happy, and you save every time.</p>",
+        "list_items": "Get 10% off your first order + 15% every order after.\nYour glow ships free on $99+ orders.\nSkip, swap, or cancel anytime – no stress.",
+        "checkmark_icon": "shopify://shop_images/Frame_1321315430.png",
+        "image": "shopify://shop_images/88b8c1d39cc8e670cc679157121b96c4ea239acc.png",
+        "image_position": "right",
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "section_divide_line_hzByjW": {
+      "type": "section-divide-line",
+      "name": "Divide line",
+      "settings": {
+        "color": "#00000080",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "recharge_lp_content_image_WL7Fxh": {
+      "type": "recharge-lp-content-image",
+      "name": "Recharge Content Image",
+      "settings": {
+        "title": "Can I Change or \nCancel Anytime?",
+        "description": "<p>Absolutely. Our self-serve portal lets you update or cancel with a click – because convenience should come standard.</p>",
+        "list_items": "Skip your next order.\nChange shipping frequency.\nCancel subscription anytime.",
+        "checkmark_icon": "shopify://shop_images/Frame_1321315430.png",
+        "image": "shopify://shop_images/cef0bda6e2f26e70ef6a61866eb6432f5b4d832b.png",
+        "image_position": "left",
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "section_divide_line_MfEwNy": {
+      "type": "section-divide-line",
+      "name": "Divide line",
+      "settings": {
+        "color": "#00000080",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "recharge_lp_faqs_AiGV4X": {
+      "type": "recharge-lp-faqs",
+      "blocks": {
+        "faq_item_gbNDzd": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What's your return Policy?",
+            "answer": "<p>We want you to love your BeautyBio order. If you are not completely satisfied, please <a href=\"https://beautybio.com/apps/redo/account\" target=\"_blank\"><span style=\"text-decoration:underline\">start a return here </span></a><strong>within 30 days of purchase for any skincare, GLOfacial Products or GloPRO Products. </strong>We will provide return authorization and mailing information. Refunds are issued once the return order has been received and inspected. All refunds will be issued to the original form of payment within 10 business days of receipt. If Redo returns coverage was purchased at checkout return shipping will be covered. Otherwise, return shipping will be deducted from the refund amount. All shipping fees are non-refundable . *Due to changes in our operations resulting from the impact of COVID-19, we might experience some delays while processing returns or replacements. If you have any questions regarding your return please email <a href=\"mailto:info@beautybio.com\" target=\"_blank\"><span style=\"text-decoration:underline\">info@beautybio.com</span></a>. Please note: We are not responsible for any lost or damaged products during shipping. We encourage a carrier that offers shipment tracking for all returns.</p>"
+          }
+        },
+        "faq_item_bKjhMM": {
+          "type": "faq_item",
+          "settings": {
+            "question": "I need help managing my subscription",
+            "answer": "<p>How can we help you with your subscription?<br/><br/><strong>Change Frequency: <br/></strong>Follow these steps to update your subscription frequency:<br/>1. Log into your account <a href=\"https://beautybio.com/account/login\" target=\"_blank\">(link here)</a> <br/>2. Update your shipping frequency<br/>3. Confirm your changes<br/><br/><strong>Change Products: <br/></strong>Follow these steps to change the products in your subscription:<br/>1. Log into your account <a href=\"https://beautybio.com/account/login\" target=\"_blank\">(link here)</a><br/>2. Add or remove the desired products<br/>3. Confirm your selection<strong><br/><br/>Update Delivery Details:<br/></strong>Follow these steps to change your shipping address:<br/>1. Log into your account <a href=\"https://beautybio.com/account/login\" target=\"_blank\">(link here)</a><br/>2. Select \"update account information\"<br/>3. Update your shipping address<br/>4. Confirm your selection<br/><br/>Follow these steps to change your delivery date:<br/>1. Log into your account <a href=\"https://beautybio.com/account/login\" target=\"_blank\">here</a><br/>2. Select \"update account information\"<br/>3. Add special instructions for delivery<br/>4. Save changes<br/><br/><strong>Change Payment Information:</strong><br/>Follow these steps to change your payment information:<br/>1. Log into your account <a href=\"https://beautybio.com/account/login\" target=\"_blank\">(link here)</a><br/>2. Select \"update account information\"<br/>3. Update your payment method<br/>4. Confirm your selection<br/><br/><strong>Cancel Subscription:<br/></strong>We're sorry you'd like to cancel your subscription! Please follow these steps:<br/>1. Log into your account <a href=\"https://beautybio.com/account/login\" target=\"_blank\">(link here)</a><br/>2. Select \"update account information\"<br/>3. Select \"cancel subscription\"<br/>4. Confirm your selection</p>"
+          }
+        },
+        "faq_item_Yi33QG": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How long do I have to send back my return once it's been initiated?",
+            "answer": "<p>Once you initiate a return, you have<strong>14 days </strong>to ship your item back to us. If the return isn’t shipped within that 14-day window, the return request will be <strong>automatically canceled</strong>, and you’ll need to start the return process again—as long as you're still within our <strong>30-day return period</strong>. </p><p><strong>This return policy excludes all items marked as FINAL SALE when purchased.</strong></p>"
+          }
+        },
+        "faq_item_G44aHE": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Do you have a rewards program?",
+            "answer": "<p>Ready to take this relationship to the next level? Earn points & exclusive rewards every time you shop with us. Click <a href=\"https://beautybio.com/pages/rewards\" target=\"_blank\">here </a>to learn more and become a Skin sider!</p>"
+          }
+        },
+        "faq_item_TQ4tNV": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What's your shipping policy?",
+            "answer": "<p>Orders will be processed within 48-72 hours of receipt (processing time does not include weekends or federal holidays). All orders placed on Saturday or Sunday will be processed the following Monday. All orders with expedited shipping must be placed by 1PM EST in order to be processed same day. All orders placed after 1PM EST will be processed the next business day. Please note due to safeguards in place to protect our distribution center employees, and high holiday order volume, shipments will be delayed 24-48 hours in addition to transportation time. For more information regarding our shipping Policy please click <a href=\"https://beautybio.gorgias.help/en-US/articles/shipping-&-returns-68123\" target=\"_blank\">here</a></p>"
+          }
+        },
+        "faq_item_c7DFPm": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Do you offer any discounts?",
+            "answer": "<p>Yes, we offer several discounts and promotions:</p><p>15% off your first order when you subscribe to their mailing list.</p><p>Free shipping on orders over $99</p><p>10% off subscription orders.</p><p>A rewards program where you earn points for every dollar spent, which can be redeemed for discounts on future purchases.</p><p>A $25 discount when you refer a friend (and your friend gets $25 off their first purchase too).</p><p>To stay updated on the latest deals, you can sign up for their email list or text notifications.</p>"
+          }
+        },
+        "faq_item_BpyHAy": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How do I clean my GLOfacial?",
+            "answer": "<p>Great question about keeping your GLOfacial tool in tip-top shape! We've got a super helpful video that shows you exactly how to clean it properly. Just click on this link to watch: <a href=\"https://beautybio.gorgias.help/en-US/how-to-clean-your-glofacial-tool-1082045\" target=\"_blank\">https://beautybio.gorgias.help/en-US/how-to-clean-your-glofacial-tool-1082045</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_gbNDzd",
+        "faq_item_bKjhMM",
+        "faq_item_Yi33QG",
+        "faq_item_G44aHE",
+        "faq_item_TQ4tNV",
+        "faq_item_c7DFPm",
+        "faq_item_BpyHAy"
+      ],
+      "name": "Recharge LP FAQs",
+      "settings": {
+        "title": "Questions? We have Answers.",
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "recharge_lp_hero_banner_LnT4FE",
+    "section_divide_line_cffzAq",
+    "recharge_lp_steps_xJEGQF",
+    "section_divide_line_NEpYCm",
+    "recharge_lp_steps_9L3qBH",
+    "section_divide_line_8qWyYy",
+    "recharge_lp_content_image_GbAwTW",
+    "section_divide_line_hzByjW",
+    "recharge_lp_content_image_WL7Fxh",
+    "section_divide_line_MfEwNy",
+    "recharge_lp_faqs_AiGV4X"
   ]
 }

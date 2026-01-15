@@ -1,0 +1,179 @@
+/* Recharge LP Steps Section */
+.recharge-lp-steps {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+
+.recharge-lp-steps-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Title and Description */
+.recharge-lp-steps-title {
+    color: #000;
+    text-align: center;
+    font-family: gothambold !important;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 95%;
+    letter-spacing: -0.48px;
+    margin: 0 0 16px 0;
+}
+
+.recharge-lp-steps-description {
+    color: #000;
+    text-align: center;
+    font-family: gothambook !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: -0.24px;
+    margin: 0 0 40px 0;
+}
+
+/* Cards Grid */
+.recharge-lp-steps-cards {
+    display: grid;
+    grid-template-columns: repeat(var(--cards-per-row-desktop), 1fr);
+    margin-bottom: 40px;
+}
+
+.recharge-lp-steps-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 5px;
+}
+
+/* Card Image */
+.recharge-lp-steps-card-image {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.recharge-lp-steps-card-image img {
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+/* Card Title */
+.recharge-lp-steps-card-title {
+    color: #000;
+    text-align: center;
+    font-family: gothambold !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 105%; /* 16.8px */
+    letter-spacing: -0.24px;
+    margin: 0 0 12px 0;
+}
+
+/* Card Description */
+.recharge-lp-steps-card-description {
+    color: #000;
+    text-align: center;
+    font-family: gothambook !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 18.2px */
+    letter-spacing: -0.21px;
+}
+
+/* Button */
+.recharge-lp-steps-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.recharge-lp-steps-button {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    font-family: gothambold;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 32px;
+    border: 2px solid #000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    letter-spacing: -0.24px;
+    line-height: 140%;
+}
+
+.recharge-lp-steps-button:hover {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .recharge-lp-steps-title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .recharge-lp-steps-description {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .recharge-lp-steps-cards {
+        grid-template-columns: repeat(var(--cards-per-row-mobile), 1fr);
+        margin-bottom: 30px;
+    }
+
+    .recharge-lp-steps-card {
+        padding: 15px 5px;
+    }
+
+    .recharge-lp-steps-card-image {
+        margin-bottom: 16px;
+        height: 80px;
+    }
+
+    .recharge-lp-steps-card-image img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .recharge-lp-steps-card-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .recharge-lp-steps-card-description {
+        font-size: 14px;
+    }
+
+    .recharge-lp-steps-button {
+        max-width: 100%;
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
+
+/* Prevent conflicts with other sections */
+.section-recharge-lp-steps {
+    isolation: isolate;
+}
+
+.recharge-lp-steps * {
+    box-sizing: border-box;
+}

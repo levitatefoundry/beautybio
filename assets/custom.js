@@ -19,10 +19,13 @@ const updateSubscription = (subscriptionWidget) => {
     if (rcGroup) {
 
         const rcOptions = rcGroup.querySelector('.rc-radio-group__options');
+
         
         if (rcOptions && tooltipContent); {
             rcOptions.append(tooltipContent);
         }
+
+        tooltipContent.querySelector('a').href= "https://beautybio.com/pages/subscribe-with-recharge";
     }
 }
 

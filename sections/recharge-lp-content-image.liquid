@@ -1,0 +1,182 @@
+{{ 'recharge-lp-content-image.css' | asset_url | stylesheet_tag }}
+
+<section class="recharge-lp-content-image" style="
+  padding-top: {{ section.settings.padding_top_desktop }}px;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+">
+  <div class="section section--vertical-padding-none">
+    <div class="recharge-lp-content-image-container recharge-lp-content-image--{{ section.settings.image_position }}">
+      <div class="recharge-lp-content-image-content">
+        {% if section.settings.title != blank %}
+          <h2 class="recharge-lp-content-image-title">{{ section.settings.title |  newline_to_br }}</h2>
+        {% endif %}
+        
+        {% if section.settings.description != blank %}
+          <div class="recharge-lp-content-image-description">{{ section.settings.description |  newline_to_br }}</div>
+        {% endif %}
+        
+        {% if section.settings.list_items != blank %}
+          <div class="recharge-lp-content-image-list">
+            {% assign list_lines = section.settings.list_items | newline_to_br | split: '<br />' %}
+            {% for item in list_lines %}
+              {% if item != blank %}
+                <div class="recharge-lp-content-image-list-item">
+                  {% if section.settings.checkmark_icon != blank %}
+                    <div class="recharge-lp-content-image-list-icon">
+                      <img src="{{ section.settings.checkmark_icon | image_url: width: 48 }}" 
+                           alt="Checkmark"
+                           width="24"
+                           height="24"
+                           loading="lazy">
+                    </div>
+                  {% else %}
+                    <div class="recharge-lp-content-image-list-icon recharge-lp-content-image-list-icon--default">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+                      </svg>
+                    </div>
+                  {% endif %}
+                  <span>{{ item }}</span>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+      
+      {% if section.settings.image != blank %}
+        <div class="recharge-lp-content-image-media">
+          <div class="recharge-lp-content-image-media-wrapper">
+            <img src="{{ section.settings.image | image_url: width: 1600 }}" 
+                 alt="{{ section.settings.image.alt | escape }}"
+                 width="{{ section.settings.image.width }}"
+                 height="{{ section.settings.image.height }}"
+                 loading="lazy">
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Recharge Content Image",
+  "tag": "section",
+  "class": "section-recharge-lp-content-image",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "How to Lock In Your Glow (and Your Savings)"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Pick your product, set your schedule, and let us handle the rest. Your skincare shelves stays stocked, your skin stays happy, and you save every time.</p>"
+    },
+    {
+      "type": "textarea",
+      "id": "list_items",
+      "label": "List Items",
+      "info": "Enter each item on a new line",
+      "default": "Get 10% off your first order + 15% every order after.\nYour glow ships free on $99+ orders.\nSkip, swap, or cancel anytime – no stress."
+    },
+    {
+      "type": "image_picker",
+      "id": "checkmark_icon",
+      "label": "Checkmark Icon"
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image Position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Spacing - Desktop"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Top (Desktop)",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Bottom (Desktop)",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Spacing - Mobile"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Recharge Content Image"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  @media screen and (max-width: 768px) {
+    .recharge-lp-content-image {
+      padding-top: {{ section.settings.padding_top_mobile }}px !important;
+      padding-bottom: {{ section.settings.padding_bottom_mobile }}px !important;
+    }
+  }
+</style>
+

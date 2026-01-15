@@ -1,0 +1,182 @@
+/* LP Glow Drops Countdown Section */
+.lp-glow-drops-countdown {
+    width: 100%;
+    background-color: #FDF2F0;
+    position: relative;
+    overflow: hidden;
+    padding: 40px;
+}
+
+.lp-glow-drops-countdown__container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* Content Section */
+.lp-glow-drops-countdown__content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.lp-glow-drops-countdown__title {
+    color: #000;
+    font-family: gothambold !important;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 48px */
+    letter-spacing: -0.6px;
+    margin: 0;
+    max-width: 450px;
+}
+
+.lp-glow-drops-countdown__product-image {
+    flex-shrink: 0;
+}
+
+.lp-glow-drops-countdown__product-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Timer Box */
+.lp-glow-drops-countdown__timer-box {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.lp-glow-drops-countdown__countdown-title {
+    color: #000;
+    text-align: center;
+    font-family: gothambold !important;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */
+    letter-spacing: -0.36px;
+    margin: 0 0 8px 0;
+}
+
+.lp-glow-drops-countdown__timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    background: #FFF;
+    padding: 8px 16px;
+}
+
+.lp-glow-drops-countdown__timer-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lp-glow-drops-countdown__timer-value {
+    color: #000;
+    font-family: gothambook !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.24px;
+    text-transform: uppercase;
+    color: #000;
+    display: block;
+}
+
+.lp-glow-drops-countdown__timer-label {
+    font-family: gothambook !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.24px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.lp-glow-drops-countdown__timer-separator {
+    font-family: gothambook !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.24px;
+    text-transform: uppercase;
+    color: #000;
+    padding: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .lp-glow-drops-countdown {
+        padding: 30px 25px;
+    }
+
+    .lp-glow-drops-countdown__container {
+        flex-direction: column;
+        gap: 24px;
+        justify-content: flex-start;
+        min-height: 515px;
+    }
+
+    .lp-glow-drops-countdown__content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        width: 100%;
+        flex: none;
+    }
+
+    .lp-glow-drops-countdown__title {
+        font-size: 42px;
+        max-width: 100%;
+    }
+
+    .lp-glow-drops-countdown__product-image img {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .lp-glow-drops-countdown__timer-box {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .lp-glow-drops-countdown__countdown-title {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .lp-glow-drops-countdown__timer {
+    }
+
+    .lp-glow-drops-countdown__timer-value {
+    }
+
+    .lp-glow-drops-countdown__timer-label {
+    }
+
+    .lp-glow-drops-countdown__timer-separator {
+    }
+}
+
+/* Prevent conflicts with other sections */
+.section-lp-glow-drops-countdown {
+    isolation: isolate;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.lp-glow-drops-countdown * {
+    box-sizing: border-box;
+}

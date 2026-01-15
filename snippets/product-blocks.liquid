@@ -81,6 +81,7 @@
         -%}
 
       {%- when 'buy_buttons' -%}
+        <a href='/pages/quiz' class="find-your-routine">Find your routine</a>
         {%- if prod != blank -%}
           {%-
             render 'product-block-buy-buttons' with
@@ -227,3 +228,10 @@
     {%- endcase -%}
   {% endif %}
 {%- endfor -%}
+
+<style>
+  .find-your-routine {
+    text-decoration: underline;
+    font-weight: 700;
+  }
+</style>

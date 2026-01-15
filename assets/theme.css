@@ -1647,6 +1647,7 @@ html.sticky-header-active body.scroll-lock .shopify-section.header__outer-wrappe
         }
 .header__row .header__row-segment.right{
       justify-content:flex-end;
+      gap: 10px;
     }
 .header__row .header__row-segment.right .header__icon-touch:last-child{
         margin-right:-9px;
@@ -9996,7 +9997,7 @@ html.no-js .product-tabs__tab-item{
     }
 .product-form__controls-group--submit{
   margin-top:calc(4px * 7);
-  margin-top:var(--spacing-7);
+  margin-top: 10px;
   margin-bottom:calc(4px * 7);
   margin-bottom:var(--spacing-7);
 }

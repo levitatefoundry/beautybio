@@ -400,13 +400,25 @@
       {%- endif -%}
 
       <div class="header__row-segment header__row-segment-desktop right">
-        {%- unless logo_position == 'center' and navigation_position == 'below' -%}
-          {{ search_icon }}
-        {%- endunless -%}
-        {%- if shop.customer_accounts_enabled -%}
-          {{ account_icon }}
-        {%- endif -%}
-        {{ cart_icon }}
+        <div class="button-block__button button-block__button--justify-right button-block__button--justify-mobile-right">
+          <a
+            href="/pages/quiz"
+            class="btn btn--overlay btn--primary btn--small">
+            <span class="add-to-cart-product">Take The Quiz</span>
+          </a>
+        </div>
+        <div class="header__accessibility-column">
+          <a class="header__accessibility-link" href="/pages/beautybio-accessibility-statement">Accessibility Statement</a>
+          <div class="header__logo-row">
+            {%- unless logo_position == 'center' and navigation_position == 'below' -%}
+              {{ search_icon }}
+            {%- endunless -%}
+            {%- if shop.customer_accounts_enabled -%}
+              {{ account_icon }}
+            {%- endif -%}
+            {{ cart_icon }}
+          </div>
+        </div>
       </div>
     </div>
 
@@ -452,6 +464,31 @@
     social_icons_mobile: social_icons_mobile
   %}
 </header>
+
+<style>
+  .header__accessibility-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__accessibility-link {
+    color: black;
+    font-size: 8pt;
+    width: 100%;
+    text-align: center;
+  }
+
+  .header__logo-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media screen and (max-width: 959px) {
+    .header__accessibility-link {
+      display: none;
+    }
+  }
+</style>
 
 <script>
   // Set heading height at component level

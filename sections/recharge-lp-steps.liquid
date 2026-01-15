@@ -1,0 +1,230 @@
+{{ 'recharge-lp-steps.css' | asset_url | stylesheet_tag }}
+
+<section class="recharge-lp-steps"
+  {% if section.settings.custom_section_id != blank %} id="{{ section.settings.custom_section_id }}" {% endif %}  style="
+  padding-top: {{ section.settings.padding_top_desktop }}px;
+  padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+  --cards-per-row-desktop: {{ section.settings.cards_per_row_desktop }};
+  --cards-per-row-mobile: {{ section.settings.cards_per_row_mobile }};
+">
+  <div class="section section--vertical-padding-none">
+    <div class="recharge-lp-steps-container">
+      {% if section.settings.title != blank %}
+        <h2 class="recharge-lp-steps-title">{{ section.settings.title }}</h2>
+      {% endif %}
+      
+      {% if section.settings.description != blank %}
+        <p class="recharge-lp-steps-description">{{ section.settings.description }}</p>
+      {% endif %}
+      
+      {% if section.blocks.size > 0 %}
+        <div class="recharge-lp-steps-cards">
+          {% for block in section.blocks %}
+            <div class="recharge-lp-steps-card" {{ block.shopify_attributes }}>
+              {% if block.settings.image != blank %}
+                <div class="recharge-lp-steps-card-image">
+                  <img src="{{ block.settings.image | image_url: width: 200 }}" 
+                       alt="{{ block.settings.image.alt | escape }}"
+                       width="100"
+                       height="100"
+                       loading="lazy">
+                </div>
+              {% endif %}
+              
+              {% if block.settings.title != blank %}
+                <h3 class="recharge-lp-steps-card-title">{{ block.settings.title }}</h3>
+              {% endif %}
+              
+              {% if block.settings.description != blank %}
+                <p class="recharge-lp-steps-card-description">{{ block.settings.description |  newline_to_br }}</p>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+      
+      {% if section.settings.button_text != blank %}
+        <div class="recharge-lp-steps-button-wrapper">
+          <a href="{{ section.settings.button_link }}" class="recharge-lp-steps-button">
+            {{ section.settings.button_text }}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Recharge LP Steps",
+  "tag": "section",
+  "class": "section-recharge-lp-steps",
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_section_id",
+      "label": "Custom section id"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "How BeautyBio Subscriptions Work"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "3 Steps. Big Savings. No Stress."
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "cards_per_row_desktop",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "Cards per row (Desktop)",
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "cards_per_row_mobile",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "label": "Cards per row (Mobile)",
+      "default": 1
+    },
+    {
+      "type": "header",
+      "content": "Spacing - Desktop"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Top (Desktop)",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Bottom (Desktop)",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Spacing - Mobile"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "SHOP YOUR SUBSCRIPTION"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step_card",
+      "name": "Step Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Choose Your Skincare"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Start with our skin quiz or a curated routine – or select your own skincare."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Recharge LP Steps",
+      "blocks": [
+        {
+          "type": "step_card",
+          "settings": {
+            "title": "Choose Your Skincare",
+            "description": "Start with our skin quiz or a curated routine – or select your own skincare."
+          }
+        },
+        {
+          "type": "step_card",
+          "settings": {
+            "title": "Set Your Schedule",
+            "description": "Choose 30, 60, or 90 days – you're the boss."
+          }
+        },
+        {
+          "type": "step_card",
+          "settings": {
+            "title": "Enjoy Your Savings",
+            "description": "No last-minute runs here – your routine's already on its way!"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  @media screen and (max-width: 768px) {
+    .recharge-lp-steps {
+      padding-top: {{ section.settings.padding_top_mobile }}px !important;
+      padding-bottom: {{ section.settings.padding_bottom_mobile }}px !important;
+    }
+  }
+</style>
+
