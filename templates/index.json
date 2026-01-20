@@ -52,8 +52,8 @@
           "name": "1/20-22 | NY Skin: Chloe's Faves",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/SkinGoals_ChloeFaves_HP-Desktop.jpg",
-            "image_mobile": "shopify://shop_images/SkinGoals_ChloeFaves_HP-Mobile.jpg",
+            "image": "shopify://shop_images/NY-SkinGoals_ChloeFaves_HP-Desktop.jpg",
+            "image_mobile": "shopify://shop_images/NY-SkinGoals_ChloeFaves_HP-Mobile.jpg",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
             "media_link": "",
