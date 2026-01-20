@@ -17,8 +17,8 @@
           "name": "1/22-24 | NY Skin: Alyssa's Faves",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/NY-SkinGoals_AlyssaFaves_HP-Desktop.jpg",
-            "image_mobile": "shopify://shop_images/NY-SkinGoals_AlyssaFaves_HP-Mobile.jpg",
+            "image": "shopify://shop_images/NY-SkinGoals_AlyssaFaves_HP-Desktop.png",
+            "image_mobile": "shopify://shop_images/NY-SkinGoals_AlyssaFaves_HP-Mobile.png",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
             "media_link": "",
