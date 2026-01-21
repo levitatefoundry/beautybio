@@ -21,7 +21,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom_liquid.presets.name",
       "settings": {
-        "custom_liquid": "<script>\nfunction addAriaLabelToCloseButtons() {\n  const closeButtons = document.querySelectorAll('.oct-quiz-close');\n  \n  closeButtons.forEach(button => {\n    if (!button.hasAttribute('aria-label')) {\n      button.setAttribute('aria-label', 'Close quiz');\n    }\n  });\n}\n\n\naddAriaLabelToCloseButtons();\n\nMutationObserver to handle dynamically added elements\nconst observer = new MutationObserver(() => {\n  addAriaLabelToCloseButtons();\n});\n\nobserver.observe(document.body, {\n  childList: true,\n  subtree: true\n});\n</script?",
+        "custom_liquid": "<script>\nfunction addAriaLabelToCloseButtons() {\n  const closeButtons = document.querySelectorAll('.oct-quiz-close');\n  \n  closeButtons.forEach(button => {\n    if (!button.hasAttribute('aria-label')) {\n      button.setAttribute('aria-label', 'Close quiz');\n    }\n  });\n}\n\n\naddAriaLabelToCloseButtons();\n\nMutationObserver to handle dynamically added elements\nconst observer = new MutationObserver(() => {\n  addAriaLabelToCloseButtons();\n});\n\nobserver.observe(document.body, {\n  childList: true,\n  subtree: true\n});\n</script>",
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
       }
