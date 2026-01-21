@@ -39,7 +39,7 @@
         "heading_QjwkdG": {
           "type": "heading",
           "settings": {
-            "title": "Tutorials & Podcasts",
+            "title": "Tips & Tutorials",
             "heading_tag": "h2",
             "heading_font_class": "fs-heading-display-1"
           }
@@ -47,7 +47,7 @@
         "text_hVagNe": {
           "type": "text",
           "settings": {
-            "text": "<p>Get the most out of your skincare</p>",
+            "text": "<p>Get the most out of your skincare.</p>",
             "text_font_class": "fs-body-200"
           }
         }
