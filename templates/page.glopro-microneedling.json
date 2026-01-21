@@ -1426,13 +1426,13 @@
         "article_qAdaEW": {
           "type": "article",
           "settings": {
-            "article": "microneedling-at-home/microneedling-101-questions-answers"
+            "article": "skincare-blog/microneedling-101-questions-answers"
           }
         },
         "article_UGL9GG": {
           "type": "article",
           "settings": {
-            "article": "microneedling-at-home/is-microneedling-safe"
+            "article": "skincare-blog/is-microneedling-safe"
           }
         }
       },
@@ -1446,7 +1446,7 @@
         "button_link": "",
         "link_text": "",
         "display_type": "selected",
-        "blog": "microneedling-at-home",
+        "blog": "skincare-blog",
         "max_articles": 2,
         "show_tags": false,
         "show_author": false,
