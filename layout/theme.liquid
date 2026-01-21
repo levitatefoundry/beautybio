@@ -222,3 +222,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script>
 document.getElementById("sca-fg-today-offer-widget").setAttribute("aria-label", "Today's Offer");
 </script>
+<script>document.querySelectorAll('.upsell-atc-bar__quantity-adjust[data-action="minus"]').forEach(btn => {
+  btn.removeAttribute('area-label');
+  btn.setAttribute('aria-label', 'Decrease quantity');
+});
+</script>

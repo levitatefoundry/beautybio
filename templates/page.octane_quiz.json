@@ -16,9 +16,19 @@
         "content_width": "full",
         "custom_content_width": 1000
       }
+    },
+    "custom_liquid_Bt4PqL": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<script>\n(function() {\n  let checkCount = 0;\n  const maxChecks = 60; // Stop after 30 seconds (60 * 500ms)\n  \n  function addAriaLabel() {\n    const closeButton = document.querySelector('.oct-quiz-close');\n    \n    if (closeButton && !closeButton.hasAttribute('aria-label')) {\n      closeButton.setAttribute('aria-label', 'Close quiz');\n      return true;\n    }\n    return false;\n  }\n  \n  // Try immediately\n  if (addAriaLabel()) return;\n  \n  // Set up interval checking\n  const checkInterval = setInterval(() => {\n    checkCount++;\n    \n    if (addAriaLabel() || checkCount >= maxChecks) {\n      clearInterval(checkInterval);\n    }\n  }, 500);\n  \n  // Also use MutationObserver for instant detection\n  const observer = new MutationObserver(() => {\n    if (addAriaLabel()) {\n      // Keep observer running in case quiz closes and reopens\n    }\n  });\n  \n  observer.observe(document.body, {\n    childList: true,\n    subtree: true\n  });\n})();\n</script>",
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_liquid_Bt4PqL"
   ]
 }
