@@ -1117,7 +1117,6 @@
       "block_order": [
         "heading_ymWCnd"
       ],
-      "disabled": true,
       "settings": {
         "alignment": "center_center",
         "enable_animation": true,
@@ -1147,13 +1146,12 @@
         "article_1",
         "article_2"
       ],
-      "disabled": true,
       "settings": {
         "heading": "",
         "subheading": "",
         "button_link": "shopify://blogs/skincare-blog",
         "link_text": "",
-        "display_type": "selected",
+        "display_type": "all",
         "blog": "skincare-blog",
         "max_articles": 2,
         "show_tags": false,
