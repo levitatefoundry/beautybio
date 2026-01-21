@@ -50,13 +50,12 @@
         "slide_CVnMLt": {
           "type": "slide",
           "name": "1/20-22 | NY Skin: Chloe's Faves",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/NY-SkinGoals_ChloeFaves_HP-Desktop.jpg",
             "image_mobile": "shopify://shop_images/NY-SkinGoals_ChloeFaves_HP-Mobile.jpg",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
-            "media_link": "",
+            "media_link": "shopify://collections/team-member-faves",
             "text_position": "center_center",
             "text_position_mobile": "center_center",
             "accent": "",
@@ -69,7 +68,7 @@
             "text": "",
             "text_font_class": "fs-body-100",
             "link_1": "",
-            "link_text_1": "Read more",
+            "link_text_1": "",
             "button_style_1": "btn--primary",
             "link_2": "",
             "link_text_2": "Read more",
@@ -85,6 +84,7 @@
         "slide_ERk9xj": {
           "type": "slide",
           "name": "1/18-20 | NY Skin: Mom Selects",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/NY-SkinGoals_MomsFaves_HP-Desktop_414cf4bd-6255-4321-9f8d-3812380f808a.jpg",
             "image_mobile": "shopify://shop_images/NY-SkinGoals_MomsFaves_HP-Mobile_fe29996c-8c88-4e6f-bed0-a7010bffbc2b.jpg",
@@ -1117,6 +1117,7 @@
       "block_order": [
         "heading_ymWCnd"
       ],
+      "disabled": true,
       "settings": {
         "alignment": "center_center",
         "enable_animation": true,
@@ -1146,6 +1147,7 @@
         "article_1",
         "article_2"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "subheading": "",
