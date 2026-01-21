@@ -4640,6 +4640,7 @@ html.sticky-header-enabled[data-enable-sticky-announcement-bar*="mobile"] .annou
       }
 .ui-overlap .slider-nav-button.slider-nav-button-next .icon{
         transform:rotate(-90deg);
+        opacity: 1;
       }
 .ui-overlap .ui-overlap-item-clones{
     visibility:hidden;
