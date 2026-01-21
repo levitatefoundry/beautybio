@@ -12,15 +12,120 @@
     "slideshow_XAEEkT": {
       "type": "slideshow",
       "blocks": {
-        "slide_mbqiRK": {
+        "slide_jpkDdj": {
           "type": "slide",
+          "name": "1/22-24 | NY Skin: Alyssa's Faves",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/WinterSkinRelief_01082026_HP-Desktop.jpg",
-            "image_mobile": "shopify://shop_images/WinterSkinRelief_01082026_HP-Mobile.jpg",
+            "image": "shopify://shop_images/NY-SkinGoals_AlyssaFaves_HP-Desktop.png",
+            "image_mobile": "shopify://shop_images/NY-SkinGoals_AlyssaFaves_HP-Mobile.png",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
-            "media_link": "shopify://collections/winter-skin",
+            "media_link": "",
+            "text_position": "center_center",
+            "text_position_mobile": "center_center",
+            "accent": "",
+            "title": "",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2",
+            "subheading": "",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link_1": "",
+            "link_text_1": "Read more",
+            "button_style_1": "btn--primary",
+            "link_2": "",
+            "link_text_2": "Read more",
+            "button_style_2": "btn--primary",
+            "text_color": "#ffffff",
+            "button_background_color": "#ffffff",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
+          }
+        },
+        "slide_CVnMLt": {
+          "type": "slide",
+          "name": "1/20-22 | NY Skin: Chloe's Faves",
+          "settings": {
+            "image": "shopify://shop_images/NY-SkinGoals_ChloeFaves_HP-Desktop.jpg",
+            "image_mobile": "shopify://shop_images/NY-SkinGoals_ChloeFaves_HP-Mobile.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "shopify://collections/team-member-faves",
+            "text_position": "center_center",
+            "text_position_mobile": "center_center",
+            "accent": "",
+            "title": "",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2",
+            "subheading": "",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link_1": "",
+            "link_text_1": "",
+            "button_style_1": "btn--primary",
+            "link_2": "",
+            "link_text_2": "Read more",
+            "button_style_2": "btn--primary",
+            "text_color": "#ffffff",
+            "button_background_color": "#ffffff",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
+          }
+        },
+        "slide_ERk9xj": {
+          "type": "slide",
+          "name": "1/18-20 | NY Skin: Mom Selects",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/NY-SkinGoals_MomsFaves_HP-Desktop_414cf4bd-6255-4321-9f8d-3812380f808a.jpg",
+            "image_mobile": "shopify://shop_images/NY-SkinGoals_MomsFaves_HP-Mobile_fe29996c-8c88-4e6f-bed0-a7010bffbc2b.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "shopify://collections/team-member-faves",
+            "text_position": "center_center",
+            "text_position_mobile": "center_center",
+            "accent": "",
+            "title": "",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2",
+            "subheading": "",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link_1": "",
+            "link_text_1": "Read more",
+            "button_style_1": "btn--primary",
+            "link_2": "",
+            "link_text_2": "Read more",
+            "button_style_2": "btn--primary",
+            "text_color": "#ffffff",
+            "button_background_color": "#ffffff",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
+          }
+        },
+        "slide_8RpP4f": {
+          "type": "slide",
+          "name": "Free Shipping Weekend",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/FreeShipWeekend_HP-Desktop_Smaller.jpg",
+            "image_mobile": "shopify://shop_images/FreeShipWeekend_HP-Mobile_Smaller.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "shopify://collections/skincare-best-sellers",
             "text_position": "center_center",
             "text_position_mobile": "center_center",
             "accent": "",
@@ -48,6 +153,7 @@
         },
         "slide_AWpnMF": {
           "type": "slide",
+          "name": "New Year Reso",
           "settings": {
             "image": "shopify://shop_images/NewYear-Tools_HP-Desktop.jpg",
             "image_mobile": "shopify://shop_images/NewYear-Tools_HP-Mobile.jpg",
@@ -81,6 +187,7 @@
         },
         "slide_yT84rQ": {
           "type": "slide",
+          "name": "Skin Quiz",
           "settings": {
             "image": "shopify://shop_images/SkinQuiz_HP-Desktop.jpg",
             "image_mobile": "shopify://shop_images/SkinQuiz_HP-Mobile.jpg",
@@ -114,6 +221,7 @@
         },
         "slide_8cqtHH": {
           "type": "slide",
+          "name": "GloPRO Attachments",
           "disabled": true,
           "settings": {
             "image": "shopify://shop_images/GloPRO-Attachments_HP-Desktop.jpg",
@@ -148,6 +256,7 @@
         },
         "slide_iYy4Qq": {
           "type": "slide",
+          "name": "Rewards",
           "disabled": true,
           "settings": {
             "image": "shopify://shop_images/6-2-25_HP-DESKTOP.jpg",
@@ -182,7 +291,10 @@
         }
       },
       "block_order": [
-        "slide_mbqiRK",
+        "slide_jpkDdj",
+        "slide_CVnMLt",
+        "slide_ERk9xj",
+        "slide_8RpP4f",
         "slide_AWpnMF",
         "slide_yT84rQ",
         "slide_8cqtHH",
@@ -1005,6 +1117,7 @@
       "block_order": [
         "heading_ymWCnd"
       ],
+      "disabled": true,
       "settings": {
         "alignment": "center_center",
         "enable_animation": true,
@@ -1034,6 +1147,7 @@
         "article_1",
         "article_2"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "subheading": "",
