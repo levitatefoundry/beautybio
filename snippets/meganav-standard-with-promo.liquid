@@ -24,19 +24,17 @@
         "
       >
         {%- if meganav_settings.link != blank -%}
-          <a href="{{ meganav_settings.link }}" aria-label="{{ meganav_settings.link_text | default: 'View collection' }}" class="meganav__promo-image-link">
-        {%- endif -%}
-        {%- render 'image' with
-          wrapper_class: "meganav__promo-image",
-          image: meganav_settings.image,
-          sizes_px: meganav_settings.promo_width,
-          focal_point: meganav_settings.focal_point,
-          include_placeholder: true,
-          aspect_ratio: "externally_set"
-        -%}
-        {%- if meganav_settings.link != blank -%}
-          </a>
-        {%- endif -%}
+  {%- assign collection_handle = meganav_settings.link | split: '/collections/' | last | split: '/' | first -%}
+  {%- assign linked_collection = collections[collection_handle] -%}
+  {%- if linked_collection.title -%}
+    {%- assign aria_label = linked_collection.title -%}
+  {%- else -%}
+    {%- assign aria_label = 'Shop Now' -%}
+  {%- endif -%}
+  <a href="{{ meganav_settings.link }}" 
+     aria-label="{{ aria_label }}" 
+     class="meganav__promo-image-link">
+{%- endif -%}
 
         <div class="meganav__secondary-promo-overlay"></div>
 
