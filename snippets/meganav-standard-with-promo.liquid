@@ -35,6 +35,17 @@
      aria-label="{{ aria_label }}" 
      class="meganav__promo-image-link">
 {%- endif -%}
+        {%- render 'image' with
+          wrapper_class: "meganav__promo-image",
+          image: meganav_settings.image,
+          sizes_px: meganav_settings.promo_width,
+          focal_point: meganav_settings.focal_point,
+          include_placeholder: true,
+          aspect_ratio: "externally_set"
+        -%}
+        {%- if meganav_settings.link != blank -%}
+          </a>
+        {%- endif -%}
 
         <div class="meganav__secondary-promo-overlay"></div>
 
