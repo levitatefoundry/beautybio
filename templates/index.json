@@ -1020,13 +1020,13 @@
         "article_1": {
           "type": "article",
           "settings": {
-            "article": "microneedling-at-home/pearl-skin-meets-spf-drops"
+            "article": "skincare-blog/pearl-skin-meets-spf-drops"
           }
         },
         "article_2": {
           "type": "article",
           "settings": {
-            "article": "microneedling-at-home/how-to-increase-and-preserve-your-skin-s-collagen"
+            "article": "skincare-blog/how-to-increase-and-preserve-your-skin-s-collagen"
           }
         }
       },
@@ -1037,10 +1037,10 @@
       "settings": {
         "heading": "",
         "subheading": "",
-        "button_link": "shopify://blogs/microneedling-at-home",
+        "button_link": "shopify://blogs/skincare-blog",
         "link_text": "",
         "display_type": "selected",
-        "blog": "microneedling-at-home",
+        "blog": "skincare-blog",
         "max_articles": 2,
         "show_tags": false,
         "show_author": false,
