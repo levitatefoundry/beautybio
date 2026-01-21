@@ -24,7 +24,7 @@
         "
       >
         {%- if meganav_settings.link != blank -%}
-          <a href="{{ meganav_settings.link }}" class="meganav__promo-image-link">
+          <a href="{{ meganav_settings.link }}" aria-label="{{ meganav_settings.link_text | default: 'View collection' }}" class="meganav__promo-image-link">
         {%- endif -%}
         {%- render 'image' with
           wrapper_class: "meganav__promo-image",
