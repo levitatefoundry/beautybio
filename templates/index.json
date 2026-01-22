@@ -15,13 +15,12 @@
         "slide_jpkDdj": {
           "type": "slide",
           "name": "1/22-24 | NY Skin: Alyssa's Faves",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/NY-SkinGoals_AlyssaFaves_HP-Desktop.png",
             "image_mobile": "shopify://shop_images/NY-SkinGoals_AlyssaFaves_HP-Mobile.png",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
-            "media_link": "",
+            "media_link": "shopify://collections/team-member-faves",
             "text_position": "center_center",
             "text_position_mobile": "center_center",
             "accent": "",
@@ -50,6 +49,7 @@
         "slide_CVnMLt": {
           "type": "slide",
           "name": "1/20-22 | NY Skin: Chloe's Faves",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/NY-SkinGoals_ChloeFaves_HP-Desktop.jpg",
             "image_mobile": "shopify://shop_images/NY-SkinGoals_ChloeFaves_HP-Mobile.jpg",
