@@ -340,15 +340,6 @@
         "content_width": "custom",
         "custom_content_width": 700
       }
-    },
-    "custom_liquid_GN8hiQ": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom_liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"1078732\"></div>",
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
     }
   },
   "order": [
@@ -357,7 +348,6 @@
     "image_text_1",
     "image_text_2",
     "image_text_3",
-    "rich_text_2",
-    "custom_liquid_GN8hiQ"
+    "rich_text_2"
   ]
 }
