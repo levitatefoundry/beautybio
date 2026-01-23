@@ -21,7 +21,7 @@
     "custom_liquid_Qx7pq8": {
       "type": "custom-liquid",
       "custom_css": [
-        "{padding: 0;}"
+        ".section--vertical-padding-none {padding: 0;}"
       ],
       "name": "t:sections.custom_liquid.presets.name",
       "settings": {
