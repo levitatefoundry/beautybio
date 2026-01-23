@@ -12,15 +12,15 @@
     "slideshow_XAEEkT": {
       "type": "slideshow",
       "blocks": {
-        "slide_PtydUT": {
+        "slide_jpkDdj": {
           "type": "slide",
-          "name": "1/23-25 | Double Pts Wkd",
+          "name": "1/22-24 | NY Skin: Alyssa's Faves",
           "settings": {
-            "image": "shopify://shop_images/Desktop_NewYear-DoublePtsWkd.png",
-            "image_mobile": "shopify://shop_images/Mobile_NewYear-DoublePtsWkd.png",
+            "image": "shopify://shop_images/NY-SkinGoals_AlyssaFaves_HP-Desktop.png",
+            "image_mobile": "shopify://shop_images/NY-SkinGoals_AlyssaFaves_HP-Mobile.png",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
-            "media_link": "shopify://pages/rewards",
+            "media_link": "shopify://collections/team-member-faves",
             "text_position": "center_center",
             "text_position_mobile": "center_center",
             "accent": "",
@@ -46,15 +46,15 @@
             "overlay_opacity": 0
           }
         },
-        "slide_jpkDdj": {
+        "slide_PtydUT": {
           "type": "slide",
-          "name": "1/22-24 | NY Skin: Alyssa's Faves",
+          "name": "1/23-25 | Double Pts Wkd",
           "settings": {
-            "image": "shopify://shop_images/NY-SkinGoals_AlyssaFaves_HP-Desktop.png",
-            "image_mobile": "shopify://shop_images/NY-SkinGoals_AlyssaFaves_HP-Mobile.png",
+            "image": "shopify://shop_images/Desktop_NewYear-DoublePtsWkd.png",
+            "image_mobile": "shopify://shop_images/Mobile_NewYear-DoublePtsWkd.png",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
-            "media_link": "shopify://collections/team-member-faves",
+            "media_link": "shopify://pages/rewards",
             "text_position": "center_center",
             "text_position_mobile": "center_center",
             "accent": "",
@@ -188,6 +188,7 @@
         "slide_AWpnMF": {
           "type": "slide",
           "name": "New Year Reso",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/NewYear-Tools_HP-Desktop.jpg",
             "image_mobile": "shopify://shop_images/NewYear-Tools_HP-Mobile.jpg",
@@ -325,8 +326,8 @@
         }
       },
       "block_order": [
-        "slide_PtydUT",
         "slide_jpkDdj",
+        "slide_PtydUT",
         "slide_CVnMLt",
         "slide_ERk9xj",
         "slide_8RpP4f",
