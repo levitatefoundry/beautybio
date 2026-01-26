@@ -84,6 +84,7 @@
         "slide_PtydUT": {
           "type": "slide",
           "name": "1/23-25 | Double Pts Wkd",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Desktop_NewYear-DoublePtsWkd.png",
             "image_mobile": "shopify://shop_images/Mobile_NewYear-DoublePtsWkd.png",
