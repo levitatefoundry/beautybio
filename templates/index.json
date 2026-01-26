@@ -15,7 +15,6 @@
         "slide_QaD9p7": {
           "type": "slide",
           "name": "1/26-31 | Refer Friend 250 Pts",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/ReferFriend_EarnPoints_HP_Desktop.jpg",
             "image_mobile": "shopify://shop_images/ReferFriend_EarnPoints_HP_Mobile.jpg",
@@ -50,12 +49,13 @@
         "slide_jpkDdj": {
           "type": "slide",
           "name": "1/22-24 | NY Skin: Alyssa's Faves",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/NY-SkinGoals_AlyssaFaves_HP-Desktop.png",
             "image_mobile": "shopify://shop_images/NY-SkinGoals_AlyssaFaves_HP-Mobile.png",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
-            "media_link": "shopify://collections/team-member-faves",
+            "media_link": "shopify://pages/refer-a-friend",
             "text_position": "center_center",
             "text_position_mobile": "center_center",
             "accent": "",
