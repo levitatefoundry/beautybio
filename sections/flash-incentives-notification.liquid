@@ -500,7 +500,11 @@
                   <div class="upsell-cart__slider-wrapper">
                     <div class="upsell-cart__slider-header">
                       <div class="upsell-cart__upsell-label">
-                        {{ shop.metafields.obsidian_upsell[locale].upsell_title_1 }}
+                        {% if section.settings.custom_upsell_title != blank %}
+                          {{ section.settings.custom_upsell_title }}
+                        {% else %}
+                          {{ shop.metafields.obsidian_upsell[locale].upsell_title_1 }}
+                        {% endif %}
                       </div>
                       <upsell-slider-navigation slider-id="upsell-notification-upsells">
                         <button
@@ -652,6 +656,12 @@
         "id": "modal_show_recommendations",
         "label": "Enable recommendations",
         "default": true
+      },
+      {
+        "type": "text",
+        "id": "custom_upsell_title",
+        "label": "Custom recommendations title",
+        "info": "Leave blank to use the default title from app settings"
       },
       {
         "type": "select",
