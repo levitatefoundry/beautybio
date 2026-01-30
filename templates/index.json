@@ -50,6 +50,7 @@
         "slide_QaD9p7": {
           "type": "slide",
           "name": "1/26-31 | Refer Friend 250 Pts",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/ReferFriend_EarnPoints_HP_Desktop.jpg",
             "image_mobile": "shopify://shop_images/ReferFriend_EarnPoints_HP_Mobile.jpg",
