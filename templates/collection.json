@@ -14,11 +14,11 @@
       "custom_css": [
         ".collection-banner__text-container-heading,.collection-banner__text-container-text {background-color: rgba(0, 0, 0, 0.01);}"
       ],
-
       "settings": {
         "show_breadcrumbs": false,
         "show_collection_description": true,
         "show_collection_image": true,
+        "heading": "",
         "subheading": "",
         "image_aspect": "custom",
         "desktop_height": 50,
@@ -32,30 +32,6 @@
         "overlay_opacity": 30,
         "enable_animation": true,
         "section_padding": "section--vertical-padding-none"
-      }
-    },
-    "rich_text_fUB8AQ": {
-      "type": "rich-text",
-      "blocks": {
-        "text_yeAfHy": {
-          "type": "text",
-          "settings": {
-            "text": "<p>{{ collection.metafields.custom.collection_description | metafield_tag }}</p>",
-            "text_font_class": "fs-body-100"
-          }
-        }
-      },
-      "block_order": [
-        "text_yeAfHy"
-      ],
-      "disabled": true,
-      "settings": {
-        "alignment": "center_center",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-only",
-        "content_width": "full",
-        "custom_content_width": 800
       }
     },
     "product-grid": {
@@ -107,12 +83,35 @@
         "divider_style": "solid",
         "section_padding": "section--vertical-padding-bottom-only"
       }
+    },
+    "rich_text_fUB8AQ": {
+      "type": "rich-text",
+      "blocks": {
+        "text_yeAfHy": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.metafields.custom.below_product_grid_copy | metafield_tag }}",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "text_yeAfHy"
+      ],
+      "settings": {
+        "alignment": "left_left",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "full",
+        "custom_content_width": 800
+      }
     }
   },
   "order": [
     "banner",
-    "rich_text_fUB8AQ",
     "product-grid",
-    "collection_list_slider_CNVxgJ"
+    "collection_list_slider_CNVxgJ",
+    "rich_text_fUB8AQ"
   ]
 }
