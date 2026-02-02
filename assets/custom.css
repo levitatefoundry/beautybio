@@ -155,5 +155,5 @@ button{
 .product-item__image-link[aria-label="Gift Card"] div.product-item__image {
   height: 331px !important;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
