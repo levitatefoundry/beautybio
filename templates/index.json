@@ -15,7 +15,6 @@
         "slide_6Wb8zR": {
           "type": "slide",
           "name": "2/2 Blendrops Birthday",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/BlendropsBirthdayMonth_HP_Desktop.jpg",
             "image_mobile": "shopify://shop_images/BlendropsBirthdayMonth_HP_Mobile.jpg",
@@ -260,6 +259,7 @@
         "slide_AWpnMF": {
           "type": "slide",
           "name": "New Year Reso",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/NewYear-Tools_HP-Desktop.jpg",
             "image_mobile": "shopify://shop_images/NewYear-Tools_HP-Mobile.jpg",
