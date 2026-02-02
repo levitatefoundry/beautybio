@@ -150,3 +150,10 @@ button{
 .product-details-popup__body .template-product>.page>*:not(#main){
   display: none !important;
 }
+
+/* gift card styling */
+.product-item__image-link[aria-label="Gift Card"] div.product-item__image {
+  height: 331px !important;
+  display: flex;
+  align-items: center;
+}
