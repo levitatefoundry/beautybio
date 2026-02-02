@@ -15,6 +15,7 @@
         "slide_bgFiXF": {
           "type": "slide",
           "name": "Groundhog 15% off ",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/GroundhogDay-Promo_02022026_HP_Desktop_15_1.jpg",
             "image_mobile": "shopify://shop_images/GroundhogDay-Promo_02022026_HP_Mobile_15.jpg",
