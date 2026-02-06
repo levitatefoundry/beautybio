@@ -120,6 +120,7 @@
         "slide_6Wb8zR": {
           "type": "slide",
           "name": "2/2–2/5 Groundhog 15% Off",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/GroundhogDay-Promo_02022026_HP_Desktop_15_1.jpg",
             "image_mobile": "shopify://shop_images/GroundhogDay-Promo_02022026_HP_Mobile_15.jpg",
