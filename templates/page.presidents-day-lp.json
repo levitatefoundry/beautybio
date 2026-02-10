@@ -658,37 +658,11 @@
             "product_card_gygpYB",
             "product_card_BcLPJA"
           ]
-        },
-        "products_bundle_xdfNNL": {
-          "type": "products-bundle",
-          "name": "Products bundle",
-          "settings": {
-            "bundle_title": "Save On Our Bundles",
-            "filter_title": "Bundles",
-            "bundle_description": "",
-            "display_view_more": true,
-            "products_row_per_view": "2"
-          },
-          "blocks": {
-            "collection_product_cards_aXzark": {
-              "type": "collection-product-cards",
-              "name": "Collection Product Cards",
-              "settings": {
-                "collection": "holiday-bundles",
-                "hide_in_view_all": false
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "collection_product_cards_aXzark"
-          ]
         }
       },
       "block_order": [
         "products_bundle_7d7XrN",
-        "products_bundle_V6KkTj",
-        "products_bundle_xdfNNL"
+        "products_bundle_V6KkTj"
       ],
       "custom_css": [
         ".product-bundle-card__price--sale .money {color: rgb(209, 21, 112);}",
