@@ -214,6 +214,30 @@
               },
               "blocks": {}
             },
+            "product_card_VDzJyR": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "jellydew",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            },
+            "product_card_WMWeVK": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "the-eyelighter-concentrate-1",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            },
             "product_card_jBXxQf": {
               "type": "product-card",
               "name": "Product card",
@@ -255,18 +279,6 @@
               "name": "Product card",
               "settings": {
                 "product": "glopro-cryo-roller-duo",
-                "custom_title": "",
-                "custom_price": "",
-                "custom_compare_price": "",
-                "hide_in_view_all": true
-              },
-              "blocks": {}
-            },
-            "product_card_wYddVF": {
-              "type": "product-card",
-              "name": "Product card",
-              "settings": {
-                "product": "firm-clarify",
                 "custom_title": "",
                 "custom_price": "",
                 "custom_compare_price": "",
@@ -442,18 +454,6 @@
               },
               "blocks": {}
             },
-            "product_card_CyBYjM": {
-              "type": "product-card",
-              "name": "Product card",
-              "settings": {
-                "product": "pro-hydration-facial-set",
-                "custom_title": "",
-                "custom_price": "",
-                "custom_compare_price": "",
-                "hide_in_view_all": false
-              },
-              "blocks": {}
-            },
             "product_card_D4HEGF": {
               "type": "product-card",
               "name": "Product card",
@@ -493,11 +493,12 @@
             "product_card_FtxxhX",
             "product_card_gcg3qn",
             "product_card_9ejf7r",
+            "product_card_VDzJyR",
+            "product_card_WMWeVK",
             "product_card_jBXxQf",
             "product_card_Fmajcc",
             "product_card_zhMayV",
             "product_card_9TaAh7",
-            "product_card_wYddVF",
             "product_card_BAVGVp",
             "product_card_EFnmf7",
             "product_card_UehXTW",
@@ -512,7 +513,6 @@
             "product_card_hVyzxE",
             "product_card_mBcH6B",
             "product_card_FABjky",
-            "product_card_CyBYjM",
             "product_card_D4HEGF",
             "product_card_NAtaeG"
           ]
