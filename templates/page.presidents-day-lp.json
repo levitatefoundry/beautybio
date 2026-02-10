@@ -222,7 +222,7 @@
                 "custom_title": "",
                 "custom_price": "",
                 "custom_compare_price": "",
-                "hide_in_view_all": false
+                "hide_in_view_all": true
               },
               "blocks": {}
             },
