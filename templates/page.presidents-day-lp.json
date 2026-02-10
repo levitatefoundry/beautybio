@@ -20,6 +20,7 @@
     },
     "image_hero_W9EYnQ": {
       "type": "image-hero",
+      "disabled": true,
       "custom_css": [
         "h2 {font-size: 35pt;}",
         "@media screen and (max-width: 719px) {h2 {font-size: 28pt; }}"
