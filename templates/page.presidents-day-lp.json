@@ -29,8 +29,8 @@
         "image_aspect": "custom",
         "desktop_height": 60,
         "mobile_height": 65,
-        "image": "shopify://shop_images/CollectionBanner_PresDaySale_2026_Desktop.jpg",
-        "image_mobile": "shopify://shop_images/CollectionBanner_PresDaySale_2026_Mobile.jpg",
+        "image": "shopify://shop_images/CollectionBanner_PresDaySale_2026_Desktop_1.jpg",
+        "image_mobile": "shopify://shop_images/CollectionBanner_PresDaySale_2026_Mobile_1.jpg",
         "focal_point": "image_presentation",
         "mobile_focal_point": "image_presentation",
         "media_link": "",
@@ -85,6 +85,15 @@
               },
               "blocks": {}
             },
+            "collection_product_cards_WzbiaH": {
+              "type": "collection-product-cards",
+              "name": "Collection Product Cards",
+              "settings": {
+                "collection": "spf",
+                "hide_in_view_all": true
+              },
+              "blocks": {}
+            },
             "product_card_RTjGa6": {
               "type": "product-card",
               "name": "Product card",
@@ -94,15 +103,6 @@
                 "custom_price": "",
                 "custom_compare_price": "",
                 "hide_in_view_all": false
-              },
-              "blocks": {}
-            },
-            "collection_product_cards_WzbiaH": {
-              "type": "collection-product-cards",
-              "name": "Collection Product Cards",
-              "settings": {
-                "collection": "spf",
-                "hide_in_view_all": true
               },
               "blocks": {}
             },
@@ -127,6 +127,18 @@
                 "custom_price": "",
                 "custom_compare_price": "",
                 "hide_in_view_all": false
+              },
+              "blocks": {}
+            },
+            "product_card_xc7yih": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "swipe-glow-peel-pads",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": true
               },
               "blocks": {}
             },
@@ -442,18 +454,6 @@
               },
               "blocks": {}
             },
-            "product_card_xc7yih": {
-              "type": "product-card",
-              "name": "Product card",
-              "settings": {
-                "product": "swipe-glow-peel-pads",
-                "custom_title": "",
-                "custom_price": "",
-                "custom_compare_price": "",
-                "hide_in_view_all": true
-              },
-              "blocks": {}
-            },
             "product_card_gcg3qn": {
               "type": "product-card",
               "name": "Product card",
@@ -470,10 +470,11 @@
           "block_order": [
             "product_card_DRB6LH",
             "product_card_trXDNE",
-            "product_card_RTjGa6",
             "collection_product_cards_WzbiaH",
+            "product_card_RTjGa6",
             "product_card_4xwUHT",
             "product_card_FtxxhX",
+            "product_card_xc7yih",
             "product_card_VDzJyR",
             "product_card_WMWeVK",
             "product_card_zhMayV",
@@ -500,7 +501,6 @@
             "product_card_GhfLFF",
             "product_card_rhgpHm",
             "product_card_BJ4rkf",
-            "product_card_xc7yih",
             "product_card_gcg3qn"
           ]
         },
