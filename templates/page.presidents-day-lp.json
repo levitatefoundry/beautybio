@@ -61,18 +61,6 @@
             "products_row_per_view": "2"
           },
           "blocks": {
-            "product_card_xc7yih": {
-              "type": "product-card",
-              "name": "Product card",
-              "settings": {
-                "product": "swipe-glow-peel-pads",
-                "custom_title": "",
-                "custom_price": "",
-                "custom_compare_price": "",
-                "hide_in_view_all": false
-              },
-              "blocks": {}
-            },
             "product_card_GhfLFF": {
               "type": "product-card",
               "name": "Product card",
@@ -183,6 +171,18 @@
               "name": "Product card",
               "settings": {
                 "product": "bright-eyes-illuminating-colloidal-silver-collagen-eye-patches",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            },
+            "product_card_xc7yih": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "swipe-glow-peel-pads",
                 "custom_title": "",
                 "custom_price": "",
                 "custom_compare_price": "",
@@ -480,7 +480,6 @@
             }
           },
           "block_order": [
-            "product_card_xc7yih",
             "product_card_GhfLFF",
             "product_card_rhgpHm",
             "product_card_BJ4rkf",
@@ -491,6 +490,7 @@
             "product_card_QWJKNB",
             "product_card_fNGttL",
             "product_card_FtxxhX",
+            "product_card_xc7yih",
             "product_card_gcg3qn",
             "product_card_9ejf7r",
             "product_card_VDzJyR",
