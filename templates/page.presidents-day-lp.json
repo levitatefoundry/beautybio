@@ -27,7 +27,7 @@
       "name": "t:sections.image_hero.presets.name",
       "settings": {
         "image_aspect": "custom",
-        "desktop_height": 50,
+        "desktop_height": 55,
         "mobile_height": 65,
         "image": "shopify://shop_images/CollectionBanner_PresDaySale_2026_Desktop_1.jpg",
         "image_mobile": "shopify://shop_images/CollectionBanner_PresDaySale_2026_Mobile_1.jpg",
