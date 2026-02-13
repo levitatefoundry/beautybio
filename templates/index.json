@@ -12,15 +12,15 @@
     "slideshow_XAEEkT": {
       "type": "slideshow",
       "blocks": {
-        "slide_Qp78JE": {
+        "slide_RpRBMN": {
           "type": "slide",
-          "name": "2/11–2/16 Kiss Kit GWP",
+          "name": "2/9 MVP Last Chance BOGO",
           "settings": {
-            "image": "shopify://shop_images/KissKit_GWP_Launch_HP_Desktop.png",
-            "image_mobile": "shopify://shop_images/KissKit_GWP_Launch_HP_Mobile.png",
+            "image": "shopify://shop_images/BBS_PresidentsDayEvent_HP_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/BBS_PresidentsDayEvent_HP_Mobile.jpg",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
-            "media_link": "shopify://collections/skincare-best-sellers",
+            "media_link": "shopify://collections/all",
             "text_position": "center_center",
             "text_position_mobile": "center_center",
             "accent": "",
@@ -46,15 +46,15 @@
             "overlay_opacity": 0
           }
         },
-        "slide_RpRBMN": {
+        "slide_Qp78JE": {
           "type": "slide",
-          "name": "2/9 MVP Last Chance BOGO",
+          "name": "2/11–2/16 Kiss Kit GWP",
           "settings": {
-            "image": "shopify://shop_images/BBS_PresidentsDayEvent_HP_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/BBS_PresidentsDayEvent_HP_Mobile.jpg",
+            "image": "shopify://shop_images/KissKit_GWP_Launch_HP_Desktop.png",
+            "image_mobile": "shopify://shop_images/KissKit_GWP_Launch_HP_Mobile.png",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
-            "media_link": "shopify://collections/all",
+            "media_link": "shopify://collections/skincare-best-sellers",
             "text_position": "center_center",
             "text_position_mobile": "center_center",
             "accent": "",
@@ -395,8 +395,8 @@
         }
       },
       "block_order": [
-        "slide_Qp78JE",
         "slide_RpRBMN",
+        "slide_Qp78JE",
         "slide_Gpa44C",
         "slide_6Wb8zR",
         "slide_HiNNMM",
