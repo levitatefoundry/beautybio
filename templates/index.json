@@ -604,12 +604,10 @@
         "columns": "4",
         "mobile_columns": "1",
         "collection_list": [
-          "all-things-glopro",
           "creams-serums-skincare-products",
-          "all-thing-glofacial",
           "sets-minis",
           "glopro-microneedling-roller-collection",
-          "powerfull-hair"
+          "beauty-tools"
         ],
         "collection_listing_aspect_ratio": "square",
         "label_style": "overlay",
@@ -1042,6 +1040,7 @@
         "spacer_gWKgMp",
         "subheading_DxKc8e"
       ],
+      "disabled": true,
       "settings": {
         "alignment": "center_center",
         "enable_animation": true,
@@ -1132,6 +1131,7 @@
         "subheading_L63nzP",
         "button_indxN8"
       ],
+      "disabled": true,
       "settings": {
         "image_position": "left",
         "text_alignment": "center",
