@@ -49,6 +49,7 @@
         "slide_pkqRh9": {
           "type": "slide",
           "name": "2/11–2/16 Kiss Kit GWP",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/KissKit_GWP_Launch_HP_Desktop.png",
             "image_mobile": "shopify://shop_images/KissKit_GWP_Launch_HP_Mobile.png",
