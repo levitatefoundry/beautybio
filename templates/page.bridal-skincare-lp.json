@@ -53,7 +53,7 @@
       "custom_css": [
         ".image-hero__text-container-inner {text-align: center;}",
         ".button-block__button {justify-content: center;}",
-        "@media screen and (max-width: 720px) {.image-hero__text-container {height: 100%; position: relative; } .button-block__button {position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); } .image-hero__text-container-heading {font-size: 24pt; } .image-hero__text-container-text {font-size: 9pt; }}"
+        "@media screen and (max-width: 720px) {.image-hero__text-container {height: 100%; position: relative; } .button-block__button {position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); } .image-hero__text-container-heading {font-size: 24pt; } .image-hero__text-container-text {font-size: 9pt; } button {width: 250px; }}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
