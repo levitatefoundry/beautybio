@@ -20,6 +20,36 @@
     },
     "image_hero_BLgiPa": {
       "type": "image-hero",
+      "blocks": {
+        "heading_jLfJFX": {
+          "type": "heading",
+          "settings": {
+            "title": "Your Go-To Bridal Skincare Destination",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "text_rzTMij": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover the best wedding skincare by goal, moment, or role - featuring editor-favorite essentials for the bride, bachelorette, and flow-ready bridal party skincare picks.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_9QqCjg": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "Browse Bridal Faves",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jLfJFX",
+        "text_rzTMij",
+        "button_9QqCjg"
+      ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
         "image_aspect": "original",
@@ -30,13 +60,13 @@
         "focal_point": "image_presentation",
         "mobile_focal_point": "image_presentation",
         "media_link": "",
-        "text_position": "center_center",
-        "text_position_mobile": "center_center",
+        "text_position": "flex-end_center",
+        "text_position_mobile": "center_flex-start",
         "show-checkboxes": false,
-        "text_color": "#FFFFFF",
-        "button_background_color": "#FFFFFF",
-        "button_text_color": "#000000",
-        "color_overlay": "#000",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "color_overlay": "#000000",
         "color_overlay_gradient": "",
         "overlay_opacity": 0,
         "enable_animation": true,
@@ -58,10 +88,10 @@
         "text_position": "center_center",
         "text_position_mobile": "center_center",
         "show-checkboxes": false,
-        "text_color": "#FFFFFF",
-        "button_background_color": "#FFFFFF",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
         "button_text_color": "#000000",
-        "color_overlay": "#000",
+        "color_overlay": "#000000",
         "color_overlay_gradient": "",
         "overlay_opacity": 0,
         "enable_animation": true,
