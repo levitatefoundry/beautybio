@@ -141,7 +141,9 @@
       "block_order": [
         "collection_cgtczK"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".section-introduction * {text-align: center;}"
+      ],
       "name": "Promo Collection Grid",
       "settings": {
         "heading": "The Bridal Beauty Breakdown",
