@@ -142,7 +142,8 @@
         "collection_cgtczK"
       ],
       "custom_css": [
-        ".section-introduction * {text-align: center;}"
+        ".section-introduction * {text-align: center;}",
+        ".metafield-rich_text_field p {margin-bottom: 7px;}"
       ],
       "name": "Promo Collection Grid",
       "settings": {
