@@ -127,11 +127,40 @@
         "enable_animation": true,
         "section_padding": "section--vertical-padding-none"
       }
+    },
+    "promo_collection_DGNzKM": {
+      "type": "promo-collection",
+      "blocks": {
+        "collection_cgtczK": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_cgtczK"
+      ],
+      "name": "Promo Collection Grid",
+      "settings": {
+        "heading": "The Bridal Beauty Breakdown",
+        "heading_tag": "h2",
+        "subheading": "<p>Meet your new go-to for the best wedding skincare - featuring hero products for the bride and glow-boosting bridal party skincare picks, thoughtfully curated for every moment leading up to the big day.</p>",
+        "link": "",
+        "link_text": "",
+        "maximum_collections": 4,
+        "columns": "3",
+        "mobile_columns": "1",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
     }
   },
   "order": [
     "main",
     "image_hero_BLgiPa",
-    "image_hero_brDhHT"
+    "image_hero_brDhHT",
+    "promo_collection_DGNzKM"
   ]
 }
