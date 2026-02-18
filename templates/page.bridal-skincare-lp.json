@@ -50,6 +50,10 @@
         "text_rzTMij",
         "button_9QqCjg"
       ],
+      "custom_css": [
+        ".image-hero__text-container-inner {text-align: center;}",
+        ".button-block__button {justify-content: center;}"
+      ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
         "image_aspect": "original",
