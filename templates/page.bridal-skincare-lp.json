@@ -102,7 +102,8 @@
         "text_kpihVE"
       ],
       "custom_css": [
-        ".image-hero__text-container {max-width: unset;}"
+        ".image-hero__text-container {max-width: unset;}",
+        "@media screen and (max-width: 720px) {.image-hero__text-container-wrapper {padding-top: 18px; } .image-hero__text-container-text {font-size: 9pt; }}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
