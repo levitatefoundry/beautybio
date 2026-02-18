@@ -53,7 +53,7 @@
       "custom_css": [
         ".image-hero__text-container-inner {text-align: center;}",
         ".button-block__button {justify-content: center;}",
-        "@media screen and (max-width: 720px) {.image-hero__text-container {height: 100%; } .button-block__button {margin-top: auto; }}"
+        "@media screen and (max-width: 720px) {.image-hero__text-container {height: 100%; position: relative; } .button-block__button {position: absolute; bottom: 0; }}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
