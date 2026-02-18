@@ -141,6 +141,9 @@
       "block_order": [
         "collection_cgtczK"
       ],
+      "custom_css": [
+        "{background: linear-gradient( to bottom, #f2c8cc 0%, #f2c8cc 300px, white 300px, white 100% ) !important;}"
+      ],
       "name": "Promo Collection Grid",
       "settings": {
         "heading": "The Bridal Beauty Breakdown",
@@ -148,7 +151,7 @@
         "subheading": "<p>Meet your new go-to for the best wedding skincare - featuring hero products for the bride and glow-boosting bridal party skincare picks, thoughtfully curated for every moment leading up to the big day.</p>",
         "link": "",
         "link_text": "",
-        "maximum_collections": 4,
+        "maximum_collections": 6,
         "columns": "3",
         "mobile_columns": "1",
         "enable_animation": true,
