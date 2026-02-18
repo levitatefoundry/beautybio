@@ -81,7 +81,7 @@
           "settings": {
             "title": "Find Your Wedding Skincare Essentials",
             "heading_tag": "h2",
-            "heading_font_class": "fs-heading-display-2"
+            "heading_font_class": "fs-heading-display-3"
           }
         },
         "text_kpihVE": {
@@ -95,6 +95,9 @@
       "block_order": [
         "heading_UYbTzh",
         "text_kpihVE"
+      ],
+      "custom_css": [
+        ".image-hero__text-container {max-width: unset;}"
       ],
       "name": "t:sections.image_hero.presets.name",
       "settings": {
