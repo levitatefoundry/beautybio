@@ -258,7 +258,6 @@
         "slide_8RpP4f": {
           "type": "slide",
           "name": "Free Shipping Weekend",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/FreeShipWeekend_Feb_HP-Desktop.jpg",
             "image_mobile": "shopify://shop_images/FreeShipWeekend_Feb_HP-Mobile.jpg",
