@@ -81,7 +81,7 @@
         -%}
 
       {%- when 'buy_buttons' -%}
-        <a href='/pages/quiz' class="find-your-routine">Find your routine</a>
+        <a href="{{ prod.metafields.custom.quiz_link_url | default: '/pages/quiz'}}" class="find-your-routine">{{ prod.metafields.custom.quiz_link_text | default: "Find your routine" }}</a>
         {%- if prod != blank -%}
           {%-
             render 'product-block-buy-buttons' with
