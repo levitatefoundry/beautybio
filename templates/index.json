@@ -15,6 +15,7 @@
         "slide_Qp78JE": {
           "type": "slide",
           "name": "President",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/BBS_PresidentsDayEvent_HP_Desktop.jpg",
             "image_mobile": "shopify://shop_images/BBS_PresidentsDayEvent_HP_Mobile.jpg",
