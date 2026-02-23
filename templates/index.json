@@ -294,7 +294,6 @@
         "slide_yT84rQ": {
           "type": "slide",
           "name": "Skin Quiz",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/SkinQuiz_HP-Desktop.jpg",
             "image_mobile": "shopify://shop_images/SkinQuiz_HP-Mobile.jpg",
