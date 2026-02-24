@@ -87,6 +87,30 @@
         "section_padding": "section--vertical-padding-none"
       }
     },
+    "announcement_bar_yM6d9w": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_dh7hLP": {
+          "type": "announcement",
+          "settings": {
+            "title": "<p><strong>CELEBRATE BOOSTERS' BIRTHDAY MONTH WITH LIMITED-EDITION BUNDLES & MAJOR SAVINGS</strong></p>",
+            "title_mobile": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_dh7hLP"
+      ],
+      "name": "Announcement bar",
+      "settings": {
+        "enable_sticky_announcement_bar": "never",
+        "autoplay_enabled": true,
+        "autoplay_delay": 4,
+        "color_background": "#000000",
+        "color_text": "#FFFFFF"
+      }
+    },
     "slideshow_rkbHgp": {
       "type": "slideshow",
       "blocks": {
@@ -315,6 +339,7 @@
   "order": [
     "main",
     "image_hero_BLgiPa",
+    "announcement_bar_yM6d9w",
     "slideshow_rkbHgp",
     "promo_collection_DGNzKM"
   ]
