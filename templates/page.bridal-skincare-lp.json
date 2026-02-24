@@ -33,14 +33,14 @@
           "type": "heading",
           "settings": {
             "title": "Boosted Skin.<br>Brighter Days.",
-            "heading_tag": "h2",
-            "heading_font_class": "fs-heading-display-2"
+            "heading_tag": "h6",
+            "heading_font_class": "fs-heading-display-1"
           }
         },
         "text_rzTMij": {
           "type": "text",
           "settings": {
-            "text": "<p>Five targeted boosters designed to layer seamlessly into your routine –so you can customize your glow based on what your skin needs today.</p>",
+            "text": "<p>Five targeted boosters designed to layer seamlessly<br/>into your routine – so you can customize your glow<br/>based on what your skin needs today.</p>",
             "text_font_class": "fs-body-100"
           }
         },
@@ -87,54 +87,162 @@
         "section_padding": "section--vertical-padding-none"
       }
     },
-    "image_hero_brDhHT": {
-      "type": "image-hero",
+    "slideshow_rkbHgp": {
+      "type": "slideshow",
       "blocks": {
-        "heading_UYbTzh": {
-          "type": "heading",
+        "slide_WafPC9": {
+          "type": "slide",
           "settings": {
-            "title": "Find Your Wedding Skincare Essentials",
+            "image": "shopify://shop_images/BBS_LandingPage_Boosters_04_99d1e5a0-6aa4-44e4-8ed3-e7af6e95694a.jpg",
+            "image_mobile": "shopify://shop_images/BBS_LandingPage_Boosters_03_cc7e172b-7d2a-42ca-961b-7add7eb0ab0b.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "shopify://products/clarifying-booster",
+            "text_position": "center_center",
+            "text_position_mobile": "center_center",
+            "accent": "",
+            "title": "",
             "heading_tag": "h2",
-            "heading_font_class": "fs-heading-display-3"
+            "heading_font_class": "fs-heading-display-2",
+            "subheading": "",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link_1": "",
+            "link_text_1": "Read more",
+            "button_style_1": "btn--primary",
+            "link_2": "",
+            "link_text_2": "Read more",
+            "button_style_2": "btn--primary",
+            "text_color": "#ffffff",
+            "button_background_color": "#ffffff",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
           }
         },
-        "text_kpihVE": {
-          "type": "text",
+        "slide_xqyLGV": {
+          "type": "slide",
           "settings": {
-            "text": "<p>A streamlined way to discover skincare for wedding and bridal party skincare favorites - no guesswork, just glow.</p>",
-            "text_font_class": "fs-body-100"
+            "image": "shopify://shop_images/BBS_LandingPage_Boosters_Desktop-Plumping_04.jpg",
+            "image_mobile": "shopify://shop_images/BBS_LandingPage_Boosters-Mobile-Plumping.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "shopify://products/plumping-booster",
+            "text_position": "center_center",
+            "text_position_mobile": "center_center",
+            "accent": "",
+            "title": "",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2",
+            "subheading": "",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link_1": "",
+            "link_text_1": "Read more",
+            "button_style_1": "btn--primary",
+            "link_2": "",
+            "link_text_2": "Read more",
+            "button_style_2": "btn--primary",
+            "text_color": "#ffffff",
+            "button_background_color": "#ffffff",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
+          }
+        },
+        "slide_r4npDF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BBS_LandingPage_Boosters_Desktop-Brightening_05.jpg",
+            "image_mobile": "shopify://shop_images/BBS_LandingPage_Boosters_Mobile-Brightening.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "shopify://products/brightening-booster",
+            "text_position": "flex-end_center",
+            "text_position_mobile": "center_flex-start",
+            "accent": "",
+            "title": "",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3",
+            "subheading": "",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base",
+            "text": "",
+            "text_font_class": "fs-body-75",
+            "link_1": "",
+            "link_text_1": "",
+            "button_style_1": "btn--primary",
+            "link_2": "",
+            "link_text_2": "Read more",
+            "button_style_2": "btn--primary",
+            "text_color": "#000000",
+            "button_background_color": "#000000",
+            "button_text_color": "#ffffff",
+            "color_overlay": "#000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
+          }
+        },
+        "slide_4bH4kj": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BBS_LandingPage_Boosters_04.jpg",
+            "image_mobile": "shopify://shop_images/BBS_LandingPage_Boosters_03.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "shopify://products/hydrating-booster",
+            "text_position": "flex-end_center",
+            "text_position_mobile": "center_flex-start",
+            "accent": "",
+            "title": "",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3",
+            "subheading": "",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base",
+            "text": "",
+            "text_font_class": "fs-body-75",
+            "link_1": "",
+            "link_text_1": "",
+            "button_style_1": "btn--primary",
+            "link_2": "",
+            "link_text_2": "Read more",
+            "button_style_2": "btn--primary",
+            "text_color": "#000000",
+            "button_background_color": "#000000",
+            "button_text_color": "#ffffff",
+            "color_overlay": "#000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
           }
         }
       },
       "block_order": [
-        "heading_UYbTzh",
-        "text_kpihVE"
+        "slide_WafPC9",
+        "slide_xqyLGV",
+        "slide_r4npDF",
+        "slide_4bH4kj"
       ],
-      "custom_css": [
-        ".image-hero__text-container {max-width: unset;}",
-        "@media screen and (max-width: 720px) {.image-hero__text-container-wrapper {padding-top: 18px; } .image-hero__text-container-text {font-size: 9pt; }}"
-      ],
-      "name": "t:sections.image_hero.presets.name",
+      "custom_css": [],
+      "name": "t:sections.slideshow.presets.name",
       "settings": {
-        "image_aspect": "original",
-        "desktop_height": 100,
-        "mobile_height": 100,
-        "image": "shopify://shop_images/BBS_Bridal_Block2-Image_022026.jpg",
-        "image_mobile": "shopify://shop_images/BBS_Bridal_Block2-Image_022026-Mobile.jpg",
-        "focal_point": "image_presentation",
-        "mobile_focal_point": "image_presentation",
-        "media_link": "",
-        "text_position": "center_flex-start",
-        "text_position_mobile": "center_flex-start",
-        "show-checkboxes": false,
-        "text_color": "#000000",
-        "button_background_color": "#ffffff",
-        "button_text_color": "#000000",
-        "color_overlay": "#000000",
-        "color_overlay_gradient": "",
-        "overlay_opacity": 0,
+        "image_aspect": "custom",
+        "desktop_height": 50,
+        "mobile_height": 50,
+        "enable_autoplay": true,
+        "duration_autoplay": 6,
+        "navigation_alignment": "center",
+        "navigation_color_foreground": "#fff",
+        "navigation_color_background": "",
+        "navigation_background_opacity": 100,
         "enable_animation": true,
-        "section_padding": "section--vertical-padding-none"
+        "section_padding": "none"
       }
     },
     "promo_collection_DGNzKM": {
@@ -143,7 +251,7 @@
         "collection_cgtczK": {
           "type": "collection",
           "settings": {
-            "collection": "bridal-faves"
+            "collection": "boosters"
           }
         }
       },
@@ -156,9 +264,9 @@
       ],
       "name": "Promo Collection Grid",
       "settings": {
-        "heading": "The Bridal Beauty Breakdown",
+        "heading": "Build Your Boosted Routine",
         "heading_tag": "h2",
-        "subheading": "<p>Meet your new go-to for the best wedding skincare - featuring hero products for the bride and glow-boosting bridal party skincare picks, thoughtfully curated for every moment leading up to the big day.</p>",
+        "subheading": "<p>Shop individual targeted boosters or opt for limited-edition bundles like the complete five-piece collection for a fully customizable routine.</p>",
         "link": "",
         "link_text": "",
         "maximum_collections": 6,
@@ -173,7 +281,7 @@
   "order": [
     "main",
     "image_hero_BLgiPa",
-    "image_hero_brDhHT",
+    "slideshow_rkbHgp",
     "promo_collection_DGNzKM"
   ]
 }
