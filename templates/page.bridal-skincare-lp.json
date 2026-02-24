@@ -33,7 +33,7 @@
           "type": "heading",
           "settings": {
             "title": "Boosted Skin.<br>Brighter Days.",
-            "heading_tag": "h6",
+            "heading_tag": "h2",
             "heading_font_class": "fs-heading-display-1"
           }
         },
@@ -108,7 +108,7 @@
         "autoplay_enabled": true,
         "autoplay_delay": 4,
         "color_background": "#000000",
-        "color_text": "#FFFFFF"
+        "color_text": "#ffffff"
       }
     },
     "slideshow_rkbHgp": {
@@ -211,7 +211,7 @@
             "text_color": "#000000",
             "button_background_color": "#000000",
             "button_text_color": "#ffffff",
-            "color_overlay": "#000",
+            "color_overlay": "#000000",
             "color_overlay_gradient": "",
             "overlay_opacity": 0
           }
@@ -245,7 +245,7 @@
             "text_color": "#000000",
             "button_background_color": "#000000",
             "button_text_color": "#ffffff",
-            "color_overlay": "#000",
+            "color_overlay": "#000000",
             "color_overlay_gradient": "",
             "overlay_opacity": 0
           }
@@ -279,7 +279,7 @@
             "text_color": "#000000",
             "button_background_color": "#000000",
             "button_text_color": "#ffffff",
-            "color_overlay": "#000",
+            "color_overlay": "#000000",
             "color_overlay_gradient": "",
             "overlay_opacity": 0
           }
@@ -301,7 +301,7 @@
         "enable_autoplay": true,
         "duration_autoplay": 6,
         "navigation_alignment": "center",
-        "navigation_color_foreground": "#fff",
+        "navigation_color_foreground": "#ffffff",
         "navigation_color_background": "",
         "navigation_background_opacity": 100,
         "enable_animation": true,
