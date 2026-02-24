@@ -295,7 +295,7 @@
       "custom_css": [],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
-        "image_aspect": "custom",
+        "image_aspect": "original",
         "desktop_height": 50,
         "mobile_height": 50,
         "enable_autoplay": true,
