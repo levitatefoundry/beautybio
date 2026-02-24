@@ -23,6 +23,7 @@
       "blocks": {
         "subheading_Tiabew": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "subheading": "YOUR GLOW, PERSONALIZED.",
             "subheading_tag": "h6",
@@ -32,7 +33,7 @@
         "heading_jLfJFX": {
           "type": "heading",
           "settings": {
-            "title": "Boosted Skin.<br>Brighter Days.",
+            "title": "Your Go-To Bridal<br>Skincare Destination",
             "heading_tag": "h2",
             "heading_font_class": "fs-heading-display-3"
           }
@@ -40,7 +41,7 @@
         "text_rzTMij": {
           "type": "text",
           "settings": {
-            "text": "<p>Five targeted boosters designed to layer seamlessly<br/>into your routine – so you can customize your glow<br/>based on what your skin needs today.</p>",
+            "text": "<p>Discover the best wedding skincare by goal, moment, or role – <br/>featuring editor-favorite essentials for the bride, bachelorette, <br/>and glow-ready bridal party skincare picks</p>",
             "text_font_class": "fs-body-100"
           }
         },
@@ -48,7 +49,7 @@
           "type": "button",
           "settings": {
             "link": "#promo-collection-grid",
-            "link_text": "SHOP BOOSTERS",
+            "link_text": "BROWSE BRIDAL FAVES",
             "button_style": "btn--primary"
           }
         }
@@ -69,12 +70,12 @@
         "image_aspect": "original",
         "desktop_height": 100,
         "mobile_height": 100,
-        "image": "shopify://shop_images/BBS_LandingPage_Boosters_Desktop-Header.jpg",
-        "image_mobile": "shopify://shop_images/BBS_LandingPage_Boosters_Mobile-Header.jpg",
+        "image": "shopify://shop_images/BBS_Bridal_HeaderImage_022026.jpg",
+        "image_mobile": "shopify://shop_images/BBS_Bridal_HeaderImage_022026-Mobile.jpg",
         "focal_point": "image_presentation",
         "mobile_focal_point": "image_presentation",
         "media_link": "",
-        "text_position": "flex-start_center",
+        "text_position": "flex-end_center",
         "text_position_mobile": "center_flex-start",
         "show-checkboxes": false,
         "text_color": "#000000",
@@ -83,6 +84,78 @@
         "color_overlay": "#000000",
         "color_overlay_gradient": "",
         "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "lp_image_banner_eMN7LN": {
+      "type": "lp-image-banner",
+      "name": "LP Image Banner",
+      "settings": {
+        "heading": "Find Your Wedding Skincare Essentials",
+        "text": "A streamlined way to discover skincare for wedding and bridal party skincare favorites – no guesswork, just glow.",
+        "button_text": "",
+        "button_url": "",
+        "main_image": "shopify://shop_images/BBS_Bridal_Block2-Image_022026.jpg",
+        "main_image_mob": "shopify://shop_images/BBS_Bridal_Block2-Image_022026-Mobile.jpg",
+        "background_color": "#FFFFFF",
+        "padding_top_desktop": 30,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "image_hero_LfBPKz": {
+      "type": "image-hero",
+      "blocks": {
+        "accent_7QrjnV": {
+          "type": "accent",
+          "disabled": true,
+          "settings": {
+            "accent": "Accent"
+          }
+        },
+        "heading_AwU6WT": {
+          "type": "heading",
+          "settings": {
+            "title": "Image hero",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "text_CDg4EU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use these sections to promote a particular feature with editorial photography.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "accent_7QrjnV",
+        "heading_AwU6WT",
+        "text_CDg4EU"
+      ],
+      "disabled": true,
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "image": "shopify://shop_images/BBS_Bridal_Block2-Image_022026.jpg",
+        "image_mobile": "shopify://shop_images/BBS_Bridal_Block2-Image_022026-Mobile.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "show-checkboxes": false,
+        "text_color": "#FFFFFF",
+        "button_background_color": "#FFFFFF",
+        "button_text_color": "#000000",
+        "color_overlay": "#000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 40,
         "enable_animation": true,
         "section_padding": "section--vertical-padding-none"
       }
@@ -102,6 +175,7 @@
       "block_order": [
         "announcement_dh7hLP"
       ],
+      "disabled": true,
       "name": "Announcement bar",
       "settings": {
         "enable_sticky_announcement_bar": "never",
@@ -292,6 +366,7 @@
         "slide_4bH4kj",
         "slide_X6A6B9"
       ],
+      "disabled": true,
       "custom_css": [],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
@@ -314,7 +389,7 @@
         "collection_cgtczK": {
           "type": "collection",
           "settings": {
-            "collection": "boosters"
+            "collection": "bridal-faves"
           }
         }
       },
@@ -327,9 +402,9 @@
       ],
       "name": "Promo Collection Grid",
       "settings": {
-        "heading": "Build Your Boosted Routine",
+        "heading": "The Bridal Beauty Breakdown",
         "heading_tag": "h2",
-        "subheading": "<p>Shop individual targeted boosters or opt for limited-edition bundles like the complete five-piece collection for a fully customizable routine.</p>",
+        "subheading": "<p>Meet your new go-to for the best wedding skincare – featuring hero products for the bride and glow-boosting bridal party skincare picks, thoughtfully curated every moment leading up to the big day.</p>",
         "link": "",
         "link_text": "",
         "maximum_collections": 10,
@@ -344,6 +419,8 @@
   "order": [
     "main",
     "image_hero_BLgiPa",
+    "lp_image_banner_eMN7LN",
+    "image_hero_LfBPKz",
     "announcement_bar_yM6d9w",
     "slideshow_rkbHgp",
     "promo_collection_DGNzKM"
