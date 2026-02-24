@@ -332,7 +332,7 @@
         "subheading": "<p>Shop individual targeted boosters or opt for limited-edition bundles like the complete five-piece collection for a fully customizable routine.</p>",
         "link": "",
         "link_text": "",
-        "maximum_collections": 6,
+        "maximum_collections": 10,
         "columns": "3",
         "mobile_columns": "1",
         "enable_animation": true,
