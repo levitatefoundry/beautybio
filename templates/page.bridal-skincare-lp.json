@@ -116,6 +116,7 @@
       "blocks": {
         "slide_WafPC9": {
           "type": "slide",
+          "name": "Clarifying Booster",
           "settings": {
             "image": "shopify://shop_images/BBS_LandingPage_Boosters_04_99d1e5a0-6aa4-44e4-8ed3-e7af6e95694a.jpg",
             "image_mobile": "shopify://shop_images/BBS_LandingPage_Boosters_03_cc7e172b-7d2a-42ca-961b-7add7eb0ab0b.jpg",
@@ -149,6 +150,7 @@
         },
         "slide_xqyLGV": {
           "type": "slide",
+          "name": "Plumping Booster",
           "settings": {
             "image": "shopify://shop_images/BBS_LandingPage_Boosters_Desktop-Plumping_04.jpg",
             "image_mobile": "shopify://shop_images/BBS_LandingPage_Boosters-Mobile-Plumping.jpg",
@@ -182,6 +184,7 @@
         },
         "slide_r4npDF": {
           "type": "slide",
+          "name": "Brightening Booster",
           "settings": {
             "image": "shopify://shop_images/BBS_LandingPage_Boosters_Desktop-Brightening_05.jpg",
             "image_mobile": "shopify://shop_images/BBS_LandingPage_Boosters_Mobile-Brightening.jpg",
@@ -215,6 +218,7 @@
         },
         "slide_4bH4kj": {
           "type": "slide",
+          "name": "Hydrating Booster",
           "settings": {
             "image": "shopify://shop_images/BBS_LandingPage_Boosters_04.jpg",
             "image_mobile": "shopify://shop_images/BBS_LandingPage_Boosters_03.jpg",
@@ -248,12 +252,13 @@
         },
         "slide_X6A6B9": {
           "type": "slide",
+          "name": "Smoothing Booster",
           "settings": {
             "image": "shopify://shop_images/BBS_LandingPage_Boosters_Smoothing_04.jpg",
             "image_mobile": "shopify://shop_images/BBS_LandingPage_Boosters_Smoothing_03.jpg",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
-            "media_link": "shopify://products/hydrating-booster",
+            "media_link": "shopify://products/smoothing-booster",
             "text_position": "flex-end_center",
             "text_position_mobile": "center_flex-start",
             "accent": "",
