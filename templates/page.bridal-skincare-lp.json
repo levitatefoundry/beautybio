@@ -99,7 +99,7 @@
         "main_image": "shopify://shop_images/BBS_Bridal_Block2-Image_022026.jpg",
         "main_image_mob": "shopify://shop_images/BBS_Bridal_Block2-Image_022026-Mobile.jpg",
         "background_color": "#FFFFFF",
-        "padding_top_desktop": 25,
+        "padding_top_desktop": 40,
         "padding_bottom_desktop": 0,
         "padding_top_mobile": 30,
         "padding_bottom_mobile": 0
