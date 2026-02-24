@@ -42,7 +42,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Discover the best wedding skincare by goal, moment, or role – <br/>featuring editor-favorite essentials for the bride, bachelorette, <br/>and glow-ready bridal party skincare picks</p>",
-            "text_font_class": "fs-body-100"
+            "text_font_class": "fs-body-75"
           }
         },
         "button_9QqCjg": {
@@ -103,61 +103,6 @@
         "padding_bottom_desktop": 0,
         "padding_top_mobile": 30,
         "padding_bottom_mobile": 0
-      }
-    },
-    "image_hero_LfBPKz": {
-      "type": "image-hero",
-      "blocks": {
-        "accent_7QrjnV": {
-          "type": "accent",
-          "disabled": true,
-          "settings": {
-            "accent": "Accent"
-          }
-        },
-        "heading_AwU6WT": {
-          "type": "heading",
-          "settings": {
-            "title": "Image hero",
-            "heading_tag": "h2",
-            "heading_font_class": "fs-heading-display-2"
-          }
-        },
-        "text_CDg4EU": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Use these sections to promote a particular feature with editorial photography.</p>",
-            "text_font_class": "fs-body-100"
-          }
-        }
-      },
-      "block_order": [
-        "accent_7QrjnV",
-        "heading_AwU6WT",
-        "text_CDg4EU"
-      ],
-      "disabled": true,
-      "name": "t:sections.image_hero.presets.name",
-      "settings": {
-        "image_aspect": "custom",
-        "desktop_height": 100,
-        "mobile_height": 100,
-        "image": "shopify://shop_images/BBS_Bridal_Block2-Image_022026.jpg",
-        "image_mobile": "shopify://shop_images/BBS_Bridal_Block2-Image_022026-Mobile.jpg",
-        "focal_point": "image_presentation",
-        "mobile_focal_point": "image_presentation",
-        "media_link": "",
-        "text_position": "center_center",
-        "text_position_mobile": "center_center",
-        "show-checkboxes": false,
-        "text_color": "#ffffff",
-        "button_background_color": "#ffffff",
-        "button_text_color": "#000000",
-        "color_overlay": "#000000",
-        "color_overlay_gradient": "",
-        "overlay_opacity": 40,
-        "enable_animation": true,
-        "section_padding": "section--vertical-padding-none"
       }
     },
     "announcement_bar_yM6d9w": {
@@ -420,7 +365,6 @@
     "main",
     "image_hero_BLgiPa",
     "lp_image_banner_eMN7LN",
-    "image_hero_LfBPKz",
     "announcement_bar_yM6d9w",
     "slideshow_rkbHgp",
     "promo_collection_DGNzKM"
