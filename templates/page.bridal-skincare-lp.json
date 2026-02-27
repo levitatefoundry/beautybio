@@ -90,6 +90,7 @@
     },
     "lp_image_banner_eMN7LN": {
       "type": "lp-image-banner",
+      "custom_css": [],
       "name": "LP Image Banner",
       "settings": {
         "heading": "Find Your Wedding Skincare Essentials",
