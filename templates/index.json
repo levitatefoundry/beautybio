@@ -85,7 +85,6 @@
         "slide_k7DmPd": {
           "type": "slide",
           "name": "3/1–3/31 Booster Bday Bundles",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/BoosterBirthdayBundles_03012026_HP_Desktop.jpg",
             "image_mobile": "shopify://shop_images/BoosterBirthdayBundles_03012026_HP_Mobile.jpg",
@@ -120,6 +119,7 @@
         "slide_HiNNMM": {
           "type": "slide",
           "name": "2/2-2/28 Blendrops Birthday",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/BlendropsBirthdayMonth_HP_Desktop.jpg",
             "image_mobile": "shopify://shop_images/BlendropsBirthdayMonth_HP_Mobile.jpg",
