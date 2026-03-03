@@ -279,15 +279,6 @@
         "content_width": "custom",
         "custom_content_width": 600
       }
-    },
-    "custom_liquid_LdTQyQ": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom_liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<script>\n/**\n * Yottie Nav — Tab Role Fix\n * Paste as inline <script> before </body> in theme.liquid\n */\n(function () {\n\n  function fix() {\n    var list = document.querySelector('.yottie-widget-nav-list');\n    if (!list || list.getAttribute('role') === 'tablist') return;\n\n    // 1. Make the <ul> a tablist\n    list.setAttribute('role', 'tablist');\n    list.setAttribute('aria-label', 'Video categories');\n\n    // 2. Fix each <li> and <a>\n    var items = list.querySelectorAll('li');\n    items.forEach(function (li) {\n      li.setAttribute('role', 'presentation');\n\n      var tab = li.querySelector('a');\n      if (!tab) return;\n\n      var isActive = li.classList.contains('yottie-active');\n\n      tab.setAttribute('role', 'tab');\n      tab.setAttribute('aria-selected', isActive ? 'true' : 'false');\n      tab.setAttribute('tabindex', isActive ? '0' : '-1');\n    });\n\n    // 3. Keep aria-selected in sync when Yottie toggles yottie-active\n    new MutationObserver(function () {\n      list.querySelectorAll('li').forEach(function (li) {\n        var tab = li.querySelector('a[role=\"tab\"]');\n        if (!tab) return;\n        var isActive = li.classList.contains('yottie-active');\n        tab.setAttribute('aria-selected', isActive ? 'true' : 'false');\n        tab.setAttribute('tabindex', isActive ? '0' : '-1');\n      });\n    }).observe(list, { subtree: true, attributes: true, attributeFilter: ['class'] });\n\n    // 4. Arrow key navigation between tabs\n    list.addEventListener('keydown', function (e) {\n      var tabs = Array.prototype.slice.call(list.querySelectorAll('a[role=\"tab\"]'));\n      var idx  = tabs.indexOf(document.activeElement);\n      if (idx === -1) return;\n\n      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {\n        e.preventDefault();\n        tabs[(idx + 1) % tabs.length].focus();\n      } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {\n        e.preventDefault();\n        tabs[(idx - 1 + tabs.length) % tabs.length].focus();\n      }\n    });\n  }\n\n  // Poll until Yottie renders the nav\n  var attempts = 0;\n  var poll = setInterval(function () {\n    if (document.querySelector('.yottie-widget-nav-list a[data-yt-id]') || ++attempts > 40) {\n      clearInterval(poll);\n      fix();\n    }\n  }, 250);\n\n}());\n</script>",
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
     }
   },
   "order": [
@@ -298,7 +289,6 @@
     "image_hero_Yy9THn",
     "rich_text_9yiA8B",
     "elfsight_widget_erDPpL",
-    "rich-text-2",
-    "custom_liquid_LdTQyQ"
+    "rich-text-2"
   ]
 }
