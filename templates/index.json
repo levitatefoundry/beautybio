@@ -50,6 +50,7 @@
         "slide_p6XVVV": {
           "type": "slide",
           "name": "3/6–3/7 Intl Womens Day",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/IntlWomensDay_20OffSitewide_03062026_HP_Desktop.jpg",
             "image_mobile": "shopify://shop_images/IntlWomensDay_20OffSitewide_03062026_HP_Mobile.jpg",
@@ -84,6 +85,7 @@
         "slide_qH3HeK": {
           "type": "slide",
           "name": "3/8–3/9 Intl Women's Day",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/IntlWomensDay_20OffSitewide_03062026_HP_Desktop_Alt.jpg",
             "image_mobile": "shopify://shop_images/IntlWomensDay_20OffSitewide_03062026_HP_Mobile_Alt.jpg",
@@ -256,7 +258,6 @@
         "slide_yT84rQ": {
           "type": "slide",
           "name": "Skin Quiz",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/SkinQuiz_HP-Desktop.jpg",
             "image_mobile": "shopify://shop_images/SkinQuiz_HP-Mobile.jpg",
