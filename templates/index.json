@@ -21,7 +21,7 @@
             "image_mobile": "shopify://shop_images/BoostersBOGO_03192026_HP_Mobile.jpg",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
-            "media_link": "",
+            "media_link": "shopify://products/clarifying-booster",
             "text_position": "center_center",
             "text_position_mobile": "center_center",
             "accent": "",
