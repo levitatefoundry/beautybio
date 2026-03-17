@@ -50,6 +50,7 @@
         "slide_nU74nN": {
           "type": "slide",
           "name": "3/13–16 World Sleep Day",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/BBS_HomePage_WorldSleepDay_03132026_Desktop.jpg",
             "image_mobile": "shopify://shop_images/BBS_HomePage_WorldSleepDay_03132026_Mobile.jpg",
