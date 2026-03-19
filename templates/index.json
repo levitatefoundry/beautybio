@@ -17,7 +17,7 @@
           "name": "3/19–23 BOGO Boosters",
           "settings": {
             "image": "shopify://shop_images/BoostersBOGO_03192026_HP_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/BoostersBOGO_03192026_HP_Mobile.jpg",
+            "image_mobile": "shopify://shop_images/BoostersBOGO_03192026_HPMobile.jpg",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
             "media_link": "shopify://products/clarifying-booster",
