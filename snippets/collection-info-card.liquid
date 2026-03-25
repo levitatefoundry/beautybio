@@ -1,0 +1,49 @@
+{%- liquid
+  assign card_id = 'collection-info-card-' | append: card.id
+
+  assign bg_image = card.background_image.value | default: card.background_image
+  assign bg_size = card.background_size.value | default: card.background_size | default: 'cover'
+  assign link_url = card.url.value | default: card.url
+
+  assign aspect_ratio = product_listing_aspect_ratio | default: 'square'
+-%}
+
+{% if as_product_card %}
+  {%- comment -%} Same size as product card, one grid cell, product-card look {%- endcomment -%}
+  <div
+    id="{{ card_id }}"
+    class="collection-info-card collection-info-card--product-cell animation animation--item"
+    style="--collection-info-card-bg-size: {{ bg_size }};"
+  >
+    <div class="collection-info-card__card">
+      {%- if link_url != blank -%}
+        <a
+          href="{{ link_url }}"
+          class="collection-info-card__link"
+          aria-label="View"
+        ></a>
+      {%- endif -%}
+
+      <div class="collection-info-card__media">
+        <div class="collection-info-card__media-wrap aspect-ratio--{{ aspect_ratio | default: 'square' }}" style="{% if bg_image != blank %}--collection-info-card-bg-image: url({{ bg_image | image_url: width: 600 }});{% endif %}">
+        </div>
+      </div>
+    </div>
+  </div>
+{% else %}
+  {%- comment -%} Banner (position 50) {%- endcomment -%}
+  <div
+    id="{{ card_id }}"
+    class="collection-info-card"
+    style="
+      --collection-info-card-bg-size: {{ bg_size }};
+      {% if bg_image != blank %}
+        --collection-info-card-bg-image: url({{ bg_image | image_url: width: 1600 }});
+      {% endif %}
+    "
+  >
+    {%- if link_url != blank -%}
+      <a href="{{ link_url }}" class="collection-info-card__banner-link" aria-label="View"></a>
+    {%- endif -%}
+  </div>
+{% endif %}
