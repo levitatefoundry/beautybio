@@ -49,8 +49,19 @@
                   {{ section.settings.filter_all_text | default: "View All" }}
                 </button>
 
+                {% if section.settings.custom_button_title != blank and section.settings.custom_button_url != blank %}
+                  <span class="bundle-filter__separator" style="order: 997;">|</span>
+                  <a
+                    href="{{ section.settings.custom_button_url }}"
+                    class="bundle-filter__item bundle-filter__custom-button"
+                    style="order: 998;"
+                  >
+                    {{ section.settings.custom_button_title }}
+                  </a>
+                {% endif %}
+
                 {%- if section.settings.show_remove_filter -%}
-                  <button class="bundle-filter__remove" data-filter-remove style="display: none;">
+                  <button class="bundle-filter__remove" data-filter-remove style="display: none;" style="order: 999;">
                     {{ section.settings.remove_filter_text | default: "Remove Filter" }}
                   </button>
                 {%- endif -%}
@@ -89,6 +100,50 @@
                 </div>
                 </div>
             </div>
+            {%- endif -%}
+
+            {%- assign bundle_info_cards = collection.metafields.custom.collection_info_card.value -%}
+            {%- if bundle_info_cards != blank -%}
+              <div class="product-bundle-info-card-wrapper" data-bundle-static>
+                <div class="bundle-info-cards">
+                  {%- for card in bundle_info_cards -%}
+                    {%- liquid
+                      assign image_obj = card.background_image.value | default: card.background_image
+                      assign link_url = card.url.value | default: card.url
+                      assign image_width = image_obj.width | default: 800
+                      assign image_height = image_obj.height | default: 800
+                    -%}
+
+                    {%- if link_url != blank -%}
+                      <a class="bundle-info-card" href="{{ link_url }}">
+                        {%- if image_obj != blank -%}
+                          <img
+                            class="bundle-info-card__img"
+                            src="{{ image_obj | image_url: width: 800 }}"
+                            width="{{ image_width }}"
+                            height="{{ image_height }}"
+                            alt=""
+                            loading="lazy"
+                          >
+                        {%- endif -%}
+                      </a>
+                    {%- else -%}
+                      <div class="bundle-info-card" role="presentation">
+                        {%- if image_obj != blank -%}
+                          <img
+                            class="bundle-info-card__img"
+                            src="{{ image_obj | image_url: width: 800 }}"
+                            width="{{ image_width }}"
+                            height="{{ image_height }}"
+                            alt=""
+                            loading="lazy"
+                          >
+                        {%- endif -%}
+                      </div>
+                    {%- endif -%}
+                  {%- endfor -%}
+                </div>
+              </div>
             {%- endif -%}
 
             <div class="product-bundle-blocks__content">
@@ -141,6 +196,20 @@
       "id": "remove_filter_text",
       "label": "Remove Filter Text",
       "default": "Remove Filter"
+    },
+    {
+      "type": "header",
+      "content": "Custom Button"
+    },
+    {
+      "type": "text",
+      "id": "custom_button_title",
+      "label": "Button Title"
+    },
+    {
+      "type": "url",
+      "id": "custom_button_url",
+      "label": "Custom Button URL"
     },
     {
       "type": "header",

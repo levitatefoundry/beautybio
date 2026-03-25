@@ -14,6 +14,8 @@
   assign chip_options = settings.chip_options | downcase | split: ', '
 -%}
 
+{{ 'collection-info-card.css' | asset_url | stylesheet_tag }}
+
 <section
   data-section-id="{{ section.id }}"
   data-section-type="collection"
@@ -110,6 +112,8 @@
                   {%- render 'loader' -%}
                 </div>
 
+                {%- assign collection_info_cards = collection.metafields.custom.collection_info_card.value -%}
+
                 <div
                   id="root"
                   class="animation--collection-items"
@@ -125,9 +129,21 @@
                       {% endif %}
                     "
                   >
+                    {% assign product_display_index = 0 %}
+
+                    {%- if collection.products_count > 0 -%}
+                      {%- for card in collection_info_cards -%}
+                        {%- assign card_position = card.position.value | default: card.position | default: 0 | plus: 0 -%}
+                        {%- if card_position == 0 -%}
+                          {%- render 'collection-info-card', card: card, as_product_card: true, product_listing_aspect_ratio: settings.product_listing_aspect_ratio -%}
+                        {%- endif -%}
+                      {%- endfor -%}
+                    {%- endif -%}
+
                     {% for product in collection.products %}
 
                       {% if product.type == 'FREEGIFT_HIDDEN' %}{% continue %}{% endif %}
+                      {% assign product_display_index = product_display_index | plus: 1 %}
                       
                       {% render 'product-item',
                         prod: product,
@@ -136,6 +152,13 @@
                         aspect_ratio: settings.product_listing_aspect_ratio,
                         has_grid_reveal: true
                       %}
+
+                      {%- for card in collection_info_cards -%}
+                        {%- assign card_position = card.position.value | default: card.position | default: 0 | plus: 0 -%}
+                        {%- if card_position == product_display_index -%}
+                          {%- render 'collection-info-card', card: card, as_product_card: true, product_listing_aspect_ratio: settings.product_listing_aspect_ratio -%}
+                        {%- endif -%}
+                      {%- endfor -%}
                     {% else %}
                       <div class="collection__empty">
                         <div>{{ 'collections.general.no_products' | t }}</div>
@@ -181,6 +204,13 @@
                     </div>
                   {% endif %}
                 </div>
+
+                {%- for card in collection_info_cards -%}
+                  {%- assign card_position = card.position.value | default: card.position | default: 0 | plus: 0 -%}
+                  {%- if card_position == 50 -%}
+                    {%- render 'collection-info-card', card: card -%}
+                  {%- endif -%}
+                {%- endfor -%}
               </div>
             </div>
           </div>
