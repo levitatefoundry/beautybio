@@ -166,7 +166,7 @@
         "color_text_transparent": "#ffffff",
         "color_count_transparent": "#000000",
         "feature_button_title": "Take The Quiz",
-        "feature_button_link": "/pages/quiz"
+        "feature_button_link": "shopify://pages/quiz"
       }
     }
   },
