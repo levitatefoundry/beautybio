@@ -164,7 +164,9 @@
         "enable_transparent_template_list": "",
         "logo_transparent": "shopify://shop_images/BeautyBioLogo_White.png",
         "color_text_transparent": "#ffffff",
-        "color_count_transparent": "#000000"
+        "color_count_transparent": "#000000",
+        "feature_button_title": "Take The Quiz",
+        "feature_button_link": "/pages/quiz"
       }
     }
   },
