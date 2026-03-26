@@ -400,13 +400,15 @@
       {%- endif -%}
 
       <div class="header__row-segment header__row-segment-desktop right">
+        {% if section.settings.feature_button_title != blank and section.settings.feature_button_link != blank %}
         <div class="button-block__button button-block__button--justify-right button-block__button--justify-mobile-right">
           <a
-            href="/pages/quiz"
+            href="{{ section.settings.feature_button_link }}"
             class="btn btn--overlay btn--primary btn--small">
-            <span class="add-to-cart-product">Take The Quiz</span>
+            <span class="add-to-cart-product">{{ section.settings.feature_button_title }}</span>
           </a>
         </div>
+        {% endif %}
         <div class="header__accessibility-column">
           <a class="header__accessibility-link" href="/pages/beautybio-accessibility-statement">Accessibility Statement</a>
           <div class="header__logo-row">
@@ -724,6 +726,20 @@
       "type": "color",
       "label": "t:sections.header.settings.color_count_transparent.label",
       "default": "#000"
+    },
+    {
+      "type": "header",
+      "content": "Feature button settings"
+    },
+    {
+      "type": "text",
+      "id": "feature_button_title",
+      "label": "Button title"
+    },
+    {
+      "type": "url",
+      "id": "feature_button_link",
+      "label": "Button link"
     }
   ],
   "blocks": [
