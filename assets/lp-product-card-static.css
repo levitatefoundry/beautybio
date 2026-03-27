@@ -1,7 +1,6 @@
 .lp-product-card-static {
   height: 100%;
   width: 100%;
-  pointer-events: none; /* Makes the card non-clickable */
 }
 
 .lp-product-card-static__inner {

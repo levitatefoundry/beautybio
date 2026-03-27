@@ -4,7 +4,8 @@
 {%- enddoc -%}
 
 {%- liquid
-  assign _product = block_settings.product
+  assign _product = block_settings.product | default: block_settings
+  assign _product_url = _product.url
   assign _product_media = block_settings.custom_product_image | default: _product.featured_image
   assign _product_title = block_settings.custom_title | default: _product.title
   assign _product_description = block_settings.custom_description
@@ -12,7 +13,11 @@
 -%}
 
 <div class="lp-product-card-static">
-  <div class="lp-product-card-static__inner">
+  {% if collection != blank %}
+    <a class="lp-product-card-static__inner" href="{{ _product_url }}">
+  {% else %}
+    <div class="lp-product-card-static__inner">
+  {% endif %}
     {% if _badge_title != blank %}
       <div class="lp-product-card-static__badge">
         {{ _badge_title }}
@@ -49,6 +54,10 @@
         </div>
       {% endif %}
     </div>
-  </div>
+  {% if collection != blank %}
+    </a>
+  {% else %}
+    </div>
+  {% endif %}
 </div>
 

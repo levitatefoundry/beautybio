@@ -31,11 +31,19 @@
       {% endif %}
 
       <div class="lp-product-grid__items" style="--columns-desktop: {{ section.settings.columns_desktop }}; --columns-mobile: {{ section.settings.columns_mobile }};">
-        {% for block in section.blocks %}
-          <div class="lp-product-grid__item" {{ block.shopify_attributes }}>
-            {%- render 'lp-product-card-static', block_settings: block.settings -%}
-          </div>
-        {% endfor %}
+        {% if section.blocks.size > 0 %}
+          {% for block in section.blocks %}
+            <div class="lp-product-grid__item" {{ block.shopify_attributes }}>
+              {%- render 'lp-product-card-static', block_settings: block.settings -%}
+            </div>
+          {% endfor %}
+        {% elsif section.settings.collection != blank %}
+          {% for product in section.settings.collection.products %}
+            <div class="lp-product-grid__item">
+              {%- render 'lp-product-card-static', block_settings: product -%}
+            </div>
+          {% endfor %}
+        {% endif %}
       </div>
 
       {% if section.settings.loading_text != blank %}
@@ -67,6 +75,11 @@
       "type": "textarea",
       "id": "loading_text",
       "label": "Loading text"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection (used when no blocks are added)"
     },
     {
       "type": "range",
