@@ -37,23 +37,6 @@
         "custom_background_size": ""
       }
     },
-    "lp_product_grid_kjqqfj": {
-      "type": "lp-product-grid",
-      "name": "LP Product Grid",
-      "settings": {
-        "heading": "",
-        "description": "",
-        "loading_text": "",
-        "collection": "{{ collection }}",
-        "columns_desktop": 3,
-        "columns_mobile": "2",
-        "background_color": "#ffffff",
-        "padding_top": 50,
-        "padding_bottom": 60,
-        "padding_top_mob": 40,
-        "padding_bottom_mob": 40
-      }
-    },
     "lp_glow_drops_countdown_U4bjYH": {
       "type": "lp-glow-drops-countdown",
       "name": "LP Glow Drops Countdown",
@@ -117,7 +100,6 @@
   "order": [
     "main",
     "lp_hero_banner_3txGLM",
-    "lp_product_grid_kjqqfj",
     "lp_glow_drops_countdown_U4bjYH",
     "lp_video_list_UdJ4gc"
   ]
