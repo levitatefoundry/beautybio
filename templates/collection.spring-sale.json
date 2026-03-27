@@ -44,14 +44,26 @@
           "type": "products-bundle",
           "name": "Products bundle",
           "settings": {
-            "bundle_title": "Tools",
-            "filter_title": "Tools",
+            "bundle_title": "0% Off",
+            "filter_title": "0% Off",
             "bundle_description": "",
             "display_view_more": false,
             "products_row_per_view": "2"
           },
           "blocks": {
             "product_card_J6PaVr": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "the-glofacial-complete-set",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            },
+            "product_card_TmFnbK": {
               "type": "product-card",
               "name": "Product card",
               "settings": {
@@ -62,28 +74,12 @@
                 "hide_in_view_all": false
               },
               "blocks": {}
-            }
-          },
-          "block_order": [
-            "product_card_J6PaVr"
-          ]
-        },
-        "products_bundle_y6Gd7j": {
-          "type": "products-bundle",
-          "name": "Products bundle",
-          "settings": {
-            "bundle_title": "Attachments",
-            "filter_title": "Attachments",
-            "bundle_description": "",
-            "display_view_more": false,
-            "products_row_per_view": "2"
-          },
-          "blocks": {
-            "product_card_hKRcme": {
+            },
+            "product_card_pMee7Q": {
               "type": "product-card",
               "name": "Product card",
               "settings": {
-                "product": "face-microneedling-roller-attachment",
+                "product": "the-glopro-body-bundle",
                 "custom_title": "",
                 "custom_price": "",
                 "custom_compare_price": "",
@@ -91,83 +87,11 @@
               },
               "blocks": {}
             },
-            "product_card_imMhww": {
+            "product_card_ETeGnP": {
               "type": "product-card",
               "name": "Product card",
               "settings": {
-                "product": "body-microneedling-roller-attachment",
-                "custom_title": "",
-                "custom_price": "",
-                "custom_compare_price": "",
-                "hide_in_view_all": false
-              },
-              "blocks": {}
-            },
-            "product_card_wWHAbq": {
-              "type": "product-card",
-              "name": "Product card",
-              "settings": {
-                "product": "eye-microneedling-roller-attachment",
-                "custom_title": "",
-                "custom_price": "",
-                "custom_compare_price": "",
-                "hide_in_view_all": false
-              },
-              "blocks": {}
-            },
-            "product_card_PjCKhw": {
-              "type": "product-card",
-              "name": "Product card",
-              "settings": {
-                "product": "glopro-scalp-attachment",
-                "custom_title": "",
-                "custom_price": "",
-                "custom_compare_price": "",
-                "hide_in_view_all": false
-              },
-              "blocks": {}
-            },
-            "product_card_zAtm9E": {
-              "type": "product-card",
-              "name": "Product card",
-              "settings": {
-                "product": "lip-microneedling-roller-attachment",
-                "custom_title": "",
-                "custom_price": "",
-                "custom_compare_price": "",
-                "hide_in_view_all": false
-              },
-              "blocks": {}
-            },
-            "product_card_tN7FRQ": {
-              "type": "product-card",
-              "name": "Product card",
-              "settings": {
-                "product": "glopro-cryo-roller-duo",
-                "custom_title": "",
-                "custom_price": "",
-                "custom_compare_price": "",
-                "hide_in_view_all": false
-              },
-              "blocks": {}
-            },
-            "product_card_6qGadj": {
-              "type": "product-card",
-              "name": "Product card",
-              "settings": {
-                "product": "rose-quartz-roller-body-attachment",
-                "custom_title": "",
-                "custom_price": "",
-                "custom_compare_price": "",
-                "hide_in_view_all": false
-              },
-              "blocks": {}
-            },
-            "product_card_HBMDi9": {
-              "type": "product-card",
-              "name": "Product card",
-              "settings": {
-                "product": "glopro-meet-the-microtips-attachment-set-bundle",
+                "product": "glopro-body-attachment-the-sculptor",
                 "custom_title": "",
                 "custom_price": "",
                 "custom_compare_price": "",
@@ -177,32 +101,28 @@
             }
           },
           "block_order": [
-            "product_card_hKRcme",
-            "product_card_imMhww",
-            "product_card_wWHAbq",
-            "product_card_PjCKhw",
-            "product_card_zAtm9E",
-            "product_card_tN7FRQ",
-            "product_card_6qGadj",
-            "product_card_HBMDi9"
+            "product_card_J6PaVr",
+            "product_card_TmFnbK",
+            "product_card_pMee7Q",
+            "product_card_ETeGnP"
           ]
         },
-        "products_bundle_CEhj6d": {
+        "products_bundle_nj4Y47": {
           "type": "products-bundle",
           "name": "Products bundle",
           "settings": {
-            "bundle_title": "Kits",
-            "filter_title": "Kits",
+            "bundle_title": "30% Off",
+            "filter_title": "30% Off",
             "bundle_description": "",
             "display_view_more": false,
             "products_row_per_view": "2"
           },
           "blocks": {
-            "product_card_wmCLiz": {
+            "product_card_EcaTYE": {
               "type": "product-card",
               "name": "Product card",
               "settings": {
-                "product": "let-it-glo",
+                "product": "the-glofacial-complete-set",
                 "custom_title": "",
                 "custom_price": "",
                 "custom_compare_price": "",
@@ -210,19 +130,7 @@
               },
               "blocks": {}
             },
-            "product_card_eWbEwM": {
-              "type": "product-card",
-              "name": "Product card",
-              "settings": {
-                "product": "glopro-geo-print-pink-cloud-set",
-                "custom_title": "",
-                "custom_price": "",
-                "custom_compare_price": "",
-                "hide_in_view_all": false
-              },
-              "blocks": {}
-            },
-            "product_card_Vih8g6": {
+            "product_card_yHm6zd": {
               "type": "product-card",
               "name": "Product card",
               "settings": {
@@ -234,7 +142,31 @@
               },
               "blocks": {}
             },
-            "product_card_gMjnEA": {
+            "product_card_UhPHCy": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "glopro-pink-stripe-set-copy",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            },
+            "product_card_JDLmDT": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "glopro-geo-print-pink-cloud-set",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            },
+            "product_card_e83p7w": {
               "type": "product-card",
               "name": "Product card",
               "settings": {
@@ -246,43 +178,11 @@
               },
               "blocks": {}
             },
-            "product_card_ygG99j": {
+            "product_card_kbbyCe": {
               "type": "product-card",
               "name": "Product card",
               "settings": {
-                "product": "the-glopro-body-bundle",
-                "custom_title": "",
-                "custom_price": "",
-                "custom_compare_price": "",
-                "hide_in_view_all": false
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "product_card_wmCLiz",
-            "product_card_eWbEwM",
-            "product_card_Vih8g6",
-            "product_card_gMjnEA",
-            "product_card_ygG99j"
-          ]
-        },
-        "products_bundle_ATtKUW": {
-          "type": "products-bundle",
-          "name": "Products bundle",
-          "settings": {
-            "bundle_title": "Accessories",
-            "filter_title": "Accessories",
-            "bundle_description": "",
-            "display_view_more": false,
-            "products_row_per_view": "2"
-          },
-          "blocks": {
-            "product_card_y7jMzF": {
-              "type": "product-card",
-              "name": "Product card",
-              "settings": {
-                "product": "glopro-microneedling-stand",
+                "product": "eye-want-it-all-set-clean-white-glopro",
                 "custom_title": "",
                 "custom_price": "",
                 "custom_compare_price": "",
@@ -290,11 +190,11 @@
               },
               "blocks": {}
             },
-            "product_card_P4N7xH": {
+            "product_card_BzQkNq": {
               "type": "product-card",
               "name": "Product card",
               "settings": {
-                "product": "microneedling-skin-prep-pads",
+                "product": "let-it-glo",
                 "custom_title": "",
                 "custom_price": "",
                 "custom_compare_price": "",
@@ -304,16 +204,32 @@
             }
           },
           "block_order": [
-            "product_card_y7jMzF",
-            "product_card_P4N7xH"
+            "product_card_EcaTYE",
+            "product_card_yHm6zd",
+            "product_card_UhPHCy",
+            "product_card_JDLmDT",
+            "product_card_e83p7w",
+            "product_card_kbbyCe",
+            "product_card_BzQkNq"
           ]
+        },
+        "products_bundle_bkWzWP": {
+          "type": "products-bundle",
+          "name": "Products bundle",
+          "settings": {
+            "bundle_title": "Save Up To 30% Off",
+            "filter_title": "",
+            "bundle_description": "",
+            "display_view_more": false,
+            "products_row_per_view": "2"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "products_bundle_DXQKHe",
-        "products_bundle_y6Gd7j",
-        "products_bundle_CEhj6d",
-        "products_bundle_ATtKUW"
+        "products_bundle_nj4Y47",
+        "products_bundle_bkWzWP"
       ],
       "name": "Product Bundle Blocks",
       "settings": {
