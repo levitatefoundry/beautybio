@@ -166,18 +166,6 @@
         "padding_bottom_mob": 40
       }
     },
-    "lp_glow_drops_countdown_U4bjYH": {
-      "type": "lp-glow-drops-countdown",
-      "name": "LP Glow Drops Countdown",
-      "settings": {
-        "title": "The Glow Drops Soon.",
-        "countdown_title": "Black Friday Starts In:",
-        "countdown_end_date": "2025-11-28 00:00",
-        "background_image": "shopify://shop_images/Frame_1484581563.png",
-        "background_image_mobile": "shopify://shop_images/Frame_1484581563_1.png",
-        "background_color": "#fdf2f0"
-      }
-    },
     "lp_video_list_UdJ4gc": {
       "type": "lp-video-list",
       "blocks": {
@@ -230,7 +218,6 @@
     "main",
     "lp_hero_banner_3txGLM",
     "product_bundle_blocks_MJDkXy",
-    "lp_glow_drops_countdown_U4bjYH",
     "lp_video_list_UdJ4gc"
   ]
 }
