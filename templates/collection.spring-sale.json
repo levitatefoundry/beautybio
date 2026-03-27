@@ -41,16 +41,16 @@
       "type": "lp-product-grid",
       "name": "LP Product Grid",
       "settings": {
-        "heading": "Black Friday Starts Here",
-        "description": "<p>Get an exclusive first look at BeautyBio’s biggest BFCM savings of the year. These favorites will be marked down up to 50% off — with even more deals dropping soon.</p>",
-        "loading_text": "More coming soon...",
+        "heading": "",
+        "description": "",
+        "loading_text": "",
         "collection": "{{ collection }}",
         "columns_desktop": 3,
         "columns_mobile": "2",
         "background_color": "#ffffff",
-        "padding_top": 60,
+        "padding_top": 40,
         "padding_bottom": 60,
-        "padding_top_mob": 40,
+        "padding_top_mob": 25,
         "padding_bottom_mob": 40
       }
     },
