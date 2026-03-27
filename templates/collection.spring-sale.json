@@ -37,6 +37,299 @@
         "custom_background_size": ""
       }
     },
+    "product_bundle_blocks_MJDkXy": {
+      "type": "product-bundle-blocks",
+      "blocks": {
+        "products_bundle_DXQKHe": {
+          "type": "products-bundle",
+          "name": "Products bundle",
+          "settings": {
+            "bundle_title": "Tools",
+            "filter_title": "Tools",
+            "bundle_description": "",
+            "display_view_more": false,
+            "products_row_per_view": "2"
+          },
+          "blocks": {
+            "product_card_J6PaVr": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "glopro-microneedling-regeneration-roller-tool",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_card_J6PaVr"
+          ]
+        },
+        "products_bundle_y6Gd7j": {
+          "type": "products-bundle",
+          "name": "Products bundle",
+          "settings": {
+            "bundle_title": "Attachments",
+            "filter_title": "Attachments",
+            "bundle_description": "",
+            "display_view_more": false,
+            "products_row_per_view": "2"
+          },
+          "blocks": {
+            "product_card_hKRcme": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "face-microneedling-roller-attachment",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            },
+            "product_card_imMhww": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "body-microneedling-roller-attachment",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            },
+            "product_card_wWHAbq": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "eye-microneedling-roller-attachment",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            },
+            "product_card_PjCKhw": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "glopro-scalp-attachment",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            },
+            "product_card_zAtm9E": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "lip-microneedling-roller-attachment",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            },
+            "product_card_tN7FRQ": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "glopro-cryo-roller-duo",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            },
+            "product_card_6qGadj": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "rose-quartz-roller-body-attachment",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            },
+            "product_card_HBMDi9": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "glopro-meet-the-microtips-attachment-set-bundle",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_card_hKRcme",
+            "product_card_imMhww",
+            "product_card_wWHAbq",
+            "product_card_PjCKhw",
+            "product_card_zAtm9E",
+            "product_card_tN7FRQ",
+            "product_card_6qGadj",
+            "product_card_HBMDi9"
+          ]
+        },
+        "products_bundle_CEhj6d": {
+          "type": "products-bundle",
+          "name": "Products bundle",
+          "settings": {
+            "bundle_title": "Kits",
+            "filter_title": "Kits",
+            "bundle_description": "",
+            "display_view_more": false,
+            "products_row_per_view": "2"
+          },
+          "blocks": {
+            "product_card_wmCLiz": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "let-it-glo",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            },
+            "product_card_eWbEwM": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "glopro-geo-print-pink-cloud-set",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            },
+            "product_card_Vih8g6": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "glopro-white-geo-set",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            },
+            "product_card_gMjnEA": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "glopro-geo-print-pink-white-strip-set",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            },
+            "product_card_ygG99j": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "the-glopro-body-bundle",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_card_wmCLiz",
+            "product_card_eWbEwM",
+            "product_card_Vih8g6",
+            "product_card_gMjnEA",
+            "product_card_ygG99j"
+          ]
+        },
+        "products_bundle_ATtKUW": {
+          "type": "products-bundle",
+          "name": "Products bundle",
+          "settings": {
+            "bundle_title": "Accessories",
+            "filter_title": "Accessories",
+            "bundle_description": "",
+            "display_view_more": false,
+            "products_row_per_view": "2"
+          },
+          "blocks": {
+            "product_card_y7jMzF": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "glopro-microneedling-stand",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            },
+            "product_card_P4N7xH": {
+              "type": "product-card",
+              "name": "Product card",
+              "settings": {
+                "product": "microneedling-skin-prep-pads",
+                "custom_title": "",
+                "custom_price": "",
+                "custom_compare_price": "",
+                "hide_in_view_all": false
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_card_y7jMzF",
+            "product_card_P4N7xH"
+          ]
+        }
+      },
+      "block_order": [
+        "products_bundle_DXQKHe",
+        "products_bundle_y6Gd7j",
+        "products_bundle_CEhj6d",
+        "products_bundle_ATtKUW"
+      ],
+      "name": "Product Bundle Blocks",
+      "settings": {
+        "main_heading": "",
+        "enable_filter": true,
+        "filter_all_text": "View All",
+        "show_remove_filter": true,
+        "remove_filter_text": "Remove Filter",
+        "custom_button_title": "",
+        "custom_button_url": "",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_top_mob": 40,
+        "padding_bottom_mob": 40
+      }
+    },
     "lp_glow_drops_countdown_U4bjYH": {
       "type": "lp-glow-drops-countdown",
       "name": "LP Glow Drops Countdown",
@@ -100,6 +393,7 @@
   "order": [
     "main",
     "lp_hero_banner_3txGLM",
+    "product_bundle_blocks_MJDkXy",
     "lp_glow_drops_countdown_U4bjYH",
     "lp_video_list_UdJ4gc"
   ]
