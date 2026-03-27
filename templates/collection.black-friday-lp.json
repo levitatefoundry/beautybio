@@ -25,6 +25,7 @@
         "heading": "Black Friday + Cyber Monday Sneak Peek",
         "text": "The glow you’ve been waiting for — BeautyBio’s biggest event of the year is almost here.",
         "text_mob": "",
+        "content_width": 500,
         "primary_button_text": "",
         "primary_button_url": "",
         "secondary_button_text": "",
@@ -38,114 +39,12 @@
     },
     "lp_product_grid_kjqqfj": {
       "type": "lp-product-grid",
-      "blocks": {
-        "product_card_cEWk4j": {
-          "type": "product-card",
-          "settings": {
-            "product": "glofacial-tips-replacement-kit",
-            "badge_title": "30% OFF",
-            "custom_product_image": "shopify://shop_images/GLOfacial___Classic_White_a5dcb438-3c74-4034-b7b7-fa4b623379b2.png",
-            "custom_title": "GLOfacial",
-            "custom_description": ""
-          }
-        },
-        "product_card_kCf6Kk": {
-          "type": "product-card",
-          "settings": {
-            "product": "the-quench-eye-cream",
-            "badge_title": "30% OFF",
-            "custom_product_image": "shopify://shop_images/GLOfacial___Classic_White-1.png",
-            "custom_title": "The Quench",
-            "custom_description": ""
-          }
-        },
-        "product_card_Cw3pkr": {
-          "type": "product-card",
-          "settings": {
-            "product": "pro-hydration-facial-set",
-            "badge_title": "30% OFF",
-            "custom_product_image": "shopify://shop_images/GLOfacial___Classic_White-2.png",
-            "custom_title": "Golden Glow Hydration Facial",
-            "custom_description": ""
-          }
-        },
-        "product_card_fHcxFK": {
-          "type": "product-card",
-          "settings": {
-            "product": "glopro-microneedling-regeneration-roller-tool",
-            "badge_title": "30% OFF",
-            "custom_product_image": "shopify://shop_images/GLOfacial___Classic_White-3.png",
-            "custom_title": "GloPRO®  Facial Microneedling Tool",
-            "custom_description": ""
-          }
-        },
-        "product_card_yiHrYY": {
-          "type": "product-card",
-          "settings": {
-            "product": "bronzing-blendrops",
-            "badge_title": "50% OFF",
-            "custom_product_image": "shopify://shop_images/GLOfacial___Classic_White-4.png",
-            "custom_title": "Blendrops™ with SPF 46",
-            "custom_description": ""
-          }
-        },
-        "product_card_3Pw4fN": {
-          "type": "product-card",
-          "settings": {
-            "product": "the-zenbubble-gel-cream",
-            "badge_title": "30% OFF",
-            "custom_product_image": "shopify://shop_images/GLOfacial___Classic_White-5.png",
-            "custom_title": "The ZenBubble Gel Cream",
-            "custom_description": ""
-          }
-        },
-        "product_card_t98NcA": {
-          "type": "product-card",
-          "settings": {
-            "product": "daily-vitamin-c-serum",
-            "badge_title": "50% OFF",
-            "custom_product_image": "shopify://shop_images/GLOfacial___Classic_White-6.png",
-            "custom_title": "The Daily",
-            "custom_description": ""
-          }
-        },
-        "product_card_W3Fk8K": {
-          "type": "product-card",
-          "settings": {
-            "product": "nightly-retinol-serum",
-            "badge_title": "50% OFF",
-            "custom_product_image": "shopify://shop_images/GLOfacial___Classic_White-7.png",
-            "custom_title": "The Nightly",
-            "custom_description": ""
-          }
-        },
-        "product_card_GNkXRW": {
-          "type": "product-card",
-          "settings": {
-            "product": "rejuvenating-scalp-fuller-hair-therapy-set",
-            "badge_title": "30% OFF",
-            "custom_product_image": "shopify://shop_images/GLOfacial___Classic_White-8.png",
-            "custom_title": "Rejuvenating Scalp + Fuller Hair Therapy Set",
-            "custom_description": ""
-          }
-        }
-      },
-      "block_order": [
-        "product_card_cEWk4j",
-        "product_card_kCf6Kk",
-        "product_card_Cw3pkr",
-        "product_card_fHcxFK",
-        "product_card_yiHrYY",
-        "product_card_3Pw4fN",
-        "product_card_t98NcA",
-        "product_card_W3Fk8K",
-        "product_card_GNkXRW"
-      ],
       "name": "LP Product Grid",
       "settings": {
         "heading": "Black Friday Starts Here",
         "description": "<p>Get an exclusive first look at BeautyBio’s biggest BFCM savings of the year. These favorites will be marked down up to 50% off — with even more deals dropping soon.</p>",
         "loading_text": "More coming soon...",
+        "collection": "{{ collection }}",
         "columns_desktop": 3,
         "columns_mobile": "2",
         "background_color": "#ffffff",
