@@ -40,24 +40,6 @@
     "product_bundle_blocks_MJDkXy": {
       "type": "product-bundle-blocks",
       "blocks": {
-        "products_bundle_DXQKHe": {
-          "type": "products-bundle",
-          "name": "Products bundle",
-          "settings": {
-            "bundle_title": "0% Off",
-            "filter_title": "0% Off",
-            "bundle_description": "",
-            "products": [
-              "the-glofacial-complete-set",
-              "glopro-microneedling-regeneration-roller-tool",
-              "the-glopro-body-bundle",
-              "glopro-body-attachment-the-sculptor"
-            ],
-            "display_view_more": false,
-            "products_row_per_view": "2"
-          },
-          "blocks": {}
-        },
         "products_bundle_nj4Y47": {
           "type": "products-bundle",
           "name": "Products bundle",
@@ -146,7 +128,6 @@
         }
       },
       "block_order": [
-        "products_bundle_DXQKHe",
         "products_bundle_nj4Y47",
         "products_bundle_bkWzWP",
         "products_bundle_9nwTCn"
