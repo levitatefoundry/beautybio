@@ -181,6 +181,16 @@
         {{ form | payment_button }}
       {%- endif -%}
 
+      {%- assign atc_redirect_link_value = prod.metafields.custom.atc_redirect_link.value -%}
+      {%- if atc_redirect_link_value != blank -%}
+        <a
+          class="btn btn--medium btn--full btn--secondary product-form__atc-redirect"
+          href="{{ atc_redirect_link_value }}"
+        >
+          {{ 'sections.events.buy_on_amazon' | t }}
+        </a>
+      {%- endif -%}
+
       {%- unless is_quick -%}
         <div class="product-form__shop-pay fs-body-75">
           {{- form | payment_terms -}}
