@@ -102,8 +102,9 @@
             </div>
             {%- endif -%}
 
-            {%- assign bundle_info_cards = collection.metafields.custom.collection_info_card.value -%}
-            {%- if bundle_info_cards != blank -%}
+            {% comment %} {%- assign bundle_info_cards = collection.metafields.custom.collection_info_card.value -%} {% endcomment %}
+            {%- assign bundle_info_cards = blank -%}
+            {%- if bundle_info_cards != blank-%}
               <div class="product-bundle-info-card-wrapper" data-bundle-static>
                 <div class="bundle-info-cards">
                   {%- for card in bundle_info_cards -%}
