@@ -64,6 +64,8 @@
             "bundle_title": "Tools",
             "filter_title": "Tools",
             "bundle_description": "",
+            "products": [],
+            "display_view_more": false,
             "products_row_per_view": "2"
           },
           "blocks": {
@@ -74,7 +76,8 @@
                 "product": "glopro-microneedling-regeneration-roller-tool",
                 "custom_title": "",
                 "custom_price": "",
-                "custom_compare_price": ""
+                "custom_compare_price": "",
+                "hide_in_view_all": false
               },
               "blocks": {}
             }
@@ -90,6 +93,8 @@
             "bundle_title": "Attachments",
             "filter_title": "Attachments",
             "bundle_description": "",
+            "products": [],
+            "display_view_more": false,
             "products_row_per_view": "2"
           },
           "blocks": {
@@ -100,7 +105,8 @@
                 "product": "face-microneedling-roller-attachment",
                 "custom_title": "",
                 "custom_price": "",
-                "custom_compare_price": ""
+                "custom_compare_price": "",
+                "hide_in_view_all": false
               },
               "blocks": {}
             },
@@ -111,7 +117,8 @@
                 "product": "body-microneedling-roller-attachment",
                 "custom_title": "",
                 "custom_price": "",
-                "custom_compare_price": ""
+                "custom_compare_price": "",
+                "hide_in_view_all": false
               },
               "blocks": {}
             },
@@ -122,7 +129,8 @@
                 "product": "eye-microneedling-roller-attachment",
                 "custom_title": "",
                 "custom_price": "",
-                "custom_compare_price": ""
+                "custom_compare_price": "",
+                "hide_in_view_all": false
               },
               "blocks": {}
             },
@@ -133,7 +141,8 @@
                 "product": "glopro-scalp-attachment",
                 "custom_title": "",
                 "custom_price": "",
-                "custom_compare_price": ""
+                "custom_compare_price": "",
+                "hide_in_view_all": false
               },
               "blocks": {}
             },
@@ -144,7 +153,8 @@
                 "product": "lip-microneedling-roller-attachment",
                 "custom_title": "",
                 "custom_price": "",
-                "custom_compare_price": ""
+                "custom_compare_price": "",
+                "hide_in_view_all": false
               },
               "blocks": {}
             },
@@ -155,7 +165,8 @@
                 "product": "glopro-cryo-roller-duo",
                 "custom_title": "",
                 "custom_price": "",
-                "custom_compare_price": ""
+                "custom_compare_price": "",
+                "hide_in_view_all": false
               },
               "blocks": {}
             },
@@ -166,7 +177,8 @@
                 "product": "rose-quartz-roller-body-attachment",
                 "custom_title": "",
                 "custom_price": "",
-                "custom_compare_price": ""
+                "custom_compare_price": "",
+                "hide_in_view_all": false
               },
               "blocks": {}
             },
@@ -177,7 +189,8 @@
                 "product": "glopro-meet-the-microtips-attachment-set-bundle",
                 "custom_title": "",
                 "custom_price": "",
-                "custom_compare_price": ""
+                "custom_compare_price": "",
+                "hide_in_view_all": false
               },
               "blocks": {}
             }
@@ -200,6 +213,8 @@
             "bundle_title": "Kits",
             "filter_title": "Kits",
             "bundle_description": "",
+            "products": [],
+            "display_view_more": false,
             "products_row_per_view": "2"
           },
           "blocks": {
@@ -210,7 +225,8 @@
                 "product": "let-it-glo",
                 "custom_title": "",
                 "custom_price": "",
-                "custom_compare_price": ""
+                "custom_compare_price": "",
+                "hide_in_view_all": false
               },
               "blocks": {}
             },
@@ -221,7 +237,8 @@
                 "product": "glopro-geo-print-pink-cloud-set",
                 "custom_title": "",
                 "custom_price": "",
-                "custom_compare_price": ""
+                "custom_compare_price": "",
+                "hide_in_view_all": false
               },
               "blocks": {}
             },
@@ -232,7 +249,8 @@
                 "product": "glopro-white-geo-set",
                 "custom_title": "",
                 "custom_price": "",
-                "custom_compare_price": ""
+                "custom_compare_price": "",
+                "hide_in_view_all": false
               },
               "blocks": {}
             },
@@ -243,7 +261,8 @@
                 "product": "glopro-geo-print-pink-white-strip-set",
                 "custom_title": "",
                 "custom_price": "",
-                "custom_compare_price": ""
+                "custom_compare_price": "",
+                "hide_in_view_all": false
               },
               "blocks": {}
             },
@@ -254,7 +273,8 @@
                 "product": "the-glopro-body-bundle",
                 "custom_title": "",
                 "custom_price": "",
-                "custom_compare_price": ""
+                "custom_compare_price": "",
+                "hide_in_view_all": false
               },
               "blocks": {}
             }
@@ -274,6 +294,8 @@
             "bundle_title": "Accessories",
             "filter_title": "Accessories",
             "bundle_description": "",
+            "products": [],
+            "display_view_more": false,
             "products_row_per_view": "2"
           },
           "blocks": {
@@ -284,7 +306,8 @@
                 "product": "glopro-microneedling-stand",
                 "custom_title": "",
                 "custom_price": "",
-                "custom_compare_price": ""
+                "custom_compare_price": "",
+                "hide_in_view_all": false
               },
               "blocks": {}
             },
@@ -295,7 +318,8 @@
                 "product": "microneedling-skin-prep-pads",
                 "custom_title": "",
                 "custom_price": "",
-                "custom_compare_price": ""
+                "custom_compare_price": "",
+                "hide_in_view_all": false
               },
               "blocks": {}
             }
@@ -319,6 +343,8 @@
         "filter_all_text": "View All",
         "show_remove_filter": true,
         "remove_filter_text": "Remove Filter",
+        "custom_button_title": "",
+        "custom_button_url": "",
         "padding_top": 60,
         "padding_bottom": 60,
         "padding_top_mob": 40,
