@@ -263,6 +263,7 @@
         "spacer",
         "text"
       ],
+      "disabled": true,
       "settings": {
         "image_position": "right",
         "image_mobile_position": "above-content",
@@ -558,7 +559,7 @@
           "type": "column",
           "settings": {
             "accent": "",
-            "heading": "CLEAN<br>FORMULAS",
+            "heading": "CLEANFORMULAS",
             "heading_tag": "h4",
             "heading_font_class": "fs-heading-4-base",
             "text": "",
@@ -623,7 +624,7 @@
         "row_spacing_mobile": 20,
         "column_alignment_mobile": "center",
         "background_behind_columns": false,
-        "background_color": "#f3c8cf",
+        "background_color": "#ffffff",
         "text_color": "#000000",
         "button_background_color": "#000000",
         "button_text_color": "#ffffff",
@@ -699,6 +700,7 @@
       "block_order": [
         "archive_instagram_tiktok_ugc_feed_FxLcBz"
       ],
+      "disabled": true,
       "settings": {
         "heading": "BeautyBio IRL",
         "enable_animation": true,
