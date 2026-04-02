@@ -182,6 +182,9 @@
       },
       "password-header": {
         "type": "password-header",
+        "custom_css": [
+          ".header__row-segment.right {display: none !important;}"
+        ],
         "settings": {
           "layout": "logo-center",
           "divider_width": "0px",
