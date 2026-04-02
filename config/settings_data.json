@@ -179,6 +179,18 @@
           "enable_gift_card_recipient": true,
           "enable_animation": true
         }
+      },
+      "password-header": {
+        "type": "password-header",
+        "settings": {
+          "layout": "logo-center",
+          "divider_width": "0px",
+          "logo": "shopify://shop_images/BeautyBioLogo_White_89e9bbbe-c2b5-40c7-a653-880232926c61.png",
+          "logo_width": 300,
+          "mobile_logo_width": 200,
+          "enable_transparent": true,
+          "color_text_transparent": "#ffffff"
+        }
       }
     },
     "content_for_index": [],
