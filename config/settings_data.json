@@ -183,7 +183,8 @@
       "password-header": {
         "type": "password-header",
         "custom_css": [
-          ".header__row-segment.right {display: none !important;}"
+          ".header__row-segment.right {display: none !important;}",
+          ".header__inner {padding-top: 100px;}"
         ],
         "settings": {
           "layout": "logo-center",
