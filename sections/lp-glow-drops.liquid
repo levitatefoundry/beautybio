@@ -60,17 +60,7 @@
                   assign month_name = 'december'
               endcase
             -%}
-            {%-
-              render 'countdown-timer' with
-              year: year_num,
-              month: month_name,
-              day: day_num,
-              hour: hour_num,
-              minute: minute_num,
-              size: 'large',
-              time_zone_selection: 'shop',
-              hide_timer_on_complete: false
-            -%}
+            {%- render 'countdown-timer' with year, year: year_num, month: month_name, day: day_num, hour: hour_num, minute: minute_num, size: 'large', time_zone_selection: 'shop', hide_timer_on_complete: false -%}
           </div>
         </div>
       </div>
@@ -239,3 +229,19 @@
 }
 {% endschema %}
 
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%-\r\n              render 'countdown-timer' with\r\n              year:
+    year_num,\r\n              month: month_name,\r\n              day: day_num,\r\n
+    \             hour: hour_num,\r\n              minute: minute_num,\r\n              size:
+    'large',\r\n              time_zone_selection: 'shop',\r\n              hide_timer_on_complete:
+    false\r\n            -%}"
+  to: "{%- render 'countdown-timer' with year, year: year_num, month: month_name,
+    day: day_num, hour: hour_num, minute: minute_num, size: 'large', time_zone_selection:
+    'shop', hide_timer_on_complete: false -%}"
+  position: 2468..2670
+{% endcomment %}

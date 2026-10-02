@@ -211,18 +211,7 @@
       </div>
     </div>
   </div>
-  {%-
-    render 'button-block' with
-    wrapper_class: "image-hero__text-container-image-button section-blocks__button",
-    link: section.settings.button1_link,
-    label: section.settings.button1_text,
-    button_style: "btn--primary",
-    is_overlay: true,
-    button_alignment: "center",
-    button_alignment_mobile: "center",
-    buttons_can_inline: true,
-    forloop: forloop
-  -%}
+  {%- render 'button-block' with wrapper_class, wrapper_class: "image-hero__text-container-image-button section-blocks__button", link: section.settings.button1_link, label: section.settings.button1_text, button_style: "btn--primary", is_overlay: true, button_alignment: "center", button_alignment_mobile: "center", buttons_can_inline: true, forloop: forloop -%}
 </section>
 
 <script>
@@ -535,4 +524,28 @@
       }
     ]
   }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%-
+        render 'button-block' with
+        wrapper_class: "image-hero__text-container-image-button section-blocks__button",
+        link: section.settings.button1_link,
+        label: section.settings.button1_text,
+        button_style: "btn--primary",
+        is_overlay: true,
+        button_alignment: "center",
+        button_alignment_mobile: "center",
+        buttons_can_inline: true,
+        forloop: forloop
+      -%}
+  to: '{%- render ''button-block'' with wrapper_class, wrapper_class: "image-hero__text-container-image-button
+    section-blocks__button", link: section.settings.button1_link, label: section.settings.button1_text,
+    button_style: "btn--primary", is_overlay: true, button_alignment: "center", button_alignment_mobile:
+    "center", buttons_can_inline: true, forloop: forloop -%}'
+  position: 10507..10866
+{%- endcomment -%}

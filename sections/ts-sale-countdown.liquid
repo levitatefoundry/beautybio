@@ -96,30 +96,18 @@
     --overlay-opacity: {{ overlay_opacity }};
     --min-height: {{ min_height }}px;
     --min-height-mobile: {{ min_height_mobile }}px;
-    {% render 'overlay-button-vars' with color_button_text: section.settings.button_text_color, color_button_background: section.settings.button_background_color %}
+    {% render 'overlay-button-vars' with color_button_text, color_button_text: section.settings.button_text_color, color_button_background: section.settings.button_background_color %}
   "
   data-section-id="{{ section.id }}"
   data-section-type="countdown-bar"
 >
   <div class="countdown-banner__inner">
     {%- if section.settings.mobile_image != blank -%}
-      {%-
-        render 'image' with
-        wrapper_class: "countdown-banner__image countdown-banner__image--mobile",
-        image: section.settings.mobile_image,
-        focal_point: section.settings.mobile_focal_point,
-        sizes: image_sizes
-      -%}
+      {%- render 'image' with wrapper_class, wrapper_class: "countdown-banner__image countdown-banner__image--mobile", image: section.settings.mobile_image, focal_point: section.settings.mobile_focal_point, sizes: image_sizes -%}
     {%- endif -%}
 
     {%- if section.settings.image != blank -%}
-      {%-
-        render 'image' with
-        wrapper_class: "countdown-banner__image",
-        image: section.settings.image,
-        focal_point: section.settings.focal_point,
-        sizes: image_sizes
-      -%}
+      {%- render 'image' with wrapper_class, wrapper_class: "countdown-banner__image", image: section.settings.image, focal_point: section.settings.focal_point, sizes: image_sizes -%}
     {%- endif -%}
     <div class="countdown-banner__overlay"></div>
 
@@ -146,18 +134,7 @@
         </div>
         <div class="countdown-banner__bar-item countdown-banner__bar-item--timer ts-timer-container">
           <h3 class="ts-timer-label">Sale Ends In:</h3>
-          {%-
-            render 'countdown-timer' with
-            year: section.settings.year,
-            month: section.settings.month,
-            day: section.settings.day,
-            hour: section.settings.hour,
-            minute: section.settings.minute,
-            size: 'small',
-            time_zone_selection: section.settings.time_zone_selection,
-            hide_timer_on_complete: section.settings.hide_timer_on_complete,
-            timer_complete_message: section.settings.timer_complete_message
-          -%}
+          {%- render 'countdown-timer' with year, year: section.settings.year, month: section.settings.month, day: section.settings.day, hour: section.settings.hour, minute: section.settings.minute, size: 'small', time_zone_selection: section.settings.time_zone_selection, hide_timer_on_complete: section.settings.hide_timer_on_complete, timer_complete_message: section.settings.timer_complete_message -%}
         </div>
       </div>
     </div>
@@ -462,3 +439,59 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'overlay-button-vars' with color_button_text: section.settings.button_text_color,
+    color_button_background: section.settings.button_background_color %}"
+  to: "{% render 'overlay-button-vars' with color_button_text, color_button_text:
+    section.settings.button_text_color, color_button_background: section.settings.button_background_color
+    %}"
+  position: 2536..2715
+- from: |-
+    {%-
+            render 'image' with
+            wrapper_class: "countdown-banner__image countdown-banner__image--mobile",
+            image: section.settings.mobile_image,
+            focal_point: section.settings.mobile_focal_point,
+            sizes: image_sizes
+          -%}
+  to: '{%- render ''image'' with wrapper_class, wrapper_class: "countdown-banner__image
+    countdown-banner__image--mobile", image: section.settings.mobile_image, focal_point:
+    section.settings.mobile_focal_point, sizes: image_sizes -%}'
+  position: 2895..3118
+- from: |-
+    {%-
+            render 'image' with
+            wrapper_class: "countdown-banner__image",
+            image: section.settings.image,
+            focal_point: section.settings.focal_point,
+            sizes: image_sizes
+          -%}
+  to: '{%- render ''image'' with wrapper_class, wrapper_class: "countdown-banner__image",
+    image: section.settings.image, focal_point: section.settings.focal_point, sizes:
+    image_sizes -%}'
+  position: 3191..3368
+- from: |-
+    {%-
+                render 'countdown-timer' with
+                year: section.settings.year,
+                month: section.settings.month,
+                day: section.settings.day,
+                hour: section.settings.hour,
+                minute: section.settings.minute,
+                size: 'small',
+                time_zone_selection: section.settings.time_zone_selection,
+                hide_timer_on_complete: section.settings.hide_timer_on_complete,
+                timer_complete_message: section.settings.timer_complete_message
+              -%}
+  to: "{%- render 'countdown-timer' with year, year: section.settings.year, month:
+    section.settings.month, day: section.settings.day, hour: section.settings.hour,
+    minute: section.settings.minute, size: 'small', time_zone_selection: section.settings.time_zone_selection,
+    hide_timer_on_complete: section.settings.hide_timer_on_complete, timer_complete_message:
+    section.settings.timer_complete_message -%}"
+  position: 4628..5023
+{% endcomment %}
