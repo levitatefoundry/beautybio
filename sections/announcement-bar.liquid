@@ -84,7 +84,7 @@
       <div class="ui-overlap">
         <div class="fader left">
           <button class="slider-nav-button slider-nav-button-prev" title="{{ 'general.accessibility.previous' | t }}">
-            {% render 'icon' with icon: 'chevron' %}
+            {% render 'icon' with icon, icon: 'chevron' %}
           </button>
         </div>
         <div class="ui-overlap-item-clones" aria-hidden="true">
@@ -92,7 +92,7 @@
         </div>
         <div class="fader right">
           <button class="slider-nav-button slider-nav-button-next" title="{{ 'general.accessibility.next' | t }}">
-            {% render 'icon' with icon: 'chevron' %}
+            {% render 'icon' with icon, icon: 'chevron' %}
           </button>
         </div>
       </div>
@@ -298,3 +298,16 @@
   }
 
 </style>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'icon' with icon: 'chevron' %}"
+  to: "{% render 'icon' with icon, icon: 'chevron' %}"
+  position: 3934..3980
+- from: "{% render 'icon' with icon: 'chevron' %}"
+  to: "{% render 'icon' with icon, icon: 'chevron' %}"
+  position: 4286..4332
+{% endcomment %}

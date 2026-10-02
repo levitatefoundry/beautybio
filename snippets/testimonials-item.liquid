@@ -34,15 +34,7 @@
     {%- endcapture -%}
 
     <{{ wrapper_tag }} {{ wrapper_attributes }}>
-      {%
-        render 'image' with
-        image: product_image,
-        wrapper_class: 'testimonials__item-product-image',
-        aspect_ratio: block.settings.aspect_ratio,
-        focal_point: block.settings.focal_point,
-        include_placeholder: true,
-        sizes: image_sizes_attribute
-      %}
+      {% render 'image' with image, image: product_image, wrapper_class: 'testimonials__item-product-image', aspect_ratio: block.settings.aspect_ratio, focal_point: block.settings.focal_point, include_placeholder: true, sizes: image_sizes_attribute %}
     </{{ wrapper_tag }}>
 
     {%- if block.settings.product != blank -%}
@@ -159,4 +151,24 @@
     });
   });
 });
-</script>
+</script>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%
+            render 'image' with
+            image: product_image,
+            wrapper_class: 'testimonials__item-product-image',
+            aspect_ratio: block.settings.aspect_ratio,
+            focal_point: block.settings.focal_point,
+            include_placeholder: true,
+            sizes: image_sizes_attribute
+          %}
+  to: "{% render 'image' with image, image: product_image, wrapper_class: 'testimonials__item-product-image',
+    aspect_ratio: block.settings.aspect_ratio, focal_point: block.settings.focal_point,
+    include_placeholder: true, sizes: image_sizes_attribute %}"
+  position: 1306..1551
+{%- endcomment -%}
