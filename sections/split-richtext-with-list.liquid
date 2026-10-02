@@ -52,7 +52,7 @@
     --color-text-link: {{ section.settings.text_color }};
     --text-alignment: {{ section.settings.text_alignment }};
     --small-image-placeholder-color: {{ settings.color_text | color_modify: 'alpha', 0.7 }};
-    {% render 'overlay-button-vars' with color_button_text: section.settings.button_text_color, color_button_background: section.settings.button_background_color %}
+    {% render 'overlay-button-vars' with color_button_text, color_button_text: section.settings.button_text_color, color_button_background: section.settings.button_background_color %}
   "
 >
   <div
@@ -109,39 +109,15 @@
                   </div>
                 {%- endunless -%}
               {%- when 'image' -%}
-                {%-
-                  render 'image-block' with
-                  shopify_attributes: block.shopify_attributes,
-                  wrapper_class: 'image-with-text__text-container-image section-blocks__image  section-blocks__image',
-                  image: block.settings.image,
-                  width: block.settings.image_size,
-                  mobile_width: block.settings.image_size_mobile,
-                  break_to_mobile_at: '720',
-                  align: section.settings.text_alignment
-                -%}
+                {%- render 'image-block' with shopify_attributes, shopify_attributes: block.shopify_attributes, wrapper_class: 'image-with-text__text-container-image section-blocks__image  section-blocks__image', image: block.settings.image, width: block.settings.image_size, mobile_width: block.settings.image_size_mobile, break_to_mobile_at: '720', align: section.settings.text_alignment -%}
               {%- when 'button' -%}
-                {%-
-                  render 'button-block' with
-                  wrapper_class: "image-with-text__text-container-button section-blocks__button",
-                  link: block.settings.link,
-                  label: block.settings.link_text,
-                  button_style: block.settings.button_style,
-                  is_overlay: true,
-                  button_alignment: section.settings.text_alignment,
-                  buttons_can_inline: true,
-                  forloop: forloop
-                -%}
+                {%- render 'button-block' with wrapper_class, wrapper_class: "image-with-text__text-container-button section-blocks__button", link: block.settings.link, label: block.settings.link_text, button_style: block.settings.button_style, is_overlay: true, button_alignment: section.settings.text_alignment, buttons_can_inline: true, forloop: forloop -%}
               {%- when 'play-button' -%}
-                {%-
-                  render 'play-button-block' with
-                  wrapper_class: 'image-with-text__text-container-play-button section-blocks__video-button',
-                  block: block,
-                  button_alignment: section.settings.text_alignment
-                -%}
+                {%- render 'play-button-block' with wrapper_class, wrapper_class: 'image-with-text__text-container-play-button section-blocks__video-button', block: block, button_alignment: section.settings.text_alignment -%}
               {%- when 'border' -%}
                 {%- render 'border-block' -%}
               {%- when 'spacer' -%}
-                {%- render 'spacer-block' with space: block.settings.space -%}
+                {%- render 'spacer-block' with space, space: block.settings.space -%}
             {%- endcase -%}
           {%- endfor -%}
         </div>
@@ -699,3 +675,63 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'overlay-button-vars' with color_button_text: section.settings.button_text_color,
+    color_button_background: section.settings.button_background_color %}"
+  to: "{% render 'overlay-button-vars' with color_button_text, color_button_text:
+    section.settings.button_text_color, color_button_background: section.settings.button_background_color
+    %}"
+  position: 1826..2005
+- from: |-
+    {%-
+                      render 'image-block' with
+                      shopify_attributes: block.shopify_attributes,
+                      wrapper_class: 'image-with-text__text-container-image section-blocks__image  section-blocks__image',
+                      image: block.settings.image,
+                      width: block.settings.image_size,
+                      mobile_width: block.settings.image_size_mobile,
+                      break_to_mobile_at: '720',
+                      align: section.settings.text_alignment
+                    -%}
+  to: "{%- render 'image-block' with shopify_attributes, shopify_attributes: block.shopify_attributes,
+    wrapper_class: 'image-with-text__text-container-image section-blocks__image  section-blocks__image',
+    image: block.settings.image, width: block.settings.image_size, mobile_width: block.settings.image_size_mobile,
+    break_to_mobile_at: '720', align: section.settings.text_alignment -%}"
+  position: 4415..4792
+- from: |-
+    {%-
+                      render 'button-block' with
+                      wrapper_class: "image-with-text__text-container-button section-blocks__button",
+                      link: block.settings.link,
+                      label: block.settings.link_text,
+                      button_style: block.settings.button_style,
+                      is_overlay: true,
+                      button_alignment: section.settings.text_alignment,
+                      buttons_can_inline: true,
+                      forloop: forloop
+                    -%}
+  to: '{%- render ''button-block'' with wrapper_class, wrapper_class: "image-with-text__text-container-button
+    section-blocks__button", link: block.settings.link, label: block.settings.link_text,
+    button_style: block.settings.button_style, is_overlay: true, button_alignment:
+    section.settings.text_alignment, buttons_can_inline: true, forloop: forloop -%}'
+  position: 4845..5189
+- from: |-
+    {%-
+                      render 'play-button-block' with
+                      wrapper_class: 'image-with-text__text-container-play-button section-blocks__video-button',
+                      block: block,
+                      button_alignment: section.settings.text_alignment
+                    -%}
+  to: "{%- render 'play-button-block' with wrapper_class, wrapper_class: 'image-with-text__text-container-play-button
+    section-blocks__video-button', block: block, button_alignment: section.settings.text_alignment
+    -%}"
+  position: 5247..5456
+- from: "{%- render 'spacer-block' with space: block.settings.space -%}"
+  to: "{%- render 'spacer-block' with space, space: block.settings.space -%}"
+  position: 5591..5660
+{% endcomment %}

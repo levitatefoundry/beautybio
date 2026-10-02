@@ -26,18 +26,7 @@
                         <h3 class="multi-diagram__diagram-heading">{{ block.settings.heading }}</h3>
                         <p class="multi-diagram__diagram-text">{{ block.settings.text }}</p>
                     </div>
-                    {%-
-                        render 'button-block' with
-                        wrapper_class: "image-hero__text-container-image-button section-blocks__button",
-                        link: block.settings.button_link,
-                        label: block.settings.button_text,
-                        button_style: "btn--primary",
-                        is_overlay: true,
-                        button_alignment: "center",
-                        button_alignment_mobile: "center",
-                        buttons_can_inline: true,
-                        forloop: forloop
-                    -%}
+                    {%- render 'button-block' with wrapper_class, wrapper_class: "image-hero__text-container-image-button section-blocks__button", link: block.settings.button_link, label: block.settings.button_text, button_style: "btn--primary", is_overlay: true, button_alignment: "center", button_alignment_mobile: "center", buttons_can_inline: true, forloop: forloop -%}
                 </div>
             {% endif %}
         {% endfor %}
@@ -238,4 +227,28 @@
     }
   ]
 }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%-
+                            render 'button-block' with
+                            wrapper_class: "image-hero__text-container-image-button section-blocks__button",
+                            link: block.settings.button_link,
+                            label: block.settings.button_text,
+                            button_style: "btn--primary",
+                            is_overlay: true,
+                            button_alignment: "center",
+                            button_alignment_mobile: "center",
+                            buttons_can_inline: true,
+                            forloop: forloop
+                        -%}
+  to: '{%- render ''button-block'' with wrapper_class, wrapper_class: "image-hero__text-container-image-button
+    section-blocks__button", link: block.settings.button_link, label: block.settings.button_text,
+    button_style: "btn--primary", is_overlay: true, button_alignment: "center", button_alignment_mobile:
+    "center", buttons_can_inline: true, forloop: forloop -%}'
+  position: 1233..1586
+{%- endcomment -%}
