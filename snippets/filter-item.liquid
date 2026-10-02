@@ -116,7 +116,7 @@
 
           {%- if type == 'checkbox' -%}
             <div class="filter-item__input">
-              {% render 'icon' with icon: 'checkmark' %}
+              {% render 'icon' with icon, icon: 'checkmark' %}
             </div>
           {%- endif -%}
 
@@ -138,4 +138,13 @@
       </label>
     </li>
   </ul>
-</fieldset>
+</fieldset>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'icon' with icon: 'checkmark' %}"
+  to: "{% render 'icon' with icon, icon: 'checkmark' %}"
+  position: 5163..5211
+{%- endcomment -%}

@@ -107,17 +107,7 @@
   <div class="split-faqs-text__text-container">
     <h2 class="split-faqs-text__heading">{{ section.settings.heading }}</h2>
     <p>{{ section.settings.body }}</p>
-    {%-
-      render 'button-block' with
-      wrapper_class: "image-with-text__text-container-button section-blocks__button",
-      link: section.settings.button_link,
-      label: section.settings.button_text,
-      button_style: "btn--primary",
-      is_overlay: true,
-      button_alignment: "left",
-      buttons_can_inline: true,
-      forloop: forloop
-    -%}
+    {%- render 'button-block' with wrapper_class, wrapper_class: "image-with-text__text-container-button section-blocks__button", link: section.settings.button_link, label: section.settings.button_text, button_style: "btn--primary", is_overlay: true, button_alignment: "left", buttons_can_inline: true, forloop: forloop -%}
   </div>
   <div class="ts-faqs-container">
     {% for block in section.blocks %}
@@ -187,4 +177,27 @@
       }
     ]
   }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%-
+          render 'button-block' with
+          wrapper_class: "image-with-text__text-container-button section-blocks__button",
+          link: section.settings.button_link,
+          label: section.settings.button_text,
+          button_style: "btn--primary",
+          is_overlay: true,
+          button_alignment: "left",
+          buttons_can_inline: true,
+          forloop: forloop
+        -%}
+  to: '{%- render ''button-block'' with wrapper_class, wrapper_class: "image-with-text__text-container-button
+    section-blocks__button", link: section.settings.button_link, label: section.settings.button_text,
+    button_style: "btn--primary", is_overlay: true, button_alignment: "left", buttons_can_inline:
+    true, forloop: forloop -%}'
+  position: 1992..2311
+{%- endcomment -%}

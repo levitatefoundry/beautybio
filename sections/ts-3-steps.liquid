@@ -101,17 +101,7 @@
   </div>
   {% for block in section.blocks %}
     {% if block.type == "button" %}
-      {%-
-        render 'button-block' with
-        wrapper_class: "image-with-text-split__text-container-button section-blocks__button",
-        link: block.settings.button_link,
-        label: block.settings.button_label,
-        button_style: "btn--primary",
-        is_overlay: true,
-        button_alignment: "center",
-        buttons_can_inline: true,
-        forloop: forloop
-      -%}
+      {%- render 'button-block' with wrapper_class, wrapper_class: "image-with-text-split__text-container-button section-blocks__button", link: block.settings.button_link, label: block.settings.button_label, button_style: "btn--primary", is_overlay: true, button_alignment: "center", buttons_can_inline: true, forloop: forloop -%}
     {% endif %}
   {% endfor %}
 </section>
@@ -189,4 +179,27 @@
       }
     ]
   }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%-
+            render 'button-block' with
+            wrapper_class: "image-with-text-split__text-container-button section-blocks__button",
+            link: block.settings.button_link,
+            label: block.settings.button_label,
+            button_style: "btn--primary",
+            is_overlay: true,
+            button_alignment: "center",
+            buttons_can_inline: true,
+            forloop: forloop
+          -%}
+  to: '{%- render ''button-block'' with wrapper_class, wrapper_class: "image-with-text-split__text-container-button
+    section-blocks__button", link: block.settings.button_link, label: block.settings.button_label,
+    button_style: "btn--primary", is_overlay: true, button_alignment: "center", buttons_can_inline:
+    true, forloop: forloop -%}'
+  position: 2417..2741
+{%- endcomment -%}

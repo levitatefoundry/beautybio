@@ -48,18 +48,7 @@
         <p class="diagram-caption"><strong>Best For: </strong>Oily T-zones, dullness, congested skin, and uneven tone.</p>
         <p class="diagram-caption"><strong>Use 1-2x per week</strong></p>
       </div>
-      {%-
-        render 'button-block' with
-        wrapper_class: "image-hero__text-container-image-button section-blocks__button",
-        link: section.settings.button1_link,
-        label: section.settings.button1_text,
-        button_style: "btn--primary",
-        is_overlay: true,
-        button_alignment: "center",
-        button_alignment_mobile: "center",
-        buttons_can_inline: true,
-        forloop: forloop
-      -%}
+      {%- render 'button-block' with wrapper_class, wrapper_class: "image-hero__text-container-image-button section-blocks__button", link: section.settings.button1_link, label: section.settings.button1_text, button_style: "btn--primary", is_overlay: true, button_alignment: "center", button_alignment_mobile: "center", buttons_can_inline: true, forloop: forloop -%}
     </div>
     <div class="double-showcase__desktop-column">
       <div class="double-showcase__desktop-diagram">
@@ -107,18 +96,7 @@
         <p class="diagram-caption"><strong>Best For: </strong>Aging skin, texture, fine lines, loss of firmness.</p>
         <p class="diagram-caption"><strong>Use 2-3x per week</strong></p>
       </div>
-      {%-
-        render 'button-block' with
-        wrapper_class: "image-hero__text-container-image-button section-blocks__button",
-        link: section.settings.button2_link,
-        label: section.settings.button2_text,
-        button_style: "btn--primary",
-        is_overlay: true,
-        button_alignment: "center",
-        button_alignment_mobile: "center",
-        buttons_can_inline: true,
-        forloop: forloop
-      -%}
+      {%- render 'button-block' with wrapper_class, wrapper_class: "image-hero__text-container-image-button section-blocks__button", link: section.settings.button2_link, label: section.settings.button2_text, button_style: "btn--primary", is_overlay: true, button_alignment: "center", button_alignment_mobile: "center", buttons_can_inline: true, forloop: forloop -%}
     </div>
   </div>
   <div class="double-showcase__mobile-container">
@@ -177,18 +155,7 @@
         <p class="diagram-caption"><strong>Best For: </strong>Crepey skin, rough texture, and loss of firmness on arms, tummy, and thighs.</p>
         <p class="diagram-caption"><strong>Use 1-2x a day</strong></p>
       </div>
-      {%-
-        render 'button-block' with
-        wrapper_class: "image-hero__text-container-image-button section-blocks__button",
-        link: section.settings.button2_link,
-        label: section.settings.button2_text,
-        button_style: "btn--primary",
-        is_overlay: true,
-        button_alignment: "center",
-        button_alignment_mobile: "center",
-        buttons_can_inline: true,
-        forloop: forloop
-      -%}
+      {%- render 'button-block' with wrapper_class, wrapper_class: "image-hero__text-container-image-button section-blocks__button", link: section.settings.button2_link, label: section.settings.button2_text, button_style: "btn--primary", is_overlay: true, button_alignment: "center", button_alignment_mobile: "center", buttons_can_inline: true, forloop: forloop -%}
     </div>
     <div class="double-showcase__desktop-column">
       <div class="double-showcase__desktop-diagram">
@@ -245,18 +212,7 @@
         <p class="diagram-caption"><strong>Best For: </strong>Aging skin, texture, fine lines, loss of firmness.</p>
         <p class="diagram-caption"><strong>Use 2-3x per week</strong></p>
       </div>
-      {%-
-        render 'button-block' with
-        wrapper_class: "image-hero__text-container-image-button section-blocks__button",
-        link: section.settings.button1_link,
-        label: section.settings.button1_text,
-        button_style: "btn--primary",
-        is_overlay: true,
-        button_alignment: "center",
-        button_alignment_mobile: "center",
-        buttons_can_inline: true,
-        forloop: forloop
-      -%}
+      {%- render 'button-block' with wrapper_class, wrapper_class: "image-hero__text-container-image-button section-blocks__button", link: section.settings.button1_link, label: section.settings.button1_text, button_style: "btn--primary", is_overlay: true, button_alignment: "center", button_alignment_mobile: "center", buttons_can_inline: true, forloop: forloop -%}
     </div>
   </div>
 </section>
@@ -566,4 +522,82 @@
       }
     ]
   }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%-
+            render 'button-block' with
+            wrapper_class: "image-hero__text-container-image-button section-blocks__button",
+            link: section.settings.button1_link,
+            label: section.settings.button1_text,
+            button_style: "btn--primary",
+            is_overlay: true,
+            button_alignment: "center",
+            button_alignment_mobile: "center",
+            buttons_can_inline: true,
+            forloop: forloop
+          -%}
+  to: '{%- render ''button-block'' with wrapper_class, wrapper_class: "image-hero__text-container-image-button
+    section-blocks__button", link: section.settings.button1_link, label: section.settings.button1_text,
+    button_style: "btn--primary", is_overlay: true, button_alignment: "center", button_alignment_mobile:
+    "center", buttons_can_inline: true, forloop: forloop -%}'
+  position: 2475..2834
+- from: |-
+    {%-
+            render 'button-block' with
+            wrapper_class: "image-hero__text-container-image-button section-blocks__button",
+            link: section.settings.button2_link,
+            label: section.settings.button2_text,
+            button_style: "btn--primary",
+            is_overlay: true,
+            button_alignment: "center",
+            button_alignment_mobile: "center",
+            buttons_can_inline: true,
+            forloop: forloop
+          -%}
+  to: '{%- render ''button-block'' with wrapper_class, wrapper_class: "image-hero__text-container-image-button
+    section-blocks__button", link: section.settings.button2_link, label: section.settings.button2_text,
+    button_style: "btn--primary", is_overlay: true, button_alignment: "center", button_alignment_mobile:
+    "center", buttons_can_inline: true, forloop: forloop -%}'
+  position: 5114..5473
+- from: |-
+    {%-
+            render 'button-block' with
+            wrapper_class: "image-hero__text-container-image-button section-blocks__button",
+            link: section.settings.button2_link,
+            label: section.settings.button2_text,
+            button_style: "btn--primary",
+            is_overlay: true,
+            button_alignment: "center",
+            button_alignment_mobile: "center",
+            buttons_can_inline: true,
+            forloop: forloop
+          -%}
+  to: '{%- render ''button-block'' with wrapper_class, wrapper_class: "image-hero__text-container-image-button
+    section-blocks__button", link: section.settings.button2_link, label: section.settings.button2_text,
+    button_style: "btn--primary", is_overlay: true, button_alignment: "center", button_alignment_mobile:
+    "center", buttons_can_inline: true, forloop: forloop -%}'
+  position: 8337..8696
+- from: |-
+    {%-
+            render 'button-block' with
+            wrapper_class: "image-hero__text-container-image-button section-blocks__button",
+            link: section.settings.button1_link,
+            label: section.settings.button1_text,
+            button_style: "btn--primary",
+            is_overlay: true,
+            button_alignment: "center",
+            button_alignment_mobile: "center",
+            buttons_can_inline: true,
+            forloop: forloop
+          -%}
+  to: '{%- render ''button-block'' with wrapper_class, wrapper_class: "image-hero__text-container-image-button
+    section-blocks__button", link: section.settings.button1_link, label: section.settings.button1_text,
+    button_style: "btn--primary", is_overlay: true, button_alignment: "center", button_alignment_mobile:
+    "center", buttons_can_inline: true, forloop: forloop -%}'
+  position: 11490..11849
+{%- endcomment -%}
